@@ -1,0 +1,9 @@
+@@ -1,7 +1,7 @@
+ [Desktop Entry]
+ Encoding=UTF-8
+ Name=pgAdmin 4
+-Exec=/usr/pgadmin4/bin/pgadmin4
++Exec=/opt/pgadmin4-5.4/runtime/nw
+ Icon=pgadmin4
+ Type=Application
+ Categories=Application;Development;

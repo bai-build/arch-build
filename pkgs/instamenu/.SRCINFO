@@ -1,0 +1,26 @@
+pkgbase = instamenu
+	pkgdesc = dmenu like menu with the Dracula theme
+	pkgver = 2021.04.18
+	pkgrel = 1
+	url = https://github.com/The-Repo-Club/instamenu
+	arch = any
+	groups = therepoclub
+	license = CC BY-NC-SA 4.0
+	depends = python
+	depends = libxinerama
+	depends = libxft
+	optdepends = instamenu-extra: Extra script that instamenu can use
+	optdepends = instamenu-schemas: gsettings for instamenu
+	optdepends = siji: font used by default
+	optdepends = nerd-fonts-fira-code: font used by default
+	optdepends = adobe-source-code-pro-fonts: font used by default
+	optdepends = ttf-material-design-icons: font used by default
+	optdepends = ttf-remixicon: font used by default
+	provides = instamenu
+	provides = dmenu
+	conflicts = dmenu
+	replaces = dmenu
+	source = instamenu-2021.04.18.tar.gz::https://github.com/The-Repo-Club/instamenu/archive/2021.04.18.tar.gz
+	sha256sums = c284689218948ed6c3d5526cd56b01b5afe21fbee1818da77f27f1db17875509
+
+pkgname = instamenu

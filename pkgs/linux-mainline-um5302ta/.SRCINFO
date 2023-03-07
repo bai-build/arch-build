@@ -1,0 +1,47 @@
+pkgbase = linux-mainline-um5302ta
+	pkgdesc = Linux
+	pkgver = 6.1rc8
+	pkgrel = 1
+	url = https://git.kernel.org/torvalds/h/v6.1-rc8
+	arch = x86_64
+	license = GPL2
+	makedepends = bc
+	makedepends = libelf
+	makedepends = pahole
+	makedepends = cpio
+	makedepends = perl
+	makedepends = tar
+	makedepends = xz
+	makedepends = xmlto
+	makedepends = python-sphinx
+	makedepends = python-sphinx_rtd_theme
+	makedepends = graphviz
+	makedepends = imagemagick
+	makedepends = texlive-latexextra
+	makedepends = git
+	options = !strip
+	source = linux-mainline::git+https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git#tag=v6.1-rc8
+	source = config
+	source = cs35l42-hda-no-acpi-dsd-csc3551.patch
+	validpgpkeys = ABAF11C65A2970B130ABE3C479BE3E4300411886
+	validpgpkeys = 647F28654894E3BD457199BE38DBBDC86092693E
+	validpgpkeys = A2FF3A36AAA56654109064AB19802F8B0D70FC30
+	sha256sums = SKIP
+	sha256sums = f66b82f4a99c99dedb128a027c7e23a70c2853984c44ecbd79d16bd76f1f5bac
+	sha256sums = e2613a7336bd01a2727ca2fc37e1000be6e9d30632aec56eff334e3f7b23e487
+
+pkgname = linux-mainline-um5302ta
+	pkgdesc = The Linux kernel and modules
+	depends = coreutils
+	depends = kmod
+	depends = initramfs
+	optdepends = wireless-regdb: to set the correct wireless channels of your country
+	optdepends = linux-firmware: firmware images needed for some devices
+	provides = VIRTUALBOX-GUEST-MODULES
+	provides = WIREGUARD-MODULE
+	replaces = virtualbox-guest-modules-arch
+	replaces = wireguard-arch
+
+pkgname = linux-mainline-um5302ta-headers
+	pkgdesc = Headers and scripts for building modules for the Linux kernel
+	depends = pahole

@@ -1,0 +1,20 @@
+pkgbase = perfutils-git
+	pkgdesc = Collection of eclectic tools for measuring performance using the cycle counter and pinning threads
+	pkgver = r94.5676231
+	pkgrel = 3
+	url = https://github.com/PlatformLab/PerfUtils
+	arch = x86_64
+	license = custom:ISC
+	makedepends = git
+	depends = gcc-libs
+	depends = glibc
+	provides = perfutils
+	conflicts = perfutils
+	options = staticlibs
+	source = git+https://github.com/PlatformLab/PerfUtils
+	source = perfutils.pc
+	sha256sums = SKIP
+	sha256sums = 76e254320a92fde75fd0b05e941fd5b79011ad10c06a14e706c4eab4b8705d40
+
+pkgname = perfutils-git
+

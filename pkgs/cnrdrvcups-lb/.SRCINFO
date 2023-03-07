@@ -1,0 +1,27 @@
+pkgbase = cnrdrvcups-lb
+	pkgdesc = CUPS Canon UFR II LIPSLX CARPS2 printer driver for LBP iR MF ImageCLASS ImageRUNNER Laser Shot i-SENSYS ImagePRESS ADVANCE printers and copiers
+	pkgver = 5.60
+	pkgrel = 1
+	url = https://www.canon-europe.com/support/products/imagerunner/imagerunner-1730i.aspx
+	arch = x86_64
+	license = GPL2
+	license = MIT
+	license = custom
+	makedepends = jbigkit
+	makedepends = gzip
+	makedepends = gtk3
+	depends = gcc-libs
+	depends = libxml2
+	optdepends = libjpeg6-turbo: solves cpu hang on some color imageRUNNER/i-SENSYS LBP devices
+	optdepends = libjbig-shared: port of debian/fedora specific jbigkit funtionality that can prevent cpu hangs on some models
+	optdepends = gtk3: for cnsetuputil2
+	conflicts = cndrvcups-lb
+	conflicts = cndrvcups-common-lb
+	options = !emptydirs
+	options = !strip
+	options = !libtool
+	source = http://gdlp01.c-wss.com/gds/8/0100007658/30/linux-UFRII-drv-v560-m17n-08.tar.gz
+	md5sums = 46f4e538e010f0698d3a3ae02e528a56
+	sha512sums = 7490d3bbfa8d8748d7aafb94c24387fd3f4ee5291bd8826df76d39ef2b2af289bbf707e9e93a9b1c4cd16b47bc02258316cf04750c0ffc11a425514a9ed1a53c
+
+pkgname = cnrdrvcups-lb

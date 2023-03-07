@@ -1,0 +1,52 @@
+pkgbase = lxdm-git
+	pkgdesc = Lightweight Display Manager (part of LXDE) - git checkout
+	pkgver = 0.5.3.r22.gcee37e0
+	pkgrel = 1
+	url = http://blog.lxde.org/?p=531
+	install = lxdm.install
+	arch = i686
+	arch = x86_64
+	groups = lxde
+	license = GPL
+	makedepends = intltool
+	makedepends = git
+	makedepends = iso-codes
+	depends = cairo
+	depends = dbus
+	depends = gdk-pixbuf2
+	depends = glib2
+	depends = gtk2
+	depends = libx11
+	depends = libxcb
+	depends = pango
+	depends = xorg-server
+	optdepends = gtk-engines: default GTK+ theme
+	optdepends = iso-codes: show language names in language chooser
+	optdepends = librsvg: display the default background
+	provides = lxdm
+	conflicts = lxdm
+	conflicts = lxdm-svn
+	backup = etc/lxdm/lxdm.conf
+	backup = etc/pam.d/lxdm
+	backup = etc/lxdm/Xsession
+	backup = etc/lxdm/PreLogin
+	backup = etc/lxdm/LoginReady
+	backup = etc/lxdm/PostLogin
+	backup = etc/lxdm/PostLogout
+	backup = etc/lxdm/PreReboot
+	backup = etc/lxdm/PreShutdown
+	source = lxdm::git+http://git.lxde.org/git/lxde/lxdm.git
+	source = https://www.dropbox.com/s/ml14ufozdx8sunb/lxde-themes.tar.gz?dl=1
+	source = Xsession
+	source = lxdm.in.patch
+	source = lxdm.conf.in.patch
+	source = lxdm.pam
+	md5sums = SKIP
+	md5sums = 4f9e02b15db17f51126941035a192008
+	md5sums = de8be632e7daef6787628ebb0dc94ad1
+	md5sums = b40a5e90b95b07c7fc1120da574c3149
+	md5sums = 1062f248ce6e7b3868fdc60da0645458
+	md5sums = c941ef896248bc7c03901b513490425c
+
+pkgname = lxdm-git
+

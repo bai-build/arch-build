@@ -1,0 +1,22 @@
+pkgbase = zeal-git
+	pkgdesc = A simple documentation browser
+	pkgver = 0.6.1.r228.g763edca
+	pkgrel = 1
+	url = https://zealdocs.org/
+	arch = aarch64
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = cmake
+	makedepends = extra-cmake-modules
+	makedepends = git
+	makedepends = ninja
+	depends = hicolor-icon-theme
+	depends = libarchive
+	depends = qt5-webengine
+	depends = qt5-x11extras
+	conflicts = zeal
+	source = zeal::git+https://github.com/zealdocs/zeal
+	sha1sums = SKIP
+
+pkgname = zeal-git

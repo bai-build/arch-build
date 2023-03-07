@@ -1,0 +1,17 @@
+pkgbase = x-band-decoders-git
+	pkgdesc = A project aimed at decoding various X-Band satellites
+	pkgver = r111.7a34c0f
+	pkgrel = 1
+	url = https://github.com/altillimity/X-Band-Decoders
+	arch = x86_64
+	license = GPLv3
+	makedepends = libaec
+	makedepends = libfec-git
+	makedepends = libcorrect-git
+	makedepends = git
+	makedepends = libccsds-git
+	source = x-band-decoders-git::git+https://github.com/altillimity/X-Band-Decoders.git
+	sha256sums = SKIP
+
+pkgname = x-band-decoders-git
+

@@ -1,0 +1,21 @@
+pkgbase = ros-noetic-tf2-msgs
+	pkgdesc = ROS - tf2_msgs.
+	pkgver = 0.7.5
+	pkgrel = 1
+	url = https://wiki.ros.org/tf2_msgs
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-noetic-message-generation
+	makedepends = ros-noetic-actionlib-msgs
+	makedepends = ros-noetic-catkin
+	makedepends = ros-noetic-geometry-msgs
+	depends = ros-noetic-message-generation
+	depends = ros-noetic-actionlib-msgs
+	depends = ros-noetic-geometry-msgs
+	source = ros-noetic-tf2-msgs-0.7.5.tar.gz::https://github.com/ros/geometry2/archive/0.7.5.tar.gz
+	sha256sums = 0b5d461c71d6dc1dbdb99a2ba39e1515194cd451c2e53d53caadb3ecea13367a
+
+pkgname = ros-noetic-tf2-msgs
+

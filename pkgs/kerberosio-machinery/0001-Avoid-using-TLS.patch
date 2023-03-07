@@ -1,0 +1,24 @@
+From 107c3679a3f0d593046ffac367094dc5c4dcadf7 Mon Sep 17 00:00:00 2001
+From: Anatolii Sakhnik <sakhnik@gmail.com>
+Date: Thu, 8 Mar 2018 20:31:46 +0200
+Subject: [PATCH] Avoid using TLS
+
+---
+ cmake/External-Mosquitto.cmake | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/cmake/External-Mosquitto.cmake b/cmake/External-Mosquitto.cmake
+index 74ac55c..06594b6 100644
+--- a/cmake/External-Mosquitto.cmake
++++ b/cmake/External-Mosquitto.cmake
+@@ -14,6 +14,7 @@ ExternalProject_Add(mosquitto
+     -DWITH_WEBSOCKETS=OFF
+     -DWITH_SRV=OFF
+     -DWITH_STATIC_LIBRARIES=ON
++    -DWITH_TLS=OFF
+ )
+ 
+ set(MOSQUITTO_INCLUDE_DIR ${CMAKE_BINARY_DIR}/mosquitto/lib/ ${CMAKE_BINARY_DIR}/mosquitto/lib/cpp/)
+-- 
+2.16.2
+

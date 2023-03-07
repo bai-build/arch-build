@@ -1,0 +1,19 @@
+pkgbase = bloaty-git
+	pkgdesc = A size profiler for binaries
+	pkgver = 1.0.r62.g7cf6c58
+	pkgrel = 1
+	url = https://github.com/google/bloaty
+	arch = x86_64
+	arch = i686
+	license = Apache
+	makedepends = git
+	makedepends = cmake
+	depends = re2
+	depends = capstone
+	depends = protobuf
+	conflicts = bloaty
+	source = bloaty-git::git+https://github.com/google/bloaty
+	sha512sums = SKIP
+
+pkgname = bloaty-git
+

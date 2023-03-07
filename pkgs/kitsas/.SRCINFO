@@ -1,0 +1,14 @@
+pkgbase = kitsas
+	pkgdesc = Finnish bookkeeping software for small organisations
+	pkgver = 4.0.2
+	pkgrel = 1
+	url = https://kitsas.fi/
+	arch = x86_64
+	license = GPL3
+	depends = qt5-svg>=5.12
+	depends = poppler-qt5
+	depends = libzip
+	source = https://github.com/artoh/kitupiikki/archive/v4.0.2.tar.gz
+	sha256sums = 2c133c27e42162ca20afe7cc6e0e9f55968564f99f8dd78a645ca00671f90b7a
+
+pkgname = kitsas

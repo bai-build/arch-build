@@ -1,0 +1,27 @@
+pkgbase = wraith-master
+	pkgdesc = A Wraith Prism RGB control application
+	pkgver = 1.2.1
+	pkgrel = 3
+	url = https://gitlab.com/serebit/wraith-master
+	arch = x86_64
+	license = APACHE
+	makedepends = gradle
+	makedepends = scdoc
+	makedepends = libusb
+	makedepends = gtk3
+	source = wraith-master-common-v1.2.1.tar.gz::https://gitlab.com/serebit/wraith-master/-/archive/v1.2.1/wraith-master-v1.2.1.tar.gz
+	sha256sums = fcf150b5f45e9b9ffad60e1a72f7251d4488fba28d5b325688c931f5098e21ca
+
+pkgname = wraith-master-common
+	pkgdesc = Udev rules for wraith-master frontends
+
+pkgname = wraith-master-cli
+	pkgdesc = Command-line application for controlling RGB on the Wraith Prism
+	depends = wraith-master-common
+	depends = libusb
+
+pkgname = wraith-master-gtk
+	pkgdesc = Native Linux GUI for controlling RGB on the Wraith Prism
+	depends = wraith-master-common
+	depends = libusb
+	depends = gtk3

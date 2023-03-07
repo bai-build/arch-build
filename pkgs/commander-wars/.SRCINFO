@@ -1,0 +1,20 @@
+pkgbase = commander-wars
+	pkgdesc = Advance Wars Clone with a lot of additions customizations and modding support
+	pkgver = 0.29.3.1
+	pkgrel = 1
+	url = https://github.com/Robosturm/Commander_Wars
+	arch = x86_64
+	license = LGPL3
+	makedepends = clang
+	makedepends = cmake
+	makedepends = ninja
+	makedepends = qt6-tools
+	depends = qt6-declarative
+	depends = qt6-multimedia
+	options = !emptydirs
+	source = https://github.com/Robosturm/Commander_Wars/archive/Beta_29_3_Build1.tar.gz
+	source = 0001-fix-QStandardPaths-include.patch
+	sha512sums = 6453104f77ccce0056dd0d87e49553d6a45c487e13875afc9c42405a885bb77b2379e6f7244ff5e036018de4ed066ebbcbd5fb434f1cab5f630050dbb8da4006
+	sha512sums = 2de911786944e44a18f524508827805992a02a6890638a0e24bfcbac02374df90e8334376973263492ea04454b9ac368e71d3aa91d4b7b33a0bbc5af661bfcc2
+
+pkgname = commander-wars

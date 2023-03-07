@@ -1,0 +1,23 @@
+pkgbase = libretro-dosbox-pure-git
+	pkgdesc = MS-DOS core
+	pkgver = 0.9.1.r0.g562869f
+	pkgrel = 1
+	epoch = 1
+	url = https://github.com/schellingb/dosbox-pure
+	arch = aarch64
+	arch = armv7h
+	arch = i486
+	arch = i686
+	arch = pentium4
+	arch = x86_64
+	groups = libretro
+	license = GPL2
+	makedepends = git
+	depends = gcc-libs
+	depends = libretro-core-info
+	provides = libretro-dosbox-pure
+	conflicts = libretro-dosbox-pure
+	source = dosbox-pure::git+https://github.com/schellingb/dosbox-pure.git
+	b2sums = SKIP
+
+pkgname = libretro-dosbox-pure-git

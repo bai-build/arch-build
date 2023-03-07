@@ -1,0 +1,17 @@
+pkgbase = kontactinterface-git
+	pkgdesc = Kontact Plugin Interface Library
+	pkgver = 5.18.40_r621.g7bec405
+	pkgrel = 1
+	url = https://kontact.kde.org
+	arch = x86_64
+	groups = kdepim-git
+	license = LGPL
+	makedepends = git
+	makedepends = extra-cmake-modules-git
+	depends = kparts-git
+	provides = kontactinterface
+	conflicts = kontactinterface
+	source = git+https://github.com/KDE/kontactinterface.git
+	sha256sums = SKIP
+
+pkgname = kontactinterface-git

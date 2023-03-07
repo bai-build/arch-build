@@ -1,0 +1,29 @@
+post_install() {
+  printf "%b\n" "$obelisk"
+}
+
+post_upgrade() {
+  post_install
+}
+
+read -d '' obelisk <<'EOF'
+########################################################################
+########################################################################
+##                                                                    ##
+##  Libbitcoin Server                                                 ##
+##  _________________                                                 ##
+##                                                                    ##
+##  To run:                                                           ##
+##                                                                    ##
+##      systemctl start bs-init # first run only                      ##
+##      systemctl start bs                                            ##
+##                                                                    ##
+##                                                                    ##
+##  Config:        /etc/obelisk/bs/bs.cfg                             ##
+##  Blockchain:    /srv/obelisk                                       ##
+##  Documentation: /usr/share/doc/libbitcoin-server                   ##
+##  Logs:          /var/log/obelisk/bs                                ##
+##                                                                    ##
+########################################################################
+########################################################################
+EOF

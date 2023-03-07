@@ -1,0 +1,30 @@
+pkgbase = aom-psy-git
+	pkgdesc = An open, royalty-free video coding format, includes tune=(vmaf|butteraugli) and BlueSwordM's psy patches
+	pkgver = r32859.gc7ecd15af
+	pkgrel = 1
+	url = https://aomedia.org/
+	arch = i686
+	arch = x86_64
+	license = BSD
+	license = custom:PATENTS
+	makedepends = git
+	makedepends = cmake
+	makedepends = doxygen
+	makedepends = graphviz
+	makedepends = perl
+	makedepends = yasm
+	makedepends = clang
+	makedepends = lld
+	depends = gcc-libs
+	depends = vmaf
+	depends = libjxl-metrics-git
+	optdepends = aocc: AMD Optimizing Compiler
+	provides = aom
+	provides = aom-git
+	provides = libaom.so
+	conflicts = aom
+	conflicts = aom-git
+	source = git+https://gitlab.com/shssoichiro/aom.git#branch=patched
+	sha256sums = SKIP
+
+pkgname = aom-psy-git

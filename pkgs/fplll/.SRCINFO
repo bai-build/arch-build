@@ -1,0 +1,19 @@
+pkgbase = fplll
+	pkgdesc = A library for LLL-reducing euclidean lattices.
+	pkgver = v4.0
+	pkgrel = 1
+	url = https://github.com/dstehle/fplll
+	arch = x86_64
+	arch = i686
+	license = LGPL
+	makedepends = git
+	makedepends = autoconf>=2.61
+	makedepends = automake>=1.6.0
+	makedepends = libtool>=1.4.2
+	depends = gmp>=4.2.0
+	depends = mpfr>=2.3.0
+	source = git://github.com/dstehle/fplll.git
+	md5sums = SKIP
+
+pkgname = fplll
+

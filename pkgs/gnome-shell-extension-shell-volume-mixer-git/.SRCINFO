@@ -1,0 +1,15 @@
+pkgbase = gnome-shell-extension-shell-volume-mixer-git
+	pkgdesc = PulseAudio mixer providing per-device and per-program volume control
+	pkgver = 0.14.1.r1.gf3f7075
+	pkgrel = 1
+	url = https://extensions.gnome.org/extension/858/volume-mixer/
+	arch = any
+	license = GPL2
+	makedepends = unzip
+	makedepends = zip
+	depends = gnome-shell
+	source = shell-volume-mixer::git://github.com/aleho/gnome-shell-volume-mixer.git
+	sha256sums = SKIP
+
+pkgname = gnome-shell-extension-shell-volume-mixer-git
+

@@ -1,0 +1,19 @@
+pkgbase = budgie-desktop-view
+	pkgdesc = The official Budgie desktop icons application / implementation
+	pkgver = 1.1.1
+	pkgrel = 1
+	url = https://solus-project.com/budgie
+	arch = x86_64
+	license = Apache 2.0
+	makedepends = meson
+	makedepends = git
+	makedepends = gobject-introspection
+	makedepends = intltool
+	makedepends = vala
+	makedepends = gtk-doc
+	depends = budgie-desktop
+	source = budgie-desktop-view-1.1.1.tar.gz::https://github.com/getsolus/budgie-desktop-view/archive/v1.1.1.tar.gz
+	sha256sums = c3c5c3d1aec117bd32c860640ad3a34acee93fb35698712aa3d3f66c841c03f5
+
+pkgname = budgie-desktop-view
+

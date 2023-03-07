@@ -1,0 +1,18 @@
+pkgbase = qt5-charts-ubuntu-ver
+	pkgdesc = qt5-charts with same version as current Ubuntu(focal)
+	pkgver = 5.15.3
+	pkgrel = 1
+	url = https://www.qt.io
+	arch = x86_64
+	groups = qt
+	groups = qt5
+	license = GPL3
+	makedepends = qt5-declarative
+	depends = qt5-base
+	optdepends = qt5-declarative: QML bindings
+	provides = qt5-charts
+	conflicts = qt5-charts
+	source = https://download.qt.io/official_releases/qt/5.15/5.15.3/submodules/qtcharts-everywhere-opensource-src-5.15.3.tar.xz
+	sha256sums = accf85cda64641d42f4cba098741c8b9df38f7de606a38c8663d754bb61623af
+
+pkgname = qt5-charts-ubuntu-ver

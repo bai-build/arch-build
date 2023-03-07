@@ -1,0 +1,13 @@
+pkgbase = office-runner
+	pkgdesc = Lighthearted tool to temporarily inhibit GNOME's suspend on lid close behavior
+	pkgver = 1.0.3
+	pkgrel = 1
+	url = https://gitlab.gnome.org/GNOME/office-runner
+	arch = x86_64
+	license = GPL3
+	makedepends = gnome-common
+	depends = gtk3
+	source = https://gitlab.gnome.org/GNOME/office-runner/-/archive/1.0.3/office-runner-1.0.3.tar.gz
+	sha256sums = 63eaf719c71adc98abbc5c4adb538a196fab783f0417cdfd863c6b4b27334189
+
+pkgname = office-runner

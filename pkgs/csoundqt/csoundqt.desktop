@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=CsoundQt
+Comment=A frontend for Csound with interactive widgets and integrated help.
+Exec=csoundqt
+Icon=csoundqt
+Terminal=false
+Type=Application
+MimeType=application/x-csoundqt
+Categories=Application;AudioVideo;Audio;

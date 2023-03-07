@@ -1,0 +1,13 @@
+pkgbase = scim-spreadsheet
+	pkgdesc = A spreadsheet program based on SC
+	pkgver = 0.1.9
+	pkgrel = 1
+	url = https://github.com/andmarti1424/scim
+	arch = i686
+	arch = x86_64
+	license = BSD
+	source = https://github.com/andmarti1424/scim/archive/v0.1.9.tar.gz
+	sha256sums = 5fa93d9a6dd1c60eaf103f6588d3a2895a8dbe4c3c7474765f803345c8f83203
+
+pkgname = scim-spreadsheet
+

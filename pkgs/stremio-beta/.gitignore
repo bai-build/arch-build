@@ -1,0 +1,6 @@
+.directory
+stremio
+stremio.sublime-project
+stremio.sublime-workspace
+stremio-beta*.pkg*
+pkg

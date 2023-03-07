@@ -1,0 +1,24 @@
+pkgbase = pioneer-git
+	pkgdesc = A game of lonely space adventure
+	pkgver = 20230203.r4.gdf1f2a9da
+	pkgrel = 1
+	url = https://github.com/pioneerspacesim/pioneer
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	makedepends = cmake
+	makedepends = mesa
+	makedepends = glu
+	depends = assimp
+	depends = freetype2
+	depends = hicolor-icon-theme
+	depends = libsigc++
+	depends = libvorbis
+	depends = sdl2_image
+	provides = pioneer
+	conflicts = pioneer-bin
+	conflicts = pioneer
+	source = pioneer-git::git+https://github.com/pioneerspacesim/pioneer
+	sha256sums = SKIP
+
+pkgname = pioneer-git

@@ -1,0 +1,18 @@
+pkgbase = kamule
+	pkgdesc = A KDE frontend for aMule
+	pkgver = 0.91
+	pkgrel = 2
+	url = https://www.linux-apps.com/content/show.php?content=150270
+	arch = x86_64
+	license = GPL
+	makedepends = extra-cmake-modules
+	makedepends = python
+	depends = amule-daemon
+	depends = kio
+	depends = kpty
+	depends = hicolor-icon-theme
+	options = debug
+	source = kamule-0.91.tar.bz2::https://github.com/nihui/kamule/archive/refs/heads/master.zip
+	sha256sums = 69b63b15636e8696d2494bae2d820f38fee0598f77235601e80fcdbfa675d816
+
+pkgname = kamule

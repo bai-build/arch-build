@@ -1,0 +1,29 @@
+pkgbase = toxcore-toktok-git
+	pkgdesc = Secure, configuration-free, P2P Skype replacement backend
+	pkgver = 0.2.7.4536
+	pkgrel = 1
+	epoch = 1
+	url = https://tox.chat
+	install = toxcore-toktok-git.install
+	arch = i686
+	arch = x86_64
+	arch = arm
+	arch = armv6h
+	arch = armv7h
+	license = GPL3
+	makedepends = git
+	makedepends = cmake
+	makedepends = pkg-config
+	depends = libconfig
+	depends = libsodium
+	depends = libvpx
+	depends = opus
+	provides = toxcore
+	conflicts = toxcore
+	source = toxcore::git+https://github.com/TokTok/c-toxcore.git
+	source = toxcore.conf
+	sha512sums = SKIP
+	sha512sums = 71885e69f7b84955f6bdbf27b9e8196349cdd254b02b510433851bd218374d9c47aa7d3946dcc6a5cff6c8e705bc98d8a09de27039f60b8b088784cf8fa9d719
+
+pkgname = toxcore-toktok-git
+

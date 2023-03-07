@@ -1,0 +1,24 @@
+pkgbase = ros-melodic-message-runtime
+	pkgdesc = ROS - Package modeling the run-time dependencies for language bindings of messages.
+	pkgver = 0.4.12
+	pkgrel = 3
+	url = https://wiki.ros.org/message_runtime
+	arch = i686
+	arch = x86_64
+	arch = aarch64
+	arch = armv7h
+	arch = armv6h
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-melodic-catkin
+	depends = ros-melodic-roscpp-traits
+	depends = ros-melodic-genpy
+	depends = ros-melodic-cpp-common
+	depends = ros-melodic-roscpp-serialization
+	depends = ros-melodic-rostime
+	source = ros-melodic-message-runtime-0.4.12.tar.gz::https://github.com/ros/message_runtime/archive/0.4.12.tar.gz
+	sha256sums = 7863e3e9c47c57f93f8c82e3439081da07454f1e2a4d07e0c29aacc139855806
+
+pkgname = ros-melodic-message-runtime
+

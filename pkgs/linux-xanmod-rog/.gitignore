@@ -1,0 +1,18 @@
+# Xanmod-ROG .gitignore
+
+# build artifacts
+src
+pkg
+*.log
+*.log.*
+*.pkg.tar.*
+*.sig
+
+# any local subdirectories
+*/
+
+# local config customizations
+myconfig
+
+# last run config
+config.last

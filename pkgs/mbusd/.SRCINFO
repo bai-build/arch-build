@@ -1,0 +1,15 @@
+pkgbase = mbusd
+	pkgdesc = Open-source Modbus TCP to Modbus RTU (RS-232/485) gateway.
+	pkgver = 0.5.1
+	pkgrel = 1
+	url = https://github.com/3cky/mbusd
+	arch = x86_64
+	arch = i686
+	arch = armv7h
+	license = BSD
+	makedepends = cmake
+	depends = glibc
+	source = mbusd-0.5.1.tar.gz::https://github.com/3cky/mbusd/archive/v0.5.1.tar.gz
+	sha256sums = 6eaf36418cc120c18659b01d6fdc925874df90d108d3ec495e8da938004599e7
+
+pkgname = mbusd

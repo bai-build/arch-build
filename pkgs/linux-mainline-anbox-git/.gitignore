@@ -1,0 +1,4 @@
+linux-mainline-anbox
+pkg
+src
+*.pkg.tar.*

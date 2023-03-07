@@ -1,0 +1,20 @@
+pkgbase = ros-noetic-roslisp
+	pkgdesc = ROS - Lisp client library for ROS, the Robot Operating System.
+	pkgver = 1.9.24
+	pkgrel = 1
+	url = https://wiki.ros.org/roslisp
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-noetic-catkin
+	depends = ros-noetic-rosgraph-msgs
+	depends = ros-noetic-roslang
+	depends = ros-noetic-std-srvs
+	depends = ros-noetic-rospack
+	depends = sbcl
+	source = ros-noetic-roslisp-1.9.24.tar.gz::https://github.com/ros/roslisp/archive/1.9.24.tar.gz
+	sha256sums = 5b6fdbf3047172f542ac00e45f26c708766fb724bc5b270e236341f7b555d45d
+
+pkgname = ros-noetic-roslisp
+

@@ -1,0 +1,4 @@
+doas-*.pkg.*
+doas-*.tar.gz
+pkg/
+src/

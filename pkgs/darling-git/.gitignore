@@ -1,0 +1,6 @@
+*
+!.gitignore
+!.SRCINFO
+!PKGBUILD
+!darling-git.install
+!dkms.conf

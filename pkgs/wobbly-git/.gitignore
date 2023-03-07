@@ -1,0 +1,7 @@
+*
+!.gitignore
+!.SRCINFO
+!PKGBUILD
+!wobbly-git.install
+!wobbly.desktop
+!wibbly.desktop

@@ -1,0 +1,16 @@
+pkgbase = easymake-git
+	pkgdesc = A simple replacement to GNU Make or CMake.
+	pkgver = r151.21f6ec5
+	pkgrel = 1
+	url = https://cleanware.github.io/
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	depends = gcc
+	provides = easymake-git
+	conflicts = easymake-git
+	source = git+https://github.com/cleanware/easymake.git
+	md5sums = SKIP
+
+pkgname = easymake-git
+

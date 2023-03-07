@@ -1,0 +1,19 @@
+pkgbase = qt5-styleplugins-git
+	pkgdesc = Additional style plugins for Qt5
+	pkgver = r36
+	pkgrel = 1
+	url = https://code.qt.io/cgit/qt/qtstyleplugins
+	arch = i686
+	arch = x86_64
+	license = LGPL
+	makedepends = git
+	depends = qt5-base
+	depends = gtk2
+	depends = libx11
+	provides = qt5-styleplugins
+	conflicts = qt5-styleplugins
+	source = qtstyleplugins::git+https://code.qt.io/qt/qtstyleplugins.git
+	sha512sums = SKIP
+
+pkgname = qt5-styleplugins-git
+

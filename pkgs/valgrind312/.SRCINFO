@@ -1,0 +1,22 @@
+pkgbase = valgrind312
+	pkgdesc = A tool to help find memory-management problems in programs (version 3.12.0)
+	pkgver = 3.12.0
+	pkgrel = 3
+	url = http://valgrind.org/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = gdb
+	makedepends = openmpi
+	depends = glibc=2.28
+	depends = perl
+	optdepends = openmpi: MPI support
+	provides = valgrind=3.12.0
+	conflicts = valgrind
+	replaces = valgrind
+	options = !emptydirs
+	source = http://valgrind.org/downloads/valgrind-3.12.0.tar.bz2
+	sha1sums = 7a6878bf998c60d1e377a4f22ebece8d9305bda4
+
+pkgname = valgrind312
+

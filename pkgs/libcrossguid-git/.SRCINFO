@@ -1,0 +1,16 @@
+pkgbase = libcrossguid-git
+	pkgdesc = Lightweight cross platform C++ GUID/UUID library
+	pkgver = 0.2.2.r52.gca1bf4b
+	pkgrel = 2
+	url = https://github.com/graeme-hill/crossguid
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = git
+	makedepends = cmake
+	provides = libcrossguid
+	conflicts = libcrossguid
+	source = libcrossguid::git+https://github.com/graeme-hill/crossguid.git
+	md5sums = SKIP
+
+pkgname = libcrossguid-git

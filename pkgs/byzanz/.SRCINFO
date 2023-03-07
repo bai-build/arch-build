@@ -1,0 +1,23 @@
+pkgbase = byzanz
+	pkgdesc = Record what's happening on your desktop
+	pkgver = 0.3.0.1
+	pkgrel = 3
+	url = http://git.gnome.org/browse/byzanz
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = gnome-common
+	makedepends = intltool
+	depends = gtk3
+	depends = gst-plugins-base
+	depends = gst-plugins-good
+	optdepends = gst-libav: save into FLV format
+	source = https://git.gnome.org/browse/byzanz/snapshot/byzanz-81235d235d12c9687897f7fc6ec0de1feaed6623.tar.xz
+	source = 0001-Port-to-libpanel-applet-5.patch
+	source = flv-audio.patch
+	sha256sums = 05709c980b876df015b16e22d0299630708d09ec94c319e5dbceee4bfcf6ae0e
+	sha256sums = abebbc8116294a8a2a2a43fc9389e075a1d4b0a88731be224e6532daa6ca3577
+	sha256sums = e45e15f9c52f9bd72e5f362f0494ebee65e1d2c99ea5b0ca446547c11d6ab4d2
+
+pkgname = byzanz
+

@@ -1,0 +1,17 @@
+pkgbase = dict-freedict-swe-eng
+	pkgdesc = Swedish -> English dictionary for dictd et al. from Freedict.org
+	pkgver = 0.2
+	pkgrel = 3
+	url = https://freedict.org/
+	install = dict-freedict-swe-eng.install
+	changelog = ChangeLog
+	arch = any
+	license = GPL
+	makedepends = dictd
+	makedepends = freedict-tools
+	optdepends = dictd: dict client and server
+	source = https://download.freedict.org/dictionaries/swe-eng/0.2/freedict-swe-eng-0.2.src.tar.xz
+	sha512sums = f6333261e2b666f6cff71973444600d46c37f9f5d855bf5338cbd281aa88bebb8183c0f8534daa9571e5fab96985b5e3435b41466d132591f4b476ac2fcd3410
+
+pkgname = dict-freedict-swe-eng
+

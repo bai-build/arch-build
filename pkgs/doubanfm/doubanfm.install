@@ -1,0 +1,33 @@
+
+## arg 1:  the new package version
+pre_install() {
+    return 0;
+}
+
+## arg 1:  the new package version
+post_install() {
+    echo "The executable file is called: DoubanFM"
+    return 0;
+}
+
+## arg 1:  the new package version
+## arg 2:  the old package version
+pre_upgrade() {
+    return 0;
+}
+
+## arg 1:  the new package version
+## arg 2:  the old package version
+post_upgrade() {
+    return 0;
+}
+
+## arg 1:  the old package version
+pre_remove() {
+    return 0;
+}
+
+## arg 1:  the old package version
+post_remove() {
+    return 0;
+}

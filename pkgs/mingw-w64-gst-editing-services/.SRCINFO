@@ -1,0 +1,16 @@
+pkgbase = mingw-w64-gst-editing-services
+	pkgdesc = GStreamer editing services (mingw-w64)
+	pkgver = 1.20.5
+	pkgrel = 1
+	url = http://gstreamer.freedesktop.org/
+	arch = any
+	license = LGPL
+	makedepends = mingw-w64-meson
+	depends = mingw-w64-gst-plugins-base
+	options = !strip
+	options = !buildflags
+	options = staticlibs
+	source = http://gstreamer.freedesktop.org/src/gst-editing-services/gst-editing-services-1.20.5.tar.xz
+	sha256sums = 363f2b13675877b926b4be5259dbbeea8cc976805b40c871fc254bb8f382017d
+
+pkgname = mingw-w64-gst-editing-services

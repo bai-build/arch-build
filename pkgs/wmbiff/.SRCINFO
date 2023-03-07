@@ -1,0 +1,16 @@
+pkgbase = wmbiff
+	pkgdesc = WindowMaker dock app that displays the number of read and unread messages in up to five mailboxes.
+	pkgver = 0.4.29
+	pkgrel = 1
+	url = http://www.dockapps.net/wmbiff
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = libxpm
+	depends = gnutls
+	optdepends = ruby: to run security.debian.rb
+	source = http://www.dockapps.net/download/wmbiff-0.4.29.tar.gz
+	md5sums = 9f3a729f7ff1063e38863589e53576a8
+
+pkgname = wmbiff
+

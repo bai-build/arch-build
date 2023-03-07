@@ -1,0 +1,39 @@
+pkgbase = libpod
+	pkgdesc = A library used to create container pods.
+	pkgver = 1.0.0
+	pkgrel = 1
+	url = https://github.com/containers/libpod
+	arch = x86_64
+	license = Apache
+	makedepends = cni-plugins
+	makedepends = cri-o
+	makedepends = device-mapper
+	makedepends = go
+	makedepends = go-md2man
+	makedepends = iptables
+	makedepends = libseccomp
+	makedepends = ostree
+	makedepends = runc
+	source = https://github.com/containers/libpod/archive/v1.0.0.tar.gz
+	sha256sums = f7a462563dd587208eff3c3c0689bc4d01071a8f7933bec2a13126be123f63a8
+
+pkgname = libpod
+	depends = cri-o
+	depends = device-mapper
+	depends = iptables
+	depends = libseccomp
+	depends = runc
+	depends = ostree
+	depends = skopeo
+	optdepends = libpod-docker: docker cli
+	provides = podman
+	provides = libpod-networking
+	conflicts = podman
+	conflicts = libpod-networking
+
+pkgname = libpod-docker
+	pkgdesc = Use podman as a Docker CLI replacement.
+	depends = libpod
+	provides = docker
+	conflicts = docker
+

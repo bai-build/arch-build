@@ -1,0 +1,19 @@
+pkgbase = libpqxx-git
+	pkgdesc = C++ client API for PostgreSQL
+	pkgver = 7.1.2.r22.52dfb569
+	pkgrel = 1
+	url = https://github.com/jtv/libpqxx
+	arch = i686
+	arch = x86_64
+	license = custom
+	makedepends = python2
+	makedepends = doxygen
+	makedepends = xmlto
+	depends = postgresql-libs>=9.1
+	provides = libpqxx
+	conflicts = libpqxx
+	source = git+https://github.com/jtv/libpqxx.git
+	md5sums = SKIP
+
+pkgname = libpqxx-git
+

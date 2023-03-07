@@ -1,0 +1,24 @@
+pkgbase = hyperion
+	pkgdesc = An opensource 'AmbiLight' implementation
+	pkgver = 1.03.2
+	pkgrel = 4
+	url = https://github.com/hyperion-project/hyperion.ng
+	arch = i686
+	arch = x86_64
+	arch = arm
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	license = MIT
+	makedepends = cmake
+	depends = libusb
+	depends = protobuf
+	depends = python
+	depends = qt5-base
+	optdepends = xorg-server: X11 grabbing
+	backup = etc/hyperion/hyperion.config.json
+	source = https://github.com/tvdzwan/hyperion/archive/1.03.2.tar.gz
+	sha512sums = 7406f5bdf323d2799fb375557603fefd1f077cda287b5aa9ff10251b22d8dd07590458515b0e01ef97fba80885aab1aa72bd8b5d26873ad8ebcc1ba53d6776ec
+
+pkgname = hyperion
+

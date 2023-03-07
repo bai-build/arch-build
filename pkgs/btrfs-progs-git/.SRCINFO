@@ -1,0 +1,41 @@
+pkgbase = btrfs-progs-git
+	pkgdesc = Btrfs filesystem utilities
+	pkgver = 6156_6.0_r0_g3db75635
+	pkgrel = 1
+	url = https://btrfs.wiki.kernel.org/index.php/Main_Page
+	install = btrfs-progs-git.install
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	makedepends = asciidoc
+	makedepends = xmlto
+	makedepends = python
+	makedepends = python-setuptools
+	makedepends = systemd
+	makedepends = python-sphinx
+	depends = glibc
+	depends = e2fsprogs
+	depends = lzo
+	depends = zlib
+	depends = zstd
+	depends = systemd-libs
+	provides = btrfs-progs
+	conflicts = btrfs-progs
+	source = git+https://github.com/kdave/btrfs-progs.git
+	source = initcpio-hook-btrfs::https://raw.githubusercontent.com/archlinux/svntogit-packages/packages/btrfs-progs/trunk/initcpio-hook-btrfs?h=packages/btrfs-progs
+	source = initcpio-install-btrfs::https://raw.githubusercontent.com/archlinux/svntogit-packages/packages/btrfs-progs/trunk/initcpio-install-btrfs?h=packages/btrfs-progs
+	source = btrfs-scrub@.service::https://raw.githubusercontent.com/archlinux/svntogit-packages/packages/btrfs-progs/trunk/btrfs-scrub@.service?h=packages/btrfs-progs
+	source = btrfs-scrub@.timer::https://raw.githubusercontent.com/archlinux/svntogit-packages/packages/btrfs-progs/trunk/btrfs-scrub@.timer?h=packages/btrfs-progs
+	md5sums = SKIP
+	md5sums = b09688a915a0ec8f40e2f5aacbabc9ad
+	md5sums = 7241ba3a4286d08da0d50b7176941112
+	md5sums = ab4fc5bec59a09f03625d5683bae9046
+	md5sums = 40ac621390e93a934b9661adbcedf7a8
+	sha1sums = SKIP
+	sha1sums = bf017ec8fd82c5be282b50fc49b63fa3dc2c44a8
+	sha1sums = 5e32dc3a7c704c0114efcb01e48c6f4c673ea9be
+	sha1sums = b58e38063b55496fd9d13b30e04b8f346f3b6a4a
+	sha1sums = f75f76ff1a760f6c710cf0d5ab1c52874fc5625c
+
+pkgname = btrfs-progs-git

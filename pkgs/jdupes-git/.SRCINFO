@@ -1,0 +1,16 @@
+pkgbase = jdupes-git
+	pkgdesc = Is a program for identifying duplicate files residing within specified directories
+	pkgver = 1.19.1+12+gd583576
+	pkgrel = 1
+	url = https://github.com/jbruchon/jdupes
+	arch = i686
+	arch = x86_64
+	license = MIT
+	depends = glibc
+	provides = jdupes
+	conflicts = jdupes
+	source = jdupes-git::git+https://github.com/jbruchon/jdupes.git
+	sha256sums = SKIP
+
+pkgname = jdupes-git
+

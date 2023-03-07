@@ -1,0 +1,11 @@
+post_install() {
+  post_upgrade $1
+}
+
+post_upgrade() {
+  pecl install --nodeps --ignore-errors --register-only --nobuild --soft --force /usr/share/pear/.pkgxml/timezonedb.xml
+}
+
+pre_remove() {
+  pecl uninstall --nodeps --ignore-errors --register-only timezonedb
+}

@@ -1,0 +1,15 @@
+pkgbase = pdl2ork-pure
+	pkgdesc = Loader plugin for the Pure programming language, Pd-L2Ork version
+	pkgver = 0.26
+	pkgrel = 1
+	url = http://purelang.bitbucket.org/
+	arch = i686
+	arch = x86_64
+	license = custom
+	depends = pd-l2ork
+	depends = pure
+	source = https://github.com/agraef/pure-lang/releases/download/pd-pure-0.26/pd-pure-0.26.tar.gz
+	md5sums = 30d4a09542cb50e3748f09ae81d3ba79
+
+pkgname = pdl2ork-pure
+

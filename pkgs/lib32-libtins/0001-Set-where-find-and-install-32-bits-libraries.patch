@@ -1,0 +1,26 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 11d3aae..32fcc27 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -232,7 +232,7 @@ CONFIGURE_FILE(
+ )
+ 
+ IF (NOT CMAKE_INSTALL_LIBDIR)
+-    SET(CMAKE_INSTALL_LIBDIR lib)
++    SET(CMAKE_INSTALL_LIBDIR lib32)
+ ENDIF()
+ # The library output directory
+ SET(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/${CMAKE_INSTALL_LIBDIR})
+diff --git a/cmake/Modules/FindPCAP.cmake b/cmake/Modules/FindPCAP.cmake
+index 388b30b..ce7a569 100644
+--- a/cmake/Modules/FindPCAP.cmake
++++ b/cmake/Modules/FindPCAP.cmake
+@@ -29,7 +29,7 @@ find_path(PCAP_INCLUDE_DIR
+     HINTS ${PCAP_ROOT_DIR}/include
+ )
+ 
+-set (HINT_DIR ${PCAP_ROOT_DIR}/lib)
++set (HINT_DIR ${PCAP_ROOT_DIR}/lib32)
+ 
+ # On x64 windows, we should look also for the .lib at /lib/x64/
+ # as this is the default path for the WinPcap developer's pack

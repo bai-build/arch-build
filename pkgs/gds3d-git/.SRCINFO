@@ -1,0 +1,18 @@
+pkgbase = gds3d-git
+	pkgdesc = An application used for rendering IC (chip) layouts in 3D
+	pkgver = r38.1f646a4
+	pkgrel = 1
+	url = https://github.com/trilomix/GDS3D
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	makedepends = make
+	makedepends = gcc
+	depends = libx11
+	depends = libglvnd
+	provides = gds3d
+	conflicts = gds3d
+	source = git+https://github.com/trilomix/GDS3D#commit=1f646a43075d21be7654c1485e59d7c82272c74e
+	md5sums = SKIP
+
+pkgname = gds3d-git

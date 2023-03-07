@@ -1,0 +1,18 @@
+pkgbase = vimperator-git
+	pkgdesc = Make Firefox look and behave like Vim
+	pkgver = r5195
+	pkgrel = 1
+	url = https://github.com/vimperator/vimperator-labs
+	arch = any
+	license = MIT
+	makedepends = git
+	optdepends = firefox: Web browser
+	provides = vimperator
+	conflicts = vimperator
+	source = vimperator::git+https://github.com/vimperator/vimperator-labs.git
+	source = no_zip.patch
+	sha512sums = SKIP
+	sha512sums = SKIP
+
+pkgname = vimperator-git
+

@@ -1,0 +1,15 @@
+pkgbase = r8168-ck
+	pkgdesc = A kernel module for Realtek 8168 network cards (linux-ck)
+	pkgver = 8.048.03
+	pkgrel = 1
+	url = http://www.realtek.com.tw
+	arch = x86_64
+	license = GPL
+	makedepends = linux-ck-headers
+	source = https://github.com/mtorromeo/r8168/archive/8.048.03/r8168-8.048.03.tar.gz
+	sha256sums = 0f191c4dc2f2e1aef6789d34820305fae27690d20212f2ac12ded634eb786d8c
+
+pkgname = r8168-ck
+	depends = glibc
+	depends = linux-ck
+

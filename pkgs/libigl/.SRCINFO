@@ -1,0 +1,13 @@
+pkgbase = libigl
+	pkgdesc = Simple C++ geometry processing library.
+	pkgver = 2.4.0
+	pkgrel = 2
+	url = https://github.com/libigl/libigl
+	arch = any
+	license = GPL3
+	makedepends = cmake
+	depends = eigen
+	source = https://github.com/libigl/libigl/archive/v2.4.0.tar.gz
+	sha512sums = f9e19c6d9a7fa2afe12c0a4042c3cc46606413d7f79b20e2464021fc0c5d9730e0ab2c192e5b4f161f3bc3a42a654929a2e77baac44c3eddad486f709cf909a1
+
+pkgname = libigl

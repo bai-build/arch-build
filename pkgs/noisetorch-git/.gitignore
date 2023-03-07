@@ -1,0 +1,5 @@
+*
+!.gitignore
+!noisetorch-git.install
+!.SRCINFO
+!PKGBUILD

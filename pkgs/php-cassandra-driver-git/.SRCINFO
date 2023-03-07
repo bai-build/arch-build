@@ -1,0 +1,17 @@
+pkgbase = php-cassandra-driver-git
+	pkgdesc = DataStax PHP Driver for Apache Cassandra - Git version
+	pkgver = 1.2.1.r2.gca6d5ac
+	pkgrel = 1
+	url = https://github.com/datastax/php-driver
+	arch = x86_64
+	arch = i686
+	license = Apache
+	depends = cassandra-cpp-driver>=2.4.2
+	depends = php
+	provides = php-cassandra-driver
+	conflicts = php-cassandra-driver
+	source = git+https://github.com/datastax/php-driver.git
+	md5sums = SKIP
+
+pkgname = php-cassandra-driver-git
+

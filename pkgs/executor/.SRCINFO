@@ -1,0 +1,21 @@
+pkgbase = executor
+	pkgdesc = Old-school Macintosh Emulator
+	pkgver = 2
+	pkgrel = 3
+	url = http://wiki.victor3d.com.br
+	arch = x86_64
+	license = GPL
+	makedepends = cmake
+	makedepends = sdl2
+	makedepends = boost
+	makedepends = git
+	makedepends = ruby
+	makedepends = bison
+	makedepends = perl
+	depends = qt5-base
+	depends = boost
+	source = https://github.com/victor3dptz/executor-packaging/raw/master/arch/executor.tar.gz
+	md5sums = 868697896b0c51c66d31440f3c59a3fc
+
+pkgname = executor
+

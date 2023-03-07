@@ -1,0 +1,21 @@
+pkgbase = notification-daemon-git
+	pkgdesc = Notification daemon for the desktop notifications framework
+	pkgver = 3.20.0.r1.g34af3da
+	pkgrel = 1
+	url = http://www.gnome.org/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	makedepends = autoconf-archive
+	makedepends = intltool
+	makedepends = python
+	depends = gtk3
+	depends = libcanberra
+	provides = notification-daemon
+	conflicts = notification-daemon
+	source = git://git.gnome.org/notification-daemon
+	sha256sums = SKIP
+
+pkgname = notification-daemon-git
+

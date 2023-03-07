@@ -1,0 +1,21 @@
+pkgbase = pstoedit-emf
+	pkgdesc = Translates PostScript and PDF graphics into other vector formats, with EMF support
+	pkgver = 3.78
+	pkgrel = 1
+	url = http://www.pstoedit.net/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = texlive-core
+	depends = libzip
+	depends = plotutils
+	depends = gd
+	depends = imagemagick
+	depends = libemf
+	provides = pstoedit=3.78
+	conflicts = pstoedit
+	options = !makeflags
+	source = pstoedit-emf-3.78.tar.gz::http://downloads.sourceforge.net/sourceforge/pstoedit/pstoedit-3.78.tar.gz
+	sha256sums = 8cc28e34bc7f88d913780f8074e813dd5aaa0ac2056a6b36d4bf004a0e90d801
+
+pkgname = pstoedit-emf

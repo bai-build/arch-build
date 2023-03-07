@@ -1,0 +1,59 @@
+pkgbase = linux-xps-9560
+	pkgver = 4.12.8
+	pkgrel = 2
+	url = https://www.kernel.org/
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = xmlto
+	makedepends = docbook-xsl
+	makedepends = kmod
+	makedepends = inetutils
+	makedepends = bc
+	makedepends = libelf
+	options = !strip
+	source = https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.12.tar.xz
+	source = https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.12.tar.sign
+	source = https://www.kernel.org/pub/linux/kernel/v4.x/patch-4.12.8.xz
+	source = https://www.kernel.org/pub/linux/kernel/v4.x/patch-4.12.8.sign
+	source = bonding-require-speed-duplex-only-for-802.3ad-alb-an.patch
+	source = bonding-ratelimit-failed-speed-duplex-update-warning.patch
+	source = mm-Revert-x86_64-and-arm64-ELF_ET_DYN_BASE-base.patch
+	source = config.i686
+	source = config.x86_64
+	source = .config
+	source = 90-linux.hook
+	source = linux.preset
+	source = patch-ath10k.patch
+	validpgpkeys = ABAF11C65A2970B130ABE3C479BE3E4300411886
+	validpgpkeys = 647F28654894E3BD457199BE38DBBDC86092693E
+	sha256sums = a45c3becd4d08ce411c14628a949d08e2433d8cdeca92036c7013980e93858ab
+	sha256sums = SKIP
+	sha256sums = 32b860911a3bafd5cd5bc813a427c90fad6eafdf607fa64e1b763b16ab605636
+	sha256sums = SKIP
+	sha256sums = 48e0505438bb4ccc7a0e050a896122b490e8f1b1446aa3833841a9d4d7853d68
+	sha256sums = fc606711a922638d5cc4358f47f69f554d9e6eab1cec91f0b49f00911f399722
+	sha256sums = b830ce777543c0edd20a77d70f204c095f2429bb37151cd4a8c9dfae2af8d51a
+	sha256sums = 99a4ddd0c4498bc89acb5c90a3edef6f7dd98f259e88a1ee0ca72dcf9b3a53e0
+	sha256sums = 25311369233dd9f3e9fe49605b8eb412476c148b5b29a8f92cd95f964cad4245
+	sha256sums = 25311369233dd9f3e9fe49605b8eb412476c148b5b29a8f92cd95f964cad4245
+	sha256sums = 834bd254b56ab71d73f59b3221f056c72f559553c04718e350ab2a3e2991afe0
+	sha256sums = bdcd6cbf19284b60fac6d6772f1e0ec2e2fe03ce7fe3d7d16844dd6d2b5711f3
+	sha256sums = 93c200f7cd0f7a860440d6b5190b84014534346ff0fd5582b4554a4854945f08
+
+pkgname = linux-xps-9560
+	pkgdesc = A custom linux kernel and modules for the Dell XPS 15 - 9560. Has ACPI override enabled and a wifi patch. Should be used with 'acpi_rev_override=1' in boot flags. WiFi bug: https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1692836
+	install = linux.install
+	depends = coreutils
+	depends = linux-firmware
+	depends = kmod
+	depends = mkinitcpio>=0.7
+	optdepends = crda: to set the correct wireless channels of your country
+	backup = etc/mkinitcpio.d/linux-xps-9560.preset
+
+pkgname = linux-xps-9560-headers
+	pkgdesc = Header files and scripts for building modules for Linux-xps-9560 kernel
+
+pkgname = linux-xps-9560-docs
+	pkgdesc = Kernel hackers manual - HTML documentation that comes with the Linux-xps-9560 kernel
+

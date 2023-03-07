@@ -1,0 +1,20 @@
+pkgbase = jackmidi2osc-git
+	pkgdesc = Github version of jackmidi2osc
+	pkgver = 0.2.r2.gedc653c
+	pkgrel = 3
+	url = https://github.com/x42/jackmidi2osc
+	arch = any
+	license = (L)GPL3
+	makedepends = make
+	makedepends = gcc
+	makedepends = perl
+	makedepends = git
+	depends = liblo
+	depends = jack
+	options = !buildflags
+	options = !makeflags
+	source = git://github.com/x42/jackmidi2osc
+	md5sums = SKIP
+
+pkgname = jackmidi2osc-git
+

@@ -1,0 +1,17 @@
+pkgbase = f3-git
+	pkgdesc = F3 - Fight Flash Fraud
+	pkgver = 7.1.r13.gfead723
+	pkgrel = 1
+	url = http://oss.digirati.com.br/f3/
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	depends = systemd-libs
+	depends = parted
+	provides = f3
+	conflicts = f3
+	source = git+https://github.com/AltraMayor/f3.git
+	sha512sums = SKIP
+
+pkgname = f3-git
+

@@ -1,0 +1,26 @@
+pkgbase = mumble-snapshot-minimal
+	pkgdesc = Mumble is an open source voice chat application similar to TeamSpeak. This release doesn't include Text2Speech, Overlay and several plugins.
+	pkgver = 1.3.0
+	pkgrel = 1
+	url = https://mumble.info
+	arch = i686
+	arch = x86_64
+	license = BSD
+	makedepends = boost
+	makedepends = qt5-tools
+	makedepends = python
+	makedepends = gcc
+	depends = qt5-base
+	depends = qt5-svg
+	depends = opus
+	depends = speex
+	depends = libpulse
+	depends = avahi
+	depends = protobuf
+	provides = mumble=1.3.0
+	conflicts = mumble
+	source = https://mumble.info/snapshot/mumble-1.3.0-rc1.tar.gz
+	sha512sums = e993b18b0ecf620d3a9a89f145c18b9ecde3aaf9b7217e235b7472908c81a365323c8683dd6fc9ed14b108160f8bf5244369c2a9ee57c22595550220d158516c
+
+pkgname = mumble-snapshot-minimal
+

@@ -1,0 +1,32 @@
+pkgbase = compton-no-blur-limit-git
+	pkgdesc = X Compositor (a fork of xcompmgr-dana) (git-version with no artificial limit on blur size)
+	pkgver = 0.1_beta2.87.g316eac0
+	pkgrel = 1
+	url = https://github.com/chjj/compton
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = git
+	makedepends = asciidoc
+	makedepends = mesa
+	depends = libgl
+	depends = libdbus
+	depends = libxcomposite
+	depends = libxdamage
+	depends = libxrandr
+	depends = pcre
+	depends = libconfig
+	depends = libxinerama
+	depends = hicolor-icon-theme
+	optdepends = dbus: To control compton via D-Bus
+	optdepends = xorg-xwininfo: For compton-trans
+	optdepends = xorg-xprop: For compton-trans
+	provides = compton
+	conflicts = compton
+	source = git+https://github.com/chjj/compton.git
+	source = no-blur-limit.patch
+	md5sums = SKIP
+	md5sums = 314bafdd671821cf2ed340b866e8004d
+
+pkgname = compton-no-blur-limit-git
+

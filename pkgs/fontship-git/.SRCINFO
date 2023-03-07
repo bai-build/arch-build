@@ -1,0 +1,47 @@
+pkgbase = fontship-git
+	pkgdesc = A font development toolkit and collaborative work flow
+	pkgver = 0.8.2.r0.g273527b
+	pkgrel = 1
+	url = https://github.com/theleagueof/fontship
+	arch = any
+	license = AGPL3
+	makedepends = autoconf-archive
+	makedepends = cargo
+	makedepends = rust
+	depends = diffutils
+	depends = entr
+	depends = font-v
+	depends = gftools
+	depends = git
+	depends = jq
+	depends = libarchive
+	depends = libgit2
+	depends = make
+	depends = psautohint
+	depends = python
+	depends = python-babelfont
+	depends = python-brotli
+	depends = python-cffsubr
+	depends = python-fontmake
+	depends = python-fonttools
+	depends = python-fs
+	depends = python-lxml
+	depends = python-pcpp
+	depends = python-skia-pathops
+	depends = python-ufo2ft>=2.19.1
+	depends = python-ufonormalizer
+	depends = python-unicodedata2
+	depends = python-vttlib
+	depends = python-zopfli
+	depends = sfd2ufo>=1.0.7
+	depends = sfdnormalize
+	depends = sfnt2woff-zopfli
+	depends = ttfautohint
+	depends = woff2
+	depends = zsh
+	provides = fontship
+	conflicts = fontship
+	source = git+https://github.com/theleagueof/fontship.git
+	sha256sums = SKIP
+
+pkgname = fontship-git

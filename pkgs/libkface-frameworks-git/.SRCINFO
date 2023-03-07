@@ -1,0 +1,22 @@
+pkgbase = libkface-frameworks-git
+	pkgdesc = A Qt/C++ wrapper around LibFace library to perform face recognition and detection over pictures. KF5 Frameworks branch. (GIT version)
+	pkgver = 5.0.0.r744.c8d04a4
+	pkgrel = 1
+	url = http://www.digikam.org/sharedlibs
+	arch = i686
+	arch = x86_64
+	license = GPL
+	license = LGPL
+	license = FDL
+	makedepends = extra-cmake-modules
+	makedepends = kdoctools
+	makedepends = git
+	makedepends = python
+	depends = opencv
+	depends = qt5-base
+	conflicts = libkface
+	source = git://anongit.kde.org/libkface#branch=frameworks
+	sha1sums = SKIP
+
+pkgname = libkface-frameworks-git
+

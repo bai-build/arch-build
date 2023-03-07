@@ -1,0 +1,42 @@
+pkgbase = linux-nvme
+	pkgver = 4.10.14
+	pkgrel = 1
+	url = http://www.kernel.org/
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = xmlto
+	makedepends = docbook-xsl
+	makedepends = kmod
+	makedepends = inetutils
+	makedepends = bc
+	makedepends = elfutils
+	options = !strip
+	source = https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.10.tar.xz
+	source = config
+	source = config.x86_64
+	source = linux.preset
+	source = APST.patch
+	validpgpkeys = ABAF11C65A2970B130ABE3C479BE3E4300411886
+	validpgpkeys = 647F28654894E3BD457199BE38DBBDC86092693E
+	sha256sums = 029098dcffab74875e086ae970e3828456838da6e0ba22ce3f64ef764f3d7f1a
+	sha256sums = f0e2f7f738e1a639956e01ba7ef8d3df40ecb5c7586eb366bcd4af70049a7a3c
+	sha256sums = 749b19cac625284ba6abae2d3932465b64d41d0274a3c070ca2c556779bb2078
+	sha256sums = 7d2bb66458b57d4df497ebb15a4ac130d08a0c084ae7845d0fe791a194efdb8e
+	sha256sums = 8ba7d5596b65c7705958836ab93ac714dbccdcd7e806be49f667ed427eff3e83
+pkgname = linux-nvme
+	pkgdesc = The Linux kernel with patches made by Andy Lutomirski 
+	install = linux.install
+	depends = coreutils
+	depends = linux-firmware
+	depends = kmod
+	depends = mkinitcpio>=0.7
+	optdepends = crda: to set the correct wireless channels of your country
+	backup = etc/mkinitcpio.d/linux-nvme.preset
+
+pkgname = linux-nvme-headers
+	pkgdesc = Header files and scripts for building modules for Linux-nvme kernel
+
+pkgname = linux-nvme-docs
+	pkgdesc = Kernel hackers manual - HTML documentation that comes with the Linux-nvme kernel
+

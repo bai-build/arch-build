@@ -1,0 +1,21 @@
+diff -ru parprouted-0.7.orig/parprouted.c parprouted-0.7/parprouted.c
+--- parprouted-0.7.orig/parprouted.c	2008-01-27 19:30:25.000000000 -0430
++++ parprouted-0.7/parprouted.c	2010-12-31 02:39:35.020000005 -0430
+@@ -106,7 +106,7 @@
+     int success = 1;
+     
+     if (snprintf(routecmd_str, ROUTE_CMD_LEN-1, 
+-	    "/sbin/ip route del %s/32 metric 50 dev %s scope link",
++	    "/usr/bin/ip route del %s/32 metric 50 dev %s scope link",
+ 	    inet_ntoa(cur_entry->ipaddr_ia), cur_entry->ifname) > ROUTE_CMD_LEN-1) 
+     {
+ 	syslog(LOG_INFO, "ip route command too large to fit in buffer!");
+@@ -136,7 +136,7 @@
+     int success = 1;
+ 
+     if (snprintf(routecmd_str, ROUTE_CMD_LEN-1, 
+-	    "/sbin/ip route add %s/32 metric 50 dev %s scope link",
++	    "/usr/bin/ip route add %s/32 metric 50 dev %s scope link",
+ 	    inet_ntoa(cur_entry->ipaddr_ia), cur_entry->ifname) > ROUTE_CMD_LEN-1) 
+     {
+ 	syslog(LOG_INFO, "ip route command too large to fit in buffer!");

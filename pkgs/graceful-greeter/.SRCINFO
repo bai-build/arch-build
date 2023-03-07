@@ -1,0 +1,22 @@
+pkgbase = graceful-greeter
+	pkgdesc = A beautiful lightDM login interface
+	pkgver = 2.0.1
+	pkgrel = 1
+	url = https://github.com/graceful-linux/graceful-greeter
+	arch = x86_64
+	groups = graceful-linux
+	license = MIT
+	makedepends = qt5-tools
+	makedepends = openmpi
+	makedepends = cmake
+	depends = imlib2
+	depends = lightdm
+	depends = libxrandr
+	depends = libxtst
+	depends = opencv
+	depends = qt5-svg
+	depends = qt5-x11extras
+	source = https://github.com/graceful-linux/graceful-greeter/archive/refs/tags/2.0.1.tar.gz
+	sha512sums = 5eca42a2ae551ffba3e9c2005ec977e31a55fdc215da51ec1947cc83e45ef16642c841452bdc844612a7d1eacaecd1aa367feff22f9cc64c62c3bb4194efd1fd
+
+pkgname = graceful-greeter

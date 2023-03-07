@@ -1,0 +1,22 @@
+pkgbase = sugar-runner
+	pkgdesc = Set of scripts to run sugar
+	pkgver = 0.110.0
+	pkgrel = 1
+	url = http://www.sugarlabs.org/
+	arch = any
+	groups = sugar-desktop
+	groups = glucose
+	license = GPL
+	makedepends = intltool>=0.33
+	makedepends = gcc
+	makedepends = perl>=5.8.1
+	depends = python2
+	depends = sugar-datastore>=0.110.0
+	depends = sugar-presence-service
+	depends = sugar>=0.110.0
+	depends = xorg-xinit
+	source = https://github.com/sugarlabs/sugar-runner/archive/v0.110.0.tar.gz
+	md5sums = 78cf26eea2f1ff97886cd9259543426f
+
+pkgname = sugar-runner
+

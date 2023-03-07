@@ -1,0 +1,31 @@
+pkgbase = juce
+	pkgdesc = Cross-platform C++ framework, including the Projucer C++ editor
+	pkgver = 5.4.4
+	pkgrel = 1
+	url = https://www.juce.com/
+	arch = i686
+	arch = x86_64
+	license = custom
+	makedepends = freeglut
+	makedepends = curl
+	makedepends = jack
+	makedepends = libxcomposite
+	makedepends = libxrandr
+	makedepends = libxcursor
+	makedepends = libx11
+	makedepends = libxinerama
+	makedepends = mesa
+	makedepends = gtk3
+	depends = hicolor-icon-theme
+	depends = webkit2gtk
+	depends = zenity
+	optdepends = java-environment: for graddle
+	source = https://github.com/WeAreROLI/JUCE/archive/5.4.4.tar.gz
+	source = Projucer.desktop
+	source = Projucer.png
+	sha256sums = 40536c5792002ceec09faea8d5a57d5c17486f8805c5efe3bc734e27d2df2202
+	sha256sums = f57572e3ff616fc349da7f6b581f09becbe469b8111ff7a83ce854be363d5de4
+	sha256sums = f9ec15bbcb51b24a798f7d56680190e21829b9f6ff101f756beaccf95fbdad86
+
+pkgname = juce
+

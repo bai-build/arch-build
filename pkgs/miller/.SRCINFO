@@ -1,0 +1,22 @@
+pkgbase = miller
+	pkgdesc = sed, awk, cut, join, and sort for name-indexed data such as CSV and tabular JSON.
+	pkgver = 5.10.2
+	pkgrel = 1
+	url = https://github.com/johnkerl/miller
+	arch = x86_64
+	arch = i686
+	license = MIT
+	makedepends = make
+	makedepends = gcc
+	makedepends = flex
+	makedepends = ctags
+	makedepends = valgrind
+	makedepends = asciidoc
+	makedepends = autoconf
+	depends = glibc
+	source = https://github.com/johnkerl/miller/releases/download/v5.10.2/mlr-5.10.2.tar.gz
+	md5sums = 754c6d69ef4bfaa6c16257a2d8301f09
+	sha256sums = 4f41ff06c1fbf524127574663873ba83bb3f4e3eb31e29faf5c2ef3fc6595cb4
+
+pkgname = miller
+

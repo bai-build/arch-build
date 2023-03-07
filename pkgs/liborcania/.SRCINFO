@@ -1,0 +1,15 @@
+pkgbase = liborcania
+	pkgdesc = Potluck with different functions for different purposes that can be shared among C programs
+	pkgver = 2.1.1
+	pkgrel = 1
+	url = https://github.com/babelouest/orcania
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	makedepends = cmake
+	depends = jansson
+	source = orcania-2.1.1.tar.gz::https://github.com/babelouest/orcania/archive/v2.1.1.tar.gz
+	sha256sums = 960074f6aa198e9db5440347d20cff8be3b82ee1c15ac7b23c0ac54a301a85cd
+
+pkgname = liborcania
+

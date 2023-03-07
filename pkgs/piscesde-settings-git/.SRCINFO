@@ -1,0 +1,26 @@
+pkgbase = piscesde-settings-git
+	pkgdesc = System Settings application for piscesDE
+	pkgver = 0.9
+	pkgrel = 1
+	url = https://github.com/piscesys/settings
+	arch = x86_64
+	groups = piscesde-git
+	license = GPL
+	makedepends = extra-cmake-modules
+	makedepends = ninja
+	makedepends = qt5-tools
+	makedepends = git
+	depends = piscesde-fishui-git
+	depends = fontconfig
+	depends = freetype2
+	depends = icu
+	depends = kcoreaddons
+	depends = libpiscesde-git
+	depends = modemmanager-qt
+	depends = networkmanager-qt
+	provides = piscesde-settings
+	conflicts = piscesde-settings
+	source = git+https://github.com/piscesys/settings.git
+	sha512sums = SKIP
+
+pkgname = piscesde-settings-git

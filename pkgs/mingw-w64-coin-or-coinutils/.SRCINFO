@@ -1,0 +1,20 @@
+pkgbase = mingw-w64-coin-or-coinutils
+	pkgdesc = COIN-OR collection of utility classes (mingw-w64)
+	pkgver = 2.11.6
+	pkgrel = 1
+	url = https://projects.coin-or.org/CoinUtils
+	arch = any
+	groups = mingw-w64-coin-or
+	license = EPL
+	makedepends = mingw-w64-configure
+	depends = mingw-w64-zlib
+	depends = mingw-w64-bzip2
+	depends = mingw-w64-glpk
+	depends = mingw-w64-lapack
+	options = !buildflags
+	options = !strip
+	options = staticlibs
+	source = https://github.com/coin-or/CoinUtils/archive/refs/tags/releases/2.11.6.tar.gz
+	sha256sums = 6ea31d5214f7eb27fa3ffb2bdad7ec96499dd2aaaeb4a7d0abd90ef852fc79ca
+
+pkgname = mingw-w64-coin-or-coinutils

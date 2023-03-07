@@ -1,0 +1,39 @@
+pkgbase = compton-git
+	pkgdesc = X Compositor (a fork of xcompmgr-dana) (git-version)
+	pkgver = 1151_Next.23.g6ac5062_2019.07.27
+	pkgrel = 1
+	epoch = 2
+	url = https://github.com/yshui/compton
+	arch = i686
+	arch = x86_64
+	license = MIT
+	license = MPL2
+	makedepends = git
+	makedepends = mesa
+	makedepends = meson
+	makedepends = asciidoc
+	makedepends = uthash
+	depends = libgl
+	depends = libev
+	depends = pcre
+	depends = libx11
+	depends = xcb-util-renderutil
+	depends = libxcb
+	depends = xcb-util-image
+	depends = libxext
+	depends = pixman
+	depends = libconfig
+	depends = libdbus
+	depends = hicolor-icon-theme
+	depends = libxdg-basedir
+	optdepends = dbus: To control compton via D-Bus
+	optdepends = xorg-xwininfo: For compton-trans
+	optdepends = xorg-xprop: For compton-trans
+	optdepends = python: For compton-convgen.py
+	provides = compton
+	conflicts = compton
+	source = git+https://github.com/yshui/compton.git#branch=next
+	md5sums = SKIP
+
+pkgname = compton-git
+

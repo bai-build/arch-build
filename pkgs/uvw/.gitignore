@@ -1,0 +1,6 @@
+pkg/
+src/
+uvw/
+
+*.tar.gz
+*.tar.zst

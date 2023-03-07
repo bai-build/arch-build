@@ -1,0 +1,26 @@
+pkgbase = panda-statusbar-git
+	pkgdesc = statusbar for PandaOS
+	pkgver = 1.1
+	pkgrel = 1
+	url = https://github.com/pandaos/panda-statusbar
+	arch = x86_64
+	license = GPL3
+	makedepends = extra-cmake-modules
+	makedepends = qt5-tools
+	makedepends = qt5-base
+	makedepends = libxcomposite
+	makedepends = libxcb
+	makedepends = libxrender
+	makedepends = kdbusaddons
+	makedepends = libdbusmenu-qt5
+	makedepends = libxdamage
+	makedepends = libxtst
+	makedepends = solid
+	depends = kwindowsystem
+	depends = qt5-x11extras
+	depends = qt5-svg
+	source = panda-statusbar-git-d3a3e546d0adc3b743c0c4bd74d18f5ecdf5c5ee.tar.gz::https://github.com/pandaos/panda-statusbar/archive/d3a3e546d0adc3b743c0c4bd74d18f5ecdf5c5ee.tar.gz
+	sha512sums = 35c6e97a618834c99e6297be8db57a277355e3d8d5a86dd92eed5c5991009885544ab4f9408029bd36d5ab0fd686104229b88107d02fcc03f50e1980f74826ba
+
+pkgname = panda-statusbar-git
+

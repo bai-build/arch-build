@@ -1,0 +1,75 @@
+pkgbase = claws-mail-gtk2-protectedheaders-nonm-git
+	pkgdesc = A GTK+ based e-mail client. With patch to show 'protected headers' (currently only IETF draft, not enigmail flavour), without network manager dependency. Latest git checkout.
+	pkgver = 3.18.0.303+r11455.20211110.8c0ef328f
+	pkgrel = 4
+	epoch = 0
+	url = http://thewildbeast.co.uk/claws-mail/bugzilla/show_bug.cgi?id=4426
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = python
+	makedepends = git
+	makedepends = bogofilter
+	makedepends = spamassassin
+	makedepends = dillo
+	makedepends = gumbo-parser
+	makedepends = libcanberra
+	makedepends = libgdata
+	makedepends = libical
+	makedepends = libnotify
+	makedepends = libytnef
+	makedepends = poppler-glib
+	makedepends = pygtk
+	makedepends = docbook-utils
+	makedepends = texlive-core
+	makedepends = texlive-formatsextra
+	depends = compface
+	depends = dbus-glib
+	depends = desktop-file-utils
+	depends = enchant
+	depends = gnutls
+	depends = gpgme
+	depends = gtk2
+	depends = hicolor-icon-theme
+	depends = libetpan
+	depends = libsm
+	depends = startup-notification
+	optdepends = bogofilter: Adds support for spamfiltering.
+	optdepends = clawsker: GUI to configure advanced claws-mail settings.
+	optdepends = curl: For vcalendar, rssyl and spamreport plugins.
+	optdepends = dbus: For notification plugin.
+	optdepends = dillo: For dillo html viewer plugin.
+	optdepends = ghostscript: For pdf viewer plugin.
+	optdepends = gumbo-parser: For litehtml_viewer plugin.
+	optdepends = libarchive: For archive plugin and various other plugins.
+	optdepends = libcanberra: For notification plugin.
+	optdepends = libgdata: For gdata plugin.
+	optdepends = libical: For iCalendar plugin.
+	optdepends = libnotify: For notification plugin.
+	optdepends = libxml2: For rssyl plugins.
+	optdepends = libytnef: For tnef_parse plugin.
+	optdepends = perl: Needed for some tools and perl plugin.
+	optdepends = poppler-glib: For PDF viewer plugin.
+	optdepends = python: For some tools/ plugins.
+	optdepends = python2: For Python plugin.
+	optdepends = spamassassin: Adds support for spamfiltering.
+	provides = claws=3.18.0.303+r11455.20211110.8c0ef328f
+	provides = claws-mail=3.18.0.303+r11455.20211110.8c0ef328f
+	provides = claws-mail-git=3.18.0.303+r11455.20211110.8c0ef328f
+	provides = claws-mail-gtk2=3.18.0.303+r11455.20211110.8c0ef328f
+	provides = claws-mail-nonm=3.18.0.303+r11455.20211110.8c0ef328f
+	provides = claws-mail-protectedheaders=3.18.0.303+r11455.20211110.8c0ef328f
+	provides = claws-mail-gtk2-protectedheaders-nonm=3.18.0.303+r11455.20211110.8c0ef328f
+	provides = claws-mail-plugins=3.18.0.303+r11455.20211110.8c0ef328f
+	provides = claws-mail-extra-plugins=3.18.0.303+r11455.20211110.8c0ef328f
+	conflicts = claws-mail
+	conflicts = claws-mail-plugins
+	conflicts = claws-mail-extra-plugins
+	replaces = claws-mail-plugins
+	replaces = claws-mail-extra-plugins
+	replaces = sylpheed-claws
+	options = emptydirs
+	source = claws-mail::git+https://github.com/ahngoo8Gongi/claws-mail.git#branch=protected-headers-21
+	sha256sums = SKIP
+
+pkgname = claws-mail-gtk2-protectedheaders-nonm-git

@@ -1,0 +1,19 @@
+pkgbase = libretro-vice-git
+	pkgdesc = A port of the Commodore 8bit Emulator to libretro (WIP)
+	pkgver = 20942.81e9837fe
+	pkgrel = 1
+	url = https://github.com/libretro/vice-libretro
+	arch = i686
+	arch = x86_64
+	arch = arm
+	arch = armv6h
+	arch = armv7h
+	groups = libretro
+	license = GPL3
+	makedepends = git
+	depends = zlib
+	depends = libretro-core-info
+	source = git+https://github.com/libretro/vice-libretro.git
+	sha256sums = SKIP
+
+pkgname = libretro-vice-git

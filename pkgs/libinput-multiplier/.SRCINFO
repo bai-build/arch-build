@@ -1,0 +1,26 @@
+pkgbase = libinput-multiplier
+	pkgdesc = libinput with scroll multiplier patch
+	pkgver = 1.22.0
+	pkgrel = 2
+	url = http://freedesktop.org/wiki/Software/libinput
+	arch = x86_64
+	license = custom
+	makedepends = gtk4
+	makedepends = meson
+	makedepends = wayland-protocols
+	makedepends = check
+	depends = mtdev
+	depends = systemd
+	depends = libevdev
+	depends = libwacom
+	optdepends = gtk4: libinput debug-gui
+	optdepends = python-pyudev: libinput measure
+	optdepends = python-libevdev: libinput measure
+	provides = libinput=1.22.0
+	conflicts = libinput
+	source = https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.22.0/libinput-1.22.0.tar.bz2
+	source = multiplier.patch
+	sha512sums = SKIP
+	sha512sums = c6a2793e592c69829e542c91aafc2de42c0eddec1f2570a465590584164a64d3828507f2f1194ec48f0f5d85aa624054c101287e981b2a82a3a43d85b426aa94
+
+pkgname = libinput-multiplier

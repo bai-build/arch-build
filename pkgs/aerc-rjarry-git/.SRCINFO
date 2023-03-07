@@ -1,0 +1,19 @@
+pkgbase = aerc-rjarry-git
+	pkgdesc = Email Client for your Terminal (new fork maintained by ~rjarry)
+	pkgver = 0.6.0.r8.gf776fb8
+	pkgrel = 1
+	url = https://git.sr.ht/~rjarry/aerc
+	arch = x86_64
+	license = MIT
+	makedepends = git
+	makedepends = go
+	makedepends = scdoc
+	depends = w3m
+	depends = dante
+	depends = notmuch
+	provides = aerc
+	conflicts = aerc
+	source = aerc::git+https://git.sr.ht/~rjarry/aerc
+	sha512sums = SKIP
+
+pkgname = aerc-rjarry-git

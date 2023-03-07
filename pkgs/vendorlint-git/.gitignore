@@ -1,0 +1,5 @@
+src
+pkg
+vendorlint-git
+*.pkg.tar.*
+tags

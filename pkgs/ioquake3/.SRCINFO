@@ -1,0 +1,35 @@
+pkgbase = ioquake3
+	pkgdesc = The de-facto OSS Quake 3 distribution. You need the retail/demo .pk3 files to play.
+	pkgver = 1.36
+	pkgrel = 2
+	url = http://ioquake3.org/
+	install = quake3.install
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = nasm
+	depends = sdl
+	depends = openal
+	provides = quake3
+	conflicts = quake3
+	conflicts = quake3-icculus-svn
+	conflicts = quake3-svn
+	conflicts = ioquake3-svn
+	replaces = quake3
+	source = quake3.desktop
+	source = quake3.launcher
+	source = quake3ded.launcher
+	source = http://www.ioquake3.org/files/1.36/ioquake3-1.36.tar.bz2
+	source = http://ftp.gwdg.de/pub/misc/ftp.idsoftware.com/idstuff/quake3/linux/linuxq3apoint-1.32b-3.x86.run
+	source = botlib.patch::http://bugzilla-attachments.icculus.org/attachment.cgi?id=2196
+	source = warnings.patch
+	sha256sums = 12dbd31e9de1493642d120bfd1548dfc4935e47fec806003cfc04b9d84b85673
+	sha256sums = 7f0806379b10a6cff248b647aeb67d89a8e954e51e7a633cfadeca9865d125e7
+	sha256sums = 7f0806379b10a6cff248b647aeb67d89a8e954e51e7a633cfadeca9865d125e7
+	sha256sums = 79b10b92e9e586748a67089ac871646fe8144004d3ab4a55158348bc38d74821
+	sha256sums = c36132c5556b35e01950f1e9c646235033a5130f87ad776ba2bc7becf4f4f186
+	sha256sums = d4bef896dc9fc7e8b8c94dcb744f88c03f76f5025deacce50de2cf7945fa71d3
+	sha256sums = ecdac6d433d4a9400eb3c5549de10ec76e23b9d4a26e580524f5e3d6d1cc5181
+
+pkgname = ioquake3
+

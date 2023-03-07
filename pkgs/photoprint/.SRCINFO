@@ -1,0 +1,24 @@
+pkgbase = photoprint
+	pkgdesc = A gtk-utility designed to assist printing of digital photographs with PDF-preview, adjustable page size, multiple images per page and optional border styles.
+	pkgver = 0.4.2rc2
+	pkgrel = 8
+	url = http://www.blackfiveimaging.co.uk/index.php?article=02Software%2F01PhotoPrint
+	install = photoprint.install
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = gutenprint
+	makedepends = cups
+	depends = gtk2
+	depends = gutenprint
+	depends = lcms
+	depends = netpbm
+	depends = libjpeg
+	depends = libtiff
+	depends = hicolor-icon-theme
+	depends = desktop-file-utils
+	source = http://www.blackfiveimaging.co.uk/photoprint/photoprint-0.4.2-pre2.tar.gz
+	md5sums = fbd33857d37081846df43cb52a9db3a8
+
+pkgname = photoprint
+

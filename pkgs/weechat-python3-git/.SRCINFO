@@ -1,0 +1,23 @@
+pkgbase = weechat-python3-git
+	pkgdesc = Weechat compiled with Python3 instead of Python2, experimental
+	pkgver = 2.5.rc1.1.g403555d1b
+	pkgrel = 1
+	url = https://github.com/weechat/weechat
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	makedepends = cmake
+	makedepends = perl
+	makedepends = python3
+	depends = gnutls
+	depends = curl
+	depends = libgcrypt
+	optdepends = perl
+	optdepends = python3
+	conflicts = weechat
+	source = git+https://github.com/weechat/weechat
+	sha512sums = SKIP
+
+pkgname = weechat-python3-git
+

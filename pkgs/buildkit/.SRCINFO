@@ -1,0 +1,21 @@
+pkgbase = buildkit
+	pkgdesc = A toolkit for converting source code to build artifacts in an efficient, expressive and repeatable manner.
+	pkgver = 0.7.0
+	pkgrel = 1
+	url = https://github.com/moby/buildkit
+	arch = i686
+	arch = x86_64
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	license = Apache
+	makedepends = make
+	depends = runc
+	depends = containerd
+	provides = buildkit
+	conflicts = buildkit
+	source = buildkit-0.7.0.tar.gz::https://github.com/moby/buildkit/archive/v0.7.0.tar.gz
+	sha512sums = b902e17f08b5ae48bbed07899ea350d77f346a7a45fdb0a48f6e374168fb2112742625fd6b719acccdf8736833ff1815797fb220ae2e38b82ddd210ed69da176
+
+pkgname = buildkit
+

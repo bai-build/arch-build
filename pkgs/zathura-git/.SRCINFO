@@ -1,0 +1,29 @@
+pkgbase = zathura-git
+	pkgdesc = Minimalistic document viewer
+	pkgver = 0.5.2.r24.g81e541e
+	pkgrel = 1
+	url = https://pwmt.org/projects/zathura
+	arch = x86_64
+	license = custom
+	makedepends = git
+	makedepends = python-sphinx
+	makedepends = meson
+	makedepends = ninja
+	makedepends = texlive-bin
+	makedepends = check
+	makedepends = appstream-glib
+	depends = file
+	depends = girara
+	depends = libsynctex
+	depends = sqlite
+	optdepends = zathura-djvu-git: DjVu support
+	optdepends = zathura-pdf-poppler-git: PDF support using Poppler
+	optdepends = zathura-pdf-mupdf-git: PDF support using MuPDF
+	optdepends = zathura-ps-git: PostSctipt support
+	optdepends = zathura-cb-git: Comic book support
+	provides = zathura
+	conflicts = zathura
+	source = zathura-git::git+https://git.pwmt.org/pwmt/zathura.git#branch=develop
+	md5sums = SKIP
+
+pkgname = zathura-git

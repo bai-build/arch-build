@@ -1,0 +1,25 @@
+pkgbase = transmission-remote-gtk-git
+	pkgdesc = A remote interface to the Transmission BitTorrent client
+	pkgver = 1.4.2.r66.ge44d953
+	pkgrel = 1
+	url = https://github.com/transmission-remote-gtk/transmission-remote-gtk
+	arch = i686
+	arch = x86_64
+	arch = armv6h
+	license = GPL
+	makedepends = git
+	makedepends = appstream-glib
+	makedepends = meson
+	makedepends = desktop-file-utils
+	makedepends = perl
+	depends = gtk3
+	depends = curl
+	depends = libproxy
+	depends = geoip
+	provides = transmission-remote-gtk
+	conflicts = transmission-remote-gtk
+	options = !libtool
+	source = git+https://github.com/transmission-remote-gtk/transmission-remote-gtk.git
+	sha512sums = SKIP
+
+pkgname = transmission-remote-gtk-git

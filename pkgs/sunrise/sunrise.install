@@ -1,0 +1,6 @@
+units=('sunrise.service')
+
+post_install() {
+  /bin/systemctl enable "${units[@]}"
+  /bin/systemctl start "${units[@]}"
+}

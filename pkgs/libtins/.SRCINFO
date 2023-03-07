@@ -1,0 +1,18 @@
+pkgbase = libtins
+	pkgdesc = A high-level, multiplatform C++ network packet sniffing and crafting library
+	pkgver = 4.4
+	pkgrel = 1
+	url = http://libtins.github.io/
+	arch = i686
+	arch = x86_64
+	license = BSD
+	makedepends = cmake
+	depends = libpcap
+	depends = openssl
+	depends = boost
+	options = !libtool
+	source = https://github.com/mfontanini/libtins/archive/v4.4.tar.gz
+	sha256sums = ff0121b4ec070407e29720c801b7e1a972042300d37560a62c57abadc9635634
+
+pkgname = libtins
+

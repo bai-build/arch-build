@@ -1,0 +1,13 @@
+diff --git a/src/gst-plugins/webrtcendpoint/kmswebrtcendpoint.c b/src/gst-plugins/webrtcendpoint/kmswebrtcendpoint.c
+index 1884d40..0ef1038 100644
+--- a/src/gst-plugins/webrtcendpoint/kmswebrtcendpoint.c
++++ b/src/gst-plugins/webrtcendpoint/kmswebrtcendpoint.c
+@@ -904,7 +904,7 @@ kms_webrtc_endpoint_plugin_init (GstPlugin * plugin)
+ 
+ GST_PLUGIN_DEFINE (GST_VERSION_MAJOR,
+     GST_VERSION_MINOR,
+-    kmswebrtcendpoint,
++    webrtcendpoint,
+     "Kurento webrtc endpoint",
+     kms_webrtc_endpoint_plugin_init, VERSION, GST_LICENSE_UNKNOWN,
+     "Kurento Elements", "http://kurento.com/")

@@ -1,0 +1,5 @@
+stone-phaser-Makefile.base.mk
+pkg/
+src/
+*.tar.*
+*.zip

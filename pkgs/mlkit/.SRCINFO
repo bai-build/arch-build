@@ -1,0 +1,13 @@
+pkgbase = mlkit
+	pkgdesc = Standard ML Compiler and Toolkit
+	pkgver = 4.7.2
+	pkgrel = 1
+	url = http://www.elsman.com/mlkit/
+	arch = x86_64
+	license = GPL2
+	makedepends = mlton>=20170725
+	depends = gmp
+	source = https://github.com/melsman/mlkit/archive/refs/tags/v4.7.2.tar.gz
+	md5sums = e066ea26aac38a75ff70e390be1346b8
+
+pkgname = mlkit

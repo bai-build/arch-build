@@ -1,0 +1,20 @@
+pkgbase = pstoedit-nomagick
+	pkgdesc = Translates PS/PDF graphics to other vector formats (no ImageMagick dependency)
+	pkgver = 3.78
+	pkgrel = 1
+	url = http://www.pstoedit.net/
+	arch = x86_64
+	license = GPL
+	depends = gd
+	depends = ghostscript
+	depends = ming
+	depends = libemf
+	depends = libzip
+	depends = plotutils
+	depends = zlib
+	provides = pstoedit
+	conflicts = pstoedit
+	source = https://sourceforge.net/projects/pstoedit/files/pstoedit/3.78/pstoedit-3.78.tar.gz
+	sha256sums = 8cc28e34bc7f88d913780f8074e813dd5aaa0ac2056a6b36d4bf004a0e90d801
+
+pkgname = pstoedit-nomagick

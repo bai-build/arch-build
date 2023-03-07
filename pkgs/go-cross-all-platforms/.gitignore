@@ -1,0 +1,5 @@
+*
+!.gitignore
+!go-cross-all-platforms.install
+!PKGBUILD
+!.SRCINFO

@@ -1,0 +1,18 @@
+pkgbase = ghostpdl
+	pkgdesc = Ghostscript RIP for PS, PDF, PCL-5, PCL-XL, SVG and XPS.
+	pkgver = 10.0.0
+	pkgrel = 1
+	url = https://www.ghostscript.com
+	arch = i686
+	arch = x86_64
+	license = AGPL
+	depends = ghostscript
+	depends = glu
+	depends = freeglut
+	depends = libjpeg
+	depends = libxt
+	source = https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs1000/ghostpdl-10.0.0.tar.xz
+	md5sums = 745160b588456443c0dfc16478c5ec69
+	sha256sums = 8f2b7941f60df694b4f5c029b739007f7c4e0d43858471ae481e319a967d5d8b
+
+pkgname = ghostpdl

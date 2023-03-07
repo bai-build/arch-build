@@ -1,0 +1,21 @@
+pkgbase = kwrited-git
+	pkgdesc = KDE daemon listening for wall and write messages
+	pkgver = 5.22.80_r478.gb687e84
+	pkgrel = 1
+	url = https://kde.org/plasma-desktop/
+	arch = x86_64
+	groups = plasma-git
+	license = LGPL
+	makedepends = git
+	makedepends = extra-cmake-modules-git
+	makedepends = kdoctools-git
+	depends = kpty-git
+	depends = knotifications-git
+	depends = kdbusaddons-git
+	provides = kwrited
+	conflicts = kwrited
+	source = git+https://github.com/KDE/kwrited.git
+	sha256sums = SKIP
+
+pkgname = kwrited-git
+

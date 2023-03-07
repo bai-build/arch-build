@@ -1,0 +1,53 @@
+From 76bbbf8486d73bb830c5c513eefc3ba0d0656481 Mon Sep 17 00:00:00 2001
+From: Felipe Contreras <felipe.contreras@gmail.com>
+Date: Sun, 23 Jan 2022 23:36:44 -0600
+Subject: [PATCH] Fix exit regression
+
+Any time you start a job in the background vte gets confused and waits
+several seconds for nothing to happen before exiting.
+
+This regression was thanks to commit 7888602c
+(lib: Rework child exit and EOF handling, 2019-11-17).
+
+It can be triggered by simply doing:
+
+  sleep infinity &
+  exit
+
+The maintainers of vte clearly have no intention fixing the issue that
+was reported more than three years ago.
+
+  https://gitlab.gnome.org/GNOME/vte/-/issues/204
+
+We need to send the CHILD_EXITED signal regardless of whether or not
+there's a pending EOS.
+
+Signed-off-by: Felipe Contreras <felipe.contreras@gmail.com>
+---
+ src/vte.cc | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+diff --git a/src/vte.cc b/src/vte.cc
+index 7cc26c48..80f26454 100644
+--- a/src/vte.cc
++++ b/src/vte.cc
+@@ -10273,7 +10273,6 @@ Terminal::emit_pending_signals()
+                 m_bell_pending = false;
+         }
+ 
+-        auto const eos = m_eos_pending;
+         if (m_eos_pending) {
+                 queue_eof();
+                 m_eos_pending = false;
+@@ -10281,7 +10280,7 @@ Terminal::emit_pending_signals()
+                 unset_pty();
+         }
+ 
+-        if (m_child_exited_after_eos_pending && eos) {
++        if (m_child_exited_after_eos_pending) {
+                 /* The signal handler could destroy the terminal, so send the signal on idle */
+                 queue_child_exited();
+                 m_child_exited_after_eos_pending = false;
+-- 
+2.39.2
+

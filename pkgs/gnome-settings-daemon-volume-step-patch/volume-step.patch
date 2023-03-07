@@ -1,0 +1,79 @@
+diff -Naur old/data/org.gnome.settings-daemon.plugins.gschema.xml.in.in new/data/org.gnome.settings-daemon.plugins.gschema.xml.in.in
+--- old/data/org.gnome.settings-daemon.plugins.gschema.xml.in.in	2017-04-25 22:27:31.773381096 +0200
++++ new/data/org.gnome.settings-daemon.plugins.gschema.xml.in.in	2017-04-25 22:27:55.780117516 +0200
+@@ -14,5 +14,14 @@
+     <child name="power" schema="org.gnome.settings-daemon.plugins.power"/>
+     <child name="xrandr" schema="org.gnome.settings-daemon.plugins.xrandr"/>
+     <child name="xsettings" schema="org.gnome.settings-daemon.plugins.xsettings"/>
++    <child name="sound" schema="org.gnome.settings-daemon.plugins.sound"/>
++  </schema>
++  <schema gettext-domain="@GETTEXT_PACKAGE@" id="org.gnome.settings-daemon.plugins.sound" path="/org/gnome/settings-daemon/plugins/sound/">
++    <key name="volume-step" type="i">
++      <default>6</default>
++      <range min="1" max="20"/>
++      <_summary>Size of volume step</_summary>
++      <_description>Size of the volume step for each consecutive press of the volume up or volume down key</_description>
++    </key>
+   </schema>
+ </schemalist>
+diff -Naur old/plugins/media-keys/gsd-media-keys-manager.c new/plugins/media-keys/gsd-media-keys-manager.c
+--- old/plugins/media-keys/gsd-media-keys-manager.c	2017-04-25 22:27:31.780047784 +0200
++++ new/plugins/media-keys/gsd-media-keys-manager.c	2017-04-25 22:27:55.783450858 +0200
+@@ -104,11 +104,12 @@
+ #define SETTINGS_INTERFACE_DIR "org.gnome.desktop.interface"
+ #define SETTINGS_POWER_DIR "org.gnome.settings-daemon.plugins.power"
+ #define SETTINGS_XSETTINGS_DIR "org.gnome.settings-daemon.plugins.xsettings"
++#define SETTINGS_SOUND_DIR "org.gnome.settings-daemon.plugins.sound"
+ #define SETTINGS_TOUCHPAD_DIR "org.gnome.desktop.peripherals.touchpad"
+ #define TOUCHPAD_ENABLED_KEY "send-events"
++#define VOLUME_STEP_KEY "volume-step"
+ #define HIGH_CONTRAST "HighContrast"
+ 
+-#define VOLUME_STEP 6           /* percents for one volume button press */
+ #define MAX_VOLUME 65536.0
+ 
+ #define SYSTEMD_DBUS_NAME                       "org.freedesktop.login1"
+@@ -154,6 +155,7 @@
+         GvcMixerStream  *source;
+         ca_context      *ca;
+         GtkSettings     *gtksettings;
++        GSettings       *sound_settings;
+ #ifdef HAVE_GUDEV
+         GHashTable      *streams; /* key = X device ID, value = stream id */
+         GUdevClient     *udev_client;
+@@ -1272,7 +1274,7 @@
+ {
+ 	GvcMixerStream *stream;
+         gboolean old_muted, new_muted;
+-        guint old_vol, new_vol, norm_vol_step;
++        guint old_vol, new_vol, vol_step, norm_vol_step;
+         gboolean sound_changed;
+ 
+         /* Find the stream that corresponds to the device, if any */
+@@ -1291,7 +1293,8 @@
+         if (stream == NULL)
+                 return;
+ 
+-        norm_vol_step = PA_VOLUME_NORM * VOLUME_STEP / 100;
++        vol_step = g_settings_get_int (manager->priv->sound_settings, VOLUME_STEP_KEY);
++        norm_vol_step = PA_VOLUME_NORM * vol_step / 100;
+ 
+         /* FIXME: this is racy */
+         new_vol = old_vol = gvc_mixer_stream_get_volume (stream);
+@@ -2842,6 +2845,8 @@
+           g_hash_table_new_full (g_str_hash, g_str_equal,
+                                  g_free, g_object_unref);
+ 
++        manager->priv->sound_settings = g_settings_new (SETTINGS_SOUND_DIR);
++
+         /* for the power plugin interface code */
+         manager->priv->power_settings = g_settings_new (SETTINGS_POWER_DIR);
+         manager->priv->chassis_type = gnome_settings_get_chassis_type ();
+@@ -2959,6 +2964,7 @@
+ 
+         g_clear_object (&priv->logind_proxy);
+         g_clear_object (&priv->settings);
++        g_clear_object (&priv->sound_settings);
+         g_clear_object (&priv->power_settings);
+         g_clear_object (&priv->power_proxy);
+         g_clear_object (&priv->power_screen_proxy);

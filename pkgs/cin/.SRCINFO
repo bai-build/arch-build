@@ -1,0 +1,32 @@
+pkgbase = cin
+	pkgdesc = Cinelerra git://git.cinelerra-cv.org/goodguy/cinelerra.git (20180531)
+	pkgver = 5.1
+	pkgrel = 20180531
+	url = http://www.cinelerra-cv.org
+	arch = x86_64
+	license = GPL
+	makedepends = yasm
+	makedepends = nasm
+	makedepends = cmake
+	makedepends = libxml2
+	makedepends = perl-xml-libxml
+	makedepends = perl-xml-parser
+	makedepends = wget
+	makedepends = curl
+	depends = xorg-server
+	depends = libpng
+	depends = libxv
+	depends = libva
+	depends = libxft
+	depends = freetype2
+	depends = alsa-lib
+	depends = inkscape
+	depends = dvdauthor
+	depends = opencv
+	source = https://cinelerra-cv.org/five/pkgs/src/cin_5.1.20180531-src.tgz
+	source = unblock.patch
+	md5sums = 19d81822895334daf7fd589d0e2f32cd
+	md5sums = ea36bfb411c0bc50405f154040e3b338
+
+pkgname = cin
+

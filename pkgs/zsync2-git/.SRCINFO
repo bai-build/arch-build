@@ -1,0 +1,25 @@
+pkgbase = zsync2-git
+	pkgdesc = A file transfer program that's able to connect to rsync servers
+	pkgver = 2.0.0pre
+	pkgrel = 2
+	url = https://github.com/AppImage/zsync2
+	arch = x86_64
+	license = custom:Artistic
+	makedepends = cmake
+	makedepends = git
+	makedepends = gnutls
+	makedepends = openssl
+	makedepends = zlib
+	depends = curl
+	provides = zsync2
+	conflicts = zsync2
+	source = git+https://github.com/AppImage/zsync2.git
+	source = git+https://github.com/Taywee/args.git
+	source = git+https://github.com/libcpr/cpr.git
+	source = git+https://github.com/google/googletest.git
+	b2sums = SKIP
+	b2sums = SKIP
+	b2sums = SKIP
+	b2sums = SKIP
+
+pkgname = zsync2-git

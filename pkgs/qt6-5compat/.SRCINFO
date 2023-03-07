@@ -1,0 +1,19 @@
+pkgbase = qt6-5compat
+	pkgdesc = Module that contains unsupported Qt 5 APIs
+	pkgver = 6.0.0rc
+	pkgrel = 1
+	url = https://www.qt.io
+	arch = x86_64
+	groups = qt6
+	license = GPL3
+	license = LGPL3
+	license = FDL
+	license = custom
+	makedepends = cmake
+	makedepends = ninja
+	depends = qt6-base
+	source = https://download.qt.io/development_releases/qt/6.0/6.0.0-rc/submodules/qt5compat-everywhere-src-6.0.0-rc.tar.xz
+	sha256sums = 114a7f5f69c53449c545a03262b55c223cf32f276188e7bead4dfa2f3672c1c0
+
+pkgname = qt6-5compat
+

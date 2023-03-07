@@ -1,0 +1,20 @@
+pkgbase = terminate
+	pkgdesc = Minimal terminal emulator based on VTE
+	pkgver = 0.5
+	pkgrel = 0
+	url = https://git.sr.ht/~craftyguy/terminate
+	arch = x86_64
+	license = GPL3
+	makedepends = gcc
+	makedepends = meson
+	makedepends = ninja
+	makedepends = scdoc
+	depends = vte3
+	depends = vte-common
+	provides = terminate
+	backup = etc/terminate/config
+	source = https://git.sr.ht/~craftyguy/terminate/archive/0.5.tar.gz
+	sha512sums = 8d5a320d4ab1d897d3534d7f629e6f36d9fd756fcf23893e6728988f8a09b6b85b3885f1cb495d981542aa64916d33a46d4280e76f1ce6975e86aa88696ddb3d
+
+pkgname = terminate
+

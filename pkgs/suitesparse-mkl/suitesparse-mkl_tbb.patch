@@ -1,0 +1,115 @@
+--- SuiteSparse-5.6.0/SuiteSparse_config/SuiteSparse_config.mk.orig	2020-01-14 20:45:06.700000000 +0800
++++ SuiteSparse-5.6.0/SuiteSparse_config/SuiteSparse_config.mk	2020-01-15 16:50:49.100000000 +0800
+@@ -54,7 +54,7 @@
+     #                 INSTALL_DOC=/solo/mydox
+     # which puts the libraries in /yada/mylibs, include files in /yoda/myinc,
+     # and documentation in /solo/mydox.
+-    INSTALL ?= $(SUITESPARSE)
++    INSTALL ?= /usr
+     INSTALL_LIB ?= $(INSTALL)/lib
+     INSTALL_INCLUDE ?= $(INSTALL)/include
+     INSTALL_DOC ?= $(INSTALL)/share/doc/suitesparse-$(SUITESPARSE_VERSION)
+@@ -110,8 +110,8 @@
+     # used instead of $(CC), $(CXX), and $(F77).  To disable this feature and
+     # use the $(CC), $(CXX), and $(F77) compilers, use 'make AUTOCC=no'
+ 
+-    # AUTOCC ?= yes
+-    AUTOCC ?= no
++    AUTOCC ?= yes
++    # AUTOCC ?= no
+ 
+     ifneq ($(AUTOCC),no)
+         ifneq ($(shell which icc 2>/dev/null),)
+@@ -309,7 +309,7 @@
+     #               Performance Library
+     # -DGPU_BLAS    enable the use of the CUDA BLAS
+ 
+-    CHOLMOD_CONFIG ?= $(GPU_CONFIG)
++    CHOLMOD_CONFIG ?= -DNPARTITION $(GPU_CONFIG)
+ 
+     #---------------------------------------------------------------------------
+     # SuiteSparseQR configuration:
+@@ -325,8 +325,8 @@
+     SPQR_CONFIG ?= $(GPU_CONFIG)
+ 
+     # to compile with Intel's TBB, use TBB=-ltbb -DSPQR_CONFIG=-DHAVE_TBB
+-    TBB ?=
+-    # TBB = -ltbb -DSPQR_CONFIG=-DHAVE_TBB
++    # TBB ?=
++    TBB = -ltbb -DSPQR_CONFIG=-DHAVE_TBB
+ 
+     # TODO: this *mk file should auto-detect the presence of Intel's TBB,
+     # and set the compiler flags accordingly.
+@@ -498,6 +498,7 @@
+ # a location known to the compiler (/usr/local/include/metis.h for example)
+ # then you do not need to add MY_METIS_INC.
+ 
++MY_METIS_LIB=-lmetis
+ I_WITH_PARTITION =
+ LIB_WITH_PARTITION =
+ CONFIG_PARTITION = -DNPARTITION -DNCAMD
+--- SuiteSparse-5.6.0/Makefile.orig	2020-01-15 17:30:11.180000000 +0800
++++ SuiteSparse-5.6.0/Makefile	2020-01-15 17:34:31.390000000 +0800
+@@ -12,7 +12,7 @@
+ # Compile the default rules for each package
+ go: metis
+ 	( cd SuiteSparse_config && $(MAKE) )
+-	( cd Mongoose  && $(MAKE) CMAKE_OPTIONS='$(CMAKE_OPTIONS)' )
++#	( cd Mongoose  && $(MAKE) CMAKE_OPTIONS='$(CMAKE_OPTIONS)' )
+ 	( cd AMD && $(MAKE) )
+ 	( cd BTF && $(MAKE) )
+ 	( cd CAMD && $(MAKE) )
+@@ -30,7 +30,7 @@
+ 	( cd GPUQREngine && $(MAKE) )
+ endif
+ 	( cd SPQR && $(MAKE) )
+-	( cd GraphBLAS && $(MAKE) JOBS=$(JOBS) CMAKE_OPTIONS='$(CMAKE_OPTIONS)' )
++#	( cd GraphBLAS && $(MAKE) JOBS=$(JOBS) CMAKE_OPTIONS='$(CMAKE_OPTIONS)' )
+ #	( cd PIRO_BAND && $(MAKE) )
+ #	( cd SKYLINE_SVD && $(MAKE) )
+ 
+@@ -38,7 +38,7 @@
+ # (note that CSparse is not installed; CXSparse is installed instead)
+ install: metisinstall
+ 	( cd SuiteSparse_config && $(MAKE) install )
+-	( cd Mongoose  && $(MAKE) CMAKE_OPTIONS='$(CMAKE_OPTIONS)' install )
++#	( cd Mongoose  && $(MAKE) CMAKE_OPTIONS='$(CMAKE_OPTIONS)' install )
+ 	( cd AMD && $(MAKE) install )
+ 	( cd BTF && $(MAKE) install )
+ 	( cd CAMD && $(MAKE) install )
+@@ -55,7 +55,7 @@
+ 	( cd GPUQREngine && $(MAKE) install )
+ endif
+ 	( cd SPQR && $(MAKE) install )
+-	( cd GraphBLAS && $(MAKE) JOBS=$(JOBS) CMAKE_OPTIONS='$(CMAKE_OPTIONS)' install )
++#	( cd GraphBLAS && $(MAKE) JOBS=$(JOBS) CMAKE_OPTIONS='$(CMAKE_OPTIONS)' install )
+ #	( cd PIRO_BAND && $(MAKE) install )
+ #	( cd SKYLINE_SVD && $(MAKE) install )
+ 	$(CP) README.txt $(INSTALL_DOC)/SuiteSparse_README.txt
+@@ -116,7 +116,7 @@
+ # the static library
+ library: metis
+ 	( cd SuiteSparse_config && $(MAKE) )
+-	( cd Mongoose  && $(MAKE) CMAKE_OPTIONS='$(CMAKE_OPTIONS)' library )
++#	( cd Mongoose  && $(MAKE) CMAKE_OPTIONS='$(CMAKE_OPTIONS)' library )
+ 	( cd AMD && $(MAKE) library )
+ 	( cd BTF && $(MAKE) library )
+ 	( cd CAMD && $(MAKE) library )
+@@ -134,7 +134,7 @@
+ 	( cd GPUQREngine && $(MAKE) library )
+ endif
+ 	( cd SPQR && $(MAKE) library )
+-	( cd GraphBLAS && $(MAKE) JOBS=$(JOBS) CMAKE_OPTIONS='$(CMAKE_OPTIONS)' library )
++#	( cd GraphBLAS && $(MAKE) JOBS=$(JOBS) CMAKE_OPTIONS='$(CMAKE_OPTIONS)' library )
+ #	( cd PIRO_BAND && $(MAKE) library )
+ #	( cd SKYLINE_SVD && $(MAKE) library )
+ 
+@@ -220,7 +220,7 @@
+ # Create the PDF documentation
+ docs:
+ 	( cd GraphBLAS && $(MAKE) docs )
+-	( cd Mongoose  && $(MAKE) docs )
++#	( cd Mongoose  && $(MAKE) docs )
+ 	( cd AMD && $(MAKE) docs )
+ 	( cd CAMD && $(MAKE) docs )
+ 	( cd KLU && $(MAKE) docs )

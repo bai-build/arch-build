@@ -1,0 +1,37 @@
+pkgbase = openxcom-extended
+	pkgdesc = An extended version of the open-source reimplementation of X-COM (OXCE)
+	pkgver = 7.8.9
+	pkgrel = 1
+	epoch = 1
+	url = https://openxcom.org/forum/index.php/topic,5251.0.html
+	install = openxcom-extended.install
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	makedepends = xmlto
+	makedepends = docbook-xml
+	makedepends = docbook-xsl
+	makedepends = doxygen
+	makedepends = boost
+	makedepends = glu
+	makedepends = cmake
+	makedepends = xorgproto
+	depends = sdl_mixer
+	depends = sdl_gfx
+	depends = sdl_image
+	depends = sdl
+	depends = yaml-cpp
+	depends = libgl
+	depends = hicolor-icon-theme
+	depends = gcc-libs
+	optdepends = openxcom-data-steam: pacman-tracked X-COM data files from Steam
+	optdepends = openxcom-tftd-data-steam: pacman-tracked Terror From The Deep data files from Steam
+	provides = openxcom
+	provides = openxcom-git
+	conflicts = openxcom
+	source = openxcom-extended::git+https://github.com/MeridianOXC/OpenXcom.git#commit=4bd1e88785b583046bae6dbb30d0164afb7109a3
+	md5sums = SKIP
+	sha1sums = SKIP
+
+pkgname = openxcom-extended

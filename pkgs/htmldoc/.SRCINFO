@@ -1,0 +1,21 @@
+pkgbase = htmldoc
+	pkgdesc = HTML Conversion Software
+	pkgver = 1.9.5
+	pkgrel = 1
+	url = https://www.msweet.org/htmldoc/index.html
+	changelog = ChangeLog
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	depends = libxpm
+	depends = gnutls
+	depends = fltk
+	depends = shared-mime-info
+	source = https://github.com/michaelrsweet/htmldoc/releases/download/v1.9.5/htmldoc-1.9.5-source.tar.gz
+	source = https://github.com/michaelrsweet/htmldoc/releases/download/v1.9.5/htmldoc-1.9.5-source.tar.gz.sig
+	validpgpkeys = 845464660B686AAB36540B6F999559A027815955
+	sha256sums = 0be1ae7986e01e94d482b3af7dcee19800117c8a61ef67426c30ae7744a79ea6
+	sha256sums = SKIP
+
+pkgname = htmldoc
+

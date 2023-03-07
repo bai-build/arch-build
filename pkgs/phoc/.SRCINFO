@@ -1,0 +1,17 @@
+pkgbase = phoc
+	pkgdesc = #BROKEN USE phoc-embedded-wlroots# A pure Wayland shell prototype for GNOME on mobile devices
+	pkgver = 0.21.0.beta1
+	pkgrel = 1
+	url = https://gitlab.gnome.org/World/Phosh/phoc
+	arch = x86_64
+	arch = aarch64
+	arch = armv7h
+	license = GPL3
+	makedepends = meson
+	makedepends = git
+	depends = gnome-desktop
+	depends = wlroots
+	source = git+https://gitlab.gnome.org/World/Phosh/phoc.git#tag=ebc6d1d5a2acdc243af3c9237ac09bcdd8f727f2
+	sha256sums = SKIP
+
+pkgname = phoc

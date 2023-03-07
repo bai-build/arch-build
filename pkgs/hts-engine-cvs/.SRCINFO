@@ -1,0 +1,16 @@
+pkgbase = hts-engine-cvs
+	pkgdesc = Engine to synthesize speech waveform from HMMs trained by hts.
+	pkgver = 1.10.r201707251428
+	pkgrel = 1
+	url = http://hts-engine.sourceforge.net/
+	arch = i686
+	arch = x86_64
+	license = custom
+	makedepends = cvs
+	depends = glibc
+	provides = hts-engine=1.10
+	conflicts = hts-engine
+	options = staticlibs
+
+pkgname = hts-engine-cvs
+

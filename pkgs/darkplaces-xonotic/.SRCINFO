@@ -1,0 +1,32 @@
+pkgbase = darkplaces-xonotic
+	pkgdesc = An advanced Quake 1 game engine (Xonotic fork)
+	pkgver = 0.8.5
+	pkgrel = 1
+	url = https://gitlab.com/xonotic/darkplaces
+	install = darkplaces-xonotic.install
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = unzip
+	makedepends = mesa
+	makedepends = xorgproto
+	depends = alsa-lib
+	depends = curl
+	depends = libjpeg-turbo
+	depends = libmodplug
+	depends = libvorbis
+	depends = libxpm
+	depends = libxxf86vm
+	depends = sdl2
+	depends = libpng>=1.4.0
+	depends = hicolor-icon-theme
+	depends = gtk-update-icon-cache
+	depends = desktop-file-utils
+	provides = darkplaces
+	conflicts = darkplaces
+	source = https://github.com/xonotic/darkplaces/archive/xonotic-v0.8.5.tar.gz
+	source = darkplaces-xonotic.desktop
+	sha256sums = c35dfc3e0c2500b6fe7f5cb651d9c9bb359f86ad9202f2877ed6d4eb761e3f18
+	sha256sums = 476f513f85da873ce93c89f2078bf9c2ea244e3e13a19c6ab02e818ddf221c37
+
+pkgname = darkplaces-xonotic

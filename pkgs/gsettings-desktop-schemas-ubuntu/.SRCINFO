@@ -1,0 +1,20 @@
+pkgbase = gsettings-desktop-schemas-ubuntu
+	pkgdesc = Shared GSettings schemas for the desktop
+	pkgver = 42.0
+	pkgrel = 1
+	url = https://git.gnome.org/browse/gsettings-desktop-schemas
+	arch = any
+	license = GPL
+	makedepends = git
+	makedepends = gobject-introspection
+	makedepends = meson
+	depends = glib2
+	depends = dconf
+	provides = gsettings-desktop-schemas=42.0
+	conflicts = gsettings-desktop-schemas
+	source = git+https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas#commit=742f0023b484bcf62f89731a2916fe3f2d30377a
+	source = https://launchpad.net/ubuntu/+archive/primary/+files/gsettings-desktop-schemas_43.0-1ubuntu1.debian.tar.xz
+	sha512sums = SKIP
+	sha512sums = 305eaaa04982c9a1e43713437062cb15c50c6d214e110be221a0623f9122096b34dda2010b2db0e109b45b583fb5f008c46604d56477039b6c15e72aeae6cf9d
+
+pkgname = gsettings-desktop-schemas-ubuntu

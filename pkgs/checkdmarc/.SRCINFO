@@ -1,0 +1,34 @@
+pkgbase = checkdmarc
+	pkgdesc = Parser for SPF and DMARC DNS records
+	pkgver = 4.2.4
+	pkgrel = 1
+	url = https://domainaware.github.io/checkdmarc
+	arch = any
+	license = Apache
+	makedepends = python-setuptools
+	depends = python-dnspython>=1.16.0
+	depends = python-expiringdict>=1.1.4
+	depends = python-pyleri>=1.3.2
+	depends = python-publicsuffix2>=2.20190812
+	depends = python-requests>=2.21.0
+	depends = python-timeout-decorator>=0.4.1
+	depends = python-nose>=1.3.7
+	depends = python-pygments>=2.3.1
+	depends = flake8>=3.7.8
+	depends = python-doc8>=0.8.0
+	depends = python-collective-checkdocs>=0.2
+	depends = python-jinja>=2.10.1
+	depends = python-packaging>=19.1
+	depends = python-imagesize>=1.1.0
+	depends = python-sphinx-alabaster-theme>=0.7.12
+	depends = python-babel>=2.7.0
+	depends = rstcheck>=3.3.1
+	depends = python-sphinx>=1.0.5
+	depends = python-sphinx_rtd_theme>=0.4.3
+	depends = python-wheel>=0.33.6
+	depends = python-codecov>=2.0.15
+	source = checkdmarc-4.2.4.tar.gz::https://github.com/domainaware/checkdmarc/archive/c99abc9370bee3dd1abc4fd28e78b09d00a328eb.tar.gz
+	sha512sums = 2ec1f79caddcb510d537b3942337ffe140d1e84a9b17a61d5d189a49fcb668ec5ae4b1eceab5b609e8cf463cfbe52c5f18897c8eef0e6fca82b0305887837209
+
+pkgname = checkdmarc
+

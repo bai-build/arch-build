@@ -1,0 +1,26 @@
+pkgbase = gb-studio-git
+	pkgdesc = Visual retro game maker
+	pkgver = 3.0.2.r0.g29683fdb
+	pkgrel = 1
+	url = https://github.com/chrismaltby/gb-studio
+	arch = x86_64
+	license = MIT
+	makedepends = git
+	makedepends = yarn
+	makedepends = npm
+	makedepends = nodejs
+	makedepends = dpkg
+	depends = gtk3
+	depends = libnotify
+	depends = nss
+	depends = libxss
+	depends = libxtst
+	depends = xdg-utils
+	depends = util-linux
+	depends = trash-cli
+	provides = gb-studio
+	conflicts = gb-studio
+	source = git+https://github.com/chrismaltby/gb-studio.git
+	md5sums = SKIP
+
+pkgname = gb-studio-git

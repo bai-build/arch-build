@@ -1,0 +1,21 @@
+pkgbase = pocl
+	pkgdesc = Portable OpenCL is an open-source implementation of OpenCL which can be easily adapted for new targets
+	pkgver = 1.4
+	pkgrel = 1
+	url = http://portablecl.org/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = cmake
+	makedepends = llvm
+	makedepends = ocl-icd
+	depends = clang
+	depends = hwloc
+	depends = libltdl
+	depends = opencl-headers
+	depends = opencl-icd-loader
+	source = https://github.com/pocl/pocl/archive/v1.4.tar.gz
+	sha512sums = ef4911638c76d988c120b69a991e54773a6b8bde49433c2e0f1703c374fa65a4fa64ebcaec94569863458032c17d8cb9879dc501b7e3a43b2c24524bce1b6098
+
+pkgname = pocl
+

@@ -1,0 +1,28 @@
+pkgbase = iop-blockchain
+	pkgdesc = IoP is the digital currency from the Internet of People that enables instant payments to anyone, anywhere in the world.
+	pkgver = 2.0.0
+	pkgrel = 2
+	url = http://www.fermat.org/
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = git
+	makedepends = boost
+	makedepends = libevent
+	makedepends = qt5-base
+	makedepends = qt5-tools
+	makedepends = qrencode
+	makedepends = protobuf
+	makedepends = zeromq
+	depends = boost-libs
+	depends = desktop-file-utils
+	depends = libevent
+	depends = qt5-base
+	depends = qrencode
+	depends = protobuf
+	depends = zeromq
+	source = https://github.com/Fermat-ORG/iop-blockchain/archive/81335ba210c0cf79757c22dfd66ff9142de7ea8f.zip
+	sha256sums = ca56c4ba6ecf4b555eb61b0ad96ec09f924c0433781ae19301fddcfd86988309
+
+pkgname = iop-blockchain
+

@@ -1,0 +1,88 @@
+Description: open the sticker panel by clicking rather than hovering, disable persistent column
+Credits: JuanPotato, novie
+
+diff --git a/Telegram/SourceFiles/chat_helpers/tabbed_panel.cpp b/Telegram/SourceFiles/chat_helpers/tabbed_panel.cpp
+index 189c8ec18..d7c7f982a 100644
+--- a/Telegram/SourceFiles/chat_helpers/tabbed_panel.cpp
++++ b/Telegram/SourceFiles/chat_helpers/tabbed_panel.cpp
+@@ -232,10 +232,12 @@ void TabbedPanel::leaveEventHook(QEvent *e) {
+ }
+ 
+ void TabbedPanel::otherEnter() {
++	return;
+ 	showAnimated();
+ }
+ 
+ void TabbedPanel::otherLeave() {
++	return;
+ 	if (preventAutoHide()) {
+ 		return;
+ 	}
+diff --git a/Telegram/SourceFiles/history/history_widget.cpp b/Telegram/SourceFiles/history/history_widget.cpp
+index 91833a8f4..9ce28008a 100644
+--- a/Telegram/SourceFiles/history/history_widget.cpp
++++ b/Telegram/SourceFiles/history/history_widget.cpp
+@@ -4029,6 +4029,7 @@ void HistoryWidget::showMembersDropdown() {
+ bool HistoryWidget::pushTabbedSelectorToThirdSection(
+ 		not_null<PeerData*> peer,
+ 		const Window::SectionShow &params) {
++	return true;
+ 	if (!_tabbedPanel) {
+ 		return true;
+ 	} else if (!peer->canWrite()) {
+@@ -4082,20 +4083,7 @@ void HistoryWidget::toggleTabbedSelectorMode() {
+ 	if (!_peer) {
+ 		return;
+ 	}
+-	if (_tabbedPanel) {
+-		if (controller()->canShowThirdSection()
+-			&& !controller()->adaptive().isOneColumn()) {
+-			Core::App().settings().setTabbedSelectorSectionEnabled(true);
+-			Core::App().saveSettingsDelayed();
+-			pushTabbedSelectorToThirdSection(
+-				_peer,
+-				Window::SectionShow::Way::ClearStack);
+-		} else {
+-			_tabbedPanel->toggleAnimated();
+-		}
+-	} else {
+-		controller()->closeThirdSection();
+-	}
++	_tabbedPanel->toggleAnimated();
+ }
+ 
+ void HistoryWidget::recountChatWidth() {
+diff --git a/Telegram/SourceFiles/history/view/controls/history_view_compose_controls.cpp b/Telegram/SourceFiles/history/view/controls/history_view_compose_controls.cpp
+index 01809184b..b7581bb8e 100644
+--- a/Telegram/SourceFiles/history/view/controls/history_view_compose_controls.cpp
++++ b/Telegram/SourceFiles/history/view/controls/history_view_compose_controls.cpp
+@@ -1869,6 +1869,7 @@ void ComposeControls::escape() {
+ bool ComposeControls::pushTabbedSelectorToThirdSection(
+ 		not_null<PeerData*> peer,
+ 		const Window::SectionShow &params) {
++	return true;
+ 	if (!_tabbedPanel) {
+ 		return true;
+ 	//} else if (!_canSendMessages) {
+@@ -1919,20 +1920,7 @@ void ComposeControls::toggleTabbedSelectorMode() {
+ 	if (!_history) {
+ 		return;
+ 	}
+-	if (_tabbedPanel) {
+-		if (_window->canShowThirdSection()
+-				&& !_window->adaptive().isOneColumn()) {
+-			Core::App().settings().setTabbedSelectorSectionEnabled(true);
+-			Core::App().saveSettingsDelayed();
+-			pushTabbedSelectorToThirdSection(
+-				_history->peer,
+-				Window::SectionShow::Way::ClearStack);
+-		} else {
+-			_tabbedPanel->toggleAnimated();
+-		}
+-	} else {
+-		_window->closeThirdSection();
+-	}
++	_tabbedPanel->toggleAnimated();
+ }
+ 
+ void ComposeControls::updateHeight() {

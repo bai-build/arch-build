@@ -1,0 +1,19 @@
+[Unit]
+Description=Zabbix Proxy
+Documentation=man:zabbix_proxy
+After=network.target mysqld.service postgresql.service
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/zabbix_proxy
+ExecReload=/usr/bin/zabbix_proxy -R config_cache_reload
+PIDFile=/run/zabbix/zabbix_proxy.pid
+Restart=on-abnormal
+PrivateDevices=yes
+PrivateTmp=yes
+ProtectSystem=full
+ProtectHome=yes
+
+[Install]
+WantedBy=multi-user.target
+

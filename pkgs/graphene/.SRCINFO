@@ -1,0 +1,18 @@
+pkgbase = graphene
+	pkgdesc = A thin layer of graphic data types
+	pkgver = 1.2.10
+	pkgrel = 1
+	url = https://github.com/ebassi/graphene/
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = gtk-doc
+	depends = glib2
+	optdepends = gobject-introspection: Language bindings
+	provides = graphene=1.2.10
+	conflicts = graphene
+	source = git+https://github.com/ebassi/graphene.git#tag=1.2.10
+	md5sums = SKIP
+
+pkgname = graphene
+

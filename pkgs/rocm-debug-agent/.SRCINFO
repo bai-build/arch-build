@@ -1,0 +1,14 @@
+pkgbase = rocm-debug-agent
+	pkgdesc = ROCr Debug Agent Library
+	pkgver = 5.4.1
+	pkgrel = 1
+	url = https://github.com/ROCm-Developer-Tools/rocr_debug_agent
+	arch = x86_64
+	license = custom:NCSAOSL
+	makedepends = cmake
+	depends = hip
+	depends = rocm-dbgapi
+	source = rocm-debug-agent-5.4.1.tar.gz::https://github.com/ROCm-Developer-Tools/rocr_debug_agent/archive/rocm-5.4.1.tar.gz
+	sha256sums = 5240a54eb07e4754408e707c9a315d74bf9c2ec5ee9b079aa6246f4a5e59f5bc
+
+pkgname = rocm-debug-agent

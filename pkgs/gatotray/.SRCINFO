@@ -1,0 +1,15 @@
+pkgbase = gatotray
+	pkgdesc = Graphical CPU stats monitor in the system tray.
+	pkgver = 3.2
+	pkgrel = 1
+	url = https;//bitbucket.org/gatopeich/gatotray
+	arch = x86_64
+	arch = i686
+	license = CCPL:by
+	depends = gtk2
+	depends = xterm
+	source = https://bitbucket.org/gatopeich/gatotray/get/b019a7f8aa60.zip
+	md5sums = SKIP
+
+pkgname = gatotray
+

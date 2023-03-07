@@ -1,0 +1,11 @@
+/blender-addons-contrib.git/
+/blender-addons.git/
+/blender-dev-tools.git/
+/blender-translations.git/
+/blender/
+
+/pkg/
+/src/
+
+*.tar.zst
+*.xz

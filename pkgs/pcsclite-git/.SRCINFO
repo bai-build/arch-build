@@ -1,0 +1,24 @@
+pkgbase = pcsclite-git
+	pkgdesc = Middleware to access a smart card using SCard API (PC/SC)
+	pkgver = 1.9.9.r0.g15c16c7
+	pkgrel = 1
+	url = https://pcsclite.apdu.fr/
+	arch = i686
+	arch = x86_64
+	license = BSD
+	makedepends = git
+	makedepends = autoconf-archive
+	makedepends = pkgconf
+	depends = glibc
+	depends = libsystemd.so
+	depends = libudev.so
+	depends = python
+	depends = systemd
+	provides = pcsclite=1.9.9.r0.g15c16c7
+	provides = libpcsclite.so
+	provides = libpcscspy.so
+	conflicts = pcsclite
+	source = git+https://salsa.debian.org/rousseau/PCSC.git
+	sha256sums = SKIP
+
+pkgname = pcsclite-git

@@ -1,0 +1,13 @@
+pkgbase = myipd
+	pkgdesc = Small http server returning your public ip
+	pkgver = 3
+	pkgrel = 1
+	url = https://git.sr.ht/~rumpelsepp/myip
+	arch = x86_64
+	license = GPL
+	makedepends = go-pie
+	source = myip-v3.tar.gz::https://git.sr.ht/~rumpelsepp/myip/archive/v3.tar.gz
+	sha256sums = 3872c5ed83ca534a57102a3439fff62d99596cbb180262ec5d7bc3fa02fc581e
+
+pkgname = myipd
+

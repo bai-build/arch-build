@@ -1,0 +1,25 @@
+pkgbase = audacious-qt5
+	pkgdesc = Lightweight, advanced audio player (with qt5 interface)
+	pkgver = 4.0
+	pkgrel = 1
+	epoch = 1
+	url = http://audacious-media-player.org/
+	arch = i686
+	arch = x86_64
+	license = BSD
+	makedepends = python
+	depends = qt5-base
+	depends = libguess
+	depends = libsm
+	depends = hicolor-icon-theme
+	depends = desktop-file-utils
+	optdepends = unzip: zipped skins support
+	optdepends = audacious-plugins-qt5: many helpful plugins
+	provides = audacious=4.0
+	conflicts = audacious
+	replaces = audacious-player
+	source = https://distfiles.audacious-media-player.org/audacious-4.0.tar.bz2
+	sha256sums = 3f46025334cc79332ef87a0c94297632f8eceb8e1497bf5a76a57003453c8bea
+
+pkgname = audacious-qt5
+

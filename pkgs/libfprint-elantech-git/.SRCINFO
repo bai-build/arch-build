@@ -1,0 +1,21 @@
+pkgbase = libfprint-elantech-git
+	pkgdesc = A fork of libfprint with ElanTech fingerprint reader driver
+	pkgver = r352.8d2c931
+	pkgrel = 1
+	url = https://github.com/iafilatov/libfprint
+	arch = x86_64
+	license = LGPL
+	makedepends = git
+	makedepends = meson
+	makedepends = gtk-doc
+	depends = libusb
+	depends = nss
+	depends = pixman
+	depends = glib2
+	provides = libfprint
+	conflicts = libfprint
+	source = git+https://github.com/iafilatov/libfprint.git
+	md5sums = SKIP
+
+pkgname = libfprint-elantech-git
+

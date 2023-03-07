@@ -1,0 +1,21 @@
+pkgbase = ros-indigo-rqt-py-console
+	pkgdesc = ROS - rqt_py_console is a Python GUI plugin providing an interactive Python console.
+	pkgver = 0.4.7
+	pkgrel = 0
+	url = http://ros.org/wiki/rqt_py_console
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-indigo-catkin
+	depends = ros-indigo-rqt-gui-py
+	depends = ros-indigo-qt-gui-py-common
+	depends = ros-indigo-qt-gui
+	depends = ros-indigo-rospy
+	depends = ros-indigo-rqt-gui
+	depends = python2-rospkg
+	source = ros-indigo-rqt-py-console-0.4.7-0.tar.gz::https://github.com/ros-gbp/rqt_common_plugins-release/archive/release/indigo/rqt_py_console/0.4.7-0.tar.gz
+	sha256sums = 0963b18a0fcd1ee3ab7953b84680ab4a77520e3f2e8da60b52a07a20c4edcbea
+
+pkgname = ros-indigo-rqt-py-console
+

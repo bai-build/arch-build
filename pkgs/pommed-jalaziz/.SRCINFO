@@ -1,0 +1,25 @@
+pkgbase = pommed-jalaziz
+	pkgdesc = Hotkey handler for Apple laptops for LCD/keyboard backlight, sound volume, and disc ejection, with systemd and 2012 model support.
+	pkgver = 1.40.r7.g243f0f2
+	pkgrel = 1
+	url = http://pommed.alioth.debian.org
+	install = pommed.install
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = git
+	depends = alsa-lib
+	depends = audiofile
+	depends = confuse
+	depends = dbus-core
+	depends = pciutils
+	optdepends = eject: to handle ejecting media from optical disc drive
+	provides = pommed=1.40.r7.g243f0f2
+	conflicts = pommed
+	source = pommed::git+https://github.com/jamesan/pommed.git
+	source = pommed.service
+	md5sums = SKIP
+	md5sums = 2f4742c76b489ddad3897c0199256933
+
+pkgname = pommed-jalaziz
+

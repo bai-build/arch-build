@@ -1,0 +1,55 @@
+pkgbase = petsc-git
+	pkgdesc = Portable, extensible toolkit for scientific computation
+	pkgver = 3.18.1.r24.g1f6a6395d11
+	pkgrel = 1
+	url = https://petsc.org
+	install = petsc.install
+	arch = i686
+	arch = x86_64
+	license = custom:BSD-2-clause
+	makedepends = gcc
+	makedepends = gcc-fortran
+	makedepends = cmake
+	makedepends = sowing
+	makedepends = pkgconf
+	makedepends = git
+	makedepends = cython
+	makedepends = chrpath
+	makedepends = hypre
+	depends = openmpi
+	depends = lapack
+	depends = fftw
+	depends = zlib
+	depends = python-mpi4py
+	depends = python-numpy
+	depends = eigen
+	optdepends = boost: Free peer-reviewed portable C++ source libraries
+	optdepends = cgns: Recording and recovering computer data
+	optdepends = eigen: Lightweight C++ template library for vector and matrix math
+	optdepends = fftw: Fast-Fourier Transform
+	optdepends = gdb: Debugging
+	optdepends = hdf5: large files
+	optdepends = hwloc: Portable Hardware Locality (abstraction of hierarchical architectures)
+	optdepends = med>=4.0: Data Modelization and Exchanges (meshes)
+	optdepends = metis: Partitioning library (for meshes)
+	optdepends = mumps: Sparse solver library
+	optdepends = netcdf-openmpi: Management of array-data
+	optdepends = opencl-headers: for opencl (GPU computing)
+	optdepends = opencl: GPU computing
+	optdepends = openmp: Parallel distributed tasks
+	optdepends = libpng
+	optdepends = scalapack: Parallel memory linear algebra
+	optdepends = scotch: Partitioning with sparse matrices
+	optdepends = suitesparse: Sparse matrix library
+	optdepends = superlu: Subroutines for sparsse linear systems
+	optdepends = libyaml: configuration files
+	provides = petsc=3.18.1
+	provides = petsc4py=3.18.1
+	conflicts = petsc
+	options = staticlibs
+	source = git+https://gitlab.com/petsc/petsc.git#branch=release
+	source = test_optdepends.sh
+	sha512sums = SKIP
+	sha512sums = e45df388b373b5f8c86567f32f0d79ae275a855a7fd3b4bb9c03d6875351633d4064de701644a4aa2f9eff90d63806f714230298149868b2f6d92a4f21e20cb8
+
+pkgname = petsc-git

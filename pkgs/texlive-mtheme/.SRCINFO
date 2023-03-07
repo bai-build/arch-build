@@ -1,0 +1,16 @@
+pkgbase = texlive-mtheme
+	pkgdesc = A modern LaTeX Beamer theme
+	pkgver = r310.eb5a7d7
+	pkgrel = 1
+	url = http://bloerg.net/2014/09/20/a-modern-beamer-theme.html
+	arch = any
+	license = CCPL/cc-by-sa
+	depends = texlive-core
+	depends = texlive-latexextra
+	depends = ttf-fira-sans
+	depends = ttf-fira-mono
+	source = texlive-mtheme::git+http://github.com/matze/mtheme.git#commit=eb5a7d7c9d64eeccf1913baa3234ac51ca7da139
+	md5sums = SKIP
+
+pkgname = texlive-mtheme
+

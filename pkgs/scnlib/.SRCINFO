@@ -1,0 +1,18 @@
+pkgbase = scnlib
+	pkgdesc = A formatted input library, think {fmt} but in the other direction. 'scanf' for modern C++
+	pkgver = 1.1.2
+	pkgrel = 1
+	url = https://github.com/eliaskosunen/scnlib
+	arch = x86_64
+	license = Apache
+	makedepends = git
+	makedepends = cmake
+	makedepends = doxygen
+	makedepends = python-sphinx
+	makedepends = python-breathe
+	makedepends = doctest
+	makedepends = benchmark
+	source = scnlib::git+https://github.com/eliaskosunen/scnlib.git#tag=v1.1.2
+	md5sums = SKIP
+
+pkgname = scnlib

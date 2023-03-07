@@ -1,0 +1,67 @@
+#!/bin/bash
+
+rootdev=$(lsblk -pilno pkname,type,mountpoint | grep -G 'part /$' |  head -n1 | cut -d " " -f1)
+partlabelroot=$(lsblk -plno partlabel $rootdev | grep -G '\-root$' )
+[ ! -n "$partlabelroot" ] && exit
+target=${partlabelroot%%-*}
+
+[ ! -d "/boot/bootcfg/" ] && exit
+[ ! -d "/boot/dtbos/" ] && exit
+fipdev=$(cat    /boot/bootcfg/device)
+linux=$(cat    /boot/bootcfg/linux)
+cmdline=$(cat  /boot/bootcfg/cmdline)
+initrd=$(cat   /boot/bootcfg/initrd)
+dtb=$(cat      /boot/bootcfg/dtb)
+
+if [[ $@ =~ "--atf" ]]; then
+  atfdev="/dev/disk/by-partlabel/${target}-${fipdev}-atf"
+  if [ -L $atfdev ]; then
+    headerdev="/dev/"$(lsblk -no pkname ${atfdev})
+    echo -e "Target = ${target}, ATF device = ${fipdev}\nZeroing: $atfdev"
+    dd of="${atfdev}" if=/dev/zero 2>/dev/null
+    echo Writing HEADER to: $headerdev
+    dd of="${headerdev}" if=/boot/${target}-atf-${fipdev}-header.bin
+    echo Writing ATF to: $atfdev
+    dd bs=64k of="${atfdev}" if=/boot/${target}-atf-${fipdev}-atf.bin
+  fi
+fi
+
+tmp="/tmp/bpir64-atf-git"
+mkdir -p $tmp
+origargs=$(fdtget -ts "/boot/dtbs/${dtb}.dtb" "/chosen" "bootargs")
+bootargs="root=PARTLABEL=${target}-${fipdev}-root $origargs $cmdline"
+echo BOOTARGS = "$bootargs"
+cp -vf "/boot/dtbs/${dtb}.dtb" "/boot/dtbs/${dtb}-fixed.dtb"
+for bp in /boot/dtbos/*.dts; do
+  dtc -q -I dts -O dtb -o ${bp/".dts"/".dtbo"} $bp
+  cat $bp | grep "//fdtput" | while read -r line ; do
+    echo fdtput "/boot/dtbs/${dtb}-fixed.dtb" ${line/"//fdtput"/""}
+         fdtput "/boot/dtbs/${dtb}-fixed.dtb" ${line/"//fdtput"/""}
+  done
+done
+fdtoverlay -vi "/boot/dtbs/${dtb}-fixed.dtb" -o "/boot/atf-direct.dtb" \
+                /boot/dtbos/*.dtbo
+fdtput -ts "/boot/atf-direct.dtb" "/chosen" "bootargs" "$bootargs"
+fdtput -ts "/boot/atf-direct.dtb" "/memory" "device_type" "memory"
+if [ -f "$initrd" ];then
+  ins="0x48000000"
+  ine="0x$(printf '%x\n' $(( 0x48000000 + $(du -b $initrd | cut -f1) )))"
+  fdtput -tx "/boot/atf-direct.dtb" "/chosen" "linux,initrd-end" "$ine"
+  fdtput -tx "/boot/atf-direct.dtb" "/chosen" "linux,initrd-start" "$ins"
+  initrdfile="$initrd"
+else
+  echo -n "" > "$tmp/initrd"
+  initrdfile="$tmp/initrd"
+fi
+fiptool --verbose create $tmp/fip.bin \
+      --tos-fw-extra2 $initrdfile \
+             --nt-fw $linux \
+       --nt-fw-config "/boot/atf-direct.dtb"
+fiptool info $tmp/fip.bin
+fipdev="/dev/disk/by-partlabel/${target}-${fipdev}-fip"
+[ ! -L $fipdev ] && exit 0
+echo Writing FIP to: $fipdev
+dd bs=1M of=$fipdev if=/dev/zero 2>/dev/null
+dd bs=1M of=$fipdev if=$tmp/fip.bin
+
+exit 0

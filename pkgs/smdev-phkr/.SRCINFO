@@ -1,0 +1,35 @@
+pkgbase = smdev-phkr
+	pkgdesc = Suckless mdev
+	pkgver = 0.2.3
+	pkgrel = 10
+	url = http://git.suckless.org/smdev/
+	install = smdev.install
+	arch = i686
+	arch = x86_64
+	arch = aarch64
+	license = MIT/X
+	makedepends = git
+	provides = mdev
+	options = strip
+	source = git+https://git.suckless.org/smdev#commit=8d07540
+	source = scan_all.patch
+	source = glibc.patch
+	source = usb_nodes.patch
+	source = config.h
+	source = processdev
+	source = 00-modprobe
+	source = 99-remove_links
+	source = initcpio.hook
+	source = initcpio.install
+	sha1sums = SKIP
+	sha1sums = a90bd08c8c482dec4b8cc063b4841db034ea7e1e
+	sha1sums = b300e68de6bcb6f542bb28206ab10f6ceca242bc
+	sha1sums = f0e3bfc2956d0c8885e08732cff8d0f9b6cf7103
+	sha1sums = 1f6b9327866981ffab4a275a64ee5c5249038968
+	sha1sums = d741887a118ed921528189754d886159782ca6fe
+	sha1sums = 396e84460ba95dcf3aeaaf9f2bc711be92a2c395
+	sha1sums = 2fa17e2c0ab472fb1ec7a1b04630393df67cf07a
+	sha1sums = 7fe74315c9a3592c2eb66cea8cd652da04461786
+	sha1sums = ea04c776d0f6b749bfd1fc421d51c5ecd07379b5
+
+pkgname = smdev

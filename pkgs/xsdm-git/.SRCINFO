@@ -1,0 +1,17 @@
+pkgbase = xsdm-git
+	pkgdesc = Open-source unpacker for Dreamspark's SDC format.
+	pkgver = 1.0.0.r1.g552b5e1
+	pkgrel = 1
+	url = https://github.com/v3l0c1r4pt0r/xSDM
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	makedepends = check
+	depends = libmcrypt
+	depends = zlib
+	source = git://github.com/v3l0c1r4pt0r/xSDM
+	md5sums = SKIP
+
+pkgname = xsdm-git
+

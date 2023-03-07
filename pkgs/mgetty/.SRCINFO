@@ -1,0 +1,34 @@
+pkgbase = mgetty
+	pkgdesc = Mgetty is a versatile program to handle all aspects of a modem under Unix.
+	pkgver = 1.2.1
+	pkgrel = 1
+	url = http://mgetty.greenie.net/
+	install = mgetty.install
+	arch = i686
+	arch = x86_64
+	arch = aarch64
+	license = GPL
+	makedepends = make
+	depends = glibc
+	depends = logrotate
+	depends = udev
+	depends = netpbm
+	source = ftp://mgetty.greenie.net/pub/mgetty/source/1.2/mgetty-1.2.1.tar.gz
+	source = Makefile.patch
+	source = config.patch
+	source = policy.patch
+	source = aarch64.patch
+	source = errno.patch
+	source = 90-mgetty.rules
+	source = mgetty@.service
+	md5sums = 41a18c46845ff058d2848bc1aab6ab3b
+	md5sums = eaa2b17d77ca099ebb7e92cf2006f6c1
+	md5sums = c0f9ed08a1e9877f972cbd8a00cfd932
+	md5sums = ed732db6dde0859af7acb48e9c7aa136
+	md5sums = 8756ace492fb86ba70ed3a5c4b980b0b
+	md5sums = 86c3502f8bb05c240edb5cad0e11de9c
+	md5sums = 4b73a5654db86a34a8dccdf5f55c699c
+	md5sums = cbc70329924235e8f2e6302c859d59a6
+
+pkgname = mgetty
+

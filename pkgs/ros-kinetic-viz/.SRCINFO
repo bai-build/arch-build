@@ -1,0 +1,19 @@
+pkgbase = ros-kinetic-viz
+	pkgdesc = ROS - A metapackage to aggregate several packages.
+	pkgver = 1.3.2
+	pkgrel = 1
+	url = http://www.ros.org/
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	depends = ros-kinetic-rqt-robot-plugins
+	depends = ros-kinetic-ros-base
+	depends = ros-kinetic-rviz
+	depends = ros-kinetic-rqt-common-plugins
+	source = ros-kinetic-viz-1.3.2-0.tar.gz::https://github.com/ros-gbp/metapackages-release/archive/release/kinetic/viz/1.3.2-0.tar.gz
+	sha256sums = 14529b13b3f4c475e085bba31c71e55f639788f2bcbb333d9b2813b95bb0b093
+
+pkgname = ros-kinetic-viz
+

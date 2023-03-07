@@ -1,0 +1,53 @@
+pkgbase = linux-zen-g14
+	pkgdesc = Linux ZEN
+	pkgver = 5.16.16.zen1
+	pkgrel = 1
+	url = https://github.com/zen-kernel/zen-kernel/commits/v5.16.16-zen1
+	arch = x86_64
+	license = GPL2
+	makedepends = bc
+	makedepends = kmod
+	makedepends = libelf
+	makedepends = pahole
+	makedepends = cpio
+	makedepends = perl
+	makedepends = tar
+	makedepends = xz
+	makedepends = texlive-core
+	makedepends = texlive-latexextra
+	makedepends = xmlto
+	makedepends = python-sphinx
+	makedepends = python-sphinx_rtd_theme
+	makedepends = graphviz
+	makedepends = imagemagick
+	makedepends = git
+	options = !strip
+	source = zen-kernel::git+https://github.com/zen-kernel/zen-kernel#tag=v5.16.16-zen1
+	source = config::https://raw.githubusercontent.com/archlinux/svntogit-packages/packages/linux-zen/trunk/config
+	source = git+https://gitlab.com/asus-linux/fedora-kernel.git#branch=rog-5.16
+	source = 0009.patch::https://github.com/torvalds/linux/commit/6a5a14b18972ae03861e2ed15152f731de29baaa.patch
+	source = 0010.patch::https://github.com/torvalds/linux/commit/426c0ff27b833939ed434b4a468bdc010864922a.patch
+	sha256sums = SKIP
+	sha256sums = 1a0e945f63c45aa876b19645ed1385749d29f7365a717b35298071d78fb75f63
+	sha256sums = SKIP
+	sha256sums = 848bcbea6810c7e259265313e3307927114e5c87d3e535410490f298e89d55b3
+	sha256sums = 4042e25817ceb813ba8210ef0f1728359e7e5b01f3eeda41b409532bb4b335bf
+
+pkgname = linux-zen-g14
+	pkgdesc = The Linux ZEN kernel and modules
+	depends = coreutils
+	depends = kmod
+	depends = initramfs
+	optdepends = crda: to set the correct wireless channels of your country
+	optdepends = linux-firmware: firmware images needed for some devices
+	provides = VIRTUALBOX-GUEST-MODULES
+	provides = WIREGUARD-MODULE
+	provides = VHBA-MODULE
+	replaces = 
+
+pkgname = linux-zen-g14-headers
+	pkgdesc = Headers and scripts for building modules for the Linux ZEN kernel
+	depends = pahole
+
+pkgname = linux-zen-g14-docs
+	pkgdesc = Documentation for the Linux ZEN kernel

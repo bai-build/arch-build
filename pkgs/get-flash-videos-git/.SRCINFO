@@ -1,0 +1,29 @@
+pkgbase = get-flash-videos-git
+	pkgdesc = Downloads videos from various Flash-based video hosting sites
+	pkgver = 1.25.99.02.r3.g5a4bf39
+	pkgrel = 1
+	url = https://github.com/monsieurvideo/get-flash-videos
+	arch = any
+	license = APACHE
+	makedepends = git
+	makedepends = perl
+	depends = perl-www-mechanize
+	depends = perl-module-find
+	depends = perl-term-progressbar
+	optdepends = rtmpdump: download videos over rtmp
+	optdepends = ffmpeg: play
+	optdepends = perl-xml-simple: Required for some sites
+	optdepends = perl-crypt-rijndael: Required for some sites
+	optdepends = perl-lwp-protocol-https: Required for some sites
+	optdepends = perl-lwp-protocol-socks: Required for some sites
+	optdepends = perl-data-amf: Required for some sites
+	optdepends = perl-compress-zlib: Required for some sites
+	provides = get_flash_videos
+	provides = get-flash-videos
+	conflicts = get_flash_videos
+	conflicts = get-flash-videos
+	source = git://github.com/monsieurvideo/get-flash-videos.git
+	md5sums = SKIP
+
+pkgname = get-flash-videos-git
+

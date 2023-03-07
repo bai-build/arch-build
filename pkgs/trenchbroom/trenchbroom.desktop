@@ -1,0 +1,10 @@
+[Desktop Entry]
+Exec=env LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/wxgtk2-tb/lib trenchbroom
+GenericName=Level Editor
+Comment=Level Editor
+Icon=trenchbroom
+Name=TrenchBroom
+Terminal=0
+Type=Application
+Categories=Game
+Keywords=quake;level;editor;

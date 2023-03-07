@@ -1,0 +1,19 @@
+pkgbase = libffi-git
+	pkgdesc = Portable foreign function interface library
+	pkgver = 3.4.2.r20.g0f2dd36
+	pkgrel = 1
+	url = https://sourceware.org/libffi/
+	arch = i686
+	arch = x86_64
+	license = MIT
+	checkdepends = dejagnu
+	makedepends = git
+	depends = glibc
+	provides = libffi
+	provides = libffi.so
+	conflicts = libffi
+	options = staticlibs
+	source = git+https://github.com/libffi/libffi.git
+	sha256sums = SKIP
+
+pkgname = libffi-git

@@ -1,0 +1,15 @@
+pkgbase = qhttpengine
+	pkgdesc = Simple and secure HTTP server for Qt applications
+	pkgver = 1.0.1
+	pkgrel = 1
+	url = http://github.com/nitroshare/qhttpengine
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = cmake
+	depends = qt5-base
+	source = qhttpengine-1.0.1.tar.gz::https://github.com/nitroshare/qhttpengine/archive/1.0.1.tar.gz
+	md5sums = ba75ab2540a263dbafce548f8da1c4d0
+
+pkgname = qhttpengine
+

@@ -1,0 +1,30 @@
+pkgbase = vim-git
+	pkgdesc = VIM: Vi IMproved
+	pkgver = 10985.5e5a98d7d
+	pkgrel = 1
+	url = http://github.com/vim/vim
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = gpm
+	depends = ruby
+	depends = lua
+	depends = python2
+	depends = python
+	depends = acl
+	source = git://github.com/vim/vim.git
+	md5sums = SKIP
+
+pkgname = vim-git
+	provides = vim
+	conflicts = vim
+
+pkgname = vim-git-runtime
+	pkgdesc = VIM: Vi IMproved (shared runtime)
+	optdepends = sh: support for some tools and macros
+	optdepends = python: demoserver example tool
+	optdepends = gawk: mve tools upport
+	provides = vim-runtime
+	conflicts = vim-runtime
+	backup = etc/vimrc
+

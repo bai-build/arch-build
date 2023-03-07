@@ -1,0 +1,7 @@
+/autorevision.cache
+*.pkg.tar*
+*.src.tar*
+*.tgz
+*.tgz.sig
+src
+pkg

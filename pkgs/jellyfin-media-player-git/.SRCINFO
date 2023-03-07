@@ -1,0 +1,27 @@
+pkgbase = jellyfin-media-player-git
+	pkgdesc = Jellyfin Desktop Client
+	pkgver = r1568.15d2475
+	pkgrel = 2
+	url = https://github.com/jellyfin/jellyfin-media-player
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = cmake
+	makedepends = git
+	makedepends = python
+	depends = mpv
+	depends = libcec
+	depends = sdl2
+	depends = p8-platform
+	depends = protobuf
+	depends = qt5-webengine
+	depends = qt5-x11extras
+	depends = qt5-quickcontrols
+	provides = jellyfin-media-player
+	conflicts = jellyfin-media-player
+	source = git+https://github.com/jellyfin/jellyfin-media-player.git
+	source = jwc-10.8.0.tar.gz::https://github.com/iwalton3/jellyfin-web-jmp/releases/download/jwc-10.8.0/dist.zip
+	sha256sums = SKIP
+	sha256sums = 3fb94bd9ae827a3391c4d89efea9ada1e646d279b265b2e3abc9787560c954b5
+
+pkgname = jellyfin-media-player-git

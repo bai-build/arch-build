@@ -1,0 +1,21 @@
+pkgbase = nvidiabl
+	pkgdesc = Backlight driver for NVidia graphics adapters
+	pkgver = 0.88
+	pkgrel = 5
+	url = https://github.com/guillaumezin/nvidiabl
+	install = nvidiabl.install
+	arch = x86_64
+	arch = i686
+	license = GPL
+	makedepends = linux-headers
+	conflicts = nvidia-bl
+	conflicts = nvidiablctl
+	source = https://github.com/guillaumezin/nvidiabl/archive/master.zip
+	source = nvidiabl-master.patch
+	source = kernel-4.8.patch
+	md5sums = c1cec85b0a9f4469d433a2756bdb2497
+	md5sums = 79e5699da970908d6ec8dba114df87cb
+	md5sums = d94abebc5f40586fbed015d9fab29a37
+
+pkgname = nvidiabl
+

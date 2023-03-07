@@ -1,0 +1,9 @@
+# Ignore everything ...
+*
+
+# Except ...
+!.gitignore
+!.SRCINFO
+!opentsdb.install
+!opentsdb.service
+!PKGBUILD

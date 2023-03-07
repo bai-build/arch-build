@@ -1,0 +1,26 @@
+pkgbase = xfwm4-move-monitor
+	pkgdesc = Xfce's window manager
+	pkgver = 4.16.1
+	pkgrel = 8
+	url = https://docs.xfce.org/xfce/xfwm4/start
+	arch = x86_64
+	groups = xfce4,
+	groups = modified
+	license = GPL2
+	makedepends = intltool
+	depends = libxfce4ui
+	depends = xfconf
+	depends = libwnck3
+	depends = libepoxy
+	depends = libxpresent
+	depends = hicolor-icon-theme
+	provides = xfwm4
+	conflicts = xfwm4
+	source = https://archive.xfce.org/src/xfce/xfwm4/4.16/xfwm4-4.16.1.tar.bz2
+	source = client-Handle-removal-of-GTK_FRAME_EXTENTS.patch
+	source = move-to-monitor.patch
+	sha256sums = b5b24ca04bd73c642db0a4b4df81d262381d758f01b51108257d48b391b8718c
+	sha256sums = cc49d8c0932dc3f630073e87c8fffaddd811306dc32d74a8127fe0de7baccd4d
+	sha256sums = ab10657b8e5c628cd04ede23ba2bace0e96320f47b9eb9115087c251b618e741
+
+pkgname = xfwm4-move-monitor

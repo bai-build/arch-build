@@ -1,0 +1,17 @@
+pkgbase = libpthread_workqueue-git
+	pkgdesc = A portable implementation of the pthread_workqueue API first introduced in Mac OS X.
+	pkgver = rv0.9.2.51.g23fba31
+	pkgrel = 1
+	url = https://github.com/mheily/libpwq
+	arch = i686
+	arch = x86_64
+	license = BSD
+	makedepends = git
+	depends = glibc
+	provides = libpthread_workqueue
+	provides = libpthread_workqueue-libpthread
+	source = libpthread_workqueue-git::git+https://github.com/mheily/libpwq.git
+	md5sums = SKIP
+
+pkgname = libpthread_workqueue-git
+

@@ -1,0 +1,14 @@
+pkgbase = pridecat
+	pkgdesc = Like cat but more colorful!
+	pkgver = r45.92396b1
+	pkgrel = 1
+	url = https://github.com/lunasorcery/pridecat
+	arch = any
+	license = cc-by-nc-4.0
+	makedepends = git
+	source = pridecat::git+https://github.com/lunasorcery/pridecat.git
+	source = 0001-Add-DESTDIR-variable.patch
+	sha256sums = SKIP
+	sha256sums = 1eb42c7651aafe9c27d54ba21c73f01e6c83a1b28bc6e9dcdc0729092a45bd6b
+
+pkgname = pridecat

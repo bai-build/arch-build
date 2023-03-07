@@ -1,0 +1,32 @@
+pkgbase = gprbuild
+	pkgdesc = Builder for multi-language systems
+	pkgver = 23.0.0
+	pkgrel = 2
+	epoch = 1
+	url = https://github.com/AdaCore/gprbuild/
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	license = custom
+	makedepends = gprbuild-bootstrap
+	makedepends = which
+	depends = xmlada
+	source = gprbuild-23.0.0.tar.gz::https://github.com/AdaCore/gprbuild//archive/v23.0.0.tar.gz
+	source = gprconfig_kb-23.0.0.tar.gz::https://github.com/AdaCore/gprconfig_kb/archive/v23.0.0.tar.gz
+	source = 0001-Makefile-build-relocatable-instead-of-static-binarie.patch
+	source = 0001-compilers.xml-use-gcc-version-to-get-version-number-.patch
+	sha256sums = 141b403ea8a3f82b58b6a8690f8409fe295f3692b667ba3ec487fafcbd26e389
+	sha256sums = 182d9108c91390ddd67c841e45a3fc9dd23a94b33d4a1f05ed2788c1fb9b7dd2
+	sha256sums = 6ebbea41d4b8b516d0646438338fb228ea907600a2ad2c594bab41a7e1c3680c
+	sha256sums = ffa2a18febe9d8c512f81d66a58e73a6bd9f417aa3a8d8acfc1eab2047492569
+
+pkgname = libgpr
+	pkgdesc = Ada library to handle Gnat project files
+	depends = xmlada
+	conflicts = grpc
+
+pkgname = gprbuild
+	depends = libgpr
+	depends = xmlada
+	provides = gprbuild-bootstrap
+	conflicts = gprbuild-bootstrap

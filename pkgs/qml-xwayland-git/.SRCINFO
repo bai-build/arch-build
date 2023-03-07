@@ -1,0 +1,27 @@
+pkgbase = qml-xwayland-git
+	pkgdesc = XWayland support for QtQuick Wayland compositors
+	pkgver = r90.98cb78a
+	pkgrel = 1
+	url = https://liri.io
+	arch = i686
+	arch = x86_64
+	arch = armv6h
+	arch = armv7h
+	groups = liri-git
+	license = GPL3
+	makedepends = git
+	makedepends = liri-cmake-shared-git
+	makedepends = xcb-util-cursor
+	makedepends = libxcursor
+	depends = qt5-declarative
+	depends = qt5-wayland
+	depends = xorg-server-xwayland
+	provides = qml-xwayland
+	conflicts = qml-xwayland
+	replaces = qml-xwayland
+	options = debug
+	options = !strip
+	source = qml-xwayland::git+https://github.com/lirios/qml-xwayland.git#branch=develop
+	md5sums = SKIP
+
+pkgname = qml-xwayland-git

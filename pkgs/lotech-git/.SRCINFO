@@ -1,0 +1,23 @@
+pkgbase = lotech-git
+	pkgdesc = A simple framework for making games
+	pkgver = 1.0
+	pkgrel = 1
+	arch = x86_64
+	license = custom
+	makedepends = git
+	depends = lua51
+	depends = libpng
+	depends = curl
+	depends = zlib
+	depends = openal
+	depends = glew
+	depends = glfw2
+	depends = box2d
+	provides = lotech
+	source = git+https://github.com/ianmaclarty/lotech.git
+	source = linux.patch
+	sha256sums = SKIP
+	sha256sums = 4423d8d1dd95b603001c6537eaf239593bd874fed3e5327c7ed87298f0766123
+
+pkgname = lotech-git
+

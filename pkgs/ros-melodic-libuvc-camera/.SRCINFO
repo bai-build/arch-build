@@ -1,0 +1,28 @@
+pkgbase = ros-melodic-libuvc-camera
+	pkgdesc = ROS - USB Video Class camera driver.
+	pkgver = 0.0.10
+	pkgrel = 3
+	url = https://wiki.ros.org/libuvc_camera
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-melodic-nodelet
+	makedepends = ros-melodic-roscpp
+	makedepends = ros-melodic-libuvc
+	makedepends = ros-melodic-dynamic-reconfigure
+	makedepends = ros-melodic-sensor-msgs
+	makedepends = ros-melodic-image-transport
+	makedepends = ros-melodic-catkin
+	depends = ros-melodic-roscpp
+	depends = ros-melodic-camera-info-manager
+	depends = ros-melodic-dynamic-reconfigure
+	depends = ros-melodic-image-transport
+	depends = ros-melodic-libuvc
+	depends = ros-melodic-nodelet
+	depends = ros-melodic-sensor-msgs
+	source = ros-melodic-libuvc-camera-0.0.10.tar.gz::https://github.com/ros-drivers/libuvc_ros/archive/0.0.10.tar.gz
+	sha256sums = 33c356df370f548be1dbc1d21a13bf2704b6ea0218f77d3d6f305392266629d3
+
+pkgname = ros-melodic-libuvc-camera
+

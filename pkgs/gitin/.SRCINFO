@@ -1,0 +1,16 @@
+pkgbase = gitin
+	pkgdesc = Commit/branch/workdir explorer for git
+	pkgver = 0.3.0
+	pkgrel = 1
+	url = https://github.com/isacikgoz/gitin
+	arch = x86_64
+	license = BSD
+	makedepends = cmake
+	makedepends = go
+	makedepends = git
+	makedepends = pcre
+	depends = glibc
+	source = gitin-0.3.0.tar.gz::https://github.com/isacikgoz/gitin/archive/v0.3.0.tar.gz
+	sha256sums = b146072559c45e30451232eabdcb626ba3b153a139a7520b7be19f1d0cc87197
+
+pkgname = gitin

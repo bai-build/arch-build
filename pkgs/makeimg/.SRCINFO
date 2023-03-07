@@ -1,0 +1,22 @@
+pkgbase = makeimg
+	pkgdesc = Declarative way to build Arch or Alpine Linux images
+	pkgver = 0.4.0
+	pkgrel = 1
+	url = https://sr.ht/~bitfehler/makeimg
+	arch = any
+	license = GPL2
+	makedepends = scdoc
+	makedepends = make
+	depends = coreutils
+	depends = tar
+	depends = util-linux
+	optdepends = apk-tools: for building Alpine images
+	optdepends = arch-install-scripts: for building Arch images
+	optdepends = parted: for building disk images
+	optdepends = patch: for applying patches
+	provides = makeimg
+	conflicts = makeimg-git
+	source = makeimg-0.4.0.tar.gz::https://git.sr.ht/~bitfehler/makeimg/archive/v0.4.0.tar.gz
+	sha512sums = c9988dc5f0a41c39a929300e8254270aa12eb4e9dd4f8087d19da5265b980c8f0c87389bec8fb79208eec69588d9cfb9a8e8ca74bc2fc8c7c665394cb0179157
+
+pkgname = makeimg

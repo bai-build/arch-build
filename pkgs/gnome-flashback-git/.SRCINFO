@@ -1,0 +1,31 @@
+pkgbase = gnome-flashback-git
+	pkgdesc = GNOME Flashback session (git version)
+	pkgver = 3.20.1.r39.ga130f67
+	pkgrel = 1
+	url = https://wiki.gnome.org/Projects/GnomeFlashback
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	makedepends = autoconf-archive
+	makedepends = intltool
+	makedepends = python2
+	depends = gnome-bluetooth
+	depends = gnome-panel
+	depends = gnome-session
+	depends = gnome-settings-daemon
+	depends = gnome-themes-standard
+	depends = libibus
+	depends = metacity
+	depends = nautilus
+	optdepends = gnome-backgrounds: Default background
+	optdepends = gnome-control-center: System settings
+	optdepends = gnome-screensaver: Lock screen
+	optdepends = network-manager-applet: Network management
+	provides = gnome-flashback
+	conflicts = gnome-flashback
+	source = git://git.gnome.org/gnome-flashback
+	sha256sums = SKIP
+
+pkgname = gnome-flashback-git
+

@@ -1,0 +1,6 @@
+slade
+
+/*.tar.gz
+/*.pkg.*
+/pkg/
+/src/

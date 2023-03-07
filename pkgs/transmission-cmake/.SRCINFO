@@ -1,0 +1,74 @@
+pkgbase = transmission-cmake
+	pkgver = 3.00
+	pkgrel = 1
+	url = http://www.transmissionbt.com/
+	arch = i686
+	arch = x86_64
+	arch = arm
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	license = MIT
+	makedepends = cmake
+	makedepends = git
+	makedepends = gtk3
+	makedepends = intltool
+	makedepends = curl
+	makedepends = qt5-base
+	makedepends = libevent
+	makedepends = systemd
+	makedepends = qt5-tools
+	makedepends = dht
+	makedepends = libutp
+	makedepends = libnatpmp
+	options = !buildflags
+	source = git+https://github.com/transmission/transmission#tag=3.00
+	source = transmission-cmake-cli.sysusers
+	source = transmission-cmake-cli.tmpfiles
+	sha256sums = SKIP
+	sha256sums = 641310fb0590d40e00bea1b5b9c843953ab78edf019109f276be9c6a7bdaf5b2
+	sha256sums = 1266032bb07e47d6bcdc7dabd74df2557cc466c33bf983a5881316a4cc098451
+
+pkgname = transmission-cmake-cli
+	pkgdesc = Fast, easy, and free BitTorrent client (CLI tools, daemon and web client)
+	depends = curl
+	depends = libevent
+	depends = systemd
+	depends = libnatpmp
+	provides = transmission-cli
+	conflicts = transmission-cli
+
+pkgname = transmission-cmake-gtk
+	pkgdesc = Fast, easy, and free BitTorrent client (GTK+ GUI)
+	depends = curl
+	depends = libevent
+	depends = libnatpmp
+	depends = gtk3
+	depends = desktop-file-utils
+	depends = hicolor-icon-theme
+	optdepends = notification-daemon: Desktop notification support
+	optdepends = transmission-cmake-cli: daemon and web support
+	provides = transmission-gtk
+	conflicts = transmission-gtk
+
+pkgname = transmission-cmake-qt
+	pkgdesc = Fast, easy, and free BitTorrent client (Qt GUI)
+	depends = curl
+	depends = qt5-base
+	depends = libevent
+	depends = libnatpmp
+	optdepends = transmission-cmake-cli: daemon and web support
+	provides = transmission-qt
+	conflicts = transmission-qt
+
+pkgname = libtransmission
+	pkgdesc = Fast, easy, and free BitTorrent client (library)
+	depends = openssl
+	depends = libnatpmp
+	depends = curl
+	depends = libevent
+	depends = miniupnpc
+	depends = dht
+	depends = libutp
+	depends = libb64
+

@@ -1,0 +1,20 @@
+pkgbase = terravox-git
+	pkgdesc = Simple heightmap Editor for Voxlap5 VXL (512x512 only) (git version)
+	pkgver = v0.0.3.c7f5d21
+	pkgrel = 2
+	url = https://github.com/yvt/terravox
+	arch = x86_64
+	arch = i686
+	license = MIT
+	makedepends = git
+	depends = qt5-base
+	depends = luajit
+	optdepends = openspades
+	optdepends = pysnip-git
+	provides = terravox
+	conflicts = terravox
+	source = terravox-git::git+https://github.com/yvt/terravox.git
+	md5sums = SKIP
+
+pkgname = terravox-git
+

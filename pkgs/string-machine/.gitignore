@@ -1,0 +1,5 @@
+/string-machine-Makefile.base.mk
+pkg/
+src/
+*.tar.*
+*.zip

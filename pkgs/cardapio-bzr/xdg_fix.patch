@@ -1,0 +1,12 @@
+diff -Naur ./cardapio.orig/src/XDGMenuHelper.py ./cardapio/src/XDGMenuHelper.py
+--- ./cardapio.orig/src/XDGMenuHelper.py	2017-04-06 12:15:42.646494966 -0400
++++ ./cardapio/src/XDGMenuHelper.py	2017-04-06 12:16:01.526494168 -0400
+@@ -29,7 +29,7 @@
+ 	In this case, the implementation is for the XDG version.
+ 	"""
+ 
+-	def __init__(self, filename = None, prefix = None):
++	def __init__(self, filename = None, prefix = ""):
+ 		if filename: self._node = Menu.parse(prefix + filename)
+ 		else: self._node = None
+ 

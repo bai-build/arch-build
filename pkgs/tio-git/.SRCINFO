@@ -1,0 +1,18 @@
+pkgbase = tio-git
+	pkgdesc = The simple TTY terminal I/O application
+	pkgver = 1.36.r2.g8975c44
+	pkgrel = 1
+	url = http://tio.github.io
+	arch = x86_64
+	arch = i686
+	license = GPLv2
+	makedepends = git
+	makedepends = meson
+	depends = glibc
+	depends = libinih
+	provides = tio
+	conflicts = tio
+	source = git+https://github.com/tio/tio.git
+	sha256sums = SKIP
+
+pkgname = tio-git

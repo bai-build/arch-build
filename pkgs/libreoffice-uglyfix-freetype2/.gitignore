@@ -1,0 +1,12 @@
+*~
+pkg/
+src/
+*.sig
+*.tgz
+*.tbz
+*.txz
+*.tar
+*.tar.*
+*.jar
+*.zip
+*.rej

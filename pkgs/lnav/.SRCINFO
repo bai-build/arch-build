@@ -1,0 +1,17 @@
+pkgbase = lnav
+	pkgdesc = A curses-based tool for viewing and analyzing log files
+	pkgver = 0.9.0
+	pkgrel = 1
+	url = http://lnav.org/
+	arch = i686
+	arch = x86_64
+	license = custom:BSD
+	depends = ncurses
+	depends = curl
+	depends = pcre
+	depends = sqlite3
+	source = https://github.com/tstack/lnav/archive/v0.9.0.tar.gz
+	md5sums = 388c2594b2aee61d764714e5328abd0d
+
+pkgname = lnav
+

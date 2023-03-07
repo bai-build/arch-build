@@ -1,0 +1,44 @@
+pkgbase = zam-plugins-git
+	pkgdesc = Collection of LADSPA/LV2/VST/JACK audio plugins for high-quality processing (git version)
+	pkgver = 3.14.r0.ge7077fc
+	pkgrel = 2
+	url = https://github.com/zamaudio/zam-plugins
+	arch = x86_64
+	groups = ladspa-plugins
+	groups = lv2-plugins
+	groups = pro-audio
+	groups = vst-plugins
+	license = GPL2
+	makedepends = gendesk
+	makedepends = git
+	makedepends = ladspa
+	makedepends = libsamplerate
+	makedepends = jack
+	makedepends = lv2
+	makedepends = zita-convolver
+	depends = gcc-libs
+	depends = glibc
+	depends = libglvnd
+	depends = libx11
+	optdepends = jack: for standalone applications
+	provides = zam-plugins
+	provides = zam-plugins=3.14
+	conflicts = zam-plugins
+	conflicts = zamplugins
+	source = zam-plugins::git+https://github.com/zamaudio/zam-plugins.git
+	source = git+https://github.com/DISTRHO/DPF.git
+	source = zam-plugins.directory
+	source = zam-plugins.menu
+	md5sums = SKIP
+	md5sums = SKIP
+	md5sums = 99e66b26922172cd212914230a557108
+	md5sums = 5be3eb16b1d91ae653af25c8dcddd70f
+
+pkgname = zam-plugins-git
+	depends = gcc-libs
+	depends = glibc
+	depends = libglvnd
+	depends = libx11
+	depends = libsamplerate.so
+	depends = libzita-convolver.so
+

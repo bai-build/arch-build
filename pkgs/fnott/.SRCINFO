@@ -1,0 +1,19 @@
+pkgbase = fnott
+	pkgdesc = Keyboard driven and lightweight Wayland notification daemon
+	pkgver = 1.3.0
+	pkgrel = 1
+	url = https://codeberg.org/dnkl/fnott
+	changelog = CHANGELOG.md
+	arch = x86_64
+	license = MIT
+	makedepends = meson
+	makedepends = scdoc
+	makedepends = wayland-protocols
+	makedepends = tllist
+	depends = dbus
+	depends = fcft
+	depends = wlroots
+	source = fnott-1.3.0.tar.gz::https://codeberg.org/dnkl/fnott/archive/1.3.0.tar.gz
+	sha256sums = d17d6a55a7e0d56ddfc3277fbbefa7baf4c70f02265bcb8bd72ee464e202e454
+
+pkgname = fnott

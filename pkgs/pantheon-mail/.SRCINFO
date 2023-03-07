@@ -1,0 +1,37 @@
+pkgbase = pantheon-mail
+	pkgdesc = The Pantheon Mail Client
+	pkgver = 1.0.8
+	pkgrel = 1
+	url = https://github.com/elementary/mail
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = cmake
+	makedepends = git
+	makedepends = gnome-doc-utils
+	makedepends = gobject-introspection
+	makedepends = granite
+	makedepends = intltool
+	makedepends = vala
+	depends = cairo
+	depends = gcr
+	depends = gdk-pixbuf2
+	depends = glib2
+	depends = glibc
+	depends = gmime
+	depends = gtk3
+	depends = libaccounts-glib
+	depends = libcanberra
+	depends = libgee
+	depends = libgsignon-glib
+	depends = libsecret
+	depends = libxml2
+	depends = pango
+	depends = sqlite
+	depends = webkitgtk
+	replaces = pantheon-mail-bzr
+	source = pantheon-mail-1.0.8.tar.gz::https://github.com/elementary/mail/archive/1.0.8.tar.gz
+	sha256sums = 3a1493832cbde0d004238197f2ddccbedfa8cdb79fe8017d5e32e9ffab7e9ee9
+
+pkgname = pantheon-mail
+

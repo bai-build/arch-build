@@ -1,0 +1,23 @@
+pkgbase = st-jfchevrette
+	pkgdesc = A simple terminal implementation for X
+	pkgver = 0.8.2
+	pkgrel = 2
+	url = http://st.suckless.org
+	install = st.install
+	arch = i686
+	arch = x86_64
+	license = MIT
+	depends = libx11
+	depends = libxinerama
+	depends = libxft
+	depends = freetype2
+	provides = st
+	conflicts = st
+	options = zipman
+	source = http://dl.suckless.org/st/st-0.8.2.tar.gz
+	source = config.h
+	sha256sums = aeb74e10aa11ed364e1bcc635a81a523119093e63befd2f231f8b0705b15bf35
+	sha256sums = d1b74290829e2f0713f3055b82b3c0e456d87e2ab966566370505b726e890ca8
+
+pkgname = st-jfchevrette
+

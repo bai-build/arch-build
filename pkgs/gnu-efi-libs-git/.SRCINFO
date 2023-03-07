@@ -1,0 +1,20 @@
+pkgbase = gnu-efi-libs-git
+	pkgdesc = Library for building UEFI Applications using GNU toolchain - GIT Version
+	pkgver = 3.0.2.81.d4c242e
+	pkgrel = 1
+	url = http://sourceforge.net/projects/gnu-efi/
+	arch = x86_64
+	arch = i686
+	license = GPL
+	makedepends = git
+	makedepends = pciutils
+	provides = gnu-efi-libs=3.0.2.81.d4c242e
+	conflicts = gnu-efi-libs
+	options = staticlibs
+	options = !strip
+	options = !makeflags
+	source = gnu-efi::git+https://github.com/vathpela/gnu-efi.git#branch=fedora
+	sha1sums = SKIP
+
+pkgname = gnu-efi-libs-git
+

@@ -1,0 +1,18 @@
+pkgbase = jumanji-git
+	pkgdesc = A highly customizable and functional web browser.
+	pkgver = r468.6f45380
+	pkgrel = 1
+	url = https://pwmt.org/projects/jumanji
+	arch = x86_64
+	arch = i686
+	license = custom
+	makedepends = git
+	depends = girara
+	depends = webkitgtk
+	provides = jumanji
+	conflicts = jumanji
+	source = git+https://git.pwmt.org/pwmt/jumanji
+	sha256sums = SKIP
+
+pkgname = jumanji-git
+

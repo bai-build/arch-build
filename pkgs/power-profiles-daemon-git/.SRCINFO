@@ -1,0 +1,20 @@
+pkgbase = power-profiles-daemon-git
+	pkgdesc = Makes power profiles handling available over D-Bus
+	pkgver = 0.8.1
+	pkgrel = 1
+	url = https://gitlab.freedesktop.org/hadess/power-profiles-daemon
+	arch = x86_64
+	license = GPL3
+	checkdepends = python-dbusmock
+	checkdepends = python-pylint
+	checkdepends = umockdev
+	makedepends = git
+	makedepends = meson
+	depends = systemd
+	depends = upower
+	provides = power-profiles-daemon
+	conflicts = power-profiles-daemon
+	source = git+https://gitlab.freedesktop.org/hadess/power-profiles-daemon.git
+	b2sums = SKIP
+
+pkgname = power-profiles-daemon-git

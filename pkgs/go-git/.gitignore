@@ -1,0 +1,14 @@
+*.xz
+*.zip
+*.deb
+*.tar
+*.tar.gz
+*.tar.gz.asc
+*.tgz
+*.bz2
+/pkg
+/src
+*.gz
+rc
+go/
+*.log

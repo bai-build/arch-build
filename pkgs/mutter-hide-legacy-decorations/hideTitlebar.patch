@@ -1,0 +1,13 @@
+diff --git a/src/core/window.c b/src/core/window.c
+index 62b2df810..827e4ff98 100644
+--- a/src/core/window.c
++++ b/src/core/window.c
+@@ -7725,7 +7725,7 @@ meta_window_get_frame_type (MetaWindow *window)
+       /* can't add border if undecorated */
+       return META_FRAME_TYPE_LAST;
+     }
+-  else if (window->border_only)
++  else if (window->border_only || META_WINDOW_MAXIMIZED(window) || META_WINDOW_TILED_SIDE_BY_SIDE(window))
+     {
+       /* override base frame type */
+       return META_FRAME_TYPE_BORDER;

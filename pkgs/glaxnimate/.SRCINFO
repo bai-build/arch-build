@@ -1,0 +1,33 @@
+pkgbase = glaxnimate
+	pkgdesc = Simple vector animation program.
+	pkgver = 0.5.2_6_g09923d6f
+	pkgrel = 1
+	url = https://glaxnimate.mattbas.org/
+	arch = x86_64
+	arch = i686
+	arch = armv7h
+	arch = aarch64
+	arch = riscv32
+	arch = riscv64
+	license = GPL3
+	makedepends = git
+	makedepends = cmake
+	makedepends = make
+	makedepends = gcc
+	makedepends = qt6-declarative
+	depends = python
+	depends = zlib
+	depends = hicolor-icon-theme
+	depends = potrace
+	depends = ffmpeg
+	depends = libarchive
+	depends = qt6-tools
+	depends = qt6-base
+	depends = qt6-imageformats
+	depends = qt6-svg
+	provides = glaxnimate
+	conflicts = glaxnimate
+	source = glaxnimate::git+https://gitlab.com/mattbas/glaxnimate/#branch=release
+	sha256sums = SKIP
+
+pkgname = glaxnimate

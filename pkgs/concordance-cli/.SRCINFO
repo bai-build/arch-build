@@ -1,0 +1,14 @@
+pkgbase = concordance-cli
+	pkgdesc = A CLI application for programming Logitech(R) Harmony(TM) remote controls.
+	pkgver = 1.4
+	pkgrel = 1
+	url = http://www.phildev.net/harmony/index.shtml
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	depends = libconcord=1.4
+	source = https://github.com/jaymzh/concordance/releases/download/v1.4/concordance-1.4.tar.bz2
+	sha256sums = e7484707926393c2b44ae5e21e978a597c0f50e210e13b9e1e8168e1476382c7
+
+pkgname = concordance-cli
+

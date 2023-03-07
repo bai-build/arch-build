@@ -1,0 +1,25 @@
+pkgbase = gtkttk
+	pkgdesc = ttk theme that gives to your Tk applications a native GTK+ look and feel.
+	pkgver = 0.8
+	pkgrel = 1
+	url = https://github.com/Geballin/gtkTtk
+	install = gtkttk.install
+	arch = x86_64
+	arch = i686
+	license = BSD
+	makedepends = make
+	makedepends = gcc
+	makedepends = tcl
+	depends = tcl
+	depends = tk
+	depends = gtk2
+	depends = gtk-engines
+	depends = ttk-theme-chooser
+	depends = gdk-pixbuf-xlib
+	options = !buildflags
+	source = https://github.com/Geballin/gtkttk/archive/0.8.tar.gz
+	source = gtkttk.install
+	md5sums = b52e00c882c039793e8f71a636e7c814
+	md5sums = 4f10456c19a4943f7688014ee5020b46
+
+pkgname = gtkttk

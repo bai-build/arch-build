@@ -1,0 +1,26 @@
+pkgbase = nexuiz
+	pkgdesc = Fast-paced multiplayer first-person shooter.
+	pkgver = 2.5.2
+	pkgrel = 8
+	url = https://www.alientrap.com/games/nexuiz/
+	arch = x86_64
+	license = GPL2
+	makedepends = libicns
+	makedepends = gendesk
+	depends = libgl
+	depends = alsa-lib
+	depends = libjpeg>=8
+	depends = libxpm
+	depends = libxxf86dga
+	depends = libxxf86vm
+	depends = hicolor-icon-theme
+	depends = sdl
+	provides = nexuiz-data
+	conflicts = nexuiz-data
+	source = http://downloads.sourceforge.net/nexuiz/nexuiz-252.zip
+	source = libpng14.patch
+	sha256sums = a5e27ebcc9775c4a490d0d3536c32e4a8f8f96b038c0b6a78d1823c37a962000
+	sha256sums = 327c45a56faa1963fa08a590694fd0c23bed448282f9473c2d483447df9a6e1f
+
+pkgname = nexuiz
+

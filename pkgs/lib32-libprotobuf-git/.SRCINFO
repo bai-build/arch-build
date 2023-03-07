@@ -1,0 +1,17 @@
+pkgbase = lib32-libprotobuf-git
+	pkgdesc = A language-neutral, platform-neutral extensible mechanism for serializing structured data.
+	pkgver = v3.3.1.r420.gd1bc27ca
+	pkgrel = 1
+	url = https://developers.google.com/protocol-buffers/
+	arch = x86_64
+	license = custom
+	makedepends = gcc-multilib
+	makedepends = curl
+	makedepends = unzip
+	depends = lib32-zlib
+	depends = lib32-gcc-libs
+	source = git+https://github.com/google/protobuf.git
+	md5sums = SKIP
+
+pkgname = lib32-libprotobuf-git
+

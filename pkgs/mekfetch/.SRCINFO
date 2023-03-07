@@ -1,0 +1,12 @@
+pkgbase = mekfetch
+	pkgdesc = Simple neofetch alternative written in C
+	pkgver = 1.1.1
+	pkgrel = 2
+	url = https://github.com/mekb-turtle/mekfetch
+	arch = any
+	makedepends = git
+	optdepends = nerd-fonts: Nerd font support
+	source = mekfetch::git+https://github.com/mekb-turtle/mekfetch.git#tag=1.1.1
+	sha256sums = SKIP
+
+pkgname = mekfetch

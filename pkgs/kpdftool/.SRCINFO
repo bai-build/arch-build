@@ -1,0 +1,14 @@
+pkgbase = kpdftool
+	pkgdesc = GUI interface for GhostView and ImageMagick for operations with PDF and PostScript
+	pkgver = 0.23.1
+	pkgrel = 5
+	url = https://www.linux-apps.com/content/show.php/kpdftool?content=33194
+	arch = i686
+	arch = x86_64
+	license = gpl3
+	depends = qt4
+	source = kpdftool-0.23.1.zip::https://dllb2.pling.com/api/files/download/j/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE0NjY2Mjk0NjAiLCJ1IjpudWxsLCJsdCI6ImRvd25sb2FkIiwicyI6ImEzOTM0YmQ0MTNkMmRhMTg4MjM5MjUxODM5NzRlYjM4YWM0MDZhZWNkYWQwOGVkZGIwYzRjYzRhNWVmMmIxOTQ2NjlmMDIxNDkxZWU1ODlkNzZjOWJmYzdlYTdjMWJiYTk2ZDAwN2ZkZGQ5YWRiNGY4NGJkNmYxZjc0N2ZjN2ZmIiwidCI6MTU5MjIxNDI3NSwic3RmcCI6IjEzZGFkZjg0Y2YxZTU1NDQ1ZWZiYjJmMDIwYjNjOTFlIiwic3RpcCI6IjE4NS4yNDQuOTYuMTUwIn0.o9yfTbsSYrXZVtI0ewsVT9FJkOy6WqXzrRoS-P8bayI/33194-kpdftool-0.23.1.zip
+	sha512sums = 70b54a1aff225b7492c5bcee8fd3132596047c71ee9baf7284feddd2b8ed10444b2418b2fa8f6bbdc84016c2280f9a6c327703a692ff1abcf32b8005713f3718
+
+pkgname = kpdftool
+

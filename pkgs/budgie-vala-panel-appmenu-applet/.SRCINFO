@@ -1,0 +1,30 @@
+pkgbase = budgie-vala-panel-appmenu-applet
+	pkgdesc = Vala Panel Application Menu for Budgie Desktop
+	pkgver = 0.7.1+1+6d30c29
+	pkgrel = 2
+	url = https://github.com/rilian-la-te/vala-panel-appmenu
+	arch = i686
+	arch = x86_64
+	license = LGPL3
+	makedepends = bamf>=0.5.0
+	makedepends = cmake>=3.6
+	makedepends = gobject-introspection
+	makedepends = glib2>=2.50
+	makedepends = gtk3>=3.22
+	makedepends = libwnck3>=3.4.8
+	makedepends = vala>=0.34
+	depends = appmenu-gtk-module>=0.6.94
+	depends = budgie-desktop
+	depends = vala-panel-appmenu-common>=0.7.1
+	optdepends = appmenu-qt4: for qt4 menus
+	optdepends = appmenu-qt5: for qt5 menus
+	optdepends = libdbusmenu-gtk2: for Chromium/Google Chrome support
+	optdepends = libdbusmenu-gtk3: for Chromium/Google Chrome support
+	conflicts = vala-panel-appmenu-budgie-git
+	source = git+https://github.com/rilian-la-te/vala-panel-appmenu.git#commit=6d30c2961a002789cbfe98827744edb2a9c2e3a1
+	source = git+https://github.com/rilian-la-te/cmake-vala.git#commit=1bce300e6995c055296a79122d19993bc5085b75
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = budgie-vala-panel-appmenu-applet
+

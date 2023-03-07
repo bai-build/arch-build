@@ -1,0 +1,15 @@
+pkgbase = ultracopier
+	pkgdesc = Ultracopier is free and open source software licensed under GPL3 that acts as a replacement for files copy dialogs. Main features include: play/pause, speed limitation, on-error resume, error/collision management
+	pkgver = 2.2.6.4
+	pkgrel = 1
+	url = https://ultracopier.first-world.info/
+	arch = x86_64
+	license = GPL3
+	makedepends = qt5-tools
+	depends = qt5-base
+	depends = qt5-multimedia
+	provides = ultracopier
+	source = ultracopier-2.2.6.4.zip::https://github.com/alphaonex86/Ultracopier/archive/a2fbe816108d89761678fec9974e6977eeda9e92.zip
+	sha256sums = dc9100156886d371a81e62ba91542b0e36ad9a62b41e05c67e8fd555ff340e7f
+
+pkgname = ultracopier

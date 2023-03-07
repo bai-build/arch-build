@@ -1,0 +1,25 @@
+pkgbase = kmix-git
+	pkgdesc = KDE volume control program
+	pkgver = 21.11.70_r2383.g0ef1805b
+	pkgrel = 1
+	url = https://apps.kde.org/kmix/
+	arch = x86_64
+	groups = kde-applications-git
+	groups = kde-multimedia-git
+	license = GPL
+	license = LGPL
+	license = FDL
+	makedepends = git
+	makedepends = extra-cmake-modules-git
+	makedepends = kdoctools-git
+	depends = knotifications-git
+	depends = kxmlgui-git
+	depends = solid-git
+	depends = kcompletion-git
+	depends = hicolor-icon-theme
+	provides = kmix
+	conflicts = kmix
+	source = git+https://github.com/KDE/kmix.git
+	sha256sums = SKIP
+
+pkgname = kmix-git

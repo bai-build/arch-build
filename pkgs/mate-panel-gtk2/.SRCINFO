@@ -1,0 +1,26 @@
+pkgbase = mate-panel-gtk2
+	pkgdesc = The MATE Panel (GTK2 version)
+	pkgver = 1.16.2
+	pkgrel = 2
+	url = http://mate-desktop.org
+	arch = i686
+	arch = x86_64
+	groups = mate-gtk2
+	license = GPL
+	makedepends = intltool
+	makedepends = itstool
+	makedepends = gobject-introspection
+	depends = dbus-glib
+	depends = libwnck
+	depends = libcanberra
+	depends = libmateweather-gtk2
+	depends = libsm
+	depends = mate-menus-gtk2
+	depends = mate-desktop-gtk2
+	provides = mate-panel
+	conflicts = mate-panel
+	source = http://pub.mate-desktop.org/releases/1.16/mate-panel-1.16.2.tar.xz
+	sha1sums = b6029edf7c54a751effd498871119f302625c91f
+
+pkgname = mate-panel-gtk2
+

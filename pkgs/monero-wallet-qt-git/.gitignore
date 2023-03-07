@@ -1,0 +1,12 @@
+.*.swp
+.*.swo
+
+*.asc_
+
+pkg/
+src/
+
+monero-gui/
+
+*.pkg.tar.xz
+*.pkg.tar.zst

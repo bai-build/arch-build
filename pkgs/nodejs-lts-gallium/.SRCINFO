@@ -1,0 +1,25 @@
+pkgbase = nodejs-lts-gallium
+	pkgdesc = Evented I/O for V8 javascript
+	pkgver = 16.13.0
+	pkgrel = 1
+	url = https://nodejs.org/
+	arch = x86_64
+	license = MIT
+	makedepends = python
+	makedepends = procps-ng
+	depends = openssl
+	depends = zlib
+	depends = icu
+	depends = libuv
+	depends = libnghttp2
+	depends = c-ares
+	optdepends = npm: nodejs package manager
+	optdepends = corepack: zero-runtime-dependency package acting as bridge between Node projects and their package managers.
+	provides = nodejs=16.13.0
+	conflicts = nodejs
+	source = https://github.com/nodejs/node/archive/v16.13.0/nodejs-16.13.0.tar.gz
+	source = system-c-ares.patch
+	sha512sums = 0be8e2d427567910bfc986a6d98cff2351811ef9fc22f42a4625d58df958ed5b19d13fd09fbceb997d46582206e5f6ae4b79153870bb151c72062b9aaadb5a1c
+	sha512sums = bca85b5a4622b38f20f3787bdb2784db76cd4b213fadf8a5813a375080e7481c4aff7556712d59df3e19849a7eb6b2f048a69b4e2162cb717ab1b3a791d2558e
+
+pkgname = nodejs-lts-gallium

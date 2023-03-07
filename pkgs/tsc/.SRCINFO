@@ -1,0 +1,33 @@
+pkgbase = tsc
+	pkgdesc = Jump'n'run game with editor and scripting facilities, fork of SMC
+	pkgver = 2.0.0
+	pkgrel = 4
+	url = https://secretchronicles.org/en/
+	arch = x86_64
+	license = GPL3
+	makedepends = cmake
+	makedepends = ruby-rake
+	makedepends = gperf
+	makedepends = boost
+	depends = sdl_image
+	depends = sdl_ttf
+	depends = sdl_mixer
+	depends = devil
+	depends = boost-libs
+	depends = libxml++2.6
+	depends = glew
+	depends = pcre
+	depends = gtk-update-icon-cache
+	depends = desktop-file-utils
+	depends = cegui-0.7
+	source = https://ftp.secretchronicles.org/releases/TSC-2.0.0.tar.xz
+	source = tsc-2.0.0-mga-mandir.patch
+	source = tsc-2.0.0-issue457-utf8-rakefile.patch
+	source = tsc-2.0.0-mga-rename-custom-filesystem-relative.patch
+	sha256sums = c8a9ca3975f9de16aa59fab2a7864c3c541963b46c2c40533632c4fc621b407a
+	sha256sums = 92603155c1b8f65878361fe31390fa3c79eacbe8559670a9a0476ed654eaa387
+	sha256sums = d68a995b8ea8b46228fe70feec2e999d26ada568d4d30faece8d3833cf5a4156
+	sha256sums = 70cabaaaf8088473f8e1dafc9ea287e839ce780e99f9d2178122863657cbb207
+
+pkgname = tsc
+

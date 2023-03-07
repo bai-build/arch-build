@@ -1,0 +1,46 @@
+pkgbase = cellframe-node
+	pkgdesc = Cellframe blockchain node with a powerful SDK
+	pkgver = 5.1.366
+	pkgrel = 3
+	url = https://cellframe.net
+	install = cellframe-node.install
+	arch = x86_64
+	arch = aarch64
+	license = LGPL3
+	makedepends = git
+	makedepends = cmake
+	makedepends = python
+	depends = python
+	depends = logrotate
+	provides = cellframe-node
+	provides = cellframe-node-cli
+	provides = cellframe-node-tool
+	options = !buildflags
+	options = !makeflags
+	backup = opt/cellframe-node/etc/cellframe-node.cfg
+	source = git+https://gitlab.demlabs.net/cellframe/cellframe-node.git#commit=2918cb9fd3d1df774df78bb706db052741696186
+	source = git+https://gitlab.demlabs.net/cellframe/cellframe-sdk.git#commit=b32dfcdc37fb192ef2253c8eec86fa8e3d3c8c44
+	source = git+https://gitlab.demlabs.net/cellframe/python-cellframe.git#commit=3c4b8a87a47ea0cba1231245ac0663d2bce06b6d
+	source = cellframe-node.cfg
+	source = Backbone.cfg
+	source = kelvpn-minkowski.cfg
+	source = mileena.cfg
+	source = subzero.cfg
+	source = cellframe-node.service
+	source = cellframe-node.logrotate
+	source = cellframe-node.sh
+	source = LICENSE
+	md5sums = SKIP
+	md5sums = SKIP
+	md5sums = SKIP
+	md5sums = 47f1aa606f2b91d4dfbc22ea263d540a
+	md5sums = 65a864051d256b08d656079d1c6fa7af
+	md5sums = 0b5a872c2ea133a4df0443a415e9f311
+	md5sums = f5bc95f5f8915d074c66398b2acb0907
+	md5sums = be8dc9bddf5354074993df8377da03a4
+	md5sums = f6fa69bc2e3896fda661c84d2a2c3192
+	md5sums = 4ccc93f9055e3382025564a729430d34
+	md5sums = 797a5e1704727d387713105e1f101d99
+	md5sums = e6a600fd5e1d9cbde2d983680233ad02
+
+pkgname = cellframe-node

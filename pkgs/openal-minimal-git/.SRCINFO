@@ -1,0 +1,27 @@
+pkgbase = openal-minimal-git
+	pkgdesc = Cross-platform 3D audio library, software implementation
+	pkgver = 1.20.1
+	pkgrel = 1
+	url = https://github.com/kcat/openal-soft
+	arch = i686
+	arch = x86_64
+	license = LGPL
+	makedepends = alsa-lib
+	makedepends = libpulse
+	makedepends = sdl2
+	makedepends = git
+	makedepends = cmake
+	makedepends = ninja
+	depends = glibc
+	optdepends = qt5-base: alsoft-config GUI Configurator
+	source = git+https://github.com/kcat/openal-soft
+	md5sums = SKIP
+
+pkgname = openal-minimal-git
+	optdepends = qt5-base: alsoft-config GUI Configurator
+	optdepends = fluidsynth: MIDI rendering
+	provides = openal=1.20.1
+	provides = openal
+	conflicts = openal
+	conflicts = openal-git
+

@@ -1,0 +1,7 @@
+/pkg/
+/zcash/
+/src/
+/*.tar.gz
+/*.xz
+/*.swp
+/concourse-v*

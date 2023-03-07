@@ -1,0 +1,20 @@
+pkgbase = libiio
+	pkgdesc = Library for interfacing with IIO devices
+	pkgver = 0.18
+	pkgrel = 1
+	url = https://github.com/analogdevicesinc/libiio
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = cmake
+	makedepends = python
+	depends = libxml2
+	depends = avahi
+	depends = libserialport
+	depends = libaio
+	depends = libusb
+	source = libiio-0.18.zip::https://github.com/analogdevicesinc/libiio/archive/v0.18.zip
+	sha1sums = 343e6c9b6e229ae6cc1cb6500dfb8ebb5933099e
+
+pkgname = libiio
+

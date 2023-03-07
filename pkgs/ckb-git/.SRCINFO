@@ -1,0 +1,18 @@
+pkgbase = ckb-git
+	pkgdesc = Corsair Keyboard and Mouse Input Driver
+	pkgver = v0.2.6.r1.geb1fe4e
+	pkgrel = 1
+	url = https://github.com/ccMSC/ckb
+	install = ckb-git.install
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = git
+	depends = qt5-base
+	depends = hicolor-icon-theme
+	conflicts = ckb-git-latest
+	source = ckb-git::git+https://github.com/ccMSC/ckb.git
+	md5sums = SKIP
+
+pkgname = ckb-git
+

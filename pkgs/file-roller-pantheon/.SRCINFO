@@ -1,0 +1,35 @@
+pkgbase = file-roller-pantheon
+	pkgdesc = Create and modify archives (with Contractor integration)
+	pkgver = 43.0
+	pkgrel = 1
+	url = https://gitlab.gnome.org/GNOME/file-roller/
+	arch = i686
+	arch = x86_64
+	groups = pantheon
+	license = GPL
+	makedepends = yelp-tools
+	makedepends = git
+	makedepends = libnautilus-extension
+	makedepends = meson
+	makedepends = appstream-glib
+	depends = libhandy
+	depends = dconf
+	depends = libarchive
+	depends = file
+	depends = json-glib
+	depends = libportal-gtk3
+	depends = zip
+	depends = unzip
+	optdepends = p7zip: 7z, arj, exe and encrypted zip files support
+	optdepends = unrar: better RAR archive support
+	optdepends = unace: ACE archive support
+	optdepends = lrzip: lrzip archive support
+	optdepends = squashfs-tools: squashfs image support
+	provides = file-roller
+	conflicts = file-roller
+	source = git+https://gitlab.gnome.org/GNOME/file-roller.git#commit=6d57d9962efb976aa3036db965f558b96575289c
+	source = contracts.patch
+	sha256sums = SKIP
+	sha256sums = d04cd96655a9d6a7686fcdb22ced19680da9964b12f4943bf608fa2486fc01e8
+
+pkgname = file-roller-pantheon

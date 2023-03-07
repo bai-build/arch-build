@@ -1,0 +1,13 @@
+pkgbase = vstream-client
+	pkgdesc = A fork off of the vstream library from the tivo-mplayer project.
+	pkgver = 1.2.1.1
+	pkgrel = 4
+	url = https://code.google.com/archive/p/vstream-client/
+	arch = x86_64
+	license = GPL
+	depends = glibc
+	options = debug
+	source = https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/vstream-client/vstream-client-1.2.1.1.tar.bz2
+	sha256sums = caf3058b0afc0e8c01d752abf7a115a9b647fac1c6e9190a9aae8f79d4dcf09b
+
+pkgname = vstream-client

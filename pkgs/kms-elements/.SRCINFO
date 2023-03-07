@@ -1,0 +1,27 @@
+pkgbase = kms-elements
+	pkgdesc = Kurento server media elements
+	pkgver = 6.17.0
+	pkgrel = 1
+	url = https://github.com/Kurento/kms-elements
+	arch = any
+	license = apache
+	makedepends = kms-cmake-utils
+	makedepends = kurento-module-creator
+	depends = boost
+	depends = kms-core
+	depends = libnice
+	depends = gstreamer
+	depends = gst-plugins-base
+	depends = gst-plugins-bad
+	source = git+https://github.com/Kurento/kms-elements.git#tag=6.17.0
+	source = cmake-boost.patch
+	source = kmselements.c.patch
+	source = kmsrecorderendpoint.c.patch
+	source = kmswebrtcendpoint.c.patch
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = kms-elements

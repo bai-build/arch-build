@@ -1,0 +1,22 @@
+pkgbase = xtensor-io
+	pkgdesc = xtensor plugin to read and write images, audio files, numpy (compressed) npz and HDF5
+	pkgver = 0.12.9
+	pkgrel = 1
+	url = https://github.com/xtensor-stack/xtensor-io
+	arch = any
+	license = BSD-3-Clause
+	makedepends = cmake
+	depends = xtensor
+	depends = openimageio
+	depends = libsndfile
+	depends = zlib
+	depends = highfive
+	depends = hdf5
+	depends = blosc
+	depends = gdal
+	source = xtensor-io-0.12.9.tar.gz::https://github.com/xtensor-stack/xtensor-io/archive/0.12.9.tar.gz
+	source = 001-install-libdeps.patch
+	md5sums = 13e6d74ba6d188b19e91157d953d2ce5
+	md5sums = 1f2dd61abb24917caac845c0cbc5473c
+
+pkgname = xtensor-io

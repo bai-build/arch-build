@@ -1,0 +1,42 @@
+pkgbase = gegl-qfix-git
+	pkgdesc = Graph based image processing framework
+	pkgver = 0.4.17.r9768.e1aa95ac1
+	pkgrel = 1
+	url = http://www.gegl.org
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	license = LGPL3
+	makedepends = git
+	makedepends = meson
+	makedepends = intltool
+	makedepends = python2
+	makedepends = ruby
+	makedepends = lua
+	makedepends = libraw
+	makedepends = openexr
+	makedepends = ffmpeg
+	makedepends = librsvg
+	makedepends = jasper
+	makedepends = libtiff
+	makedepends = suitesparse
+	makedepends = gobject-introspection
+	depends = babl>=0.1.71
+	depends = libspiro
+	depends = json-glib
+	optdepends = openexr: for using the openexr plugin
+	optdepends = ffmpeg: for using the ffmpeg plugin
+	optdepends = librsvg: for using the svg plugin
+	optdepends = libtiff: tiff plugin
+	optdepends = jasper: for using the jasper plugin
+	optdepends = libraw: raw plugin
+	optdepends = suitesparse: matting-levin plugin
+	optdepends = lua: lua plugin
+	provides = gegl=0.4.17.r9768.e1aa95ac1
+	conflicts = gegl
+	options = !libtool
+	source = git+https://gitlab.gnome.org/GNOME/gegl.git
+	sha512sums = SKIP
+
+pkgname = gegl-qfix-git
+

@@ -1,0 +1,5 @@
+
+/tn40xx-*.tgz
+/*.pkg.tar.xz
+/src/
+/pkg/

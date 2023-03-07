@@ -1,0 +1,23 @@
+pkgbase = iojs-git
+	pkgdesc = Evented I/O for V8 JavaScript - Node.js fork
+	pkgver = v2.3.3.10.g84b3915
+	pkgrel = 1
+	url = http://iojs.org/
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = git
+	depends = python2
+	depends = gnuplot
+	depends = openssl
+	provides = nodejs
+	provides = npm
+	conflicts = nodejs
+	conflicts = iojs
+	conflicts = npm
+	options = !emptydirs
+	source = git://github.com/iojs/io.js
+	md5sums = SKIP
+
+pkgname = iojs-git
+

@@ -1,0 +1,26 @@
+pkgbase = torrential
+	pkgdesc = A simple torrent client for elementary OS
+	pkgver = 1.1.0
+	pkgrel = 2
+	url = https://github.com/davidmhewitt/torrential
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = git
+	makedepends = cmake
+	makedepends = vala0.42
+	depends = libgranite.so
+	depends = libunity
+	depends = libevent
+	depends = libnatpmp
+	depends = libb64
+	depends = dht
+	depends = miniupnpc
+	depends = libutp
+	source = git+https://github.com/davidmhewitt/torrential.git#tag=1.1.0
+	source = torrential-transmission::git+https://github.com/davidmhewitt/transmission.git#branch=2.9x-torrential
+	md5sums = SKIP
+	md5sums = SKIP
+
+pkgname = torrential
+

@@ -1,0 +1,14 @@
+pkgbase = asplib
+	pkgdesc = a small and lightweight C++ library for digital signal processing
+	pkgver = 20151025.df5c386
+	pkgrel = 2
+	url = https://github.com/AchimTuran/asplib
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = cmake
+	source = https://github.com/AchimTuran/asplib/archive/df5c386d122c8fcd3e405ef93076e81ba9638772.tar.gz
+	md5sums = SKIP
+
+pkgname = asplib
+

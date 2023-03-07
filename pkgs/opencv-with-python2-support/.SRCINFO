@@ -1,0 +1,54 @@
+pkgbase = opencv-with-python2-support
+	pkgdesc = Open Source Computer Vision Library
+	pkgver = 4.1.0
+	pkgrel = 2
+	url = https://opencv.org/
+	arch = x86_64
+	license = BSD
+	makedepends = cmake
+	makedepends = python-numpy
+	makedepends = python2-numpy
+	makedepends = python-setuptools
+	makedepends = python2-setuptools
+	makedepends = mesa
+	makedepends = eigen
+	makedepends = hdf5
+	makedepends = lapacke
+	makedepends = gtk3
+	makedepends = vtk
+	makedepends = glew
+	makedepends = ant
+	makedepends = java-environment
+	depends = intel-tbb
+	depends = openexr
+	depends = gst-plugins-base
+	depends = libdc1394
+	depends = cblas
+	depends = lapack
+	depends = libgphoto2
+	depends = jasper
+	depends = ffmpeg
+	optdepends = opencv-samples: samples
+	optdepends = gtk3: for the HighGUI module
+	optdepends = vtk: for the viz module
+	optdepends = hdf5: support for HDF5 format
+	optdepends = opencl-icd-loader: For coding with OpenCL
+	optdepends = python-numpy: Python interface
+	optdepends = java-runtime: Java interface
+	source = opencv-4.1.0.tar.gz::https://github.com/opencv/opencv/archive/4.1.0.zip
+	source = opencv_contrib-4.1.0.tar.gz::https://github.com/opencv/opencv_contrib/archive/4.1.0.tar.gz
+	source = opencv-includedir.patch
+	sha256sums = 2c75b129da2e2c8728d168b7bf14ceca2da0ebe938557b109bae6742855ede13
+	sha256sums = e7d775cc0b87b04308823ca518b11b34cc12907a59af4ccdaf64419c1ba5e682
+	sha256sums = a96e35c9592e655b21a62cfe04e864a10e21535ad900e5de67356b9e9f40ca10
+
+pkgname = opencv-with-python2-support
+	provides = opencv=4.1.0
+	conflicts = opencv
+
+pkgname = opencv-with-python2-support-samples
+	pkgdesc = Open Source Computer Vision Library (samples)
+	depends = opencv=4.1.0
+	provides = opencv-samples=4.1.0
+	conflicts = opencv-samples
+

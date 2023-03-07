@@ -1,0 +1,15 @@
+pkgbase = regina-rexx-das
+	pkgdesc = An implementation of a Rexx interpreter, compliant with the ANSI Standard for Rexx (1996)
+	pkgver = 3.9.5
+	pkgrel = 1
+	url = http://regina-rexx.sourceforge.net/
+	arch = i686
+	arch = x86_64
+	license = LGPL
+	depends = bash
+	provides = rexx
+	options = !makeflags
+	source = http://downloads.sourceforge.net/regina-rexx/regina-rexx-3.9.5.tar.gz
+	sha256sums = 08e9a9061bee0038cfb45446de20766ffdae50eea37f6642446ec4e73a2abc51
+
+pkgname = regina-rexx-das

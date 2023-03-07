@@ -1,0 +1,29 @@
+pkgbase = forecast-git
+	pkgdesc = Query weather forecasts from forecast.io
+	pkgver = 0.5.1
+	pkgrel = 1
+	url = https://github.com/2ion/forecast
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = autoconf
+	makedepends = automake
+	makedepends = make
+	makedepends = pkg-config
+	makedepends = git
+	depends = json-c
+	depends = curl
+	depends = libconfig
+	depends = ncurses
+	depends = openssl
+	depends = lz4
+	depends = bash-completion
+	depends = talloc
+	depends = fuse
+	provides = forecast
+	conflicts = forecast
+	source = forecast::git+https://github.com/2ion/forecast.git#branch=master
+	md5sums = SKIP
+
+pkgname = forecast-git
+

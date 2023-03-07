@@ -1,0 +1,16 @@
+pkgbase = ros-indigo-urdfdom-headers
+	pkgdesc = ROS - Temporary package redirecting to C++ Headers for URDF.
+	pkgver = 0.3.0
+	pkgrel = 3
+	url = http://wiki.ros.org/urdf
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = git
+	makedepends = ros-build-tools
+	depends = urdfdom-headers
+	source = urdfdom_headers::git+https://github.com/ros-gbp/urdfdom_headers-release.git#tag=release/indigo/urdfdom_headers/0.3.0-2
+	md5sums = SKIP
+
+pkgname = ros-indigo-urdfdom-headers
+

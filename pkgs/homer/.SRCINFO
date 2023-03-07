@@ -1,0 +1,21 @@
+pkgbase = homer
+	pkgdesc = Hypergeometric Optimization of Motif EnRichment
+	pkgver = 4.10
+	pkgrel = 1
+	url = http://homer.salk.edu/
+	install = homer.install
+	arch = i686
+	arch = x86_64
+	license = GPLv3
+	depends = perl
+	depends = weblogo2
+	depends = wget
+	optdepends = ucsc-kent-genome-tools: for the blat tool, required for removing redundant sequences during motif finding
+	optdepends = ghostscript: required for making motif logos
+	source = http://homer.salk.edu/homer/data/software/homer.v4.10.zip
+	source = homer.sh
+	md5sums = 25af6351d2b114237f35abaffd17b521
+	md5sums = 81a149ed531dcca7f0096901fd88ddeb
+
+pkgname = homer
+

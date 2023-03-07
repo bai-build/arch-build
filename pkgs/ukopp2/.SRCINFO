@@ -1,0 +1,15 @@
+pkgbase = ukopp2
+	pkgdesc = A backup program for USB devices
+	pkgver = 2.0
+	pkgrel = 1
+	url = http://www.kornelix.net/ukopp/ukopp.html
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	depends = clutter-gtk
+	options = !emptydirs
+	source = http://www.kornelix.net/downloads/downloads/ukopp2-2.0.tar.gz
+	sha256sums = b21d943ae1b82c15a1adc74273eac7b098810b8f170baf3e91b4dd9799d90b8a
+
+pkgname = ukopp2
+

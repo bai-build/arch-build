@@ -1,0 +1,30 @@
+pkgbase = debhelper-git
+	pkgdesc = A collection of programs that can be used in a debian/rules file to automate common tasks
+	pkgver = 13.11.4.r0.ge68efe3d
+	pkgrel = 1
+	url = https://salsa.debian.org/debian/debhelper.git/
+	arch = any
+	license = GPL2
+	license = GPL3
+	makedepends = file>=3.23
+	makedepends = git
+	makedepends = man-db>=2.5.1
+	makedepends = po4a>=0.24
+	depends = binutils
+	depends = dpkg>=1.16.2
+	depends = file>=3.23
+	depends = html2text
+	depends = man-db>=2.5.1
+	depends = perl-pod-parser
+	depends = perl>=5.6.0
+	depends = po-debconf
+	depends = strip-nondeterminism
+	optdepends = dh-make: convert source archives into Debian package source
+	provides = dh-strip-nondeterminism
+	conflicts = dh-strip-nondeterminism
+	source = debhelper-git::git+https://salsa.debian.org/debian//debhelper.git
+	source = dh_strip_nondeterminism::https://salsa.debian.org/reproducible-builds/strip-nondeterminism/-/raw/master/bin/dh_strip_nondeterminism?inline=false
+	md5sums = SKIP
+	md5sums = SKIP
+
+pkgname = debhelper-git

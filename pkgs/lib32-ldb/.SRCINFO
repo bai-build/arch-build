@@ -1,0 +1,19 @@
+pkgbase = lib32-ldb
+	pkgdesc = A schema-less, ldap like, API and database
+	pkgver = 2.6.1
+	pkgrel = 1
+	url = https://ldb.samba.org/
+	arch = x86_64
+	license = GPL3
+	makedepends = lib32-cmocka
+	depends = lib32-talloc
+	depends = lib32-tevent
+	depends = lib32-tdb>=1.4.3
+	depends = lib32-popt
+	depends = lib32-libbsd
+	depends = ldb
+	depends = python
+	source = https://samba.org/ftp/ldb/ldb-2.6.1.tar.gz
+	md5sums = 3a5f54f511fb237b83e1f34e2c7e25cd
+
+pkgname = lib32-ldb

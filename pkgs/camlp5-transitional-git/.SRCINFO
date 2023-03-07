@@ -1,0 +1,20 @@
+pkgbase = camlp5-transitional-git
+	pkgdesc = A preprocessor-pretty-printer of OCaml. (transitional)
+	pkgver = 7.08
+	pkgrel = 1
+	url = https://camlp5.github.io/
+	arch = x86_64
+	license = BSD
+	depends = ocaml
+	provides = camlp5
+	provides = camlp5-git
+	provides = camlp5-transitional
+	conflicts = camlp5
+	conflicts = camlp5-git
+	conflicts = camlp5-transitional
+	options = staticlibs
+	source = git+https://github.com/camlp5/camlp5
+	sha256sums = SKIP
+
+pkgname = camlp5-transitional-git
+

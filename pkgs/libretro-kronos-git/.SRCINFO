@@ -1,0 +1,21 @@
+pkgbase = libretro-kronos-git
+	pkgdesc = Sega Saturn core
+	pkgver = r5728.2995a5f9
+	pkgrel = 1
+	url = https://github.com/FCare/Kronos
+	arch = i686
+	arch = x86_64
+	groups = libretro-unstable
+	license = GPL2
+	makedepends = git
+	depends = glibc
+	depends = libretro-core-info
+	provides = libretro-kronos
+	conflicts = libretro-kronos
+	source = Kronos::git+https://github.com/FCare/Kronos.git
+	source = fix-build.patch
+	sha256sums = SKIP
+	sha256sums = 9ab6b2be397a8a6025575a30124aadafdb1977bc70849878a2c5c01fd7702e34
+
+pkgname = libretro-kronos-git
+

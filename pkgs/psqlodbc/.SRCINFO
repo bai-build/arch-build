@@ -1,0 +1,16 @@
+pkgbase = psqlodbc
+	pkgdesc = PostgreSQL ODBC driver
+	pkgver = 13.00.0000
+	pkgrel = 1
+	url = http://www.postgresql.org
+	install = psqlodbc.install
+	arch = x86_64
+	license = GPL
+	makedepends = postgresql
+	depends = unixodbc
+	depends = postgresql-libs
+	source = https://ftp.postgresql.org/pub/odbc/versions/src/psqlodbc-13.00.0000.tar.gz
+	sha256sums = 4f156931b44d78401abfc2b72e512147a02b836677f8aac610b812f12e08910d
+
+pkgname = psqlodbc
+

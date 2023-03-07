@@ -1,0 +1,25 @@
+pkgbase = lib32-cogl
+	pkgdesc = An object oriented GL/GLES Abstraction/Utility Layer (32-bit)
+	pkgver = 1.22.4
+	pkgrel = 1
+	url = https://blogs.gnome.org/clutter/
+	arch = x86_64
+	license = GPL2
+	makedepends = gobject-introspection
+	makedepends = git
+	makedepends = gtk-doc
+	depends = lib32-mesa
+	depends = lib32-libdrm
+	depends = lib32-libxext
+	depends = lib32-libxdamage
+	depends = lib32-libxcomposite
+	depends = lib32-gdk-pixbuf2
+	depends = lib32-pango
+	depends = lib32-libxrandr
+	depends = cogl
+	options = !emptydirs
+	source = git+https://gitlab.gnome.org/GNOME/cogl.git#commit=60015d7d9756a89fb608887b52fa6b6a5a7db18d
+	sha256sums = SKIP
+
+pkgname = lib32-cogl
+

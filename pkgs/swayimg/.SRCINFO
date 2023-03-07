@@ -1,0 +1,27 @@
+pkgbase = swayimg
+	pkgdesc = Image viewer for Sway/Wayland
+	pkgver = 1.9
+	pkgrel = 1
+	url = https://github.com/artemsen/swayimg
+	arch = x86_64
+	license = MIT
+	makedepends = bash-completion
+	makedepends = meson
+	makedepends = wayland-protocols
+	depends = wayland
+	depends = libxkbcommon
+	depends = json-c
+	depends = fontconfig
+	depends = freetype2
+	depends = hicolor-icon-theme
+	depends = libheif
+	depends = libjxl
+	depends = librsvg
+	depends = libwebp
+	depends = libtiff
+	depends = libexif
+	optdepends = bash-completion: Bash completions
+	source = swayimg-1.9.tar.gz::https://github.com/artemsen/swayimg/archive/v1.9.tar.gz
+	md5sums = f2d31099b54257e5813838b7ecdd8a91
+
+pkgname = swayimg

@@ -1,0 +1,13 @@
+# the kernel git repo
+archlinux-linux/
+archlinux-linux
+
+# build directories
+src/
+pkg/
+
+# build logs and packages
+linux-x32-*.log
+linux-x32-*.pkg.tar.xz
+linux-x32-*.pkg.tar.zst
+PKGBUILD-namcap.log

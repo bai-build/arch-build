@@ -1,0 +1,18 @@
+post_install() {
+  systemd-sysusers mediatomb.conf
+  install -dm700 -omediatomb -gmediatomb /var/lib/mediatomb
+
+  echo 'Warning: the MediaTomb web interface exposes your filesystem to the network'
+  echo 'For maximum security, set <ui enabled="no"> in your MediaTomb config file'
+}
+
+post_upgrade() {
+  systemd-sysusers mediatomb.conf
+
+  if [ $(vercmp $2 0.12.1-12) -lt 1 ]; then
+    echo 'Attention: By default, MediaTomb now runs as its own user: mediatomb.'
+    echo 'Ensuring ownership of /var/lib/mediatomb is mediatomb:mediatomb...'
+    chown -R mediatomb:mediatomb /var/lib/mediatomb &>/dev/null
+  fi
+}
+

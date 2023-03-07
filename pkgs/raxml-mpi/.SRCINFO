@@ -1,0 +1,18 @@
+pkgbase = raxml-mpi
+	pkgdesc = Randomized Axelerated Maximum Likelihood
+	pkgver = 8.2.12
+	pkgrel = 1
+	url = http://sco.h-its.org/exelixis/web/software/raxml/
+	install = raxml.install
+	arch = x86_64
+	license = GPL3
+	depends = openmpi
+	provides = raxml
+	conflicts = raxml
+	source = raxml-8.2.12.tar.gz::https://github.com/stamatak/standard-RAxML/archive/v8.2.12.tar.gz
+	source = raxml.install
+	sha256sums = 338f81b52b54e16090e193daf36c1d4baa9b902705cfdc7f4497e3e09718533b
+	sha256sums = 05283dec7f44c560590555b4f901e0c1ed422892471bddf651d90c94b41716ea
+
+pkgname = raxml-mpi
+

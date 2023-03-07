@@ -1,0 +1,17 @@
+pkgbase = git-extensions
+	pkgdesc = Simple handy extensions for git
+	pkgver = 4
+	pkgrel = 1
+	url = https://github.com/maandree/git-extensions
+	arch = any
+	license = custom:GNUAllPermissiveLicense
+	depends = git
+	depends = bash
+	depends = awk
+	provides = git-extensions
+	conflicts = git-extensions
+	source = https://github.com/maandree/git-extensions/tarball/4
+	sha256sums = 6b0718c26567d51e993f15fe24f74bb8af401ecc566e4046ae2dd1ce915c85f3
+
+pkgname = git-extensions
+

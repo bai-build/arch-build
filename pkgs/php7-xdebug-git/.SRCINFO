@@ -1,0 +1,19 @@
+pkgbase = php7-xdebug-git
+	pkgdesc = PHP debugging extension (for php7)
+	pkgver = r3599.fa686b3
+	pkgrel = 1
+	url = https://github.com/derickr/xdebug
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = php7
+	provides = xdebug
+	conflicts = xdebug
+	backup = etc/php/conf.d/xdebug.ini
+	source = git+https://github.com/derickr/xdebug.git
+	source = xdebug.ini
+	md5sums = SKIP
+	md5sums = 6a1f2ef91c632d4c9b7b218cd2e278ef
+
+pkgname = php7-xdebug-git
+

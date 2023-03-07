@@ -1,0 +1,19 @@
+pkgbase = voikko-libreoffice
+	pkgdesc = Finnish spellchecker, grammar checker and hyphenator extension for libreoffice
+	pkgver = 5.0
+	pkgrel = 1
+	url = http://voikko.sourceforge.net
+	install = voikko-libreoffice.install
+	arch = any
+	license = MPL
+	makedepends = zip
+	depends = voikko-fi
+	depends = libreoffice
+	depends = python
+	source = http://www.puimula.org/voikko-sources/libreoffice-voikko/libreoffice-voikko-5.0.tar.gz
+	source = http://www.puimula.org/voikko-sources/libreoffice-voikko/libreoffice-voikko-5.0.tar.gz.asc
+	md5sums = 594c68d586cbf8aaea5fda4a8547c60e
+	md5sums = SKIP
+
+pkgname = voikko-libreoffice
+

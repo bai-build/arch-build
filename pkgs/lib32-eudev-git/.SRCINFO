@@ -1,0 +1,27 @@
+pkgbase = lib32-eudev-git
+	pkgdesc = The userspace dev tools (udev) forked by Gentoo (32-bit)
+	pkgver = 3.2.9
+	pkgrel = 1
+	url = https://dev.gentoo.org/~blueness/eudev
+	arch = x86_64
+	license = GPL
+	makedepends = lib32-gcc-libs
+	makedepends = gcc-multilib
+	makedepends = gobject-introspection
+	makedepends = gperf
+	makedepends = gtk-doc
+	makedepends = lib32-kmod
+	depends = lib32-glib2
+	depends = lib32-glibc
+	provides = lib32-udev=243git
+	provides = lib32-libeudev
+	provides = lib32-eudev
+	conflicts = lib32-libeudev
+	conflicts = lib32-eudev
+	options = !makeflags
+	options = !libtool
+	source = git+https://anongit.gentoo.org/git/proj/eudev.git
+	sha512sums = SKIP
+
+pkgname = lib32-eudev-git
+

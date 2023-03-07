@@ -1,0 +1,29 @@
+#!/bin/bash
+# SGX needs the .os to be present to continue
+args=()
+for a in "$@"; do
+	if [ ! -e "$a" ]; then
+		args=("${args[@]}" "$a")
+		continue
+	fi
+	if [ "${a%.c}" = "$a" ]; then
+		args=("${args[@]}" "$a")
+		continue
+	fi
+
+	# Compile all .cs into .os so they can be included by the LDS
+	cc -c -g -Wall -pedantic -Wno-unused-function -std=gnu11 -fno-stack-protector -fvisibility=hidden -o "${a%.c}.o" "$a"
+	end=$?
+	if [ $end -ne 0 ]; then
+		exit $end
+	fi
+	args=("${args[@]}" "${a%.c}.o")
+done
+
+# Now link (with the .os in the current directory)
+find /usr/lib/sgx/ -type f \( -iname '*.a' -o -iname '*.o' \) -print0 \
+	| xargs -0 \
+	cc \
+	-g -Wall -pedantic -Wno-unused-function -std=gnu11 \
+	-fno-stack-protector -static -fPIC -fvisibility=hidden \
+	-static -nostdlib -nostartfiles "-Wl,-T,/usr/lib/sgx/sgx.lds" "${args[@]}"

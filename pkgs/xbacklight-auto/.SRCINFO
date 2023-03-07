@@ -1,0 +1,13 @@
+pkgbase = xbacklight-auto
+	pkgdesc = Automatic brightness utility using the V4L2 camera api and xbacklight
+	pkgver = 0.7
+	pkgrel = 0
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = xorg-xbacklight
+	provides = xbacklight-auto
+	source = git+https://github.com/raptor8134/xbacklight-auto.git
+	md5sums = SKIP
+
+pkgname = xbacklight-auto-git

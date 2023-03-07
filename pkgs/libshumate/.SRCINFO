@@ -1,0 +1,19 @@
+pkgbase = libshumate
+	pkgdesc = GTK toolkit providing widgets for embedded maps
+	pkgver = 1.0.2
+	pkgrel = 1
+	url = https://wiki.gnome.org/Projects/libshumate
+	arch = x86_64
+	arch = aarch64
+	license = LGPL
+	makedepends = gi-docgen
+	makedepends = gobject-introspection
+	makedepends = gtk-doc
+	makedepends = meson
+	makedepends = vala
+	depends = gtk4
+	conflicts = libshumate-git
+	source = libshumate-1.0.2.tar.gz::https://gitlab.gnome.org/GNOME/libshumate/-/archive/1.0.2/libshumate-1.0.2.tar.bz2
+	b2sums = 93daf32899d0177a5fda9dff2f7129bdde46b27d339e739fe47892f8abdda6d093728cf59bf0901508404a2ee40a0f80955420efe9120398d62737fb6ed0ace9
+
+pkgname = libshumate

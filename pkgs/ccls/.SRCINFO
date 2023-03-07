@@ -1,0 +1,19 @@
+pkgbase = ccls
+	pkgdesc = C/C++/ObjC language server supporting cross references, hierarchies, completion and semantic highlighting
+	pkgver = 0.20190823.5
+	pkgrel = 2
+	url = https://github.com/MaskRay/ccls
+	arch = x86_64
+	license = Apache
+	makedepends = cmake
+	makedepends = git
+	makedepends = llvm
+	depends = clang
+	depends = llvm-libs
+	depends = rapidjson
+	conflicts = ccls-git
+	source = https://github.com/MaskRay/ccls/archive/0.20190823.5.tar.gz
+	sha256sums = 6f39fa5ce79c1682973811ce2409718710bfef6008f94f96277393e6846bd76c
+
+pkgname = ccls
+

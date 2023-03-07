@@ -1,0 +1,35 @@
+pkgbase = emacs27-git
+	pkgdesc = GNU Emacs. emacs-27 release branch.
+	pkgver = 27.1.50.140516
+	pkgrel = 1
+	url = http://www.gnu.org/software/emacs/
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	makedepends = xorgproto
+	depends = alsa-lib
+	depends = gnutls
+	depends = libxml2
+	depends = jansson
+	depends = libotf
+	depends = harfbuzz
+	depends = gpm
+	depends = gtk3
+	depends = libjpeg-turbo
+	depends = giflib
+	depends = cairo
+	provides = emacs
+	provides = emacs-seq
+	conflicts = emacs
+	conflicts = emacs26-git
+	conflicts = emacs-git
+	conflicts = emacs-seq
+	replaces = emacs26-git
+	replaces = emacs-git
+	replaces = emacs-seq
+	options = !strip
+	source = emacs-git::git://git.savannah.gnu.org/emacs.git#branch=emacs-27
+	md5sums = SKIP
+
+pkgname = emacs27-git
+

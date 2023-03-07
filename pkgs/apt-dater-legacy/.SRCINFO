@@ -1,0 +1,27 @@
+pkgbase = apt-dater-legacy
+	pkgdesc = Terminal-based remote package update manager, legacy version with original text based configuration
+	pkgver = 0.9.0
+	pkgrel = 3
+	url = https://www.ibh.de/apt-dater
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = pkg-config
+	makedepends = vim
+	depends = glib2
+	depends = libxml2
+	depends = lockfile-progs
+	depends = ncurses
+	depends = openssh
+	depends = perl
+	depends = popt
+	depends = tcl
+	depends = tmux
+	depends = util-linux
+	depends = screen
+	conflicts = apt-dater
+	source = https://github.com/DE-IBH/apt-dater/archive/v0.9.0.tar.gz
+	sha256sums = 1c361dd686d66473b27db4af8d241d520535c5d5a33f42a35943bf4e16c13f47
+
+pkgname = apt-dater-legacy
+

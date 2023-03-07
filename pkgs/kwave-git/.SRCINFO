@@ -1,0 +1,34 @@
+pkgbase = kwave-git
+	pkgdesc = A sound editor for KDE. (GIT version)
+	pkgver = 20.07.70.r3687.4d1e0c1a
+	pkgrel = 1
+	url = https://kde.org/applications/en/multimedia/org.kde.kwave
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	makedepends = cmake
+	makedepends = extra-cmake-modules
+	makedepends = kdoctools
+	makedepends = doxygen
+	makedepends = python
+	makedepends = librsvg
+	makedepends = opus
+	makedepends = fftw
+	makedepends = id3lib
+	makedepends = libmad
+	depends = qt5-multimedia
+	depends = kio
+	depends = audiofile
+	depends = libsamplerate
+	depends = hicolor-icon-theme
+	optdepends = libmad: MP3 plugin
+	optdepends = id3lib: MP3 ID3 tag plugin
+	optdepends = opus: OGG plugin
+	optdepends = fftw: Sonagram plugin
+	provides = kwave
+	conflicts = kwave
+	source = git+https://invent.kde.org/multimedia/kwave.git
+	sha256sums = SKIP
+
+pkgname = kwave-git
+

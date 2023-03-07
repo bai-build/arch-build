@@ -1,0 +1,22 @@
+pkgbase = ayatana-indicator-datetime
+	pkgdesc = Ayatana Indicator providing clock and calendar
+	pkgver = 22.9.1
+	pkgrel = 1
+	url = https://github.com/AyatanaIndicators/ayatana-indicator-datetime
+	arch = i686
+	arch = x86_64
+	arch = pentium4
+	license = GPL3
+	makedepends = cmake-extras
+	makedepends = ayatana-indicator-messages>=0.9.0
+	makedepends = intltool
+	makedepends = glib2
+	makedepends = libical
+	makedepends = properties-cpp
+	depends = libayatana-common>=0.9.5
+	depends = evolution-data-server
+	depends = libaccounts-glib
+	source = ayatana-indicator-datetime-22.9.1.tar.gz::https://github.com/AyatanaIndicators/ayatana-indicator-datetime/archive/22.9.1.tar.gz
+	md5sums = 19a37830bd743a7bf6dc178764be85b2
+
+pkgname = ayatana-indicator-datetime

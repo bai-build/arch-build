@@ -1,0 +1,11 @@
+cpu_features/
+fast_double_parser/
+hiredis/
+libevent/
+LibMR/
+pkg/
+readies/
+RedisModulesSDK/
+RedisTimeSeries/
+src/
+*.log

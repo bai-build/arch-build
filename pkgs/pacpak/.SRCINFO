@@ -1,0 +1,15 @@
+pkgbase = pacpak
+	pkgdesc = Create Flatpak apps from pacman packages
+	pkgver = 0.2
+	pkgrel = 1
+	url = https://pelzflorian.de/git/pacpak/
+	arch = any
+	license = GPL3
+	depends = flatpak
+	depends = fakeroot
+	depends = fakechroot
+	source = https://pelzflorian.de/pacpak-0.2.tar.gz
+	sha512sums = 9daa9009fdc418b0de3d128db1b513a982d40bfddb305fd39774290439f6fb77bfcb2d38d55be79707de0ff3984d60ae502ac66e9379f1cda5d08d4ecdccbf47
+
+pkgname = pacpak
+

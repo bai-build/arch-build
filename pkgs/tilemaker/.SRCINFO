@@ -1,0 +1,20 @@
+pkgbase = tilemaker
+	pkgdesc = Convert OpenStreetMap .pbf files into vector tiles without the stack
+	pkgver = 2.2.0
+	pkgrel = 2
+	url = https://github.com/systemed/tilemaker
+	install = tilemaker.install
+	arch = i686
+	arch = x86_64
+	license = custom
+	makedepends = boost
+	depends = boost-libs
+	depends = lua>=5.1
+	depends = protobuf
+	depends = sqlite
+	depends = shapelib
+	depends = rapidjson
+	source = tilemaker-2.2.0.tar.gz::https://github.com/systemed/tilemaker/archive/v2.2.0.tar.gz
+	sha512sums = e006e9de422c5e4224456d9b08408dce380d776ddf07e643e9e686a03cf97fa24bc42143f3f09dd0e5e9186716d4665af93345e315d941b52561b8671e6e9e8b
+
+pkgname = tilemaker

@@ -1,0 +1,20 @@
+pkgbase = lprint
+	pkgdesc = A Label Printer Application
+	pkgver = 1.0
+	pkgrel = 1
+	url = https://github.com/michaelrsweet/lprint
+	arch = i686
+	arch = x86_64
+	license = apache
+	depends = avahi
+	depends = cups
+	depends = libpng
+	depends = libusb
+	source = https://github.com/michaelrsweet/lprint/releases/download/v1.0/lprint-1.0.tar.gz
+	source = https://github.com/michaelrsweet/lprint/releases/download/v1.0/lprint-1.0.tar.gz.sig
+	validpgpkeys = 845464660B686AAB36540B6F999559A027815955
+	md5sums = ecc32ed66eb94799bc2b06c9872fbe08
+	md5sums = SKIP
+
+pkgname = lprint
+

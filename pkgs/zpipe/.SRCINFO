@@ -1,0 +1,14 @@
+pkgbase = zpipe
+	pkgdesc = Incremental Journaling Backup Utility and Archiver
+	pkgver = 201
+	pkgrel = 2
+	url = http://mattmahoney.net/dc/zpaq.html
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = zpaq
+	source = http://mattmahoney.net/dc/zpipe.201.zip
+	sha512sums = d126187ca868ccd0092f63bb47ac9fa7ebb6befb3f5de03857ee14b7e5e9177ba7c9b04c9e5a3b7dc3743773d0602882e00d877fa4daca9fab27922c30bda4ee
+
+pkgname = zpipe
+

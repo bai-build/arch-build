@@ -1,0 +1,21 @@
+pkgbase = librsvg-minimal-git
+	pkgdesc = SVG rendering library
+	pkgver = 2.50.2
+	pkgrel = 1
+	url = https://wiki.gnome.org/Projects/LibRsvg
+	arch = x86_64
+	license = LGPL
+	makedepends = gobject-introspection
+	makedepends = vala
+	makedepends = git
+	makedepends = rust
+	depends = gdk-pixbuf2
+	depends = pango
+	provides = librsvg-2.so
+	provides = librsvg
+	conflicts = librsvg
+	source = git+https://gitlab.gnome.org/GNOME/librsvg.git
+	sha256sums = SKIP
+
+pkgname = librsvg-minimal-git
+

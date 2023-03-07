@@ -1,0 +1,24 @@
+pkgbase = ros-indigo-rospy
+	pkgdesc = ROS - rospy is a pure Python client library for ROS.
+	pkgver = 1.11.20
+	pkgrel = 1
+	url = http://ros.org/wiki/rospy
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-indigo-catkin
+	depends = ros-indigo-rosgraph
+	depends = ros-indigo-roscpp
+	depends = ros-indigo-std-msgs
+	depends = ros-indigo-genpy
+	depends = ros-indigo-roslib
+	depends = ros-indigo-rosgraph-msgs
+	depends = python2-rospkg
+	depends = python2-numpy
+	depends = python2-yaml
+	source = ros-indigo-rospy-1.11.20-0.tar.gz::https://github.com/ros-gbp/ros_comm-release/archive/release/indigo/rospy/1.11.20-0.tar.gz
+	sha256sums = 8a67d5ebfca3e9b55c8e56bc04c81d4ddaafbc3279be5276cf8c56e56a7e4e73
+
+pkgname = ros-indigo-rospy
+

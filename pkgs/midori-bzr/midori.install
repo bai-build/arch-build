@@ -1,0 +1,3 @@
+post_install() {
+  echo 'Set GTK_CSD=1 for enabling client side decorations for Midori'
+}

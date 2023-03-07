@@ -1,0 +1,19 @@
+pkgbase = kicad-packages3d
+	pkgdesc = KiCad 3D package libraries
+	pkgver = 5.1.9
+	pkgrel = 1
+	url = https://gitlab.com/kicad/libraries/kicad-packages3D
+	arch = any
+	groups = kicad-libraries
+	license = GPL
+	makedepends = cmake
+	conflicts = kicad-packages3d-git
+	conflicts = kicad-library-git
+	conflicts = kicad-library
+	conflicts = kicad-library-3d
+	options = !strip
+	source = https://gitlab.com/kicad/libraries/kicad-packages3D/-/archive/5.1.9/kicad-packages3D-5.1.9.tar.gz
+	sha256sums = efce7b0b65ece76b57002cd4b84152fb359f7c47fe0b3d71166e9255ffa5c5b0
+
+pkgname = kicad-packages3d
+

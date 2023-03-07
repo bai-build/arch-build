@@ -1,0 +1,5 @@
+/fbpanel/
+/fbpanel-git-*.log
+/fbpanel-git-*.pkg.tar.*
+/src/
+/pkg/

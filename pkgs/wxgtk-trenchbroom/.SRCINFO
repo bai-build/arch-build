@@ -1,0 +1,27 @@
+pkgbase = wxgtk-trenchbroom
+	pkgdesc = GTK+2 implementation of wxWidgets API for GUI with TrenchBroom patches.
+	pkgver = 3.1.1
+	pkgrel = 6
+	url = http://wxwidgets.org
+	arch = i686
+	arch = x86_64
+	license = custom:wxWindows
+	makedepends = gst-plugins-base
+	makedepends = gconf
+	makedepends = glu
+	makedepends = webkit2gtk
+	makedepends = libnotify
+	makedepends = gtk2
+	depends = gtk2
+	depends = gst-plugins-base-libs
+	depends = libsm
+	depends = libxxf86vm
+	depends = libnotify
+	options = !emptydirs
+	source = https://github.com/wxWidgets/wxWidgets/releases/download/v3.1.1/wxWidgets-3.1.1.tar.bz2
+	source = make-abicheck-non-fatal.patch
+	sha1sums = f999c3cf1887c0a60e519214c14b15cb9bb5ea6e
+	sha1sums = dfe38650c655395b90bf082b5734c4093508bfa3
+
+pkgname = wxgtk-trenchbroom
+

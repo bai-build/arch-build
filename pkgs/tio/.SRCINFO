@@ -1,0 +1,20 @@
+pkgbase = tio
+	pkgdesc = The simple TTY terminal I/O application
+	pkgver = 2.5
+	pkgrel = 2
+	url = http://tio.github.io/
+	arch = x86_64
+	arch = i686
+	arch = arm
+	arch = armv7h
+	arch = armv6h
+	arch = aarch64
+	license = GPLv2
+	makedepends = meson
+	depends = glibc
+	depends = libinih
+	depends = bash-completion
+	source = https://github.com/tio/tio/releases/download/v2.5/tio-2.5.tar.xz
+	sha256sums = 063952ee90a78cee180f6e660d6c73773dfc109efcdc151585accfe1500c44a7
+
+pkgname = tio

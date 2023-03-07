@@ -1,0 +1,16 @@
+pkgbase = hda-jack-retask-bzr
+	pkgdesc = Retask your jack plugs (eg. turn your microphone jack plug into a headphone one) - DEPRECATED: use community/alsa-tools instead
+	pkgver = 10
+	pkgrel = 2
+	url = https://code.launchpad.net/~diwic/+junk/hda-jack-retask
+	install = hda-jack-retask-bzr.install
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = bzr
+	makedepends = gcc
+	depends = gtk3
+	depends = desktop-file-utils
+
+pkgname = hda-jack-retask-bzr
+

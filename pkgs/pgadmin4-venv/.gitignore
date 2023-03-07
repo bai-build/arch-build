@@ -1,0 +1,8 @@
+src/
+pkg/
+*.pkg.tar.xz
+*.tar.gz
+*.tar.gz.asc
+.project
+.settings
+.pydevproject

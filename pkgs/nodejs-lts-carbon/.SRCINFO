@@ -1,0 +1,24 @@
+pkgbase = nodejs-lts-carbon
+	pkgdesc = Evented I/O for V8 javascript
+	pkgver = 8.9.1
+	pkgrel = 1
+	url = http://nodejs.org/
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = python2
+	makedepends = procps-ng
+	depends = openssl-1.0
+	depends = zlib
+	depends = icu
+	depends = libuv
+	depends = http-parser
+	depends = c-ares
+	optdepends = npm: nodejs package manager
+	provides = nodejs
+	conflicts = nodejs
+	source = nodejs-8.9.1.tar.gz::https://github.com/nodejs/node/archive/v8.9.1.tar.gz
+	sha512sums = 01d8b235943568ae37f440d45ae19697fb67505d408b1220c5ed5238a8d5a3ed5646b922800303fd0e1d936e7f83122b97faeb81b11bb8618c550f5be20b4273
+
+pkgname = nodejs-lts-carbon
+

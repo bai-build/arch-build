@@ -1,0 +1,22 @@
+pkgbase = lua-luaossl
+	pkgver = 20200709
+	pkgrel = 1
+	url = http://25thandclement.com/~william/projects/luaossl.html
+	arch = x86_64
+	license = MIT
+	makedepends = lua
+	makedepends = lua51
+	makedepends = lua52
+	depends = openssl
+	source = lua-luaossl-20200709.tar.gz::https://github.com/wahern/luaossl/archive/rel-20200709.tar.gz
+	md5sums = 3bc2d6f3fc72bf68571f8e21f0acf8c4
+
+pkgname = lua-luaossl
+	pkgdesc = Most comprehensive OpenSSL module in the Lua universe for Lua 5.3
+
+pkgname = lua51-luaossl
+	pkgdesc = Most comprehensive OpenSSL module in the Lua universe for Lua 5.1
+
+pkgname = lua52-luaossl
+	pkgdesc = Most comprehensive OpenSSL module in the Lua universe for Lua 5.2
+

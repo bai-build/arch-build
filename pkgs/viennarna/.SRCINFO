@@ -1,0 +1,43 @@
+pkgbase = viennarna
+	pkgdesc = RNA Secondary Structure Prediction and Comparison
+	pkgver = 2.5.1
+	pkgrel = 1
+	url = http://www.tbi.univie.ac.at/RNA
+	arch = x86_64
+	arch = i686
+	groups = viennarna-package
+	license = Custom
+	makedepends = perl
+	makedepends = python2
+	makedepends = python
+	makedepends = libtool
+	makedepends = check
+	makedepends = mpfr
+	makedepends = gsl
+	options = staticlibs
+	options = !strip
+	source = http://www.tbi.univie.ac.at/RNA/packages/source/ViennaRNA-2.5.1.tar.gz
+	sha256sums = 05400437cf15595e10b1a25df6c9c48856f356130f9d1e380fa8866b6d27f457
+
+pkgname = viennarna
+	depends = perl
+	depends = mpfr
+	depends = gsl
+	optdepends = gri: create 2D plots of secondary structure landscape with RNA2Dfold
+	provides = Kinfold=1.4
+	provides = RNAforester=2.0
+	provides = kinwalker=2.0
+	provides = viennarna2=2.5.1
+	provides = libRNA=2.5.1
+
+pkgname = python-rna
+	depends = python
+	depends = viennarna=2.5.1
+
+pkgname = python2-rna
+	depends = python2
+	depends = viennarna=2.5.1
+
+pkgname = perl-rna
+	depends = perl
+	depends = viennarna=2.5.1

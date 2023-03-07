@@ -1,0 +1,36 @@
+pkgbase = ros-melodic-urdf
+	pkgdesc = ROS - This package contains a C++ parser for the Unified Robot Description Format (URDF), which is an XML format for representing a robot model.
+	pkgver = 1.13.2
+	pkgrel = 3
+	url = https://wiki.ros.org/urdf
+	arch = i686
+	arch = x86_64
+	arch = aarch64
+	arch = armv7h
+	arch = armv6h
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-melodic-urdf-parser-plugin
+	makedepends = ros-melodic-cmake-modules
+	makedepends = ros-melodic-catkin
+	makedepends = ros-melodic-rosconsole-bridge
+	makedepends = ros-melodic-roscpp
+	makedepends = ros-melodic-pluginlib
+	makedepends = ros-melodic-rostest
+	makedepends = tinyxml
+	makedepends = tinyxml2
+	makedepends = urdfdom
+	makedepends = urdfdom-headers
+	depends = ros-melodic-rosconsole-bridge
+	depends = ros-melodic-pluginlib
+	depends = ros-melodic-roscpp
+	depends = tinyxml
+	depends = tinyxml2
+	depends = urdfdom
+	depends = urdfdom-headers
+	source = ros-melodic-urdf-1.13.2.tar.gz::https://github.com/ros/urdf/archive/1.13.2.tar.gz
+	sha256sums = 6643846ea63504463ec0f2c5ba4c73d965455b5ecc7aed81b860b8b4c8fa7133
+
+pkgname = ros-melodic-urdf
+

@@ -1,0 +1,15 @@
+pkgbase = njconnect
+	pkgdesc = Curses Jack connection manager, based on naconnect by Nedko Arnaudov
+	pkgver = 1.6
+	pkgrel = 1
+	url = http://sourceforge.net/projects/njconnect
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = jack
+	provides = njconnect
+	source = http://downloads.sourceforge.net/project/njconnect/njconnect-1.6.tar.xz
+	md5sums = 4be367a2caf0218a373e039e8741da26
+
+pkgname = njconnect
+

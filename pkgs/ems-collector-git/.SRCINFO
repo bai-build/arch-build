@@ -1,0 +1,17 @@
+pkgbase = ems-collector-git
+	pkgdesc = Buderus EMS heating control data collection daemon
+	pkgver = r303.61d591f
+	pkgrel = 1
+	url = https://github.com/maniac103/ems-collector
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	makedepends = boost
+	depends = boost
+	source = ems-collector.conf.sample
+	source = ems-collector.service
+	md5sums = 2456a8bfe6034a2434945a2ae05808ad
+	md5sums = c88131e93dc31fd44b520d85847aff7a
+
+pkgname = ems-collector-git
+

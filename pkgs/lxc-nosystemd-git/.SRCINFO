@@ -1,0 +1,44 @@
+pkgbase = lxc-nosystemd-git
+	pkgdesc = Linux Containers git version. Without systemd dependencies.
+	pkgver = 5
+	pkgrel = 1
+	url = https://linuxcontainers.org
+	arch = aarch64
+	arch = armv6h
+	arch = armv7h
+	arch = x86_64
+	license = LGPL
+	makedepends = apparmor
+	makedepends = docbook2x
+	makedepends = doxygen
+	makedepends = git
+	makedepends = lua
+	makedepends = meson
+	makedepends = python-setuptools
+	depends = bash
+	depends = libcap
+	depends = libseccomp
+	depends = perl
+	depends = python
+	depends = rsync
+	depends = wget
+	optdepends = lua
+	optdepends = lua-filesystem: lxc-top
+	optdepends = lua-alt-getopt: lxc-top
+	provides = lxc=5
+	provides = lxc-git=5
+	provides = lxc-nosystemd=5
+	provides = lxc-sysvinit=5
+	conflicts = lxc
+	conflicts = lxc-git
+	conflicts = lxc-nosystemd
+	conflicts = anbox-launchers-git
+	options = emptydirs
+	backup = etc/lxc/default.conf
+	backup = etc/default/lxc
+	source = lxc::git+https://github.com/lxc/lxc.git
+	source = lxc.tmpfiles.d
+	sha256sums = SKIP
+	sha256sums = 10e4f661872f773bf3122a2f9f2cb13344fea86a4ab72beecb4213be4325c479
+
+pkgname = lxc-nosystemd-git

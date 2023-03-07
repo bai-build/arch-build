@@ -1,0 +1,5 @@
+# udev rules for Glow. This makes Glow devices accessible to members of the
+# 'usb' group. Modify as necessary for your distro.
+
+# Production VID/PID via MCS Electronics (beta and later)
+SUBSYSTEM=="usb", ATTRS{idVendor}=="16d0", ATTRS{idProduct}=="0a85", TAG+="uaccess"

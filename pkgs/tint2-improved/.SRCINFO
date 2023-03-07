@@ -1,0 +1,23 @@
+pkgbase = tint2-improved
+	pkgdesc = Tint2 with support for gradient backgrounds and separator plugins
+	pkgver = 0.12.12
+	pkgrel = 1
+	url = https://gitlab.com/oskarirauta/tint2
+	install = tint2-improved.install
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = cmake
+	depends = gtk2
+	depends = imlib2
+	depends = startup-notification
+	provides = tint2
+	conflicts = tint2
+	conflicts = tint
+	conflicts = tint2-svn
+	conflicts = tint2-git
+	source = https://gitlab.com/oskarirauta/tint2/repository/archive.tar.gz?ref=5e231842fafc40282cd69ca3fcafa1af0a66b27b
+	md5sums = bb0eef013fe807ba51c822794a231b43
+
+pkgname = tint2-improved
+

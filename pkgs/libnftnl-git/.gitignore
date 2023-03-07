@@ -1,0 +1,5 @@
+*.tar.*
+libnftnl/
+pkg/
+src/
+*.log

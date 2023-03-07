@@ -1,0 +1,14 @@
+pkgbase = dvdisaster
+	pkgdesc = Provides a margin of safety against data loss on newly created ISO, CD, DVD, BDR, and M-Disc media caused by aging or scratches
+	pkgver = 0.79.10
+	pkgrel = 2
+	url = https://dvdisaster.jcea.es
+	arch = x86_64
+	license = GPL
+	depends = gtk2
+	provides = dvdisaster
+	options = !makeflags
+	source = dvdisaster-0.79.10.tar.bz2::https://dvdisaster.jcea.es/downloads/dvdisaster-0.79.10.tar.bz2
+	md5sums = e913b8375a2bd41a55df7f53379f8d0d
+
+pkgname = dvdisaster

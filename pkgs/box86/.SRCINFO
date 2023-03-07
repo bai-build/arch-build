@@ -1,0 +1,16 @@
+pkgbase = box86
+	pkgdesc = Linux Userspace x86 Emulator with a twist
+	pkgver = 0.2.8
+	pkgrel = 1
+	url = https://github.com/ptitSeb/box86
+	arch = armv7h
+	license = MIT
+	makedepends = git
+	makedepends = cmake
+	makedepends = python
+	depends = gcc-libs
+	optdepends = gl4es: OpenGL 2 for GLES 2 devices
+	source = box86-0.2.8.tar.gz::https://github.com/ptitSeb/box86/archive/v0.2.8.tar.gz
+	sha256sums = 35f0d9564c549fae3149c8131827091c350b9f762f9fb63cbfc9b10402d36d56
+
+pkgname = box86

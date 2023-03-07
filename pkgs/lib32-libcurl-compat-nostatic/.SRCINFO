@@ -1,0 +1,22 @@
+pkgbase = lib32-libcurl-compat-nostatic
+	pkgdesc = An URL retrieval library (32bit version) without static libs and conflicts
+	pkgver = 7.48.0
+	pkgrel = 1
+	url = http://curl.haxx.se
+	install = curl-compat.install
+	arch = x86_64
+	license = MIT
+	makedepends = gcc-multilib
+	depends = ca-certificates
+	depends = lib32-gnutls
+	depends = lib32-openssl
+	depends = lib32-zlib
+	provides = lib32-libcurl-compat
+	conflicts = lib32-libcurl-compat
+	replaces = lib32-libcurl-compat
+	options = strip
+	source = http://curl.haxx.se/download/curl-7.48.0.tar.bz2
+	md5sums = d42e0fc34a5cace5739631cc040974fe
+
+pkgname = lib32-libcurl-compat-nostatic
+

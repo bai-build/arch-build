@@ -1,0 +1,37 @@
+pkgbase = conky-nvidia
+	pkgdesc = Lightweight system monitor for X
+	pkgver = 1.11.5
+	pkgrel = 3
+	url = http://conky.sourceforge.net/
+	arch = i686
+	arch = x86_64
+	license = BSD
+	license = GPL
+	makedepends = cmake
+	makedepends = docbook2x
+	makedepends = docbook-xml
+	makedepends = man-db
+	makedepends = perl-xml-libxml
+	makedepends = perl-xml-sax-expat
+	makedepends = docbook-xsl
+	makedepends = git
+	depends = glib2
+	depends = curl
+	depends = lua
+	depends = wireless_tools
+	depends = libxml2
+	depends = libxft
+	depends = libxdamage
+	depends = libxinerama
+	depends = imlib2
+	depends = libxnvctrl
+	depends = libpulse
+	provides = conky
+	conflicts = conky
+	source = https://github.com/brndnmtthws/conky/archive/v1.11.5.tar.gz
+	source = fix_negative_mem.patch
+	md5sums = 5eb277341701e9e8128e315998796e86
+	md5sums = 6c09a2497117852c97aa7df212b377f0
+
+pkgname = conky-nvidia
+

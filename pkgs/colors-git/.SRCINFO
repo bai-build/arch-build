@@ -1,0 +1,16 @@
+pkgbase = colors-git
+	pkgdesc = Extract colors from an image.
+	pkgver = 0.3.r11.g430bbae
+	pkgrel = 1
+	url = http://git.2f30.org/colors/
+	arch = i686
+	arch = x86_64
+	license = custom:ISC
+	makedepends = git
+	depends = libpng
+	provides = colors
+	source = git://git.2f30.org/colors#branch=master
+	sha1sums = SKIP
+
+pkgname = colors-git
+

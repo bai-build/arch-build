@@ -1,0 +1,17 @@
+pkgbase = php7-smbclient
+	pkgdesc = PHP bindings for libsmbclient (for php7).
+	pkgver = 1.0.6
+	pkgrel = 1
+	url = https://github.com/eduardok/libsmbclient-php
+	arch = i686
+	arch = x86_64
+	arch = armv7h
+	license = BSD
+	depends = php7
+	depends = smbclient
+	backup = etc/php7/conf.d/smbclient.ini
+	source = https://github.com/eduardok/libsmbclient-php/archive/1.0.6.tar.gz
+	sha256sums = 9200f6799451d2388e92739fb47c377494b24f20369c4e0be47c505536b6bd3f
+
+pkgname = php7-smbclient
+

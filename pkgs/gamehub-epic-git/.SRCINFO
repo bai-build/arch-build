@@ -1,0 +1,33 @@
+pkgbase = gamehub-epic-git
+	pkgdesc = Games manager, downloader, library that supports GOG, Steam, Epic, itch.io and Humble Bundle
+	pkgver = r909.51431d7
+	pkgrel = 1
+	epoch = 1
+	url = https://tkashkin.github.io/projects/gamehub/
+	arch = i686
+	arch = x86_64
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	license = GPL3
+	makedepends = git
+	makedepends = meson
+	makedepends = ninja
+	makedepends = vala0.54
+	depends = gtk3
+	depends = glib2
+	depends = libgee
+	depends = libsoup
+	depends = json-glib
+	depends = sqlite
+	depends = webkit2gtk
+	depends = libmanette
+	depends = libxtst
+	provides = gamehub
+	conflicts = gamehub
+	options = !strip
+	options = debug
+	source = gamehub-epic::git+https://github.com/Lucki/GameHub.git#branch=epic
+	sha256sums = SKIP
+
+pkgname = gamehub-epic-git

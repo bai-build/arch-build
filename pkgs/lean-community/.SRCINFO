@@ -1,0 +1,20 @@
+pkgbase = lean-community
+	pkgdesc = Lean Theorem Prover, maintained by the Lean community
+	pkgver = 3.50.3
+	pkgrel = 1
+	url = https://github.com/leanprover-community/lean
+	arch = x86_64
+	arch = i386
+	license = Apache
+	makedepends = cmake
+	makedepends = ninja
+	makedepends = python
+	optdepends = python-mathlibtools
+	conflicts = lean-bin
+	conflicts = lean-git
+	conflicts = lean3-bin
+	conflicts = lean2-git
+	source = lean-community-3.50.3.tar.gz::https://github.com/leanprover-community/lean/archive/v3.50.3.tar.gz
+	sha256sums = 00316c946de2aa4f1b6655ea8bd92b21ff184afd305891e6803c7631753f5b87
+
+pkgname = lean-community

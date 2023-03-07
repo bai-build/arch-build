@@ -1,0 +1,13 @@
+[Unit]
+Description=Stuntman STUN-Server
+After=network.target
+
+[Service]
+Type=simple
+User=nobody
+Group=nobody
+ExecStart=/usr/bin/stunserver
+
+[Install]
+WantedBy=multi-user.target
+

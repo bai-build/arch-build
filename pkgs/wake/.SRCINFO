@@ -1,0 +1,20 @@
+pkgbase = wake
+	pkgdesc = The SiFive wake build tool
+	pkgver = 0.18.1
+	pkgrel = 1
+	url = https://github.com/sifive/wake
+	arch = x86_64
+	license = custom
+	depends = dash
+	depends = sqlite
+	depends = gmp
+	depends = fuse-common
+	depends = re2
+	depends = ncurses5-compat-libs
+	optdepends = re2c
+	optdepends = utf8proc
+	source = https://github.com/sifive/wake/releases/download/v0.18.1/wake_0.18.1.tar.xz
+	md5sums = b29aef78333b5cb010f938fe6cac67ff
+
+pkgname = wake
+

@@ -1,0 +1,16 @@
+pkgbase = nuvola-app-plex
+	pkgdesc = plex integration for Nuvola Player.
+	pkgver = 1.4
+	pkgrel = 1
+	url = https://github.com/tiliado/nuvola-app-plex
+	arch = any
+	license = custom:BSD
+	makedepends = nuvolasdk
+	makedepends = scour
+	depends = nuvolaruntime
+	depends = imagemagick
+	source = https://github.com/tiliado/nuvola-app-plex/archive/1.4.tar.gz
+	sha256sums = 15af743d216a9021a1e37980f7994a0820d47a9d0312d1a8d23854875f1894c9
+
+pkgname = nuvola-app-plex
+

@@ -1,0 +1,6 @@
+*
+!.gitignore
+!.SRCINFO
+!PKGBUILD
+!vsedit.desktop
+!vsedit_server_watch.desktop

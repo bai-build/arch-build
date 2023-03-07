@@ -1,0 +1,33 @@
+pkgbase = mono-alpha
+	pkgdesc = Free implementation of the .NET platform including runtime and compiler. Alpha version.
+	pkgver = 6.12.0.122
+	pkgrel = 1
+	url = http://www.mono-project.com/
+	install = mono.install
+	arch = i686
+	arch = x86_64
+	license = GPL
+	license = LGPL2.1
+	license = MPL
+	license = BSD
+	license = custom=MITX11
+	license = custom=MSPL
+	makedepends = cmake
+	makedepends = mono
+	depends = zlib
+	depends = libgdiplus
+	depends = sh
+	depends = python
+	depends = ca-certificates
+	provides = monodoc
+	provides = mono=${pkgver}
+	conflicts = monodoc
+	conflicts = mono
+	replaces = mono
+	replaces = monodoc
+	source = https://download.mono-project.com/sources/mono/mono-6.12.0.122.tar.xz
+	source = mono.binfmt.d
+	md5sums = c63315bd37bee9c9cc6c6cfbc484434f
+	md5sums = b9ef8a65fea497acf176cca16c1e2402
+
+pkgname = mono-alpha

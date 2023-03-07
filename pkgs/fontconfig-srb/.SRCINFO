@@ -1,0 +1,30 @@
+pkgbase = fontconfig-srb
+	pkgdesc = A library for configuring and customizing font access (michalsrb performance patch, AOSC variant)
+	pkgver = 2.13.0+aosc+rel0
+	pkgrel = 1
+	url = https://github.com/AOSC-Dev/fontconfig
+	install = fontconfig.install
+	arch = x86_64
+	license = custom
+	makedepends = git
+	makedepends = autoconf-archive
+	makedepends = gperf
+	makedepends = python-lxml
+	makedepends = python-six
+	makedepends = docbook-utils
+	makedepends = docbook-sgml
+	makedepends = perl-sgmls
+	makedepends = texlive-formatsextra>=2017
+	makedepends = lynx
+	depends = expat
+	depends = freetype2
+	depends = gettext
+	provides = fontconfig
+	conflicts = fontconfig
+	source = fontconfig-srb::git+https://github.com/AOSC-Dev/fontconfig#commit=bdee8c0781eb8ab1af69d34e6360b2fd2338bccc
+	source = fontconfig.hook
+	sha256sums = SKIP
+	sha256sums = 672f6a1c5e164671955ce807e670306194142a1794ce88df653aa717a972e274
+
+pkgname = fontconfig-srb
+

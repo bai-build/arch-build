@@ -1,0 +1,24 @@
+pkgbase = residualvm-git
+	pkgdesc = A cross-platform 3D game interpreter which allows you to play LucasArts' LUA-based 3D adventures
+	pkgver = r7855.626c55780
+	pkgrel = 1
+	url = http://www.residualvm.org
+	arch = i686
+	arch = x86_64
+	license = LGPL
+	makedepends = git
+	depends = sdl2
+	depends = zlib
+	depends = alsa-lib
+	depends = libmad
+	depends = mesa
+	depends = libmpeg2
+	depends = freetype2
+	depends = glew
+	depends = libjpeg-turbo
+	conflicts = residualvm
+	source = git://github.com/residualvm/residualvm.git
+	sha1sums = SKIP
+
+pkgname = residualvm-git
+

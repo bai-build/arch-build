@@ -1,0 +1,37 @@
+pkgbase = welle.io-soapysdr-git
+	pkgdesc = An open source DAB and DAB+ software defined radio (SDR) with support for rtl-sdr (RTL2832U) and airspy (including SoapySDR)
+	pkgver = 2.1.r0.8fc5739
+	pkgrel = 1
+	url = https://www.welle.io
+	arch = x86_64
+	license = GPL2
+	makedepends = cmake
+	makedepends = gcc
+	makedepends = git
+	depends = faad2
+	depends = fftw
+	depends = hicolor-icon-theme
+	depends = lame
+	depends = mpg123
+	depends = qt5-charts
+	depends = qt5-graphicaleffects
+	depends = qt5-quickcontrols
+	depends = qt5-quickcontrols2
+	depends = qt5-multimedia
+	depends = rtl-sdr
+	depends = soapysdr
+	optdepends = airspy
+	optdepends = soapyairspy
+	optdepends = soapybladerf
+	optdepends = soapyhackrf
+	optdepends = soapyosmo
+	optdepends = soapyplutosdr
+	optdepends = soapyrtlsdr
+	optdepends = soapysdrplay
+	provides = welle.io
+	conflicts = welle.io
+	source = welle.io::git+https://github.com/AlbrechtL/welle.io
+	sha256sums = SKIP
+
+pkgname = welle.io-soapysdr-git
+

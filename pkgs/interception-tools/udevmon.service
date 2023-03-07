@@ -1,0 +1,11 @@
+[Unit]
+Description=udevmon
+Wants=systemd-udev-settle.service
+After=systemd-udev-settle.service
+
+[Service]
+ExecStart=/usr/bin/udevmon -c /etc/udevmon.yaml
+Nice=-20
+
+[Install]
+WantedBy=multi-user.target

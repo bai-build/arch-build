@@ -1,0 +1,9 @@
+#!/bin/sh
+
+post_install() {
+    echo ">>> You might need to modprobe mt7601Uap manually."
+    echo ">>> Also, you *must* change the default values (especially WPAPSK)"
+    echo ">>> in /etc/Wireless/RT2870AP/RT2870AP.dat"
+    echo ">>> Read the documentation in /usr/src/mt7601u-ap-3.0.0.3/doc."
+}
+

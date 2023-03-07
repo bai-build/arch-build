@@ -1,0 +1,21 @@
+pkgbase = intel-media-driver
+	pkgdesc = Intel Media Driver for VAAPI
+	pkgver = 2018.3.0
+	pkgrel = 1
+	url = https://github.com/intel/media-driver/
+	install = intel-media-driver.install
+	arch = x86_64
+	license = MIT
+	license = BSD
+	makedepends = cmake
+	depends = gcc-libs
+	depends = libva
+	depends = libpciaccess
+	depends = gmmlib
+	conflicts = intel-media-driver-git
+	backup = etc/profile.d/intel-media.sh
+	source = intel-media-driver-2018.3.0.tar.gz::https://github.com/intel/media-driver/archive/intel-media-18.3.0.tar.gz
+	sha256sums = df9af1cc796b4123508aacaf19d040cc5d8c5742c05199f45c9a3905ed8d1b52
+
+pkgname = intel-media-driver
+

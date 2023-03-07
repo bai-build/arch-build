@@ -1,0 +1,48 @@
+pkgbase = libc++
+	pkgver = 11.0.0
+	pkgrel = 1
+	url = https://libcxx.llvm.org/
+	arch = i686
+	arch = x86_64
+	license = custom:Apache 2.0 with LLVM Exception
+	makedepends = clang
+	makedepends = cmake
+	makedepends = llvm
+	makedepends = libunwind
+	makedepends = ninja
+	makedepends = python
+	depends = gcc-libs
+	noextract = llvm-11.0.0.src.tar.xz
+	noextract = llvm-11.0.0.src.tar.xz.sig
+	noextract = libcxx-11.0.0.src.tar.xz
+	noextract = libcxx-11.0.0.src.tar.xz.sig
+	noextract = libcxxabi-11.0.0.src.tar.xz
+	noextract = libcxxabi-11.0.0.src.tar.xz.sig
+	source = https://github.com/llvm/llvm-project/releases/download/llvmorg-11.0.0/llvm-11.0.0.src.tar.xz
+	source = https://github.com/llvm/llvm-project/releases/download/llvmorg-11.0.0/llvm-11.0.0.src.tar.xz.sig
+	source = https://github.com/llvm/llvm-project/releases/download/llvmorg-11.0.0/libcxx-11.0.0.src.tar.xz
+	source = https://github.com/llvm/llvm-project/releases/download/llvmorg-11.0.0/libcxx-11.0.0.src.tar.xz.sig
+	source = https://github.com/llvm/llvm-project/releases/download/llvmorg-11.0.0/libcxxabi-11.0.0.src.tar.xz
+	source = https://github.com/llvm/llvm-project/releases/download/llvmorg-11.0.0/libcxxabi-11.0.0.src.tar.xz.sig
+	validpgpkeys = 474E22316ABF4785A88C6E8EA2C794A986419D8A
+	validpgpkeys = B6C8F98282B944E3B0D5C2530FC3042E345AD05D
+	sha512sums = b3e92091ac48772edc0c30801218ce646ef374e1968baab91df9005f58e11c3ce149b2c4c655c7001f8554fd337caa02c08783bc736153bf58f35fe008e624a4
+	sha512sums = SKIP
+	sha512sums = c4360c330c27caa940b6881775e37f4801152ef9f12fe5ba754aa5d38214e588e975d760a79866d1eb26f9fba9ce9082c4248f0ac2e7d635d976b9456cc1a4aa
+	sha512sums = SKIP
+	sha512sums = bfefe9784c9b466844d46e9882b93409b226277b3d98f05ff096a9b533fe1b112687122179e6e8678670f950968dbae7accf3f6ab0f0784cfb316ccab981dbcf
+	sha512sums = SKIP
+
+pkgname = libc++
+	pkgdesc = LLVM C++ standard library.
+	depends = libc++abi=11.0.0-1
+	options = staticlibs
+
+pkgname = libc++abi
+	pkgdesc = Low level support for the LLVM C++ standard library.
+	options = staticlibs
+
+pkgname = libc++experimental
+	pkgdesc = LLVM C++ experimental library.
+	depends = libc++=11.0.0-1
+

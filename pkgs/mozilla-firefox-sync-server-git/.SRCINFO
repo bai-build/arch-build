@@ -1,0 +1,35 @@
+pkgbase = mozilla-firefox-sync-server-git
+	pkgdesc = Mozilla Sync Server for built-in Firefox Sync
+	pkgver = 1.9.1.r10.g58b8036
+	pkgrel = 5
+	url = https://mozilla-services.readthedocs.io/en/latest/howtos/run-sync-1.5.html
+	install = mozilla-firefox-sync-server-git.install
+	arch = i686
+	arch = x86_64
+	arch = arm
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	license = MPL2
+	makedepends = git
+	depends = python2
+	depends = python2-virtualenv
+	optdepends = uwsgi-plugin-python2: Serve the webapp using uwsgi
+	optdepends = mozilla-firefox-account-server: Run your own firefox account server
+	provides = mozilla-firefox-sync-server
+	conflicts = mozilla-firefox-sync-server
+	conflicts = mozilla-firefox-sync-server-hg
+	options = !debug
+	backup = opt/mozilla-firefox-sync-server/syncserver.ini
+	source = mozilla-firefox-sync-server-git::git+https://github.com/mozilla-services/syncserver
+	source = ffsync.service
+	source = ffsync.tmpfiles
+	sha256sums = SKIP
+	sha256sums = 8664ad8361d6751aad47e86900270d2efd8b65d520248cd1c164432baba42212
+	sha256sums = 462bfdccc672339a03622dbe0a76a2df1b4293de8b240e82fe127a6befaa1a89
+	sha384sums = SKIP
+	sha384sums = a7384b5b55b2377ee4445e45bfd0545435c2a6a19730ff4219340e3c6e8a3b51fcb46e4215093df860f9fa99a0b471ab
+	sha384sums = 236b285f7e390d31cd13a0ac78c524acfbc8a7325d7b0b114b39f69a5963535d5f1f73bdef575728b2f6e81860c4ea16
+
+pkgname = mozilla-firefox-sync-server-git
+

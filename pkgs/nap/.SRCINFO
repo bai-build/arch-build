@@ -1,0 +1,15 @@
+pkgbase = nap
+	pkgdesc = sleep with a progressbar
+	pkgver = 0.2.5
+	pkgrel = 1
+	url = https://github.com/Kwpolska/nap
+	arch = i686
+	arch = x86_64
+	license = BSD
+	makedepends = make
+	options = !emptydirs
+	source = https://github.com/Kwpolska/nap/releases/download/v0.2.5/nap-0.2.5.tar.gz
+	md5sums = ac47da84be547a996f7480c39ce5c6a6
+
+pkgname = nap
+

@@ -1,0 +1,20 @@
+pkgbase = dolphin-plugins-git
+	pkgdesc = Extra Dolphin plugins
+	pkgver = 21.11.70_r601.g04ae4bf
+	pkgrel = 1
+	url = https://apps.kde.org/dolphin_plugins/
+	arch = x86_64
+	groups = kde-applications-git
+	groups = kdesdk-git
+	license = LGPL
+	makedepends = git
+	makedepends = extra-cmake-modules-git
+	makedepends = ktexteditor-git
+	depends = dolphin-git
+	optdepends = ktexteditor-git: Mercurial plugin
+	provides = dolphin-plugins
+	conflicts = dolphin-plugins
+	source = git+https://github.com/KDE/dolphin-plugins.git
+	sha256sums = SKIP
+
+pkgname = dolphin-plugins-git

@@ -1,0 +1,78 @@
+From b9e1828d2d7ec50ebb8ca16bd70529256e9cebab Mon Sep 17 00:00:00 2001
+From: Alon Bar-Lev <alon.barlev@gmail.com>
+Date: Fri, 6 Oct 2017 02:37:08 +0300
+Subject: [PATCH] gnupg-pkcs11-scd: support openssl-1.1
+
+Thanks: Thorsten Alteholz
+Thanks: W. Michael Petullo
+---
+ ChangeLog                  |  1 +
+ gnupg-pkcs11-scd/keyutil.c | 30 +++++++++++++++++++++++++++---
+ 2 files changed, 28 insertions(+), 3 deletions(-)
+
+diff --git a/gnupg-pkcs11-scd/keyutil.c b/gnupg-pkcs11-scd/keyutil.c
+index 443c629..5f9b20f 100644
+--- a/gnupg-pkcs11-scd/keyutil.c
++++ b/gnupg-pkcs11-scd/keyutil.c
+@@ -44,6 +44,21 @@ typedef unsigned char *my_openssl_d2i_t;
+ #else
+ typedef const unsigned char *my_openssl_d2i_t;
+ #endif
++
++#if OPENSSL_VERSION_NUMBER < 0x10100000L
++void RSA_get0_key(const RSA *r, const BIGNUM **n, const BIGNUM **e, const BIGNUM **d) {
++	if (n != NULL) {
++		*n = r->n;
++	}
++	if (e != NULL) {
++		*e = r->e;
++	}
++	if (d != NULL) {
++		*d = r->d;
++	}
++}
++#endif
++
+ #endif
+ 
+ gpg_err_code_t
+@@ -63,6 +78,8 @@ keyutil_get_cert_mpi (
+ #elif defined(ENABLE_OPENSSL)
+ 	X509 *x509 = NULL;
+ 	EVP_PKEY *pubkey = NULL;
++	RSA *rsa = NULL;
++	const BIGNUM *n, *e;
+ 	char *n_hex = NULL, *e_hex = NULL;
+ #endif
+ 
+@@ -106,13 +123,15 @@ keyutil_get_cert_mpi (
+ 		goto cleanup;
+ 	}
+  
+-	if (pubkey->type != EVP_PKEY_RSA) {
++	if ((rsa = EVP_PKEY_get1_RSA(pubkey)) == NULL) {
+ 		error = GPG_ERR_WRONG_PUBKEY_ALGO;
+ 		goto cleanup;
+ 	}
+ 
+-	n_hex = BN_bn2hex (pubkey->pkey.rsa->n);
+-	e_hex = BN_bn2hex (pubkey->pkey.rsa->e);
++	RSA_get0_key(rsa, &n, &e, NULL);
++
++	n_hex = BN_bn2hex (n);
++	e_hex = BN_bn2hex (e);
+ 
+ 	if(n_hex == NULL || e_hex == NULL) {
+ 		error = GPG_ERR_BAD_KEY;
+@@ -177,6 +196,11 @@ keyutil_get_cert_mpi (
+ 		pubkey = NULL;
+ 	}
+ 
++	if (rsa != NULL) {
++		RSA_free(rsa);
++		rsa = NULL;
++	}
++
+ 	if (n_hex != NULL) {
+ 		OPENSSL_free (n_hex);
+ 		n_hex = NULL;

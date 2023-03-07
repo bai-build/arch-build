@@ -1,0 +1,23 @@
+pkgbase = java-atk-wrapper-openjdk-ea
+	pkgdesc = ATK wrapper for screen reader access to Java Swing applications - OpenJDK 19
+	pkgver = 0.40.0
+	pkgrel = 1
+	url = https://gitlab.gnome.org/GNOME/java-atk-wrapper/
+	arch = x86_64
+	license = LGPL
+	makedepends = gobject-introspection
+	makedepends = gnome-common
+	makedepends = gtk2
+	makedepends = gtk3
+	makedepends = java-environment=19
+	makedepends = xorg-xprop
+	makedepends = at-spi2-atk
+	depends = java-atk-wrapper-common
+	depends = java-runtime=19
+	provides = java-atk-wrapper-openjdk=19
+	conflicts = java-atk-wrapper-openjdk=19
+	options = !emptydirs
+	source = https://gitlab.gnome.org/GNOME/java-atk-wrapper//-/archive/0.40.0/java-atk-wrapper-0.40.0.tar.bz2
+	sha256sums = 2456fc3cde27e185ec417ae5b64b59d34197b5ece18319c9a6eaa5f10eccaa7e
+
+pkgname = java-atk-wrapper-openjdk-ea

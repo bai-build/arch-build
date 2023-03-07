@@ -1,0 +1,7 @@
+Cockatrice/
+cockatrice-server-git/
+*.tar.xz
+*.swp
+pkg/
+src/
+*.log

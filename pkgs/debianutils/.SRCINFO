@@ -1,0 +1,14 @@
+pkgbase = debianutils
+	pkgdesc = Miscellaneous utilities specific to Debian
+	pkgver = 5.7
+	pkgrel = 2
+	url = http://packages.qa.debian.org/d/debianutils.html
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = run-parts
+	depends = which
+	source = http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.7.orig.tar.gz
+	sha512sums = 79acd8885abca93842d696167171a359011c49a40f38deeb25bc94d62905f95afa3a7b2540d3bd4b0ffd363c5c48a439a1a68139a29d6c033980b019cea75d92
+
+pkgname = debianutils

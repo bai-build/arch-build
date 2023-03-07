@@ -1,0 +1,21 @@
+pkgbase = mingw-w64-dlib
+	pkgdesc = A general purpose cross-platform C++ library designed using contract programming and modern C++ techniques (mingw-w64)
+	pkgver = 19.24
+	pkgrel = 1
+	url = http://dlib.net
+	arch = any
+	license = custom
+	makedepends = mingw-w64-cmake
+	depends = mingw-w64-crt
+	depends = mingw-w64-cblas
+	depends = mingw-w64-lapack
+	depends = mingw-w64-libjpeg-turbo
+	depends = mingw-w64-libpng
+	depends = mingw-w64-libwebp
+	options = !strip
+	options = staticlibs
+	options = !buildflags
+	source = https://codeload.github.com/davisking/dlib/tar.gz/refs/tags/v19.24
+	sha256sums = 3cc42e84c7b1bb926c6451a21ad1595f56c5b10be3a1d7aa2f3c716a25b7ae39
+
+pkgname = mingw-w64-dlib

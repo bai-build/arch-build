@@ -1,0 +1,22 @@
+ pkgbase = ros-jade-libmavconn
+	pkgdesc = ROS - MAVLink communication library.
+	pkgver = 0.17.2
+	pkgrel = 1
+	url = http://wiki.ros.org/mavros
+	arch = any
+	license = GPLv3, LGPLv3, BSD
+	makedepends = cmake
+	makedepends = git
+	makedepends = ros-build-tools
+	makedepends = ros-jade-mavlink
+	makedepends = ros-jade-catkin
+	makedepends = boost
+	makedepends = console-bridge
+	depends = ros-jade-mavlink
+	depends = boost
+	depends = console-bridge
+	source = libmavconn::git+https://github.com/mavlink/mavros-release.git#tag=release/jade/libmavconn/0.17.2-0
+	md5sums = SKIP
+
+pkgname = ros-jade-libmavconn
+

@@ -1,0 +1,6 @@
+post_upgrade() {
+    echo "Pynote 2.0.0 is a complete rewrite!"
+    echo "Some file locations and config values have changed."
+    echo "Please copy ~/.noterc to ~/.config/note/noterc!"
+    echo "Additional information can be found in the manpage noterc(5)."
+}

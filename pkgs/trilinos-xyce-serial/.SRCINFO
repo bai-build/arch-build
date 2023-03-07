@@ -1,0 +1,17 @@
+pkgbase = trilinos-xyce-serial
+	pkgdesc = Algorithms for the solution of large-scale scientific problems. Configured to install the package xyce with serial build
+	pkgver = 12.12.1
+	pkgrel = 1
+	url = http://trilinos.org
+	arch = x86_64
+	license = LGPL3
+	makedepends = gcc-fortran
+	makedepends = cmake
+	depends = suitesparse
+	provides = trilinos
+	conflicts = trilinos
+	source = https://github.com/trilinos/Trilinos/archive/trilinos-release-12-12-1.tar.gz
+	sha256sums = 5474c5329c6309224a7e1726cf6f0d855025b2042959e4e2be2748bd6bb49e18
+
+pkgname = trilinos-xyce-serial
+

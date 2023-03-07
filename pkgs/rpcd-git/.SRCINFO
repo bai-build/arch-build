@@ -1,0 +1,29 @@
+pkgbase = rpcd-git
+	pkgdesc = OpenWrt ubus RPC backend server
+	pkgver = r131.23417e9
+	pkgrel = 1
+	url = http://git.openwrt.org/?p=project/rpcd.git;a=summary
+	arch = i686
+	arch = x86_64
+	license = ISC
+	makedepends = git
+	makedepends = cmake
+	makedepends = gcc
+	makedepends = make
+	makedepends = patch
+	makedepends = pkg-config
+	depends = libubox-lua-git
+	depends = ubus-lua-git
+	depends = uci-lua-git
+	provides = rpcd
+	conflicts = rpcd
+	conflicts = rpcd-git
+	source = git://git.openwrt.org/project/rpcd.git
+	source = 001-install-headers.patch
+	source = 002-rpcd-location.patch
+	md5sums = SKIP
+	md5sums = SKIP
+	md5sums = SKIP
+
+pkgname = rpcd-git
+

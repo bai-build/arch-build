@@ -1,0 +1,9 @@
+pkg/
+src/
+*.swp
+*.pkg.tar.*
+*.tar.*
+*.tar
+
+DSView/
+

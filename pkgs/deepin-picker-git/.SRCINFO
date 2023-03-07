@@ -1,0 +1,20 @@
+pkgbase = deepin-picker-git
+	pkgdesc = Color picker tool for deepin
+	pkgver = r88.9f098ac
+	pkgrel = 1
+	url = https://github.com/manateelazycat/deepin-picker
+	arch = any
+	groups = deepin-extra
+	license = GPL3
+	makedepends = qt5-tools
+	makedepends = git
+	makedepends = deepin-gettext-tools
+	depends = deepin-qt5integration
+	depends = qt5-svg
+	provides = deepin-picker
+	conflicts = deepin-picker
+	source = git+https://github.com/manateelazycat/deepin-picker.git
+	md5sums = SKIP
+
+pkgname = deepin-picker-git
+

@@ -1,0 +1,17 @@
+pkgbase = libhomegear-node
+	pkgdesc = Base library for Homegear nodes
+	pkgver = 0.7.30
+	pkgrel = 1
+	url = https://homegear.eu
+	arch = x86_64
+	arch = i686
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	license = LGPL3
+	depends = gcc-libs
+	source = https://github.com/Homegear/libhomegear-node/archive/0.7.30.tar.gz
+	sha512sums = c3853c93c9a638aa3530f7e10fbac6831604018ee5c9095ce53cf057aa1fa981bb09cf8ba59e9c54e47165efd8ea2a31c4f8f890eec635560ee9c0fefac4fdad
+
+pkgname = libhomegear-node
+

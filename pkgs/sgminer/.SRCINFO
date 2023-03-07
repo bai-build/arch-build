@@ -1,0 +1,25 @@
+pkgbase = sgminer
+	pkgdesc = A multi-threaded multi-pool GPU miner for scrypt-based coins.
+	pkgver = 5.6.1
+	pkgrel = 1
+	url = https://github.com/nicehash/sgminer/
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = opencl-headers
+	depends = curl
+	depends = ocl-icd
+	depends = libtool
+	depends = pkg-config
+	depends = automake
+	depends = autoconf
+	optdepends = ncurses5-compat: For ncurses formatted screen output
+	optdepends = opencl-nvidia: OpenCL implementation for NVIDIA
+	optdepends = opencl-catalyst: OpenCL implementation for AMD
+	provides = sgminer
+	conflicts = sgminer-gm
+	source = sgminer::git+https://github.com/nicehash/sgminer.git
+	sha512sums = SKIP
+
+pkgname = sgminer
+

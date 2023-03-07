@@ -1,0 +1,19 @@
+pkgbase = retdec
+	pkgdesc = A retargetable machine-code decompiler based on LLVM
+	pkgver = 5.0
+	pkgrel = 1
+	url = https://retdec.com/
+	arch = x86_64
+	license = MIT
+	makedepends = cmake
+	makedepends = doxygen
+	makedepends = graphviz
+	depends = openssl
+	depends = python
+	depends = zlib
+	optdepends = upx: To use UPX unpacker in the preprocessing stage
+	optdepends = graphviz: To generate call or control flow grpahs
+	source = https://github.com/avast/retdec/archive/refs/tags/v5.0.tar.gz
+	sha256sums = 216dc62fd54ff06277497492dbf44bc7a91e39249d8aefdee2e4f10fc903ce85
+
+pkgname = retdec

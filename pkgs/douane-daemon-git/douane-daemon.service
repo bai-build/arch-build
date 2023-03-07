@@ -1,0 +1,14 @@
+[Unit]
+Description=Douane Daemon
+
+[Service]
+User=douane
+Group=douane
+Type=simple
+ExecStart=/usr/bin/douaned
+WorkingDirectory=/var/lib/douane
+Nice=-20
+UMask=0
+
+[Install]
+WantedBy=multi-user.target

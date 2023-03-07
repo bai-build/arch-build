@@ -1,0 +1,33 @@
+pkgbase = kdepim-runtime-etesync-git
+	pkgdesc = DO NOT USE! It is now part of main kdepim-runtime package
+	pkgver = v20.11.90.r31.g3c8387b68
+	pkgrel = 1
+	url = https://kontact.kde.org
+	arch = x86_64
+	license = GPL
+	license = LGPL
+	license = FDL
+	makedepends = extra-cmake-modules
+	makedepends = kdoctools
+	makedepends = boost
+	makedepends = git
+	depends = libkolabxml
+	depends = kdav
+	depends = akonadi-calendar
+	depends = knotifyconfig
+	depends = kalarmcal
+	depends = kmbox
+	depends = pimcommon
+	depends = akonadi-notes
+	depends = akonadi
+	depends = qca
+	depends = qt5-networkauth
+	depends = kdepim-runtime
+	depends = libetebase
+	source = kdepim-runtime-etesync::git+https://invent.kde.org/pim/kdepim-runtime?branch=release/20.12
+	source = 0001-XXX-Ease-version-requirements.patch
+	sha512sums = SKIP
+	sha512sums = SKIP
+
+pkgname = kdepim-runtime-etesync-git
+

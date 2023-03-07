@@ -1,0 +1,6 @@
+calendar.latvia/
+calendar*/
+src/
+pkg/
+*.pkg.*
+*.tar.gz

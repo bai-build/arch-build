@@ -1,0 +1,17 @@
+pkgbase = libx32-ncurses
+	pkgdesc = System V Release 4.0 curses emulation library (x32 ABI)
+	pkgver = 6.0
+	pkgrel = 2.2
+	url = http://www.gnu.org/software/ncurses/
+	arch = x86_64
+	license = MIT
+	makedepends = gcc-multilib-x32
+	depends = libx32-glibc
+	depends = ncurses
+	source = ftp://invisible-island.net/ncurses/ncurses-6.0.tar.gz
+	source = ftp://invisible-island.net/ncurses/ncurses-6.0.tar.gz.asc
+	md5sums = ee13d052e1ead260d7c28071f46eefb1
+	md5sums = SKIP
+
+pkgname = libx32-ncurses
+

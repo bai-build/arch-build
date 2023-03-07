@@ -1,0 +1,21 @@
+pkgbase = ffmpegthumbs-mattepaint
+	pkgdesc = An alternative version of the standard KDE ffmpegthumbs.
+	pkgver = 0.7
+	pkgrel = 4
+	url = http://kde-look.org/content/show.php/FFMpegThumbs-MattePaint?content=153902
+	arch = x86_64
+	license = GPL
+	makedepends = extra-cmake-modules
+	depends = kio
+	depends = libavcodec.so
+	depends = libavfilter.so
+	depends = libavformat.so
+	depends = libavutil.so
+	depends = libswscale.so
+	source = https://download.opensuse.org/repositories/home:/Gribs:/Tools/openSUSE_Leap_42.1/src/ffmpegthumbs-mattepaint-0.7-5.3.src.rpm
+	source = imagewriter.patch
+	sha256sums = 6acf0b3b7a002499ebda1b034457443200ef4322a52e33045d1b970906455c9a
+	sha256sums = 055eb84f93914b5adc39a703bf3a399bdfd68b126839fb4ffe90ef80c203158c
+
+pkgname = ffmpegthumbs-mattepaint
+

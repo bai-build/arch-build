@@ -1,0 +1,28 @@
+pkgbase = nextpnr-ice40-nightly
+	pkgdesc = nextpnr portable FPGA place and route tool - for ice40
+	pkgver = 20230302_nextpnr_0.5_70_g2f509734
+	pkgrel = 1
+	epoch = 1
+	url = https://github.com/YosysHQ/nextpnr
+	arch = any
+	license = custom:ISC
+	makedepends = git
+	makedepends = gcc
+	makedepends = cmake
+	makedepends = ninja
+	makedepends = pkgconf
+	makedepends = gawk
+	makedepends = eigen
+	makedepends = boost
+	depends = yosys-nightly
+	depends = icestorm-nightly
+	depends = python
+	depends = boost-libs
+	depends = qt5-base
+	conflicts = nextpnr-git
+	conflicts = nextpnr-all-nightly
+	options = !strip
+	source = nextpnr::git+https://github.com/YosysHQ/nextpnr.git#commit=2f509734
+	sha256sums = SKIP
+
+pkgname = nextpnr-ice40-nightly

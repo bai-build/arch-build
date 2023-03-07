@@ -1,0 +1,8 @@
+*.log
+*.xz
+*.pkg
+*.sign
+*.pkg.tar.xz.sig
+pkg/
+src/
+archlinux-linux

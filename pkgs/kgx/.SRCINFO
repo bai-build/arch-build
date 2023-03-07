@@ -1,0 +1,17 @@
+pkgbase = kgx
+	pkgdesc = Simple user-friendly terminal emulator for the GNOME desktop
+	pkgver = 0.2.1
+	pkgrel = 1
+	url = https://gitlab.gnome.org/ZanderBrown/kgx
+	arch = x86_64
+	license = GPL3
+	makedepends = appstream-glib
+	makedepends = meson
+	depends = libgtop
+	depends = libhandy0
+	depends = vte3
+	source = https://gitlab.gnome.org/ZanderBrown/kgx/-/archive/0.2.1/kgx-0.2.1.tar.gz
+	sha256sums = 70a814b0baf70049d5a20791d58a32e92661428d2deeeb56d91b81cc4dc5e81a
+
+pkgname = kgx
+

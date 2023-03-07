@@ -1,0 +1,9 @@
+/src
+/pkg
+/Base
+/Build
+/Corepops
+/Docs
+/Seed
+*.pkg.tar
+*.tar.bz2

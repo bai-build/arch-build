@@ -1,0 +1,18 @@
+diff --git a/opensgx b/opensgx
+index 404c2a8..a6b6b7d 100755
+--- a/opensgx
++++ b/opensgx
+@@ -1,9 +1,9 @@
+ #! /bin/bash
+ ROOT=$(dirname "$0")
+-SGXTOOL=$ROOT/user/sgx-tool
+-SGX=$ROOT/sgx
+-DEVICEKEY=$ROOT/user/conf/device.key
+-SGXRUNTIME=$ROOT/user/sgx-runtime
++SGXTOOL=sgx-tool
++SGX=sgx
++DEVICEKEY=/etc/sgx/device.key
++SGXRUNTIME=/usr/bin/sgx-runtime
+ GDBPORT=-1
+ 
+ key_gen() {

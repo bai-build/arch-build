@@ -1,0 +1,17 @@
+pkgbase = lib32-libnuma
+	pkgdesc = Simple NUMA policy support 32-bit version. Libraries only
+	pkgver = 2.0.15
+	pkgrel = 1
+	url = https://github.com/numactl/numactl
+	arch = x86_64
+	license = LGPL2.1
+	license = GPL2
+	depends = perl
+	depends = numactl
+	depends = lib32-gcc-libs
+	provides = lib32-numactl=2.0.15
+	conflicts = lib32-numactl
+	source = numactl-2.0.15.tar.gz::https://github.com/numactl/numactl/archive/refs/tags/v2.0.15.tar.gz
+	sha256sums = 1508bb02f56f1b9376243980ba96291856ba083e7a3480fdcb0fbf11ff01d6fa
+
+pkgname = lib32-libnuma

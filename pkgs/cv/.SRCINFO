@@ -1,0 +1,16 @@
+pkgbase = cv
+	pkgdesc = Shows running coreutils basic commands and displays stats
+	pkgver = 0.7.1
+	pkgrel = 1
+	url = https://github.com/Xfennec/cv
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = gcc
+	makedepends = make
+	depends = ncurses
+	source = cv-0.7.1.tar.gz::https://codeload.github.com/Xfennec/cv/tar.gz/v0.7.1
+	sha256sums = c8ab81b09f6026cbfdc94c9453d4a0fad7ea5e1e34efd1c1559f88f7398cf4ee
+
+pkgname = cv
+

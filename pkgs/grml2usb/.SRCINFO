@@ -1,0 +1,20 @@
+pkgbase = grml2usb
+	pkgdesc = Installs one or multiple grml ISOs on an USB device - contains grml2iso
+	pkgver = 0.18.5
+	pkgrel = 1
+	url = http://grml.org/grml2usb/
+	arch = x86_64
+	license = GPL2
+	makedepends = asciidoc
+	depends = python
+	depends = bash
+	depends = python-flake8-isort
+	depends = python-flake8-black
+	optdepends = cdrkit: creating multiboot ISOs with grml2iso
+	optdepends = syslinux: installing boot loader
+	optdepends = grub: installing boot loader
+	source = https://github.com/grml/grml2usb/archive/v0.18.5.tar.gz
+	sha256sums = ceef66aa1d6bee918a26966b47c211f42142df78bd757301086f4c751fce65b3
+
+pkgname = grml2usb
+

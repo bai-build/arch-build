@@ -1,0 +1,13 @@
+pkgbase = verifpal
+	pkgdesc = Cryptographic protocol analysis for students and engineers.
+	pkgver = 0.26.1
+	pkgrel = 1
+	url = https://verifpal.com/
+	arch = x86_64
+	license = GPL3
+	makedepends = go
+	depends = glibc
+	source = verifpal-0.26.1.tar.bz2::https://source.symbolic.software/verifpal/verifpal/-/archive/v0.26.1/verifpal-v0.26.1.tar.bz2
+	sha256sums = c3da52c1d9a2cceff14abc69a213343701b2e75f4867bad92e202809e63c4a7b
+
+pkgname = verifpal

@@ -1,0 +1,18 @@
+pkgbase = xz-static-git
+	pkgdesc = Statically linked tools for XZ or LZMA compressed files
+	pkgver = 5.3.2alpha.r.g2024fbf
+	pkgrel = 1
+	url = http://tukaani.org/xz/
+	arch = x86_64
+	license = GPL
+	license = LGPL
+	license = custom
+	makedepends = git
+	makedepends = po4a
+	depends = sh
+	conflicts = xz-static
+	options = staticlibs
+	source = git+http://git.tukaani.org/xz.git
+	sha256sums = SKIP
+
+pkgname = xz-static-git

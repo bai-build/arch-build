@@ -1,0 +1,19 @@
+pkgbase = openglide-git
+	pkgdesc = Glide wrapper, useful for DOSBox with Glide support
+	pkgver = last.cvs.r50.g1ecc60a
+	pkgrel = 1
+	url = https://github.com/voyageur/openglide
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = git
+	depends = mesa
+	depends = sdl
+	depends = glu
+	depends = libsm
+	conflicts = openglide-cvs
+	options = !libtool
+	source = openglide::git+https://github.com/voyageur/openglide
+	md5sums = SKIP
+
+pkgname = openglide-git

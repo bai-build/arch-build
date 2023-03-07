@@ -1,0 +1,24 @@
+pkgbase = ignuit
+	pkgdesc = A memorization aid based on the Leitner flashcard system
+	pkgver = 2.24.3
+	pkgrel = 1
+	url = https://savannah.gnu.org/projects/ignuit
+	arch = x86_64
+	license = GPL3
+	makedepends = perl-xml-parser
+	makedepends = gnome-doc-utils
+	makedepends = libgnomeui
+	makedepends = libglade
+	makedepends = libxslt
+	makedepends = gconf
+	makedepends = gstreamer
+	makedepends = intltool
+	depends = libgnomeui
+	depends = gstreamer
+	depends = libgnomeui
+	depends = libxslt
+	source = ignuit-2.24.3.tar.xz::http://ftp.gnu.org/gnu/ignuit/ignuit-2.24.3.tar.gz
+	sha256sums = 0333024c74ba04903701500e342cadf5efba85ebfb738222a3364c592bba33c7
+
+pkgname = ignuit
+

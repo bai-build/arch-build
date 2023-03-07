@@ -1,0 +1,24 @@
+pkgbase = ghostwriter-git
+	pkgdesc = Cross-platform, aesthetic, distraction-free Markdown editor.
+	pkgver = 2.1.6.r96.gd773dd6
+	pkgrel = 1
+	url = https://invent.kde.org/office/ghostwriter
+	arch = x86_64
+	arch = i686
+	license = GPL3
+	makedepends = git
+	makedepends = qt5-tools
+	makedepends = cmake
+	makedepends = extra-cmake-modules
+	depends = qt5-base
+	depends = qt5-svg
+	depends = hunspell
+	depends = qt5-webengine
+	depends = sonnet
+	depends = kxmlgui
+	provides = ghostwriter
+	conflicts = ghostwriter
+	source = git+https://invent.kde.org/office/ghostwriter.git
+	sha256sums = SKIP
+
+pkgname = ghostwriter-git

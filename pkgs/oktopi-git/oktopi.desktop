@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Oktopi
+Comment=A fork of Pacman’s GUI Octopi for Chakra.
+Exec=oktopi
+Icon=oktopi
+Terminal=false
+StartupNotify=true
+Categories=GNOME;GTK;System;
+MimeType=
+GenericName=Add/Remove Software

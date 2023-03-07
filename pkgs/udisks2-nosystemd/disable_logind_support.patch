@@ -1,0 +1,10 @@
+--- udisks-udisks-2.9.0_orig/configure.ac	2020-05-26 18:07:07.000000000 +0300
++++ udisks-udisks-2.9.0/configure.ac	2020-06-04 10:07:53.578649448 +0300
+@@ -201,6 +201,7 @@
+                     [PKG_CHECK_MODULES(LIBSYSTEMD_LOGIN, [libsystemd-login >= 44 libsystemd-daemon],
+                     [have_libsystemd_login=yes],
+                     [have_libsystemd_login=no])])
++  have_libsystemd_login=no
+   if test "x$have_libsystemd_login" = "xyes"; then
+     AC_DEFINE([HAVE_LIBSYSTEMD_LOGIN], 1, [Define to 1 if libsystemd-login is available])
+   fi

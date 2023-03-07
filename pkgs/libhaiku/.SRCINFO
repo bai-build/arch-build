@@ -1,0 +1,12 @@
+pkgbase = libhaiku
+	pkgdesc = Poetic error messages
+	pkgver = 2.0.1
+	pkgrel = 1
+	url = https://github.com/maandree/libhaiku
+	arch = x86_64
+	arch = i686
+	license = custom:ISC
+	source = libhaiku-2.0.1.tar.gz::https://github.com/maandree/libhaiku/archive/2.0.1.tar.gz
+	sha256sums = 595537127f5206008f48b365362e447a3ca45a705473e31416cca8f09160e169
+
+pkgname = libhaiku

@@ -1,0 +1,23 @@
+pkgbase = hdrview-git
+	pkgdesc = High dynamic range (HDR) image viewer and comparison tool
+	pkgver = 1.7.1+1.g47da311b30
+	pkgrel = 1
+	url = https://github.com/wkjarosz/hdrview
+	arch = x86_64
+	license = BSD
+	makedepends = git
+	makedepends = cmake
+	makedepends = ninja
+	depends = hicolor-icon-theme
+	depends = libglvnd
+	depends = zlib
+	depends = libxi
+	depends = libxrandr
+	depends = libxinerama
+	depends = libxcursor
+	provides = hdrview
+	conflicts = hdrview
+	source = hdrview-git::git+https://github.com/wkjarosz/hdrview
+	sha256sums = SKIP
+
+pkgname = hdrview-git

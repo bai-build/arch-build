@@ -1,0 +1,24 @@
+pkgbase = conversejs-git
+	pkgver = 6.0.0.r364.gefb486511
+	pkgrel = 1
+	url = https://conversejs.org/
+	arch = any
+	license = MPL2
+	makedepends = git
+	makedepends = npm
+	source = git+https://github.com/conversejs/converse.js
+	source = launcher.sh
+	source = launcher.desktop
+	sha256sums = SKIP
+	sha256sums = c60e2d176324ac7438f8518e8ea5095255cd6a02d93c1bf62a0e76ff71d0eacc
+	sha256sums = efa2f4cee2e33082936df006a9553bf5a276b6a1f85fee4d2bcfbcad0483effb
+
+pkgname = conversejs-git
+	pkgdesc = Web-based XMPP/Jabber chat client written in javascript
+
+pkgname = conversejs-epiphany-git
+	pkgdesc = Desktop launcher for Converse.js
+	depends = epiphany
+	depends = conversejs-git
+	depends = python
+

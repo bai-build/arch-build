@@ -1,0 +1,17 @@
+pkgbase = kbdlight-git
+	pkgdesc = Program to management keyboard brightness
+	pkgver = 1.6.r0.gb42a406
+	pkgrel = 1
+	url = https://github.com/glats/kbdlight
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	depends = glibc
+	provides = kbdlight
+	conflicts = kbdlight
+	source = git+https://github.com/glats/kbdlight.git
+	sha256sums = SKIP
+
+pkgname = kbdlight-git
+

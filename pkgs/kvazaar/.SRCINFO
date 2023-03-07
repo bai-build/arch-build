@@ -1,0 +1,21 @@
+pkgbase = kvazaar
+	pkgdesc = An open-source HEVC encoder
+	pkgver = 1.3.0
+	pkgrel = 1
+	url = http://ultravideo.cs.tut.fi/#encoder
+	arch = x86_64
+	license = LGPL
+	checkdepends = ffmpeg
+	checkdepends = hm
+	makedepends = git
+	makedepends = yasm
+	depends = glibc
+	depends = gcc-libs
+	depends = crypto++
+	source = git+https://github.com/ultravideo/kvazaar.git#tag=v1.3.0
+	source = git+https://github.com/ultravideo/greatest.git
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = kvazaar
+

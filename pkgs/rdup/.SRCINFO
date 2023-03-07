@@ -1,0 +1,19 @@
+pkgbase = rdup
+	pkgdesc = Generates a file list suitable for making backups. Processing tool included.
+	pkgver = 1.1.15
+	pkgrel = 1
+	url = http://archive.miek.nl/projects/rdup
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = automake
+	makedepends = autoconf
+	depends = glib2
+	depends = pcre
+	depends = libarchive
+	depends = nettle
+	source = https://github.com/miekg/rdup/archive/1.1.15.tar.gz
+	md5sums = 22636438d7cd35f73ddd0a80bf3cf42b
+
+pkgname = rdup
+

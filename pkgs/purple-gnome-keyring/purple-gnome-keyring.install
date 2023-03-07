@@ -1,0 +1,9 @@
+post_install()
+{
+    echo -e "\e[32m-> In some cases you must restart the keyring daemon with: gnome-keyring-daemon --replace \e[39m"
+}
+
+post_upgrade() {
+    rm -f /usr/lib/pidgin/purple-gnome-keyring.so
+}
+

@@ -1,0 +1,15 @@
+pkgbase = pspg-git
+	pkgdesc = pager for Postgres
+	pkgver = 0.1.r2.g57ba5d8
+	pkgrel = 1
+	url = https://github.com/okbob/pspg
+	arch = i686
+	arch = x86_64
+	license = BSD
+	makedepends = git
+	depends = ncurses
+	source = git+https://github.com/okbob/pspg
+	md5sums = SKIP
+
+pkgname = pspg-git
+

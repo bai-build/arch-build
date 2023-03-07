@@ -1,0 +1,16 @@
+pkgbase = nuvola-app-amazon-cloud-player
+	pkgdesc = amazon cloud player integration for Nuvola Player.
+	pkgver = 5.6
+	pkgrel = 1
+	url = https://github.com/tiliado/nuvola-app-amazon-cloud-player
+	arch = any
+	license = custom:BSD
+	makedepends = nuvolasdk
+	makedepends = scour
+	depends = nuvolaruntime
+	depends = imagemagick
+	source = https://github.com/tiliado/nuvola-app-amazon-cloud-player/archive/5.6.tar.gz
+	sha256sums = ddaa5ecf5f8cfb398ac62b2ce79a1110b16fc9cbdbdb3c9eaf1458a101d09ebe
+
+pkgname = nuvola-app-amazon-cloud-player
+

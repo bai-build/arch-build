@@ -1,0 +1,18 @@
+pkgbase = offlineimap-git
+	pkgdesc = A powerful IMAP/Maildir synchronization tool
+	pkgver = 7.1.5.12.g2b64e10
+	pkgrel = 1
+	url = http://offlineimap.org/
+	arch = any
+	license = GPL
+	makedepends = git
+	makedepends = asciidoc
+	depends = python2
+	depends = python2-six
+	provides = offlineimap
+	conflicts = offlineimap
+	source = git+git://github.com/OfflineIMAP/offlineimap.git#branch=next
+	md5sums = SKIP
+
+pkgname = offlineimap-git
+

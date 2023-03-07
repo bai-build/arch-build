@@ -1,0 +1,26 @@
+pkgbase = libar2simplified
+	pkgdesc = Facade for libar2
+	pkgver = 1.1.1
+	pkgrel = 1
+	url = https://github.com/maandree/libar2simplified
+	arch = i686
+	arch = x86_64
+	license = custom:ISC
+	checkdepends = libar2
+	checkdepends = libar2-musl
+	makedepends = libar2
+	makedepends = libar2-musl
+	makedepends = gcc
+	source = libar2simplified-1.1.1.tar.gz::https://github.com/maandree/libar2simplified/archive/1.1.1.tar.gz
+	sha256sums = 05ea3f8f751f6efcb5f2717c683b10d926aac54f2254c0920c2ed7ce3b44be18
+
+pkgname = libar2simplified
+	pkgdesc = Facade for libar2
+	depends = libar2
+
+pkgname = libar2simplified-doc
+	pkgdesc = Facade for libar2 (documentation)
+
+pkgname = libar2simplified-musl
+	pkgdesc = Facade for libar2 (musl version)
+	depends = libar2-musl

@@ -1,0 +1,14 @@
+pkgbase = erfa
+	pkgdesc = Set of algorithms and procedures used in fundamental astronomy
+	pkgver = 2.0.0
+	pkgrel = 1
+	url = https://github.com/liberfa/erfa
+	arch = x86_64
+	arch = i686
+	license = BSD
+	options = !libtool
+	source = https://github.com/liberfa/erfa/releases/download/v2.0.0/erfa-2.0.0.tar.gz
+	sha512sums = 6761a8c1e1fc20f8603b451a47a47c872fe99e39ec805f131f3db24aeb5b6ac3ac480c89630ff9defbedd0e621fb7e2b7922869b8c29ada1fd41cb9793c9ca0a
+
+pkgname = erfa
+

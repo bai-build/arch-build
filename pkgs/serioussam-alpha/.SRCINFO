@@ -1,0 +1,19 @@
+pkgbase = serioussam-alpha
+	pkgdesc = Serious Sam Classic Alpha Reamake native Linux.
+	pkgver = 1.5
+	pkgrel = 1
+	url = https://github.com/tx00100xt/SeriousSamAlphaRemake
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = cmake
+	makedepends = make
+	makedepends = sed
+	depends = sdl2
+	depends = python
+	depends = bash
+	source = https://github.com/tx00100xt/SeriousSamAlphaRemake/archive/refs/tags/v1.5.tar.gz
+	sha512sums = e97522af640c70443ed137ce700ee3f5f3c28785a847ab6c73145cea2edd806ba12ecd3ab157abde35653f971c29a401597f7a5bdb54c4cd556007664b11cb3e
+
+pkgname = serioussam-alpha
+

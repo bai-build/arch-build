@@ -1,0 +1,20 @@
+pkgbase = command-not-found
+	pkgdesc = In case a command could not be found this utility searches for packages containing this or a similar command (bash,zsh).
+	pkgver = 0.6.2
+	pkgrel = 2
+	url = http://github.com/metti/command-not-found
+	install = command-not-found.install
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = boost
+	makedepends = cmake
+	depends = boost-libs
+	depends = libarchive
+	depends = tdb
+	depends = wget
+	source = http://github.com/metti/command-not-found/archive/v0.6.2.tar.gz
+	md5sums = b6a9eba4049d11acf76228db6604be52
+
+pkgname = command-not-found
+

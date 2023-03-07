@@ -1,0 +1,5 @@
+gnethogs/
+src/
+pkg/
+*.zst
+*.tar.gz

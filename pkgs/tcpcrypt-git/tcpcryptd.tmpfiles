@@ -1,0 +1,2 @@
+# chrooted jail directory for tcpcryptd:
+d /run/tcpcryptd 0755 tcpcryptd root - -

@@ -1,0 +1,18 @@
+pkgbase = umockdev
+	pkgdesc = Record/mock hardware devices for bug reports and regression tests
+	pkgver = 0.9.1
+	pkgrel = 1
+	url = https://github.com/martinpitt/umockdev/
+	arch = i686
+	arch = x86_64
+	license = LGPL
+	makedepends = gobject-introspection
+	makedepends = gtk-doc
+	makedepends = vala
+	depends = systemd
+	depends = libgudev
+	source = umockdev-0.9.1.tar.gz::https://github.com/martinpitt/umockdev/archive/0.9.1.tar.gz
+	sha256sums = bb382c0095a9370270bf7f894b578637c21d91b6e4b02dd35595c3f3bf6545f4
+
+pkgname = umockdev
+

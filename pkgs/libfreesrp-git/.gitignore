@@ -1,0 +1,5 @@
+src
+pkg
+libfreesrp-git
+*.pkg.tar.*
+tags

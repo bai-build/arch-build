@@ -1,0 +1,20 @@
+pkgbase = liblinear
+	pkgdesc = A Library for Large Linear Classification
+	pkgver = 2.43
+	pkgrel = 1
+	url = http://www.csie.ntu.edu.tw/~cjlin/liblinear/
+	arch = i686
+	arch = x86_64
+	license = BSD
+	makedepends = gcc
+	makedepends = python-setuptools
+	depends = gcc-libs
+	source = https://www.csie.ntu.edu.tw/~cjlin/liblinear/liblinear-2.43.tar.gz
+	sha256sums = 02bad43d745e2796f39a08ac9d117770e71939ef06b1ee7afc6ab7909e304807
+
+pkgname = liblinear
+
+pkgname = python-liblinear
+	pkgdesc = Python bindings for liblinear
+	depends = gcc-libs
+	depends = python-scipy

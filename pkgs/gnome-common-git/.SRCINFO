@@ -1,0 +1,15 @@
+pkgbase = gnome-common-git
+	pkgdesc = Common development macros for GNOME
+	pkgver = 3.18.0.r2.3f52961
+	pkgrel = 1
+	url = http://www.gnome.org
+	arch = any
+	license = GPL
+	makedepends = git
+	provides = gnome-common
+	conflicts = gnome-common
+	source = git+https://gitlab.gnome.org/GNOME/gnome-common
+	sha256sums = SKIP
+
+pkgname = gnome-common-git
+

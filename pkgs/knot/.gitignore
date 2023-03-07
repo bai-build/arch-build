@@ -1,0 +1,8 @@
+/knot-*.tar.*
+/knot-*.log
+/PKGBUILD-namcap.log
+/src/
+/pkg/
+*~
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]

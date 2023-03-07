@@ -1,0 +1,15 @@
+pkgbase = openrc-sysvinit
+	pkgdesc = Linux System V Init patched to use alternate inittab for openrc
+	pkgver = 2.98
+	pkgrel = 1
+	url = http://savannah.nongnu.org/projects/sysvinit
+	install = sysvinit.install
+	arch = i686
+	arch = x86_64
+	groups = base
+	license = GPL
+	depends = sysvinit
+	source = http://download.savannah.nongnu.org/releases/sysvinit/sysvinit-2.98.tar.xz
+	md5sums = e3254f7622ea5cf2322b1b386a98ba59
+
+pkgname = openrc-sysvinit

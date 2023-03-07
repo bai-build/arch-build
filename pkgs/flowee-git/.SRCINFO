@@ -1,0 +1,30 @@
+pkgbase = flowee-git
+	pkgdesc = Flowee Bitcoin products
+	pkgver = 2020.08.2.r10.g0eea8e523
+	pkgrel = 1
+	url = https://flowee.org/
+	install = flowee.install
+	arch = x86_64
+	arch = aarch64
+	license = GPL
+	makedepends = boost
+	makedepends = cmake
+	makedepends = pkgconf
+	depends = boost-libs
+	depends = libevent
+	depends = openssl
+	provides = flowee-hub
+	provides = flowee-libs
+	backup = etc/flowee/flowee.conf
+	backup = etc/flowee/rest-service.conf
+	source = git+https://gitlab.com/FloweeTheHub/thehub.git#branch=master
+	source = flowee.logrotate
+	source = flowee.conf
+	source = logs.conf
+	sha256sums = SKIP
+	sha256sums = 0438e1a44523aeb3bbecd60fd920ca7b2aacd267b5cf988ab77a44eb7c03929e
+	sha256sums = 59c1928ddb33fed1d4bf35df8fecd1dbdda0b308eac943503a2e3afb8c64bc89
+	sha256sums = 2ed3fca395e3ca1011c51fb38f1fc574f890accf64f14cff02512199fe86b96f
+
+pkgname = flowee-git
+

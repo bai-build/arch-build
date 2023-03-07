@@ -1,0 +1,18 @@
+pkgbase = caja-gksu
+	pkgdesc = Allows you to open files with administration privileges using the context menu when browsing your files with Caja.
+	pkgver = 1.23.0
+	pkgrel = 1
+	url = https://mate-desktop.org
+	arch = x86_64
+	groups = mate-extra
+	license = GPL
+	makedepends = intltool
+	makedepends = python
+	depends = caja
+	depends = caja-extensions-common
+	depends = gksu
+	source = https://pub.mate-desktop.org/releases/1.23/caja-extensions-1.23.0.tar.xz
+	sha256sums = e015238fe81f9f47d2e08543b89f0e47a645150f1639c485d978d4e0988fd3af
+
+pkgname = caja-gksu
+

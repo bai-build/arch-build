@@ -1,0 +1,19 @@
+pkgbase = mjpg-streamer-pikvm
+	pkgdesc = Stream mjpeg frames from a webcam via http (PiKVM edition)
+	pkgver = r66
+	pkgrel = 1
+	url = https://github.com/mdevaev/mjpg-streamer
+	arch = i686
+	arch = x86_64
+	arch = armv6h
+	arch = armv7h
+	license = GPL
+	makedepends = gcc
+	makedepends = cmake
+	depends = libjpeg
+	provides = mjpeg-streamer
+	source = https://github.com/jacksonliam/mjpg-streamer/archive/821c330ea6bbb5fbed98d48e00aac156e923161b.tar.gz
+	md5sums = 48ab94f86622f92b5663d48b56830dc9
+
+pkgname = mjpg-streamer-pikvm
+

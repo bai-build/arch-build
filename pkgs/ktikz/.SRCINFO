@@ -1,0 +1,18 @@
+pkgbase = ktikz
+	pkgdesc = A small application helping you to create TikZ diagrams (from the LaTeX pgf package)
+	pkgver = 0.12
+	pkgrel = 2
+	url = http://www.hackenberger.at/blog/ktikz-editor-for-the-tikz-language/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = cmake
+	makedepends = docbook-xml
+	makedepends = qt5-tools
+	depends = poppler-qt5
+	depends = kdebase-runtime
+	source = https://github.com/fhackenberger/ktikz/archive/0.12.tar.gz
+	md5sums = 3834a2c0c7d135eb7f958053a56c07ca
+
+pkgname = ktikz
+

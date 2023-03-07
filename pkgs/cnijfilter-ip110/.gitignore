@@ -1,0 +1,5 @@
+cnijfilter-ip110-*.pkg.tar.xz
+cnijfilter2-source-*.tar.gz
+*~
+src/
+pkg/

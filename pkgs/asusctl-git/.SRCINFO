@@ -1,0 +1,19 @@
+pkgbase = asusctl-git
+	pkgdesc = Asus laptop control utilities
+	pkgver = 3.4.1.r11.gab80b07
+	pkgrel = 1
+	url = https://gitlab.com/asus-linux/asusctl
+	arch = x86_64
+	license = MPL2
+	makedepends = git
+	makedepends = rust
+	depends = libusb
+	depends = udev
+	depends = systemd
+	optdepends = acpi_call: fan control
+	provides = asusctl
+	conflicts = asusctl
+	source = git+https://gitlab.com/asus-linux/asusctl.git
+	md5sums = SKIP
+
+pkgname = asusctl-git

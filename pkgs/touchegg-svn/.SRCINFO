@@ -1,0 +1,18 @@
+pkgbase = touchegg-svn
+	pkgdesc = Multitouch gesture recognizer
+	pkgver = 191
+	pkgrel = 1
+	url = https://code.google.com/p/touchegg/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = subversion
+	depends = qt4
+	depends = geis
+	provides = touchegg
+	conflicts = touchegg
+	source = touchegg::svn+http://touchegg.googlecode.com/svn
+	sha512sums = SKIP
+
+pkgname = touchegg-svn
+

@@ -1,0 +1,45 @@
+pkgbase = picom-tryone-git
+	pkgdesc = tryone144's picom fork with dual_kawase blur, an X compositor (fork of compton)
+	pkgver = 1477_Next.196.g9bb21fc_2020.09.16
+	pkgrel = 1
+	url = https://github.com/tryone144/picom/tree/feature/dual_kawase
+	arch = i686
+	arch = x86_64
+	license = MIT
+	license = MPL2
+	makedepends = git
+	makedepends = mesa
+	makedepends = meson
+	makedepends = asciidoc
+	makedepends = uthash
+	depends = libgl
+	depends = libev
+	depends = pcre
+	depends = libx11
+	depends = xcb-util-renderutil
+	depends = libxcb
+	depends = xcb-util-image
+	depends = libxext
+	depends = pixman
+	depends = libconfig
+	depends = libdbus
+	depends = hicolor-icon-theme
+	depends = libxdg-basedir
+	optdepends = dbus: To control picom via D-Bus
+	optdepends = xorg-xwininfo: For picom-trans
+	optdepends = xorg-xprop: For picom-trans
+	optdepends = python: For picom-convgen.py
+	provides = compton
+	provides = compton-git
+	provides = picom
+	provides = picom-git
+	conflicts = compton
+	conflicts = compton-git
+	conflicts = picom
+	conflicts = picom-git
+	options = !strip
+	source = git+https://github.com/tryone144/picom.git#branch=feature/dual_kawase
+	md5sums = SKIP
+
+pkgname = picom-tryone-git
+

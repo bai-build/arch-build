@@ -1,0 +1,30 @@
+
+post_install() {
+  getent group ossec >/dev/null || groupadd ossec
+  getent passwd ossec >/dev/null || useradd -g ossec -d '/var/ossec' -s /bin/false ossec
+  getent passwd ossecm >/dev/null || useradd -g ossec -d '/var/ossec' -s /bin/false ossecm
+  getent passwd ossecr >/dev/null || useradd -g ossec -d '/var/ossec' -s /bin/false ossecr
+  passwd -l ossec &>/dev/null
+  passwd -l ossecm &>/dev/null
+  passwd -l ossecr &>/dev/null
+
+  # change ownership on /var/ossec from the temporry owners to the ossec users and group
+  find /var/ossec -group nobody -exec chgrp ossec '{}' ';'
+  find /var/ossec -user nobody -exec chown ossec:ossec '{}' ';'
+  find /var/ossec -user mail -exec chown ossecm:ossec '{}' ';'
+  find /var/ossec -user daemon -exec chown ossecr:ossec '{}' ';'
+}
+
+post_upgrade() {
+  post_install
+}
+
+post_remove() {
+  if [ ! -d /var/ossec ]; then
+    userdel ossec &>/dev/null
+    userdel ossecm &>/dev/null
+    userdel ossecr &>/dev/null
+    groupdel ossec &>/dev/null
+  fi
+}
+

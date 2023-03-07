@@ -1,0 +1,24 @@
+pkgbase = xfce4-indicator-plugin-git
+	pkgdesc = Display indicators in the Xfce4 panel
+	pkgver = 2.4.1+47+g536586c
+	pkgrel = 1
+	url = https://goodies.xfce.org/projects/panel-plugins/xfce4-indicator-plugin
+	arch = i686
+	arch = x86_64
+	arch = aarch64
+	arch = armv7h
+	license = GPL
+	makedepends = intltool
+	makedepends = xfce4-dev-tools
+	makedepends = git
+	depends = hicolor-icon-theme
+	depends = libindicator-gtk2
+	depends = libindicator-gtk3
+	depends = xfce4-panel
+	depends = xdg-utils
+	provides = xfce4-indicator-plugin=2.4.1
+	conflicts = xfce4-indicator-plugin
+	source = xfce4-indicator-plugin::git+https://gitlab.xfce.org/panel-plugins/xfce4-indicator-plugin
+	sha256sums = SKIP
+
+pkgname = xfce4-indicator-plugin-git

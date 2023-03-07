@@ -1,0 +1,13 @@
+
+riffa
+
+src
+pkg
+
+*.pkg
+*.gz
+*.tar
+*.tgz
+*.xz
+*.zst
+

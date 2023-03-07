@@ -1,0 +1,32 @@
+pkgbase = ros-kinetic-fake-localization
+	pkgdesc = ROS - A ROS node that simply forwards odometry information.
+	pkgver = 1.14.2
+	pkgrel = 2
+	url = http://wiki.ros.org/fake_localization
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-rospy
+	makedepends = ros-kinetic-roscpp
+	makedepends = ros-kinetic-geometry-msgs
+	makedepends = ros-kinetic-angles
+	makedepends = ros-kinetic-message-filters
+	makedepends = ros-kinetic-rosconsole
+	makedepends = ros-kinetic-catkin
+	makedepends = ros-kinetic-tf
+	makedepends = ros-kinetic-nav-msgs
+	depends = ros-kinetic-roscpp
+	depends = ros-kinetic-geometry-msgs
+	depends = ros-kinetic-rospy
+	depends = ros-kinetic-nav-msgs
+	depends = ros-kinetic-rosconsole
+	depends = ros-kinetic-tf
+	depends = ros-kinetic-message-filters
+	source = ros-kinetic-fake-localization-1.14.2-0.tar.gz::https://github.com/ros-gbp/navigation-release/archive/release/kinetic/fake_localization/1.14.2-0.tar.gz
+	source = boost-signals.patch
+	sha256sums = 03d6633f9bf6e69a26f672b0e26d5f9d9bd94a9e13a1190a3f9f7b74a1364956
+	sha256sums = 628f535fb481bfbe278af66fdee58511c85db117b4f084a3100e57125a7acfbe
+
+pkgname = ros-kinetic-fake-localization
+

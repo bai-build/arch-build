@@ -1,0 +1,44 @@
+diff -ura qdigidoc4_4.0.0.orig/client/dialogs/PinUnblock.cpp qdigidoc4_4.0.0.new/client/dialogs/PinUnblock.cpp
+--- qdigidoc4_4.0.0.orig/client/dialogs/PinUnblock.cpp	2018-07-17 16:53:37.108279016 +0100
++++ qdigidoc4_4.0.0.new/client/dialogs/PinUnblock.cpp	2018-07-17 16:54:20.769255458 +0100
+@@ -25,6 +25,7 @@
+ 
+ #include <QLabel>
+ #include <QList>
++#include <QtGui/QRegExpValidator>
+ 
+ 
+ struct InfoLine
+diff -ura qdigidoc4_4.0.0.orig/client/dialogs/Updater.cpp qdigidoc4_4.0.0.new/client/dialogs/Updater.cpp
+--- qdigidoc4_4.0.0.orig/client/dialogs/Updater.cpp	2018-07-17 16:53:37.108279016 +0100
++++ qdigidoc4_4.0.0.new/client/dialogs/Updater.cpp	2018-07-17 16:54:20.769255458 +0100
+@@ -41,6 +41,7 @@
+ #include <QtNetwork/QNetworkReply>
+ #include <QtNetwork/QSslKey>
+ #include <QtGui/QPainter>
++#include <QtGui/QRegExpValidator>
+ #include <QtWidgets/QPushButton>
+ 
+ #include <openssl/evp.h>
+diff -ura qdigidoc4_4.0.0.orig/client/widgets/OtherData.cpp qdigidoc4_4.0.0.new/client/widgets/OtherData.cpp
+--- qdigidoc4_4.0.0.orig/client/widgets/OtherData.cpp	2018-07-17 16:52:59.297433337 +0100
++++ qdigidoc4_4.0.0.new/client/widgets/OtherData.cpp	2018-07-17 16:54:20.769255458 +0100
+@@ -21,6 +21,8 @@
+ #include "ui_OtherData.h"
+ #include "Styles.h"
+ 
++#include <QStyleOption>
++
+ OtherData::OtherData(QWidget *parent)
+ : QWidget(parent)
+ , ui(new Ui::OtherData)
+diff -ura qdigidoc4_4.0.0.orig/common/qtsingleapplication/CMakeLists.txt qdigidoc4_4.0.0.new/common/qtsingleapplication/CMakeLists.txt
+--- qdigidoc4_4.0.0.orig/common/qtsingleapplication/CMakeLists.txt	2018-07-17 16:53:39.498332469 +0100
++++ qdigidoc4_4.0.0.new/common/qtsingleapplication/CMakeLists.txt	2018-07-17 16:54:30.429490042 +0100
+@@ -5,5 +5,5 @@
+ set_target_properties( qtsingleapplication PROPERTIES AUTOMOC TRUE )
+ 
+ if( Qt5Widgets_FOUND )
+-	qt5_use_modules( qtsingleapplication Widgets Network )
++	target_link_libraries( qtsingleapplication Qt5::Widgets Qt5::Network )
+ endif()

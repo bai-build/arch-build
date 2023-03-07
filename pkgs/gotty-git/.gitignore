@@ -1,0 +1,5 @@
+src
+pkg
+gotty-git
+*pkg.tar.zst
+tags

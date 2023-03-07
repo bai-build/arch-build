@@ -1,0 +1,5 @@
+pkg
+src
+turbovnc-*-x86_64.pkg.tar.xz
+turbovnc-*.tar.gz
+turbovnc-*.tar.zst

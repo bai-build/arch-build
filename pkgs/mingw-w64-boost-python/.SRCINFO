@@ -1,0 +1,27 @@
+pkgbase = mingw-w64-boost-python
+	pkgdesc = Free peer-reviewed portable C++ source libraries (mingw-w64, python)
+	pkgver = 1.73.0
+	pkgrel = 1
+	url = http://www.boost.org/
+	arch = i686
+	arch = x86_64
+	license = custom
+	makedepends = mingw-w64-gcc
+	makedepends = boost
+	makedepends = bzip2
+	makedepends = wine
+	depends = mingw-w64-crt
+	depends = mingw-w64-zlib
+	depends = mingw-w64-bzip2
+	depends = mingw-w64-boost
+	depends = mingw-w64-python
+	options = !strip
+	options = !buildflags
+	options = staticlibs
+	source = https://dl.bintray.com/boostorg/release/1.73.0/source/boost_1_73_0.tar.bz2
+	source = python_jam.patch
+	sha256sums = 4eb3b8d442b426dc35346235c8733b5ae35ba431690e38c6a8263dce9fcbb402
+	sha256sums = 6437811e541e1230576c6d60e73420bba1a644f5692a6973eb6bb6aea7e88056
+
+pkgname = mingw-w64-boost-python
+

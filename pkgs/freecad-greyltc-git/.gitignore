@@ -1,0 +1,6 @@
+*.pkg.tar
+src/
+pkg/
+*.tar.xz
+*.tar.gz
+freecad/

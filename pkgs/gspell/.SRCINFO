@@ -1,0 +1,20 @@
+pkgbase = gspell
+	pkgdesc = a flexible API to implement the spell checking in a GTK+ application
+	pkgver = 0.1.1
+	pkgrel = 1
+	url = https://wiki.gnome.org/Projects/gspell
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = intltool
+	makedepends = itstool
+	depends = gtk3
+	depends = gtksourceview3
+	depends = enchant
+	depends = libxml2
+	depends = iso-codes
+	source = https://download.gnome.org/sources/gspell/0.1/gspell-0.1.1.tar.xz
+	sha256sums = fef8cd89d220fc9ad6b69ff625ca2263a09c69ba56fcefcc90cf4422896e4c52
+
+pkgname = gspell
+

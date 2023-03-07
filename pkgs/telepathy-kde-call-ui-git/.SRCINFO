@@ -1,0 +1,17 @@
+pkgbase = telepathy-kde-call-ui-git
+	pkgdesc = Voice/Video Call UI for Telepathy
+	pkgver = v20.04.2.r0.g8815182
+	pkgrel = 1
+	url = http://community.kde.org/Real-Time_Communication_and_Collaboration
+	arch = x86_64
+	license = GPL
+	makedepends = extra-cmake-modules
+	makedepends = git
+	makedepends = boost
+	depends = telepathy-kde-common-internals-git
+	depends = qt-gstreamer
+	source = git+https://invent.kde.org/network/ktp-call-ui.git
+	sha256sums = SKIP
+
+pkgname = telepathy-kde-call-ui-git
+

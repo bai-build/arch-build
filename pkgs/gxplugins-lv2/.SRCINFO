@@ -1,0 +1,18 @@
+pkgbase = gxplugins-lv2
+	pkgdesc = A set of guitar pedal simulation LV2 plugins from the guitarix project.
+	pkgver = 0.7
+	pkgrel = 1
+	url = https://github.com/brummer10/GxPlugins.lv2
+	arch = i686
+	arch = x86_64
+	groups = lv2-plugins
+	license = GPL3
+	makedepends = lv2
+	makedepends = libxext
+	makedepends = freetype2
+	depends = gtkmm
+	source = https://github.com/brummer10/GxPlugins.lv2/releases/download/v0.7/GxPlugins_0.7.tar.gz
+	md5sums = 05d739339bd48311b1e9590232780809
+
+pkgname = gxplugins-lv2
+

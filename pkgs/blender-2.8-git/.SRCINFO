@@ -1,0 +1,57 @@
+pkgbase = blender-2.8-git
+	pkgdesc = Development version of Blender 2.8 branch
+	pkgver = 2.90.r95572.g33bdd91fb82
+	pkgrel = 1
+	url = https://blender.org/
+	changelog = blender.changelog
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = ninja
+	makedepends = git
+	makedepends = cmake
+	makedepends = boost
+	makedepends = mesa
+	makedepends = llvm
+	depends = embree
+	depends = alembic
+	depends = libgl
+	depends = python
+	depends = python-numpy
+	depends = openjpeg2
+	depends = ffmpeg
+	depends = fftw
+	depends = openal
+	depends = freetype2
+	depends = libxi
+	depends = openimageio
+	depends = opencolorio
+	depends = openvdb
+	depends = opencollada
+	depends = opensubdiv
+	depends = openshadinglanguage
+	depends = libtiff
+	depends = libpng
+	depends = openimagedenoise
+	optdepends = cuda: CUDA support in Cycles
+	provides = blender=2.90
+	conflicts = blender=2.90
+	source = git://git.blender.org/blender.git#branch=master
+	source = blender-addons.git::git://git.blender.org/blender-addons.git
+	source = blender-addons-contrib.git::git://git.blender.org/blender-addons-contrib.git
+	source = blender-translations.git::git://git.blender.org/blender-translations.git
+	source = blender-dev-tools.git::git://git.blender.org/blender-dev-tools.git
+	source = SelectCudaComputeArch.patch
+	source = usd_python.patch
+	source = embree.patch
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = 66b9bf3db441f35119ef0eb5f855142f2e773e8002ac0216e056bcc6f8ac409c
+	sha256sums = 12bd6db5c1fe14244fd7321e3d740941a36aa545ec21b02325e7553c9214778a
+	sha256sums = 42afe119529a5350034a489225958112bf4b84bdee38757a932e5caaa9bd5ed4
+
+pkgname = blender-2.8-git
+

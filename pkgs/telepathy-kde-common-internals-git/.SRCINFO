@@ -1,0 +1,26 @@
+pkgbase = telepathy-kde-common-internals-git
+	pkgdesc = Common components for KDE-Telepathy
+	pkgver = v19.11.80.r54.g9f372a1
+	pkgrel = 1
+	url = http://community.kde.org/Real-Time_Communication_and_Collaboration
+	arch = x86_64
+	license = GPL
+	makedepends = extra-cmake-modules
+	makedepends = git
+	makedepends = kdoctools
+	makedepends = doxygen
+	makedepends = python
+	depends = knotifyconfig
+	depends = ktexteditor
+	depends = kpeople
+	depends = telepathy-logger-qt
+	depends = kaccounts-integration
+	depends = libotr
+	depends = telepathy-accounts-signon
+	provides = telepathy-kde-common-internals
+	conflicts = telepathy-kde-common-internals
+	source = git+https://invent.kde.org/network/ktp-common-internals.git
+	sha256sums = SKIP
+
+pkgname = telepathy-kde-common-internals-git
+

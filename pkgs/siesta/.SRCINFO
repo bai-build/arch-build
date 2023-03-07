@@ -1,0 +1,17 @@
+pkgbase = siesta
+	pkgdesc = A first-principles materials simulation code using DFT
+	pkgver = 4.1.5
+	pkgrel = 1
+	url = https://departments.icmab.es/leem/siesta
+	arch = x86_64
+	license = GPL
+	makedepends = gcc-fortran
+	depends = elpa
+	depends = metis
+	depends = fftw
+	depends = python
+	source = https://gitlab.com/siesta-project/siesta/-/archive/v4.1.5/siesta-v4.1.5.tar.bz2
+	sha256sums = 0beffa6b8c3f705348acba2ac619e8ad749f54bcaa1c7bb560e994a9f7f502d8
+
+pkgname = siesta
+

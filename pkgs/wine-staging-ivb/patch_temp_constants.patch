@@ -1,0 +1,63 @@
+From ccf2b6aa11966ec2a95fdbdb310ddd63cbe704da Mon Sep 17 00:00:00 2001
+From: swswine <swswine@gmail.com>
+Date: Thu, 19 Nov 2015 13:41:29 +0300
+Subject: [PATCH] Maximum shader constants increase (temp fix)
+
+Signed-off-by: Paul Gofman <gofmanp@gmail.com>
+---
+ dlls/d3d9/d3d9_private.h       | 2 +-
+ dlls/wined3d/shader.c          | 6 +++---
+ dlls/wined3d/wined3d_private.h | 2 +-
+ 3 files changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/dlls/d3d9/d3d9_private.h b/dlls/d3d9/d3d9_private.h
+index b618ff4..e8d64d7 100644
+--- a/dlls/d3d9/d3d9_private.h
++++ b/dlls/d3d9/d3d9_private.h
+@@ -315,7 +315,7 @@ HRESULT vertexshader_init(struct d3d9_vertexshader *shader,
+         struct d3d9_device *device, const DWORD *byte_code) DECLSPEC_HIDDEN;
+ struct d3d9_vertexshader *unsafe_impl_from_IDirect3DVertexShader9(IDirect3DVertexShader9 *iface) DECLSPEC_HIDDEN;
+ 
+-#define D3D9_MAX_VERTEX_SHADER_CONSTANTF 256
++#define D3D9_MAX_VERTEX_SHADER_CONSTANTF 1024
+ #define D3D9_MAX_SIMULTANEOUS_RENDERTARGETS 4
+ 
+ struct d3d9_pixelshader
+diff --git a/dlls/wined3d/shader.c b/dlls/wined3d/shader.c
+index ef2f70b..47e5618 100644
+--- a/dlls/wined3d/shader.c
++++ b/dlls/wined3d/shader.c
+@@ -527,14 +527,14 @@ static void shader_set_limits(struct wined3d_shader *shader)
+     vs_limits[] =
+     {
+         /* min_version, max_version, sampler, constant_int, constant_float, constant_bool, packed_output, packed_input */
+-        {WINED3D_SHADER_VERSION(1, 0), WINED3D_SHADER_VERSION(1, 1), { 0,  0, 256,  0, 12,  0}},
+-        {WINED3D_SHADER_VERSION(2, 0), WINED3D_SHADER_VERSION(2, 1), { 0, 16, 256, 16, 12,  0}},
++        {WINED3D_SHADER_VERSION(1, 0), WINED3D_SHADER_VERSION(1, 1), { 0,  0, /*256 */1024,  0, 12,  0}},
++        {WINED3D_SHADER_VERSION(2, 0), WINED3D_SHADER_VERSION(2, 1), { 0, 16, /*256 */1024, 16, 12,  0}},
+         /* DX10 cards on Windows advertise a D3D9 constant limit of 256
+          * even though they are capable of supporting much more (GL
+          * drivers advertise 1024). d3d9.dll and d3d8.dll clamp the
+          * wined3d-advertised maximum. Clamp the constant limit for <= 3.0
+          * shaders to 256. */
+-        {WINED3D_SHADER_VERSION(3, 0), WINED3D_SHADER_VERSION(3, 0), { 4, 16, 256, 16, 12,  0}},
++        {WINED3D_SHADER_VERSION(3, 0), WINED3D_SHADER_VERSION(3, 0), { 4, 16, /*256*/1024, 16, 12,  0}},
+         {WINED3D_SHADER_VERSION(4, 0), WINED3D_SHADER_VERSION(4, 0), {16,  0,   0,  0, 16,  0}},
+         {WINED3D_SHADER_VERSION(4, 1), WINED3D_SHADER_VERSION(5, 0), {16,  0,   0,  0, 32,  0}},
+         {0}
+diff --git a/dlls/wined3d/wined3d_private.h b/dlls/wined3d/wined3d_private.h
+index 0b376b6..b384469 100644
+--- a/dlls/wined3d/wined3d_private.h
++++ b/dlls/wined3d/wined3d_private.h
+@@ -530,7 +530,7 @@ enum wined3d_shader_conditional_op
+ #define WINED3D_MAX_CBS 15
+ #define WINED3D_MAX_CONSTS_B 16
+ #define WINED3D_MAX_CONSTS_I 16
+-#define WINED3D_MAX_VS_CONSTS_F 256
++#define WINED3D_MAX_VS_CONSTS_F 1024
+ #define WINED3D_MAX_PS_CONSTS_F 224
+ 
+ /* FIXME: This needs to go up to 2048 for
+-- 
+2.5.5
+

@@ -1,0 +1,20 @@
+pkgbase = st-bydarch
+	pkgdesc = Simple virtual terminal emulator for X - Modificado por Darch7
+	pkgver = 0.8.2.r6.114304a
+	pkgrel = 1
+	url = https://github.com/darch7/st.git
+	arch = x86_64
+	license = MIT
+	makedepends = ncurses
+	makedepends = libxext
+	makedepends = git
+	depends = ttf-meslo-nerd-font-powerlevel10k
+	depends = libxft
+	provides = st
+	conflicts = st
+	options = zipman
+	source = st-bydarch::git+https://github.com/darch7/st.git
+	sha256sums = SKIP
+
+pkgname = st-bydarch
+

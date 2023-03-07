@@ -1,0 +1,4 @@
+hpp-fcl*
+*.patch
+src
+pkg

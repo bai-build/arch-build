@@ -1,0 +1,18 @@
+pkgbase = kodi-devel-audiodecoder-stsound
+	pkgdesc = YM decoder addon for Kodi
+	pkgver = 20150806.759ae7e
+	pkgrel = 1
+	url = https://github.com/notspiff/audiodecoder.stsound
+	arch = i686
+	arch = x86_64
+	groups = kodi-devel
+	license = GPL
+	makedepends = cmake
+	makedepends = kodi-devel-platform
+	makedepends = kodi-devel-libplatform
+	depends = kodi-devel
+	source = https://github.com/notspiff/audiodecoder.stsound/archive/759ae7eadb94adfde8533a2a42d949c321718625.tar.gz
+	md5sums = SKIP
+
+pkgname = kodi-devel-audiodecoder-stsound
+

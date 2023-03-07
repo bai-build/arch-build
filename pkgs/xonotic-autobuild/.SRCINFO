@@ -1,0 +1,26 @@
+pkgbase = xonotic-autobuild
+	pkgdesc = A free, fast-paced crossplatform first-person shooter
+	pkgver = 0.8.5
+	pkgrel = 1
+	url = http://xonotic.org
+	arch = x86_64
+	arch = aarch64
+	license = GPL
+	makedepends = mesa
+	makedepends = rsync
+	depends = alsa-lib
+	depends = curl
+	depends = libmodplug
+	depends = libvorbis
+	depends = libxpm
+	depends = sdl2
+	depends = gtk-update-icon-cache
+	depends = desktop-file-utils
+	conflicts = xonotic
+	conflicts = xonotic-data
+	conflicts = xonotic-git
+	source = rsync://beta.xonotic.org/autobuild-Xonotic/misc/tools/rsync-updater/update-to-autobuild.sh
+	sha512sums = ce79ffabd76c83cfe097f56fa47d694c368a59a7e216ce9d0ac30523515a1804bac03de6080e561835b3d5f500dcc05b5c4ff38b3713a7fca7d41b35068b790b
+	b2sums = efd724c0c9385ebf91f78eff95977915ce2c62c76d3b08e2acacdf7d1ebd12647ea6a715d91b2085e2e50b7cf5c2aed2e8c5bdd1829f78677699e112dfa36686
+
+pkgname = xonotic-autobuild

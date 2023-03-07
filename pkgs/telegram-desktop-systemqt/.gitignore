@@ -1,0 +1,9 @@
+/src
+/pkg
+*.pkg.tar*
+/GSL
+/variant
+/libtgvoip
+/tdesktop
+/Catch
+/.osc

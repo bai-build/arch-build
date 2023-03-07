@@ -1,0 +1,20 @@
+pkgbase = dislocker-git
+	pkgdesc = FUSE driver to read/write Windows' BitLocker-ed volumes
+	pkgver = 0.7.1.r0.g3939a18
+	pkgrel = 1
+	url = https://github.com/Aorimn/dislocker
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = git
+	makedepends = cmake
+	depends = fuse
+	depends = mbedtls
+	depends = ruby
+	provides = dislocker
+	conflicts = dislocker
+	source = git+https://github.com/Aorimn/dislocker.git
+	sha512sums = SKIP
+
+pkgname = dislocker-git
+

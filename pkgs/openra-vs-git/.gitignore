@@ -1,0 +1,7 @@
+*.xz
+*.pkg.tar*
+*.gz
+pkg
+src
+ValiantShades
+*.log*

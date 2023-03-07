@@ -1,0 +1,26 @@
+pkgbase = xxd-standalone
+	pkgdesc = Hexdump utility from vim
+	pkgver = 9.0.0395
+	pkgrel = 1
+	url = https://www.vim.org
+	arch = x86_64
+	arch = i686
+	arch = arm
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	license = GPL2
+	license = custom: MIT-X11
+	depends = glibc
+	provides = xxd
+	conflicts = xxd
+	source = xxd-9.0.0395.c::https://raw.githubusercontent.com/vim/vim/v9.0.0395/src/xxd/xxd.c
+	source = xxd-9.0.0395.1::https://raw.githubusercontent.com/vim/vim/v9.0.0395/runtime/doc/xxd.1
+	source = xxd-standalone-Makefile::https://raw.githubusercontent.com/vim/vim/master/src/xxd/Makefile
+	source = https://raw.githubusercontent.com/FabioLolix/AUR-artifacts/master/xxd-LICENSE
+	sha256sums = 35d58add2adb76d6e7d74850413ce1a717823be46de7c8ecb780754f567559eb
+	sha256sums = b7822e307fe41854658d967571e6a52d792afef70508bedd0c665088e2afa8b0
+	sha256sums = 96d7229490da56fbf6cae3791407238636b2979e1f607e535f55ec26068303c5
+	sha256sums = 2ac99e6ff2ee077cfec2133d0d5d2d4f14b156994c4c1896703cda98c2d21845
+
+pkgname = xxd-standalone

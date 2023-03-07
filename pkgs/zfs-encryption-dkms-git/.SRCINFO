@@ -1,0 +1,38 @@
+pkgbase = zfs-encryption-dkms-git
+	pkgver = 0.7.0_r2965.076800258
+	pkgrel = 3
+	url = http://zfsonlinux.org/
+	arch = i686
+	arch = x86_64
+	license = CDDL
+	makedepends = git
+	makedepends = spl-dkms-git
+	source = git+https://github.com/tcaputi/zfs.git
+	source = zfs.bash-completion-r1
+	source = zfs.initcpio.install
+	source = zfs.initcpio.hook
+	sha256sums = SKIP
+	sha256sums = b60214f70ffffb62ffe489cbfabd2e069d14ed2a391fac0e36f914238394b540
+	sha256sums = aa5706bf08b36209a318762680f3c9fb45b3fc4b8e4ef184c8a5370b2c3000ca
+	sha256sums = 4b66b694f72d9028b2bd0bafe789be327e2d894f9dcddd7b5a71f955f4205601
+
+pkgname = zfs-encryption-dkms-git
+	pkgdesc = Kernel modules for the Zettabyte File System build with support for native encryption. (Git version)
+	depends = spl-dkms-git
+	depends = zfs-utils-encryption-dkms-git=0.7.0_r2965.076800258-3
+	depends = dkms
+	optdepends = plymouth-zfs: plymouth support for encrypted root
+	provides = zfs
+	conflicts = zfs-git
+	conflicts = zfs-lts
+	conflicts = zfs-dkms
+	conflicts = zfs-dkms-git
+
+pkgname = zfs-utils-encryption-dkms-git
+	pkgdesc = Kernel module support files for the Zettabyte File System build with support for native encryption. (Git version)
+	provides = zfs-utils
+	conflicts = zfs-utils-git
+	conflicts = zfs-utils-lts
+	conflicts = zfs-utils
+	conflicts = zfs-utils-dkms-git
+

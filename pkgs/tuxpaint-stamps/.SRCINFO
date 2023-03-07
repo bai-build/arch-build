@@ -1,0 +1,13 @@
+pkgbase = tuxpaint-stamps
+	pkgdesc = Additional stamps for Tux Paint
+	pkgver = 2022.06.04
+	pkgrel = 1
+	url = http://tuxpaint.org/
+	arch = any
+	license = GPL
+	optdepends = tuxpaint
+	options = !strip
+	source = https://downloads.sourceforge.net/tuxpaint/tuxpaint-stamps-2022.06.04.tar.gz
+	sha256sums = 842065576fae554358e00e51d71a492616a6490b12b592228067477c287a0bf8
+
+pkgname = tuxpaint-stamps

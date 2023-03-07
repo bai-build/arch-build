@@ -1,0 +1,12 @@
+warning() {
+  echo ""
+  echo ">>> NOTE: Launch by executing 'mscore-dev'."
+  "
+}
+post_install() {
+  warning
+}
+
+post_upgrade() {
+  warning
+}

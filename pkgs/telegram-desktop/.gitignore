@@ -1,0 +1,13 @@
+/*.tar.gz
+/*.tar.xz
+/tdesktop
+/GSL
+/variant
+/libtgvoip
+/Catch
+/fcitx
+/hime
+/qt*
+/gyp
+/pkg
+/src

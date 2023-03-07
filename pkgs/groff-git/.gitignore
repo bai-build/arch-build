@@ -1,0 +1,17 @@
+*~
+pkg/
+src/
+*.gz
+*.bz2
+*.xz
+*.lzo
+*.xz4
+*.tgz
+*.tbz
+*.txz
+*.tar
+*.jar
+*.zip
+*.zst
+groff-git
+gnulib-git

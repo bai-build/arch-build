@@ -1,0 +1,15 @@
+pkgbase = libnetstack
+	pkgdesc = Networking stack cache atop netlink
+	pkgver = 0.7.0
+	pkgrel = 1
+	url = https://nick-black.com/dankwiki/index.php/Libnetstack
+	arch = x86_64
+	license = Apache
+	makedepends = gtest
+	makedepends = cmake
+	makedepends = libnl
+	depends = ncurses
+	source = https://github.com/dankamongmen/libnetstack/archive/v0.7.0.tar.gz
+	sha256sums = c4b5862c17dc60d1c46f259eeecc44bf9bed9b8372af14e5b21983a7471abcd4
+
+pkgname = libnetstack

@@ -1,0 +1,13 @@
+diff --git a/src/gst-plugins/recorderendpoint/kmsrecorderendpoint.c b/src/gst-plugins/recorderendpoint/kmsrecorderendpoint.c
+index 0751d40..296fbc2 100644
+--- a/src/gst-plugins/recorderendpoint/kmsrecorderendpoint.c
++++ b/src/gst-plugins/recorderendpoint/kmsrecorderendpoint.c
+@@ -2050,7 +2050,7 @@ kms_recorder_endpoint_plugin_init (GstPlugin * plugin)
+ 
+ GST_PLUGIN_DEFINE (GST_VERSION_MAJOR,
+     GST_VERSION_MINOR,
+-    kmsrecorderendpoint,
++    recorderendpoint,
+     "Kurento recorder endpoint",
+     kms_recorder_endpoint_plugin_init, VERSION, GST_LICENSE_UNKNOWN,
+     "Kurento Elements", "http://kurento.com/")

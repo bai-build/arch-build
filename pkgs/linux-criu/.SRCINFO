@@ -1,0 +1,49 @@
+pkgbase = linux-criu
+	pkgver = 4.7.6
+	pkgrel = 1
+	url = http://www.kernel.org/
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = xmlto
+	makedepends = docbook-xsl
+	makedepends = kmod
+	makedepends = inetutils
+	makedepends = bc
+	makedepends = libelf
+	options = !strip
+	source = https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.7.tar.xz
+	source = https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.7.tar.sign
+	source = https://www.kernel.org/pub/linux/kernel/v4.x/patch-4.7.6.xz
+	source = https://www.kernel.org/pub/linux/kernel/v4.x/patch-4.7.6.sign
+	source = config
+	source = config.x86_64
+	source = linux.preset
+	source = change-default-console-loglevel.patch
+	validpgpkeys = ABAF11C65A2970B130ABE3C479BE3E4300411886
+	validpgpkeys = 647F28654894E3BD457199BE38DBBDC86092693E
+	sha256sums = 5190c3d1209aeda04168145bf50569dc0984f80467159b1dc50ad731e3285f10
+	sha256sums = SKIP
+	sha256sums = 2e425c268076c3b186107edf9045e0910088699e077282b5187efb5edf2b8836
+	sha256sums = SKIP
+	sha256sums = d20fe3d9ce82ab8596661457af7bbf7259240e53090cebc8cb67fa48ec449da6
+	sha256sums = 42c5d9b7ccda23872e91d588bd930d6ab989ac2b4909f5567716bc0cb4c194b8
+	sha256sums = f0d90e756f14533ee67afda280500511a62465b4f76adcc5effa95a40045179c
+	sha256sums = 1256b241cd477b265a3c2d64bdc19ffe3c9bbcee82ea3994c590c2c76e767d99
+
+pkgname = linux-criu
+	pkgdesc = The Linux-criu kernel and modules
+	install = linux.install
+	depends = coreutils
+	depends = linux-firmware
+	depends = kmod
+	depends = mkinitcpio>=0.7
+	optdepends = crda: to set the correct wireless channels of your country
+	backup = etc/mkinitcpio.d/linux-criu.preset
+
+pkgname = linux-criu-headers
+	pkgdesc = Header files and scripts for building modules for Linux-criu kernel
+
+pkgname = linux-criu-docs
+	pkgdesc = Kernel hackers manual - HTML documentation that comes with the Linux-criu kernel
+

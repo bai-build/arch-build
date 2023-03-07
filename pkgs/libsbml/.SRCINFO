@@ -1,0 +1,25 @@
+pkgbase = libsbml
+	pkgdesc = XML-based description language for computational models in systems biology
+	pkgver = 5.19.7
+	pkgrel = 1
+	url = https://github.com/sbmlteam/libsbml
+	arch = i686
+	arch = x86_64
+	license = LGPL
+	makedepends = cmake
+	makedepends = swig
+	makedepends = python
+	makedepends = perl
+	makedepends = ruby
+	makedepends = java-environment
+	depends = libxml2
+	optdepends = bzip2
+	optdepends = python
+	optdepends = perl
+	optdepends = ruby
+	optdepends = java-runtime
+	options = !libtool
+	source = libsbml-5.19.7.tar.gz::https://github.com/sbmlteam/libsbml/archive/v5.19.7.tar.gz
+	sha256sums = 61cbdf1a86aefbc002ac5a0cf9c0f3f91eca2ae8aa5c3e7ef78be0f5a84426c5
+
+pkgname = libsbml

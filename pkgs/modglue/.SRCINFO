@@ -1,0 +1,17 @@
+pkgbase = modglue
+	pkgdesc = Modglue library for Cadabra computer algebra system (CAS)
+	pkgver = 1.19
+	pkgrel = 2
+	url = http://cadabra.phi-sci.com/
+	install = modglue.install
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = libsigc++
+	source = http://cadabra.phi-sci.com/modglue-1.19.tar.gz
+	source = package.patch
+	md5sums = 0d3d764c93f8c1464852f78d8493476b
+	md5sums = 5b1ce13c05e43f73f6ebe1589cbf5fc6
+
+pkgname = modglue
+

@@ -1,0 +1,15 @@
+pkgbase = libbpf
+	pkgdesc = BPF library
+	pkgver = 0.0.7
+	pkgrel = 1
+	url = https://github.com/libbpf/libbpf
+	arch = x86_64
+	license = custom
+	makedepends = rsync
+	depends = libelf
+	depends = linux-api-headers
+	source = git+https://github.com/libbpf/libbpf#tag=v0.0.7
+	sha256sums = SKIP
+
+pkgname = libbpf
+

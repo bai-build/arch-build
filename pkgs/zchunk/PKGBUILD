@@ -1,0 +1,29 @@
+# Maintainer: Nikita Puzyryov <PuzyryovN@gmail.com>
+pkgname=zchunk
+pkgver=1.2.3
+pkgrel=1
+pkgdesc="A file format that allows easy deltas while maintaining good compression"
+arch=(x86 x86_64)
+url="https://github.com/zchunk/zchunk"
+license=('BSD')
+depends=('libcurl.so' 'zstd')
+provides=('libzck.so')
+makedepends=('meson' 'ninja')
+source=("$pkgname-$pkgver.tar.gz::$url/archive/$pkgver.tar.gz")
+sha256sums=('e24bad88ad80fbb8b2f1cbd93206bad2ed32ea19d3d59eac43d224484e6b0c93')
+
+build() {
+  cd "$srcdir/$pkgname-$pkgver"
+  arch-meson build/
+  ninja -C build/
+}
+
+check() {
+  cd "$srcdir/$pkgname-$pkgver/build"
+  meson test
+}
+
+package() {
+  cd "$srcdir/$pkgname-$pkgver"
+  DESTDIR="$pkgdir/" ninja -C build/ install
+}

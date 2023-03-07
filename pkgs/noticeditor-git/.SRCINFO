@@ -1,0 +1,18 @@
+pkgbase = noticeditor-git
+	pkgdesc = The Notice Editor
+	pkgver = 344.12cc720
+	pkgrel = 1
+	url = https://github.com/TemporaryTeam/NoticEditor
+	arch = i686
+	arch = x86_64
+	license = Apache
+	makedepends = java-environment
+	makedepends = java-openjfx
+	makedepends = gradle
+	depends = java-runtime
+	depends = java-openjfx
+	source = git+https://github.com/TemporaryTeam/NoticEditor
+	md5sums = SKIP
+
+pkgname = noticeditor-git
+

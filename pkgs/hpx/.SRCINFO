@@ -1,0 +1,20 @@
+pkgbase = hpx
+	pkgdesc = A general purpose C++ runtime system for parallel and distributed applications of any scale
+	pkgver = 1.8.0
+	pkgrel = 2
+	url = http://hpx.stellar-group.org
+	arch = any
+	license = boost
+	makedepends = cmake
+	makedepends = gcc
+	makedepends = make
+	depends = asio
+	depends = boost
+	depends = gperftools
+	depends = hwloc
+	conflicts = hpx-git
+	options = staticlibs
+	source = https://github.com/STEllAR-GROUP/hpx/archive/1.8.0.tar.gz
+	sha512sums = 80afc93d517144d5c11164f82d7f0dd6fd71c079fb65930532c4fd96b6a5497cdf972bee8a6251035548a3662579a3bee5c04802569f47bc3c042ca868716cb7
+
+pkgname = hpx

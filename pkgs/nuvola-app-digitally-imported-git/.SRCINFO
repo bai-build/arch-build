@@ -1,0 +1,14 @@
+pkgbase = nuvola-app-digitally-imported-git
+	pkgdesc = Digitally Imported integration for Nuvola Player.
+	pkgver = r0.39115fb
+	pkgrel = 1
+	url = https://github.com/ItzBlitz98/nuvola-app-digitally-imported
+	arch = any
+	license = custom: BSD
+	makedepends = git
+	depends = nuvolaplayer
+	source = nuvola-app-digitally-imported-git::git+https://github.com/ItzBlitz98/nuvola-app-digitally-imported.git
+	sha256sums = SKIP
+
+pkgname = nuvola-app-digitally-imported-git
+

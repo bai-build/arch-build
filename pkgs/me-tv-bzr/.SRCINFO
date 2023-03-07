@@ -1,0 +1,27 @@
+pkgbase = me-tv-bzr
+	pkgdesc = A digital television (DVB) viewer for GNOME.
+	pkgver = 1.4.0
+	pkgrel = 60
+	url = https://code.launchpad.net/me-tv
+	install = me-tv.install
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = intltool
+	makedepends = gnome-common
+	makedepends = bzr
+	depends = gtkmm
+	depends = gconfmm
+	depends = libxml++
+	depends = libunique
+	depends = vlc
+	depends = gstreamer0.10-base
+	depends = libxml++2.6
+	optdepends = linuxtv-dvb-apps: dvb tools
+	optdepends = w_scan: generation of channels.conf
+	provides = me-tv-bzr
+	conflicts = me-tv
+	options = !emptydirs
+
+pkgname = me-tv-bzr
+

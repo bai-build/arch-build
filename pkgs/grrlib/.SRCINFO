@@ -1,0 +1,18 @@
+pkgbase = grrlib
+	pkgdesc = A helper library for Nintendo Gamecube/Wii homebrew developers
+	pkgver = 4.4.1
+	pkgrel = 1
+	url = http://grrlib.santo.fr/
+	arch = any
+	license = MIT
+	makedepends = devkitPPC
+	depends = libfat-ogc
+	options = !strip
+	options = staticlibs
+	source = https://github.com/GRRLIB/GRRLIB/archive/v4.4.1.tar.gz
+	source = https://github.com/GRRLIB/GRRLIB/releases/download/v4.4.1/PDF-documentation.pdf
+	sha256sums = cc5e1453fb088a49f04f49d6e27901f63a22fe4e26bf6972b57d00b291870a7a
+	sha256sums = db015694ff53dfde0f8666165dd8d5e743ea8ef80d566b25f7cee197b467e7d2
+
+pkgname = grrlib
+

@@ -1,0 +1,23 @@
+pkgbase = armagetronad-bzr
+	pkgdesc = A Tron Clone in 3D.
+	pkgver = r3105
+	pkgrel = 1
+	url = http://armagetronad.net/
+	arch = x86_64
+	license = GPL
+	makedepends = boost
+	makedepends = bzr
+	depends = sdl2_image
+	depends = libxml2
+	depends = sdl2_mixer
+	depends = ftgl
+	depends = boost-libs
+	depends = protobuf
+	optdepends = python2: language updater
+	provides = armagetronad
+	conflicts = armagetronad
+	source = bzr+lp:armagetronad/0.4
+	sha1sums = SKIP
+
+pkgname = armagetronad-bzr
+

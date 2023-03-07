@@ -1,0 +1,75 @@
+From ffd6778743a5dd992f8dd195aa3d51b9c4a2ba80 Mon Sep 17 00:00:00 2001
+From: leaeasy <leaeasy@gmail.com>
+Date: Mon, 23 Apr 2018 10:37:14 +0800
+Subject: [PATCH 1/3] add blur effect when set transparency
+
+---
+ CMakeLists.txt     |  1 +
+ src/CMakeLists.txt |  2 ++
+ src/MainWindow.cpp | 11 +++++++++++
+ 3 files changed, 14 insertions(+)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index ef79ae2..493a924 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -38,6 +38,7 @@ find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED
+     DBus
+     PrintSupport
+     Widgets
++    X11Extras
+ )
+ 
+ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED
+diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
+index fa15a52..1d8ab0c 100644
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -113,6 +113,7 @@ set(konsole_LIBS
+                  KF5::XmlGui
+                  Qt5::PrintSupport
+                  Qt5::Xml
++                 Qt5::X11Extras
+                  KF5::Notifications
+                  KF5::WindowSystem
+                  KF5::TextWidgets
+@@ -125,6 +126,7 @@ set(konsole_LIBS
+                  KF5::DBusAddons
+                  KF5::GlobalAccel
+                  KF5::NewStuff
++				 ${X11_LIBRARIES}
+ )
+ 
+ if(${CMAKE_SYSTEM_NAME} MATCHES "FreeBSD")
+diff --git a/src/MainWindow.cpp b/src/MainWindow.cpp
+index e78858d..928eedd 100644
+--- a/src/MainWindow.cpp
++++ b/src/MainWindow.cpp
+@@ -59,6 +59,12 @@
+ #include "settings/ProfileSettings.h"
+ #include "settings/TabBarSettings.h"
+ 
++#ifdef HAVE_X11
++#include <QtX11Extras/QX11Info>
++#include <X11/Xlib.h>
++#include <X11/Xatom.h>
++#endif
++
+ using namespace Konsole;
+ 
+ MainWindow::MainWindow() :
+@@ -151,6 +157,11 @@ void MainWindow::updateUseTransparency()
+     setAttribute(Qt::WA_TranslucentBackground, useTranslucency);
+     setAttribute(Qt::WA_NoSystemBackground, false);
+     WindowSystemInfo::HAVE_TRANSPARENCY = useTranslucency;
++    #ifdef HAVE_X11
++        Atom net_wm_blur_region = XInternAtom(QX11Info::display(), "_KDE_NET_WM_BLUR_BEHIND_REGION", False);
++        unsigned long region[] = { 0 };
++        XChangeProperty(QX11Info::display(), winId(), net_wm_blur_region, XA_CARDINAL, 32, PropModeReplace, reinterpret_cast<const unsigned char*>(&region), 1);
++    #endif
+ }
+ 
+ void MainWindow::rememberMenuAccelerators()
+-- 
+2.17.0
+

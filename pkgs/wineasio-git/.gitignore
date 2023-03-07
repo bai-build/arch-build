@@ -1,0 +1,6 @@
+src
+pkg
+wineasio
+rtaudio
+*.pkg.tar.*
+tags

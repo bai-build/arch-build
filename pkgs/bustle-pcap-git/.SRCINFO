@@ -1,0 +1,20 @@
+pkgbase = bustle-pcap-git
+	pkgdesc = Capture traces for use in bustle
+	pkgver = 0.5.4.r2.g0a426c3
+	pkgrel = 2
+	url = https://www.freedesktop.org/wiki/Software/Bustle/
+	arch = x86_64
+	license = GPLv3
+	makedepends = git
+	makedepends = pkg-config
+	depends = libdbus
+	depends = glib2
+	depends = libpcap
+	provides = bustle-pcap
+	conflicts = bustle-pcap
+	options = !emptydirs
+	source = bustle-pcap-git::git+https://anongit.freedesktop.org/git/bustle.git
+	md5sums = SKIP
+
+pkgname = bustle-pcap-git
+

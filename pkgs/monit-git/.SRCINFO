@@ -1,0 +1,15 @@
+pkgbase = monit-git
+	pkgdesc = Utility for managing and monitoring Unix systems
+	pkgver = release.5.25.2.r9.c16158d
+	pkgrel = 1
+	url = http://mmonit.com/monit/
+	arch = x86_64
+	license = AGPL
+	makedepends = git
+	provides = monit
+	conflicts = monit
+	source = monit::git+https://bitbucket.org/tildeslash/monit
+	md5sums = SKIP
+
+pkgname = monit-git
+

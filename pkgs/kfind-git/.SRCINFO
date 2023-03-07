@@ -1,0 +1,21 @@
+pkgbase = kfind-git
+	pkgdesc = Find Files/Folders
+	pkgver = 21.11.70_r2644.gd3be9a828
+	pkgrel = 1
+	url = https://apps.kde.org/kfind/
+	arch = x86_64
+	groups = kde-applications-git
+	groups = kde-utilities-git
+	license = LGPL
+	makedepends = git
+	makedepends = extra-cmake-modules-git
+	makedepends = kdoctools-git
+	depends = kio-git
+	depends = kfilemetadata-git
+	optdepends = mlocate: search using mlocate index
+	provides = kfind
+	conflicts = kfind
+	source = git+https://github.com/KDE/kfind.git
+	sha256sums = SKIP
+
+pkgname = kfind-git

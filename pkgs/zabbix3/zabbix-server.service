@@ -1,0 +1,19 @@
+[Unit]
+Description=Zabbix Server
+Documentation=man:zabbix_server
+After=network.target mysqld.service postgresql.service
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/zabbix_server
+ExecReload=/usr/bin/zabbix_server -R config_cache_reload
+PIDFile=/run/zabbix/zabbix_server.pid
+Restart=on-abnormal
+PrivateDevices=yes
+PrivateTmp=yes
+ProtectSystem=full
+ProtectHome=yes
+
+[Install]
+WantedBy=multi-user.target
+

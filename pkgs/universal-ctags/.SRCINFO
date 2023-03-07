@@ -1,0 +1,19 @@
+pkgbase = universal-ctags
+	pkgdesc = Generates an index (or tag) file of language objects found in source files
+	pkgver = 5.9.20201011.0
+	pkgrel = 1
+	url = https://ctags.io
+	arch = x86_64
+	license = GPL
+	makedepends = python-docutils
+	depends = jansson
+	depends = libseccomp
+	depends = libxml2
+	depends = libyaml
+	provides = ctags
+	conflicts = ctags
+	source = https://github.com/universal-ctags/ctags/archive/p5.9.20201011.0/ctags-p5.9.20201011.0.tar.gz
+	b2sums = 136da9be347797fd3c5834ed0642aea8392dabd8d95d01446d61689ca41c2efe61cea1040e4fc1154bed398dd44d093d5bbde39f2c21de20f112c353d69d9c64
+
+pkgname = universal-ctags
+

@@ -1,0 +1,35 @@
+pkgbase = theshell-blueprint
+	pkgdesc = Desktop Shell that gets out of your way
+	pkgver = 8.1b
+	pkgrel = 2
+	url = https://github.com/vicr123/theshell
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	makedepends = qt5-tools
+	depends = kwidgetsaddons
+	depends = xdg-utils
+	depends = wmctrl
+	depends = kwin
+	depends = the-libs-blueprint
+	depends = networkmanager
+	depends = xorg-xbacklight
+	depends = redshift
+	depends = libcups
+	depends = qt5-base
+	depends = ts-qtplatform
+	depends = qt5-charts
+	depends = qt5-location
+	depends = kscreen
+	depends = ts-bt
+	depends = ts-bugreport
+	depends = pulseaudio-qt
+	depends = libtdesktopenvironment
+	optdepends = alsa-utils: for volume controls
+	conflicts = ts-startsession
+	replaces = ts-startsession
+	source = theshell-blueprint-repo::git+https://github.com/vicr123/theshell#branch=blueprint
+	md5sums = SKIP
+
+pkgname = theshell-blueprint
+

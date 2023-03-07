@@ -1,0 +1,22 @@
+pkgbase = xrdesktop-git
+	pkgdesc = A library for XR interaction with classical desktop compositors.
+	pkgver = 0.16.0.1326.531cab9
+	pkgrel = 1
+	url = https://gitlab.freedesktop.org/xrdesktop/xrdesktop
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = meson
+	makedepends = git
+	makedepends = glslang
+	makedepends = gtk-doc
+	makedepends = vulkan-headers
+	makedepends = pygobject-devel
+	depends = g3k-git
+	depends = python3
+	provides = xrdesktop=0.16.0.1326.531cab9
+	conflicts = xrdesktop
+	source = git+https://gitlab.freedesktop.org/xrdesktop/xrdesktop.git#branch=main
+	md5sums = SKIP
+
+pkgname = xrdesktop-git

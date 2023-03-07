@@ -1,0 +1,26 @@
+pkgbase = virt-viewer-git-no-header
+	pkgdesc = A lightweight interface for interacting with the graphical display of virtualized guest OS. This package contains a patch drop the header bar.
+	pkgver = 9.0.219.g15fbaa3
+	pkgrel = 1
+	url = https://virt-manager.org
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	makedepends = intltool
+	makedepends = spice-protocol
+	depends = gtk-vnc
+	depends = libvirt-glib
+	depends = spice-gtk
+	depends = gobject-introspection
+	provides = virt-viewer
+	provides = virtviewer
+	conflicts = virt-viewer
+	conflicts = virtviewer
+	source = git+https://gitlab.com/virt-viewer/virt-viewer.git
+	source = drop-header.patch
+	sha256sums = SKIP
+	sha256sums = 7e60094a44f5f33791f8147840afd6192d4f608606093ed8d745d799bf95bb25
+
+pkgname = virt-viewer-git-no-header
+

@@ -1,0 +1,7 @@
+/src
+/pkg
+/bus1
+*.xz
+*.tar.*
+*.pkg.*
+*.log

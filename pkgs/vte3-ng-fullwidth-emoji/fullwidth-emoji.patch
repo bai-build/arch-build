@@ -1,0 +1,38 @@
+--- a/src/vteseq.cc	2016-04-05 10:56:49.875097322 +0800
++++ b/src/vteseq.cc	2016-04-05 10:56:39.522122540 +0800
+@@ -25,6 +25,7 @@
+ #ifdef HAVE_SYS_SYSLIMITS_H
+ #include <sys/syslimits.h>
+ #endif
++#include <termios.h>
+ 
+ #include <glib.h>
+ 
+@@ -1589,12 +1590,23 @@
+ void
+ VteTerminalPrivate::seq_backspace()
+ {
+-        ensure_cursor_is_onscreen();
++	ensure_cursor_is_onscreen();
+ 
+-        if (m_screen->cursor.col > 0) {
++	struct termios tio;
++	g_assert(tcgetattr(vte_pty_get_fd(m_pty), &tio) == 0);
++	if (tio.c_lflag & ICANON && tio.c_iflag & IUTF8) {
++		VteRowData *rowdata = ensure_row();
++		int col = m_screen->cursor.col;
++		if (col == 0)
++			;
++		else if (col > rowdata->len)
++			col--;
++		else
++			col = MAX(col - rowdata->cells[col-1].attr.columns, 0);
++		m_screen->cursor.col = col;
++	} else if (m_screen->cursor.col > 0)
+ 		/* There's room to move left, so do so. */
+-                m_screen->cursor.col--;
+-	}
++		m_screen->cursor.col--;
+ }
+ 
+ /* Cursor left N columns. */

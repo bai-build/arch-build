@@ -1,0 +1,14 @@
+pkgbase = asar-apache
+	pkgdesc = A System Activity Reporter of apache httpd
+	pkgver = r54
+	pkgrel = 2
+	url = http://code.google.com/p/python-asar/
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	depends = apache
+	source = https://storage.googleapis.com/google-code-archive-source/v2/code.google.com/python-asar/source-archive.zip
+	md5sums = 857d51f08ea5c3b3f70d946b76ec3747
+
+pkgname = asar-apache
+

@@ -1,0 +1,22 @@
+pkgbase = keepassgtk
+	pkgdesc = A password manager for GNOME  - Git version
+	pkgver = 3.31.2
+	pkgrel = 2
+	url = https://gitlab.gnome.org/World/PasswordSafe
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	makedepends = meson
+	makedepends = ninja
+	depends = gtk3
+	depends = python-pykeepass-git
+	depends = python-construct
+	depends = gobject-introspection
+	depends = libhandy-git
+	conflicts = gnome-passwordsafe
+	source = git+https://gitlab.gnome.org/World/PasswordSafe.git
+	md5sums = SKIP
+
+pkgname = gnome-passwordsafe-git
+

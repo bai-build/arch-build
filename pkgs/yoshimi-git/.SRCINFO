@@ -1,0 +1,22 @@
+pkgbase = yoshimi-git
+	pkgdesc = a fork of the ZynAddSubFX software systhesizer
+	pkgver = r1956.de477d1b
+	pkgrel = 1
+	url = https://yoshimi.github.io/
+	arch = x86_64
+	license = GPL
+	makedepends = cmake
+	makedepends = lv2
+	makedepends = mesa
+	makedepends = git
+	depends = jack
+	depends = fltk
+	depends = fftw
+	depends = mxml
+	provides = yoshimi
+	conflicts = yoshimi
+	source = git+https://github.com/Yoshimi/yoshimi.git
+	md5sums = SKIP
+
+pkgname = yoshimi-git
+

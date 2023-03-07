@@ -1,0 +1,5 @@
+pkg/
+src/
+*.tar.*
+*.zip
+LA_OPT_NXP_SW.html

@@ -1,0 +1,48 @@
+pkgbase = kata-containers-git
+	pkgdesc = Lightweight virtual machines for containers (Git version)
+	pkgver = 1.13.0~alpha0~runtime.r0.cd63aacc
+	pkgrel = 1
+	url = https://katacontainers.io/
+	arch = x86_64
+	license = Apache
+	makedepends = go
+	makedepends = bc
+	makedepends = git
+	source = ksm-throttler::git+https://github.com/kata-containers/ksm-throttler
+	source = proxy::git+https://github.com/kata-containers/proxy
+	source = runtime::git+https://github.com/kata-containers/runtime
+	source = shim::git+https://github.com/kata-containers/shim
+	sha512sums = SKIP
+	sha512sums = SKIP
+	sha512sums = SKIP
+	sha512sums = SKIP
+	b2sums = SKIP
+	b2sums = SKIP
+	b2sums = SKIP
+	b2sums = SKIP
+
+pkgname = kata-ksm-throttler-git
+	provides = kata-ksm-throttler
+	conflicts = kata-ksm-throttler
+
+pkgname = kata-runtime-git
+	install = kata-runtime.install
+	depends = qemu-headless
+	depends = kata-proxy
+	depends = kata-shim
+	depends = kata-linux-container
+	depends = kata-containers-image
+	optdepends = kata-ksm-throttler
+	optdepends = firecracker
+	optdepends = cloud-hypervisor
+	provides = kata-runtime
+	conflicts = kata-runtime
+
+pkgname = kata-proxy-git
+	provides = kata-proxy
+	conflicts = kata-proxy
+
+pkgname = kata-shim-git
+	provides = kata-shim
+	conflicts = kata-shim
+

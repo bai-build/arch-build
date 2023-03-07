@@ -1,0 +1,24 @@
+pkgbase = bash-ctypes-git
+	pkgdesc = Foreign Function Interface for Bash
+	pkgver = r56.b0800b2
+	pkgrel = 1
+	url = https://github.com/taviso/ctypes.sh
+	install = bash-ctypes-git.install
+	arch = x86_64
+	arch = i686
+	license = MIT
+	makedepends = git
+	makedepends = libffi
+	makedepends = autoconf
+	makedepends = automake
+	depends = bash
+	depends = libffi
+	provides = bash-ctypes
+	conflicts = bash-ctypes
+	source = bash-ctypes::git+https://github.com/taviso/ctypes.sh#branch=master
+	source = ctypes_bash_profile.sh
+	md5sums = SKIP
+	md5sums = 8f94ef9e242b89d5ea860527e2595f2c
+
+pkgname = bash-ctypes-git
+

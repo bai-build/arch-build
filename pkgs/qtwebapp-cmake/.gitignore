@@ -1,0 +1,10 @@
+# makepkg generated stuff
+pkg/
+src/
+
+# downloaded source
+qtwebapp/
+v*.tar.gz
+
+# generated packages
+*.pkg*

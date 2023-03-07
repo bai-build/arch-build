@@ -1,0 +1,20 @@
+pkgbase = gst-omx
+	pkgdesc = Gstreamer OpenMAX IL wrapper Plugin
+	pkgver = 1.12.1
+	pkgrel = 1
+	url = http://gstreamer.freedesktop.org/
+	arch = i686
+	arch = x86_64
+	license = LGPL
+	makedepends = python
+	depends = gst-plugins-bad
+	depends = mesa
+	options = !libtool
+	source = https://gstreamer.freedesktop.org/src/gst-omx/gst-omx-1.12.1.tar.xz
+	source = https://gstreamer.freedesktop.org/src/gst-omx/gst-omx-1.12.1.tar.xz.asc
+	validpgpkeys = 7F4BC7CC3CA06F97336BBFEB0668CC1486C2D7B5
+	sha256sums = 13faf0eb679c37a01f64c47f23018c2d894fa0ff1c3b98d4b1d1c69a7b3ca183
+	sha256sums = SKIP
+
+pkgname = gst-omx
+

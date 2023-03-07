@@ -1,0 +1,45 @@
+pkgbase = pyqt4
+	pkgver = 4.12.3
+	pkgrel = 5
+	url = https://riverbankcomputing.com/software/pyqt/intro
+	arch = x86_64
+	license = GPL
+	makedepends = sip4
+	makedepends = python-sip-pyqt4
+	makedepends = python2-sip-pyqt4
+	makedepends = python-dbus
+	makedepends = phonon-qt4
+	makedepends = mesa
+	makedepends = python2-opengl
+	makedepends = python2-dbus
+	source = https://downloads.sourceforge.net/project/pyqt/PyQt4/PyQt-4.12.3/PyQt4_gpl_x11-4.12.3.tar.gz
+	sha256sums = a00f5abef240a7b5852b7924fa5fdf5174569525dc076cd368a566619e56d472
+
+pkgname = pyqt4-common
+	pkgdesc = Common PyQt files shared between python-pyqt4 and python2-pyqt4
+	depends = qt4
+	provides = pyqt-common=4.12.3
+	conflicts = pyqt-common
+	replaces = pyqt-common
+
+pkgname = python-pyqt4
+	pkgdesc = A set of Python 3.x bindings for the Qt toolkit
+	depends = python-sip-pyqt4
+	depends = python-dbus
+	depends = pyqt4-common
+	optdepends = phonon-qt4: enable audio and video in PyQt applications
+	provides = pyqt=4.12.3
+	conflicts = pyqt
+	replaces = pyqt
+
+pkgname = python2-pyqt4
+	pkgdesc = A set of Python 2.x bindings for the Qt toolkit
+	depends = python2-sip-pyqt4
+	depends = python2-dbus
+	depends = pyqt4-common
+	optdepends = phonon-qt4: enable audio and video in PyQt applications
+	optdepends = python2-opengl: enable OpenGL 3D graphics in PyQt applications
+	provides = python2-pyqt=4.12.3
+	conflicts = python2-pyqt
+	replaces = python2-pyqt
+

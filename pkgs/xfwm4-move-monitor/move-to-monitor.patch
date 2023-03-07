@@ -1,0 +1,563 @@
+diff --git src/client.c src/client.c
+index 3923dd98b..0af4d98cc 100644
+--- src/client.c
++++ src/client.c
+@@ -3223,6 +3223,35 @@ clientRemoveMaximizeFlag (Client *c)
+     clientSetNetState (c);
+ }
+ 
++static void
++getSizeExcludingMargins(Client *c, GdkRectangle *rect, int *full_x, int *full_y, int *full_w, int *full_h)
++{
++    /* Get corrected max x/y/width/height excluding the margins (e.g. xfce panel) */
++    ScreenInfo *screen_info;
++
++    screen_info = c->screen_info;
++
++    *full_x = MAX (screen_info->params->xfwm_margins[STRUTS_LEFT], rect->x);
++    *full_y = MAX (screen_info->params->xfwm_margins[STRUTS_TOP], rect->y);
++    *full_w = MIN (screen_info->width - screen_info->params->xfwm_margins[STRUTS_RIGHT],
++                  rect->x + rect->width) - *full_x;
++    *full_h = MIN (screen_info->height - screen_info->params->xfwm_margins[STRUTS_BOTTOM],
++                  rect->y + rect->height) - *full_y;
++    clientMaxSpace (screen_info, full_x, full_y, full_w, full_h);
++}
++
++static void
++updateSizeExcludingMargins(Client *c, GdkRectangle *rect)
++{
++    /* Convenience function to call getSizeExcludingMargins and re-assign to input rect */
++    int full_x, full_y, full_w, full_h;
++    getSizeExcludingMargins(c, rect, &full_x, &full_y, &full_w, &full_h);
++    rect->x = full_x;
++    rect->y = full_y;
++    rect->width = full_w;
++    rect->height = full_h;
++}
++
+ static void
+ clientNewMaxState (Client *c, XWindowChanges *wc, int mode)
+ {
+@@ -3299,18 +3328,9 @@ clientNewMaxState (Client *c, XWindowChanges *wc, int mode)
+ static gboolean
+ clientNewTileSize (Client *c, XWindowChanges *wc, GdkRectangle *rect, tilePositionType tile)
+ {
+-    ScreenInfo *screen_info;
+     int full_x, full_y, full_w, full_h;
+ 
+-    screen_info = c->screen_info;
+-
+-    full_x = MAX (screen_info->params->xfwm_margins[STRUTS_LEFT], rect->x);
+-    full_y = MAX (screen_info->params->xfwm_margins[STRUTS_TOP], rect->y);
+-    full_w = MIN (screen_info->width - screen_info->params->xfwm_margins[STRUTS_RIGHT],
+-                  rect->x + rect->width) - full_x;
+-    full_h = MIN (screen_info->height - screen_info->params->xfwm_margins[STRUTS_BOTTOM],
+-                  rect->y + rect->height) - full_y;
+-    clientMaxSpace (screen_info, &full_x, &full_y, &full_w, &full_h);
++    getSizeExcludingMargins(c, rect, &full_x, &full_y, &full_w, &full_h);
+ 
+     switch (tile)
+     {
+@@ -3373,18 +3393,9 @@ clientNewTileSize (Client *c, XWindowChanges *wc, GdkRectangle *rect, tilePositi
+ static gboolean
+ clientNewMaxSize (Client *c, XWindowChanges *wc, GdkRectangle *rect)
+ {
+-    ScreenInfo *screen_info;
+     int full_x, full_y, full_w, full_h;
+ 
+-    screen_info = c->screen_info;
+-
+-    full_x = MAX (screen_info->params->xfwm_margins[STRUTS_LEFT], rect->x);
+-    full_y = MAX (screen_info->params->xfwm_margins[STRUTS_TOP], rect->y);
+-    full_w = MIN (screen_info->width - screen_info->params->xfwm_margins[STRUTS_RIGHT],
+-                  rect->x + rect->width) - full_x;
+-    full_h = MIN (screen_info->height - screen_info->params->xfwm_margins[STRUTS_BOTTOM],
+-                  rect->y + rect->height) - full_y;
+-    clientMaxSpace (screen_info, &full_x, &full_y, &full_w, &full_h);
++    getSizeExcludingMargins(c, rect, &full_x, &full_y, &full_w, &full_h);
+ 
+     if (FLAG_TEST (c->flags, CLIENT_FLAG_MAXIMIZED_HORIZ))
+     {
+@@ -3504,6 +3515,209 @@ clientToggleMaximizedAtPoint (Client *c, gint cx, gint cy, int mode, gboolean re
+     return TRUE;
+ }
+ 
++typedef struct {
++    /* offset between current monitor midpoint and overlap midpoint */
++    guint midpoint_offset;
++    gboolean primary;
++    guint monitor_index;
++} MoveToMonitorProperties;
++
++static MoveToMonitorProperties*
++getMoveToMonitorProps(gint key, GdkRectangle *current_rect, GdkRectangle *other_rect, gboolean primary, gint index)
++{
++    MoveToMonitorProperties *props;
++    gint current_mid, overlap_low, overlap_high, overlap_mid;
++
++    /* ensure aligned */
++    switch (key) {
++        case KEY_MOVE_TO_MONITOR_LEFT:
++            g_return_val_if_fail (current_rect->x == other_rect->x + other_rect->width, NULL);
++            break;
++        case KEY_MOVE_TO_MONITOR_RIGHT:
++            g_return_val_if_fail (other_rect->x == current_rect->x + current_rect->width, NULL);
++            break;
++        case KEY_MOVE_TO_MONITOR_DOWN:
++            g_return_val_if_fail (other_rect->y == current_rect->y + current_rect->height, NULL);
++            break;
++        case KEY_MOVE_TO_MONITOR_UP:
++            g_return_val_if_fail (current_rect->y == other_rect->y + other_rect->height, NULL);
++            break;
++        default:
++            TRACE ("getMoveToMonitorProps() got invalid key %d)", key);
++            return NULL;
++    }
++
++    /* get current mid and overlap high/low */
++    if (key == KEY_MOVE_TO_MONITOR_LEFT || key == KEY_MOVE_TO_MONITOR_RIGHT)
++    {
++        /* get overlap in Y dimension */
++        overlap_low = MAX(current_rect->y, other_rect->y);
++        overlap_high = MIN(current_rect->y + current_rect->height, other_rect->y + other_rect->height);
++        current_mid = current_rect->y + (current_rect->height >> 1);
++    }
++    else
++    {
++        /* get overlap in X dimension */
++        overlap_low = MAX(current_rect->x, other_rect->x);
++        overlap_high = MIN(current_rect->x + current_rect->width, other_rect->x + other_rect->width);
++        current_mid = current_rect->x + (current_rect->width >> 1);
++    }
++
++    /* skip if no overlap */
++    g_return_val_if_fail (overlap_low < overlap_high, NULL);
++
++    overlap_mid = overlap_low + ((overlap_high - overlap_low) >> 1);
++
++    props = (MoveToMonitorProperties*) g_new (MoveToMonitorProperties, 1);
++    props->midpoint_offset = abs(overlap_mid - current_mid);
++    props->primary = primary;
++    props->monitor_index = index;
++    return props;
++}
++
++static int
++moveToMonitorPropertiesComp (const MoveToMonitorProperties *a, const MoveToMonitorProperties *b)
++{
++    /* Sort order is smallest offset, then if primary, then smallest index */
++    if (a->midpoint_offset == b->midpoint_offset)
++    {
++        if (a->primary == b->primary)
++        {
++            return (a->monitor_index < b->monitor_index ? -1 : 1);
++        }
++        else
++        {
++            return (a->primary ? -1 : 1);
++        }
++    }
++    else
++    {
++        return (a->midpoint_offset < b->midpoint_offset ? -1 : 1);
++    }
++}
++
++static void
++clientMoveToMonitor (Client *c, GdkMonitor *current_monitor, GdkMonitor *target_monitor)
++{
++    /* Transform x,y coords based on their relative position on monitor
++     * - We transform c->x/y in case we're currently a floating window
++     * - We also transform saved_geometry in case we're currently fullscreen/maximised/tiled
++     *   - This means when we un-tile/maximise we'll stay on the updated monitor
++     */
++    GdkRectangle current_rect, target_rect;
++    int monitor_offset_x, monitor_offset_y;
++    float monitor_ratio_x, monitor_ratio_y;
++
++    /* Get monitor geometry for current/target, removing margins */
++    gdk_monitor_get_geometry(current_monitor, &current_rect);
++    gdk_monitor_get_geometry(target_monitor, &target_rect);
++    updateSizeExcludingMargins(c, &current_rect);
++    updateSizeExcludingMargins(c, &target_rect);
++
++    /* Get the x,y offset relative to current monitor params */
++    monitor_offset_x = c->saved_geometry.x - current_rect.x;
++    monitor_offset_y = c->saved_geometry.y - current_rect.y;
++    monitor_ratio_x = monitor_offset_x / (float) current_rect.width;
++    monitor_ratio_y = monitor_offset_y / (float) current_rect.height;
++
++    /* Update the client x/y/width/height to be relative to the new monitor (+0.5 for rounding) */
++    c->x = target_rect.x + (monitor_ratio_x * target_rect.width) + 0.5;
++    c->y = target_rect.y + (monitor_ratio_y * target_rect.height) + 0.5;
++    c->saved_geometry.x = c->x;
++    c->saved_geometry.y = c->y;
++
++    /* If we were fullscreen, maximised, or tiled, reset for new monitor size */
++    if (FLAG_TEST (c->flags, CLIENT_FLAG_FULLSCREEN))
++    {
++        clientUpdateFullscreenSize (c);
++    }
++    else if (FLAG_TEST (c->flags, CLIENT_FLAG_MAXIMIZED))
++    {
++        clientUpdateMaximizeSize (c);
++    }
++    if (c->tile_mode != TILE_NONE)
++    {
++        clientUpdateTileSize (c);
++    }
++
++    /* Finally, re-draw to ensure everything updated */
++    clientReconfigure (c, CFG_FORCE_REDRAW);
++}
++
++static void
++clientMoveToMonitorByDirectionTarget (Client *c, gint key, GdkMonitor **current_monitor, GdkMonitor **target_monitor)
++{
++    /* Determine current & target monitor if client moves to monitor in specific direciton */
++    GdkDisplay *display;
++    GList *candidate_monitors;
++    GdkMonitor *other_monitor, *primary_monitor;
++    GdkRectangle current_rect, other_rect;
++    gint c_mid_x, c_mid_y;
++    guint num_monitors;
++    guint i;
++    MoveToMonitorProperties *props;
++
++    /* Get the current (client's) monitor and rect */
++    display = gdk_display_get_default ();
++    /* Using gdk_display_get_monitor_at_point on client x/y is inacurate, so do by midpoint client window */
++    c_mid_x = c->x + (c->width >> 1);
++    c_mid_y = c->y + (c->height >> 1);
++    *current_monitor = gdk_display_get_monitor_at_point (display, c_mid_x, c_mid_y);
++    gdk_monitor_get_geometry (*current_monitor, &current_rect);
++    primary_monitor = gdk_display_get_primary_monitor (display);
++
++    /* Iterate through all monitors and record properties of ones that share target edge */
++    num_monitors = gdk_display_get_n_monitors (display);
++    candidate_monitors = NULL;
++    for (i = 0; i < num_monitors; i++) {
++        /* Get other monitor rect */
++        other_monitor = gdk_display_get_monitor (display, i);
++        if (other_monitor == *current_monitor)
++        {
++            continue;
++        }
++        gdk_monitor_get_geometry (other_monitor, &other_rect);
++
++        /* Ensure aligned and get overlap */
++        props = getMoveToMonitorProps(key, &current_rect, &other_rect, other_monitor == primary_monitor, i);
++        if (props)
++        {
++            candidate_monitors = g_list_insert_sorted (candidate_monitors, props, moveToMonitorPropertiesComp);
++        }
++
++    }
++    g_return_if_fail (candidate_monitors != NULL);
++
++    /* Since list is sorted, take first (best candidate) */
++    props = (MoveToMonitorProperties*) candidate_monitors->data;
++    other_monitor = gdk_display_get_monitor (display, props->monitor_index);
++    g_list_free_full (candidate_monitors, g_free);
++    *target_monitor = other_monitor;
++}
++
++gboolean
++clientMoveToMonitorByDirectionPossible (Client *c, gint key)
++{
++    /* Determine if it's possible for client to move to monitor in specific direciton */
++    GdkMonitor *current, *target;
++    target = NULL;
++    clientMoveToMonitorByDirectionTarget(c, key, &current, &target);
++    return (target != NULL);
++}
++
++void
++clientMoveToMonitorByDirection (Client *c, gint key)
++{
++    /* Actually move client to monitor in specific direciton */
++    GdkMonitor *current, *target;
++
++    target = NULL;
++    clientMoveToMonitorByDirectionTarget(c, key, &current, &target);
++    g_return_if_fail (target != NULL);
++
++    clientMoveToMonitor (c, current, target);
++}
++
+ gboolean
+ clientTile (Client *c, gint cx, gint cy, tilePositionType tile, gboolean send_configure, gboolean restore_position)
+ {
+diff --git src/client.h src/client.h
+index fd6ab669a..298285ee1 100644
+--- src/client.h
++++ src/client.h
+@@ -469,6 +469,10 @@ gboolean                 clientToggleMaximizedAtPoint           (Client *,
+                                                                  gint,
+                                                                  int,
+                                                                  gboolean);
++gboolean                 clientMoveToMonitorByDirectionPossible (Client *,
++                                                                 gint);
++void                     clientMoveToMonitorByDirection         (Client *,
++                                                                 gint);
+ gboolean                 clientTile                             (Client *,
+                                                                  gint,
+                                                                  gint,
+diff --git src/events.c src/events.c
+index 6ace19b1c..ae2fd3821 100644
+--- src/events.c
++++ src/events.c
+@@ -378,6 +378,13 @@ handleKeyPress (DisplayInfo *display_info, XfwmEventKey *event)
+             case KEY_TOGGLE_FULLSCREEN:
+                 clientToggleFullscreen (c);
+                 break;
++
++            case KEY_MOVE_TO_MONITOR_DOWN:
++            case KEY_MOVE_TO_MONITOR_LEFT:
++            case KEY_MOVE_TO_MONITOR_RIGHT:
++            case KEY_MOVE_TO_MONITOR_UP:
++                clientMoveToMonitorByDirection (c, key);
++                break;
+             case KEY_MOVE_NEXT_WORKSPACE:
+                 workspaceSwitch (screen_info, screen_info->current_ws + 1, c, TRUE, event->time);
+                 break;
+@@ -2395,6 +2402,9 @@ menu_callback (Menu * menu, MenuOp op, Window xid, gpointer menu_data, gpointer
+             case MENU_OP_WORKSPACES:
+                 clientSetWorkspace (c, GPOINTER_TO_INT (item_data), TRUE);
+                 break;
++            case MENU_OP_MONITORS:
++                clientMoveToMonitorByDirection(c, GPOINTER_TO_INT (item_data));
++                break;
+             case MENU_OP_DELETE:
+                 clientClose (c);
+                 break;
+@@ -2479,7 +2489,7 @@ show_window_menu (Client *c, gint px, gint py, guint button, guint32 timestamp,
+             x /= scale;
+         }
+     }
+-    ops = MENU_OP_DELETE | MENU_OP_MINIMIZE_ALL | MENU_OP_WORKSPACES | MENU_OP_MOVE | MENU_OP_RESIZE;
++    ops = MENU_OP_DELETE | MENU_OP_MINIMIZE_ALL | MENU_OP_WORKSPACES | MENU_OP_MONITORS | MENU_OP_MOVE | MENU_OP_RESIZE;
+     insensitive = 0;
+ 
+     if (FLAG_TEST (c->flags, CLIENT_FLAG_MAXIMIZED))
+@@ -2643,7 +2653,7 @@ show_window_menu (Client *c, gint px, gint py, guint button, guint32 timestamp,
+                     screen_info->height,
+                     NoEventMask,
+                     FALSE);
+-    menu = menu_default (screen_info->gscr, c->window, ops, insensitive, menu_callback,
++    menu = menu_default (c, screen_info->gscr, c->window, ops, insensitive, menu_callback,
+                          c->win_workspace, screen_info->workspace_count,
+                          screen_info->workspace_names, screen_info->workspace_names_items,
+                          display_info->xfilter, screen_info);
+diff --git src/menu.c src/menu.c
+index b76326dd6..693b4ef98 100644
+--- src/menu.c
++++ src/menu.c
+@@ -68,6 +68,7 @@ static MenuItem menuitems[] = {
+     {MENU_OP_STICK,        N_("Always on _Visible Workspace")},
+     {MENU_OP_UNSTICK,      N_("Only _Visible on This Workspace")},
+     {MENU_OP_WORKSPACES,   N_("Move to Another _Workspace")},
++    {MENU_OP_MONITORS,     N_("Move to Another Monitor")},
+     {0, NULL}, /* -------------------------------------------------------- */
+     {MENU_OP_DELETE,       N_("_Close")},
+ #if 0
+@@ -188,12 +189,68 @@ menu_workspace (Menu * menu, MenuOp insensitive, gint ws, gint nws, gchar **wsn,
+     return (menu_widget);
+ }
+ 
++static GtkWidget *
++menu_monitor (Client *c, Menu * menu, MenuOp insensitive)
++{
++    GtkWidget *menu_widget;
++    GtkWidget *menuitem;
++    MenuData *menudata;
++    gint i, key;
++
++    /* menu_widget is only initialized if there's a valid possible direction to move */
++    menu_widget = NULL;
++    for (i = 0; i < 4; i++)
++    {
++        switch(i) {
++            case 0:
++                menuitem = gtk_menu_item_new_with_label ("Monitor Left");
++                key = KEY_MOVE_TO_MONITOR_LEFT;
++                break;
++            case 1:
++                menuitem = gtk_menu_item_new_with_label ("Monitor Right");
++                key = KEY_MOVE_TO_MONITOR_RIGHT;
++                break;
++            case 2:
++                menuitem = gtk_menu_item_new_with_label ("Monitor Up");
++                key = KEY_MOVE_TO_MONITOR_UP;
++                break;
++            case 3:
++                menuitem = gtk_menu_item_new_with_label ("Monitor Down");
++                key = KEY_MOVE_TO_MONITOR_DOWN;
++                break;
++            default:
++                break;
++        }
++        if (!clientMoveToMonitorByDirectionPossible(c, key))
++        {
++            continue;
++        }
++        if (!menu_widget)
++        {
++            menu_widget = gtk_menu_new ();
++            gtk_menu_set_screen (GTK_MENU (menu->menu), menu->screen);
++        }
++        gtk_widget_set_sensitive (menuitem, !(insensitive & MENU_OP_MONITORS));
++        gtk_widget_show (menuitem);
++
++        menudata = g_new0 (MenuData, 1);
++        menudata->menu = menu;
++        menudata->op = MENU_OP_MONITORS;
++        menudata->data = GINT_TO_POINTER (key);
++        menu_item_connect (menuitem, menudata);
++
++        gtk_menu_shell_append (GTK_MENU_SHELL (menu_widget), menuitem);
++    }
++
++    return menu_widget;
++}
++
+ Menu *
+-menu_default (GdkScreen *gscr, Window xid, MenuOp ops, MenuOp insensitive, MenuFunc func,
++menu_default (Client *c, GdkScreen *gscr, Window xid, MenuOp ops, MenuOp insensitive, MenuFunc func,
+     gint ws, gint nws, gchar **wsn, gint wsn_items, eventFilterSetup *filter_setup, gpointer data)
+ {
+     GtkWidget *menuitem;
+-    GtkWidget *ws_menu;
++    GtkWidget *sub_menu;
+     MenuData *menudata;
+     Menu *menu;
+     const gchar *label;
+@@ -218,7 +275,8 @@ menu_default (GdkScreen *gscr, Window xid, MenuOp ops, MenuOp insensitive, MenuF
+         if ((ops & menuitems[i].op) || (menuitems[i].op == MENU_OP_SEPARATOR))
+         {
+             label = _(menuitems[i].label);
+-            ws_menu = NULL;
++            menuitem = NULL;
++            sub_menu = NULL;
+             switch (menuitems[i].op)
+             {
+                 case MENU_OP_SEPARATOR:
+@@ -230,9 +288,23 @@ menu_default (GdkScreen *gscr, Window xid, MenuOp ops, MenuOp insensitive, MenuF
+                     {
+                         gtk_widget_set_sensitive (menuitem, FALSE);
+                     }
+-                    ws_menu = menu_workspace (menu, insensitive, ws, nws, wsn, wsn_items);
+-                    gtk_menu_item_set_submenu (GTK_MENU_ITEM (menuitem), ws_menu);
+-                    g_signal_connect (G_OBJECT (ws_menu), "selection-done", G_CALLBACK (menu_closed), menu);
++                    sub_menu = menu_workspace (menu, insensitive, ws, nws, wsn, wsn_items);
++                    gtk_menu_item_set_submenu (GTK_MENU_ITEM (menuitem), sub_menu);
++                    g_signal_connect (G_OBJECT (sub_menu), "selection-done", G_CALLBACK (menu_closed), menu);
++                    break;
++                case MENU_OP_MONITORS:
++                    sub_menu = menu_monitor (c, menu, insensitive);
++                    if (!sub_menu)
++                    {
++                        break;
++                    }
++                    menuitem = gtk_menu_item_new_with_mnemonic (label);
++                    if (insensitive & menuitems[i].op)
++                    {
++                        gtk_widget_set_sensitive (menuitem, FALSE);
++                    }
++                    gtk_menu_item_set_submenu (GTK_MENU_ITEM (menuitem), sub_menu);
++                    g_signal_connect (G_OBJECT (sub_menu), "selection-done", G_CALLBACK (menu_closed), menu);
+                     break;
+                 default:
+                     menuitem = gtk_menu_item_new_with_mnemonic (label);
+@@ -247,8 +319,11 @@ menu_default (GdkScreen *gscr, Window xid, MenuOp ops, MenuOp insensitive, MenuF
+                     menu_item_connect (menuitem, menudata);
+                     break;
+             }
+-            gtk_menu_shell_append (GTK_MENU_SHELL (menu->menu), menuitem);
+-            gtk_widget_show (menuitem);
++            if (menuitem)
++            {
++                gtk_menu_shell_append (GTK_MENU_SHELL (menu->menu), menuitem);
++                gtk_widget_show (menuitem);
++            }
+         }
+         ++i;
+     }
+diff --git src/menu.h src/menu.h
+index 8e1aa161a..8b3adf716 100644
+--- src/menu.h
++++ src/menu.h
+@@ -32,6 +32,7 @@
+ #include <gdk/gdk.h>
+ #include <gtk/gtk.h>
+ 
++#include "client.h"
+ #include "event_filter.h"
+ 
+ typedef enum
+@@ -51,15 +52,16 @@ typedef enum
+     MENU_OP_DELETE       = 1 << 11,
+     MENU_OP_DESTROY      = 1 << 12,
+     MENU_OP_WORKSPACES   = 1 << 13,
+-    MENU_OP_QUIT         = 1 << 14,
+-    MENU_OP_RESTART      = 1 << 15,
+-    MENU_OP_ABOVE        = 1 << 16,
+-    MENU_OP_BELOW        = 1 << 17,
+-    MENU_OP_NORMAL       = 1 << 18,
+-    MENU_OP_FULLSCREEN   = 1 << 19,
+-    MENU_OP_UNFULLSCREEN = 1 << 20,
+-    MENU_OP_CONTEXT_HELP = 1 << 21,
+-    MENU_OP_OTHER        = 1 << 22
++    MENU_OP_MONITORS     = 1 << 14,
++    MENU_OP_QUIT         = 1 << 15,
++    MENU_OP_RESTART      = 1 << 16,
++    MENU_OP_ABOVE        = 1 << 17,
++    MENU_OP_BELOW        = 1 << 18,
++    MENU_OP_NORMAL       = 1 << 19,
++    MENU_OP_FULLSCREEN   = 1 << 20,
++    MENU_OP_UNFULLSCREEN = 1 << 21,
++    MENU_OP_CONTEXT_HELP = 1 << 22,
++    MENU_OP_OTHER        = 1 << 23
+ }
+ MenuOp;
+ 
+@@ -95,7 +97,8 @@ struct _Menu
+     gpointer data;
+ };
+ 
+-Menu                    *menu_default                           (GdkScreen *,
++Menu                    *menu_default                           (Client *c,
++                                                                 GdkScreen *,
+                                                                  Window,
+                                                                  MenuOp,
+                                                                  MenuOp,
+diff --git src/settings.c src/settings.c
+index ce4a05e8a..2fc6a04f8 100644
+--- src/settings.c
++++ src/settings.c
+@@ -586,6 +586,10 @@ loadKeyBindings (ScreenInfo *screen_info)
+     parseShortcut (screen_info, KEY_MAXIMIZE_HORIZ, "maximize_horiz_key", shortcuts);
+     parseShortcut (screen_info, KEY_MAXIMIZE_VERT, "maximize_vert_key", shortcuts);
+     parseShortcut (screen_info, KEY_MAXIMIZE_WINDOW, "maximize_window_key", shortcuts);
++    parseShortcut (screen_info, KEY_MOVE_TO_MONITOR_DOWN, "move_window_to_monitor_down_key", shortcuts);
++    parseShortcut (screen_info, KEY_MOVE_TO_MONITOR_LEFT, "move_window_to_monitor_left_key", shortcuts);
++    parseShortcut (screen_info, KEY_MOVE_TO_MONITOR_RIGHT, "move_window_to_monitor_right_key", shortcuts);
++    parseShortcut (screen_info, KEY_MOVE_TO_MONITOR_UP, "move_window_to_monitor_up_key", shortcuts);
+     parseShortcut (screen_info, KEY_MOVE_DOWN_WORKSPACE, "move_window_down_workspace_key", shortcuts);
+     parseShortcut (screen_info, KEY_MOVE_LEFT_WORKSPACE, "move_window_left_workspace_key", shortcuts);
+     parseShortcut (screen_info, KEY_MOVE_NEXT_WORKSPACE, "move_window_next_workspace_key", shortcuts);
+diff --git src/settings.h src/settings.h
+index 4293dc096..612ee2e8a 100644
+--- src/settings.h
++++ src/settings.h
+@@ -78,6 +78,10 @@ enum
+     KEY_MAXIMIZE_VERT,
+     KEY_MAXIMIZE_WINDOW,
+     KEY_MOVE,
++    KEY_MOVE_TO_MONITOR_DOWN,
++    KEY_MOVE_TO_MONITOR_LEFT,
++    KEY_MOVE_TO_MONITOR_RIGHT,
++    KEY_MOVE_TO_MONITOR_UP,
+     KEY_MOVE_DOWN_WORKSPACE,
+     KEY_MOVE_LEFT_WORKSPACE,
+     KEY_MOVE_NEXT_WORKSPACE,

@@ -1,0 +1,20 @@
+pkgbase = gnome-tweaks-git
+	pkgdesc = Graphical interface for advanced GNOME 3 settings (Tweak Tool)
+	pkgver = 3.34.0.r21.g39cde84
+	pkgrel = 1
+	url = https://wiki.gnome.org/Apps/Tweaks
+	arch = any
+	groups = gnome-extra
+	license = GPL
+	makedepends = git
+	makedepends = meson
+	depends = gnome-settings-daemon
+	depends = python-gobject
+	depends = libhandy
+	provides = gnome-tweaks
+	conflicts = gnome-tweaks
+	source = git+https://gitlab.gnome.org/GNOME/gnome-tweaks.git
+	sha256sums = SKIP
+
+pkgname = gnome-tweaks-git
+

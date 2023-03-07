@@ -1,0 +1,29 @@
+pkgbase = razercfg
+	pkgdesc = Razer mouse configuration tool
+	pkgver = 0.40
+	pkgrel = 1
+	url = https://bues.ch/h/razercfg
+	arch = x86_64
+	license = GPL
+	makedepends = cmake
+	depends = libusb
+	depends = python
+	source = http://bues.ch/razercfg/razercfg-0.40.tar.bz2
+	source = http://bues.ch/razercfg/razercfg-0.40.tar.bz2.asc
+	source = tmpfile.conf
+	validpgpkeys = 757FAB7CED1814AE15B4836E5FB027474203454C
+	sha512sums = 42c3e7a34a348982fb2c1022c85dd3ec6d875dec387492eb4f6aece82423a1fd5984c4efb79926084aac880944a9e139a424487ab277d8c1a56c4f9c0a7c9d6e
+	sha512sums = SKIP
+	sha512sums = 0a84cf5775930ff9adca513971a9eaf983f239b4cf59f8915632477c6ca20c02997fed3a24864aa04058d66899da3599d92a2180cfc43676102b733dd1db577b
+
+pkgname = razercfg
+	pkgdesc = Razer mouse configuration tool (UI)
+	depends = python
+	depends = razerd
+	optdepends = python-pyqt5: for the graphical qrazercfg tool
+
+pkgname = razerd
+	pkgdesc = Razer mouse configuration tool (daemon)
+	depends = libusb
+	backup = etc/razer.conf
+

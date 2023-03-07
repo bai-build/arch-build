@@ -1,0 +1,28 @@
+diff --git a/swaybar/status_line.c b/swaybar/status_line.c
+index 48b43248..796578f8 100644
+--- a/swaybar/status_line.c
++++ b/swaybar/status_line.c
+@@ -10,6 +10,7 @@
+ #include "swaybar/event_loop.h"
+ #include "swaybar/status_line.h"
+ #include "readline.h"
++#include "swaybar/event_loop.h"
+ 
+ static void status_line_close_fds(struct status_line *status) {
+ 	if (status->read_fd != -1) {
+@@ -27,6 +28,7 @@ void status_error(struct status_line *status, const char *text) {
+ 	status_line_close_fds(status);
+ 	status->protocol = PROTOCOL_ERROR;
+ 	status->text = text;
++	remove_event(status->read_fd);
+ }
+ 
+ bool status_handle_readable(struct status_line *status) {
+@@ -138,6 +140,7 @@ struct status_line *status_line_init(char *cmd) {
+ 	fcntl(status->write_fd, F_SETFL, O_NONBLOCK);
+ 
+ 	status->read = fdopen(status->read_fd, "r");
++	setvbuf(status->read, NULL, _IONBF, 0);
+ 	status->write = fdopen(status->write_fd, "w");
+ 	return status;
+ }

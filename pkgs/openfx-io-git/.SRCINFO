@@ -1,0 +1,25 @@
+pkgbase = openfx-io-git
+	pkgdesc = A set of Readers/Writers plugins written using the OpenFX standard
+	pkgver = Natron.2.5.0.r2.gf63c273
+	pkgrel = 1
+	url = https://github.com/NatronGitHub/openfx-io
+	arch = x86_64
+	license = GPL
+	makedepends = opencolorio
+	makedepends = git
+	depends = ffmpeg
+	depends = openimageio
+	depends = libseexpr2
+	conflicts = openfx-io
+	source = openfx-io::git+https://github.com/NatronGitHub/openfx-io
+	source = openfx::git+https://github.com/NatronGitHub/openfx
+	source = openfx-supportext::git+https://github.com/NatronGitHub/openfx-supportext
+	source = SequenceParsing::git+https://github.com/NatronGitHub/SequenceParsing
+	source = tinydir::git+https://github.com/NatronGitHub/tinydir
+	sha512sums = SKIP
+	sha512sums = SKIP
+	sha512sums = SKIP
+	sha512sums = SKIP
+	sha512sums = SKIP
+
+pkgname = openfx-io-git

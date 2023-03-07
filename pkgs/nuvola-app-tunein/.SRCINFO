@@ -1,0 +1,16 @@
+pkgbase = nuvola-app-tunein
+	pkgdesc = tunein integration for Nuvola Player.
+	pkgver = 1.4
+	pkgrel = 1
+	url = https://github.com/tiliado/nuvola-app-tunein
+	arch = any
+	license = custom:BSD
+	makedepends = nuvolasdk
+	makedepends = scour
+	depends = nuvolaruntime
+	depends = imagemagick
+	source = https://github.com/tiliado/nuvola-app-tunein/archive/1.4.tar.gz
+	sha256sums = 3b08f358be822caef89d29b4d83da94a953ef86f3b7bf88bd2e908e3198eaa95
+
+pkgname = nuvola-app-tunein
+

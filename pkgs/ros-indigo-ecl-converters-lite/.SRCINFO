@@ -1,0 +1,20 @@
+pkgbase = ros-indigo-ecl-converters-lite
+	pkgdesc = ROS - These are a very simple version of some of the functions in ecl_converters suitable for firmware development.
+	pkgver = 0.61.18
+	pkgrel = 1
+	url = http://wiki.ros.org/ecl_converters_lite
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = git
+	makedepends = ros-build-tools
+	makedepends = ros-indigo-ecl-license
+	makedepends = ros-indigo-ecl-config
+	makedepends = ros-indigo-catkin
+	depends = ros-indigo-ecl-license
+	depends = ros-indigo-ecl-config
+	source = https://github.com/yujinrobot-release/ecl_lite-release/archive/release/indigo/ecl_converters_lite/0.61.18-0.tar.gz
+	sha256sums = d474cb68bd16dfe9f52b940427fccfa309c698a2464217252a48ff8b6461e265
+
+pkgname = ros-indigo-ecl-converters-lite
+

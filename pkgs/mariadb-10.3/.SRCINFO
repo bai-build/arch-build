@@ -1,0 +1,79 @@
+pkgbase = mariadb-10.3
+	pkgver = 10.3.12
+	pkgrel = 3
+	url = http://mariadb.org/
+	arch = x86_64
+	license = GPL
+	makedepends = boost
+	makedepends = bzip2
+	makedepends = cmake
+	makedepends = jemalloc
+	makedepends = libaio
+	makedepends = libxml2
+	makedepends = lz4
+	makedepends = lzo
+	makedepends = openssl
+	makedepends = systemd
+	makedepends = zlib
+	source = https://mirrors.ukfast.co.uk/sites/mariadb/mariadb-10.3.12/source/mariadb-10.3.12.tar.gz
+	source = https://mirrors.ukfast.co.uk/sites/mariadb/mariadb-10.3.12/source/mariadb-10.3.12.tar.gz.asc
+	source = fix_libmariadb_ignored_host.patch
+	source = fix_cmake_compiler_flag_tests.patch
+	validpgpkeys = 199369E5404BD5FC7D2FE43BCBCB082A1BB943DB
+	sha256sums = f7449a34c25e0455928d7983dae83fd2069fe1f16c4c5f4aeed9ed9d3f081ff6
+	sha256sums = SKIP
+	sha256sums = fd186c795c393b6898f28d731390bb14ea8444230c8340a5f4cfbccb16ea10e9
+	sha256sums = 80594a8427106aa99186d0e2af3d8d37c49a4d4cf811d049d1ebb0e4a75fcdb0
+
+pkgname = libmariadb-10.3
+	pkgdesc = MariaDB client libraries
+	depends = bzip2
+	depends = libaio
+	depends = lz4
+	depends = lzo
+	depends = openssl
+	depends = xz
+	depends = zlib
+	provides = libmariadb=10.3.12
+	provides = libmariadbclient=10.3.12
+	conflicts = libmysqlclient
+	conflicts = libmariadbclient
+	conflicts = libmariadbclient-10.3
+	conflicts = libmariadb
+	replaces = libmariadbclient-10.3
+
+pkgname = mariadb-clients-10.3
+	pkgdesc = MariaDB client tools
+	depends = libmariadb-10.3=10.3.12
+	depends = jemalloc
+	provides = mysql-clients=10.3.12
+	provides = mariadb-clients=10.3.12
+	conflicts = mysql-clients
+	conflicts = mariadb-clients
+
+pkgname = mytop-10.3
+	pkgdesc = Top clone for MariaDB
+	depends = perl
+	depends = perl-dbd-mysql
+	depends = perl-term-readkey
+	provides = mytop=10.3.12
+	conflicts = mytop
+
+pkgname = mariadb-10.3
+	pkgdesc = Fast SQL database server, drop-in replacement for MySQL
+	install = mariadb.install
+	depends = mariadb-clients-10.3=10.3.12
+	depends = inetutils
+	depends = libsystemd
+	depends = libxml2
+	optdepends = galera: for MariaDB cluster with Galera WSREP
+	optdepends = perl-dbd-mysql: for mysqlhotcopy, mysql_convert_table_format and mysql_setpermission
+	provides = mysql=10.3.12
+	provides = mariadb=10.3.12
+	conflicts = mysql
+	conflicts = mariadb
+	backup = etc/mysql/my.cnf
+	backup = etc/mysql/my.cnf.d/client.cnf
+	backup = etc/mysql/my.cnf.d/mysql-clients.cnf
+	backup = etc/mysql/my.cnf.d/server.cnf
+

@@ -1,0 +1,25 @@
+pkgbase = htop-vim-solarized-git
+	pkgdesc = Interactive process viewer with solarized and vim keybindings patch
+	pkgver = 3.0.2.r226.g0806a79
+	pkgrel = 1
+	url = https://github.com/htop-dev/htop
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = ncurses
+	depends = libncursesw.so
+	depends = libnl
+	optdepends = lsof: show files opened by a process
+	optdepends = strace: attach to a running process
+	provides = htop
+	conflicts = htop
+	options = !emptydirs
+	source = git+https://github.com/htop-dev/htop.git
+	source = solarized-colors.patch
+	source = vim-keybindings.patch
+	sha384sums = SKIP
+	sha384sums = 33b6f8247d6784b73f63870b44340cf0f765d22dd3ce5306718a2698dccdb171a3bb905fe87b966a598e3b4c0730d241
+	sha384sums = 38b6e858f23f74d18fa0ae042f9ca197de24aa3b3ab9f5d51048ac42d2d0208a7c9e62b32e1423c29de7035f6ddecf08
+
+pkgname = htop-vim-solarized-git
+

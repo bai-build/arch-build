@@ -1,0 +1,36 @@
+pkgbase = openimageio-qfix
+	pkgdesc = A library for reading and writing images, including classes, utilities, and applications (build agaist opencolorio=2
+	pkgver = 2.2.14.0
+	pkgrel = 1
+	url = http://www.openimageio.org/
+	arch = x86_64
+	license = custom
+	makedepends = cmake
+	makedepends = qt5-base
+	makedepends = python
+	makedepends = boost
+	makedepends = mesa
+	makedepends = freetype2
+	makedepends = fontconfig
+	makedepends = libxrender
+	makedepends = ninja
+	makedepends = robin-map
+	depends = openexr
+	depends = boost-libs
+	depends = openjpeg2
+	depends = glew
+	depends = libtiff
+	depends = opencolorio-qfix
+	depends = intel-tbb
+	depends = libpng
+	depends = libraw
+	depends = libwebp
+	depends = fmt
+	depends = pugixml
+	depends = pybind11
+	optdepends = qt5-base: iv image viewer
+	optdepends = python: bindings support
+	source = openimageio-qfix-2.2.14.0.tar.gz::https://github.com/OpenImageIO/oiio/archive/Release-2.2.14.0.tar.gz
+	sha512sums = 063291c0bd742b79a7b6065a41856b84732af2e2e404265262aa9ba91d07209fb308ecf0403a139d7021b8062f9c3e1b92a725a7cad091af1bcf45499ae47a82
+
+pkgname = openimageio-qfix

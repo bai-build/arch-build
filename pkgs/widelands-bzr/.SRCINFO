@@ -1,0 +1,26 @@
+pkgbase = widelands-bzr
+	pkgdesc = A realtime strategy game with emphasis on economy and transport - development version
+	pkgver = 19.r8984
+	pkgrel = 1
+	url = http://wl.widelands.org
+	changelog = changelog
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = bzr
+	makedepends = cmake
+	makedepends = python
+	makedepends = boost
+	depends = glew
+	depends = sdl2_image
+	depends = boost-libs
+	depends = sdl2_mixer
+	depends = sdl2_ttf
+	provides = widelands=19.r8984
+	conflicts = widelands
+	conflicts = widelands-data
+	source = changelog
+	sha1sums = SKIP
+
+pkgname = widelands-bzr
+

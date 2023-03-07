@@ -1,0 +1,27 @@
+pkgbase = fs-uae-devel
+	pkgdesc = Cross-platform Amiga emulator based on UAE/WinUAE (development version).
+	pkgver = 2.9.12dev
+	pkgrel = 2
+	url = http://fs-uae.net/download-devel
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = zip
+	depends = sdl2
+	depends = libpng
+	depends = openal
+	depends = mesa
+	depends = libxi
+	depends = libmpeg2
+	depends = gettext
+	depends = freetype2
+	depends = hicolor-icon-theme
+	depends = desktop-file-utils
+	depends = shared-mime-info
+	provides = fs-uae
+	conflicts = fs-uae
+	source = http://fs-uae.net/devel/2.9.12dev/fs-uae-2.9.12dev.tar.gz
+	sha256sums = 995cc6972afdc43f9950308430efe73a9a51188f90e87e75680e8fc64b29c66f
+
+pkgname = fs-uae-devel
+

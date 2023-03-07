@@ -1,0 +1,15 @@
+pkgbase = seagate-leds-git
+	pkgdesc = Utility to control activity and capacity LEDs on some external Seagate and Maxtor hard disk drives.
+	pkgver = r10.e153ac7
+	pkgrel = 1
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = git
+	provides = seagate-leds
+	conflicts = seagate-leds
+	source = git+https://github.com/dewyatt/seagate-leds.git
+	md5sums = SKIP
+
+pkgname = seagate-leds-git
+

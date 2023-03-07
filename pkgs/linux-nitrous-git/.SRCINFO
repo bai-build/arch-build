@@ -1,0 +1,41 @@
+pkgbase = linux-nitrous-git
+	pkgver = 5.9+
+	pkgrel = 51
+	url = https://gitlab.com/xdevs23/linux-nitrous
+	arch = x86_64
+	license = GPL2
+	makedepends = bison
+	makedepends = clang
+	makedepends = llvm
+	makedepends = lld
+	makedepends = xmlto
+	makedepends = docbook-xsl
+	makedepends = kmod
+	makedepends = inetutils
+	makedepends = bc
+	makedepends = git
+	makedepends = libelf
+	makedepends = coreutils
+	options = !strip
+	source = git+https://gitlab.com/xdevs23/linux-nitrous.git#branch=v5.9+
+	source = linux-nitrous-git.preset
+	sha256sums = SKIP
+	sha256sums = ecfa409b29641e070ef45baa9f866659e9f64ccbad8bedbb52f946c186d360ac
+
+pkgname = linux-nitrous-git
+	pkgdesc = Modified Linux kernel optimized for Haswell (and newer) compiled using clang
+	install = linux-nitrous-git.install
+	depends = coreutils
+	depends = kmod
+	depends = mkinitcpio>=0.7
+	optdepends = crda: to set the correct wireless channels of your country
+	optdepends = linux-nitrous-git-headers: to build DKMS modules against this kernel
+	optdepends = linux-firmware: Additional firmware blobs
+	backup = etc/mkinitcpio.d/linux-nitrous-git.preset
+
+pkgname = linux-nitrous-git-headers
+	pkgdesc = Header files and scripts for building modules for Linux kernel (git version)
+
+pkgname = linux-nitrous-git-docs
+	pkgdesc = Kernel hackers manual - HTML documentation that comes with the Linux kernel (git version)
+

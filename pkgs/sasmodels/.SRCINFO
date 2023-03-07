@@ -1,0 +1,22 @@
+pkgbase = sasmodels
+	pkgdesc = Package for calculation of small angle scattering models using OpenCL.
+	pkgver = 1.0.6
+	pkgrel = 1
+	url = https://github.com/SasView/sasmodels
+	arch = x86_64
+	license = BSD
+	checkdepends = python-pytest
+	makedepends = python-setuptools
+	makedepends = python-sphinx
+	makedepends = texlive-core
+	makedepends = texlive-bin
+	depends = python-numpy
+	depends = python-scipy
+	depends = python-docutils
+	depends = python-pyopencl
+	depends = python-bumps
+	depends = python-matplotlib
+	source = https://github.com/SasView/sasmodels/archive/v1.0.6.tar.gz
+	sha256sums = 9c64d602c4b5e479ff7fb56fff0d468e6cf363d620706703943c757745d2eae0
+
+pkgname = sasmodels

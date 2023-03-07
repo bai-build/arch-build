@@ -1,0 +1,17 @@
+pkgbase = uchardet-git
+	pkgdesc = Encoding detector library ported from Mozilla
+	pkgver = 0.0.7.r11.g143b3fe
+	pkgrel = 1
+	url = https://www.freedesktop.org/wiki/software/uchardet
+	arch = x86_64
+	license = MPL
+	makedepends = git
+	makedepends = cmake
+	depends = gcc-libs
+	provides = uchardet
+	provides = libuchardet.so
+	conflicts = uchardet
+	source = uchardet::git+https://gitlab.freedesktop.org/uchardet/uchardet
+	sha256sums = SKIP
+
+pkgname = uchardet-git

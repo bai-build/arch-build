@@ -1,0 +1,21 @@
+pkgbase = mingw-w64-rtmpdump
+	pkgdesc = A toolkit for RTMP streams (mingw-w64)
+	pkgver = 2.4.r99.f1b83c1
+	pkgrel = 1
+	url = https://rtmpdump.mplayerhq.hu/
+	arch = any
+	license = GPL2
+	license = LGPL2.1
+	makedepends = mingw-w64-gcc
+	makedepends = git
+	depends = mingw-w64-crt
+	depends = mingw-w64-gnutls
+	depends = mingw-w64-zlib
+	options = !strip
+	options = !buildflags
+	options = !makeflags
+	options = staticlibs
+	source = git+https://git.ffmpeg.org/rtmpdump#commit=f1b83c10d8beb43fcc70a6e88cf4325499f25857
+	sha256sums = SKIP
+
+pkgname = mingw-w64-rtmpdump

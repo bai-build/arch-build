@@ -1,0 +1,24 @@
+pkgbase = index-fm-git
+	pkgdesc = Index is a file manager that works on desktops, Android and Plasma Mobile
+	pkgver = 2.0.0.r7.g5db75df
+	pkgrel = 1
+	url = https://invent.kde.org/maui/index-fm
+	arch = x86_64
+	arch = i686
+	arch = arm
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	license = GPL3
+	makedepends = git
+	makedepends = cmake
+	makedepends = extra-cmake-modules
+	depends = mauikit
+	depends = mauikit-filebrowsing
+	depends = qmltermwidget
+	provides = index-fm
+	conflicts = index-fm
+	source = git+https://invent.kde.org/maui/index-fm.git
+	sha256sums = SKIP
+
+pkgname = index-fm-git

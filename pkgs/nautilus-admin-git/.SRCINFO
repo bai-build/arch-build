@@ -1,0 +1,21 @@
+pkgbase = nautilus-admin-git
+	pkgdesc = Extension for Nautilus to do administrative operations
+	pkgver = 1.1.9.e2ec2dc
+	pkgrel = 1
+	url = https://github.com/adekmaulana/nautilus-admin
+	install = nautilus-admin.install
+	arch = any
+	license = GPL3
+	makedepends = cmake>=2.6
+	makedepends = gettext
+	depends = nautilus
+	depends = python-nautilus
+	depends = polkit
+	optdepends = gedit: to use the "Edit as Administrator" action
+	optdepends = gnome-terminal: to use the "Run as Administrator" action
+	conflicts = nautilus-admin
+	source = git+https://github.com/adekmaulana/nautilus-admin
+	sha256sums = SKIP
+
+pkgname = nautilus-admin-git
+

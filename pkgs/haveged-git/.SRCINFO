@@ -1,0 +1,18 @@
+pkgbase = haveged-git
+	pkgdesc = A simple entropy daemon
+	pkgver = 1.9.8.r0.g8cd0266
+	pkgrel = 1
+	url = https://www.issihosts.com/haveged/
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	depends = glibc
+	provides = haveged
+	conflicts = haveged
+	options = staticlibs
+	source = git+https://github.com/jirka-h/haveged.git
+	sha256sums = SKIP
+
+pkgname = haveged-git
+

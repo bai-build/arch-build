@@ -1,0 +1,22 @@
+pkgbase = st-zenburn-26px-git
+	pkgdesc = Simple terminal with Xresources, scrollback, alpha support, 26px Office Code Pro font, and zenburn colorscheme
+	pkgver = r18.ca2114b
+	pkgrel = 1
+	url = https://github.com/DerVerruckteFuchs/st-zenburn
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = ncurses
+	depends = libxft
+	depends = libxext
+	provides = st-zenburn-26px-git
+	conflicts = st
+	conflicts = st-xresources-git
+	conflicts = st-bloated-git
+	conflicts = st-neonwave-git
+	conflicts = st-zenburn-git
+	source = git://github.com/DerVerruckteFuchs/st-zenburn
+	md5sums = SKIP
+
+pkgname = st-zenburn-26px-git
+

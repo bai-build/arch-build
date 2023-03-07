@@ -1,0 +1,23 @@
+pkgbase = ecflow
+	pkgdesc = ecFlow - workflow manager from ECMWF
+	pkgver = 5.6.0
+	pkgrel = 2
+	url = https://confluence.ecmwf.int/display/ECFLOW
+	arch = i686
+	arch = x86_64
+	groups = science
+	license = APACHE 2.0
+	makedepends = cmake
+	makedepends = boost
+	depends = qt5-base
+	depends = qt5-charts
+	depends = qt5-svg
+	depends = python
+	depends = git
+	conflicts = ecflow-ui
+	conflicts = ecflow4
+	source = https://software.ecmwf.int/wiki/download/attachments/8650755/ecFlow-5.6.0-Source.tar.gz
+	sha256sums = 15db6e320c689417e48048a9bbce41ed334c447a09ffd18333e85b6cf24a181c
+
+pkgname = ecflow
+

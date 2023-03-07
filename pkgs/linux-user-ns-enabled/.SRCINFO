@@ -1,0 +1,48 @@
+pkgbase = linux-user-ns-enabled
+	pkgver = 4.2.5
+	pkgrel = 1
+	url = http://www.kernel.org/
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = xmlto
+	makedepends = docbook-xsl
+	makedepends = kmod
+	makedepends = inetutils
+	makedepends = bc
+	options = !strip
+	source = https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.2.tar.xz
+	source = https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.2.tar.sign
+	source = https://www.kernel.org/pub/linux/kernel/v4.x/patch-4.2.5.xz
+	source = https://www.kernel.org/pub/linux/kernel/v4.x/patch-4.2.5.sign
+	source = config
+	source = config.x86_64
+	source = linux.preset
+	source = change-default-console-loglevel.patch
+	source = 0001-UBUNTU-SAUCE-Overlayfs-allow-unprivileged-mounts.patch
+	sha256sums = cf20e044f17588d2a42c8f2a450b0fd84dfdbd579b489d93e9ab7d0e8b45dbeb
+	sha256sums = SKIP
+	sha256sums = b631eb4e8b4911b31111b0838e00f7c4a1b7689abcd2233609831b638493f4fb
+	sha256sums = SKIP
+	sha256sums = ad0cf267d1253146b7cde178627dd67be753b5ec7bf24db2ea1147ca5c1b3f05
+	sha256sums = a2a32ed574405cff104adae24a8f43523305c8f623cf0160452616d9c7bf3f03
+	sha256sums = f0d90e756f14533ee67afda280500511a62465b4f76adcc5effa95a40045179c
+	sha256sums = 1256b241cd477b265a3c2d64bdc19ffe3c9bbcee82ea3994c590c2c76e767d99
+	sha256sums = 01a6d59a55df1040127ced0412f44313b65356e3c680980210593ee43f2495aa
+
+pkgname = linux-user-ns-enabled
+	pkgdesc = The Linux-user-ns-enabled kernel and modules with CONFIG_USER_NS enabled
+	install = linux.install
+	depends = coreutils
+	depends = linux-firmware
+	depends = kmod
+	depends = mkinitcpio>=0.7
+	optdepends = crda: to set the correct wireless channels of your country
+	backup = etc/mkinitcpio.d/linux-user-ns-enabled.preset
+
+pkgname = linux-user-ns-enabled-headers
+	pkgdesc = Header files and scripts for building modules for Linux-user-ns-enabled kernel
+
+pkgname = linux-user-ns-enabled-docs
+	pkgdesc = Kernel hackers manual - HTML documentation that comes with the Linux-user-ns-enabled kernel
+

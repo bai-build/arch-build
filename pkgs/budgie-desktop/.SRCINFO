@@ -1,0 +1,39 @@
+pkgbase = budgie-desktop
+	pkgdesc = Simple GTK3 desktop experience from Solus Project
+	pkgver = 10.2.4
+	pkgrel = 1
+	url = http://solus-project.com/
+	install = budgie-desktop.install
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = git
+	makedepends = python2
+	makedepends = vala
+	makedepends = gobject-introspection>=1.44.0
+	depends = libwnck3>=3.14
+	depends = gnome-menus>=3.10.1
+	depends = gnome-settings-daemon
+	depends = libpeas>=1.3.0
+	depends = mutter>=3.18
+	depends = desktop-file-utils
+	depends = libgee
+	depends = gnome-themes-standard
+	depends = gtk3>=3.16
+	depends = libpulse
+	depends = upower
+	depends = intltool
+	depends = gnome-session>=3.18
+	depends = gnome-terminal
+	depends = gnome-control-center
+	depends = nautilus
+	depends = libpulse>=2
+	depends = gnome-desktop>=3.18
+	depends = upower>=0.9.20
+	depends = polkit>=0.105
+	depends = gtk-doc
+	source = budgie-desktop-10.2.4.tar.gz::https://github.com/solus-project/budgie-desktop/releases/download/v10.2.4/budgie-desktop-10.2.4.tar.xz
+	sha256sums = b01e7be9349cbc26cd77db74a0c138d21c31d8bad21a02b31828014b416256f7
+
+pkgname = budgie-desktop
+

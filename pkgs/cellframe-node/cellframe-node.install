@@ -1,0 +1,49 @@
+post_install() {
+    source /etc/profile
+    systemctl daemon-reload
+    systemctl is-enabled --quiet cellframe-node.service && systemctl start cellframe-node.service
+
+    cat << EOF
+
+    ########################################################################
+    ########################################################################
+    ##                                                                    ##
+    ##  Cellframe node                                                    ##
+    ##  ____________                                                      ##
+    ##                                                                    ##
+    ##  To start Cellframe node manually:                                 ##
+    ##                                                                    ##
+    ##      # Run from /opt/cellframe-node/bin                            ##
+    ##                                                                    ##
+    ##  Run automatically:                                                ##
+    ##                                                                    ##
+    ##      # systemctl enable --now cellframe-node.service               ##
+    ##                                                                    ##
+    ##  Network configuration is set to full mode by default.            ##
+    ##  you can modify the network configuration parameters in:           ##
+    ##                                                                    ##
+    ##      # /opt/cellframe-node/etc/network/*.cfg                       ##
+    ##                                                                    ##
+    ##  General configuration file:                                       ##
+    ##                                                                    ##
+    ##      # /opt/cellframe-node/etc/cellframe-node.cfg                  ##
+    ##                                                                    ##
+    ##  Documentation: https://wiki.cellframe.net/en/home                 ##
+    ##                                                                    ##
+    ########################################################################
+    ########################################################################
+
+EOF
+}
+
+pre_upgrade() {
+    systemctl is-active --quiet cellframe-node.service && systemctl stop cellframe-node.service
+	post_install
+}
+
+pre_remove() {
+    systemctl is-active --quiet cellframe-node.service && systemctl stop cellframe-node.service
+    systemctl is-enabled --quiet cellframe-node.service && systemctl disable cellframe-node.service
+    systemctl daemon-reload
+}
+

@@ -1,0 +1,28 @@
+pkgbase = curl-http2-git
+	pkgdesc = A URL retrieval utility and library (HTTP/2 enabled)
+	pkgver = curl.7_70_0.r28.gf7ab48857
+	pkgrel = 1
+	url = https://curl.haxx.se/
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = git
+	depends = ca-certificates
+	depends = krb5
+	depends = libssh2
+	depends = openssl
+	depends = zlib
+	depends = libpsl
+	depends = libnghttp2
+	depends = libidn2
+	depends = libidn2.so
+	depends = nghttp2
+	provides = libcurl.so
+	conflicts = curl
+	conflicts = curl-git
+	options = !libtool
+	source = git+https://github.com/curl/curl.git
+	sha512sums = SKIP
+
+pkgname = curl-http2-git
+

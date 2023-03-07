@@ -1,0 +1,18 @@
+pkgbase = mingw-w64-libfilezilla
+	pkgdesc = Small and modern C++ library, offering some basic functionality to build high-performing, platform-independent programs (mingw-w64)
+	pkgver = 0.12.2
+	pkgrel = 1
+	url = https://filezilla-project.org/
+	arch = any
+	license = GPL
+	makedepends = mingw-w64-configure
+	depends = mingw-w64-crt
+	options = staticlibs
+	options = !strip
+	options = !buildflags
+	options = !makeflags
+	source = http://download.filezilla-project.org/libfilezilla/libfilezilla-0.12.2.tar.bz2
+	md5sums = 79c95ee58bc8db2fa3690a36ece25a6d
+
+pkgname = mingw-w64-libfilezilla
+

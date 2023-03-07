@@ -1,0 +1,18 @@
+pkgbase = osvr-rendermanager-git
+	pkgdesc = TW, ATW and high performance rendering with OpenGL and GLES
+	pkgver = v00_06_52.r350.g56f9db6
+	pkgrel = 1
+	url = https://github.com/sensics/OSVR-RenderManager
+	arch = i686
+	arch = x86_64
+	makedepends = git
+	makedepends = cmake
+	depends = osvr-core-git
+	depends = eigen
+	source = osvr-rendermanager::git+https://github.com/sensics/OSVR-RenderManager.git
+	source = vendor-vrpn::git+https://github.com/vrpn/vrpn.git
+	md5sums = SKIP
+	md5sums = SKIP
+
+pkgname = osvr-rendermanager-git
+

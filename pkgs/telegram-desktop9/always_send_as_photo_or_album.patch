@@ -1,0 +1,17 @@
+Description: Disables loading the previous way media was sent, so it always selects either
+photo or album by default.
+Credits: udf
+
+diff --git a/Telegram/SourceFiles/boxes/send_files_box.cpp b/Telegram/SourceFiles/boxes/send_files_box.cpp
+index 79cf159dd..814e3a4de 100644
+--- a/Telegram/SourceFiles/boxes/send_files_box.cpp
++++ b/Telegram/SourceFiles/boxes/send_files_box.cpp
+@@ -425,6 +425,8 @@ void SendFilesBox::openDialogToAddFileToAlbum() {
+ void SendFilesBox::initSendWay() {
+ 	_sendWay = [&] {
+ 		auto result = Core::App().settings().sendFilesWay();
++		result.setGroupFiles(true);
++		result.setSendImagesAsPhotos(true);
+ 		if (_sendLimit == SendLimit::One) {
+ 			result.setGroupFiles(true);
+ 			return result;

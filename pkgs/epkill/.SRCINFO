@@ -1,0 +1,24 @@
+pkgbase = epkill
+	pkgdesc = procps utilties with environment constraints
+	pkgver = 1.2
+	pkgrel = 1
+	url = https://github.com/maandree/epkill
+	install = epkill.install
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	license = custom:GFDL1.3
+	makedepends = glibc
+	makedepends = procps-ng
+	makedepends = argparser
+	makedepends = gcc
+	makedepends = texinfo
+	depends = glibc
+	depends = procps-ng
+	depends = argparser
+	depends = exec-as
+	source = https://github.com/maandree/epkill/archive/1.2.tar.gz
+	sha256sums = 0bf65a82172804ad9042e86e3dd20575f11af39904a3f8ecd93b20bc2e76c4b4
+
+pkgname = epkill
+

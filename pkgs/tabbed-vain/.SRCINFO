@@ -1,0 +1,19 @@
+pkgbase = tabbed-vain
+	pkgdesc = Suckless tabbed modified to suit the author's needs
+	pkgver = 0.6
+	pkgrel = 1
+	url = https://github.com/vain/tabbed-vain.git
+	arch = i686
+	arch = x86_64
+	license = custom:MIT/X
+	makedepends = git
+	depends = libxft
+	provides = tabbed
+	conflicts = tabbed
+	source = tabbed-vain-0.6.tar.gz::https://github.com/vain/tabbed-vain/archive/0.6.tar.gz
+	source = config.h
+	md5sums = 654bab23528cca963dd59612ef11cdd3
+	md5sums = 061c739dc784bf74e92bd5b7a1100623
+
+pkgname = tabbed-vain
+

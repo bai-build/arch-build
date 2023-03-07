@@ -1,0 +1,16 @@
+pkgbase = lib32-libtiger
+	pkgdesc = A rendering library for Kate streams using Pango and Cairo (32-bit)
+	pkgver = 0.3.4
+	pkgrel = 4
+	url = https://code.google.com/archive/p/libtiger/
+	arch = x86_64
+	license = LGPL
+	makedepends = pkg-config
+	depends = lib32-pango
+	depends = lib32-libkate
+	depends = libtiger
+	source = https://download.videolan.org/contrib/tiger/libtiger-0.3.4.tar.gz
+	md5sums = dc1dbeb658c95485ba10b9b2897b4ae2
+
+pkgname = lib32-libtiger
+

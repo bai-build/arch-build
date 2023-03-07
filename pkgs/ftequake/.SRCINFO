@@ -1,0 +1,37 @@
+pkgbase = ftequake
+	pkgdesc = FTE QuakeWorld. Engine for Quake 1,2,3 and Hexen 2
+	pkgver = r5529
+	pkgrel = 1
+	url = http://fte.triptohell.info
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = ecasound
+	makedepends = libjpeg-turbo
+	makedepends = libxkbcommon
+	makedepends = speex
+	makedepends = opus
+	makedepends = libogg
+	makedepends = libpng
+	makedepends = libvorbis
+	makedepends = vulkan-validation-layers
+	makedepends = zlib
+	makedepends = mesa
+	makedepends = freetype2
+	makedepends = subversion
+	depends = libpng
+	depends = sdl2
+	depends = vulkan-validation-layers
+	provides = ftequake
+	conflicts = ftequake-svn
+	source = svn+http://svn.code.sf.net/p/fteqw/code/trunk#revision=r5529
+	source = fteqw.desktop
+	source = fteqw-sv.desktop
+	source = fteqw.png
+	md5sums = SKIP
+	md5sums = 38b6927a580ea7fa64f161bea8dc6240
+	md5sums = b5157c36cc9c0231c6cbac0e566d8784
+	md5sums = 0c1246661ff0e3c27ed0f31ae65bb6ea
+
+pkgname = ftequake
+

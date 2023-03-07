@@ -1,0 +1,20 @@
+pkgbase = fatd-git
+	pkgdesc = Factom Asset Tokens Daemon (develop branch)
+	pkgver = 1.0.0.r1.gce0a4cf
+	pkgrel = 1
+	url = https://github.com/Factom-Asset-Tokens/fatd
+	install = fatd.install
+	arch = x86_64
+	license = MIT
+	makedepends = go-pie
+	makedepends = git
+	depends = glibc
+	optdepends = factomd
+	provides = fatd
+	conflicts = fatd
+	options = emptydirs
+	source = git+https://github.com/Factom-Asset-Tokens/fatd#branch=develop
+	md5sums = SKIP
+
+pkgname = fatd-git
+

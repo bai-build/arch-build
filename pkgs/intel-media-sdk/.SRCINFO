@@ -1,0 +1,34 @@
+pkgbase = intel-media-sdk
+	pkgdesc = API to access hardware-accelerated video decode, encode and filtering on Intel platforms with integrated graphics
+	pkgver = 2019.2.1
+	pkgrel = 4
+	epoch = 1
+	url = https://github.com/Intel-Media-SDK/MediaSDK/
+	install = intel-media-sdk.install
+	arch = x86_64
+	license = MIT
+	makedepends = cmake
+	makedepends = libpciaccess
+	makedepends = libx11
+	makedepends = libxcb
+	makedepends = python
+	makedepends = opencl-headers
+	makedepends = ocl-icd
+	makedepends = intel-compute-runtime
+	depends = gcc-libs
+	depends = libdrm
+	depends = libva
+	depends = wayland
+	depends = intel-media-driver
+	optdepends = ocl-icd: for rotate_opencl plugin
+	optdepends = intel-compute-runtime: for rotate_opencl plugin
+	provides = libmfx
+	source = https://github.com/Intel-Media-SDK/MediaSDK/archive/intel-mediasdk-19.2.1.tar.gz
+	source = intel-media-sdk.conf
+	source = intel-media-sdk.sh
+	sha256sums = 03c11a0379b61e292e789fa3dc9308ce45f36d68b4ebf437806c0e2c32357970
+	sha256sums = 12a37e6e12d93fac5829082773b9f010a3c6c763ddeee177618b8e1a0547fbbc
+	sha256sums = 315ea6f304cf2b7b6a8aaabb0b8f71fcd480677c7fb9c8cbfa51c7830bb159bc
+
+pkgname = intel-media-sdk
+

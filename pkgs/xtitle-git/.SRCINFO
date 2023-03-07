@@ -1,0 +1,19 @@
+pkgbase = xtitle-git
+	pkgdesc = Outputs X window titles
+	pkgver = 46
+	pkgrel = 1
+	url = https://github.com/baskerville/xtitle
+	arch = i686
+	arch = x86_64
+	license = custom:Unlicense
+	makedepends = git
+	makedepends = xcb-util
+	depends = libxcb
+	depends = xcb-util-wm
+	provides = xtitle
+	conflicts = xtitle
+	source = xtitle-git::git+https://github.com/baskerville/xtitle.git
+	md5sums = SKIP
+
+pkgname = xtitle-git
+

@@ -1,0 +1,13 @@
+[Unit]
+Description=NGINX Unit
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=forking
+PIDFile=/run/nginx-unit.pid
+ExecStart=/usr/sbin/unitd --control unix:/run/nginx-unit.control.sock --pid /run/nginx-unit.pid
+ExecReload=
+
+[Install]
+WantedBy=multi-user.target

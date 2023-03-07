@@ -1,0 +1,7 @@
+*.xz
+KKnD
+pkg
+src
+*.gz
+chroot
+*.log

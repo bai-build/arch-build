@@ -1,0 +1,30 @@
+pkgbase = something-for-reddit
+	pkgdesc = A Reddit Client For GNOME (with Gtk+ and Python)
+	pkgver = 0.2.2
+	pkgrel = 1
+	url = https://github.com/samdroid-apps/something-for-reddit
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = gnome-common
+	makedepends = intltool
+	makedepends = itstool
+	makedepends = python
+	makedepends = yelp-tools
+	makedepends = sassc
+	depends = desktop-file-utils
+	depends = gobject-introspection
+	depends = gtk3
+	depends = python-gobject
+	depends = python-arrow
+	depends = python-markdown
+	depends = ruby-sass
+	depends = markdown-urlize-git
+	depends = libsoup
+	depends = webkit2gtk
+	conflicts = something-for-reddit-git
+	source = https://github.com/samdroid-apps/something-for-reddit/archive/v0.2.2.tar.gz
+	sha256sums = 55b17db5a7b4b665fd31fc7ab1b730c9c2c062899b227c7aeb4e87a0a58b18ae
+
+pkgname = something-for-reddit
+

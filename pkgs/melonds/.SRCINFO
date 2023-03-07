@@ -1,0 +1,26 @@
+pkgbase = melonds
+	pkgdesc = DS emulator, sorta
+	pkgver = 0.9.5
+	pkgrel = 3
+	url = http://melonds.kuribo64.net/
+	arch = x86_64
+	arch = i686
+	arch = pentium4
+	arch = arm
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	license = GPL3
+	makedepends = git
+	makedepends = cmake
+	makedepends = pkg-config
+	makedepends = extra-cmake-modules
+	depends = libepoxy
+	depends = libslirp
+	depends = qt5-base
+	depends = qt5-multimedia
+	depends = sdl2
+	source = git+https://github.com/Arisotura/melonDS.git#tag=0.9.5
+	sha256sums = SKIP
+
+pkgname = melonds

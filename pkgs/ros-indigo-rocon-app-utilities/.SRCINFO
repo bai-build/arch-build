@@ -1,0 +1,22 @@
+pkgbase = ros-indigo-rocon-app-utilities
+	pkgdesc = ROS - The rocon_app_utilities package.
+	pkgver = 0.7.13
+	pkgrel = 3
+	url = http://wiki.ros.org/rocon_app_utilities
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-indigo-roslint
+	makedepends = ros-indigo-catkin
+	makedepends = python2-catkin-pkg
+	depends = ros-indigo-roslaunch
+	depends = ros-indigo-rocon-uri
+	depends = ros-indigo-rocon-console
+	depends = ros-indigo-rocon-python-utils
+	depends = python2-rospkg
+	source = ros-indigo-rocon-app-utilities-0.7.13-1.tar.gz::https://github.com/yujinrobot-release/rocon_app_platform-release/archive/release/indigo/rocon_app_utilities/0.7.13-1.tar.gz
+	sha256sums = 5937fa772ee9e4d3ae7cc1e312a93d3dd4d6678a6abdc19370e76328b4c7b1ce
+
+pkgname = ros-indigo-rocon-app-utilities
+

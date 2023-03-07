@@ -1,0 +1,21 @@
+pkgbase = kirigami-git
+	pkgdesc = A set of QML components for mobile/desktop convergent applications made by KDE
+	pkgver = v2.2.0.r1515.g07876274
+	pkgrel = 1
+	url = https://quickgit.kde.org/?p=kirigami.git
+	arch = i686
+	arch = x86_64
+	groups = plasma
+	license = LGPL
+	makedepends = extra-cmake-modules
+	makedepends = git
+	makedepends = qt5-svg
+	depends = qt5-quickcontrols2
+	depends = qt5-graphicaleffects
+	provides = kirigami2
+	conflicts = kirigami2
+	source = git+https://invent.kde.org/frameworks/kirigami.git
+	md5sums = SKIP
+
+pkgname = kirigami-git
+

@@ -1,0 +1,27 @@
+pkgbase = felinks
+	pkgdesc = actively maintained version of the elinks text browser
+	pkgver = 0.14.0
+	pkgrel = 1
+	url = http://github.com/rkd77/felinks
+	arch = x86_64
+	arch = i686
+	license = GPL2
+	makedepends = gcc
+	makedepends = make
+	depends = tre
+	depends = brotli
+	depends = libx11
+	depends = openssl
+	depends = gpm
+	depends = zstd
+	depends = libidn
+	depends = expat
+	depends = ncurses
+	depends = lua51
+	conflicts = elinks
+	conflicts = elinks-git
+	source = git+https://github.com/rkd77/felinks#tag=v0.14.0
+	sha256sums = SKIP
+
+pkgname = felinks
+

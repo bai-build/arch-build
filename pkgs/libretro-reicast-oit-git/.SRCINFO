@@ -1,0 +1,20 @@
+pkgbase = libretro-reicast-oit-git
+	pkgdesc = libretro implementation of Reicast Sega Dreamcast Emulator (OIT version)
+	pkgver = r2771.f0be7401
+	pkgrel = 1
+	url = https://github.com/libretro/reicast-emulator
+	arch = any
+	license = GPL2
+	license = LGPL
+	makedepends = git
+	makedepends = mesa
+	depends = alsa-lib
+	depends = libgl
+	depends = glibc
+	depends = gcc-libs
+	provides = libretro-reicast
+	conflicts = libretro-reicast
+	source = git+https://github.com/libretro/reicast-emulator
+	sha512sums = SKIP
+
+pkgname = libretro-reicast-oit-git

@@ -1,0 +1,18 @@
+pkgbase = libvisual-plugins
+	pkgdesc = plugins for libvisual
+	pkgver = 0.4.1
+	pkgrel = 1
+	url = https://sourceforge.net/projects/libvisual/
+	arch = x86_64
+	license = GPL
+	makedepends = mesa
+	makedepends = gtk2
+	depends = libvisual
+	depends = glu
+	depends = alsa-lib
+	depends = jack
+	depends = gdk-pixbuf2
+	source = https://downloads.sourceforge.net/sourceforge/libvisual/libvisual-plugins-0.4.1.tar.bz2
+	sha256sums = dca8512cde37b7691afac05c1a67f4de82a3cfc7b7c5cc35e7d959753b1db107
+
+pkgname = libvisual-plugins

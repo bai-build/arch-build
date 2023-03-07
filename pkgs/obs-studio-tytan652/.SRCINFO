@@ -1,0 +1,75 @@
+pkgbase = obs-studio-tytan652
+	pkgdesc = Free and open source software for video recording and live streaming. With everything except service integrations. Plus V4L2 devices by paths, my bind interface PR, and sometimes backported fixes
+	pkgver = 29.0.2
+	pkgrel = 1
+	url = https://github.com/obsproject/obs-studio
+	arch = x86_64
+	arch = aarch64
+	license = GPL3
+	makedepends = cmake
+	makedepends = git
+	makedepends = libfdk-aac
+	makedepends = swig
+	makedepends = luajit
+	makedepends = sndio
+	makedepends = lsb-release
+	makedepends = asio
+	makedepends = nlohmann-json
+	makedepends = websocketpp
+	makedepends = libajantv2
+	makedepends = python
+	makedepends = cef-minimal-obs=103.0.0_5060_shared_textures_143.2591+g4204d54+chromium_103.0.5060.134_1
+	depends = jack
+	depends = gtk-update-icon-cache
+	depends = x264
+	depends = rnnoise
+	depends = pciutils
+	depends = qt6-svg
+	depends = qt6-wayland
+	depends = libxcomposite
+	depends = pipewire
+	depends = xdg-desktop-portal
+	depends = libxss
+	depends = libxrandr
+	depends = nss
+	depends = at-spi2-core
+	depends = ffmpeg-obs>=5
+	depends = vlc-luajit
+	depends = ftl-sdk
+	depends = mbedtls
+	optdepends = libfdk-aac: FDK AAC codec support
+	optdepends = intel-media-driver: Hardware encoding (>= Broadwell)
+	optdepends = libva-intel-driver: Hardware encoding (<= Haswell)
+	optdepends = libva-mesa-driver: Hardware encoding
+	optdepends = swig: Scripting
+	optdepends = luajit: Lua scripting
+	optdepends = sndio: Sndio input client
+	optdepends = v4l2loopback-dkms: Virtual camera output
+	optdepends = libajantv2: AJA NTV 2 support
+	optdepends = python: Python scripting
+	optdepends = decklink: Blackmagic Design DeckLink support
+	provides = obs-studio=29.0.2
+	provides = obs-vst
+	provides = obs-websocket
+	provides = obs-browser
+	conflicts = obs-studio
+	conflicts = obs-vst
+	conflicts = obs-websocket
+	conflicts = libva-vdpau-driver
+	conflicts = obs-browser
+	conflicts = obs-linuxbrowser
+	options = debug
+	source = obs-studio::git+https://github.com/obsproject/obs-studio.git#tag=29.0.2
+	source = obs-browser::git+https://github.com/obsproject/obs-browser.git
+	source = obs-websocket::git+https://github.com/obsproject/obs-websocket.git
+	source = qr::git+https://github.com/nayuki/QR-Code-generator.git
+	source = bind_iface.patch
+	source = v4l2_by-path.patch
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = 7a0c359d573ccf2951e4b621465338ee235cb7e535725fdb9bc53a7ff779da4e
+	sha256sums = ee54b9c6f7e17fcc62c6afc094e65f18b2e97963c2fe92289b2b91972ac206e5
+
+pkgname = obs-studio-tytan652

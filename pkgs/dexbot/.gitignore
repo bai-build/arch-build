@@ -1,0 +1,5 @@
+DEXBot/
+pkg/
+src/
+*.tar
+*.xz

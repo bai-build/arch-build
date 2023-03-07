@@ -1,0 +1,29 @@
+2019-11-25 Christopher Arndt <aur -at- chrisarndt -dot- de>
+	* 0.9.0.r1897.abdedd52-2
+	Added patch to fix JUCE compilation error with GCC >= 9.x
+	Install VST binary into /usr/lib/vst instead of /usr/lib/lxvst
+
+2018-07-17 Christopher Arndt <aur -at- chrisarndt -dot- de>
+	* 0.9.0.r1897.abdedd52-1
+	Removed obsolete 'prepare' function from PKGBUILD.
+	Removed obsolete dependency on 'steinberg-vst36'.
+	Removed obsolete extra CXXFLAGS.
+	Added dependencies 'curl' 'hicolor-icon-theme' and 'libxinerama'.
+
+2017-07-11 Christopher Arndt <aur -at- chrisarndt -dot- de>
+	* 0.9.0.r1876.927d2ed2-1
+	Added -Wno-error to CXXFLAGS as a workaround for code in JUCE sources
+	causing warnings and compilation failure.
+	Fixed path of JUCE source file due to Introjucer being renamed to Projucer
+
+2016-07-22 Christopher Arndt <aur -at- chrisarndt -dot- de>
+	* 0.8.5.r1458.6dbcd64-1:
+	use steinberg-vst36 AUR package instead of including VST3 SDK in sources
+	Fix compilations error relating to lround function
+
+2015-07-12 Christopher Arndt <aur -at- chrisarndt -dot- de>
+
+	* 0.3.3.r958.0741c59-2:
+	add VST3 SDK to sources, since it can be downloaded from Steinberg's
+	website now without login
+	removed 'unzip' from dependencies accordingly

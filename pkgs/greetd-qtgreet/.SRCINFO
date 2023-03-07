@@ -1,0 +1,18 @@
+pkgbase = greetd-qtgreet
+	pkgdesc = Qt based greeter for greetd
+	pkgver = 1.0.0
+	pkgrel = 4
+	url = https://gitlab.com/marcusbritanicus/QtGreet
+	arch = aarch64
+	arch = x86_64
+	license = GPL3
+	makedepends = cmake
+	makedepends = extra-cmake-modules
+	depends = qt5-base
+	depends = wlroots
+	depends = qt5-wayland
+	depends = greetd
+	source = greetd-qtgreet-1.0.0.bz2::https://gitlab.com/marcusbritanicus/QtGreet/-/archive/v1.0.0/QtGreet-v1.0.0.tar.bz2
+	sha256sums = cc309f5d86477e5d616d9e4df4d172bd7860de6ed242b23a6564e1727b837998
+
+pkgname = greetd-qtgreet

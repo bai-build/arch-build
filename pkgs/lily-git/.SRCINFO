@@ -1,0 +1,19 @@
+pkgbase = lily-git
+	pkgdesc = An interpreted language with a focus on expressiveness and type safety
+	pkgver = git
+	pkgrel = 1
+	url = https://jesserayadkins.github.io/lily/
+	arch = x86_64
+	arch = i686
+	arch = aarch64
+	arch = armv7h
+	license = MIT
+	makedepends = git
+	makedepends = cmake
+	provides = lily
+	conflicts = lily
+	source = git+https://github.com/jesserayadkins/lily.git
+	sha256sums = SKIP
+
+pkgname = lily-git
+

@@ -1,0 +1,38 @@
+pkgbase = multimc5
+	pkgdesc = Minecraft launcher with ability to manage multiple instances.
+	pkgver = 0.6.16
+	pkgrel = 3
+	url = https://multimc.org/
+	install = multimc5.install
+	arch = i686
+	arch = x86_64
+	license = Apache
+	makedepends = cmake
+	makedepends = java-environment>=17
+	makedepends = git
+	depends = qt5-base
+	depends = java-runtime>=17
+	optdepends = visualvm: Profiling support
+	optdepends = xorg-xrandr: for older minecraft versions
+	optdepends = openal: to use system OpenAL libraries
+	optdepends = glfw: to use system GLFW libraries
+	provides = multimc
+	conflicts = multimc
+	source = multimc5::git+https://github.com/MultiMC/Launcher#tag=0.6.16
+	source = libnbtplusplus::git+https://github.com/MultiMC/libnbtplusplus
+	source = quazip::git+https://github.com/MultiMC/quazip
+	source = https://files.multimc.org/downloads/mmc-stable-lin64.tar.gz
+	source = 0001-Readd-lin-system-and-LAUNCHER_LINUX_DATADIR.patch
+	source = fix-jars.patch
+	source = mmc-brand.patch
+	source = multimc.desktop
+	sha512sums = SKIP
+	sha512sums = SKIP
+	sha512sums = SKIP
+	sha512sums = d94f2f689a57a9d88db9d9bed57e1e822868688350dc449b77cf569fb62a98ea625978ee9eeae0200f0274c8b8c2b3f6764ef3091c70c2f979aa87c4f7327214
+	sha512sums = d0e3152b885ec73b019dc0269d46e1ce0c43211bbcf05776a1e97f10fdc29f442930cc2d5144c0f979133e6aec68bf68474b924c746d1fa6b8c7f604af6eb83f
+	sha512sums = df077c24a235117cc391ac515dd1e28c10b2082093c80aac5dcf3d6d8feaf07acacc79bfd5f111e389e7972e6f0a3b6eb217202d13e362219ed22a5437cd49c7
+	sha512sums = 1aeb819e1fc21f887e8f212f44eb22ccad320b9a1783ed9b55b8a2a9875103f079aaeb0a051b811f7ceb0708caf20f3c7b0c4ba21b5bb5dc25b0fec977dfc878
+	sha512sums = a7c4654dd5ee260c25e0eab2dba0d929f09bc38b9af1505408a55058e73eaf35986b4a0e6de7e1893ebf860c472df984011340b3989f996a9d170cbc37dfd691
+
+pkgname = multimc5

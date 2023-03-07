@@ -1,0 +1,20 @@
+pkgbase = gepetto-viewer-corba-git
+	pkgdesc = Graphical Interface for Pinocchio and HPP.
+	pkgver = 5.5.1.r648.a4cc0c8
+	pkgrel = 1
+	url = https://github.com/gepetto/gepetto-viewer-corba
+	arch = i686
+	arch = x86_64
+	license = BSD
+	makedepends = cmake
+	makedepends = boost
+	makedepends = git
+	depends = gepetto-viewer-git
+	depends = python-omniorbpy
+	provides = gepetto-viewer-corba
+	conflicts = gepetto-viewer-corba
+	source = gepetto-viewer-corba::git://github.com/gepetto/gepetto-viewer-corba.git
+	sha256sums = SKIP
+
+pkgname = gepetto-viewer-corba-git
+

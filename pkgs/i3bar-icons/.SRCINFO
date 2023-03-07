@@ -1,0 +1,24 @@
+pkgbase = i3bar-icons
+	pkgdesc = A version of i3bar which can display xbm icons
+	pkgver = 4.11
+	pkgrel = 1
+	url = https://github.com/ashinkarov/i3-extras
+	install = i3bar-icons.install
+	arch = i686
+	arch = x86_64
+	license = BSD
+	makedepends = pkgconfig
+	depends = libxcursor
+	depends = xcb-util-keysyms
+	depends = xcb-util-image
+	depends = libev
+	depends = yajl
+	depends = pango
+	depends = i3-wm>=4.11
+	source = https://raw.githubusercontent.com/ashinkarov/i3-extras/master/i3bar-xbm-icons.patch
+	source = http://i3wm.org/downloads/i3-4.11.tar.bz2
+	md5sums = SKIP
+	md5sums = 6b003955333a90cb831516f8dbf6e57d
+
+pkgname = i3bar-icons
+

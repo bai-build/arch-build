@@ -1,0 +1,4 @@
+pkgbuild
+*.log
+oidc-agent-*
+!oidc-agent-*.patch

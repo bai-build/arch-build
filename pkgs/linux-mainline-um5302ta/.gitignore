@@ -1,0 +1,6 @@
+/*
+!/.gitignore
+!/PKGBUILD
+!/.SRCINFO
+!/config
+!/cs35l42-hda-no-acpi-dsd-csc3551.patch

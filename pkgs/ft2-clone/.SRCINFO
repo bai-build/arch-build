@@ -1,0 +1,16 @@
+pkgbase = ft2-clone
+	pkgdesc = portable Fasttracker II clone written in C
+	pkgver = 1.60
+	pkgrel = 1
+	url = https://16-bits.org/ft2.php
+	arch = x86_64
+	license = BSD
+	makedepends = libicns
+	depends = alsa-lib
+	depends = sdl2
+	source = ft2-clone-1.60.tar.gz::https://github.com/8bitbubsy/ft2-clone/archive/v1.60.tar.gz
+	source = ft2-clone.desktop
+	sha256sums = d1cd23aea1518057b02aa333c1083540b7eddcd47e96a37758d9b974659d28b9
+	sha256sums = 6b0ff91766a04043ba6da99c88e1d529ecca9a9e296db4876df1a216136c489a
+
+pkgname = ft2-clone

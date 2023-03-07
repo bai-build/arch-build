@@ -1,0 +1,30 @@
+pkgbase = dotnet-cli-git
+	pkgdesc = The .NET Core command-line (CLI) tools, used for building .NET Core apps and libraries through your development flow (compiling, NuGet package management, running, testing, ...)
+	pkgver = 2.0.0_preview2_006127
+	pkgrel = 1
+	url = https://github.com/dotnet/cli
+	arch = x86_64
+	license = MIT
+	makedepends = cmake
+	makedepends = make
+	makedepends = clang
+	makedepends = llvm
+	makedepends = gettext
+	depends = lldb
+	depends = libunwind
+	depends = icu
+	depends = lttng-ust
+	depends = openssl
+	depends = curl
+	provides = dotnet
+	noextract = dotnet-cli-git-2.0.0_preview2_006127.tar.gz
+	options = staticlibs
+	source = corefx-latest.zip::https://github.com/dotnet/corefx/archive/master.zip
+	source = dotnet-cli-git-2.0.0_preview2_006127.tar.gz::https://dotnetcli.blob.core.windows.net/dotnet/Sdk/master/dotnet-dev-linux-x64.latest.tar.gz
+	source = libcurl_openssl-1_0.patch
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = 90bc8e1cc9c89fc94ec6a0264200e297e00371136f3b574eccfc077d40d3746d
+
+pkgname = dotnet-cli-git
+

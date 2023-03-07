@@ -1,0 +1,18 @@
+pkgbase = rime-data
+	pkgdesc = Rime schema repository from plum
+	pkgver = r111.397d601
+	pkgrel = 1
+	epoch = 1
+	url = https://github.com/rime/plum/
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	makedepends = librime
+	provides = librime-data
+	provides = brise
+	conflicts = brise
+	source = git+https://github.com/rime/plum.git
+	sha512sums = SKIP
+
+pkgname = rime-data
+

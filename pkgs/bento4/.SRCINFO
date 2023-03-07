@@ -1,0 +1,19 @@
+pkgbase = bento4
+	pkgdesc = C++ class library and tools designed to read and write ISO-MP4 files
+	pkgver = 1.6.0.639
+	pkgrel = 1
+	url = https://www.bento4.com/
+	arch = i686
+	arch = x86_64
+	arch = arm
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	license = GPL
+	makedepends = cmake
+	optdepends = python
+	source = http://zebulon.bok.net/Bento4/source/Bento4-SRC-1-6-0-639.zip
+	sha1sums = d3351ffb425aadc698227ba84f5ec3401cad795a
+
+pkgname = bento4
+

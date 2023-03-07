@@ -1,0 +1,15 @@
+[Unit]
+Description=oVirt Guest Agent
+Wants=qemu-ga.service
+After=qemu-ga.service
+
+[Service]
+Type=simple
+PIDFile=/run/ovirtagent/ovirt-guest-agent.pid
+User=ovirtagent
+Group=ovirtagent
+ExecStartPre=/usr/bin/modprobe virtio_console
+ExecStart=/usr/bin/python2 /usr/share/ovirt-guest-agent/ovirt-guest-agent.py -p /run/ovirtagent/ovirt-guest-agent.pid
+
+[Install]
+WantedBy=multi-user.target

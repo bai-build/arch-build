@@ -1,0 +1,53 @@
+pkgbase = nginx-rtmp
+	pkgdesc = Lightweight HTTP server and IMAP/POP3 proxy server
+	pkgver = 1.18.0
+	pkgrel = 3
+	url = https://nginx-rtmp.blogspot.com/
+	install = nginx.install
+	arch = x86_64
+	license = custom
+	checkdepends = perl
+	checkdepends = perl-gd
+	checkdepends = perl-io-socket-ssl
+	checkdepends = perl-fcgi
+	checkdepends = perl-cache-memcached
+	checkdepends = memcached
+	checkdepends = ffmpeg
+	checkdepends = inetutils
+	makedepends = mercurial
+	depends = pcre
+	depends = zlib
+	depends = openssl
+	depends = geoip
+	depends = mailcap
+	provides = nginx
+	conflicts = nginx
+	backup = etc/nginx/fastcgi.conf
+	backup = etc/nginx/fastcgi_params
+	backup = etc/nginx/koi-win
+	backup = etc/nginx/koi-utf
+	backup = etc/nginx/nginx.conf
+	backup = etc/nginx/scgi_params
+	backup = etc/nginx/uwsgi_params
+	backup = etc/nginx/win-utf
+	backup = etc/logrotate.d/nginx
+	source = https://nginx.org/download/nginx-1.18.0.tar.gz
+	source = https://nginx.org/download/nginx-1.18.0.tar.gz.asc
+	source = hg+http://hg.nginx.org/nginx-tests#revision=c1d167a13c24
+	source = https://github.com/arut/nginx-rtmp-module/archive/v1.2.1.tar.gz
+	source = service
+	source = logrotate
+	validpgpkeys = B0F4253373F8F6F510D42178520A9993A1C052F8
+	sha256sums = 4c373e7ab5bf91d34a4f11a0c9496561061ba5eee6020db272a17a7228d35f99
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = 87aa597400b0b5a05274ee2d23d8cb8224e12686227a0abe31d783b3a645ea37
+	sha256sums = 113bb2c530afd7f81ebccb42e6fa293fd87be2d87c99a32623097c6b97157297
+	sha256sums = 06ebe161af3e761f2e2e35a67c6c0af27bf61aea7cd4ba8b28372ced5e3b3175
+
+pkgname = nginx-rtmp
+
+pkgname = nginx-rtmp-src
+	pkgdesc = Source code of nginx 1.18.0, useful for building modules
+	depends = 
+

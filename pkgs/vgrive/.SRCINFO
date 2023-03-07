@@ -1,0 +1,20 @@
+pkgbase = vgrive
+	pkgdesc = Google Drive client made in Vala
+	pkgver = 1.6.1
+	pkgrel = 6
+	url = https://github.com/bcedu/VGrive
+	arch = x86_64
+	license = GPL3
+	makedepends = meson
+	makedepends = vala
+	makedepends = wayland-protocols
+	depends = gtk3
+	depends = granite
+	depends = libappindicator-gtk3
+	depends = libsoup
+	source = vgrive-1.6.1.tar.gz::https://github.com/bcedu/VGrive/archive/1.6.1.tar.gz
+	source = https://github.com/bcedu/VGrive/pull/116.patch
+	sha256sums = f125ef74ce1d53517cc45d69716bb9668847d5c406096306aedf2a1178b4bfde
+	sha256sums = 1210228c34d35b3b9464df735464c17124fa9d8bb693ccb708370a0bf8b14735
+
+pkgname = vgrive

@@ -1,0 +1,9 @@
+autowaf/
+serd/
+src/
+pkg/
+serd-git-*.pkg.tar.xz
+serd-git-*.pkg.tar.zst
+serd-git-*.src.tar.gz
+.AURINFO
+

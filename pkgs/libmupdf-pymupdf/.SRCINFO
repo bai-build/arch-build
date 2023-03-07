@@ -1,0 +1,32 @@
+pkgbase = libmupdf-pymupdf
+	pkgdesc = Library for Lightweight PDF and XPS viewer with patch to build PyMuPDF
+	pkgver = 1.18.0
+	pkgrel = 1
+	url = https://mupdf.com/
+	arch = x86_64
+	license = AGPL3
+	makedepends = desktop-file-utils
+	makedepends = freetype2
+	makedepends = freeglut
+	makedepends = glu
+	makedepends = harfbuzz
+	makedepends = jbig2dec
+	makedepends = libjpeg
+	makedepends = mesa-libgl
+	makedepends = openjpeg2
+	makedepends = libxext
+	makedepends = gumbo-parser
+	provides = libmupdf=1.18.0
+	conflicts = libmupdf
+	options = staticlibs
+	source = https://mupdf.com/downloads/archive/mupdf-1.18.0-source.tar.xz
+	source = 0002-pymupdf.patch
+	source = mupdf.desktop
+	source = mupdf.xpm
+	sha256sums = 592d4f6c0fba41bb954eb1a41616661b62b134d5b383e33bd45a081af5d4a59a
+	sha256sums = 3222606223a0d982a453a86b00d1bfe614961009ecc91ded5d00386d14c64d69
+	sha256sums = ccff66979249bd4ab4ba8918660f194eb90eb0ae231b16e36a6cecdcf471883f
+	sha256sums = a435f44425f5432c074dee745d8fbaeb879038ec1f1ec64f037c74662f09aca8
+
+pkgname = libmupdf-pymupdf
+

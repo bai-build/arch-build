@@ -1,0 +1,14 @@
+pkgbase = sinit
+	pkgdesc = Suckless init
+	pkgver = 1.1
+	pkgrel = 3
+	url = https://core.suckless.org/sinit/
+	install = sinit.install
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = git
+	source = sinit-1.1::git+https://git.suckless.org/sinit
+	md5sums = SKIP
+
+pkgname = sinit

@@ -1,0 +1,30 @@
+pkgbase = dosbox-ex-svn
+	pkgdesc = DOSBox in both 32 and 64bit (with No-splash, 3DFX Glide, Fluidsynth, OpenGL shaders, ImgMake and MUNT-32 patches).
+	pkgver = 0.74.r4146
+	pkgrel = 1
+	url = http://dosbox.sourceforge.net/
+	arch = x86_64
+	license = CUSTOM
+	license = GPL2
+	makedepends = subversion
+	depends = alsa-lib
+	depends = libgl
+	depends = libpng
+	depends = mesa
+	depends = sdl_net
+	depends = sdl_sound
+	depends = munt
+	depends = lib32-fluidsynth
+	depends = fluidsynth
+	optdepends = lib32-munt
+	provides = dosbox
+	conflicts = dosbox
+	conflicts = dosbox-git
+	conflicts = dosbox-svn
+	source = dosbox-svn::svn+https://svn.code.sf.net/p/dosbox/code-0/dosbox/trunk#revision=4146
+	source = patches.tgz
+	md5sums = SKIP
+	md5sums = SKIP
+
+pkgname = dosbox-ex-svn
+

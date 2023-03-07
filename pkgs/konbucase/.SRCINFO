@@ -1,0 +1,20 @@
+pkgbase = konbucase
+	pkgdesc = Convert case of your text
+	pkgver = 4.0.0
+	pkgrel = 1
+	url = https://github.com/ryonakano/konbucase
+	arch = x86_64
+	arch = aarch64
+	license = GPL3
+	makedepends = git
+	makedepends = meson
+	makedepends = vala
+	depends = granite7-git
+	depends = gtksourceview5
+	depends = libhandy
+	source = konbucase-4.0.0.tar.gz::https://github.com/ryonakano/konbucase/archive/4.0.0.tar.gz
+	source = git+https://github.com/ryonakano/chcase#commit=bb7ab10064056177f617246b3159a54386760c4f
+	sha256sums = 3baa6e18160edf8edb08326931e8d0abf203e4c80f6df90e1d645e7b8eb572ed
+	sha256sums = SKIP
+
+pkgname = konbucase

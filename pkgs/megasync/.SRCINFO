@@ -1,0 +1,37 @@
+pkgbase = megasync
+	pkgdesc = Easy automated syncing between your computers and your MEGA cloud drive
+	pkgver = 4.7.3.0
+	pkgrel = 1
+	url = https://github.com/meganz/MEGAsync
+	arch = i686
+	arch = x86_64
+	license = custom:MEGA LIMITED CODE REVIEW LICENCE
+	makedepends = qt5-tools
+	makedepends = swig
+	makedepends = doxygen
+	makedepends = lsb-release
+	makedepends = git
+	depends = c-ares
+	depends = crypto++
+	depends = libsodium
+	depends = hicolor-icon-theme
+	depends = libuv
+	depends = qt5-svg
+	depends = qt5-x11extras
+	depends = libmediainfo
+	depends = libraw
+	depends = qt5-base
+	depends = ffmpeg
+	depends = libpdfium
+	depends = freeimage
+	depends = libudev.so
+	source = git+https://github.com/meganz/MEGAsync.git#tag=v4.7.3.0_Linux
+	source = meganz-sdk::git+https://github.com/meganz/sdk.git
+	source = pdfium.patch
+	source = ffmpeg.patch
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = bdad237f67d772789bf6e6835108827201296fc5cf793d28d94af8a1b04e56c9
+	sha256sums = 939a46fb0c54f900156e9e68ec4369926e9610b1ca6e9fd6ca09e538fbb84688
+
+pkgname = megasync

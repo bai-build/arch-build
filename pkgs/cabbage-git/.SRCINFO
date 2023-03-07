@@ -1,0 +1,37 @@
+pkgbase = cabbage-git
+	pkgdesc = A framework for audio software development
+	pkgver = 2.0.03r1268
+	pkgrel = 1
+	url = http://cabbageaudio.com/
+	arch = x86_64
+	license = GPLv3
+	makedepends = freeglut
+	makedepends = curl
+	makedepends = jack
+	makedepends = libxcomposite
+	makedepends = libxrandr
+	makedepends = libxcursor
+	makedepends = libx11
+	makedepends = libxinerama
+	makedepends = mesa
+	makedepends = gtk3
+	makedepends = vim
+	makedepends = dos2unix
+	depends = csound
+	depends = steinberg-vst36
+	depends = webkit2gtk
+	provides = cabbage
+	conflicts = cabbage
+	source = git+https://github.com/rorywalsh/cabbage.git#branch=master
+	source = git+https://github.com/WeAreROLI/JUCE.git#tag=5.3.2
+	source = cabbage.png
+	source = Cabbage.desktop
+	source = CabbageLite.desktop
+	md5sums = SKIP
+	md5sums = SKIP
+	md5sums = c3c8e35dd46c86f22a3565aa4dd828a8
+	md5sums = 35cfc89844c90769f4dc4f8309b340b1
+	md5sums = c39a85709e31e03a0850f2e324a4faea
+
+pkgname = cabbage-git
+

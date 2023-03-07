@@ -1,0 +1,13 @@
+post_install() {
+        echo "==> ATTENTION! The osvr directory does NOT need to be copied into the SteamVR drivers directory anymore"
+        echo "==> The /usr/lib/openvr/osvr/bin/linux64/driver_osvr.so is now registered by \"make install\" while building the package"
+        echo "==> If the symlink or directory ~/.local/share/Steam/SteamApps/common/SteamVR/drivers/osvr exists, please remove it."
+}
+
+post_upgrade() {
+  post_install
+}
+
+post_remove() {
+  post_install
+}

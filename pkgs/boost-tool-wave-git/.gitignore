@@ -1,0 +1,6 @@
+pkg
+src
+*.pkg.*
+wave
+wave.git
+LICENSE_1_0.txt

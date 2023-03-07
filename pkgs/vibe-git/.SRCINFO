@@ -1,0 +1,33 @@
+pkgbase = vibe-git
+	pkgdesc = A collection of QML plugins used throughout Liri
+	pkgver = 20180412.231.d522045
+	pkgrel = 1
+	url = https://liri.io
+	arch = i686
+	arch = x86_64
+	arch = armv6h
+	arch = armv7h
+	groups = liri-git
+	license = LGPL3
+	makedepends = git
+	makedepends = liri-qbs-shared-git
+	depends = qt5-base
+	depends = qt5-declarative
+	depends = qt5-tools
+	depends = solid
+	depends = networkmanager-qt
+	depends = modemmanager-qt
+	depends = pulseaudio
+	depends = polkit-qt5
+	depends = fluid-git
+	depends = libliri-git
+	provides = vibe
+	conflicts = vibe
+	replaces = vibe
+	options = debug
+	options = !strip
+	source = vibe::git://github.com/lirios/vibe.git#branch=develop
+	md5sums = SKIP
+
+pkgname = vibe-git
+

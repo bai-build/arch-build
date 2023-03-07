@@ -1,0 +1,23 @@
+pkgbase = kcalcore-git
+	pkgdesc = The KDE calendar access library
+	pkgver = r1055.bd0bbc9ff
+	pkgrel = 1
+	url = https://community.kde.org/Frameworks
+	arch = i686
+	arch = x86_64
+	groups = kf5
+	license = LGPL
+	makedepends = extra-cmake-modules
+	makedepends = doxygen
+	makedepends = git
+	makedepends = qt5-tools
+	makedepends = qt5-doc
+	depends = libical
+	depends = qt5-base
+	provides = kcalcore
+	conflicts = kcalcore
+	source = git+https://github.com/KDE/kcalcore.git
+	sha256sums = SKIP
+
+pkgname = kcalcore-git
+

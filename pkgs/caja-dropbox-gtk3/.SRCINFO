@@ -1,0 +1,26 @@
+pkgbase = caja-dropbox-gtk3
+	pkgdesc = Dropbox for Linux - Caja (GTK3 version) extension
+	pkgver = 1.18.0
+	pkgrel = 1
+	url = https://github.com/mate-desktop/caja-dropbox
+	arch = i686
+	arch = x86_64
+	license = custom:CC-BY-ND-3
+	license = GPL
+	makedepends = mate-common
+	makedepends = python2-docutils
+	depends = caja-gtk3
+	depends = glib2
+	depends = libnotify
+	depends = polkit
+	depends = procps
+	depends = pygtk
+	depends = xdg-utils
+	optdepends = dropbox: Dropbox support
+	conflicts = caja-dropbox
+	options = !emptydirs
+	source = https://github.com/mate-desktop/caja-dropbox/archive/v1.18.0/caja-dropbox-gtk3-1.18.0.tar.gz
+	sha1sums = f58ca218d99b55e07950b7d5b5754d2bccaa7384
+
+pkgname = caja-dropbox-gtk3
+

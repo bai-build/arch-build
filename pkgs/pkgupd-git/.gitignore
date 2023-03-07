@@ -1,0 +1,10 @@
+pkgupd/*
+pkg/*
+src/*
+*.tar.gz
+*.tar.xz
+*.tar.bz2
+*.tar.zst
+*.tar.zstd
+*.zip
+*.swp

@@ -1,0 +1,15 @@
+--- a/src/evdev-mt-touchpad.c	2018-07-25 23:27:12.719986275 +0100
++++ b/src/evdev-mt-touchpad.c	2018-07-25 23:27:24.227122395 +0100
+@@ -3190,9 +3190,9 @@
+ 	else
+ 		ymargin = ay->resolution/4;
+ 
+-	tp->hysteresis.margin.x = xmargin;
+-	tp->hysteresis.margin.y = ymargin;
+-	tp->hysteresis.enabled = (ax->fuzz || ay->fuzz);
++	tp->hysteresis.margin.x = 0;
++	tp->hysteresis.margin.y = 0;
++	tp->hysteresis.enabled = false;
+ 	if (tp->hysteresis.enabled)
+ 		evdev_log_debug(tp->device,
+ 				"hysteresis enabled. "

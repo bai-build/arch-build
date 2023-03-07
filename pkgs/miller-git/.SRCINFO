@@ -1,0 +1,25 @@
+pkgbase = miller-git
+	pkgdesc = sed, awk, cut, join, and sort for name-indexed data such as CSV and tabular JSON.
+	pkgver = 5.10.2
+	pkgrel = 1
+	url = https://github.com/johnkerl/miller
+	arch = x86_64
+	arch = i686
+	license = MIT
+	makedepends = make
+	makedepends = gcc
+	makedepends = flex
+	makedepends = ctags
+	makedepends = valgrind
+	makedepends = asciidoc
+	makedepends = autoconf
+	makedepends = git
+	depends = glibc
+	provides = miller=5.10.2
+	conflicts = miller
+	source = git://github.com/johnkerl/miller
+	md5sums = SKIP
+	sha256sums = SKIP
+
+pkgname = miller-git
+

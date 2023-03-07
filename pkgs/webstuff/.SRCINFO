@@ -1,0 +1,12 @@
+pkgbase = webstuff
+	pkgdesc = Lightweight C Library for web-applications development
+	pkgver = 0.7.18
+	pkgrel = 9
+	url = http://www.lowenware.com/
+	arch = any
+	license = BSD
+	source = http://www.lowenware.com/download/webstuff/webstuff-0.7.18.tar.gz
+	md5sums = c65e93792af6d6cfc55ba2044cea788f
+
+pkgname = webstuff
+

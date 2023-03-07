@@ -1,0 +1,28 @@
+pkgbase = resvg-git
+	pkgdesc = SVG rendering library and CLI
+	pkgver = 0.9.0.r11.ge207cc3
+	pkgrel = 1
+	url = https://github.com/RazrFalcon/resvg
+	arch = i686
+	arch = x86_64
+	license = MPL2
+	makedepends = cargo
+	makedepends = qt5-base
+	makedepends = qt5-tools
+	makedepends = kio
+	makedepends = cairo
+	makedepends = pango
+	makedepends = git
+	makedepends = cmake
+	makedepends = extra-cmake-modules
+	depends = gdk-pixbuf2
+	optdepends = qt5-base: For the Qt backend
+	optdepends = cairo: For the cairo backend
+	optdepends = kio: For the dolphin thumbnailer
+	provides = resvg
+	conflicts = resvg
+	source = git+https://github.com/RazrFalcon/resvg.git#branch=master
+	sha256sums = SKIP
+
+pkgname = resvg-git
+

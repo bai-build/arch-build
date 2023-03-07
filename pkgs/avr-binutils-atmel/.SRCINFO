@@ -1,0 +1,19 @@
+pkgbase = avr-binutils-atmel
+	pkgdesc = A set of programs to assemble and manipulate binary and object files for the AVR architecture (from Atmel)
+	pkgver = 2.26
+	pkgrel = 2
+	url = http://www.atmel.com/tools/ATMELAVRTOOLCHAINFORLINUX.aspx
+	arch = x86_64
+	license = GPL
+	depends = glibc>=2.17
+	depends = zlib
+	provides = avr-binutils
+	conflicts = avr-binutils
+	options = staticlibs
+	options = !distcc
+	options = !ccache
+	source = avr-binutils-v3.6.1.tar.bz2::http://distribute.atmel.no/tools/opensource/Atmel-AVR-GNU-Toolchain/3.6.1/avr-binutils.tar.bz2
+	md5sums = a4def5b7f4923a5e61d0c34e33165434
+
+pkgname = avr-binutils-atmel
+

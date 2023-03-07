@@ -1,0 +1,7 @@
+cadabra2-git
+pkg
+src
+cadabra2-git-*.pkg.tar.xz
+*.bak
+*.log
+*.sh

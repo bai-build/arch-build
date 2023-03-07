@@ -1,0 +1,21 @@
+pkgbase = sugar-datastore
+	pkgdesc = Backend of the Sugar Journal
+	pkgver = 0.110.0
+	pkgrel = 1
+	url = http://www.sugarlabs.org/
+	arch = any
+	groups = sugar-desktop
+	groups = glucose
+	license = GPL
+	makedepends = gcc
+	depends = python2
+	depends = python2-dbus
+	depends = python2-gobject
+	depends = sugar-base
+	depends = python2-xapian
+	depends = python2-cjson
+	source = https://github.com/sugarlabs/sugar-datastore/archive/v0.110.0.tar.gz
+	md5sums = 444dc5f6148190e12696353fd451674e
+
+pkgname = sugar-datastore
+

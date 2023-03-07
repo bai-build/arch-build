@@ -1,0 +1,25 @@
+From 449ef842927c0540d3f4c71b994e7d58fe16b199 Mon Sep 17 00:00:00 2001
+From: howetuft <howetuft@gmail.com>
+Date: Sat, 21 May 2022 18:19:34 +0200
+Subject: [PATCH 08/13] silence-preprocessing
+
+---
+ cmake/KernelPreprocess.cmake | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/cmake/KernelPreprocess.cmake b/cmake/KernelPreprocess.cmake
+index d877f0ef3..3d71d4a57 100644
+--- a/cmake/KernelPreprocess.cmake
++++ b/cmake/KernelPreprocess.cmake
+@@ -23,7 +23,7 @@
+ ################################################################################
+ 
+ FUNCTION(PreprocessOCLKernel NAMESPACE KERNEL SRC DST)
+-	MESSAGE(STATUS "Preprocessing OpenCL kernel: " ${SRC} " => " ${DST} )
++	#MESSAGE(STATUS "Preprocessing OpenCL kernel: " ${SRC} " => " ${DST} )
+ 
+ 	add_custom_command(
+ 		OUTPUT ${DST}
+-- 
+2.38.1
+

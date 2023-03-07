@@ -1,0 +1,14 @@
+#!/bin/bash
+
+post_common() {
+  systemd-sysusers
+}
+
+post_install() {
+  systemd-machine-id-setup
+
+  echo ":: needs /sys/fs/cgroup/systemd manually mounted to systemd-nspawn to work"
+  echo ":: also you may need to install eudev"
+}
+
+# vim:set ts=2 sw=2 et:

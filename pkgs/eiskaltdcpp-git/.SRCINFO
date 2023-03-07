@@ -1,0 +1,93 @@
+pkgbase = eiskaltdcpp-git
+	pkgdesc = EiskaltDC++: DC and ADC client based on dcpp core. (GIT version)
+	pkgver = 2.4.2.15.g10b1a9b6
+	pkgrel = 1
+	url = https://github.com/eiskaltdcpp/eiskaltdcpp
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	makedepends = cmake
+	makedepends = lua
+	makedepends = libidn2
+	makedepends = aspell
+	makedepends = attr
+	makedepends = wget
+	makedepends = boost
+	makedepends = pcre
+	makedepends = bash
+	makedepends = miniupnpc
+	makedepends = jsoncpp
+	makedepends = qt5-multimedia
+	makedepends = qt5-tools
+	makedepends = qt5-script
+	makedepends = qt5-xmlpatterns
+	makedepends = gtk3
+	makedepends = libnotify
+	makedepends = perl-json-rpc
+	conflicts = eiskaltdcpp
+	options = debug
+	source = git+https://github.com/eiskaltdcpp/eiskaltdcpp.git
+	sha256sums = SKIP
+
+pkgname = eiskaltdcpp-core-git
+	pkgdesc = EiskaltDC++ Core. (GIT Version)
+	depends = openssl
+	depends = lua
+	depends = libidn2
+	depends = attr
+	depends = boost-libs
+	depends = miniupnpc
+	depends = pcre
+	provides = eiskaltdcpp-core=2.4.2.15.g10b1a9b6
+	provides = eiskaltdcpp-git
+	conflicts = eiskaltdcpp-core
+
+pkgname = eiskaltdcpp-qt-git
+	pkgdesc = Qt5-based DC and ADC client for EiskaltDC++ core. (GIT Version)
+	depends = eiskaltdcpp-core-git=2.4.2.15.g10b1a9b6
+	depends = eiskaltdcpp-data-git=2.4.2.15.g10b1a9b6
+	depends = aspell
+	depends = qt5-multimedia
+	depends = desktop-file-utils
+	optdepends = php: needed for some scripts
+	provides = eiskaltdcpp-qt
+	conflicts = eiskaltdcpp-qt
+	conflicts = eiskaltdcpp-qt4
+	conflicts = eiskaltdcpp-qt5
+
+pkgname = eiskaltdcpp-gtk-git
+	pkgdesc = Gtk-based DC and ADC client for EiskaltDC++ core. (GIT Version)
+	depends = eiskaltdcpp-core-git=2.4.2.15.g10b1a9b6
+	depends = eiskaltdcpp-data-git=2.4.2.15.g10b1a9b6
+	depends = gtk3
+	depends = libnotify
+	provides = eiskaltdcpp-gtk
+	conflicts = eiskaltdcpp-gtk
+	conflicts = eiskaltdcpp-gtk2
+	conflicts = eiskaltdcpp-gtk3
+
+pkgname = eiskaltdcpp-daemon-git
+	pkgdesc = DC and ADC daemon for EiskaltDC++ core. (GIT Version)
+	depends = eiskaltdcpp-core-git=2.4.2.15.g10b1a9b6
+	depends = jsoncpp
+	provides = eiskaltdcpp-daemon
+	conflicts = eiskaltdcpp-daemon
+
+pkgname = eiskaltdcpp-cli-git
+	pkgdesc = CLI interface for EiskaltDC++ Daemon. (GIT Version)
+	arch = any
+	depends = eiskaltdcpp-daemon-git=2.4.2.15.g10b1a9b6
+	depends = perl-json
+	depends = perl-json-rpc
+	provides = eiskaltdcpp-cli
+	conflicts = eiskaltdcpp-cli
+
+pkgname = eiskaltdcpp-data-git
+	pkgdesc = EiskaltDC++ common data files. (GIT Version)
+	arch = any
+	depends = bash
+	depends = hicolor-icon-theme
+	optdepends = php: needed for some scripts
+	optdepends = python: test http server
+	provides = eiskaltdcpp-data
+	conflicts = eiskaltdcpp-data

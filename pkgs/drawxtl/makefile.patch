@@ -1,0 +1,11 @@
+--- Makefile.orig	2015-12-22 13:37:43.648724586 +0100
++++ Makefile	2015-12-22 13:38:53.932055490 +0100
+@@ -56,7 +56,7 @@
+ 		-lfltk \
+ # -lglut # only needed with old versions of fltk before 1.1.8
+ #       -lXi -lgdkglext-x11-1.0a  # Fedora Core 2 needs these libraries
+-  LINKFLTKGL  = $(libdir)libfltk.a $(libdir)libfltk_gl.a
++  LINKFLTKGL  = -lfltk_gl -lfltk
+ 
+ # The extension to use for executables...
+   EXEEXT          =

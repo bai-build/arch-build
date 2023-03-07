@@ -1,0 +1,15 @@
+pkgbase = obs-media-controls
+	pkgdesc = Add Media Controls Dock to OBS
+	pkgver = 0.3.6
+	pkgrel = 1
+	url = https://obsproject.com/forum/resources/media-controls.1032/
+	arch = x86_64
+	arch = aarch64
+	license = GPL2
+	makedepends = cmake
+	makedepends = git
+	depends = obs-studio>=28
+	source = obs-media-controls::git+https://github.com/exeldro/obs-media-controls#commit=b37f7ab24dcf40701e1f538c14f608a5a0db868b
+	sha256sums = SKIP
+
+pkgname = obs-media-controls

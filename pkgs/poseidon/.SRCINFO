@@ -1,0 +1,22 @@
+pkgbase = poseidon
+	pkgdesc = Fast, minimal and lightweight web browser
+	pkgver = 0.7.3
+	pkgrel = 1
+	url = https://github.com/sidus-dev/poseidon
+	arch = x86_64
+	arch = i686
+	license = GPL3
+	depends = gtksourceview3
+	depends = python-decorator
+	depends = python-gobject
+	depends = python-pillow
+	depends = python-pyopenssl
+	depends = python-pysocks
+	depends = python-requests
+	depends = webkit2gtk
+	optdepends = vte3: embedded terminal
+	source = poseidon-0.7.3-1.tar.gz::https://github.com/sidus-dev/poseidon/archive/0.7.3-1.tar.gz
+	sha256sums = 706aad82e17be5cafb79f92fe3fe8f62f4df8cd107bf147df39b0b149346e3ba
+
+pkgname = poseidon
+

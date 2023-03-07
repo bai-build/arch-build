@@ -1,0 +1,34 @@
+pkgbase = qwikaccess-git
+	pkgdesc = A point and click Qt GUI for scripts we use frequently.
+	pkgver = 0.0.1.r65.ae84897
+	pkgrel = 1
+	url = https://github.com/librewish/qwikaccess
+	install = qwikaccess.install
+	arch = any
+	license = GPL3
+	makedepends = git
+	depends = qt5-base
+	depends = polkit
+	depends = libnotify
+	depends = libpulse
+	depends = brightnessctl
+	depends = inotify-tools
+	depends = ffmpeg
+	optdepends = xorg-xrandr: for screen rotation
+	optdepends = xorg-xinput: for autorotation
+	optdepends = iio-sensor-proxy: for autorotation
+	optdepends = redshift: for night mode
+	optdepends = xdg-utils: for lock screen (xdg-screensaver lock)
+	optdepends = systemd: for leave commands and gps services
+	optdepends = wmctrl: for screencam ffplay to be on above all windows
+	optdepends = grim: for wayland screenshot
+	optdepends = wf-recorder: for wayland screencapture
+	optdepends = grep: used in scripts
+	optdepends = gawk: used in scripts
+	provides = qwikaccess
+	conflicts = qwikaccess
+	source = git+https://github.com/librewish/qwikaccess.git
+	md5sums = SKIP
+
+pkgname = qwikaccess-git
+

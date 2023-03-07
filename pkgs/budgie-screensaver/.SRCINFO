@@ -1,0 +1,22 @@
+pkgbase = budgie-screensaver
+	pkgdesc = Ubuntu Budgie's fork of GNOME's legacy screensaver
+	pkgver = 3.6.0.r36.g1ef29c0
+	pkgrel = 2
+	url = https://github.com/getsolus/budgie-screensaver
+	arch = x86_64
+	license = GPL
+	makedepends = intltool
+	makedepends = gnome-common
+	depends = dbus-glib
+	depends = libgnomekbd
+	depends = gnome-desktop
+	optdepends = gnome-backgrounds: default background
+	provides = gnome-screensaver
+	conflicts = gnome-screensaver
+	backup = etc/pam.d/gnome-screensaver
+	source = budgie-screensaver::git+https://github.com/getsolus/budgie-screensaver
+	source = gnome-screensaver.pam
+	sha256sums = SKIP
+	sha256sums = b6ea9e2eb586d94bcabb617a8f1c2958111df87afdbb51f645882bccdc15cbda
+
+pkgname = budgie-screensaver

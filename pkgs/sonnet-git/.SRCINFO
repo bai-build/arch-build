@@ -1,0 +1,23 @@
+pkgbase = sonnet-git
+	pkgdesc = Spelling framework for Qt
+	pkgver = v5.90.0.671.e9fa9bc
+	pkgrel = 1
+	url = https://invent.kde.org/frameworks/sonnet
+	arch = x86_64
+	groups = kf5
+	license = LGPL
+	makedepends = extra-cmake-modules
+	makedepends = git
+	makedepends = qt5-tools
+	depends = qt5-declarative
+	depends = qt5-base
+	optdepends = hunspell: spell checking via hunspell
+	optdepends = aspell: spell checking via aspell
+	optdepends = hspell: spell checking for Hebrew
+	optdepends = libvoikko: spell checking for Finnish via Voikko
+	provides = sonnet
+	conflicts = sonnet
+	source = git+https://invent.kde.org/frameworks/sonnet.git
+	md5sums = SKIP
+
+pkgname = sonnet-git

@@ -1,0 +1,31 @@
+pkgbase = transmission-csd
+	pkgdesc = Fast, easy, and free BitTorrent client (GTK+ GUI), CSD port
+	pkgver = r1000
+	pkgrel = 3
+	url = https://github.com/transmission/transmission/tree/wip/gtk-3.14
+	install = transmission-gtk.install
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = gtk3
+	makedepends = intltool
+	makedepends = curl
+	makedepends = libevent
+	makedepends = autoconf
+	makedepends = cmake
+	makedepends = git
+	depends = curl
+	depends = libevent
+	depends = gtk3
+	depends = desktop-file-utils
+	depends = hicolor-icon-theme
+	optdepends = notification-daemon: Desktop notification support
+	optdepends = transmission-cli: daemon and web support
+	provides = transmission-gtk
+	conflicts = transmission-gtk
+	options = !emptydirs
+	source = git://github.com/transmission/transmission.git#branch=wip/gtk-3.14
+	md5sums = SKIP
+
+pkgname = transmission-csd-git
+

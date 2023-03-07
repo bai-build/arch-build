@@ -1,0 +1,29 @@
+pkgbase = zfs-dkms-raidz-expansion-git
+	pkgdesc = Kernel modules for the Zettabyte File System.
+	pkgver = 2.1.99
+	pkgrel = 2
+	epoch = 1
+	url = https://zfsonlinux.org/
+	arch = x86_64
+	groups = zfs-git
+	license = CDDL
+	makedepends = git
+	depends = zfs-utils-git
+	depends = dkms
+	provides = ZFS-MODULE=2.1.99
+	provides = SPL-MODULE=2.1.99
+	provides = zfs-dkms-raidz-expansion=2.1.99
+	provides = zfs-dkms=2.1.99
+	provides = spl-dkms
+	conflicts = zfs-dkms-raidz-expansion
+	conflicts = zfs-dkms
+	conflicts = spl-dkms
+	replaces = spl-dkms-git
+	source = git+https://github.com/nicman23/zfs.git#branch=ahrens-raidz-expand
+	source = 0001-only-build-the-module-in-dkms.conf.patch
+	source = ecb6a50819448cd2d6570298a5ba46b45eded216.diff
+	sha256sums = SKIP
+	sha256sums = 539f325e56443554f9b87baff33948b91a280ec1daadcb0c636b105252fcd0f5
+	sha256sums = a60a6e008270b2624b12cf7556832867c29d33ae2bddc06d8205046948a4e0f0
+
+pkgname = zfs-dkms-raidz-expansion-git

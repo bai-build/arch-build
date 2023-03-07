@@ -1,0 +1,44 @@
+pkgbase = gnome-settings-daemon-ubuntu
+	pkgdesc = GNOME Settings Daemon
+	pkgver = 42.2
+	pkgrel = 1
+	url = https://git.gnome.org/browse/gnome-settings-daemon
+	arch = i686
+	arch = x86_64
+	groups = gnome
+	groups = unity
+	license = GPL
+	makedepends = docbook-xsl
+	makedepends = git
+	makedepends = gnome-common
+	makedepends = intltool
+	makedepends = libxslt
+	makedepends = python
+	makedepends = xf86-input-wacom
+	depends = dconf
+	depends = geoclue2
+	depends = geocode-glib
+	depends = gnome-desktop
+	depends = gsettings-desktop-schemas-ubuntu
+	depends = gtk3-print-backends
+	depends = libcanberra-pulse
+	depends = libgudev
+	depends = libgweather
+	depends = libnotify
+	depends = librsvg
+	depends = libsystemd
+	depends = libwacom
+	depends = nss
+	depends = pulseaudio
+	depends = pulseaudio-alsa
+	depends = upower
+	provides = gnome-settings-daemon=42.2
+	conflicts = gnome-settings-daemon
+	source = git://git.gnome.org/gnome-settings-daemon#commit=4bdf8b5ae38a382be4126bbc0ce8d87bac46177e
+	source = git://git.gnome.org/libgnome-volume-control
+	source = https://launchpad.net/ubuntu/+archive/primary/+files/gnome-settings-daemon_42.2-1ubuntu1.debian.tar.xz
+	sha512sums = SKIP
+	sha512sums = SKIP
+	sha512sums = 4d540731401788b44f17a2d9d8e0e3a5dfce2b0bf28c83ed4b1a3515d9aaa49366c6549e88792045dfe70851ac946d2d7431ed34188a42f4ae4b97b32cd67ecd
+
+pkgname = gnome-settings-daemon-ubuntu

@@ -1,0 +1,18 @@
+pkgbase = greetd-gtkgreet
+	pkgdesc = GTK based greeter for greetd
+	pkgver = 0.7
+	pkgrel = 1
+	url = https://git.sr.ht/~kennylevinsen/gtkgreet
+	arch = x86_64
+	license = GPL3
+	makedepends = meson
+	makedepends = ninja
+	makedepends = scdoc
+	depends = gtk3
+	depends = gtk-layer-shell
+	depends = json-c
+	source = https://git.sr.ht/~kennylevinsen/gtkgreet/archive/0.7.tar.gz
+	sha256sums = eb4ba0e1e4f9cf888ce7b932b923f97521c2277032628cfc06bb86fecbad9373
+
+pkgname = greetd-gtkgreet
+

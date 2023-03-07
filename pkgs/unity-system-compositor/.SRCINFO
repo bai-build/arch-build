@@ -1,0 +1,24 @@
+pkgbase = unity-system-compositor
+	pkgdesc = System compositor for Ubuntu
+	pkgver = 0.0.5.15.10.20150506.1
+	pkgrel = 1
+	url = https://launchpad.net/unity-system-compositor
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = cmake
+	depends = boost
+	depends = cairo
+	depends = lightdm
+	depends = mesa-mir
+	depends = mir
+	depends = protobuf
+	depends = xorg-server-mir
+	options = !emptydirs
+	source = https://launchpad.net/ubuntu/+archive/primary/+files/unity-system-compositor_0.0.5+15.10.20150506.1.orig.tar.gz
+	source = https://launchpad.net/ubuntu/+archive/primary/+files/unity-system-compositor_0.0.5+15.10.20150506.1-0ubuntu1.diff.gz
+	sha512sums = 3aa87f419bd7a64733a1c532d406bbb886156616386d4a37e7f09c12bab81d0479443ff5d94a9f3cc5cfb1fda78bd4ceafd80c5f55640ce426fb9add826acb07
+	sha512sums = 097f12259754e19bded3f44c4bc068ed9793f9dce1cc12cfbf18c9eb714ec6944f257c993860222ffb14c1e4196aaac64b74b91c0e8c5dee59012c35b5b89b3d
+
+pkgname = unity-system-compositor
+

@@ -1,0 +1,22 @@
+pkgbase = openfoam9
+	pkgdesc = The open source CFD toolbox (www.openfoam.org)
+	pkgver = 9.20220602
+	pkgrel = 1
+	url = http://www.openfoam.org
+	install = openfoam9.install
+	arch = x86_64
+	license = GPL
+	makedepends = bash
+	depends = bzip2
+	depends = paraview
+	depends = parmetis
+	depends = scotch
+	depends = boost
+	depends = flex
+	depends = cgal
+	provides = openfoam
+	conflicts = openfoam-com
+	source = https://github.com/OpenFOAM/OpenFOAM-9/archive/refs/tags/20220602.tar.gz
+	md5sums = d3130138327b8cf74afab2729718f3f8
+
+pkgname = openfoam-9-org

@@ -1,0 +1,25 @@
+pkgbase = feednix
+	pkgdesc = A simple ncurses-based console client for Feedly
+	pkgver = 1.1
+	pkgrel = 1
+	url = http://feednix-jarkore.rhcloud.com/
+	install = feednix.install
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = autoconf
+	makedepends = automake
+	depends = ncurses
+	depends = curl
+	depends = jsoncpp
+	depends = autoconf
+	depends = automake
+	optdepends = w3m: for post preview on command line
+	conflicts = feednix-git
+	source = https://github.com/Jarkore/Feednix/archive/v1.1.tar.gz
+	source = bug.patch
+	md5sums = dd5aa9c550f7f229cc53ef7010523015
+	md5sums = 28c0d860262dca62ef26c6cc15bdb650
+
+pkgname = feednix
+

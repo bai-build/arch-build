@@ -1,0 +1,37 @@
+pkgbase = mcpelauncher-ui-git
+	pkgdesc = Minecraft: PE Linux launcher UI
+	pkgver = v0.3.2.r6.g485df2e
+	pkgrel = 1
+	url = https://github.com/minecraft-linux/mcpelauncher-ui-manifest
+	arch = x86_64
+	license = GPL3,
+	license = MIT
+	makedepends = git
+	makedepends = cmake
+	depends = qt6-base
+	depends = qt6-webengine
+	depends = qt6-declarative
+	depends = qt6-svg
+	depends = libzip
+	depends = protobuf
+	depends = mcpelauncher-client
+	provides = mcpelauncher-ui
+	conflicts = mcpelauncher-ui
+	source = git+https://github.com/minecraft-linux/mcpelauncher-ui-manifest.git#branch=qt6
+	source = git+https://github.com/MCMrARM/axml-parser.git
+	source = git+https://github.com/minecraft-linux/file-util.git
+	source = google-play-api::git+https://github.com/minecraft-linux/Google-Play-API.git
+	source = git+https://github.com/minecraft-linux/mcpelauncher-apkinfo.git
+	source = git+https://github.com/minecraft-linux/mcpelauncher-extract.git
+	source = git+https://github.com/minecraft-linux/mcpelauncher-ui-qt.git
+	source = git+https://github.com/minecraft-linux/playdl-signin-ui-qt.git
+	md5sums = SKIP
+	md5sums = SKIP
+	md5sums = SKIP
+	md5sums = SKIP
+	md5sums = SKIP
+	md5sums = SKIP
+	md5sums = SKIP
+	md5sums = SKIP
+
+pkgname = mcpelauncher-ui-git

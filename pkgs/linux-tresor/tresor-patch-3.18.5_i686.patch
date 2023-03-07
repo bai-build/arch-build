@@ -1,0 +1,35 @@
+--- tresor-patch-3.18.5_i686	2015-02-06 20:26:52.331348357 +0000
++++ tresor-patch-3.18.5_i686.patched	2015-02-06 21:32:34.534852217 +0000
+@@ -5,7 +5,7 @@
+ @@ -1,7 +1,7 @@
+  VERSION = 3
+  PATCHLEVEL = 18
+- SUBLEVEL = 5
++ SUBLEVEL = 19
+ -EXTRAVERSION =
+ +EXTRAVERSION = -tresor0.3
+  NAME = Diseased Newt
+@@ -443,6 +443,7 @@
+ +#include <linux/module.h>
+ +#include <crypto/aes.h>
+ +#include <linux/smp.h>
+++#include <asm/i387.h>
+ +
+ +
+ +/*
+@@ -493,6 +494,7 @@
+ +	preempt_disable();
+ +	/* Calling local_irq_save saves and disables interrupts */
+ +	local_irq_save(*irq_flags);
+++	kernel_fpu_begin();
+ +}
+ +
+ +
+@@ -501,6 +503,7 @@
+ + */
+ +static inline void tresor_epilog(unsigned long *irq_flags)
+ +{
+++	kernel_fpu_end();
+ +	local_irq_restore(*irq_flags);
+ +	preempt_enable();
+ +}

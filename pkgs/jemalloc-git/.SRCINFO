@@ -1,0 +1,20 @@
+pkgbase = jemalloc-git
+	pkgdesc = General purpose malloc implementation
+	pkgver = 5.0.1.r25.gea91dfa5
+	pkgrel = 1
+	url = http://jemalloc.net/
+	arch = i686
+	arch = x86_64
+	license = BSD
+	makedepends = git
+	makedepends = docbook-xsl
+	depends = glibc
+	depends = sh
+	optdepends = perl: for running jeprof
+	provides = jemalloc
+	conflicts = jemalloc
+	source = git+https://github.com/jemalloc/jemalloc.git
+	sha256sums = SKIP
+
+pkgname = jemalloc-git
+

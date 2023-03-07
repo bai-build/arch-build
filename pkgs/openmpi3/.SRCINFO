@@ -1,0 +1,25 @@
+pkgbase = openmpi3
+	pkgdesc = High performance message passing library (MPI), version 3
+	pkgver = 3.1.6
+	pkgrel = 1
+	url = https://www.open-mpi.org
+	arch = x86_64
+	license = custom:OpenMPI
+	makedepends = inetutils
+	makedepends = valgrind
+	makedepends = gcc-fortran
+	depends = libltdl
+	depends = hwloc<2
+	depends = openssh
+	depends = zlib
+	depends = libnl
+	optdepends = gcc-fortran: fortran support
+	provides = openmpi=3.1.6
+	conflicts = openmpi
+	options = staticlibs
+	source = https://www.open-mpi.org/software/ompi/v3.1/downloads/openmpi-3.1.6.tar.bz2
+	sha256sums = 50131d982ec2a516564d74d5616383178361c2f08fdd7d1202b80bdf66a0d279
+	sha512sums = 23d39e6f6f68107aa03d9f37e673c739cedb3b63731b693be3d0def236863ce6e8405f93de1734e0725c33674b6873bbf5179108fa13138dea49cee792c868bc
+
+pkgname = openmpi3
+

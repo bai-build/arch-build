@@ -1,0 +1,52 @@
+post_install() {
+  printf "%b\n" "$koto"
+}
+
+post_upgrade() {
+  _rmuser
+  systemctl stop kotod
+  rm -rf /usr/lib/systemd/system/kotod.service
+  printf "%b\n" "$koto"
+}
+
+post_remove() {
+  _rmuser
+  rm -rf /var/lib/koto
+}
+
+_rmuser() {
+  echo -n "Removing koto user... "
+  userdel -rf $_koto_user 2>/dev/null
+  echo "done"
+}
+
+read -d '' koto <<'EOF'
+########################################################################
+########################################################################
+##                                                                    ##
+##  Koto                                                              ##
+##  ____________                                                      ##
+##                                                                    ##
+##  !!!!!WARNING!!!!!                                                 ##
+##                                                                    ##
+##  latest version is removed kotod.service.                          ##
+##  If you use systemd (e.g. you run `systemctl start kotod`),        ##
+##  stop kotod service, and backup wallet.dat.                        ##
+##                                                                    ##
+########################################################################
+##                                                                    ##
+##  To communicate with koto as a normal user:                        ##
+##                                                                    ##
+##      $ mkdir -p ~/.koto                                            ##
+##      $ cat > ~/.koto/koto.conf <<'EOF'                             ##
+##      rpcuser=user                                                  ##
+##      rpcpassword=secret                                            ##
+##      EOF                                                           ##
+##                                                                    ##
+##      $ koto-fetch-params                                           ##
+##                                                                    ##
+##  Documentation:  /usr/share/doc/koto                               ##
+##                                                                    ##
+########################################################################
+########################################################################
+EOF

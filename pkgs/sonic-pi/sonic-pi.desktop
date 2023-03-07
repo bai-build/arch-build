@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Sonic Pi
+Comment=A music-centric programming environment, originally built for the raspberry pi.
+Exec=sonic-pi
+Icon=sonic-pi
+Categories=Education
+Terminal=false
+StartupNotify=true

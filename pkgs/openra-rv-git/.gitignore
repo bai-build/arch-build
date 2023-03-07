@@ -1,0 +1,7 @@
+*.xz
+*.zst
+Romanovs-Vengeance
+pkg
+src
+*.gz
+*.log*

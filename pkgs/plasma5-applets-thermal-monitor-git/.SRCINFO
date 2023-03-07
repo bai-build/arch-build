@@ -1,0 +1,19 @@
+pkgbase = plasma5-applets-thermal-monitor-git
+	pkgdesc = Plasma 5 applet for monitoring CPU, GPU and other available temperature sensors
+	pkgver = r109.b94c5a6
+	pkgrel = 1
+	url = https://gitlab.com/agurenko/plasma-applet-thermal-monitor
+	arch = any
+	license = GPL
+	makedepends = git
+	makedepends = extra-cmake-modules
+	depends = plasma-workspace
+	depends = qt5-graphicaleffects
+	depends = ksysguard
+	optdepends = lm_sensors
+	provides = plasma5-applets-thermal-monitor
+	conflicts = plasma5-applets-thermal-monitor
+	source = git+https://gitlab.com/agurenko/plasma-applet-thermal-monitor.git
+	sha256sums = SKIP
+
+pkgname = plasma5-applets-thermal-monitor-git

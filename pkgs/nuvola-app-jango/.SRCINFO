@@ -1,0 +1,16 @@
+pkgbase = nuvola-app-jango
+	pkgdesc = jango integration for Nuvola Player.
+	pkgver = 2.4
+	pkgrel = 1
+	url = https://github.com/tiliado/nuvola-app-jango
+	arch = any
+	license = custom:BSD
+	makedepends = nuvolasdk
+	makedepends = scour
+	depends = nuvolaruntime
+	depends = imagemagick
+	source = https://github.com/tiliado/nuvola-app-jango/archive/2.4.tar.gz
+	sha256sums = 8f0f8455819e5086f5bbb3bf67d81ed5c90105dd6c5674d57108f786248ae5d2
+
+pkgname = nuvola-app-jango
+

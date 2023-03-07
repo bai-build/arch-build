@@ -1,0 +1,24 @@
+diff -ru a/src/include/os/rt_linux.h b/src/include/os/rt_linux.h
+--- a/src/include/os/rt_linux.h
++++ b/src/include/os/rt_linux.h
+@@ -83,6 +83,8 @@
+ #include <linux/kthread.h>
+ #endif /* KTHREAD_SUPPORT */
+ 
++/* For usage of kill_pid and friends. */
++#include <linux/sched/signal.h>
+ 
+ #include "os/rt_linux_cmm.h"
+ 
+diff -ru a/src/os/linux/rt_linux.c b/src/os/linux/rt_linux.c
+--- a/src/os/linux/rt_linux.c
++++ b/src/os/linux/rt_linux.c
+@@ -1165,7 +1165,7 @@
+         /* The object must have a read method */
+         if (osfd->f_op /*&& osfd->f_op->read*/) {
+                 //return osfd->f_op->read(osfd, pDataPtr, readLen, &osfd->f_pos);
+-                return vfs_read(osfd, pDataPtr, readLen, &osfd->f_pos);
++                return kernel_read(osfd, pDataPtr, readLen, &osfd->f_pos);
+         } else {
+                 DBGPRINT(RT_DEBUG_ERROR, ("no file read method\n"));
+                 return -1;

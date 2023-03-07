@@ -1,0 +1,18 @@
+pkgbase = mingw-w64-coin-or-cbc
+	pkgdesc = COIN-OR branch-and-cut mixed integer programming solver (mingw-w64)
+	pkgver = 2.10.8
+	pkgrel = 1
+	url = https://projects.coin-or.org/Cbc
+	arch = any
+	groups = mingw-w64-coin-or
+	license = EPL
+	makedepends = mingw-w64-configure
+	depends = mingw-w64-coin-or-cgl
+	depends = mingw-w64-coin-or-asl
+	options = staticlibs
+	options = !buildflags
+	options = !strip
+	source = https://github.com/coin-or/Cbc/archive/refs/tags/releases/2.10.8.tar.gz
+	sha256sums = 8525abb541ee1b8e6ff03b00411b66e98bbc58f95be1aefd49d2bca571be2eaf
+
+pkgname = mingw-w64-coin-or-cbc

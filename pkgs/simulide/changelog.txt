@@ -1,0 +1,30 @@
+0.4.15-SR10
+
+Bug Fixes:
+    - 74HC139 Error.
+    - AVR ICR write error.
+    - McuMonitor: RamTable not loading varList.
+    - Logic Analizer: Time Pos. not initialized.
+    - PIC16F887 ADC: Using Vref Pins doesn't work.
+    - Ili9341: Error checking for address out of range.
+    - Ili9341: Errors + command 0x36: Memory Access Control (no MV).
+    - Oscilloscope not working if simulation already running.
+    - RamTable not saving varlist.
+    - Oscilloscope Ref Voltage error.
+    - BJT: Error in setGain.
+    - Ky023: Crash at delete.
+    - KY023: Button not working.
+    - Mosfet not cleanly deleted.
+    - AVRs: CTC not working with external T0/T1.
+    - Avr asm Debugger: wrong PC.
+    - Atmega2560 Comparator not working.
+    - Atmega2560: Missing PCINT1.0 and PCINT2.
+
+Changes:
+    - Hungarian translation added.
+    - Italian translation disabled.
+    - New Subcircuits (Sergey Roenko):  
+       Pulse Generator.
+       Real Button.
+       Led Displays.
+

@@ -1,0 +1,6 @@
+*
+!.gitignore
+!.SRCINFO
+!PKGBUILD
+!sdlmame-wout-toolkits.install
+!mame.sh

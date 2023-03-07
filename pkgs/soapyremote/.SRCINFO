@@ -1,0 +1,19 @@
+pkgbase = soapyremote
+	pkgdesc = Use any Soapy SDR remotely
+	pkgver = 0.4.3
+	pkgrel = 1
+	url = https://github.com/pothosware/SoapyRemote
+	arch = x86_64
+	arch = i686
+	arch = arm
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	license = custom:Boost
+	makedepends = cmake
+	depends = soapysdr
+	source = soapyremote-0.4.3.tar.gz::https://github.com/pothosware/SoapyRemote/archive/soapy-remote-0.4.3.tar.gz
+	sha256sums = 94146fa0b2f8d658c1e712e0215c7f89163637690fd6f58e75db1f47839f4f2b
+
+pkgname = soapyremote
+

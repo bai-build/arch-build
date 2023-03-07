@@ -1,0 +1,11 @@
+--- a/src/corelib/io/qfilesystemengine_unix.cpp.orig	2018-12-14 21:54:13.136089911 +0100
++++ b/src/corelib/io/qfilesystemengine_unix.cpp	2018-12-14 21:53:41.726039852 +0100
+@@ -102,6 +102,8 @@
+ #  undef STATX_BASIC_STATS
+ #endif
+ 
++#undef STATX_BASIC_STATS
++
+ #ifndef STATX_ALL
+ struct statx { mode_t stx_mode; };      // dummy
+ #endif

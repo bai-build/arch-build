@@ -1,0 +1,14 @@
+pkgbase = sopwith
+	pkgdesc = Sidescrolling shoot 'em up game
+	pkgver = 2.1.1
+	pkgrel = 1
+	url = https://fragglet.github.io/sdl-sopwith/sshot.html
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = autoconf
+	depends = sdl
+	source = https://github.com/fragglet/sdl-sopwith/archive/refs/tags/sdl-sopwith-2.1.1.tar.gz
+	sha256sums = 93a162f31dc0a97fbab3093042e894ac40874244a89ee2a9f7e52121d1f13565
+
+pkgname = sopwith

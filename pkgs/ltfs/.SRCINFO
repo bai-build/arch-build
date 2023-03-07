@@ -1,0 +1,22 @@
+pkgbase = ltfs
+	pkgdesc = Linear Tape File System
+	pkgver = 2.4.5.0
+	pkgrel = 1
+	url = https://github.com/LinearTapeFileSystem/ltfs
+	arch = x86_64
+	arch = i686
+	license = BSD
+	makedepends = patch
+	makedepends = gcc
+	makedepends = pkg-config
+	makedepends = make
+	makedepends = fakeroot
+	depends = fuse
+	depends = icu
+	depends = libxml2
+	depends = net-snmp
+	backup = etc/ltfs.conf.local
+	source = https://github.com/LinearTapeFileSystem/ltfs/archive/refs/tags/v2.4.5.0-10502.tar.gz
+	sha256sums = 2525773d740d315e9b1ce3ad615d51f5fa8a9da6b648c9f6e57fcca422bd04ac
+
+pkgname = ltfs

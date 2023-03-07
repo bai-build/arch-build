@@ -1,0 +1,11 @@
+pkgbase = redox-binutils
+	pkgver = r89563.fca55db437
+	pkgrel = 1
+	arch = any
+	license = GPL
+	makedepends = git
+	source = git+https://github.com/redox-os/binutils-gdb
+	md5sums = SKIP
+
+pkgname = redox-binutils
+

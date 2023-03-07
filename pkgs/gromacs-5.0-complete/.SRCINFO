@@ -1,0 +1,25 @@
+pkgbase = gromacs-5.0-complete
+	pkgdesc = A versatile package to perform molecular dynamics, i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
+	pkgver = 5.0.7
+	pkgrel = 7
+	url = http://www.gromacs.org/
+	arch = i686
+	arch = x86_64
+	license = LGPL
+	makedepends = cmake
+	makedepends = libxml2
+	makedepends = hwloc
+	depends = lapack
+	depends = zlib
+	depends = libx11
+	optdepends = cuda: Nvidia GPU support
+	optdepends = openmotif: needed for gmx view
+	optdepends = perl: needed for demux.pl and xplor2gmx.pl
+	options = !libtool
+	source = ftp://ftp.gromacs.org/pub/gromacs/gromacs-5.0.7.tar.gz
+	source = GMXRC.bash.cmakein.patch
+	sha1sums = 29fd9c13874d26c1e18cd45ec74bd2d9be0b78c1
+	sha1sums = 014b2cbfa13db9b495c88f653805c330747117dc
+
+pkgname = gromacs-5.0-complete
+

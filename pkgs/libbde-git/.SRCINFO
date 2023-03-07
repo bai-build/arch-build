@@ -1,0 +1,22 @@
+pkgbase = libbde-git
+	pkgdesc = Library to access the BitLocker Drive Encryption (BDE) format
+	pkgver = 20161214.4f6fd39
+	pkgrel = 1
+	url = https://github.com/libyal/libbde
+	arch = any
+	license = LGPL
+	makedepends = git
+	makedepends = autoconf
+	makedepends = automake
+	makedepends = libtool
+	makedepends = gettext
+	makedepends = pkg-config
+	makedepends = bison
+	makedepends = flex
+	provides = libbde-git
+	conflicts = libbde
+	source = git+https://github.com/libyal/libbde.git
+	sha1sums = SKIP
+
+pkgname = libbde-git
+

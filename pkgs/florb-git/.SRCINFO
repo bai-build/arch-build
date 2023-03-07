@@ -1,0 +1,27 @@
+pkgbase = florb-git
+	pkgdesc = simple FLTK powered map viewer and GPX editor
+	pkgver = r156.85d2be7
+	pkgrel = 1
+	url = http://florb.shugaa.de/
+	arch = x86_64
+	arch = i686
+	license = MIT
+	makedepends = omake
+	makedepends = gendesk
+	makedepends = git
+	makedepends = gpsd
+	depends = fltk
+	depends = yaml-cpp
+	depends = libxpm
+	depends = curl
+	depends = tinyxml2
+	depends = boost-libs
+	optdepends = gpsbabel
+	provides = florb
+	conflicts = florb
+	source = florb-git::git://github.com/shugaa/florb.git
+	source = gpsdclient.patch
+	md5sums = SKIP
+	md5sums = 949001a25d72c44013f9c708c138690d
+
+pkgname = florb-git

@@ -1,0 +1,16 @@
+pkgbase = doctl
+	pkgdesc = A command line tool for DigitalOcean services
+	pkgver = 1.45.1
+	pkgrel = 1
+	url = https://github.com/digitalocean/doctl
+	arch = i686
+	arch = x86_64
+	license = APACHE
+	makedepends = go
+	makedepends = git
+	conflicts = doctl-bin
+	source = git+https://github.com/digitalocean/doctl.git
+	sha256sums = SKIP
+
+pkgname = doctl
+

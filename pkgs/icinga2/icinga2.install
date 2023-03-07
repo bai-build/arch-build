@@ -1,0 +1,32 @@
+post_install() {
+  /usr/bin/systemd-sysusers icinga2.conf
+
+  /usr/bin/chown -R icinga:icinga \
+    /etc/icinga2 \
+    /var/lib/icinga2 \
+    /var/spool/icinga2
+
+  /usr/bin/chown -R icinga:icingacmd \
+    /var/cache/icinga2 \
+    /var/log/icinga2
+
+  /usr/bin/icinga2 feature enable checker &> /dev/null
+  /usr/bin/icinga2 feature enable mainlog &> /dev/null
+  /usr/bin/icinga2 feature enable notification &> /dev/null
+}
+
+pre_remove() {
+  [ -f "/etc/icinga2/features-enabled/checker.conf" ] && /usr/bin/icinga2 feature disable checker &> /dev/null
+  [ -f "/etc/icinga2/features-enabled/mainlog.conf" ] && /usr/bin/icinga2 feature disable mainlog &> /dev/null
+  [ -f "/etc/icinga2/features-enabled/notification.conf" ] && /usr/bin/icinga2 feature disable notification &> /dev/null
+}
+
+post_upgrade() {
+  if [[ "$(vercmp "$2" '2.8.0')" -lt 0 ]]; then
+    cat << EOF
+==> Icinga version 2.8.0 requires an DB IDO schema upgrade and uses new paths
+==> for certificates. Check the upgrading instructions for details:
+==> https://www.icinga.com/docs/icinga2/latest/doc/16-upgrading-icinga-2/#upgrading-to-v28
+EOF
+  fi
+}

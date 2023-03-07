@@ -1,0 +1,16 @@
+pkgbase = morgenrot-git
+	pkgdesc = morgenrot calculates sunrise and sunset times
+	pkgver = v1.0.0
+	pkgrel = 2
+	url = https://gitlab.com/yrws/morgenrot-cli
+	arch = any
+	groups = yrws
+	license = MIT
+	makedepends = go
+	makedepends = git
+	makedepends = make
+	provides = morgenrot-git
+	source = git+https://gitlab.com/yrws/morgenrot-cli
+	sha256sums = SKIP
+
+pkgname = morgenrot-git

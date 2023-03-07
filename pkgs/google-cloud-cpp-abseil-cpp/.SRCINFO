@@ -1,0 +1,15 @@
+pkgbase = google-cloud-cpp-abseil-cpp
+	pkgdesc = Abseil Common Libraries (C++)
+	pkgver = 20200923.3
+	pkgrel = 1
+	url = https://github.com/abseil/abseil-cpp
+	arch = any
+	license = Apache
+	makedepends = cmake
+	makedepends = git
+	conflicts = abseil-cpp
+	source = https://github.com/abseil/abseil-cpp/archive/20200923.3.tar.gz
+	sha256sums = ebe2ad1480d27383e4bf4211e2ca2ef312d5e6a09eba869fd2e8a5c5d553ded2
+
+pkgname = google-cloud-cpp-abseil-cpp
+

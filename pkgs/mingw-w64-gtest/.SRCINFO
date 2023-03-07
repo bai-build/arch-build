@@ -1,0 +1,18 @@
+pkgbase = mingw-w64-gtest
+	pkgdesc = Google Test - C++ testing utility based on the xUnit framework (like JUnit) (mingw-w64)
+	pkgver = 1.12.1
+	pkgrel = 1
+	url = https://github.com/google/googletest
+	arch = any
+	license = custom:BSD3
+	checkdepends = mingw-w64-wine
+	checkdepends = mingw-w64-python
+	makedepends = mingw-w64-cmake
+	depends = mingw-w64-crt
+	options = !buildflags
+	options = staticlibs
+	options = !strip
+	source = gtest-1.12.1.tar.gz::https://github.com/google/googletest/archive/release-1.12.1.tar.gz
+	sha512sums = a9104dc6c53747e36e7dd7bb93dfce51a558bd31b487a9ef08def095518e1296da140e0db263e0644d9055dbd903c0cb69380cb2322941dbfb04780ef247df9c
+
+pkgname = mingw-w64-gtest

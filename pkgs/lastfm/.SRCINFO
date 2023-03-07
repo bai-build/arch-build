@@ -1,0 +1,33 @@
+pkgbase = lastfm
+	pkgdesc = The official Last.fm desktop application suite
+	pkgver = 2.1.39
+	pkgrel = 2
+	url = http://www.last.fm/
+	arch = any
+	license = GPL3
+	depends = qt4>4.8
+	depends = ruby
+	depends = liblastfm
+	depends = pkg-config
+	depends = fftw
+	depends = taglib
+	depends = libsamplerate
+	depends = libmad
+	depends = libgpod
+	depends = sqlite
+	depends = phonon-qt4
+	depends = phonon-qt4-vlc
+	depends = ffmpeg
+	depends = qtwebkit
+	provides = lastfm
+	conflicts = lastfm-git
+	conflicts = lastfm-mpd-cli
+	conflicts = lastfm-msk
+	conflicts = lastfm-msk-light
+	source = Last.fm-2.1.39.tar.zip::https://github.com/lastfm/lastfm-desktop/archive/2.1.39.zip
+	source = lastfm-scrobbler
+	sha256sums = ef7949e6b827f29311e3c4e54b537accfff0f408119817f38b7e62899cda4256
+	sha256sums = 882523081fadfd5c52315229414324aab61affeb9d4213543b6ac051c84b4476
+
+pkgname = lastfm
+

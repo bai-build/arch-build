@@ -1,0 +1,19 @@
+pkgbase = drmips
+	pkgdesc = Graphical MIPS simulator to support computer architecture teaching and learning
+	pkgver = 2.0.2
+	pkgrel = 1
+	url = http://brunonova.github.io/drmips/
+	install = drmips.install
+	arch = any
+	license = GPL3
+	makedepends = java-environment>=7
+	makedepends = cmake>=2.8
+	depends = java-runtime>=7
+	depends = desktop-file-utils
+	depends = hicolor-icon-theme
+	depends = ttf-font
+	source = https://github.com/brunonova/drmips/releases/download/v2.0.2/DrMIPS_v2.0.2.tar.xz
+	md5sums = 3a06e513f2f74716313c0a90d85a4790
+
+pkgname = drmips
+

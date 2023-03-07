@@ -1,0 +1,25 @@
+pkgbase = mumps-par
+	pkgdesc = Sparse solver library using Gaussian elimination, with parmetis implementation
+	pkgver = 5.5.1
+	pkgrel = 1
+	url = https://graal.ens-lyon.fr/MUMPS/index.php
+	arch = i686
+	arch = x86_64
+	license = custom
+	makedepends = gcc-fortran
+	depends = lapack
+	depends = openmpi
+	depends = scotch
+	depends = scalapack
+	depends = parmetis
+	depends = metis
+	depends = zlib
+	depends = bzip2
+	provides = mumps
+	conflicts = mumps
+	source = https://graal.ens-lyon.fr/MUMPS/MUMPS_5.5.1.tar.gz
+	source = Makefile.inc
+	sha256sums = 1abff294fa47ee4cfd50dfd5c595942b72ebfcedce08142a75a99ab35014fa15
+	sha256sums = 4bcc8c53626ed69e63d9f086e4262c586c534b9817b7236df63a4164387e2ea7
+
+pkgname = mumps-par

@@ -1,0 +1,25 @@
+pkgbase = mutt-git
+	pkgdesc = A small but very powerful text-based mail client
+	pkgver = 6959.42e2d07a
+	pkgrel = 1
+	url = http://www.mutt.org/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	makedepends = gnupg
+	makedepends = libxslt
+	depends = gdbm
+	depends = gpgme
+	depends = libidn
+	depends = mime-types
+	depends = ncurses
+	depends = zlib
+	provides = mutt
+	conflicts = mutt
+	replaces = mutt-hg
+	source = git+https://gitlab.com/muttmua/mutt.git
+	md5sums = SKIP
+
+pkgname = mutt-git
+

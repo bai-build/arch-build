@@ -1,0 +1,24 @@
+pkgbase = wangle
+	pkgdesc = C++ networking library providing client/server abstractions for building services
+	pkgver = 2022.08.22.00
+	pkgrel = 1
+	url = https://github.com/facebook/wangle
+	arch = x86_64
+	license = Apache
+	makedepends = cmake
+	makedepends = double-conversion
+	makedepends = gflags
+	makedepends = gtest
+	makedepends = gmock
+	depends = boost
+	depends = boost-libs
+	depends = google-glog
+	depends = fizz
+	depends = folly
+	depends = libevent
+	depends = openssl
+	depends = fmt
+	source = https://github.com/facebook/wangle/archive/v2022.08.22.00.tar.gz
+	sha256sums = 4c2aea3d790d64e4e84e15e941fe34b36503ecd5a374c71ab44232a198ae488d
+
+pkgname = wangle

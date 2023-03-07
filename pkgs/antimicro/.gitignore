@@ -1,0 +1,6 @@
+antimicro-*.pkg.tar.zst
+antimicro-*.tar.gz
+antimicro-*.log
+PKGBUILD-namcap.log
+pkg/
+src/

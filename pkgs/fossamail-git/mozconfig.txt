@@ -1,0 +1,25 @@
+mk_add_options PYTHON=/usr/bin/python2
+ac_add_options --enable-official-branding
+export MOZILLA_OFFICIAL=1
+export CC=gcc-4.7
+export CXX=g++-4.7
+
+mk_add_options MOZ_CO_PROJECT=mail
+ac_add_options --enable-application=mail
+
+ac_add_options --disable-crashreporter
+ac_add_options --disable-installer
+ac_add_options --disable-updater
+
+ac_add_options --disable-tests
+ac_add_options --disable-mochitests
+ac_add_options --disable-debug
+ac_add_options --disable-debug-symbols
+
+ac_add_options --enable-strip
+ac_add_options --enable-jemalloc
+mk_add_options MOZ_MAKE_FLAGS="-j4"
+mk_add_options _FORTIFY_SOURCE=0
+ac_add_options --enable-optimize=-O3 -msse2 -mfpmath=sse
+
+ac_add_options --x-libraries=/usr/lib

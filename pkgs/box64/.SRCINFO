@@ -1,0 +1,17 @@
+pkgbase = box64
+	pkgdesc = Linux Userspace x86_64 Emulator with a twist
+	pkgver = 0.2.0
+	pkgrel = 2
+	url = https://github.com/ptitSeb/box64
+	arch = x86_64
+	arch = aarch64
+	arch = riscv64
+	license = MIT
+	makedepends = git
+	makedepends = cmake
+	makedepends = python
+	depends = gcc-libs
+	source = box64-0.2.0.tar.gz::https://github.com/ptitSeb/box64/archive/v0.2.0.tar.gz
+	sha256sums = fd4440a8010320339c9c6c065f6a65fdb802d32cf8fa5f6fa750f368d4864b62
+
+pkgname = box64

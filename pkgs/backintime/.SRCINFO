@@ -1,0 +1,41 @@
+pkgbase = backintime
+	pkgver = 1.3.3
+	pkgrel = 3
+	url = https://github.com/bit-team/backintime
+	arch = any
+	license = GPL
+	checkdepends = openssh
+	checkdepends = python-dbus
+	checkdepends = rsync
+	checkdepends = systemd
+	checkdepends = python-pyfakefs
+	checkdepends = oxygen-icons
+	makedepends = python
+	source = backintime-1.3.3.tar.gz::https://github.com/bit-team/backintime/archive/refs/tags/v1.3.3.tar.gz
+	b2sums = d9fc2434e5accf957c0fe0ed7daf7e1a2acb8c1d683612889b277e02be159ec15ed606e7e551e5955e3aa73af7e26f01c26c734d6882cfb926f2d6de2ae79d46
+
+pkgname = backintime
+	pkgdesc = Simple backup system inspired from the Flyback Project and TimeVault. QT5 GUI version.
+	depends = backintime-cli=1.3.3
+	depends = libnotify
+	depends = polkit
+	depends = python-dbus
+	depends = python-pyqt5
+	depends = xorg-xdpyinfo
+	optdepends = kompare: diff/patch frontend
+	optdepends = meld: diff/patch frontend
+	optdepends = python-keyring: store and access passwords safely
+
+pkgname = backintime-cli
+	pkgdesc = Simple backup system inspired from the Flyback Project and TimeVault. CLI version.
+	depends = cron
+	depends = fuse2
+	depends = openssh
+	depends = python-dbus
+	depends = python-keyring
+	depends = rsync
+	depends = python-packaging
+	optdepends = backintime: QT5 GUI version
+	optdepends = encfs: encrypted filesystem in user-space
+	optdepends = pm-utils: for laptops allows an option to not snapshot on battery
+	optdepends = sshfs: FUSE client based on the ssh file transfer protocol

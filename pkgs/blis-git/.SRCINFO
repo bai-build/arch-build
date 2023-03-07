@@ -1,0 +1,19 @@
+pkgbase = blis-git
+	pkgdesc = BLAS-like Library Instantiation Software framework by the Science of High-Performance Computing Group
+	pkgver = 0.9.0.r2.g69fa9154
+	pkgrel = 1
+	url = https://github.com/flame/blis
+	arch = x86_64
+	license = custom:BSD
+	makedepends = python
+	depends = gcc-libs
+	provides = blis
+	provides = blas
+	conflicts = blis
+	conflicts = blas
+	options = !lto
+	options = !emptydirs
+	source = git+https://github.com/flame/blis.git
+	sha512sums = SKIP
+
+pkgname = blis-git

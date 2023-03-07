@@ -1,0 +1,16 @@
+pkgbase = xtensor-python
+	pkgdesc = QuantStack tools library - Multi-dimensional arrays with broadcasting and lazy computing.
+	pkgver = 0.25.3
+	pkgrel = 1
+	url = https://github.com/QuantStack/xtensor-python
+	arch = x86_64
+	license = BSD-3-Clause
+	makedepends = cmake
+	depends = xtensor
+	depends = xtl
+	depends = pybind11
+	depends = python-numpy
+	source = xtensor-python-0.25.3.tar.gz::https://github.com/QuantStack/xtensor-python/archive/0.25.3.tar.gz
+	sha512sums = 6991841f446459b2716314ebe1cbc5f638a2e7b4ee5e5c5b916930467ebfac38b6a4af6356b4e07d861c9b0a4de3720ed14746729fbec27caad7216a98c3c834
+
+pkgname = xtensor-python

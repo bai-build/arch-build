@@ -1,0 +1,37 @@
+pkgbase = beaker
+	pkgdesc = Full-stack software and hardware integration testing system
+	pkgver = 28.3
+	pkgrel = 1
+	url = https://beaker-project.org/
+	arch = any
+	license = GPL
+	license = BSD
+	makedepends = python-nose
+	makedepends = python-mock
+	makedepends = python-docutils
+	makedepends = python-sphinx
+	makedepends = make
+	makedepends = python-gssapi
+	makedepends = python-lxml
+	makedepends = python-prettytable
+	makedepends = python-lxml
+	provides = bkr
+	provides = beaker-wizard
+	options = zipman
+	source = beaker-28.3.tar.gz::https://github.com/beaker-project/beaker/archive/refs/tags/beaker-28.3.tar.gz
+	sha256sums = 5aa4c1807187e7c318db1ddc9132d1045824f6eaa6f04773663d9fae0e950b8c
+
+pkgname = beaker-common
+	pkgdesc = Full-stack software and hardware integration testing system - common files
+
+pkgname = beaker-client
+	pkgdesc = Full-stack software and hardware integration testing system - cli
+	depends = python
+	depends = python-six
+	depends = python-setuptools
+	depends = python-gssapi
+	depends = python-lxml
+	depends = python-requests
+	depends = python-prettytable
+	depends = python-jinja
+	depends = beaker-common=28.3

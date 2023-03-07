@@ -1,0 +1,55 @@
+diff -ruN Python-3.10.5/Makefile.pre.in Python-3.10.5.new/Makefile.pre.in
+--- Python-3.10.5/Makefile.pre.in	2022-06-06 16:23:30.000000000 +0430
++++ Python-3.10.5.new/Makefile.pre.in	2022-08-05 17:00:11.809493442 +0430
+@@ -1372,15 +1372,15 @@
+ 	fi
+ 	(cd $(DESTDIR)$(BINDIR); $(LN) -s python$(VERSION)$(EXE) python3$(EXE))
+ 	-if test "$(VERSION)" != "$(LDVERSION)"; then \
+-		rm -f $(DESTDIR)$(BINDIR)/python$(VERSION)-config; \
+-		(cd $(DESTDIR)$(BINDIR); $(LN) -s python$(LDVERSION)-config python$(VERSION)-config); \
++		rm -f $(DESTDIR)$(BINDIR)/python$(VERSION)$(EXE)-config; \
++		(cd $(DESTDIR)$(BINDIR); $(LN) -s python$(LDVERSION)$(EXE)-config python$(VERSION)$(EXE)-config); \
+ 		rm -f $(DESTDIR)$(LIBPC)/python-$(LDVERSION).pc; \
+ 		(cd $(DESTDIR)$(LIBPC); $(LN) -s python-$(VERSION).pc python-$(LDVERSION).pc); \
+ 		rm -f $(DESTDIR)$(LIBPC)/python-$(LDVERSION)-embed.pc; \
+ 		(cd $(DESTDIR)$(LIBPC); $(LN) -s python-$(VERSION)-embed.pc python-$(LDVERSION)-embed.pc); \
+ 	fi
+ 	-rm -f $(DESTDIR)$(BINDIR)/python3-config
+-	(cd $(DESTDIR)$(BINDIR); $(LN) -s python$(VERSION)-config python3-config)
++	(cd $(DESTDIR)$(BINDIR); $(LN) -s python$(VERSION)$(EXE)-config python3-config)
+ 	-rm -f $(DESTDIR)$(LIBPC)/python3.pc
+ 	(cd $(DESTDIR)$(LIBPC); $(LN) -s python-$(VERSION).pc python3.pc)
+ 	-rm -f $(DESTDIR)$(LIBPC)/python3-embed.pc
+@@ -1639,12 +1639,12 @@
+ 	@ # is not available in configure
+ 	sed -e "s,@EXENAME@,$(BINDIR)/python$(LDVERSION)$(EXE)," < $(srcdir)/Misc/python-config.in >python-config.py
+ 	@ # Replace makefile compat. variable references with shell script compat. ones; $(VAR) -> ${VAR}
+-	LC_ALL=C sed -e 's,\$$(\([A-Za-z0-9_]*\)),\$$\{\1\},g' < Misc/python-config.sh >python-config
++	LC_ALL=C sed -e 's,\$$(\([A-Za-z0-9_]*\)),\$$\{\1\},g' < Misc/python-config.sh >python$(EXE)-config
+ 	@ # On Darwin, always use the python version of the script, the shell
+ 	@ # version doesn't use the compiler customizations that are provided
+ 	@ # in python (_osx_support.py).
+ 	@if test `uname -s` = Darwin; then \
+-		cp python-config.py python-config; \
++		cp python-config.py python$(EXE)-config; \
+ 	fi
+ 
+ 
+@@ -1726,7 +1726,7 @@
+ 	$(INSTALL_SCRIPT) $(srcdir)/Modules/makesetup $(DESTDIR)$(LIBPL)/makesetup
+ 	$(INSTALL_SCRIPT) $(srcdir)/install-sh $(DESTDIR)$(LIBPL)/install-sh
+ 	$(INSTALL_SCRIPT) python-config.py $(DESTDIR)$(LIBPL)/python-config.py
+-	$(INSTALL_SCRIPT) python-config $(DESTDIR)$(BINDIR)/python$(LDVERSION)-config
++	$(INSTALL_SCRIPT) python$(EXE)-config $(DESTDIR)$(BINDIR)/python$(LDVERSION)$(EXE)-config
+ 	@if [ -s Modules/python.exp -a \
+ 		"`echo $(MACHDEP) | sed 's/^\(...\).*/\1/'`" = "aix" ]; then \
+ 		echo; echo "Installing support files for building shared extension modules on AIX:"; \
+@@ -1937,7 +1937,7 @@
+ 		config.cache config.log pyconfig.h Modules/config.c
+ 	-rm -rf build platform
+ 	-rm -rf $(PYTHONFRAMEWORKDIR)
+-	-rm -f python-config.py python-config
++	-rm -f python-config.py python$(EXE)-config
+ 
+ # Make things extra clean, before making a distribution:
+ # remove all generated files, even Makefile[.pre]

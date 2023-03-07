@@ -1,0 +1,22 @@
+pkgbase = elisa-git
+	pkgdesc = A simple music player for KDE aiming to provide a nice experience for its users
+	pkgver = 20.08.1.r81.g5192facb
+	pkgrel = 1
+	url = https://community.kde.org/Elisa
+	arch = i686
+	arch = x86_64
+	license = LGPL3
+	makedepends = git
+	makedepends = python
+	makedepends = extra-cmake-modules
+	makedepends = kdoctools
+	depends = kirigami2
+	depends = kdeclarative
+	depends = baloo
+	provides = elisa
+	conflicts = elisa
+	source = git+https://invent.kde.org/multimedia/elisa.git
+	sha512sums = SKIP
+
+pkgname = elisa-git
+

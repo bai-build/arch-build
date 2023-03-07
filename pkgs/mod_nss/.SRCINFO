@@ -1,0 +1,23 @@
+pkgbase = mod_nss
+	pkgdesc = SSL/TLS module for the Apache HTTP server
+	pkgver = 1.0.14
+	pkgrel = 1
+	url = https://fedorahosted.org/mod_nss/
+	install = mod_nss.install
+	arch = i686
+	arch = x86_64
+	license = Apache
+	depends = apache
+	depends = apr
+	depends = nspr
+	depends = nss
+	backup = etc/httpd/conf/extra/nss.conf
+	backup = etc/httpd/alias/secmod.db
+	backup = etc/httpd/alias/cert8.db
+	backup = etc/httpd/alias/key3.db
+	backup = etc/httpd/alias/install.log
+	source = https://releases.pagure.org/mod_nss/mod_nss-1.0.14.tar.gz
+	sha512sums = 8f3279280c019f71b926bbebdcf619bfb3a91ea23ad64193e54bae2a97eba75fe7571597e6a2e34bd702b499d100f75bf38f82f9840822fef42acaa3b205b183
+
+pkgname = mod_nss
+

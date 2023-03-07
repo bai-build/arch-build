@@ -1,0 +1,26 @@
+pkgbase = mingw-w64-geany
+	pkgdesc = Fast and lightweight IDE (mingw-w64)
+	pkgver = 1.33.0
+	pkgrel = 1
+	url = https://www.geany.org/
+	arch = any
+	license = GPL
+	makedepends = python-lxml
+	makedepends = setconf
+	makedepends = intltool
+	makedepends = python
+	makedepends = mingw-w64-gcc
+	makedepends = mingw-w64-configure
+	depends = mingw-w64-crt
+	depends = mingw-w64-gtk3
+	optdepends = mingw-w64-geany-plugins: various extra features
+	optdepends = mingw-w64-python
+	options = !buildflags
+	options = staticlibs
+	options = !strip
+	options = !emptydirs
+	source = https://download.geany.org/geany-1.33.tar.bz2
+	sha256sums = 66baaff43f12caebcf0efec9a5533044dc52837f799c73a1fd7312caa86099c2
+
+pkgname = mingw-w64-geany
+

@@ -1,0 +1,17 @@
+<<<<<<< HEAD
+src
+srcdir
+pkg
+pkgdir
+*.tar.*
+*.xz
+*.gz
+*.bz2
+*.tar
+*.zip
+*.rar
+=======
+*.tar.*
+pkg/
+src/
+>>>>>>> c7bac17... init

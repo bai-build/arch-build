@@ -1,0 +1,24 @@
+pkgbase = libogc-git
+	pkgdesc = Library for Nintendo Gamecube/Wii homebrew development (development version)
+	pkgver = 1.8.15.r0.g81ab510
+	pkgrel = 1
+	url = http://www.devkitpro.org
+	arch = any
+	license = custom
+	makedepends = git
+	depends = devkitppc
+	optdepends = libfat-ogc-git: fat filesystem access from homebrew
+	optdepends = devkitppc-portlibs: various ported libraries for homebrew use
+	provides = libogc
+	conflicts = libogc
+	options = !strip
+	options = staticlibs
+	source = git+https://github.com/devkitPro/libogc.git
+	source = git+https://github.com/devkitPro/wii-examples.git
+	source = git+https://github.com/devkitPro/gamecube-examples.git
+	md5sums = SKIP
+	md5sums = SKIP
+	md5sums = SKIP
+
+pkgname = libogc-git
+

@@ -1,0 +1,18 @@
+pkgbase = lariza-git
+	pkgdesc = Simple WebKit2GTK+ Browser
+	pkgver = 20.08.1.g3a7f696
+	pkgrel = 1
+	url = https://uninformativ.de/git/lariza
+	install = lariza.install
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = git
+	depends = webkit2gtk
+	provides = lariza
+	conflicts = lariza
+	source = git+https://uninformativ.de/git/lariza.git
+	md5sums = SKIP
+
+pkgname = lariza-git
+

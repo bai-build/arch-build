@@ -1,0 +1,26 @@
+pkgbase = communist
+	pkgdesc = Simple GTK4 based p2p messenger
+	pkgver = 2.0.3
+	pkgrel = 3
+	url = https://github.com/ProfessorNavigator/communist
+	arch = x86_64
+	license = GPL3
+	makedepends = meson
+	makedepends = ninja
+	makedepends = pkgconf
+	makedepends = gcc
+	makedepends = gtkmm-4.0
+	makedepends = hunspell
+	makedepends = icu
+	makedepends = libcommunist
+	depends = gtkmm-4.0
+	depends = hunspell
+	depends = icu
+	depends = gst-plugins-good
+	depends = libcommunist
+	provides = communist
+	options = strip
+	source = https://github.com/ProfessorNavigator/communist/archive/refs/tags/v2.0.3.tar.gz
+	sha256sums = 5c8b7468a66f9e60ad7c70d0706dcb2c6ef22faac5c65299b6c32f558af49c77
+
+pkgname = communist

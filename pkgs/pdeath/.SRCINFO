@@ -1,0 +1,14 @@
+pkgbase = pdeath
+	pkgdesc = Run a command that is killed when its parent exits
+	pkgver = 1.1.1
+	pkgrel = 1
+	url = https://codeberg.org/maandree/pdeath
+	arch = i686
+	arch = x86_64
+	license = custom:ISC
+	makedepends = linux>=2.1.57
+	depends = linux>=2.1.57
+	source = pdeath-1.1.1.tar.gz::https://codeberg.org/maandree/pdeath/archive/1.1.1.tar.gz
+	sha256sums = 35b3e0e2497f564cb57bb8c44c38da5e25c7d4784f3893237ddec7c6ad384010
+
+pkgname = pdeath

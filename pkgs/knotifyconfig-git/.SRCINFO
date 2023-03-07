@@ -1,0 +1,19 @@
+pkgbase = knotifyconfig-git
+	pkgdesc = Configuration system for KNotify
+	pkgver = 5.240.0_r426.gea9df2e
+	pkgrel = 1
+	url = https://community.kde.org/Frameworks
+	arch = x86_64
+	groups = kf6-git
+	license = LGPL
+	makedepends = git
+	makedepends = extra-cmake-modules-git
+	makedepends = doxygen
+	makedepends = qt6-tools
+	depends = kio-git
+	provides = knotifyconfig
+	conflicts = knotifyconfig
+	source = git+https://github.com/KDE/knotifyconfig.git
+	sha256sums = SKIP
+
+pkgname = knotifyconfig-git

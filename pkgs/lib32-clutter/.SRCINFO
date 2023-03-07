@@ -1,0 +1,19 @@
+pkgbase = lib32-clutter
+	pkgdesc = A toolkit for creating fast, portable, compelling dynamic UIs (32-bit)
+	pkgver = 1.26.2
+	pkgrel = 1
+	url = https://blogs.gnome.org/clutter/
+	arch = x86_64
+	license = LGPL
+	makedepends = gobject-introspection
+	makedepends = gtk-doc
+	makedepends = git
+	depends = lib32-gtk3
+	depends = lib32-cogl
+	depends = lib32-libinput
+	depends = clutter
+	source = git+https://git.gnome.org/browse/clutter#commit=2faa83baf3ce9b9c94635311ad79944ab2a73c84
+	sha256sums = SKIP
+
+pkgname = lib32-clutter
+

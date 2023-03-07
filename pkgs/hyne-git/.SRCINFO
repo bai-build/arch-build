@@ -1,0 +1,17 @@
+pkgbase = hyne-git
+	pkgdesc = Final Fantasy 8 Save Editor
+	pkgver = 1.9.2c.r2.g480170f
+	pkgrel = 1
+	url = http://github.com/myst6re/hyne
+	install = hyne-git.install
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	depends = qt5-base
+	depends = zlib
+	conflicts = hyne
+	source = git://github.com/myst6re/hyne.git#branch=develop
+	md5sums = SKIP
+
+pkgname = hyne-git
+

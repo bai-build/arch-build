@@ -1,0 +1,18 @@
+pkgbase = highcommand-git
+	pkgdesc = getopt() for the future
+	pkgver = r53.0e8424d
+	pkgrel = 1
+	url = https://github.com/dlom/highcommand
+	arch = i686
+	arch = x86_64
+	license = MIT
+	checkdepends = cmocka
+	makedepends = ruby-ronn
+	depends = glibc
+	provides = highcommand
+	conflicts = highcommand
+	source = git+https://github.com/dlom/highcommand.git
+	md5sums = SKIP
+
+pkgname = highcommand-git
+

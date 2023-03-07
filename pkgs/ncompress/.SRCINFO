@@ -1,0 +1,15 @@
+pkgbase = ncompress
+	pkgdesc = The classic unix compression utility which can handle the ancient .Z archive
+	pkgver = 4.2.4.5
+	pkgrel = 2
+	url = https://github.com/vapier/ncompress
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = glibc
+	provides = compress
+	source = https://github.com/vapier/ncompress/archive/v4.2.4.5.tar.gz
+	md5sums = 9ab5d54d764d38050e9256b635bf09a9
+
+pkgname = ncompress
+

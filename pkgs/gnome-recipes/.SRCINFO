@@ -1,0 +1,18 @@
+pkgbase = gnome-recipes
+	pkgdesc = Recipe management application for GNOME
+	pkgver = 1.0.4
+	pkgrel = 1
+	url = https://wiki.gnome.org/Apps/Recipes
+	arch = x86_64
+	arch = i686
+	license = GPL3
+	checkdepends = appstream-glib
+	makedepends = itstool
+	depends = gnome-autoar
+	depends = gspell
+	depends = libcanberra
+	source = https://download.gnome.org/sources/gnome-recipes/1.0/gnome-recipes-1.0.4.tar.xz
+	sha256sums = f8f1f0f79121e91130a589b1c20ad4739d93d2253232ecdc3d4bc966db7efc45
+
+pkgname = gnome-recipes
+

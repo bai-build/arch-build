@@ -1,0 +1,22 @@
+pkgbase = ktimer-git
+	pkgdesc = Countdown Launcher
+	pkgver = 21.11.70_r468.g08ad6e6
+	pkgrel = 1
+	url = https://apps.kde.org/ktimer/
+	arch = x86_64
+	groups = kde-applications-git
+	groups = kde-utilities-git
+	license = GPL
+	license = LGPL
+	license = FDL
+	makedepends = git
+	makedepends = extra-cmake-modules-git
+	makedepends = kdoctools-git
+	depends = kio-git
+	depends = hicolor-icon-theme
+	provides = ktimer
+	conflicts = ktimer
+	source = git+https://github.com/KDE/ktimer.git
+	sha256sums = SKIP
+
+pkgname = ktimer-git

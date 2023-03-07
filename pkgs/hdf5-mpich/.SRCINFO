@@ -1,0 +1,22 @@
+pkgbase = hdf5-mpich
+	pkgdesc = General purpose library and file format for storing scientific data (mpich version) (full version including its Java Native Interfaces)
+	pkgver = 1.12.0
+	pkgrel = 1
+	url = https://portal.hdfgroup.org/display/support
+	arch = x86_64
+	license = custom
+	makedepends = cmake
+	makedepends = time
+	makedepends = java-environment
+	makedepends = gcc-fortran
+	depends = bash
+	depends = libaec
+	depends = mpich
+	options = staticlibs
+	source = https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.12/hdf5-1.12.0/src/hdf5-1.12.0.tar.bz2
+	source = hdf5-1.12.0-compat-1.6.patch
+	md5sums = 1fa68c4b11b6ef7a9d72ffa55995f898
+	md5sums = afd4d35a187d5c7892e7060e729d4813
+
+pkgname = hdf5-mpich
+

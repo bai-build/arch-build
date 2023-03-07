@@ -1,0 +1,24 @@
+--- a/Makefile
++++ b/Makefile
+@@ -47,10 +47,10 @@ build: $(CLI)
+ 
+ 
+ $(XD): webui
+-	$(GO) build -a -ldflags "-X xd/lib/version.Git=$(GIT_VERSION)" -tags='$(TAGS)' -o $(XD)
++	$(GO) build -a -ldflags "-X xd/lib/version.Git=$(GIT_VERSION) -linkmode external -extldflags '${LDFLAGS}'" -tags='$(TAGS)' -o $(XD)
+ 
+ dev: webui
+-	$(GO) build -race -v -a -ldflags "-X xd/lib/version.Git=$(GIT_VERSION)" -tags='$(TAGS)' -o $(XD)
++	$(GO) build -race -v -a -ldflags "-X xd/lib/version.Git=$(GIT_VERSION) -linkmode external -extldflags '${LDFLAGS}'" -tags='$(TAGS)' -o $(XD)
+ 
+ $(CLI): $(XD)
+ 	$(RM) $(CLI)
+@@ -85,7 +85,7 @@ webui: $(WEBUI_CORE)
+ 	$(CP) $(WEB_FILES) $(REPO)/lib/rpc/assets/
+ 
+ no-webui:
+-	$(GO) build -ldflags "-X xd/lib/version.Git=$(GIT_VERSION)" -o $(XD)
++	$(GO) build -ldflags "-X xd/lib/version.Git=$(GIT_VERSION) -linkmode external -extldflags '${LDFLAGS}'" -o $(XD)
+ 
+ install: $(XD) $(CLI)
+ 	$(MKDIR) $(PREFIX)/bin

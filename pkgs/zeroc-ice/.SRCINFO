@@ -1,0 +1,30 @@
+pkgbase = zeroc-ice
+	pkgdesc = An object-oriented middleware that provides object-oriented Remote Procedure Call functionality
+	pkgver = 3.7.0
+	pkgrel = 1
+	url = https://zeroc.com
+	install = ice.install
+	arch = i686
+	arch = x86_64
+	license = GPL
+	license = custom:Ice license
+	makedepends = mcpp>=2.7.2
+	makedepends = bzip2
+	makedepends = java-environment
+	makedepends = lmdb
+	depends = mcpp>=2.7.2
+	source = ice-3.7.0.tar.gz::https://github.com/zeroc-ice/ice/archive/v3.7.0.tar.gz
+	source = ice-packaging-3.7.0.tar.gz::https://github.com/zeroc-ice/ice-packaging/archive/v3.7.0.tar.gz
+	sha256sums = 809fff14a88a7de1364c846cec771d0d12c72572914e6cc4fb0b2c1861c4a1ee
+	sha256sums = 096bcfb74b9a281ad9bccf3eaa360b912cb96e88735d5b18b96198f657b323cb
+
+pkgname = zeroc-ice
+	backup = etc/glacier2router.conf
+	backup = etc/icegridnode.conf
+	backup = etc/icegridregistry.conf
+
+pkgname = zeroc-ice-java
+	arch = any
+	depends = zeroc-ice
+	depends = java-environment
+

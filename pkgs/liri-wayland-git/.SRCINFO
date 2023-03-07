@@ -1,0 +1,24 @@
+pkgbase = liri-wayland-git
+	pkgdesc = Wayland client and server libraries for Qt applications
+	pkgver = r98.5ebaabf
+	pkgrel = 1
+	url = https://liri.io
+	arch = i686
+	arch = x86_64
+	arch = armv6h
+	arch = armv7h
+	groups = liri-git
+	license = LGPL3
+	makedepends = git
+	makedepends = liri-cmake-shared-git
+	depends = wayland-protocols
+	depends = qt5-wayland
+	provides = liri-wayland
+	conflicts = liri-wayland
+	replaces = liri-wayland
+	options = debug
+	options = !strip
+	source = wayland::git+https://github.com/lirios/wayland.git#branch=develop
+	md5sums = SKIP
+
+pkgname = liri-wayland-git

@@ -1,0 +1,21 @@
+pkgbase = merkaartor
+	pkgdesc = OpenStreetMap editor
+	pkgver = 0.18.2
+	pkgrel = 1
+	url = http://merkaartor.be/
+	install = merkaartor.install
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	depends = desktop-file-utils
+	depends = exiv2
+	depends = gdal
+	depends = hicolor-icon-theme
+	depends = qtwebkit
+	optdepends = gpsd
+	optdepends = libproxy
+	source = https://github.com/openstreetmap/merkaartor/archive/0.18.2.tar.gz
+	sha256sums = 9e04d554ebc4f9999d0dd6d0cdf4e50a38135f34ded68f5dfd8cb295e20bf508
+
+pkgname = merkaartor
+

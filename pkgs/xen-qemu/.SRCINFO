@@ -1,0 +1,25 @@
+pkgbase = xen-qemu
+	pkgdesc = A xen-specific QEMU, built to qemu-builtin standards
+	pkgver = 7.2.0
+	pkgrel = 1
+	url = https://www.qemu.org
+	arch = x86_64
+	license = GPL2
+	license = LGPL2.1
+	makedepends = ninja
+	makedepends = meson
+	depends = curl
+	depends = xen
+	depends = numactl
+	provides = qemu-xen
+	provides = xen-qemu
+	provides = xen-qemu-builtin
+	conflicts = xen-qemu-builtin
+	replaces = xen-qemu-builtin
+	source = https://download.qemu.org/qemu-7.2.0.tar.xz
+	source = https://download.qemu.org/qemu-7.2.0.tar.xz.sig
+	validpgpkeys = CEACC9E15534EBABB82D3FA03353C9CEF108B584
+	sha512sums = f3cfa00da739ba819a218d7e6e95c77fb79a8e0f487b024ddd281602e785249b81144595e3f8c746c32a4f5c4d1a88c6aebae3c162603edfbb50ae3722d7ed13
+	sha512sums = SKIP
+
+pkgname = xen-qemu

@@ -1,0 +1,22 @@
+pkgbase = ros-kinetic-tf2-eigen
+	pkgdesc = ROS - tf2_eigen.
+	pkgver = 0.5.20
+	pkgrel = 1
+	url = http://www.ros.org/
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-geometry-msgs
+	makedepends = ros-kinetic-cmake-modules
+	makedepends = ros-kinetic-tf2
+	makedepends = ros-kinetic-catkin
+	makedepends = eigen
+	depends = ros-kinetic-geometry-msgs
+	depends = ros-kinetic-tf2
+	depends = eigen
+	source = ros-kinetic-tf2-eigen-0.5.20-0.tar.gz::https://github.com/ros-gbp/geometry2-release/archive/release/kinetic/tf2_eigen/0.5.20-0.tar.gz
+	sha256sums = c6fd80898753f78784770962624947a040f2cd603008d9a8a0125639df0ba8db
+
+pkgname = ros-kinetic-tf2-eigen
+

@@ -1,0 +1,22 @@
+pkgbase = gst-plugin-jamesdsp-git
+	pkgdesc = JamesDSP wrapper plugin for GStreamer
+	pkgver = r26.ccddd23
+	pkgrel = 3
+	url = https://github.com/Audio4Linux/gst-plugin-jamesdsp
+	arch = x86_64
+	license = GPL2
+	makedepends = git
+	depends = gst-plugins-base-libs
+	depends = libsamplerate
+	depends = libsndfile
+	provides = gst-plugin-jamesdsp
+	provides = libgstjdspfx
+	conflicts = gst-plugin-jamesdsp
+	conflicts = libgstjdspfx
+	conflicts = gst-plugin-viper4linux
+	conflicts = gst-plugin-viperfx
+	source = git+https://github.com/Audio4Linux/gst-plugin-jamesdsp.git
+	sha256sums = SKIP
+
+pkgname = gst-plugin-jamesdsp-git
+

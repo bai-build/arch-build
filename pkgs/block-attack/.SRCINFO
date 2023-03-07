@@ -1,0 +1,22 @@
+pkgbase = block-attack
+	pkgdesc = An open source clone of Tetris Attack based on SDL
+	pkgver = 1.4.2
+	pkgrel = 3
+	url = http://sourceforge.net/projects/blockattack
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = enet
+	depends = physfs
+	depends = sdl_mixer
+	depends = sdl_image
+	depends = sdl_ttf
+	source = https://downloads.sourceforge.net/blockattack/blockattack-1.4.2.tar.bz2
+	source = block-attack.patch
+	source = block-attack
+	sha1sums = fb3cbe97e7ce3a59f1a6d304a86823bec4b47fd0
+	sha1sums = f3b5390dd0ac4b5ec3682f2eca376d96182cae5b
+	sha1sums = e124e5ce75c7e10b5817033e84870d0c607bcdb8
+
+pkgname = block-attack
+

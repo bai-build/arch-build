@@ -1,0 +1,28 @@
+pkgbase = vgmstream-kode54-git
+	pkgdesc = Library for playback of various streamed audio formats used in video games (kode54's fork)
+	pkgver = r1050.3185.g471dadb4
+	pkgrel = 2
+	url = https://github.com/kode54/vgmstream
+	arch = x86_64
+	license = BSD
+	makedepends = audacious
+	makedepends = git
+	makedepends = gtk2
+	depends = ffmpeg
+	depends = libao
+	depends = libatrac9-git
+	depends = libogg
+	depends = libvorbis
+	depends = mpg123
+	optdepends = audacious: for using the bundled plugin
+	source = vgmstream-kode54-git::git+https://github.com/kode54/vgmstream.git
+	source = https://downloads.xiph.org/releases/celt/celt-0.6.1.tar.gz
+	source = https://downloads.xiph.org/releases/celt/celt-0.11.0.tar.gz
+	source = install-headers.patch
+	sha256sums = SKIP
+	sha256sums = a991dff4a9e0772ede0881d81cdc7ac559148c2194885cbdd534fe4af43779da
+	sha256sums = c94d4d34f5a2caa1574b1a94869202cacd959b55f643a8bafe0660008acad9c3
+	sha256sums = e3e94769b6545e2c8c0b60ffda684b659bb8db06f3fb9d7645fd4a734d115bac
+
+pkgname = vgmstream-kode54-git
+

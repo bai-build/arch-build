@@ -1,0 +1,21 @@
+pkgbase = riscv64-unknown-elf-gcc
+	pkgdesc = The GNU Compiler Collection - cross compiler for 32bit and 64bit RISC-V bare-metal
+	pkgver = 12.2.0
+	pkgrel = 2
+	url = http://gcc.gnu.org/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	license = LGPL
+	license = FDL
+	depends = riscv64-unknown-elf-binutils
+	depends = zlib
+	depends = libmpc
+	options = !emptydirs
+	options = !strip
+	source = https://gcc.gnu.org/pub/gcc/releases/gcc-12.2.0/gcc-12.2.0.tar.xz
+	source = https://libisl.sourceforge.io/isl-0.25.tar.xz
+	sha256sums = e549cf9cf3594a00e27b6589d4322d70e0720cdd213f39beb4181e06926230ff
+	sha256sums = be7b210647ccadf90a2f0b000fca11a4d40546374a850db67adb32fad4b230d9
+
+pkgname = riscv64-unknown-elf-gcc

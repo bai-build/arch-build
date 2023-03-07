@@ -1,0 +1,17 @@
+pkgbase = amberfish-git
+	pkgdesc = A general purpose text retrieval software
+	pkgver = 2.3.0.r1.ga5bdd6c.r4
+	pkgrel = 1
+	epoch = 1
+	url = https://github.com/nassibnassar/amberfish.git
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = git
+	depends = xerces-c
+	provides = amberfish
+	conflicts = amberfish
+	source = git+https://github.com/nassibnassar/amberfish.git
+	md5sums = SKIP
+
+pkgname = amberfish-git

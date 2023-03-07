@@ -1,0 +1,18 @@
+pkgbase = pecl-http
+	pkgdesc = Extended HTTP Support
+	pkgver = 3.2.3
+	pkgrel = 1
+	url = http://pecl.php.net/package/pecl_http
+	install = http.install
+	arch = i686
+	arch = x86_64
+	license = BSD
+	makedepends = autoconf
+	depends = php
+	depends = pecl-raphf
+	depends = pecl-propro
+	source = http://pecl.php.net/get/pecl_http-3.2.3.tgz
+	sha256sums = cf9d2a2ed335e572366025eca1d69e86c585f96ca07db341839a06f52ee4aa88
+
+pkgname = pecl-http
+

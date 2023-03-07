@@ -1,0 +1,24 @@
+pkgbase = fbpdf-git
+	pkgdesc = A small framebuffer pdf viewer, based on MuPDF.
+	pkgver = r102.6276360
+	pkgrel = 1
+	url = http://litcave.rudi.ir/
+	arch = i686
+	arch = x86_64
+	license = ISC
+	makedepends = git
+	depends = libmupdf
+	depends = mujs
+	depends = freetype2
+	depends = gumbo-parser
+	depends = harfbuzz
+	depends = jbig2dec
+	depends = libjpeg
+	depends = djvulibre
+	depends = openjpeg2
+	provides = fbpdf
+	conflicts = fbpdf
+	source = fbpdf-git::git+git://repo.or.cz/fbpdf.git
+	sha256sums = SKIP
+
+pkgname = fbpdf-git

@@ -1,0 +1,18 @@
+pkgbase = android-x86-expat
+	pkgdesc = An XML parser library (android)
+	pkgver = 2.5.0
+	pkgrel = 1
+	url = https://libexpat.github.io/
+	arch = any
+	groups = android-expat
+	license = custom
+	makedepends = android-cmake
+	depends = android-ndk
+	options = !strip
+	options = !buildflags
+	options = staticlibs
+	options = !emptydirs
+	source = https://github.com/libexpat/libexpat/archive/R_2_5_0.tar.gz
+	md5sums = d375fa3571c0abb945873f5061a8f2e2
+
+pkgname = android-x86-expat

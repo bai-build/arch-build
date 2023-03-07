@@ -1,0 +1,22 @@
+pkgbase = cross-mips-elf-gcc
+	pkgdesc = The GNU Compiler Collection for the MIPS-elf architecture
+	pkgver = 11.2.0
+	pkgrel = 1
+	url = http://www.gnu.org/software/gcc/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = libmpc
+	depends = cross-mips-elf-binutils
+	options = !ccache
+	options = !distcc
+	options = !emptydirs
+	options = !libtool
+	options = !strip
+	source = ftp://ftp.gnu.org/gnu/gcc/gcc-11.2.0/gcc-11.2.0.tar.gz
+	source = ftp://ftp.gnu.org/gnu/gcc/gcc-11.2.0/gcc-11.2.0.tar.gz.sig
+	validpgpkeys = D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
+	md5sums = dc6886bd44bb49e2d3d662aed9729278
+	md5sums = SKIP
+
+pkgname = cross-mips-elf-gcc

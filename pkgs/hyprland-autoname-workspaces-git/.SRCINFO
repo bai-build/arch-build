@@ -1,0 +1,22 @@
+pkgbase = hyprland-autoname-workspaces-git
+	pkgdesc = Hyprland autoname workspace.
+	pkgver = main
+	pkgrel = 4
+	url = https://github.com/cyrinux/hyprland-autoname-workspaces
+	arch = x86_64
+	arch = aarch64
+	license = ISC
+	makedepends = cargo
+	makedepends = git
+	makedepends = clang
+	depends = otf-font-awesome
+	depends = hyprland
+	depends = systemd-libs
+	provides = hyprland-autoname-workspaces
+	conflicts = hyprland-autoname-workspaces
+	conflicts = hyprland-autoname-workspaces-bin
+	source = git+https://github.com/cyrinux/hyprland-autoname-workspaces.git
+	validpgpkeys = C5DFDE230E7B3DA1E6B5D5316A11D19BDD5F8B5E
+	sha256sums = SKIP
+
+pkgname = hyprland-autoname-workspaces-git

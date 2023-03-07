@@ -1,0 +1,19 @@
+--- a/tools/python/info.py
++++ b/tools/python/info.py
+@@ -2,6 +2,7 @@ import os, shutil,  sys
+ import json, pickle
+ import argparse
+ import ConfigParser
++import tempfile
+ from advprint import AdvPrint
+ 
+ class Info(dict):
+@@ -671,7 +672,7 @@ class Info(dict):
+ 
+         cls.paths['checkmate'] = os.path.split(os.path.split(os.path.split(os.path.realpath(__file__))[0])[0])[0]
+         
+-        cls.paths['results'] = os.path.join(cls.paths['checkmate'], 'results')
++        cls.paths['results'] = os.path.join(tempfile.gettempdir(), 'checkmate')
+         cls.paths['tools'] = os.path.join(cls.paths['checkmate'], 'tools')
+         cls.paths['data'] = os.path.join(cls.paths['checkmate'], 'data')
+         

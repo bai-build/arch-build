@@ -1,0 +1,18 @@
+pkgbase = ros-indigo-ecl-tools
+	pkgdesc = ROS - Tools and utilities for ecl development.
+	pkgver = 0.61.18
+	pkgrel = 1
+	url = http://www.ros.org/wiki/ecl_tools
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = git
+	makedepends = ros-build-tools
+	makedepends = ros-indigo-catkin
+	depends = ros-indigo-ecl-license
+	depends = ros-indigo-ecl-build
+	source = https://github.com/yujinrobot-release/ecl_tools-release/archive/release/indigo/ecl_tools/0.61.18-0.tar.gz
+	sha256sums = 7486fb3d56394b262386982e0e2a1573b6791966877e5d5984ae6307bb44458b
+
+pkgname = ros-indigo-ecl-tools
+

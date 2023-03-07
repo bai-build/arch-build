@@ -1,0 +1,26 @@
+pkgbase = mate-netbook-dev
+	pkgdesc = A simple window management tool .
+	pkgver = 1.15.2
+	pkgrel = 2
+	url = http://mate-desktop.org
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = mate-common-dev
+	makedepends = intltool
+	depends = gtk3
+	depends = libfakekey
+	depends = libwnck3
+	depends = libunique3
+	depends = mate-panel-dev>=1.15
+	provides = mate-netbook
+	provides = mate-netbook-gtk3
+	conflicts = mate-netbook
+	conflicts = mate-netbook-gtk3
+	source = http://pub.mate-desktop.org/releases/1.15/mate-netbook-1.15.2.tar.xz
+	sha1sums = 5e09d4da8d934c6350d1a7e40b78fdf557e8edf4
+
+pkgname = mate-netbook-dev
+	pkgdesc = A simple window management tool . (GTK3 version)
+	groups = mate-extra-gtk3
+

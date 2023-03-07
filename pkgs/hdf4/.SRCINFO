@@ -1,0 +1,20 @@
+pkgbase = hdf4
+	pkgdesc = General purpose library and file format for storing scientific data (version including the Java Native Interfaces - JNI)
+	pkgver = 4.2.15
+	pkgrel = 1
+	url = https://portal.hdfgroup.org/display/support/HDF+4.2.15
+	arch = x86_64
+	license = custom
+	makedepends = java-environment
+	depends = libaec
+	depends = zlib
+	depends = libjpeg-turbo
+	depends = libtirpc
+	provides = hdf4-java
+	conflicts = hdf4-java
+	replaces = hdf4-java
+	source = https://support.hdfgroup.org/ftp/HDF/releases/HDF4.2.15/src/hdf-4.2.15.tar.bz2
+	md5sums = 27ab87b22c31906883a0bfaebced97cb
+
+pkgname = hdf4
+

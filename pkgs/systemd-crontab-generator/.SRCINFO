@@ -1,0 +1,30 @@
+pkgbase = systemd-crontab-generator
+	pkgdesc = systemd generator to generate timers/services from crontab and anacrontab files
+	pkgver = 0.9.0
+	pkgrel = 1
+	url = https://github.com/systemd-cron/systemd-crontab-generator
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = rust
+	depends = python2
+	depends = systemd
+	provides = cron
+	provides = anacron
+	replaces = cron
+	replaces = anacron
+	source = https://github.com/systemd-cron/systemd-crontab-generator/archive/master.zip
+	source = systemd-crontab-update
+	source = crontab
+	source = systemd-crontab-generator.1
+	source = crontab.1
+	source = crontab.5
+	md5sums = 35e308952f6e4f7d80c50d83ba981c2a
+	md5sums = 6f00710ad710e319b52edef3e98bd010
+	md5sums = 4ac2cfc8de6dabf2e08f39b3c3557879
+	md5sums = 15acf6fd2a9533c13ce21c6e03210194
+	md5sums = d863925d682395cef72701725f180884
+	md5sums = f5e92c03bcb37acd580e2e27f5facc6a
+
+pkgname = systemd-crontab-generator
+

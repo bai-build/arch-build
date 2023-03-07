@@ -1,0 +1,32 @@
+pkgbase = ncmpcpp-vim-git
+	pkgdesc = An almost exact clone of ncmpc with some new features. Patched for vim-like keybindings.
+	pkgver = 2053.ba83b9d
+	pkgrel = 1
+	epoch = 1
+	url = http://unkart.ovh.org/ncmpcpp/
+	install = ncmpcpp-vim-git.install
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = git
+	makedepends = boost
+	makedepends = pkg-config
+	depends = ncurses
+	depends = libmpdclient>=2.8
+	depends = boost-libs
+	optdepends = curl: fetch lyrics
+	optdepends = taglib: tag editor
+	optdepends = fftw: frequency spectrum mode visualization
+	provides = ncmpcpp
+	conflicts = ncmpcpp
+	conflicts = ncmpcpp-git
+	conflicts = ncmpcpp-xdg-config
+	conflicts = ncmpcpp-xdg-config-git
+	conflicts = ncmpcpp-color
+	source = git+git://repo.or.cz/ncmpcpp.git
+	source = vim-keybindings.patch
+	sha256sums = SKIP
+	sha256sums = c2234241790269c452a085e4071c8770dbaed18960734c9b764a88811d6e0759
+
+pkgname = ncmpcpp-vim-git
+

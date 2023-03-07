@@ -1,0 +1,14 @@
+pkgbase = foonathan_memory-shared
+	pkgdesc = STL compatible C++ memory allocator library build with BUILD_SHARED_LIBS=ON
+	pkgver = 0.7.2
+	pkgrel = 1
+	url = https://www.jonathanmueller.dev/project/#memory
+	arch = x86_64
+	license = ZLIB
+	makedepends = cmake
+	makedepends = git
+	conflicts = foonathan_memory
+	source = foonathan_memory-shared-0.7.2.tar.gz::https://github.com/foonathan/memory/archive/v0.7-2.tar.gz
+	sha256sums = 8aba7211bb0e59b7538decda453e492cc6e36f8781508ed92b38cbafe8a48762
+
+pkgname = foonathan_memory-shared

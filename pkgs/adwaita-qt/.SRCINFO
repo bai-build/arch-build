@@ -1,0 +1,28 @@
+pkgbase = adwaita-qt
+	pkgdesc = A style to bend Qt applications to look like they belong into GNOME Shell
+	pkgver = 1.4.1
+	pkgrel = 2
+	url = https://github.com/FedoraQt/adwaita-qt
+	arch = x86_64
+	arch = aarch64
+	arch = armv7h
+	license = GPL
+	makedepends = cmake
+	makedepends = git
+	makedepends = qt5-x11extras
+	makedepends = qt6-base
+	source = git+https://github.com/FedoraQt/adwaita-qt.git#commit=a503e7ecce9e50e4917ab9707592b3cd3e40c248
+	sha256sums = SKIP
+
+pkgname = adwaita-qt
+	pkgdesc = A style to bend Qt5 applications to look like they belong into GNOME Shell
+	depends = qt5-x11extras
+	provides = libadwaitaqtpriv.so=1
+	provides = libadwaitaqt.so=1
+
+pkgname = adwaita-qt6
+	pkgdesc = A style to bend Qt6 applications to look like they belong into GNOME Shell
+	depends = libxcb
+	depends = qt6-base
+	provides = libadwaitaqt6priv.so=1
+	provides = libadwaitaqt6.so=1

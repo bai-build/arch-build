@@ -1,0 +1,67 @@
+diff --git a/configure b/configure
+index 2a884c5..b42319b 100755
+--- a/configure
++++ b/configure
+@@ -21228,7 +21228,7 @@ fi
+     ;;
+   linux*)
+     if test x"$host_cpu" = "xx86_64"; then
+-      VICEDIR="$PREFIX/lib64/vice"
++      VICEDIR="$PREFIX/lib/vice"
+        if false; then
+   ALTERNATE_DOCDIR_TRUE=
+   ALTERNATE_DOCDIR_FALSE='#'
+diff --git a/configure.ac b/configure.ac
+index 6b74e07..c90dbba 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -2766,12 +2766,7 @@ if test x"$enable_lame" != "xno" ; then
+   fi
+ fi
+ 
+-AC_PATH_PROGS(FCCACHE, fc-cache, false)
+-if test x"$FCCACHE" = "xfalse"; then
+-  AM_CONDITIONAL(HAVE_FC_CACHE, false)
+-else
+-  AM_CONDITIONAL(HAVE_FC_CACHE, true)
+-fi
++AM_CONDITIONAL(HAVE_FC_CACHE, false)
+ 
+ if test x"$is_amigaos4" = "xyes"; then
+   dnl for AmigaOS4 native resid needs to be configured without dependency tracking
+@@ -3635,7 +3630,7 @@ case "$host_os" in
+     ;;
+   linux*)
+     if test x"$host_cpu" = "xx86_64"; then
+-      VICEDIR="$PREFIX/lib64/vice"
++      VICEDIR="$PREFIX/lib/vice"
+       AM_CONDITIONAL(ALTERNATE_DOCDIR, false)
+     else
+       VICEDIR="$PREFIX/lib/vice"
+diff --git a/configure.proto b/configure.proto
+index 4adca9b..677067f 100755
+--- a/configure.proto
++++ b/configure.proto
+@@ -2766,12 +2766,7 @@ if test x"$enable_lame" != "xno" ; then
+   fi
+ fi
+ 
+-AC_PATH_PROGS(FCCACHE, fc-cache, false)
+-if test x"$FCCACHE" = "xfalse"; then
+-  AM_CONDITIONAL(HAVE_FC_CACHE, false)
+-else
+-  AM_CONDITIONAL(HAVE_FC_CACHE, true)
+-fi
++AM_CONDITIONAL(HAVE_FC_CACHE, false)
+ 
+ if test x"$is_amigaos4" = "xyes"; then
+   dnl for AmigaOS4 native resid needs to be configured without dependency tracking
+@@ -3635,7 +3630,7 @@ case "$host_os" in
+     ;;
+   linux*)
+     if test x"$host_cpu" = "xx86_64"; then
+-      VICEDIR="$PREFIX/lib64/vice"
++      VICEDIR="$PREFIX/lib/vice"
+       AM_CONDITIONAL(ALTERNATE_DOCDIR, false)
+     else
+       VICEDIR="$PREFIX/lib/vice"

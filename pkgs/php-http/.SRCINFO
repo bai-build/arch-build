@@ -1,0 +1,17 @@
+pkgbase = php-http
+	pkgdesc = Aims to provide a convenient and powerful set of functionality for one of PHPs major applications
+	pkgver = 4.2.1
+	pkgrel = 1
+	url = https://mdref.m6w6.name/http
+	arch = i686
+	arch = x86_64
+	license = BSD
+	depends = php
+	depends = php-raphf
+	depends = brotli
+	depends = libevent
+	backup = etc/php/conf.d/http.ini
+	source = https://pecl.php.net/get/pecl_http-4.2.1.tgz
+	sha512sums = 2ad7e57fae313a7b46ba88e528e124ac9d83804827131a6ef478ccf3cf5883dec2d928b8ceb377ee7f5947c76f24d640d77533a9946612419e526786a79877e6
+
+pkgname = php-http

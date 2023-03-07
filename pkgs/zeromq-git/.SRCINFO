@@ -1,0 +1,28 @@
+pkgbase = zeromq-git
+	pkgdesc = Fast messaging system built on sockets. C and C++ bindings. aka 0MQ, ZMQ
+	pkgver = 4.3.3.r7.g1495ccad
+	pkgrel = 1
+	url = https://zeromq.org/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	license = LGPL
+	makedepends = git
+	makedepends = asciidoc
+	makedepends = pkgconf
+	makedepends = xmlto
+	depends = glibc
+	depends = libpgm
+	depends = libsodium
+	depends = util-linux
+	provides = zeromq
+	provides = libzmq.so
+	conflicts = zeromq
+	options = staticlibs
+	source = git+https://github.com/zeromq/libzmq.git
+	source = git+https://github.com/zeromq/cppzmq.git
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = zeromq-git
+

@@ -1,0 +1,12 @@
+diff -pudr a/include/freetype/config/ftoption.h b/include/freetype/config/ftoption.h
+--- a/include/freetype/config/ftoption.h	2019-02-23 12:09:06.000000000 +0300
++++ b/include/freetype/config/ftoption.h	2019-03-21 12:44:40.553974923 +0300
+@@ -126,7 +126,7 @@ FT_BEGIN_HEADER
+    * macro is not defined, FreeType offers alternative LCD rendering
+    * technology that produces excellent output without LCD filtering.
+    */
+-/* #define FT_CONFIG_OPTION_SUBPIXEL_RENDERING */
++ #define FT_CONFIG_OPTION_SUBPIXEL_RENDERING
+ 
+ 
+   /**************************************************************************

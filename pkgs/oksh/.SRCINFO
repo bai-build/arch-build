@@ -1,0 +1,18 @@
+pkgbase = oksh
+	pkgdesc = Ported version of ksh from OpenBSD
+	pkgver = 7.2
+	pkgrel = 1
+	url = https://github.com/ibara/oksh/
+	install = oksh.install
+	arch = i686
+	arch = x86_64
+	license = custom: Public Domain
+	license = ISC
+	license = BSD
+	depends = glibc
+	depends = ncurses
+	backup = etc/ksh.kshrc
+	source = https://github.com/ibara/oksh/releases/download/oksh-7.2/oksh-7.2.tar.gz
+	sha256sums = 3340ca98b1d5a2800ebe7dba75312d8a4971a3fcff20fcd0d0ec5cf7b719427e
+
+pkgname = oksh

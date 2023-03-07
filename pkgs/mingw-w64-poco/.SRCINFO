@@ -1,0 +1,19 @@
+pkgbase = mingw-w64-poco
+	pkgdesc = C++ class libraries for network-centric, portable applications, complete edition with debug libraries (mingw-w64)
+	pkgver = 1.9.3
+	pkgrel = 1
+	url = http://www.pocoproject.org/
+	arch = any
+	license = custom:boost
+	makedepends = mingw-w64-cmake
+	depends = mingw-w64-libmariadbclient
+	depends = mingw-w64-openssl
+	depends = mingw-w64-unixodbc
+	options = !strip
+	options = staticlibs
+	options = !buildflags
+	source = https://pocoproject.org/releases/poco-1.9.3/poco-1.9.3-all.tar.bz2
+	sha256sums = 888acb0582cde176bbceac208aa24532f13e04b0c3929036f7cb9b872e4cb61f
+
+pkgname = mingw-w64-poco
+

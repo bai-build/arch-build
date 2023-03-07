@@ -1,0 +1,18 @@
+pkgbase = openfx-gmic
+	pkgdesc = OpenFX wrapper for the G'MIC framework
+	pkgver = 2.5.0
+	pkgrel = 1
+	url = https://github.com/NatronGitHub/openfx-gmic
+	arch = x86_64
+	license = custom:CeCILL-C
+	license = custom:CeCILLv2
+	makedepends = openmp
+	depends = fftw
+	depends = libgl
+	depends = libpng
+	source = openfx-gmic-Natron-2.5.0.tar.gz::https://github.com/NatronGitHub/openfx-gmic/archive/refs/tags/Natron-2.5.0.tar.gz
+	source = openfx-Natron-2.5.0.tar.gz::https://github.com/NatronGitHub/openfx/archive/refs/tags/Natron-2.5.0.tar.gz
+	sha512sums = a5c56c6d70405b55c514d24f7e82a0f536638a56b74ed56bdecf7de03886dd948e336c352f721364bf41eb2f87aa3169646c687a110aca0c79809dc5efe765d5
+	sha512sums = 174b75061ac2bb887f2e10df1ec899276e8e27f1873d2dda2ef07ee3fb53f54169fe37d9921642248e28faa974a50a62e5e8ab20ccdd09c96a235084ae16d87d
+
+pkgname = openfx-gmic

@@ -1,0 +1,14 @@
+pkgbase = geany-astyle
+	pkgdesc = Sourcecode formatter/beautifier based on AStyle for Geany
+	pkgver = 0.2.1
+	pkgrel = 5
+	url = https://launchpad.net/geany-astyle
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	depends = geany
+	depends = astyle
+	source = https://launchpad.net/geany-astyle/trunk/0.2.1/+download/astyle-plugin-src-0.2.1.zip
+	md5sums = d3ef9979426d217a3c6becb5ecad4422
+
+pkgname = geany-astyle

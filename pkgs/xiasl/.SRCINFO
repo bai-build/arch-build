@@ -1,0 +1,19 @@
+pkgbase = xiasl
+	pkgdesc = Cross-platform DSDT&SSDT IDE
+	pkgver = 1.1.65
+	pkgrel = 2
+	url = https://github.com/ic005k/xiasl
+	arch = x86_64
+	license = 
+	makedepends = glew
+	makedepends = glfw
+	makedepends = libxcb
+	depends = qt5-base
+	depends = acpica
+	depends = python-qscintilla-qt5
+	source = https://github.com/ic005k/xiasl/archive/refs/tags/1.1.65.tar.gz
+	source = xiasl.desktop
+	sha256sums = b3dcce7f00927cd43764fef7f21091e1c2f431032475733c97a723dafa2730f6
+	sha256sums = b22c9061b8e51333318374202eba41f0fe1d65267b6fa200c185d298b9e042cd
+
+pkgname = xiasl

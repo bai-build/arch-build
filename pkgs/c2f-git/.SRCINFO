@@ -1,0 +1,16 @@
+pkgbase = c2f-git
+	pkgdesc = Celsius/Fahrenheit converter in C99
+	pkgver = r30.5624e60
+	pkgrel = 1
+	url = https://github.com/ariadnavigo/c2f.git
+	arch = x86_64
+	arch = aarch64
+	license = MIT
+	makedepends = git
+	depends = sline
+	provides = c2f
+	conflicts = c2f
+	source = git+https://github.com/ariadnavigo/c2f.git
+	sha256sums = SKIP
+
+pkgname = c2f-git

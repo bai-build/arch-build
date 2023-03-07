@@ -1,0 +1,19 @@
+pkgbase = deadbeef-plugin-medialib-git
+	pkgdesc = DeaDBeeF media library plugin
+	pkgver = r102.ga9ae3c4
+	pkgrel = 1
+	url = https://github.com/sgomin/ddb_medialib
+	arch = i686
+	arch = x86_64
+	license = custom
+	makedepends = git
+	depends = deadbeef
+	depends = gtkmm3
+	depends = boost
+	source = ddb_medialib::git+https://github.com/sgomin/ddb_medialib
+	source = ddb_medialib-makefile.patch
+	sha256sums = SKIP
+	sha256sums = 38db1362fd3d6117b98b36499f508ac55bf9017f2068ad8cde38bd201f24133e
+
+pkgname = deadbeef-plugin-medialib-git
+

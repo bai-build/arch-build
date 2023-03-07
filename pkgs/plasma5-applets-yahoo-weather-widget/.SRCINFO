@@ -1,0 +1,15 @@
+pkgbase = plasma5-applets-yahoo-weather-widget
+	pkgdesc = A simple weather widget that makes use of beloved Yahoo! Weather data
+	pkgver = 5.2.0
+	pkgrel = 1
+	url = http://kde-apps.org/content/show.php/Yahoo%21+Weather+Widget?content=164194
+	arch = any
+	license = GPL
+	makedepends = extra-cmake-modules
+	depends = plasma-workspace
+	depends = qt5-declarative
+	source = https://github.com/librehat/com.librehat.yahooweather/archive/v5.2.0.tar.gz
+	md5sums = fb6e9dfaeeabfcd3ebb910cd5a7df728
+
+pkgname = plasma5-applets-yahoo-weather-widget
+

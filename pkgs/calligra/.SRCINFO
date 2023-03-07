@@ -1,0 +1,36 @@
+pkgbase = calligra
+	pkgdesc = Digital painting and illustration suite (stand-alone).
+	pkgver = 2.9.9
+	pkgrel = 2
+	url = http://www.krita.org/
+	install = krita.install
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = automoc4
+	makedepends = boost
+	makedepends = cmake
+	makedepends = lcms2
+	makedepends = openjpeg
+	makedepends = vc
+	depends = eigen
+	depends = fftw
+	depends = glew
+	depends = gsl
+	depends = kdebase-runtime
+	depends = libkdcraw4
+	depends = opencolorio
+	depends = boost-libs
+	depends = curl
+	depends = poppler-qt4
+	provides = calligra-krita
+	conflicts = calligra-krita
+	conflicts = calligra-plugins
+	conflicts = calligra-libs
+	conflicts = calligra-extras
+	conflicts = calligra-filters
+	source = http://download.kde.org/stable/calligra-2.9.9/calligra-2.9.9.tar.xz
+	sha256sums = 6e9d1251883c9cc5ad17afbe38959dce5ae1adbec7221831733d0f15fc83e521
+
+pkgname = krita
+

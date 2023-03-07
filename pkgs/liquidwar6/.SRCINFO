@@ -1,0 +1,22 @@
+pkgbase = liquidwar6
+	pkgdesc = Your army is a blob of liquid and you have to try and eat your opponents. Complete rewrite of Liquidwar 5.x
+	pkgver = 0.6.3902
+	pkgrel = 3
+	url = http://www.gnu.org/software/liquidwar6/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = sdl_image
+	depends = sdl_mixer
+	depends = sdl_ttf
+	depends = gtk2
+	depends = sqlite
+	depends = guile2.0
+	depends = glu
+	depends = curl
+	optdepends = liquidwar6-extra-maps: contributed extra maps
+	source = http://download.savannah.gnu.org/releases/liquidwar6/0.6.3902/liquidwar6-0.6.3902.tar.gz
+	sha256sums = d605549afae403439524e572322e45ebf5b6db8ea59505e5d51cb581a8b5e6a4
+
+pkgname = liquidwar6
+

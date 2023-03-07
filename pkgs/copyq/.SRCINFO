@@ -1,0 +1,19 @@
+pkgbase = copyq
+	pkgdesc = Clipboard manager with searchable and editable history
+	pkgver = 3.7.1
+	pkgrel = 1
+	url = https://github.com/hluk/copyq
+	arch = x86_64
+	license = GPL3
+	makedepends = cmake
+	makedepends = qt5-tools
+	depends = libxtst
+	depends = qt5-script
+	depends = qt5-svg
+	depends = qt5-x11extras
+	optdepends = copyq-plugin-itemweb
+	source = copyq-3.7.1.tar.gz::https://github.com/hluk/copyq/archive/v3.7.1.tar.gz
+	sha256sums = 927c2c2df919c2323a7bbc0f24025bb06e54ad6c4cbf5bbc8dcf86ac0f4f6fc7
+
+pkgname = copyq
+

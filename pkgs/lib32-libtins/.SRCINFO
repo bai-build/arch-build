@@ -1,0 +1,19 @@
+pkgbase = lib32-libtins
+	pkgdesc = A high-level, multiplatform C++ network packet sniffing and crafting library (32-bit) version
+	pkgver = 4.1
+	pkgrel = 1
+	url = http://libtins.github.io/
+	arch = x86_64
+	license = BSD
+	makedepends = cmake
+	depends = lib32-libpcap
+	depends = lib32-openssl
+	depends = libtins
+	options = !libtool
+	source = https://github.com/mfontanini/libtins/archive/v4.1.tar.gz
+	source = 0001-Set-where-find-and-install-32-bits-libraries.patch
+	sha256sums = 81a0ae1e04499b25984b2833579d33c4a78ff4513e9a14176c574e855163f7a5
+	sha256sums = df7f2f7fd956e91b5feaa825562db4212c727fe836fe29abdcae0ed549c6c7b5
+
+pkgname = lib32-libtins
+

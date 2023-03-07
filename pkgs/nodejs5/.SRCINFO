@@ -1,0 +1,23 @@
+pkgbase = nodejs5
+	pkgdesc = Evented I/O for V8 javascript
+	pkgver = 5.12.0
+	pkgrel = 1
+	url = http://nodejs.org/
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = python2
+	makedepends = procps-ng
+	depends = openssl
+	depends = zlib
+	depends = icu
+	depends = libuv
+	depends = http-parser
+	optdepends = npm: nodejs package manager
+	provides = nodejs
+	conflicts = nodejs
+	source = http://nodejs.org/dist/v5.12.0/node-v5.12.0.tar.gz
+	sha256sums = 250c12a561d7319e71e142ee92ab682494c7823d81ce24703c80eb52bdf9ba42
+
+pkgname = nodejs5
+

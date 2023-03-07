@@ -1,0 +1,22 @@
+pkgbase = gnome-twitch
+	pkgdesc = Enjoy Twitch on your GNU/Linux desktop
+	pkgver = 0.4.2
+	pkgrel = 1
+	url = https://github.com/vinszent/gnome-twitch
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	makedepends = meson
+	depends = gtk3
+	depends = libsoup
+	depends = json-glib
+	depends = webkit2gtk
+	depends = libpeas
+	depends = gobject-introspection
+	conflicts = gnome-twitch-git
+	source = https://github.com/vinszent/gnome-twitch/archive/v0.4.2.tar.gz
+	md5sums = 36497a697cb71fecaaa6939575235b16
+
+pkgname = gnome-twitch
+

@@ -1,0 +1,49 @@
+pkgbase = linux-odroid
+	pkgver = 5.11.2
+	pkgrel = 1
+	url = https://github.com/m2x-dev/linux/
+	arch = aarch64
+	license = GPL2
+	makedepends = bc
+	makedepends = docbook-xsl
+	makedepends = dtc
+	makedepends = git
+	makedepends = inetutils
+	makedepends = kmod
+	makedepends = python
+	makedepends = uboot-tools
+	makedepends = vboot-utils
+	makedepends = xmlto
+	options = !strip
+	source = https://github.com/m2x-dev/linux/archive/738f2281fe9c78361ab782b4faee875d31c8e0e6.tar.gz
+	source = config
+	source = linux.preset
+	source = 60-linux.hook
+	source = 90-linux.hook
+	source = 01-aegis-crypto.patch
+	b2sums = 6e95deb697b17c791bf2f0c35bf002ed5853f218849172785d8684eb1757a7a88ae8cb49fbfafa5b963588230e8a4d69ce22265802e51f9161f5a10cdcbb5a53
+	b2sums = b12ff4893dca699b142bd273fe19d8ab9fbef347673f4910a2dd983c8095464bc2f76c66990bb9ac026ca39d1ccc0f830e8b7c5d175cc99bcf405a152e63b6c8
+	b2sums = f0cb39a8e448dc93cd830f1680303ecfcda6c729030ecf0bbf6dd8c57777a12ab33bbd991da4f735ba5869afb59d39f5cf5c7c725cc9ba6a78c235c2fd00251a
+	b2sums = 40e2e0ac9eec9f9c08593875ca5bb8a26f835e33ae42e3718b98e83d76bbbc51a68395215c707fe58269954127261f7f8d12ec47341d28c672de973f3c4e71e8
+	b2sums = f39994fda3d76407b0af192534ca9931782b3e9de4e438a3adbc7640fc794c261102e5c7bfa1523c291ef8c7256c1106e6dbd40814006329c48d90f51c569e82
+	b2sums = 35f53af7b446f55b426b9b73b7f65dc99c4bacd444364e78666b868b5200dd04cf022dfd2784701684d2ec033076c0856d125df89d9e3b339ef32f749549eaf3
+
+pkgname = linux-odroid
+	pkgdesc = The Linux Kernel and modules with patches for ODROID SBCs
+	install = linux-odroid.install
+	depends = coreutils
+	depends = linux-firmware
+	depends = kmod
+	depends = mkinitcpio>=0.7
+	optdepends = crda: to set the correct wireless channels of your country
+	provides = kernel26
+	provides = linux=5.11.2
+	conflicts = linux
+	replaces = linux-armv8
+	backup = etc/mkinitcpio.d/linux-odroid.preset
+
+pkgname = linux-odroid-headers
+	pkgdesc = Header files and scripts for building modules for linux kernel with patches for ODROID SBCs
+	provides = linux-headers=5.11.2
+	conflicts = linux-headers
+

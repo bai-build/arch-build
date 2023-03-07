@@ -1,0 +1,75 @@
+pkgbase = mariadb-mainline-noconflict
+	pkgver = 10.4.11
+	pkgrel = 1
+	url = http://mariadb.org/
+	arch = x86_64
+	license = GPL
+	makedepends = cmake
+	makedepends = zlib
+	makedepends = libaio
+	makedepends = libxml2
+	makedepends = openssl
+	makedepends = jemalloc
+	makedepends = lz4
+	makedepends = boost
+	makedepends = libevent
+	makedepends = systemd
+	makedepends = coreutils
+	source = https://downloads.mariadb.org/f/mariadb-10.4.11/source/mariadb-10.4.11.tar.gz
+	sha256sums = 4c076232b99433b09eb3c6d62f607192b3474d022703699b8f6aef4e79de3fb9
+
+pkgname = mariadb-mainline-noconflict
+	pkgdesc = MariaDB mainline version with libmysqlclient.so.18 (mariadb 10.1 compatible)
+	install = mariadb.install
+	depends = mariadb-clients-mainline-noconflict=10.4.11
+	depends = inetutils
+	depends = libaio
+	depends = libxml2
+	depends = jemalloc
+	depends = lz4
+	depends = boost-libs
+	depends = lzo
+	depends = libevent
+	depends = libsystemd
+	optdepends = galera: for MariaDB cluster with Galera WSREP
+	optdepends = perl-dbd-mysql: for mysqlhotcopy, mysql_convert_table_format and mysql_setpermission
+	provides = mysql=10.4.11
+	provides = mariadb=10.4.11
+	conflicts = mysql
+	conflicts = mariadb
+	options = emptydirs
+	backup = etc/mysql/my.cnf
+	backup = etc/mysql/wsrep.cnf
+
+pkgname = libmariadbclient-mainline-noconflict
+	pkgdesc = MariaDB-mainline client libraries
+	depends = openssl
+	depends = libaio
+	depends = zlib
+	depends = lz4
+	depends = lzo
+	depends = xz
+	provides = libmysqlclient=10.4.11
+	provides = libmariadbclient=10.4.11
+	conflicts = libmysqlclient
+	conflicts = libmariadbclient
+
+pkgname = mariadb-clients-mainline-noconflict
+	pkgdesc = MariaDB-mainline client tools
+	depends = libmariadbclient-mainline-noconflict=10.4.11
+	depends = zlib
+	depends = openssl
+	depends = jemalloc
+	provides = mysql-clients=10.4.11
+	provides = mariadb-clients=10.4.11
+	conflicts = mysql-clients
+	conflicts = mariadb-clients
+
+pkgname = mytop-mainline-noconflict
+	pkgdesc = Top clone for MariaDB-mainline
+	depends = perl
+	depends = perl-dbd-mysql
+	depends = perl-term-readkey
+	provides = mytop=10.4.11
+	conflicts = mytop
+

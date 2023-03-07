@@ -1,0 +1,20 @@
+pkgbase = cgal-ipelets
+	pkgdesc = Ipelets from CGAL
+	pkgver = 4.14.3
+	pkgrel = 1
+	url = http://www.cgal.org
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = cmake
+	makedepends = boost
+	makedepends = cgal
+	makedepends = ipe
+	makedepends = eigen
+	depends = cgal
+	depends = ipe
+	source = https://github.com/CGAL/cgal/releases/download/releases%2FCGAL-4.14.3/CGAL-4.14.3.tar.xz
+	md5sums = 41c56ad048ce882aae6ff5b56256fe95
+
+pkgname = cgal-ipelets
+

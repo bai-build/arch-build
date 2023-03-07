@@ -1,0 +1,20 @@
+pkgbase = cawbird
+	pkgdesc = Native GTK Twitter client
+	pkgver = 1.5
+	pkgrel = 2
+	url = https://ibboard.co.uk/cawbird/
+	arch = x86_64
+	license = GPL3
+	makedepends = meson
+	makedepends = vala
+	depends = gspell
+	depends = gst-libav
+	depends = gst-plugin-gtk
+	depends = gst-plugins-bad
+	depends = gst-plugins-good
+	depends = liboauth
+	depends = rest
+	source = https://github.com/IBBoard/cawbird/archive/v1.5/cawbird-1.5.tar.gz
+	sha256sums = 0ef472cbecd6a7eb384a5b27833612d61eba7ace22293dbe14571b887b61ecae
+
+pkgname = cawbird

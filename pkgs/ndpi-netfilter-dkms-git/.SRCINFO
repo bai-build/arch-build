@@ -1,0 +1,32 @@
+pkgbase = ndpi-netfilter-dkms-git
+	pkgdesc = ndpi-netfilter kernel module (vel21ripn)
+	pkgver = r225.8c1ed91
+	pkgrel = 1
+	url = https://github.com/vel21ripn/ndpi
+	install = ndpi-netfilter-dkms.install
+	arch = i686
+	arch = x86_64
+	license = LGPLv3
+	makedepends = linux-lts-headers
+	makedepends = git
+	depends = linux-lts
+	depends = iptables
+	depends = conntrack-tools
+	depends = dkms
+	provides = ndpi-netfilter
+	provides = ndpi-netfilter-dkms
+	provides = ipt_ndpi
+	conflicts = ndpi-netfilter
+	conflicts = ndpi-netfilter-dkms
+	conflicts = ipt_ndpi
+	conflicts = ndpi
+	replaces = ndpi-netfilter
+	replaces = ndpi-netfilter-dkms
+	replaces = ipt_ndpi
+	source = git://github.com/vel21ripn/ndpi#branch=netfilter
+	source = dkms.conf
+	sha512sums = SKIP
+	sha512sums = 1ea586776ea93cdb0d8aeab6a240ac7c1809b283993162dd2d327da3f10df8d4d8fec0fb02096a0d54e460fda8322b0a997b4e3248098db4b1401f2f57616945
+
+pkgname = ndpi-netfilter-dkms-git
+

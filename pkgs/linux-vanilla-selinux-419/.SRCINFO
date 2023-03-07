@@ -1,0 +1,52 @@
+pkgbase = linux-vanilla-selinux-419
+	pkgdesc = Vanilla-Linux-Kernel (4.19) from kernel.org with Selinux enabled.
+	pkgver = 4.19.167
+	pkgrel = 1
+	url = https://www.kernel.org/
+	arch = x86_64
+	license = GPL2
+	makedepends = bc
+	makedepends = kmod
+	makedepends = libelf
+	makedepends = xmlto
+	makedepends = python-sphinx
+	makedepends = python-sphinx_rtd_theme
+	makedepends = graphviz
+	makedepends = imagemagick
+	makedepends = git
+	options = !strip
+	source = https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.19.167.tar.xz
+	source = https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.19.167.tar.sign
+	source = config
+	source = linux-vanilla-selinux-419.install
+	source = 60-linux.hook
+	source = 90-linux.hook
+	source = linux-vanilla-selinux-419.preset
+	source = sphinx-workaround.patch
+	validpgpkeys = ABAF11C65A2970B130ABE3C479BE3E4300411886
+	validpgpkeys = 647F28654894E3BD457199BE38DBBDC86092693E
+	sha512sums = 95b19e4a6a15da3c5de014d0f5ac5d172cda9da413554a3b08297c824a4ca23626099ba611fdbf3be6cfacd7a33cd1d7fff69629463a7167c98326def47431f0
+	sha512sums = 87b1cd73466fa6ebbd94a550f63a1e3190128fc50818050688baf9afd8c20cff7aa457361f521059b2670cc218d0b596154008d385bd1bf656e79a9dad51b8b0
+	sha512sums = f12f793b4daa4833ad8c9f3c4ba0844b29cab05a6b2130ba9de68de3889bb59d7ba4d84377b586052073d46ce0e588e69de9ceaebeb2ba2820698bcf9dd86669
+	sha512sums = fc52feda32be644deeadf267fdff124ffcc0d0870c36e736024a7be0958ba4b50cea5ef0ec33c2681ad00f36b42ebed354fa3e63bd4827acbeedebc39029229c
+	sha512sums = 7132a74149b39e30f57a0ef70330fbdf8f38a33bd88ba94f1115de098319e41af0ae86091a1e610e209fc87a9823f69da5c883b0a2fd7adc203578cc4ab08733
+	sha512sums = 06481e0492d8ec0f353672fbd1d71322b105849871975f434f87bcb33ca898f85407403ba935153e5d8cca44fea62bfbb43404871d12f26891579067a36fae19
+	sha512sums = 2dc6b0ba8f7dbf19d2446c5c5f1823587de89f4e28e9595937dd51a87755099656f2acec50e3e2546ea633ad1bfd1c722e0c2b91eef1d609103d8abdc0a7cbaf
+	sha512sums = 3905000ea36ab62a96e9f668e73e95bba42bea20abcfa987a02ed813dd6105f20f7a9f7d0ab83dfb0a75ea3164cb74c8be928b843037259dfc42fe38492bcc20
+
+pkgname = linux-vanilla-selinux-419
+	pkgdesc = The Linux-vanilla-selinux-419 kernel and modules
+	install = linux-vanilla-selinux-419.install
+	depends = coreutils
+	depends = kmod
+	depends = initramfs
+	optdepends = crda: to set the correct wireless channels of your country
+	optdepends = linux-firmware: firmware images needed for some devices
+	backup = etc/mkinitcpio.d/linux-vanilla-selinux-419.preset
+
+pkgname = linux-vanilla-selinux-419-headers
+	pkgdesc = Header files and scripts for building modules for Linux-vanilla-selinux-419 kernel
+
+pkgname = linux-vanilla-selinux-419-docs
+	pkgdesc = Kernel hackers manual - HTML documentation that comes with the Linux-vanilla-selinux-419 kernel
+

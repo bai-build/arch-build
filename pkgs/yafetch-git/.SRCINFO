@@ -1,0 +1,16 @@
+pkgbase = yafetch-git
+	pkgdesc = yet another fetch, written in C++
+	pkgver = 2
+	pkgrel = 2
+	url = https://git.kira64.xyz/yafetch
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	makedepends = make
+	makedepends = gcc
+	source = git+git://git.kira64.xyz/yafetch.git
+	source = arch.patch
+	sha256sums = SKIP
+	sha256sums = 29f511eac93e917148d65dab16466b70ec354671ff2ca396a3225549b3a09c0b
+
+pkgname = yafetch-git

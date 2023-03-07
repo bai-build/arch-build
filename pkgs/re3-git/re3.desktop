@@ -1,0 +1,8 @@
+[Desktop Entry]
+Categories=Game;ActionGame;
+Exec=re3-launcher
+Icon=re3
+Name=Grand Theft Auto III (re3)
+Terminal=false
+Type=Application
+Version=1.0

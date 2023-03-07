@@ -1,0 +1,20 @@
+pkgbase = dict-ecdict-git
+	pkgdesc = A port of Ultimate ECDICT database for dictd et al.
+	pkgver = 1.0.0.r15.3ebdb22
+	pkgrel = 1
+	url = https://github.com/skywind3000/ECDICT-ultimate
+	install = dict-ecdict-git.install
+	arch = any
+	license = MIT
+	makedepends = dictd
+	makedepends = git
+	makedepends = curl
+	makedepends = meson
+	makedepends = unzip
+	depends = dictd
+	provides = dict-ecdict
+	conflicts = dict-ecdict
+	source = git+https://github.com/tuberry/dict-ecdict
+	sha512sums = SKIP
+
+pkgname = dict-ecdict-git

@@ -1,0 +1,5 @@
+micropython-lib-git-*.pkg.tar.xz
+micropython-lib-git-*.pkg.tar.zst
+micropython-lib/
+src/
+pkg/

@@ -1,0 +1,15 @@
+pkgbase = rerun
+	pkgdesc = Take your shell scripts and turn them into powerful full featured management utilities with no extra programming.
+	pkgver = 1.4.1
+	pkgrel = 1
+	url = https://rerun.github.io/rerun/
+	install = rerun.install
+	arch = any
+	license = Apache
+	depends = bash
+	depends = discount
+	depends = python2-pygments
+	source = rerun-1.4.1.tar.gz::https://codeload.github.com/rerun/rerun/tar.gz/v1.4.1
+	sha256sums = 07557f1e3b9f0d94f5cee3aa9bb82ba688769806d9fd59a60713a57a7adcb727
+
+pkgname = rerun

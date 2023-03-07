@@ -1,0 +1,22 @@
+pkgbase = tinyows
+	pkgdesc = A lightweight and fast implementation of the OGC WFS-T specification.
+	pkgver = 1.1.1
+	pkgrel = 1
+	url = http://mapserver.org/tinyows
+	install = tinyows.install
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = git
+	makedepends = cmake
+	depends = libxml2
+	depends = postgis
+	depends = apache
+	depends = fcgi
+	provides = mapserver
+	conflicts = tinyows
+	source = tinyows-1.1.1.tar.gz::https://github.com/mapserver/tinyows/archive/v.1.1.1.tar.gz
+	md5sums = 4093a4899ce661fcb27342fdb5676206
+
+pkgname = tinyows
+

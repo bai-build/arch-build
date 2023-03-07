@@ -1,0 +1,5 @@
+src
+pkg
+rexgen-git
+*.pkg.tar.*
+tags

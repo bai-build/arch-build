@@ -1,0 +1,12 @@
+post_install() {
+  echo "To start tcpcrypt, run 'systemctl start tcpcryptd'. Secure"
+  echo "connections should Just Work between tcpcrypt-enabled machines."
+  echo
+  echo "This implementation of tcpcrypt is relatively safe. In the worst case"
+  echo "the daemon crashes and you lose all connectivity. When that happens,"
+  echo "just run 'systemctl stop tcpcryptd' to tear down iptables"
+  echo "rules and everything will continue."
+  echo
+  echo "For debugging, run 'tcnetstat' to list all active encrypted connections"
+  echo "Run 'iptables -vnL' to check if iptables rules were set up correctly"
+}

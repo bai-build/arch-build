@@ -1,0 +1,21 @@
+pkgbase = lxqt-organizer-git
+	pkgdesc = LxQt personal information manager
+	pkgver = r89.a278404
+	pkgrel = 1
+	url = https://lxqt.org
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = git
+	makedepends = cmake
+	makedepends = qt5-tools
+	makedepends = lxqt-build-tools-git
+	depends = liblxqt-git
+	depends = qt5-multimedia
+	provides = lxqt-organizer
+	conflicts = lxqt-organizer
+	source = git+https://github.com/lxqt/organizer.git
+	sha256sums = SKIP
+
+pkgname = lxqt-organizer-git
+

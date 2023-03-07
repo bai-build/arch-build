@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# A convenience script for the package maintainers.
+# This file is neither installed nor run on package installation.
+
+set -eu  # Bail if unexpected things happen
+
+PACMAN=
+PATH=/usr/bin:$PATH
+
+pkgdir=${0%%/*}  # dirname $0
+cd -P -- "$pkgdir" || exit 1  # Allow to be called from any directory
+
+if [[ -d src ]]; then
+  makepkg -ef
+else
+  makepkg -f
+fi
+
+namcap PKGBUILD
+namcap ./*.tar.xz
+
+makepkg --printsrcinfo >| .SRCINFO && echo "Updated .SRCINFO" >&2

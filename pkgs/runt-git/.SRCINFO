@@ -1,0 +1,18 @@
+pkgbase = runt-git
+	pkgdesc = Stack-based language written in ANSI C
+	pkgver = r194.02568f1
+	pkgrel = 1
+	url = http://paulbatchelor.github.io/proj/runt/
+	arch = i686
+	arch = x86_64
+	license = custom:public domain
+	makedepends = git
+	makedepends = sporth-git
+	depends = glibc
+	provides = runt
+	conflicts = runt
+	source = git://github.com/PaulBatchelor/runt.git
+	md5sums = SKIP
+
+pkgname = runt-git
+

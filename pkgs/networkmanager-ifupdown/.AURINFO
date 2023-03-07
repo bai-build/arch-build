@@ -1,0 +1,60 @@
+pkgbase = networkmanager-ifupdown
+	pkgdesc = Network Management daemon
+	pkgver = 0.9.8.10
+	pkgrel = 5
+	url = http://www.gnome.org/projects/NetworkManager/
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	license = LGPL2.1
+	makedepends = intltool
+	makedepends = dhcpcd
+	makedepends = dhclient
+	makedepends = iptables
+	makedepends = gobject-introspection
+	makedepends = gtk-doc
+	makedepends = git
+	makedepends = ppp
+	makedepends = modemmanager
+	makedepends = dbus-glib
+	makedepends = iproute2
+	makedepends = libnl
+	makedepends = nss
+	makedepends = polkit
+	makedepends = wpa_supplicant
+	makedepends = dhcp-client
+	makedepends = libsoup
+	makedepends = systemd
+	makedepends = libmm-glib
+	source = http://ftp.gnome.org/pub/gnome/sources/NetworkManager/0.9/NetworkManager-0.9.8.10.tar.xz
+	source = NetworkManager.conf
+	source = disable_set_hostname.patch
+
+pkgname = networkmanager-ifupdown
+	install = networkmanager.install
+	depends = libnm-glib-ifupdown
+	depends = iproute2
+	depends = libnl
+	depends = polkit
+	depends = wpa_supplicant
+	depends = dhcp-client
+	depends = libsoup
+	depends = libmm-glib
+	optdepends = dhclient: DHCPv6 support
+	optdepends = dnsmasq: Connection sharing
+	optdepends = bluez: Bluetooth support
+	optdepends = openresolv: resolvconf support
+	optdepends = ppp: Dialup connection support
+	provides = networkmanager=0.9.8.10
+	conflicts = networkmanager
+	backup = etc/NetworkManager/NetworkManager.conf
+
+pkgname = libnm-glib-ifupdown
+	pkgdesc = NetworkManager library
+	depends = libsystemd
+	depends = nss
+	depends = dbus-glib
+	depends = libutil-linux
+	provides = libnm-glib=0.9.8.10
+	conflicts = libnm-glib
+

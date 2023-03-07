@@ -1,0 +1,21 @@
+pkgbase = ydotool-git
+	pkgdesc = Generic command-line automation tool (no X!)
+	pkgver = 0.0.1.r2.g1d5d227
+	pkgrel = 1
+	epoch = 1
+	url = https://github.com/ReimuNotMoe/ydotool
+	install = ydotool.install
+	arch = any
+	license = AGPL3
+	makedepends = git
+	makedepends = cmake
+	makedepends = ninja
+	makedepends = scdoc
+	provides = ydotool
+	conflicts = ydotool
+	source = ydotool-git::git+https://github.com/ReimuNotMoe/ydotool.git
+	source = 80-uinput.rules
+	sha256sums = SKIP
+	sha256sums = e839f6a07c79fedea58c3ef3d3ce2370a870ffcc503fc2a64ded9f11d513ef24
+
+pkgname = ydotool-git

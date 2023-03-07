@@ -1,0 +1,1 @@
+[ "$DEVNAME" ] && find /dev -type l -exec sh -c 'for i in "$@"; do [ "$0" = "$(realpath -- "$i")" ] && rm -f -- "$i"; done' "/dev/$DEVNAME" {} +

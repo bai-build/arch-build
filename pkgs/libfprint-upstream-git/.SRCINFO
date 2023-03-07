@@ -1,0 +1,21 @@
+pkgbase = libfprint-upstream-git
+	pkgdesc = Library for fingerprint readers
+	pkgver = 0.7.0.r17.b3fe4a1
+	pkgrel = 2
+	url = https://www.freedesktop.org/wiki/Software/fprint/libfprint/
+	arch = i686
+	arch = x86_64
+	license = LGPL
+	makedepends = git
+	makedepends = meson
+	depends = libusb
+	depends = nss
+	depends = pixman
+	depends = glib2
+	provides = libfprint
+	conflicts = libfprint
+	source = libfprint-upstream-git::git://anongit.freedesktop.org/libfprint/libfprint
+	md5sums = SKIP
+
+pkgname = libfprint-upstream-git
+

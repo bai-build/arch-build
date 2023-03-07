@@ -1,0 +1,21 @@
+pkgbase = plasma-systemmonitor-git
+	pkgdesc = New version of KSysGuard built on top of the new KStats daemon and using QML for its UI, git version
+	pkgver = v5.20.0.r4.g0973e58
+	pkgrel = 1
+	url = https://github.com/KDE/plasma-systemmonitor
+	arch = x86_64
+	license = GPL3
+	makedepends = extra-cmake-modules
+	makedepends = git
+	makedepends = qt5-tools
+	depends = ksysguard
+	depends = libksysguard
+	depends = qt5-quickcontrols
+	depends = kirigami2
+	provides = plasma-systemmonitor
+	conflicts = plasma-systemmonitor
+	source = plasma-systemmonitor::git+https://github.com/KDE/plasma-systemmonitor.git
+	sha256sums = SKIP
+
+pkgname = plasma-systemmonitor-git
+

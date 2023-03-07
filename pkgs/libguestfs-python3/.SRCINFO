@@ -1,0 +1,23 @@
+pkgbase = libguestfs-python3
+	pkgdesc = Python 3 compatible bindings for libguestfs
+	pkgver = 1.30.3
+	pkgrel = 1
+	url = http://libguestfs.org
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	license = LGPL2.1
+	makedepends = qemu
+	makedepends = pcre
+	makedepends = cdrkit
+	makedepends = libvirt
+	makedepends = libconfig
+	makedepends = libxml2
+	makedepends = gperf
+	depends = libguestfs
+	depends = python
+	source = http://libguestfs.org/download/1.30-stable/libguestfs-1.30.3.tar.gz
+	sha512sums = f9b0fe75c958290991ad90ba4fbb385b64c39298d7536c8e874cdcce195a1d9c5bd5a3ed289b881524f225a4e328a7e090582b444ed64b60382f37dae8261a21
+
+pkgname = libguestfs-python3
+

@@ -1,0 +1,65 @@
+diff -Naur a/src/appleseed/foundation/platform/path.h b/src/appleseed/foundation/platform/path.h
+--- a/src/appleseed/foundation/platform/path.h	2019-08-31 17:49:01.000000000 +0200
++++ b/src/appleseed/foundation/platform/path.h	2020-12-10 03:26:57.768459744 +0100
+@@ -40,6 +40,7 @@
+ #include "main/dllsymbol.h"
+ 
+ // Boost headers.
++#include "boost/filesystem/exception.hpp"
+ #include "boost/filesystem/operations.hpp"
+ #include "boost/filesystem/path.hpp"
+ 
+diff -Naur a/src/appleseed/foundation/utility/benchmark/benchmarkaggregator.cpp b/src/appleseed/foundation/utility/benchmark/benchmarkaggregator.cpp
+--- a/src/appleseed/foundation/utility/benchmark/benchmarkaggregator.cpp	2019-08-31 17:49:01.000000000 +0200
++++ b/src/appleseed/foundation/utility/benchmark/benchmarkaggregator.cpp	2020-12-10 03:40:31.226687399 +0100
+@@ -40,6 +40,7 @@
+ 
+ // Boost headers.
+ #include "boost/date_time/posix_time/posix_time.hpp"
++#include "boost/filesystem/directory.hpp"
+ #include "boost/filesystem/operations.hpp"
+ #include "boost/filesystem/path.hpp"
+ #include "boost/regex.hpp"
+diff -Naur a/src/appleseed/renderer/modeling/project/assethandler.cpp b/src/appleseed/renderer/modeling/project/assethandler.cpp
+--- a/src/appleseed/renderer/modeling/project/assethandler.cpp	2019-08-31 17:49:01.000000000 +0200
++++ b/src/appleseed/renderer/modeling/project/assethandler.cpp	2020-12-10 03:26:57.768459744 +0100
+@@ -80,7 +80,7 @@
+         try
+         {
+             create_directories(dest_path.parent_path());
+-            copy_file(source_path, dest_path, copy_option::overwrite_if_exists);
++            copy_file(source_path, dest_path, copy_options::overwrite_existing);
+             return true;
+         }
+         catch (const std::exception& e)     // namespace qualification required
+diff -Naur a/src/appleseed.shared/application/application.cpp b/src/appleseed.shared/application/application.cpp
+--- a/src/appleseed.shared/application/application.cpp	2019-08-31 17:49:01.000000000 +0200
++++ b/src/appleseed.shared/application/application.cpp	2020-12-10 03:26:57.768459744 +0100
+@@ -39,6 +39,9 @@
+ #include "foundation/utility/settings.h"
+ #include "foundation/utility/string.h"
+ 
++// Boost headers.
++#include "boost/filesystem/exception.hpp"
++
+ // Standard headers.
+ #include <cstring>
+ #include <string>
+diff -Naur a/src/appleseed.studio/mainwindow/rendering/pixelcolortracker.cpp b/src/appleseed.studio/mainwindow/rendering/pixelcolortracker.cpp
+--- a/src/appleseed.studio/mainwindow/rendering/pixelcolortracker.cpp	2019-08-31 17:49:01.000000000 +0200
++++ b/src/appleseed.studio/mainwindow/rendering/pixelcolortracker.cpp	2020-12-10 03:26:57.768459744 +0100
+@@ -133,10 +133,10 @@
+             static_cast<size_t>(pixel.y),
+             linear_rgba);
+ 
+-        m_r_label->setText(QString().sprintf("%4.3f", linear_rgba.r));
+-        m_g_label->setText(QString().sprintf("%4.3f", linear_rgba.g));
+-        m_b_label->setText(QString().sprintf("%4.3f", linear_rgba.b));
+-        m_a_label->setText(QString().sprintf("%4.3f", linear_rgba.a));
++        m_r_label->setText(QString::number(linear_rgba.r, 'f', 3));
++        m_g_label->setText(QString::number(linear_rgba.g, 'f', 3));
++        m_b_label->setText(QString::number(linear_rgba.b, 'f', 3));
++        m_a_label->setText(QString::number(linear_rgba.a, 'f', 3));
+     }
+     else
+     {

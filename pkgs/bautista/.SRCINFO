@@ -1,0 +1,20 @@
+pkgbase = bautista
+	pkgdesc = A domotic butler bot
+	pkgver = 0.0.12
+	pkgrel = 1
+	url = https://github.com/joshi-stuff/bautista
+	install = install.sh
+	arch = pentium4
+	arch = x86_64
+	license = GPL3
+	makedepends = coreutils
+	makedepends = npm
+	makedepends = pkgconf
+	makedepends = rust
+	makedepends = shadow
+	depends = nodejs
+	backup = etc/bautista/config.toml
+	source = bautista-0.0.12.tar.gz::https://github.com/joshi-stuff/bautista/archive/refs/tags/0.0.12.tar.gz
+	sha256sums = 2c329bdd5ba26e9590730afb61375d8cef291aaf609754331320bbc297bf9df2
+
+pkgname = bautista

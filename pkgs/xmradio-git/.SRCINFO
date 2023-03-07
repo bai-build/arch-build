@@ -1,0 +1,35 @@
+pkgbase = xmradio-git
+	pkgdesc = xmradio is a tiny Internet Xia Mi Radio client for Linux, which supports many radio style, skin builtin and many other features.
+	pkgver = 0.5.2.3.gbf1e4ce
+	pkgrel = 1
+	epoch = 1
+	url = https://github.com/timxx/xmradio
+	install = xmradio-git.install
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = cmake
+	makedepends = gobject-introspection
+	makedepends = gcc
+	makedepends = gettext
+	makedepends = intltool
+	makedepends = pkg-config
+	depends = dbus
+	depends = vlc
+	depends = gobject-introspection-runtime
+	depends = curl
+	depends = libxml2
+	depends = gtk3
+	depends = glib2
+	depends = zlib
+	depends = sqlite
+	depends = libnotify
+	depends = dbus-glib
+	depends = libdbusmenu-glib
+	depends = gstreamer
+	depends = libpeas
+	source = git+https://github.com/timxx/xmradio.git
+	md5sums = SKIP
+
+pkgname = xmradio-git
+

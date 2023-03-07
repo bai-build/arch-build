@@ -1,0 +1,35 @@
+pkgbase = nextcloud-desktop
+	pkgdesc = Nextcloud desktop client (work-in-progress)
+	pkgver = 2.5.0
+	pkgrel = 1
+	epoch = 1
+	url = https://nextcloud.com/
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = cmake
+	makedepends = qt5-tools
+	makedepends = kio
+	makedepends = doxygen
+	makedepends = appstream
+	makedepends = extra-cmake-modules
+	makedepends = python-sphinx
+	makedepends = texlive-bin
+	makedepends = texlive-core
+	makedepends = texlive-latexextra
+	makedepends = git
+	depends = qtkeychain
+	depends = qt5-webkit
+	depends = xdg-utils
+	depends = qt5-webengine
+	depends = qt5-svg
+	depends = glib2
+	depends = sqlite
+	optdepends = python2-nautilus: integration with Nautilus
+	optdepends = nemo-python: integration with Nemo
+	optdepends = kio: dolphin plugin
+	source = nextcloud-desktop-2.5.0.tar.gz::https://github.com/nextcloud/desktop/archive/v2.5.0.tar.gz
+	sha256sums = 4d639f43e49fd4367cd1b99bf21aecb2eac3bd89a7b0d96c7d2a0975baad6528
+
+pkgname = nextcloud-desktop
+

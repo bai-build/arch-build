@@ -1,0 +1,13 @@
+pkgbase = qdl-git
+	pkgdesc = This tool communicates with USB devices of id 05c6:9008 to upload a flash loader and use this to flash images
+	pkgver = 760b3dffb03d2b7dfb82c6eac652a092f51c572d
+	pkgrel = 0
+	url = https://git.linaro.org/landing-teams/working/qualcomm/qdl.git
+	arch = any
+	license = GPL
+	depends = libxml2
+	source = git://git.linaro.org/landing-teams/working/qualcomm/qdl.git
+	sha512sums = SKIP
+
+pkgname = qdl-git
+

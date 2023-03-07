@@ -1,0 +1,27 @@
+pkgbase = setzer-git
+	pkgdesc = LaTeX editor written in Python with Gtk
+	pkgver = 0.4.1.r32.gf99cef8
+	pkgrel = 1
+	url = https://www.cvfosammmm.org/setzer/
+	arch = any
+	license = GPL3
+	makedepends = appstream
+	makedepends = git
+	makedepends = meson
+	depends = gspell
+	depends = gtk3
+	depends = gtksourceview4
+	depends = poppler-glib
+	depends = python-cairo
+	depends = python-gobject
+	depends = python-pdfminer
+	depends = python-pyxdg
+	depends = texlive-core
+	depends = webkit2gtk
+	depends = xdg-utils
+	provides = setzer
+	conflicts = setzer
+	source = git+https://github.com/cvfosammmm/Setzer.git
+	sha256sums = SKIP
+
+pkgname = setzer-git

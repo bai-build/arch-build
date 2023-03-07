@@ -1,0 +1,17 @@
+diff --git a/sifter.py b/sifter.py
+index fa28f93..803c59a 100755
+--- a/sifter.py
++++ b/sifter.py
+@@ -33,10 +33,10 @@ try:
+ except NameError:
+     raw_input = input  # Python 3
+ 
+-INJECTOR = "./injector"
++INJECTOR = "/opt/sandsifter/injector"
+ arch = ""
+ 
+-OUTPUT = "./data/"
++OUTPUT = "/opt/sandsifter/data/"
+ LOG  = OUTPUT + "log"
+ SYNC = OUTPUT + "sync"
+ TICK = OUTPUT + "tick"

@@ -1,0 +1,43 @@
+pkgbase = mididings
+	pkgdesc = A MIDI router & processor, supporting ALSA & JACK
+	pkgver = 20221229.r737.g533429a
+	pkgrel = 1
+	url = https://github.com/mididings/mididings
+	arch = x86_64
+	license = GPL2
+	checkdepends = python-pytest
+	makedepends = git
+	makedepends = boost
+	makedepends = boost-libs
+	makedepends = alsa-lib
+	makedepends = jack
+	makedepends = python
+	makedepends = python-decorator
+	makedepends = python-build
+	makedepends = python-installer
+	makedepends = python-wheel
+	makedepends = python-setuptools
+	makedepends = python-sphinx
+	makedepends = python-sphinxcontrib-fulltoc
+	makedepends = python-pyinotify
+	makedepends = python-pyliblo
+	makedepends = dbus-python
+	source = mididings::git+https://github.com/mididings/mididings#commit=533429a68316d56ca49b417e2845c9e28976a511
+	b2sums = SKIP
+
+pkgname = mididings
+	depends = boost-libs
+	depends = jack
+	depends = alsa-lib
+	depends = python
+	depends = python-decorator
+	optdepends = dbus-python: send DBUS messages
+	optdepends = python-pyinotify: automatically restart when a script changes
+	optdepends = python-pyliblo: send/recieve OSC messages
+	optdepends = python-pysmf: read/write standard MIDI files using the process_file() function
+	optdepends = python-pyxdg: so mididings knows where to look for config files
+	optdepends = tk: for livedings GUI
+	optdepends = mididings-docs: documentation
+
+pkgname = mididings-docs
+	pkgdesc = A MIDI router & processor, supporting ALSA & JACK (documentation)

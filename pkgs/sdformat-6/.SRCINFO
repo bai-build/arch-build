@@ -1,0 +1,27 @@
+pkgbase = sdformat-6
+	pkgdesc = SDF Converter for gazebo
+	pkgver = 6.2.0
+	pkgrel = 5
+	url = http://sdformat.org/
+	arch = i686
+	arch = x86_64
+	arch = aarch64
+	arch = armv7h
+	arch = armv6h
+	license = Apache
+	makedepends = cmake
+	makedepends = doxygen
+	makedepends = ignition-cmake=0
+	makedepends = ignition-tools
+	makedepends = ruby>=1.9.1
+	depends = boost
+	depends = tinyxml
+	depends = ignition-math=4
+	depends = python-psutil
+	optdepends = urdfdom
+	provides = sdformat=6
+	source = https://github.com/osrf/sdformat/archive/sdformat6_6.2.0.tar.gz
+	sha256sums = 88d0fe2fcf27842f33d60e087e9142312c0392d55dfb250f2a66e66d55eb40dd
+
+pkgname = sdformat-6
+

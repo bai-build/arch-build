@@ -1,0 +1,21 @@
+pkgbase = ros-indigo-cpp-common
+	pkgdesc = ROS - cpp_common contains C++ code for doing things that are not necessarily ROS related, but are useful for multiple packages.
+	pkgver = 0.5.8
+	pkgrel = 1
+	url = http://www.ros.org/wiki/cpp_common
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-indigo-catkin
+	makedepends = boost
+	makedepends = console-bridge
+	depends = boost
+	depends = console-bridge
+	source = ros-indigo-cpp-common-0.5.8-0.tar.gz::https://github.com/ros-gbp/roscpp_core-release/archive/release/indigo/cpp_common/0.5.8-0.tar.gz
+	source = console_bridge_dep.patch
+	sha256sums = 3747d00068ba03da4df78944abf0f55c28007d6a30c805884ec5fb01b16b418b
+	sha256sums = a627969418dd0577059c984b3cb999a7ed1173394b1f26022be1c347fec84923
+
+pkgname = ros-indigo-cpp-common
+

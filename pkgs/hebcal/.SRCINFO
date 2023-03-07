@@ -1,0 +1,14 @@
+pkgbase = hebcal
+	pkgdesc = A Jewish calendar generator
+	pkgver = 5.8.0
+	pkgrel = 2
+	url = https://github.com/hebcal/hebcal
+	arch = any
+	license = GPL2
+	depends = perl>=5.0
+	depends = go>=2:1.13
+	depends = gperf
+	source = https://github.com/hebcal/hebcal/archive/refs/tags/v.5.8.0.tar.gz
+	sha256sums = dd710bead0162ee853078f4c5abfa696fb4076d0c1a41659612d77c554d30349
+
+pkgname = hebcal

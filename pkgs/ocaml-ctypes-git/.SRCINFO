@@ -1,0 +1,21 @@
+pkgbase = ocaml-ctypes-git
+	pkgdesc = Library for binding to C libraries using pure OCaml
+	pkgver = 0.12.1.13.g75b9010
+	pkgrel = 2
+	url = https://github.com/ocamllabs/ocaml-ctypes
+	arch = i686
+	arch = x86_64
+	license = custom
+	makedepends = ocaml-findlib>=1.5.3
+	makedepends = git
+	depends = ocaml
+	depends = libffi
+	depends = ocaml-integers
+	provides = ocaml-ctypes
+	conflicts = ocaml-ctypes
+	options = !strip
+	source = git+https://github.com/ocamllabs/ocaml-ctypes.git
+	md5sums = SKIP
+
+pkgname = ocaml-ctypes-git
+

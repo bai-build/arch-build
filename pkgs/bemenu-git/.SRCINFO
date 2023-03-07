@@ -1,0 +1,52 @@
+pkgbase = bemenu-git
+	pkgdesc = Dynamic menu library and client program inspired by dmenu
+	pkgver = 0.6.7.r1.g81b5091
+	pkgrel = 2
+	url = https://github.com/Cloudef/bemenu
+	arch = x86_64
+	license = GPL3
+	license = LGPL3
+	makedepends = libxinerama
+	makedepends = libxkbcommon
+	makedepends = ncurses
+	makedepends = pango
+	makedepends = wayland
+	makedepends = wayland-protocols
+	makedepends = wlroots
+	makedepends = scdoc
+	source = git+https://github.com/Cloudef/bemenu
+	sha256sums = SKIP
+
+pkgname = bemenu-git
+	depends = bemenu-renderer-git
+	provides = libbemenu-git
+	provides = bemenu
+	conflicts = bemenu
+
+pkgname = bemenu-ncurses-git
+	pkgdesc = ncurses renderer for bemenu
+	depends = libbemenu-git
+	depends = ncurses
+	provides = bemenu-renderer-git
+	provides = bemenu-ncurses
+	conflicts = bemenu-ncurses
+
+pkgname = bemenu-x11-git
+	pkgdesc = X11 renderer for bemenu
+	depends = libbemenu-git
+	depends = libxinerama
+	depends = pango
+	provides = bemenu-renderer-git
+	provides = bemenu-x11
+	conflicts = bemenu-x11
+
+pkgname = bemenu-wayland-git
+	pkgdesc = Wayland (wlroots-based compositors) renderer for bemenu
+	install = bemenu-wayland-git.install
+	depends = libbemenu-git
+	depends = libxkbcommon
+	depends = pango
+	depends = wayland
+	provides = bemenu-renderer-git
+	provides = bemenu-wayland
+	conflicts = bemenu-wayland

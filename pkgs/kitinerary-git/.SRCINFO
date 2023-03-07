@@ -1,0 +1,23 @@
+pkgbase = kitinerary-git
+	pkgdesc = Data model and extraction system for travel reservation information
+	pkgver = 5.18.40_r1832.g964e622
+	pkgrel = 1
+	url = https://kontact.kde.org
+	arch = x86_64
+	groups = kdepim-git
+	license = LGPL
+	makedepends = git
+	makedepends = extra-cmake-modules-git
+	depends = kmime-git
+	depends = kpkpass-git
+	depends = kcalendarcore-git
+	depends = kcontacts-git
+	depends = poppler
+	depends = libphonenumber
+	depends = zxing-cpp
+	provides = kitinerary
+	conflicts = kitinerary
+	source = git+https://github.com/KDE/kitinerary.git
+	sha256sums = SKIP
+
+pkgname = kitinerary-git

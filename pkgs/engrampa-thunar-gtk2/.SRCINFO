@@ -1,0 +1,30 @@
+pkgbase = engrampa-thunar-gtk2
+	pkgdesc = Archive manipulator from MATE without Caja dependency (GTK3 version)
+	pkgver = 1.23.2
+	pkgrel = 1
+	url = http://mate-desktop.org
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = intltool
+	makedepends = itstool
+	depends = gtk3
+	depends = gzip
+	depends = libarchive
+	depends = tar
+	depends = unzip
+	depends = zip
+	optdepends = p7zip: 7Z and ARJ archive support
+	optdepends = unace: ACE archive support
+	optdepends = unrar: RAR archive support
+	optdepends = thunar-archive-plugin: create and extract archives in Thunar
+	provides = engrampa
+	conflicts = engrampa
+	conflicts = engrampa-dev
+	conflicts = engrampa-thunar
+	replaces = engrampa
+	source = http://pub.mate-desktop.org/releases/1.23/engrampa-1.23.2.tar.xz
+	sha256sums = cb59d732c4bd8f0cdefacc5cd50dd9a54b23c80c4703cb2e530edcd07429bf43
+
+pkgname = engrampa-thunar-gtk2
+

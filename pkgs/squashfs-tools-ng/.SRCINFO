@@ -1,0 +1,37 @@
+pkgbase = squashfs-tools-ng
+	pkgdesc = A new set of tools and libraries for working with SquashFS images
+	pkgver = 1.2.0
+	pkgrel = 1
+	url = https://infraroot.at/projects/squashfs-tools-ng/index.html
+	arch = x86_64
+	license = GPL3
+	license = LGPL3
+	makedepends = fakeroot
+	makedepends = binutils
+	makedepends = autoconf
+	makedepends = automake
+	makedepends = autogen
+	makedepends = libtool
+	makedepends = pkgconf
+	makedepends = m4
+	makedepends = make
+	makedepends = gcc
+	makedepends = doxygen
+	depends = lzo
+	depends = lz4
+	depends = xz
+	depends = zstd
+	depends = zlib
+	depends = attr
+	depends = bzip2
+	source = https://infraroot.at/pub/squashfs/squashfs-tools-ng-1.2.0.tar.xz
+	source = https://infraroot.at/pub/squashfs/squashfs-tools-ng-1.2.0.tar.xz.asc
+	validpgpkeys = 13063F723C9E584AEACD5B9BBCE5DC3C741A02D1
+	sha512sums = 0c52890a92e2aee928db3e2407c087703d331e9dd8cba1b58ef44fe78cdd7ed1523e9b0485f7da83ad77423ffdccaf392a2b752ad948d62a5f1b5e600b523070
+	sha512sums = SKIP
+
+pkgname = squashfs-tools-ng
+
+pkgname = squashfs-tools-ng-doc
+	arch = any
+	depends = 

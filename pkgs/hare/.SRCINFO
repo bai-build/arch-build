@@ -1,0 +1,16 @@
+pkgbase = hare
+	pkgdesc = The Hare programming language
+	pkgver = r2824.77613ea2
+	pkgrel = 1
+	url = https://harelang.org/
+	arch = x86_64
+	license = GPL3
+	license = MPL2
+	makedepends = git
+	makedepends = scdoc
+	depends = qbe
+	depends = harec
+	source = hare::git+https://git.sr.ht/~sircmpwn/hare#commit=77613ea2dfba5bb22866968995c36a480861a3b3
+	b2sums = SKIP
+
+pkgname = hare

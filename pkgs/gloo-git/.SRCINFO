@@ -1,0 +1,18 @@
+pkgbase = gloo-git
+	pkgdesc = Gloo is a collective communications library from the Facebook incubator. It comes with a number of collective algorithms useful for machine learning applications.
+	pkgver = 0.r113.6089900
+	pkgrel = 1
+	url = https://github.com/facebookincubator/gloo
+	arch = x86_64
+	license = BSD
+	makedepends = git
+	makedepends = cmake
+	depends = cuda
+	depends = nccl
+	provides = gloo
+	conflicts = gloo
+	source = git+https://github.com/facebookincubator/gloo.git
+	sha256sums = SKIP
+
+pkgname = gloo-git
+

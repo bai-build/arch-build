@@ -1,0 +1,17 @@
+pkgbase = thepackage
+	pkgdesc = Simple Package Manager that invokes Pacman directly
+	pkgver = 2.3
+	pkgrel = 0
+	url = https://github.com/vicr123/thepackage
+	arch = x86_64
+	license = GPL2
+	depends = qt5-base
+	depends = xdg-utils
+	depends = wget
+	depends = package-query
+	depends = git
+	source = thepackage-2.3::git+https://github.com/vicr123/thepackage#branch=master
+	md5sums = SKIP
+
+pkgname = thepackage
+

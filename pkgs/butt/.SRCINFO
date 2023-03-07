@@ -1,0 +1,24 @@
+pkgbase = butt
+	pkgdesc = Easy to use, multi OS streaming tool
+	pkgver = 0.1.37
+	pkgrel = 1
+	url = http://butt.sourceforge.net/
+	arch = i686
+	arch = x86_64
+	arch = aarch64
+	arch = armv7h
+	license = GPL2
+	depends = fltk
+	depends = dbus
+	depends = portaudio
+	depends = libfdk-aac
+	depends = libvorbis
+	depends = libogg
+	depends = lame
+	depends = flac
+	depends = opus
+	depends = libsamplerate
+	source = butt-0.1.37.tar.gz::http://sourceforge.net/projects/butt/files/butt/butt-0.1.37/butt-0.1.37.tar.gz
+	b2sums = 1166c54672217e24ef604247d2dd56a68a2f36f6f59e94149b70d55b0c576f17b6c9ad11e829a0244096efde759bc459e0c6ae5e737b1f98067689d25669da57
+
+pkgname = butt

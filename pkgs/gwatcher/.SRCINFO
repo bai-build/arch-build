@@ -1,0 +1,14 @@
+pkgbase = gwatcher
+	pkgdesc = watch for changes in dconf settings
+	pkgver = 1.0.1
+	pkgrel = 1
+	url = https://codeberg.org/NotSludgeBomb/gwatcher
+	arch = x86_64
+	license = GPL3
+	makedepends = cargo
+	makedepends = pandoc
+	depends = gcc-libs
+	source = https://codeberg.org/NotSludgeBomb/gwatcher/archive/v1.0.1.tar.gz
+	sha256sums = 3121538f86ddded83b00bd7dad77e0fd45d13722527e8345ac10fb4889ab5c78
+
+pkgname = gwatcher

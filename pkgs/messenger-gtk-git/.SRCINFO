@@ -1,0 +1,24 @@
+pkgbase = messenger-gtk-git
+	pkgdesc = A graphical user interface for GNUnet Messenger
+	pkgver = r185.b1ed454
+	pkgrel = 1
+	url = https://gnunet.org
+	arch = i686
+	arch = x86_64
+	license = AGPL
+	makedepends = meson
+	depends = gnunet
+	depends = libgnunetchat-git
+	depends = gtk3
+	depends = libhandy
+	depends = libnotify
+	depends = qrencode
+	depends = zbar
+	depends = gstreamer
+	provides = messenger-gtk
+	conflicts = messenger-gtk
+	conflicts = messenger-gtk-bin
+	source = git+https://git.gnunet.org/messenger-gtk.git
+	md5sums = SKIP
+
+pkgname = messenger-gtk-git

@@ -1,0 +1,19 @@
+pkgbase = jack_mixer
+	pkgdesc = A GTK based Jack audio mixer
+	pkgver = 11
+	pkgrel = 1
+	url = https://rdio.space/jackmixer/
+	install = jack_mixer.install
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	depends = libjack.so
+	depends = python-gobject
+	depends = hicolor-icon-theme
+	optdepends = lash: session support
+	options = !libtool
+	source = https://rdio.space/jackmixer/tarballs/jack_mixer-11.tar.gz
+	md5sums = 169485489708721ecb25ffe33efa5d67
+
+pkgname = jack_mixer
+

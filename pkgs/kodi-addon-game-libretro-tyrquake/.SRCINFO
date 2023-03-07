@@ -1,0 +1,22 @@
+pkgbase = kodi-addon-game-libretro-tyrquake
+	pkgdesc = This add-on provides a wrapper that allows Libretro cores to be loaded as game add-ons
+	pkgver = 0.62.0.35
+	pkgrel = 1
+	url = https://github.com/kodi-game/game.libretro.tyrquake
+	arch = aarch64
+	arch = armv7h
+	groups = kodi-addons
+	groups = kodi-addons-game
+	license = GPL2
+	makedepends = cmake
+	makedepends = kodi-dev
+	makedepends = kodi-addon-game-libretro
+	makedepends = libretro-tyrquake
+	options = !lto
+	options = debug
+	source = kodi-addon-game-libretro-tyrquake-0.62.0.35.tar.gz::https://github.com/kodi-game/game.libretro.tyrquake/archive/refs/tags/0.62.0.35-Nexus.tar.gz
+	sha512sums = f0910a375446226b14b1f3bfa6960a9c35815c8ff3c8f4393faa270a76a575fa03d2631a0c15b99bb2a2c06a90f3cbeeb66ef9758d14fb55e0784e12a14febf3
+
+pkgname = kodi-addon-game-libretro-tyrquake
+	depends = kodi-addon-game-libretro
+	depends = libretro-tyrquake

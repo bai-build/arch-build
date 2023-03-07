@@ -1,0 +1,21 @@
+pkgbase = soapyosmo
+	pkgdesc = SoapySDR plugins for OsmoSDR devices (MiriSDR, RFSpace)
+	pkgver = 0.2.5
+	pkgrel = 1
+	url = https://github.com/pothosware/SoapyOsmo
+	arch = x86_64
+	arch = i686
+	arch = arm
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	license = GPL3
+	makedepends = cmake
+	depends = soapysdr
+	depends = gnuradio-osmosdr
+	depends = libmirisdr
+	source = soapyosmo-0.2.5.tar.gz::https://github.com/pothosware/SoapyOsmo/archive/soapy-osmo-0.2.5.tar.gz
+	sha256sums = 95a81dbe296e95d928e31e5d7c55aea9acb90740a170caa9d9754f116c94e4d1
+
+pkgname = soapyosmo
+

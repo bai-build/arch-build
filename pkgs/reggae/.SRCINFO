@@ -1,0 +1,16 @@
+pkgbase = reggae
+	pkgdesc = Build system in D, Python, Ruby, Javascript or Lua
+	pkgver = 0.9.2
+	pkgrel = 1
+	url = https://github.com/atilaneves/reggae
+	arch = x86_64
+	license = BSD
+	makedepends = ninja
+	makedepends = dmd
+	makedepends = dub
+	makedepends = jq
+	depends = gcc-libs
+	source = git://github.com/atilaneves/reggae.git
+	sha256sums = SKIP
+
+pkgname = reggae

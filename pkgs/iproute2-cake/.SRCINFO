@@ -1,0 +1,34 @@
+pkgbase = iproute2-cake
+	pkgdesc = IP Routing Utilities
+	pkgver = r4214.0407be50
+	pkgrel = 1
+	url = https://www.github.com/dtaht/tc-adv
+	arch = x86_64
+	groups = base
+	license = GPL2
+	makedepends = linux-atm
+	depends = glibc
+	depends = iptables
+	depends = libelf
+	optdepends = linux-atm: ATM support
+	provides = iproute
+	provides = iproute2
+	conflicts = iproute
+	conflicts = iproute2-doc
+	replaces = iproute
+	replaces = iproute2-doc
+	options = staticlibs
+	backup = etc/iproute2/ematch_map
+	backup = etc/iproute2/rt_dsfield
+	backup = etc/iproute2/rt_protos
+	backup = etc/iproute2/rt_realms
+	backup = etc/iproute2/rt_scopes
+	backup = etc/iproute2/rt_tables
+	source = git+https://www.github.com/dtaht/tc-adv
+	source = 0001-make-iproute2-fhs-compliant.patch
+	validpgpkeys = 9F6FC345B05BE7E766B83C8F80A77F6095CDE47E
+	md5sums = SKIP
+	md5sums = 5345bd18b521fb2f305acb2ab1203269
+
+pkgname = iproute2-cake
+

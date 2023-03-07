@@ -1,0 +1,47 @@
+pkgbase = linux-vfio-selinux
+	pkgver = 5.0.5
+	pkgrel = 1
+	url = https://www.kernel.org/
+	arch = x86_64
+	license = GPL2
+	makedepends = xmlto
+	makedepends = kmod
+	makedepends = inetutils
+	makedepends = bc
+	makedepends = libelf
+	options = !strip
+	source = https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.0.tar.xz
+	source = https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.0.tar.sign
+	source = https://cdn.kernel.org/pub/linux/kernel/v5.x/patch-5.0.5.xz
+	source = config
+	source = 60-linux.hook
+	source = 90-linux.hook
+	source = linux.preset
+	source = add-acs-overrides.patch
+	validpgpkeys = ABAF11C65A2970B130ABE3C479BE3E4300411886
+	validpgpkeys = 647F28654894E3BD457199BE38DBBDC86092693E
+	sha256sums = 437b141a6499159f5a7282d5eb4b2be055f8e862ccce44d7464e8759c31a2e43
+	sha256sums = SKIP
+	sha256sums = 70051be96455f84e13af8a3e487a6da2ed3274843bbd26049004d4e7578365ea
+	sha256sums = 019c562d3cb2ced689e8aa2b52a7cbd745e09d720632c3c703619003a58ec009
+	sha256sums = ae2e95db94ef7176207c690224169594d49445e04249d2499e9d2fbc117a0b21
+	sha256sums = 8f407ad5ff6eff106562ba001c36a281134ac9aa468a596aea660a4fe1fd60b5
+	sha256sums = 99d0102c8065793096b8ea2ccc01c41fa3dcb96855f9f6f2c583b2372208c6f9
+	sha256sums = 4b6df9e82460ef1fb2b55fec2d01b8ace8331547e5d3b374a42bb84271e4f866
+
+pkgname = linux-vfio-selinux
+	pkgdesc = The Linux-vfio-selinux kernel and modules
+	install = linux.install
+	depends = coreutils
+	depends = linux-firmware
+	depends = kmod
+	depends = mkinitcpio>=0.7
+	optdepends = crda: to set the correct wireless channels of your country
+	backup = etc/mkinitcpio.d/linux-vfio-selinux.preset
+
+pkgname = linux-vfio-selinux-headers
+	pkgdesc = Header files and scripts for building modules for Linux-vfio-selinux kernel
+
+pkgname = linux-vfio-selinux-docs
+	pkgdesc = Kernel hackers manual - HTML documentation that comes with the Linux-vfio-selinux kernel
+

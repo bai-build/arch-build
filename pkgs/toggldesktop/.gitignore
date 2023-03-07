@@ -1,0 +1,8 @@
+# ignore build files
+*.pkg.tar.xz
+*.pkg.tar.zst
+*.tar.gz
+*.sig
+.idea
+src/
+pkg/

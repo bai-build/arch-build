@@ -1,0 +1,29 @@
+pkgbase = android-ndk-22-ollvm
+	pkgdesc = Android C/C++ developer kit with obfuscated llvm
+	pkgver = r22.b
+	pkgrel = 1
+	url = https://github.com/heroims/obfuscator/wiki
+	install = android-ndk-22-ollvm.install
+	arch = x86_64
+	license = GPL
+	license = LGPL
+	license = custom
+	depends = glibc
+	optdepends = ncurses5-compat-libs: for using gdb
+	optdepends = python2: various helper scripts
+	optdepends = python: various helper scripts
+	replaces = android-ndk64-ollvm
+	options = !strip
+	options = staticlibs
+	backup = etc/profile.d/android-ndk-22-ollvm.sh
+	source = android-ndk-22-ollvm.sh
+	source = git+https://github.com/heroims/obfuscator.git#branch=llvm-12.x
+	sha1sums = e1b785a0bb757604f67abd98831f24bb187173fa
+	sha1sums = SKIP
+	sha256sums = 019f0d0b9c58b4969356b3d9c837ed04f2ad6f67eb900f48b9dc5d38f198b61a
+	sha256sums = SKIP
+	source_x86_64 = https://dl.google.com/android/repository/android-ndk-r22b-linux-x86_64.zip
+	sha1sums_x86_64 = 9ece64c7f19763dd67320d512794969930fce9dc
+	sha256sums_x86_64 = ac3a0421e76f71dd330d0cd55f9d99b9ac864c4c034fc67e0d671d022d4e806b
+
+pkgname = android-ndk-22-ollvm

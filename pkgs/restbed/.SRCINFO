@@ -1,0 +1,15 @@
+pkgbase = restbed
+	pkgdesc = Framework bringing asynchronous RESTful functionality to C++14 applications
+	pkgver = 4.8.0
+	pkgrel = 1
+	url = https://github.com/Corvusoft/restbed
+	arch = i686
+	arch = x86_64
+	license = AGPL,
+	license = CPL
+	makedepends = git
+	options = staticlibs
+	source = git+https://github.com/Corvusoft/restbed#tag=4.8
+	sha512sums = SKIP
+
+pkgname = restbed

@@ -1,0 +1,38 @@
+pkgbase = nvidia-zen
+	pkgdesc = NVIDIA drivers for linux-zen
+	pkgver = 390.48
+	pkgrel = 1
+	url = http://www.nvidia.com/
+	arch = i686
+	arch = x86_64
+	license = custom
+	makedepends = nvidia-libgl
+	makedepends = nvidia-utils=390.48
+	makedepends = linux-zen
+	makedepends = linux-zen-headers>=4.17
+	makedepends = linux-zen-headers<4.18
+	options = !strip
+	source_i686 = http://us.download.nvidia.com/XFree86/Linux-x86/390.48/NVIDIA-Linux-x86-390.48.run
+	sha512sums_i686 = 9d80616abbf1f95c89bb3e6bda864708adc887a62ccdf8865e956c305bb013b0e54ffb3f495805363ee60a9115ab5fb38adf1534750a6afb69a457a4d034daeb
+	source_x86_64 = http://us.download.nvidia.com/XFree86/Linux-x86_64/390.48/NVIDIA-Linux-x86_64-390.48-no-compat32.run
+	sha512sums_x86_64 = 40e1f991d931d5ea1eccda68bffa7bd872eb75c158c6a54f84b5a24274112b9a26e68caeecf6ca0e543edcec917a5ed717bd83281c4a86ac649d3c73f1386966
+
+pkgname = nvidia-zen
+	pkgdesc = NVIDIA drivers for linux-zen
+	install = nvidia.install
+	depends = linux-zen>=4.17
+	depends = linux-zen<4.18
+	depends = nvidia-utils=390.48
+	depends = libgl
+
+pkgname = nvidia-zen-dkms
+	pkgdesc = NVIDIA driver sources for linux-zen
+	install = nvidia-dkms.install
+	depends = dkms
+	depends = nvidia-utils=390.48
+	optdepends = linux-zen-headers: Build the module for Arch Zen kernel
+	optdepends = linux-headers: Build the module for Arch kernel
+	optdepends = linux-lts-headers: Build the module for LTS Arch kernel
+	conflicts = 
+	conflicts = nvidia nvidia-zen
+

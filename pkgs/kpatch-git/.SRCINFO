@@ -1,0 +1,18 @@
+pkgbase = kpatch-git
+	pkgdesc = Live kernel patching (git)
+	pkgver = 0.7.1+r40+g6f5edcd
+	pkgrel = 1
+	url = https://github.com/dynup/kpatch
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = git
+	depends = bash
+	depends = libelf
+	provides = kpatch
+	conflicts = kpatch
+	source = git+https://github.com/dynup/kpatch
+	sha512sums = SKIP
+
+pkgname = kpatch-git
+

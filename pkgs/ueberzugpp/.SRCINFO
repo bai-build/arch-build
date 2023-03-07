@@ -1,0 +1,24 @@
+pkgbase = ueberzugpp
+	pkgdesc = Command line util which allows to display images in combination with X11 written in C++
+	pkgver = 2.4.0
+	pkgrel = 1
+	url = https://github.com/jstkdng/ueberzugpp
+	arch = x86_64
+	license = GPL3
+	makedepends = cmake
+	makedepends = cli11
+	depends = opencv
+	depends = libvips
+	depends = xcb-util-image
+	depends = nlohmann-json
+	depends = libsixel
+	depends = botan
+	depends = spdlog
+	depends = zeromq
+	depends = fmt
+	provides = ueberzug
+	conflicts = ueberzug
+	source = https://github.com/jstkdng/ueberzugpp/archive/v2.4.0.tar.gz
+	sha256sums = 984640b40ddf0b24bffb69d848205ba164c4e6b352b9d71530897b8a4caf1883
+
+pkgname = ueberzugpp

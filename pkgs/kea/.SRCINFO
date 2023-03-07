@@ -1,0 +1,39 @@
+pkgbase = kea
+	pkgdesc = DHCPv4/DHCPv6 server
+	pkgver = 1.2.0
+	pkgrel = 1
+	url = http://kea.isc.org
+	arch = i686
+	arch = x86_64
+	license = MPL2.0
+	makedepends = git
+	makedepends = boost
+	makedepends = openssl
+	makedepends = log4cplus
+	makedepends = gcc
+	makedepends = make
+	makedepends = automake
+	makedepends = libtool
+	makedepends = autoconf
+	makedepends = libmariadbclient
+	makedepends = postgresql-libs
+	makedepends = postgresql
+	makedepends = python
+	makedepends = perl
+	makedepends = gawk
+	makedepends = libxslt
+	makedepends = docbook-xsl
+	makedepends = elinks
+	depends = openssl
+	depends = log4cplus
+	depends = libmariadbclient
+	depends = postgresql-libs
+	optdepends = mariadb: Lease information database
+	optdepends = postgresql: Lease information database
+	provides = kea
+	conflicts = kea
+	source = kea::git+https://github.com/isc-projects/kea.git#commit=8db8de0e102a46bc194d0da73dc1d8083de57bff
+	sha512sums = SKIP
+
+pkgname = kea
+

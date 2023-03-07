@@ -1,0 +1,18 @@
+pkgbase = nextcloud-app-cospend
+	pkgdesc = Shared budget manager Nextcloud app
+	pkgver = 1.5.8
+	pkgrel = 1
+	url = https://github.com/eneiluj/cospend-nc
+	arch = any
+	license = AGPL3
+	makedepends = npm
+	makedepends = nodejs
+	makedepends = rsync
+	makedepends = yq
+	options = !strip
+	source = cospend-nc-v1.5.8.tar.gz::https://github.com/eneiluj/cospend-nc/archive/v1.5.8.tar.gz
+	sha512sums = a820f5677bb0b7dbb0146a11a70dfbb98699a3a1bc3d381e59c7fdab00c429db0cb07c2553007e8d3ef3c008a6aaecb7d67fd86c655d4c171bc4b8426b0da454
+
+pkgname = nextcloud-app-cospend
+	depends = nextcloud>=
+	depends = nextcloud<

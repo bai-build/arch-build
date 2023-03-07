@@ -1,0 +1,8 @@
+*
+
+!PKGBUILD
+!.SRCINFO
+!watchman.tmpfiles
+!watchman.install
+!.gitignore
+!*.patch

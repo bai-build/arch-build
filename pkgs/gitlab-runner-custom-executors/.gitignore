@@ -1,0 +1,12 @@
+*
+!config.toml
+!.git
+!.gitignore
+!gitlab-runner.install
+!gitlab-runner.service
+!gitlab-runner.sysusers
+!gitlab-runner.tmpfiles
+!lxc_executor.patch
+!lxc_update.patch
+!PKGBUILD
+!.SRCINFO

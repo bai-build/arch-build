@@ -1,0 +1,28 @@
+2021-03-05 Christopher Arndt <aur -at- chrisarndt -dot- de>
+
+	* 0.9.6-1
+	Upstream does not provide a proper source distribution anymore
+	So we include git sub-modules of the dependencies as they were tagged
+	at the time of release
+	Vendored JUCE 6.0.7 since the official repos lag behind in
+	packaging JUCE 6.
+	VST2 plugin was replaced by VST3 version by upstream
+
+2019-09-01 Christopher Arndt <aur -at- chrisarndt -dot- de>
+
+	* 0.9.4-5
+	added patch for compiling JUCE with GCC >= 9.1
+	removed 'steinberg-vst36' from makedepends
+	added 'pro-audio' group
+	compile VST plugin and stand-alone version in one pass again
+
+2018-04-24 Christopher Arndt <aur -at- chrisarndt -dot- de>
+
+	* 0.9.4-2
+	Compile VST plug-in separately as a workaround for
+	https://github.com/asb2m10/dexed/issues/132
+
+2018-03-24 Christopher Arndt <aur -at- chrisarndt -dot- de>
+
+	* 0.9.4-1
+    initial release based on 'dexed-git' package

@@ -1,0 +1,15 @@
+pkgbase = bareos-x11
+	pkgdesc = Bareos - Backup Archiving REcovery Open Sourced
+	pkgver = 17.2.4
+	pkgrel = 1
+	url = http://www.bareos.org
+	install = bareos-traymonitor.install
+	arch = x86_64
+	license = AGPL3
+	depends = qt4
+	depends = bareos-common=17.2.4
+	source = git+https://github.com/bareos/bareos.git#tag=Release/17.2.4
+	md5sums = SKIP
+
+pkgname = bareos-traymonitor
+

@@ -1,0 +1,30 @@
+diff '--color=auto' -aur a/src/fr-command-zip.c b/src/fr-command-zip.c
+--- a/src/fr-command-zip.c	2017-03-13 05:45:12.000000000 -0700
++++ b/src/fr-command-zip.c	2017-03-17 16:13:39.116752773 -0700
+@@ -385,6 +385,7 @@
+ 				"application/x-ear",
+ 				"application/x-ms-dos-executable",
+ 				"application/x-war",
++				"application/x-xpinstall",
+ 				"application/zip",
+ 				NULL };
+ 
+diff '--color=auto' -aur a/src/fr-init.c b/src/fr-init.c
+--- a/src/fr-init.c	2017-03-17 16:08:13.736744000 -0700
++++ b/src/fr-init.c	2017-03-17 16:15:15.546755263 -0700
+@@ -97,6 +97,7 @@
+ 	{ "application/x-tarz",                 ".tar.Z",    N_("Tar compressed with compress (.tar.Z)"), 0 },
+ 	{ "application/x-stuffit",              ".sit",      NULL, 0 },
+ 	{ "application/x-war",                  ".war",      N_("War (.war)"), 0 },
++	{ "application/x-xpinstall",            ".xpi",      N_("Firefox Addon Installer (.xpi)"), 0 },
+ 	{ "application/x-xz",                   ".xz",       N_("Xz (.xz)"), 0 },
+ 	{ "application/x-xz-compressed-tar",    ".tar.xz",   N_("Tar compressed with xz (.tar.xz)"), 0 },
+ 	{ "application/x-zoo",                  ".zoo",      N_("Zoo (.zoo)"), 0 },
+@@ -155,6 +156,7 @@
+ 	{ ".tzo", "application/x-lzop-compressed-tar" },
+ 	{ ".war", "application/x-war" },
+ 	{ ".wim", "application/x-ms-wim" },
++	{ ".xpi", "application/x-xpinstall" },
+ 	{ ".xz", "application/x-xz" },
+ 	{ ".z", "application/x-gzip" },
+ 	{ ".Z", "application/x-compress" },

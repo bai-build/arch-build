@@ -1,0 +1,22 @@
+diff -aur a/Makefile b/Makefile
+--- a/Makefile	2015-03-29 10:49:08.000000000 -0700
++++ b/Makefile	2015-11-13 20:17:47.381706000 -0700
+@@ -44,16 +44,15 @@
+ 
+ compile:
+ 	$(PYTHON) -m compileall -ql $(APPNAME) $(APPNAME)/ui
+-	$(PYTHON) -O -m compileall -ql $(APPNAME) $(APPNAME)/ui
+ 
+ install:
+ 	install -m 755 -d $(BINDIR) $(APPLIB)/{,ui/}__pycache__
+ 	install -m 755 -d $(DESKTOPDIR) $(ICONDIR)
+ 	install -m 644 main.py $(APPDIR)
+ 	install -m 644 $(APPNAME)/*.{py,so} $(APPLIB)
+-	install -m 644 $(APPNAME)/__pycache__/*.py{c,o} $(APPLIB)/__pycache__
++	install -m 644 $(APPNAME)/__pycache__/*.pyc $(APPLIB)/__pycache__
+ 	install -m 644 $(APPNAME)/ui/*.py $(APPLIB)/ui
+-	install -m 644 $(APPNAME)/ui/__pycache__/*.py{c,o} $(APPLIB)/ui/__pycache__
++	install -m 644 $(APPNAME)/ui/__pycache__/*.pyc $(APPLIB)/ui/__pycache__
+ 	install -m 644 $(APPNAME).desktop $(DESKTOPDIR)
+ 	install -m 644 icons/app.png $(ICONDIR)/$(APPNAME).png
+ 	install -m 755 $(APPNAME).sh $(BINDIR)/$(APPNAME)

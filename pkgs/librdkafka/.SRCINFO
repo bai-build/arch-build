@@ -1,0 +1,18 @@
+pkgbase = librdkafka
+	pkgdesc = The Apache Kafka C/C++ library
+	pkgver = 1.2.2
+	pkgrel = 1
+	url = https://github.com/edenhill/librdkafka
+	arch = x86_64
+	license = BSD
+	makedepends = python
+	makedepends = openssl
+	makedepends = lz4
+	makedepends = rapidjson
+	depends = libsasl
+	depends = zstd
+	source = librdkafka-1.2.2.tar.gz::https://github.com/edenhill/librdkafka/archive/v1.2.2.tar.gz
+	sha256sums = c5d6eb6ce080431f2996ee7e8e1f4b8f6c61455a1011b922e325e28e88d01b53
+
+pkgname = librdkafka
+

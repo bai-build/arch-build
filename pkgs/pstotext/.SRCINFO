@@ -1,0 +1,13 @@
+pkgbase = pstotext
+	pkgdesc = Converts Postscript to text
+	pkgver = 1.9
+	pkgrel = 3
+	url = http://www.cs.wisc.edu/~ghost/doc/pstotext.htm
+	arch = x86_64
+	license = GPL
+	depends = ghostscript
+	source = ftp://ftp.netbsd.org/pub/pkgsrc/distfiles/pstotext-1.9.tar.gz
+	md5sums = 64576e8a10ff5514e285d98b3898ae78
+
+pkgname = pstotext
+

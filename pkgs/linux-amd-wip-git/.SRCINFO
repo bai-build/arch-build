@@ -1,0 +1,36 @@
+pkgbase = linux-amd-wip-git
+	pkgdesc = Linux kernel with AMDGPU DC patches
+	pkgver = 5.6.888851.7b19914383fc
+	pkgrel = 1
+	url = https://cgit.freedesktop.org/~agd5f/linux/
+	arch = x86_64
+	license = GPL2
+	makedepends = bc
+	makedepends = kmod
+	makedepends = libelf
+	makedepends = xmlto
+	makedepends = python-sphinx
+	makedepends = python-sphinx_rtd_theme
+	makedepends = graphviz
+	makedepends = imagemagick
+	makedepends = git
+	options = !strip
+	source = linux-amd-wip-git::git://people.freedesktop.org/~agd5f/linux#branch=drm-next-5.6
+	source = config
+	sha256sums = SKIP
+	sha256sums = a8e4a57ca3ed7c525f79f350cb6f862a1a3f6047af92432885bdc8155736e5ab
+
+pkgname = linux-amd-wip-git
+	pkgdesc = The Linux kernel with AMDGPU DC patches kernel and modules
+	depends = coreutils
+	depends = kmod
+	depends = initramfs
+	optdepends = crda: to set the correct wireless channels of your country
+	optdepends = linux-firmware: firmware images needed for some devices
+
+pkgname = linux-amd-wip-git-headers
+	pkgdesc = Headers and scripts for building modules for the Linux kernel with AMDGPU DC patches kernel
+
+pkgname = linux-amd-wip-git-docs
+	pkgdesc = Documentation for the Linux kernel with AMDGPU DC patches kernel
+

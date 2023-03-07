@@ -1,0 +1,51 @@
+pkgbase = linux-zest-git
+	pkgver = 1
+	pkgrel = 2
+	epoch = 6
+	url = https://github.com/ZestProjects/linux
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = bc
+	makedepends = cpio
+	makedepends = graphviz
+	makedepends = imagemagick
+	makedepends = inetutils
+	makedepends = kmod
+	makedepends = libelf
+	makedepends = python-sphinx
+	makedepends = python-sphinx_rtd_theme
+	makedepends = xmlto
+	options = !strip
+	source = https://github.com/ZestProjects/linux/archive/fivesix.tar.gz
+	b2sums = SKIP
+
+pkgname = linux-zest-git
+	pkgdesc = The Zest Project's kernel and it's modules
+	depends = coreutils
+	depends = initramfs
+	depends = kmod
+	depends = llvm-proton-bin
+	optdepends = crda: to set the correct wireless channels of your country
+	optdepends = linux-firmware: firmware images needed for some devices
+	provides = linux=5.6
+	provides = linux-aufs=5.6
+	provides = linux-fsync=5.6
+	provides = linux-zest=5.6
+	provides = VIRTUALBOX-GUEST-MODULES
+	provides = WIREGUARD-MODULE
+
+pkgname = linux-zest-git-docs
+	pkgdesc = Documentation for the Zest Project's kernel
+	provides = linux-docs=5.6
+	provides = linux-aufs-docs=5.6
+	provides = linux-fsync-docs=5.6
+	provides = linux-zest-docs=5.6
+
+pkgname = linux-zest-git-headers
+	pkgdesc = Headers and scripts for building modules for the Zest Project's kernel
+	provides = linux-headers=5.6
+	provides = linux-aufs-headers=5.6
+	provides = linux-fsync-headers=5.6
+	provides = linux-zest-headers=5.6
+

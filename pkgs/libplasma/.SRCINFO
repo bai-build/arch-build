@@ -1,0 +1,16 @@
+pkgbase = libplasma
+	pkgdesc = Parallel Linear Algebra Software for Multicore Architectures
+	pkgver = 20.9.20
+	pkgrel = 1
+	url = https://bitbucket.org/icl/plasma
+	arch = x86_64
+	license = BSD
+	makedepends = cmake
+	depends = cblas
+	depends = lapacke
+	depends = gcc-libs
+	source = https://bitbucket.org/icl/plasma/downloads/plasma-20.9.20.tar.gz
+	sha256sums = 2144a77b739f8dd2f0dbe5b64d94cde0e916f55c4eb170facd168c0db7fc7970
+
+pkgname = libplasma
+

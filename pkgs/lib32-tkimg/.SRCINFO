@@ -1,0 +1,19 @@
+pkgbase = lib32-tkimg
+	pkgdesc = Provides the handling of several image formats beyond the standard formats in Tk (32-bit)
+	pkgver = 1.4.13
+	pkgrel = 1
+	url = https://wiki.tcl-lang.org/page/Img
+	arch = x86_64
+	license = BSD
+	depends = lib32-zlib
+	depends = lib32-libjpeg
+	depends = lib32-libpng
+	depends = lib32-libtiff
+	depends = lib32-tcl
+	depends = lib32-tk
+	depends = tcllib
+	source = http://downloads.sourceforge.net/tkimg/1.4/Img-1.4.13-Source.tar.gz
+	sha1sums = b35ddb2aad1b9f513f3a4f1eeaf3b7e1b681fc80
+
+pkgname = lib32-tkimg
+

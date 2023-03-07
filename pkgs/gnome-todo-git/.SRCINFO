@@ -1,0 +1,19 @@
+pkgbase = gnome-todo-git
+	pkgdesc = Simple to-do list manager for Gnome
+	pkgver = 3.91.1+448+g34ddbcc
+	pkgrel = 1
+	url = https://wiki.gnome.org/Apps/Todo
+	install = gnome-todo.install
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	makedepends = gnome-common
+	makedepends = intltool
+	depends = gtk3
+	depends = evolution-data-server-git
+	source = git+https://gitlab.gnome.org/GNOME/gnome-todo.git
+	sha512sums = SKIP
+
+pkgname = gnome-todo-git
+

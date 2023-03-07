@@ -1,0 +1,17 @@
+pkgbase = pd-faustgen2
+	pkgdesc = The FAUST compiler embedded in a Pd external
+	pkgver = 2.2.0
+	pkgrel = 1
+	url = https://github.com/agraef/pd-faustgen
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = faust
+	makedepends = cmake
+	makedepends = llvm
+	depends = pd
+	depends = llvm-libs
+	source = https://github.com/agraef/pd-faustgen/releases/download/2.2.0/pd-faustgen2-2.2.0.tar.gz
+	md5sums = 369256e5d15894bc9882e5f50f8ac9f4
+
+pkgname = pd-faustgen2

@@ -1,0 +1,13 @@
+diff --git a/premake5.lua b/premake5.lua
+index a33623fc..175655e2 100644
+--- a/premake5.lua
++++ b/premake5.lua
+@@ -396,7 +396,7 @@ project "re3"
+ 		libdirs { "vendor/openal-soft/libs/Win64" }
+ 
+ 	filter "platforms:linux*oal"
+-		links { "openal", "mpg123", "sndfile", "pthread" }
++		links { "openal", "mpg123", "pthread" }
+ 		
+ 	filter "platforms:bsd*oal"
+ 		links { "openal", "mpg123", "sndfile", "pthread" }

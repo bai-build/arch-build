@@ -1,0 +1,20 @@
+pkgbase = lxqt-openssh-askpass-git
+	pkgdesc = LXQt openssh password prompt
+	pkgver = 0.13.0.37.gadfbaa6
+	pkgrel = 1
+	url = https://github.com/lxde/lxqt-openssh-askpass
+	arch = i686
+	arch = x86_64
+	license = LGPL
+	makedepends = git
+	makedepends = cmake
+	makedepends = qt5-tools
+	makedepends = lxqt-build-tools-git
+	depends = liblxqt-git
+	provides = lxqt-openssh-askpass
+	conflicts = lxqt-openssh-askpass
+	source = git+https://github.com/lxde/lxqt-openssh-askpass.git
+	sha256sums = SKIP
+
+pkgname = lxqt-openssh-askpass-git
+

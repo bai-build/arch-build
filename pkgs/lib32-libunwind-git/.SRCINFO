@@ -1,0 +1,19 @@
+pkgbase = lib32-libunwind-git
+	pkgdesc = Portable and efficient C programming interface (API) to determine the call-chain of a program (32-bit)
+	pkgver = 1.5
+	pkgrel = 1
+	url = https://www.nongnu.org/libunwind/
+	arch = x86_64
+	license = GPL
+	makedepends = gcc-multilib
+	depends = lib32-gcc-libs
+	depends = libunwind
+	depends = lib32-xz
+	provides = lib32-libunwind
+	conflicts = lib32-libunwind
+	source = git+https://github.com/libunwind/libunwind.git
+	validpgpkeys = SKIP
+	sha512sums = SKIP
+
+pkgname = lib32-libunwind-git
+

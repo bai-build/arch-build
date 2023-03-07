@@ -1,0 +1,7 @@
+pkg/
+src/
+*.swp
+*.tar.xz
+*.tar.zst
+*-source.zip
+*.asc

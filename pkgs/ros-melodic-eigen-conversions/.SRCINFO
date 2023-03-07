@@ -1,0 +1,23 @@
+pkgbase = ros-melodic-eigen-conversions
+	pkgdesc = ROS - Conversion functions between: - Eigen and KDL - Eigen and geometry_msgs.
+	pkgver = 1.12.1
+	pkgrel = 4
+	url = https://wiki.ros.org/eigen_conversions
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-melodic-orocos-kdl
+	makedepends = ros-melodic-std-msgs
+	makedepends = ros-melodic-catkin
+	makedepends = ros-melodic-geometry-msgs
+	makedepends = eigen
+	depends = ros-melodic-orocos-kdl
+	depends = ros-melodic-std-msgs
+	depends = ros-melodic-geometry-msgs
+	depends = eigen
+	source = ros-melodic-eigen-conversions-1.12.1.tar.gz::https://github.com/ros/geometry/archive/1.12.1.tar.gz
+	sha256sums = 6eacc9bb8e22d55263b1ab06f5c764a33c230084a0520a7d14ddcb6ed5d33f04
+
+pkgname = ros-melodic-eigen-conversions
+

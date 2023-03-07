@@ -1,0 +1,19 @@
+pkgbase = kismet-plugins-restricted
+	pkgdesc = Restricted plugins (AutoWEP and PTW attack) for Kismet
+	pkgver = 2016_01_R1
+	pkgrel = 1
+	url = http://www.kismetwireless.net/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = kismet
+	provides = kismet-ptw
+	provides = kismet-autowep
+	conflicts = kismet-ptw
+	conflicts = kismet-autowep
+	source = http://www.kismetwireless.net/code/kismet-2016-01-R1.tar.xz
+	validpgpkeys = 748231EBCBD808A14F5E85D28C004C2F93481F6B
+	md5sums = 3af777cf90a37fd698c5d8d849a2a7b1
+
+pkgname = kismet-plugins-restricted
+

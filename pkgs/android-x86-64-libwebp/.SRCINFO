@@ -1,0 +1,21 @@
+pkgbase = android-x86-64-libwebp
+	pkgdesc = WebP library and conversion tools (android)
+	pkgver = 1.2.4
+	pkgrel = 1
+	url = https://developers.google.com/speed/webp/
+	arch = any
+	groups = android-libwebp
+	license = BSD
+	makedepends = android-configure
+	depends = android-x86-64-libjpeg-turbo
+	depends = android-x86-64-libpng
+	depends = android-x86-64-libtiff
+	depends = android-x86-64-giflib
+	options = !strip
+	options = !buildflags
+	options = staticlibs
+	options = !emptydirs
+	source = https://github.com/webmproject/libwebp/archive/v1.2.4.tar.gz
+	md5sums = 4f08244f88a39816c3e0719ca16c7a92
+
+pkgname = android-x86-64-libwebp

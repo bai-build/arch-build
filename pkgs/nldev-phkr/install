@@ -1,0 +1,24 @@
+#!/bin/bash
+
+build() {
+    add_binary /etc/smdev/processdev
+    add_binary /usr/bin/smdev
+    add_binary /usr/bin/nldev
+    add_binary /usr/bin/nltrigger
+    add_binary /usr/bin/find
+    add_binary /usr/bin/modprobe_env
+    add_binary /usr/bin/libudev-helper
+    add_file /usr/lib/libm.so.6
+
+    for file in /etc/smdev/add/*; do
+        add_file $file
+    done
+
+    add_runscript
+}
+
+help() {
+    cat <<HELPEOF
+This hook will use nldev to process device uevents. It prepares your root device and adds some else device nodes.
+HELPEOF
+}

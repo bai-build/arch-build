@@ -1,0 +1,13 @@
+pkgbase = cdpr-lldp
+	pkgdesc = A fork of CDPR to decode CDP and LLDP packets
+	pkgver = 3.0.4
+	pkgrel = 1
+	url = https://github.com/tdorssers/cdpr-3.0
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = libpcap
+	source = https://github.com/tdorssers/cdpr-3.0/archive/master.zip
+	md5sums = SKIP
+
+pkgname = cdpr-lldp

@@ -1,0 +1,27 @@
+pkgbase = california
+	pkgdesc = A new calendar application for GNOME 3. It is currently under heavy development.
+	pkgver = 0.4.0
+	pkgrel = 3
+	url = https://wiki.gnome.org/Apps/California
+	install = california.install
+	arch = i686
+	arch = x86_64
+	license = LGPL2.1
+	makedepends = vala
+	makedepends = intltool
+	makedepends = gnome-common
+	makedepends = yelp-tools
+	makedepends = gobject-introspection
+	makedepends = patch
+	depends = evolution-data-server
+	depends = libgee
+	depends = xdg-utils
+	source = https://download.gnome.org/sources/california/0.4/california-0.4.0.tar.xz
+	source = https://src.fedoraproject.org/cgit/rpms/california.git/plain/0002-Build-with-evolution-data-server-3.13.90.patch
+	source = https://src.fedoraproject.org/cgit/rpms/california.git/plain/california-0.4.0-libical-3.0.patch
+	sha256sums = b25f356363a9f8f8f93c7ab78af02de39f9c3b71964663129ac9904de9147eb6
+	sha256sums = f512f50470954ec4018c99c49c37fa7e23074653a2e090ff13e32631ec10293d
+	sha256sums = c6924c868d2b44639463ce7e426c5917377ec7d0d6aa0fd38f7a018a9563be33
+
+pkgname = california
+

@@ -1,0 +1,16 @@
+pkgbase = places-git
+	pkgdesc = Enlightenment module: Manage the mounting of volumes
+	pkgver = 0.20.r215.2115f5a
+	pkgrel = 1
+	url = https://phab.enlightenment.org/w/emodules/places/
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = git
+	depends = enlightenment
+	depends = udisks
+	source = git://git.enlightenment.org/enlightenment/modules/places.git
+	sha256sums = SKIP
+
+pkgname = places-git
+

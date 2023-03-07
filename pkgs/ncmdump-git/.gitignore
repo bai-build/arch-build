@@ -1,0 +1,6 @@
+*.tar.*
+*.xz
+*.sign
+/src
+/pkg
+ncmdump

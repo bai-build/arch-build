@@ -1,0 +1,20 @@
+pkgbase = energetik
+	pkgdesc = KDE service to temporarily inhibit power management
+	pkgver = 0.2.1
+	pkgrel = 1
+	url = https://github.com/pvantonov/energetik
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = cmake
+	makedepends = git
+	depends = qt5-base
+	depends = kconfig
+	depends = kwindowsystem
+	depends = procps-ng
+	provides = energetik
+	source = https://github.com/pvantonov/energetik/archive/0.2.1.tar.gz
+	md5sums = 36fd4930d40e8e6aef14bf977e1d88d2
+
+pkgname = energetik
+

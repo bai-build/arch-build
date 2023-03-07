@@ -1,0 +1,16 @@
+pkgbase = nuvola-app-soundcloud
+	pkgdesc = soundcloud integration for Nuvola Player.
+	pkgver = 1.4
+	pkgrel = 1
+	url = https://github.com/tiliado/nuvola-app-soundcloud
+	arch = any
+	license = custom:BSD
+	makedepends = nuvolasdk
+	makedepends = scour
+	depends = nuvolaruntime
+	depends = imagemagick
+	source = https://github.com/tiliado/nuvola-app-soundcloud/archive/1.4.tar.gz
+	sha256sums = 18af3c082b0f6fd24ed25c3a6a9c09722a46c79338c82fcf9b6a8bc53a31d5fc
+
+pkgname = nuvola-app-soundcloud
+

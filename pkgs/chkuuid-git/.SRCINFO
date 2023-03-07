@@ -1,0 +1,19 @@
+pkgbase = chkuuid-git
+	pkgdesc = Compare the UUID of each partition with those found in FSTAB.
+	pkgver = 1.7
+	pkgrel = 1
+	url = https://github.com/daltomi/chkuuid
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	makedepends = gcc
+	makedepends = make
+	makedepends = pkg-config
+	makedepends = util-linux-libs
+	depends = util-linux-libs
+	conflicts = chkuuid
+	source = git+https://github.com/daltomi/chkuuid.git?signed#tag=v1.7
+	validpgpkeys = BADA62B7B55622A8B764DC6CB1B08540E74FE8A2
+	sha256sums = SKIP
+
+pkgname = chkuuid-git

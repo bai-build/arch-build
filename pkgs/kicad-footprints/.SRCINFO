@@ -1,0 +1,16 @@
+pkgbase = kicad-footprints
+	pkgdesc = Official KiCad footprint libraries
+	pkgver = 5.1.7
+	pkgrel = 1
+	url = https://kicad.github.io/footprints
+	arch = any
+	license = GPL
+	makedepends = cmake
+	provides = kicad-footprints
+	conflicts = kicad-footprints-git
+	conflicts = kicad-library-git
+	source = https://github.com/KiCad/kicad-footprints/archive/5.1.7.tar.gz
+	md5sums = 0b2bb98f7e4dd936b93ce089d81b4e5d
+
+pkgname = kicad-footprints
+

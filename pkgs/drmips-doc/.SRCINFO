@@ -1,0 +1,17 @@
+pkgbase = drmips-doc
+	pkgdesc = Graphical MIPS simulator to support computer architecture teaching and learning - User Manuals
+	pkgver = 2.0.0
+	pkgrel = 1
+	url = http://brunonova.github.io/drmips/
+	arch = any
+	license = GPL3
+	makedepends = cmake>=2.8
+	makedepends = texlive-core
+	makedepends = texlive-latexextra
+	makedepends = texlive-science
+	optdepends = drmips: the simulator
+	source = https://github.com/brunonova/drmips/releases/download/v2.0.0/DrMIPS_v2.0.0.tar.xz
+	md5sums = f4756bf519e96d7811a1276633346f79
+
+pkgname = drmips-doc
+

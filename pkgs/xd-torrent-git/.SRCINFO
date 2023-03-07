@@ -1,0 +1,21 @@
+pkgbase = xd-torrent-git
+	pkgdesc = Standalone I2P BitTorrent Client written in GO
+	pkgver = 0.4.0
+	pkgrel = 1
+	url = https://github.com/majestrate/XD
+	install = xd.install
+	arch = any
+	license = MIT
+	makedepends = git
+	depends = go>=1.6
+	depends = i2pd>=2.18
+	provides = xd-torrent
+	conflicts = xd-torrent
+	backup = etc/xd.conf
+	source = git+https://github.com/majestrate/XD.git
+	source = xd.service
+	md5sums = SKIP
+	md5sums = 7f87ea2d6fc76aee8821efc5709a0115
+
+pkgname = xd-torrent-git
+

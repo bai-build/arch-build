@@ -1,0 +1,15 @@
+pkgbase = libfat-nds
+	pkgdesc = Library for accessing FAT filesystems from Nintendo DS homebrew
+	pkgver = 1.1.2
+	pkgrel = 1
+	url = https://www.chishm.com/libfat/
+	arch = any
+	license = custom
+	depends = libnds
+	options = !strip
+	options = staticlibs
+	source = https://github.com/devkitPro/libfat/releases/download/v1.1.2/libfat-src-1.1.2.tar.bz2
+	sha256sums = cf73ccdcec941b90481e26427b82a15ef7660adb05498f2e004e1b9956dae5bf
+
+pkgname = libfat-nds
+

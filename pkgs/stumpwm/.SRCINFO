@@ -1,0 +1,25 @@
+pkgbase = stumpwm
+	pkgdesc = Tiling, keyboard-driven window manager written in Common Lisp
+	pkgver = 22.05
+	pkgrel = 2
+	url = https://stumpwm.github.io/
+	arch = x86_64
+	license = GPL2
+	makedepends = cl-asdf
+	makedepends = cl-ppcre
+	makedepends = clx-git
+	makedepends = common-lisp
+	makedepends = cl-alexandria-git
+	optdepends = xorg-xprop: for stumpish, the StumpWM Interactive Shell
+	optdepends = rlwrap: command completion and history in stumpish
+	optdepends = emacs: edit and eval stumpwm code with M-x stumpwm-mode
+	optdepends = alsa-utils: control the volume with amixer.lisp
+	optdepends = aumix: control the volume with aumix.lisp
+	optdepends = mpd: control mpd with mpd.lisp
+	optdepends = surfraw: surf the internet with surfraw.lisp
+	options = !strip
+	options = !makeflags
+	source = stumpwm-22.05.tar.gz::https://github.com/stumpwm/stumpwm/archive/22.05.tar.gz
+	sha256sums = d843302f9ce54660bc96e4f0d8e9584f07a81d43c4c26357d5a29cb07194abae
+
+pkgname = stumpwm

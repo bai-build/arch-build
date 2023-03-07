@@ -1,0 +1,16 @@
+pkgbase = gtkdatabox
+	pkgdesc = widget for the Gtk+ library designed to display large amounts of numerical data
+	pkgver = 1.0.0
+	pkgrel = 1
+	url = http://sourceforge.net/projects/gtkdatabox/
+	arch = x86_64
+	license = LGPL
+	makedepends = gtk-doc
+	makedepends = dblatex
+	depends = gtk3
+	options = docs
+	source = http://downloads.sourceforge.net/project/gtkdatabox/gtkdatabox-1/gtkdatabox-1.0.0.tar.gz
+	sha256sums = 8bee70206494a422ecfec9a88d32d914c50bb7a0c0e8fedc4512f5154aa9d3e3
+
+pkgname = gtkdatabox
+

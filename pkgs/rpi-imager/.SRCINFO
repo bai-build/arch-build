@@ -1,0 +1,22 @@
+pkgbase = rpi-imager
+	pkgdesc = Raspberry Pi Imaging Utility
+	pkgver = 1.7.4
+	pkgrel = 1
+	url = https://github.com/raspberrypi/rpi-imager
+	arch = x86_64
+	arch = aarch64
+	license = Apache
+	makedepends = cmake
+	makedepends = qt5-tools
+	depends = hicolor-icon-theme
+	depends = libarchive
+	depends = qt5-svg
+	depends = qt5-quickcontrols2
+	optdepends = dosfstools: SD card bootloader support
+	optdepends = udisks2: Needed if you want to be able to run rpi-imager as a regular user
+	source = rpi-imager-1.7.4.tar.gz::https://github.com/raspberrypi/rpi-imager/archive/v1.7.4.tar.gz
+	source = remove_update_checking.patch
+	b2sums = e48c8fd0206eca284bfd71a0fd2d7807a304a597801cf77d900174f509397d30fefc5dea981e943f3153743a9216757af7d966283ecf892160050e64aaf00fee
+	b2sums = 40bc85ec8d55876e440bf02bc13df7b77ff588a8508402eed9fc27a9e87043c189d70d061355aeac9f8c9b63aa6ea629ea9204f63ea579ab35e0e154e17d41b3
+
+pkgname = rpi-imager

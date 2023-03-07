@@ -1,0 +1,14 @@
+
+# For the size of the dhparams, you can read more here: https://www.yubico.com/2015/02/big-debate-2048-4096-yubicos-stand/
+post_install() {
+	openssl dhparam -out /etc/nginx/dhparam.pem 2048
+}
+
+post_upgrade() {
+	openssl dhparam -out /etc/nginx/dhparam.pem 2048
+
+	# Mitigate CVE-2016-1247	
+	chown -R root:root var/log/nginx
+	chmod -R u=rwX,go=rX var/log/nginx
+}
+

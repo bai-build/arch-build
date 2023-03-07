@@ -1,0 +1,27 @@
+pkgbase = fs-uae
+	pkgdesc = An Amiga emulator based on UAE/WinUAE with a focus on emulating games
+	pkgver = 3.0.0
+	pkgrel = 1
+	url = https://fs-uae.net/
+	arch = x86_64
+	license = GPL2
+	makedepends = freetype2
+	makedepends = gettext
+	makedepends = libxi
+	makedepends = mesa
+	makedepends = zip
+	depends = sdl2
+	depends = glib2
+	depends = libpng
+	depends = openal
+	depends = libx11
+	depends = libmpeg2
+	depends = zlib
+	depends = shared-mime-info
+	depends = desktop-file-utils
+	depends = hicolor-icon-theme
+	source = https://fs-uae.net/stable/3.0.0/fs-uae-3.0.0.tar.gz
+	sha256sums = 221568b8f78bac352f84297f0cabe984d3da4f808e39cc3191541c02b389c964
+
+pkgname = fs-uae
+

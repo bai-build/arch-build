@@ -1,0 +1,25 @@
+pkgbase = osmo-hlr-git
+	pkgdesc = Subscriber database and authentication key store of an Osmocom 2G/3G network
+	pkgver = 1.0.0.r6.gf9cf180
+	pkgrel = 1
+	url = https://osmocom.org/projects/osmo-hlr
+	arch = i686
+	arch = x86_64
+	arch = aarch64
+	arch = armv7h
+	license = GPL
+	makedepends = git
+	depends = libosmocore
+	depends = libosmo-abis
+	depends = talloc
+	depends = sqlite
+	depends = libdbi
+	depends = libdbi-drivers
+	provides = osmo-hlr
+	conflicts = osmo-hlr
+	backup = etc/osmocom/osmo-hlr.cfg
+	source = git+https://git.osmocom.org/osmo-hlr
+	sha256sums = SKIP
+
+pkgname = osmo-hlr-git
+

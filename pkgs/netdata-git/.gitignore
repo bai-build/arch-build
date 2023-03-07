@@ -1,0 +1,8 @@
+/pkg/
+/src/
+/netdata/
+/netdata-git-*.pkg.*
+/submodule-mqtt_websockets/
+/submodule-c-rbuf/
+/submodule-c_rhash/
+/submodule-aclk-schemas/

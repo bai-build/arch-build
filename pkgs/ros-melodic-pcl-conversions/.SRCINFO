@@ -1,0 +1,25 @@
+pkgbase = ros-melodic-pcl-conversions
+	pkgdesc = ROS - Provides conversions from PCL data types and ROS message types.
+	pkgver = 1.7.1
+	pkgrel = 4
+	url = https://wiki.ros.org/pcl_conversions
+	arch = i686
+	arch = x86_64
+	arch = aarch64
+	arch = armv7h
+	arch = armv6h
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-melodic-catkin
+	depends = ros-melodic-pcl-msgs
+	depends = ros-melodic-roscpp
+	depends = ros-melodic-sensor-msgs
+	depends = ros-melodic-std-msgs
+	depends = eigen
+	depends = pcl
+	source = ros-melodic-pcl-conversions-1.7.1.tar.gz::https://github.com/ros-perception/perception_pcl/archive/1.7.1.tar.gz
+	sha256sums = 8974c9da95a88b050a95ae56615ca384afec5f47f2fab7fb92a490c1907239b6
+
+pkgname = ros-melodic-pcl-conversions
+

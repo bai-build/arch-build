@@ -1,0 +1,18 @@
+pkgbase = mailsend
+	pkgdesc = A program to send mail via SMTP from command line.
+	pkgver = 1.19.r5.1b3cf9b85e
+	pkgrel = 3
+	epoch = 1
+	url = https://github.com/muquit/mailsend
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = gcc
+	makedepends = make
+	makedepends = openssl
+	depends = openssl
+	source = mailsend-1.19.r5.1b3cf9b85e.tar.gz::https://github.com/muquit/mailsend/archive/1b3cf9b85eed546e2eaf1dcb44d27b14c38e5a44.tar.gz
+	sha256sums = 158dfd3cdbcefcc981d28cea11be865dd285e210413fdf439fb9ffac0b66b329
+
+pkgname = mailsend
+

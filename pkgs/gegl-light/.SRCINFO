@@ -1,0 +1,23 @@
+pkgbase = gegl-light
+	pkgdesc = Graph based image processing framework (stripped to bare minimum for GIMP to run)
+	pkgver = 0.4.42
+	pkgrel = 1
+	url = https://www.gegl.org/
+	arch = x86_64
+	license = GPL3
+	license = LGPL3
+	makedepends = meson
+	makedepends = intltool
+	makedepends = gobject-introspection
+	depends = babl
+	depends = json-glib
+	depends = exiv2
+	depends = libpng
+	depends = libjpeg
+	depends = cairo
+	provides = gegl
+	conflicts = gegl
+	source = https://gitlab.gnome.org/GNOME/gegl/-/archive/GEGL_0_4_42/gegl-GEGL_0_4_42.tar.gz
+	sha256sums = cd1e77207885348ebe25f442174f95759a97ad5e291195f941ea910d76dd1deb
+
+pkgname = gegl-light

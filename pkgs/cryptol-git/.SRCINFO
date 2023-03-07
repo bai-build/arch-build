@@ -1,0 +1,21 @@
+pkgbase = cryptol-git
+	pkgdesc = A domain-specific language for specifying cryptographic algorithms.
+	pkgver = 2.6.0.r31.g2e4adcc
+	pkgrel = 1
+	url = http://www.cryptol.net
+	arch = x86_64
+	arch = i686
+	license = BSD
+	makedepends = git
+	makedepends = cabal-install
+	depends = z3
+	optdepends = boolector: theorem proving
+	optdepends = mathsat-5: theorem proving
+	optdepends = yices: theorem proving
+	provides = cryptol
+	conflicts = cryptol
+	source = git://github.com/GaloisInc/cryptol.git
+	md5sums = SKIP
+
+pkgname = cryptol-git
+

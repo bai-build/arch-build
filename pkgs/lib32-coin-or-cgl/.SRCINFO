@@ -1,0 +1,13 @@
+pkgbase = lib32-coin-or-cgl
+	pkgdesc = COIN-OR Cut Generation Library (32bit)
+	pkgver = 0.60.3
+	pkgrel = 1
+	url = https://github.com/coin-or/Cgl
+	arch = x86_64
+	groups = coin-or
+	license = EPL
+	depends = coin-or-clp
+	source = https://www.coin-or.org/download/source/Cgl/Cgl-0.60.3.tgz
+	sha256sums = cf11e3476d2182040cec412abb232d8bafa12ff5b619eca3b7b9ac1d220476c8
+
+pkgname = lib32-coin-or-cgl

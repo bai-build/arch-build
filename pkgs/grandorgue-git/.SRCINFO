@@ -1,0 +1,27 @@
+pkgbase = grandorgue-git
+	pkgdesc = Virtual Pipe Organ Software
+	pkgver = 3.9.5.0.r15.g35287b7b
+	pkgrel = 1
+	url = https://github.com/GrandOrgue/grandorgue
+	arch = i686
+	arch = x86_64
+	license = GPL2+
+	makedepends = git
+	makedepends = cmake
+	makedepends = rtaudio
+	makedepends = rtmidi
+	makedepends = docbook-xsl
+	depends = wxwidgets-gtk3
+	depends = wavpack
+	depends = fftw
+	depends = jack
+	depends = rtmidi
+	depends = rtaudio
+	depends = portaudio
+	depends = zita-convolver
+	conflicts = grandorgue
+	conflicts = grandorgue-bin
+	source = git+https://github.com/GrandOrgue/grandorgue.git
+	sha256sums = SKIP
+
+pkgname = grandorgue-git

@@ -1,0 +1,20 @@
+pkgbase = automake-1.11
+	pkgdesc = A GNU tool for automatically creating Makefiles
+	pkgver = 1.11.6
+	pkgrel = 2
+	url = http://www.gnu.org/software/automake
+	install = automake.install
+	arch = any
+	groups = base-devel
+	license = GPL
+	makedepends = autoconf
+	depends = perl
+	depends = bash
+	provides = automake=1.11.6
+	source = ftp://ftp.gnu.org/gnu/automake/automake-1.11.6.tar.xz
+	source = perl2.6.patch
+	md5sums = cf4752287ad708f83bd3689da57a32c9
+	md5sums = bae3eaea7e736cdc60fdab27eb70b357
+
+pkgname = automake-1.11
+

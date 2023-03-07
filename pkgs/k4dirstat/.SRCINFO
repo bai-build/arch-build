@@ -1,0 +1,17 @@
+pkgbase = k4dirstat
+	pkgdesc = A graphical disk usage utility for KDE
+	pkgver = 3.4.2
+	pkgrel = 1
+	url = https://github.com/jeromerobert/k4dirstat
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = extra-cmake-modules
+	makedepends = kdoctools
+	makedepends = karchive
+	depends = hicolor-icon-theme
+	depends = kdelibs4support
+	source = https://github.com/jeromerobert/k4dirstat/archive/3.4.2.tar.gz
+	sha256sums = c925aa058928ca755984ec708955be936ee5c38d594ba0a21000469539e00424
+
+pkgname = k4dirstat

@@ -1,0 +1,29 @@
+pkgbase = feedreader-beta
+	pkgdesc = simple feedreader client for web services like Tiny Tiny RSS and others in the future
+	pkgver = 2.0_beta1
+	pkgrel = 1
+	url = http://jangernert.github.io/FeedReader/
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = vala
+	makedepends = gobject-introspection
+	makedepends = cmake
+	depends = sqlite3
+	depends = gtk3
+	depends = webkit2gtk
+	depends = libnotify
+	depends = libsoup
+	depends = libgee
+	depends = json-glib
+	depends = libsecret
+	depends = gnome-keyring
+	depends = libpeas
+	depends = gnome-online-accounts
+	provides = feedreader
+	conflicts = feedreader
+	source = feedreader-beta-2.0_beta1.tar.gz::https://github.com/jangernert/FeedReader/archive/v2.0-beta-1.tar.gz
+	sha256sums = e865e1209a96dff12d370e2224d2671e8f81c4305d725effbf543573a40dee0b
+
+pkgname = feedreader-beta
+

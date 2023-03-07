@@ -1,0 +1,17 @@
+pkgbase = eteroj-lv2
+	pkgdesc = OSC injection/ejection from/to UDP/TCP/Serial for LV2
+	pkgver = 0.4.0
+	pkgrel = 2
+	url = http://open-music-kontrollers.ch/lv2/eteroj/
+	arch = i686
+	arch = x86_64
+	groups = lv2-plugins
+	license = Artistic2.0
+	makedepends = cmake
+	makedepends = lv2
+	depends = libuv
+	source = https://git.open-music-kontrollers.ch/lv2/eteroj.lv2/snapshot/eteroj.lv2-0.4.0.tar.xz
+	sha256sums = 0052c4adebcf00da7b83a8c6dfc305e32ba18052c703db1583757babb4bc5ef4
+
+pkgname = eteroj-lv2
+

@@ -1,0 +1,18 @@
+pkgbase = kdiff-git
+	pkgdesc = Graphical difference viewer for the KDE platform. (GIT version)
+	pkgver = r10.15fca24
+	pkgrel = 2
+	url = https://github.com/jsalatas/kdiff
+	arch = x86_64
+	license = GPL
+	license = LGPL
+	makedepends = extra-cmake-modules
+	makedepends = git
+	depends = ktexteditor
+	provides = kdiff
+	conflicts = kdiff
+	source = git+https://github.com/jsalatas/kdiff.git
+	sha1sums = SKIP
+
+pkgname = kdiff-git
+

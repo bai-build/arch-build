@@ -1,0 +1,28 @@
+pkgbase = lib32-gnome-themes-standard
+	pkgdesc = Default themes for the GNOME desktop (32-bit)
+	pkgver = 3.22.3+13+ga993fdc0
+	pkgrel = 1
+	url = https://git.gnome.org/browse/gnome-themes-standard
+	arch = x86_64
+	groups = gnome
+	license = GPL2
+	makedepends = gcc-multilib
+	makedepends = intltool
+	makedepends = lib32-gtk2
+	makedepends = lib32-gtk3
+	makedepends = gnome-common
+	makedepends = git
+	depends = cantarell-fonts
+	depends = ttf-dejavu
+	depends = lib32-librsvg
+	depends = gnome-themes-standard
+	optdepends = lib32-gtk-engines: HighContrast GTK2 theme
+	conflicts = gnome-themes
+	conflicts = lib32-gnome-themes
+	replaces = lib32-gnome-themes
+	options = !emptydirs
+	source = git+https://git.gnome.org/browse/gnome-themes-standard#commit=a993fdc050a001fe7880b29155908772f874efb4
+	sha256sums = SKIP
+
+pkgname = lib32-gnome-themes-standard
+

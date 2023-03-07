@@ -1,0 +1,6 @@
+*.xz
+*.Z
+src/
+pkg/
+*.un~
+*.log

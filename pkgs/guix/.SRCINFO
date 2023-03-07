@@ -1,0 +1,45 @@
+pkgbase = guix
+	pkgdesc = A purely functional package manager for the GNU system
+	pkgver = 1.3.0
+	pkgrel = 1
+	url = https://guix.gnu.org
+	install = guix.install
+	arch = x86_64
+	arch = i686
+	arch = armv7h
+	license = GPL3
+	makedepends = guile-ssh>=0.13.0
+	makedepends = guile-zstd
+	makedepends = guile-semver
+	makedepends = guile-lib
+	makedepends = bash-completion
+	makedepends = fish
+	makedepends = help2man
+	makedepends = po4a
+	depends = guile>=2.2.4
+	depends = guile-gcrypt>=0.1.0
+	depends = guile-sqlite3>=0.1.0
+	depends = guile-zlib>=0.1.0
+	depends = guile-lzlib
+	depends = guile-avahi
+	depends = guile-git-lib>=0.3.0
+	depends = guile-json>=4.3.0
+	depends = sqlite>=3.6.19
+	depends = bzip2
+	depends = gnutls
+	depends = libgcrypt
+	optdepends = bash-completion: to enable bash programmable completion
+	optdepends = guile-ssh: to offload builds to other machines
+	optdepends = guile-zstd: to use and publish zstd substitutes
+	optdepends = guile-semver: to use the crate importer
+	optdepends = guile-lib: to use the go importer
+	options = !strip
+	source = https://ftp.gnu.org/gnu/guix/guix-1.3.0.tar.gz
+	source = https://ftp.gnu.org/gnu/guix/guix-1.3.0.tar.gz.sig
+	source = guix-1.3.0-revert-display-download-progress-tty.patch
+	validpgpkeys = 27D586A4F8900854329FF09F1260E46482E63562
+	sha256sums = cb0f461c48d5823dfef7f88879a179737ee14c4dd93732d671932fc4e25053e8
+	sha256sums = 5c1c724a146e73b0e2b352dda1e1a4eb052e7dc89837f590693f0af23a6c404d
+	sha256sums = 4e110acfc8b8940b5de880ba782f607be666327a36b2ca2a124e96cc6846a560
+
+pkgname = guix

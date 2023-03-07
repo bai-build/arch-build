@@ -1,0 +1,21 @@
+pkgbase = movian-git
+	pkgdesc = Media center (Git version)
+	pkgver = 5.0.r472.gf5bbabd9e
+	pkgrel = 1
+	url = https://movian.tv/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	makedepends = nasm
+	depends = webkitgtk2
+	depends = libpulse
+	depends = libvdpau
+	depends = libxss
+	provides = movian
+	conflicts = movian
+	source = git+git://github.com/andoma/movian.git
+	sha1sums = SKIP
+
+pkgname = movian-git
+

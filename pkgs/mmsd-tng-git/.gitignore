@@ -1,0 +1,5 @@
+*.pkg.tar.zst
+mmsd-tng-git
+src
+pkg
+*.service

@@ -1,0 +1,30 @@
+pkgbase = foliate-git
+	pkgdesc = A simple and modern GTK eBook reader
+	pkgver = 1.5.3.r10.gd35e3e6
+	pkgrel = 1
+	url = https://johnfactotum.github.io/foliate/
+	arch = i686
+	arch = x86_64
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	license = GPL-3.0
+	makedepends = meson>=0.40
+	makedepends = ninja
+	makedepends = git
+	depends = gjs>=1.52.0
+	depends = webkit2gtk
+	depends = gettext
+	optdepends = hyphen: Auto-hyphenation support
+	optdepends = hyphen-en: Hyphenation rules for English; you may choose package for your language
+	optdepends = dictd: Offline dictionary support
+	optdepends = festival: Text-to-speech support
+	optdepends = espeak-ng: Text-to-speech support
+	provides = foliate
+	conflicts = foliate
+	replaces = foliate
+	source = foliate::git+https://github.com/johnfactotum/foliate.git#branch=master
+	md5sums = SKIP
+
+pkgname = foliate-git
+

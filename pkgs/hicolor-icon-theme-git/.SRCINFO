@@ -1,0 +1,15 @@
+pkgbase = hicolor-icon-theme-git
+	pkgdesc = Freedesktop.org Hicolor icon theme
+	pkgver = 0.17.r0.gf522d9d
+	pkgrel = 2
+	url = https://www.freedesktop.org/wiki/Software/icon-theme/
+	arch = any
+	license = GPL
+	makedepends = git
+	provides = hicolor-icon-theme
+	conflicts = hicolor-icon-theme
+	source = git+https://gitlab.freedesktop.org/xdg/default-icon-theme
+	sha256sums = SKIP
+
+pkgname = hicolor-icon-theme-git
+

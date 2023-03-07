@@ -1,0 +1,20 @@
+pkgbase = overwitch
+	pkgdesc = JACK client for Overbridge devices
+	pkgver = 1.0
+	pkgrel = 2
+	url = https://github.com/dagargo/overwitch
+	arch = x86_64
+	license = GPL
+	makedepends = make
+	makedepends = autoconf
+	depends = libusb
+	depends = jack
+	depends = libsamplerate
+	depends = libsndfile
+	depends = gettext
+	depends = json-glib
+	depends = gtk3
+	source = https://github.com/dagargo/overwitch/releases/download/1.0/overwitch-1.0.tar.gz
+	sha256sums = 7b2c7a873640bfa2fbbd5fe76d72d00438615cd474f08a8b5ba990c37d1a2ba0
+
+pkgname = overwitch

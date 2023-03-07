@@ -1,0 +1,18 @@
+pkgbase = sandsmark-notificationd-git
+	pkgdesc = simple notification daemon because everything else sucks
+	pkgver = 29.d5e8cd9
+	pkgrel = 1
+	url = https://github.com/sandsmark/sandsmark-notificationd
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	makedepends = cmake
+	depends = qt5-base
+	provides = sandsmark-notificationd
+	conflicts = sandsmark-notificationd
+	source = git+https://github.com/sandsmark/sandsmark-notificationd.git
+	md5sums = SKIP
+
+pkgname = sandsmark-notificationd-git
+

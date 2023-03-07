@@ -1,0 +1,21 @@
+pkgbase = faf-ice-adapter
+	pkgdesc = A P2P connection proxy for Supreme Commander: Forged Alliance using ICE
+	pkgver = 6.3.3
+	pkgrel = 1
+	epoch = 0
+	url = http://www.faforever.com/
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	makedepends = ninja
+	makedepends = cmake
+	makedepends = clang
+	makedepends = libc++
+	depends = libc++
+	source = git+https://github.com/FAForever/ice-adapter.git
+	source = https://github.com/FAForever/libwebrtc/releases/download/68-faf-1/libwebrtc-68-faf-1-linux-x64.tar.gz
+	sha256sums = SKIP
+	sha256sums = 6407a3fe87d68d8f0f62f7405de219218ecdf4cf0f3a9cd724dd261b6055d686
+
+pkgname = faf-ice-adapter
+

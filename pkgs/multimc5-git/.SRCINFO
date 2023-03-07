@@ -1,0 +1,29 @@
+pkgbase = multimc5-git
+	pkgdesc = Minecraft launcher with ability to manage multiple instances.
+	pkgver = 0.5.1.r85.ga379d43d
+	pkgrel = 1
+	url = http://multimc.org/
+	arch = i686
+	arch = x86_64
+	license = Apache
+	makedepends = git
+	makedepends = cmake
+	makedepends = qt5-tools
+	makedepends = qt5-x11extras
+	makedepends = java-environment
+	depends = zlib
+	depends = libgl
+	depends = qt5-base
+	depends = qt5-x11extras
+	depends = java-runtime
+	depends = qt5-svg
+	conflicts = multimc5
+	source = multimc5-git::git://github.com/MultiMC/MultiMC5.git
+	source = multimc5.sh
+	source = multimc5.desktop
+	sha512sums = SKIP
+	sha512sums = 9ed2a29eec6468d00129ef64f9b7bfc799850854143835b2b5b7631404985dc3737cac5ecdf85796a79cbce5422558e7cb390fc86dc53da30cfe311cc04d663c
+	sha512sums = 55c0daa45f849831e74c2d5a6d4a3dba6d6d8018bf226beadc4726b749320728502068f49741026e487c2bcf9826c1a4f54f110d2a20e9e0a0deb5cf2d616b92
+
+pkgname = multimc5-git
+

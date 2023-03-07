@@ -1,0 +1,15 @@
+pkgbase = ekho
+	pkgdesc = Multilingual text-to-speech (TTS) software for Cantonese, Mandarin, Toisanese, Zhaoan Hakka, Tibetan, Ngangien, Korean and English
+	pkgver = 8.6
+	pkgrel = 1
+	url = https://www.eguidedog.net/ekho.php
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = espeak-ng
+	depends = lame
+	depends = festival
+	source = https://downloads.sourceforge.net/e-guidedog/ekho-8.6.tar.xz
+	sha512sums = cca7b95efe04fa377bec557c792bf6c7788caf5c0275c00979c20fd8c8acd20193c9968499ab3c1f3ee4bb29b0b43eabafd154d7a76ee87971430c1ea890ea39
+
+pkgname = ekho

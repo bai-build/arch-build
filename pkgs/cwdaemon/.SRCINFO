@@ -1,0 +1,22 @@
+pkgbase = cwdaemon
+	pkgdesc = Ham Radio Morse Code transmitter - text input is sent via udp port 6789.
+	pkgver = 0.10.2
+	pkgrel = 2
+	url = http://cwdaemon.sourceforge.net
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = unixcw
+	depends = netcat
+	source = cwdaemon::git+https://github.com/acerion/cwdaemon#branch=master
+	source = diff.Makefile.am
+	source = diff.Makefile.am.example
+	md5sums = SKIP
+	md5sums = 9afaea52e53c3140388633ed608bf0ed
+	md5sums = db518d891fb68c02168111f46340899d
+	sha256sums = SKIP
+	sha256sums = af0343ee5691c256ccb206284d683f88b551132446cd9ecd1dc3cc87af72e833
+	sha256sums = fb40a17f6cc5b0910e588c8c815a5340069b013af3207017073eff6ca58cca26
+
+pkgname = cwdaemon
+

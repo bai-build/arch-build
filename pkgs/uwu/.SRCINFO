@@ -1,0 +1,14 @@
+pkgbase = uwu
+	pkgdesc = uwu your terminal today!
+	pkgver = 0.1
+	pkgrel = 3
+	url = https://github.com/98WuG/uwu
+	arch = x86_64
+	license = GPL
+	makedepends = gcc
+	depends = glibc
+	source = https://github.com/98WuG/uwu/archive/v0.1.tar.gz
+	md5sums = ad5d777b3b155b025f237f9a4546f994
+
+pkgname = uwu
+

@@ -1,0 +1,16 @@
+pkgbase = ncmdump-git
+	pkgdesc = netease cloud music copyright protection file dump
+	pkgver = r9.131e769
+	pkgrel = 1
+	epoch = 1
+	url = https://github.com/taurusxin/ncmdump
+	arch = any
+	license = unknown
+	makedepends = git
+	depends = taglib
+	provides = ncmdump
+	conflicts = ncmdump
+	source = ncmdump::git+https://github.com/taurusxin/ncmdump
+	sha256sums = SKIP
+
+pkgname = ncmdump-git

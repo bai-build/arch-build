@@ -1,0 +1,20 @@
+pkgbase = utilyre-st-git
+	pkgdesc = A simple virtual terminal emulator for X
+	pkgver = 0.8.6
+	pkgrel = 1
+	url = https://github.com/utilyre/st
+	arch = i686
+	arch = x86_64
+	arch = armv7h
+	license = MIT
+	makedepends = ncurses
+	makedepends = libxext
+	makedepends = git
+	depends = libxft-bgra
+	provides = st
+	conflicts = st
+	conflicts = st-git
+	source = git+https://github.com/utilyre/st.git
+	sha256sums = SKIP
+
+pkgname = utilyre-st-git

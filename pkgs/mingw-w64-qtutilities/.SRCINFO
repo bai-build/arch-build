@@ -1,0 +1,26 @@
+pkgbase = mingw-w64-qtutilities
+	pkgdesc = Common Qt related C++ classes and routines used by my applications such as dialogs, widgets and models (mingw-w64)
+	pkgver = 6.10.0
+	pkgrel = 1
+	url = https://github.com/Martchus/qtutilities
+	arch = any
+	license = GPL
+	checkdepends = mingw-w64-wine
+	makedepends = mingw-w64-gcc
+	makedepends = mingw-w64-cmake
+	makedepends = mingw-w64-qt5-tools
+	makedepends = ninja
+	makedepends = mingw-w64-qt5-base-static
+	makedepends = mingw-w64-qt5-translations
+	depends = mingw-w64-crt
+	depends = mingw-w64-qt5-base
+	depends = mingw-w64-c++utilities
+	optdepends = qtutilities-doc: API documentation
+	options = !buildflags
+	options = staticlibs
+	options = !strip
+	options = !emptydirs
+	source = qtutilities-6.10.0.tar.gz::https://github.com/Martchus/qtutilities/archive/v6.10.0.tar.gz
+	sha256sums = 420dfea8864271bc8bac080edb7b8ba2aab1efd2f723e33793d2c8049a2ef935
+
+pkgname = mingw-w64-qtutilities

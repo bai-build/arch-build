@@ -1,0 +1,19 @@
+pkgbase = mangonel-git
+	pkgdesc = Simple but fast application launcher.
+	pkgver = r266.d2f8899
+	pkgrel = 1
+	url = https://invent.kde.org/utilities/mangonel
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = extra-cmake-modules
+	makedepends = git
+	depends = knotifyconfig
+	depends = kunitconversion
+	provides = mangonel
+	conflicts = mangonel
+	source = git+https://invent.kde.org/utilities/mangonel.git
+	md5sums = SKIP
+
+pkgname = mangonel-git
+

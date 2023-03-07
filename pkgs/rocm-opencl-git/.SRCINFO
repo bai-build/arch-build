@@ -1,0 +1,20 @@
+pkgbase = rocm-opencl-git
+	pkgdesc = ROCm OpenCL™ Compatible Runtime
+	pkgver = 2.1.r0.d3bfd48
+	pkgrel = 1
+	url = https://github.com/RadeonOpenCompute/ROCm-OpenCL-Runtime
+	arch = x86_64
+	license = MIT
+	makedepends = cmake
+	makedepends = gcc
+	makedepends = git
+	makedepends = ocaml-findlib
+	makedepends = python2-z3
+	makedepends = repo
+	makedepends = gtest
+	depends = rocr-runtime
+	provides = rocm-opencl
+	conflicts = rocm-opencl
+
+pkgname = rocm-opencl-git
+

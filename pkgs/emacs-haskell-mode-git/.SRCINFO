@@ -1,0 +1,18 @@
+pkgbase = emacs-haskell-mode-git
+	pkgdesc = Haskell mode package for Emacs
+	pkgver = r2719.f63f315
+	pkgrel = 1
+	url = https://github.com/haskell/haskell-mode
+	install = emacs-haskell-mode-git.install
+	arch = any
+	license = GPL
+	makedepends = emacs
+	makedepends = git
+	optdepends = stylish-haskell: code formatting support
+	optdepends = hasktags: tags generation support
+	provides = emacs-haskell-mode
+	source = emacs-haskell-mode-git::git://github.com/haskell/haskell-mode
+	md5sums = SKIP
+
+pkgname = emacs-haskell-mode-git
+

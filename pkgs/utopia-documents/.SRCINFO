@@ -1,0 +1,24 @@
+pkgbase = utopia-documents
+	pkgdesc = PDF reader that displays interactive annotations on scientific articles
+	pkgver = 3.0.0
+	pkgrel = 1
+	url = http://utopiadocs.com
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = cmake
+	makedepends = boost
+	makedepends = swig
+	makedepends = glew
+	depends = libqglviewer
+	depends = pcre
+	depends = qt5-svg
+	depends = qt5-webkit
+	depends = qt5-script
+	depends = poppler-qt5
+	depends = python2-pyqt5
+	source = http://utopiadocs.com/files/utopia-documents-3.0.0.tgz
+	sha256sums = 1c259b68fada7f98080a66a63e36c707b78bfc3a5c80a956568ee73c030c8cac
+
+pkgname = utopia-documents
+

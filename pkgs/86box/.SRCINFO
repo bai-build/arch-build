@@ -1,0 +1,29 @@
+pkgbase = 86box
+	pkgdesc = An emulator for classic IBM PC clones
+	pkgver = 3.11
+	pkgrel = 1
+	url = https://86box.net/
+	arch = pentium4
+	arch = x86_64
+	arch = arm7h
+	arch = aarch64
+	license = GPL2
+	makedepends = cmake>=3.21
+	makedepends = extra-cmake-modules
+	makedepends = ninja
+	makedepends = qt5-tools
+	makedepends = vulkan-headers
+	depends = hicolor-icon-theme
+	depends = libslirp
+	depends = openal
+	depends = qt5-base
+	depends = rtmidi
+	depends = sdl2
+	optdepends = 86box-roms: ROM files
+	optdepends = discord-game-sdk: Discord Rich Presence
+	optdepends = libpcap: Networking not limited to TCP/IP
+	options = !buildflags
+	source = https://github.com/86Box/86Box/archive/refs/tags/v3.11.tar.gz
+	sha512sums = 4705f0bb7186a19b8a74450132a73c01e9fae80809e7cebf2ef0294100081ff6a27e0f81dbc661596a8d1cd7b04afc5dddb3e990dd10951a37a48de338c49a77
+
+pkgname = 86box

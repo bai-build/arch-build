@@ -1,0 +1,27 @@
+pkgbase = cinelerra-heroine
+	pkgdesc = Cinelerra from the HeroineWarrior.com (64-bit)
+	pkgver = 7.2
+	pkgrel = 1
+	url = http://www.heroinewarrior.com/cinelerra.php
+	arch = x86_64
+	license = GPL
+	makedepends = yasm
+	makedepends = nasm
+	makedepends = libtool
+	depends = libpng
+	depends = freeglut
+	depends = libxv
+	depends = ncurses
+	depends = libva
+	depends = openexr
+	depends = libxft
+	depends = freetype2
+	depends = alsa-lib
+	conflicts = cinelerra-cv
+	source = https://netcologne.dl.sourceforge.net/project/heroines/cinelerra-7.2-src.tar.xz
+	source = cinelerra.desktop
+	sha512sums = da422379e738bb9c9019bb95fbe4d3cf2f2df995e4d42bd1ef958a79b5013bbdb5c9f50f64e1091d2990215c514e4d28c30f50f65b94bb01a69f6a3e78c02dc7
+	sha512sums = 111cd582cc8d165a6888f66b7de4286058e8037ed9b5dbcbffc4ad6ab283df15203325a2ba5096112e583cc03b56f38b604e7a070113a5deb3762af8f382ff94
+
+pkgname = cinelerra-heroine
+

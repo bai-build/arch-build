@@ -1,0 +1,26 @@
+pkgbase = terminus-font-ll2-td1-ttf
+	pkgdesc = A superb, monospace bitmap font (for X11 and console) with ll2 patch (pass the il1I test) and td1 patch (centered ascii tilde) (TTF version)
+	pkgver = 4.48
+	pkgrel = 1
+	url = http://files.ax86.net/terminus-ttf
+	install = terminus-font.install
+	arch = any
+	license = GPL2
+	license = custom:OFL
+	makedepends = python
+	makedepends = fontforge
+	makedepends = potrace
+	makedepends = mkbold-mkitalic
+	makedepends = git
+	depends = xorg-fonts-encodings
+	depends = xorg-font-utils
+	depends = fontconfig
+	provides = terminus-font-ttf
+	conflicts = terminus-font-ttf
+	source = http://downloads.sourceforge.net/project/terminus-font/terminus-font-4.48/terminus-font-4.48.tar.gz
+	source = git+https://github.com/Tblue/mkttf
+	sha256sums = 34799c8dd5cec7db8016b4a615820dfb43b395575afbb24fc17ee19c869c94af
+	sha256sums = SKIP
+
+pkgname = terminus-font-ll2-td1-ttf
+

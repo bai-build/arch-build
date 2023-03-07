@@ -1,0 +1,14 @@
+pkgbase = exhale
+	pkgdesc = Open source xHE-AAC encoder
+	pkgver = 1.2.0
+	pkgrel = 1
+	url = https://gitlab.com/ecodis/exhale
+	arch = i686
+	arch = x86_64
+	license = custom
+	makedepends = cmake
+	depends = gcc-libs
+	source = https://gitlab.com/ecodis/exhale/-/archive/v1.2.0/exhale-v1.2.0.tar.bz2
+	sha256sums = 8af9558432d0a8208b8adce198ed9880b638ec0654ce5ecf20a7e40f3eb3ba67
+
+pkgname = exhale

@@ -1,0 +1,19 @@
+[Unit]
+Description=Peerunity Daemon
+After=network.target 
+
+[Service]
+User=%i
+Group=users
+Type=simple
+RestartSec=15
+Restart=on-failure
+ExecStart=/usr/bin/peerunityd
+## security
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=full
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target

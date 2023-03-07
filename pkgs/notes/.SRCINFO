@@ -1,0 +1,20 @@
+pkgbase = notes
+	pkgdesc = Note taking application, write down your thoughts
+	pkgver = 2.0.0+2+g5d245d0
+	pkgrel = 2
+	url = https://www.get-notes.com/
+	arch = x86_64
+	license = MPL
+	makedepends = git
+	depends = hicolor-icon-theme
+	depends = qt5-base
+	source = git+https://github.com/nuttyartist/notes.git#commit=5d245d055fcdf1a32095dbd784bae55d4b268e01
+	source = git+https://github.com/b00f/qautostart.git
+	source = git+https://github.com/pbek/qmarkdowntextedit.git
+	source = git+https://github.com/alex-spataru/QSimpleUpdater.git
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = notes

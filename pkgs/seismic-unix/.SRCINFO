@@ -1,0 +1,29 @@
+pkgbase = seismic-unix
+	pkgdesc = A seismic processing and research environment developed at the Center for Wave Phenomena, Colorado School of Mines
+	pkgver = 44.18
+	pkgrel = 1
+	url = http://www.cwp.mines.edu/cwpcodes/
+	install = seismic-unix.install
+	arch = i686
+	arch = x86_64
+	license = custom
+	makedepends = git
+	makedepends = gcc-fortran
+	makedepends = libtirpc
+	makedepends = libtirpc-compat
+	makedepends = openmotif
+	makedepends = glu
+	makedepends = libxmu
+	makedepends = freeglut
+	depends = libtirpc
+	depends = libxi
+	depends = libglvnd
+	depends = libxmu
+	depends = openmotif
+	optdepends = tcsh: some scripts
+	optdepends = gcc-fortran: Fortran support
+	source = seismic_unix.tgz::https://nextcloud.seismic-unix.org/index.php/s/WgXpRba4DPPaiNK/download
+	md5sums = 2b4d9f3a09dbecca1919f4edf44fffc5
+
+pkgname = seismic-unix
+

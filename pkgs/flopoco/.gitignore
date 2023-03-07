@@ -1,0 +1,13 @@
+
+flopoco
+
+src
+pkg
+
+*.pkg
+*.gz
+*.tar
+*.tgz
+*.xz
+*.zst
+

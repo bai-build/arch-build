@@ -1,0 +1,18 @@
+pkgbase = dnsbalancer
+	pkgdesc = Daemon to balance UDP DNS requests over DNS servers
+	pkgver = 0.2.0
+	pkgrel = 1
+	url = https://github.com/pfactum/dnsbalancer
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	makedepends = gcc
+	makedepends = cmake
+	makedepends = ninja
+	source = dnsbalancer-git::git+https://github.com/pfactum/dnsbalancer.git
+	source = dnsbalancer.service
+	sha256sums = SKIP
+	sha256sums = 02011cfedb857d958aa3cfd5f3cd6c1e621b138f869d362f548ae49f93c52403
+
+pkgname = dnsbalancer
+

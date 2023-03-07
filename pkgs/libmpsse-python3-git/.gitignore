@@ -1,0 +1,4 @@
+libmpsse/
+*.pkg.tar*
+src/
+pkg/

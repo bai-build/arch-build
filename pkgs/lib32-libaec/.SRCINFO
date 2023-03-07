@@ -1,0 +1,14 @@
+pkgbase = lib32-libaec
+	pkgdesc = Adaptive Entropy Coding library (32-bit)
+	pkgver = 1.0.6
+	pkgrel = 1
+	url = https://gitlab.dkrz.de/k202009/libaec
+	arch = x86_64
+	license = custom
+	makedepends = cmake
+	depends = lib32-glibc
+	depends = libaec
+	source = https://gitlab.dkrz.de/k202009/libaec/-/archive/v1.0.6/libaec-v1.0.6.tar.bz2
+	sha256sums = 31fb65b31e835e1a0f3b682d64920957b6e4407ee5bbf42ca49549438795a288
+
+pkgname = lib32-libaec

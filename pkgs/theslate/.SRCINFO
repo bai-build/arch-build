@@ -1,0 +1,20 @@
+pkgbase = theslate
+	pkgdesc = Text Editor with code highlighting support
+	pkgver = 1.0
+	pkgrel = 0
+	url = https://github.com/vicr123/theslate
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	makedepends = qt5-tools
+	depends = xdg-utils
+	depends = qt5-base
+	depends = the-libs
+	depends = qt5-webengine
+	depends = qt5-svg
+	depends = syntax-highlighting
+	source = theslate-1.0::git+https://github.com/vicr123/theSlate.git
+	sha256sums = SKIP
+
+pkgname = theslate
+

@@ -1,0 +1,33 @@
+pkgbase = gostcoin-git
+	pkgdesc = Coin based on GOST R 34.10 and GOST R 34.11-2012 with I2P support
+	pkgver = 0.8.5.12
+	pkgrel = 1
+	url = http://gostcoin.i2p
+	arch = i686
+	arch = x86_64
+	arch = armv7h
+	arch = aarch64
+	license = MIT
+	makedepends = boost
+	makedepends = cmake
+	depends = boost-libs
+	depends = openssl
+	depends = qt5-base
+	optdepends = i2pd: I2P network transport
+	source = gostcoin::git+https://github.com/GOSTSec/gostcoin
+	source = gostcoind.service
+	source = gostcoind.conf
+	sha256sums = SKIP
+	sha256sums = 2f3621bdfe990bad094f1a31735af60582eef05150c685d974546b1c8de0b8ce
+	sha256sums = 7f123c96f26bcd8e1ea12603e2c92988795ac516a8e4b1c2bdc670e51016ae67
+
+pkgname = gostcoind-git
+	install = gostcoind.install
+	provides = gostcoind
+	conflicts = gostcoind
+	backup = etc/gostcoind.conf
+
+pkgname = gostcoin-qt-git
+	provides = gostcoin-qt
+	conflicts = gostcoin-qt
+

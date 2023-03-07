@@ -1,0 +1,34 @@
+pkgbase = adriconf
+	pkgdesc = Advanded DRI Configurator for the Mesa drivers
+	pkgver = 1.3
+	pkgrel = 2
+	url = https://github.com/jlHertel/adriconf/
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = cmake
+	makedepends = boost
+	makedepends = gettext
+	makedepends = gtest
+	depends = gcc-libs
+	depends = gtkmm3
+	depends = glibmm
+	depends = gtk3
+	depends = glib2
+	depends = libsigc++
+	depends = boost-libs
+	depends = libxml++2.6
+	depends = libx11
+	depends = libglvnd
+	depends = mesa
+	depends = libdrm
+	depends = pciutils
+	source = adriconf-1.3.tar.gz::https://github.com/jlHertel/adriconf/archive/v1.3.tar.gz
+	source = adriconf.desktop
+	source = adriconf.png
+	sha256sums = 564bab30de6f8a4c945ffa5d2fa66fdc9f0cb44608c3eab43df808c6c1332c05
+	sha256sums = bcdd0e3de71922741b26932b75f050da16bcc966d0256bf32f942ac715987967
+	sha256sums = 7d5d467bafd07a39fe1590ff399a2ef9d4eb973777369b308f87556bc4e3786d
+
+pkgname = adriconf
+

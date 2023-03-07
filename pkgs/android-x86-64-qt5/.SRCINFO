@@ -1,0 +1,51 @@
+pkgbase = android-x86-64-qt5
+	pkgdesc = Qt 5 for Android
+	pkgver = 5.15.2
+	pkgrel = 2
+	url = https://www.qt.io
+	install = android-x86-64-qt5.install
+	arch = any
+	groups = android-qt5
+	license = GPL3
+	license = LGPL
+	makedepends = libgl
+	makedepends = sqlite
+	makedepends = zlib
+	makedepends = python2
+	makedepends = python
+	makedepends = ruby
+	makedepends = gperf
+	makedepends = libxslt
+	makedepends = fontconfig
+	makedepends = java-environment-openjdk<=8
+	makedepends = android-environment
+	makedepends = android-pkg-config
+	depends = java-runtime-headless-openjdk<=8
+	depends = apache-ant
+	depends = android-ndk
+	depends = android-sdk
+	depends = android-sdk-build-tools
+	depends = android-sdk-platform-tools
+	depends = android-x86-64-libjpeg-turbo
+	depends = android-x86-64-libpng
+	depends = android-x86-64-libtiff
+	depends = android-x86-64-libwebp
+	depends = android-x86-64-openssl
+	depends = android-x86-64-zlib
+	optdepends = android-google-apis-x86-64: AVD support
+	optdepends = android-x86-64-system-image: AVD support
+	options = !strip
+	options = !buildflags
+	options = staticlibs
+	options = !emptydirs
+	source = http://download.qt-project.org/official_releases/qt/5.15/5.15.2/single/qt-everywhere-src-5.15.2.tar.xz
+	source = 0001-Support-pkg-config-under-Android.patch
+	source = 0002-Force-64-bit-atomics-usage.patch
+	source = 0003-Remove-undeclared-method-in-QtNative.patch
+	md5sums = e1447db4f06c841d8947f0a6ce83a7b5
+	md5sums = 6af9dcc450ae6c69d8fddccf0680d84a
+	md5sums = f17efcb3d46afefd9d2c011301fd53c5
+	md5sums = b5e5c0d979b0f6a4dd90f32ce999965b
+
+pkgname = android-x86-64-qt5
+

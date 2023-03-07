@@ -1,0 +1,21 @@
+diff -Naur pachi-pachi-12.10-jowa.orig/Makefile pachi-pachi-12.10-jowa.new/Makefile
+--- pachi-pachi-12.10-jowa.orig/Makefile	2018-08-14 19:45:14.946828806 +0200
++++ pachi-pachi-12.10-jowa.new/Makefile	2018-08-14 19:46:53.610162808 +0200
+@@ -28,7 +28,7 @@
+ # You'll need to install Boost and Caffe libraries.
+ # If Caffe is in a custom directory you can set it here.
+ 
+-DCNN=1
++DCNN=0
+ # CAFFE_PREFIX=/usr/local/caffe
+ 
+ # Fixed board size. Set this to enable more aggressive optimizations
+@@ -319,7 +319,7 @@
+ 	@CC="$(CC)" CFLAGS="$(CFLAGS)" ./spudfrog
+ 
+ # Build info
+-build.h: .git/HEAD .git/index Makefile
++build.h: Makefile
+ 	+@make spudfrog
+ 	@echo "[make] build.h"
+ 	@CC="$(CC)" CFLAGS="$(CFLAGS)" ./genbuild > $@

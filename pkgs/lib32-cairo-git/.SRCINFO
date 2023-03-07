@@ -1,0 +1,29 @@
+pkgbase = lib32-cairo-git
+	pkgdesc = 2D graphics library with support for multiple output devices (32-bit)
+	pkgver = 1.17.4
+	pkgrel = 1
+	url = https://cairographics.org/
+	arch = x86_64
+	license = LGPL
+	license = MPL
+	makedepends = valgrind
+	makedepends = git
+	makedepends = meson
+	depends = lib32-zlib
+	depends = lib32-libpng
+	depends = lib32-fontconfig
+	depends = lib32-freetype2
+	depends = lib32-libx11
+	depends = lib32-libxext
+	depends = lib32-libxrender
+	depends = lib32-libxcb
+	depends = lib32-glib2
+	depends = lib32-pixman
+	depends = cairo
+	provides = lib32-cairo
+	conflicts = lib32-cairo
+	source = git+https://gitlab.freedesktop.org/cairo/cairo.git
+	sha256sums = SKIP
+
+pkgname = lib32-cairo-git
+

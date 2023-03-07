@@ -1,0 +1,24 @@
+pkgbase = poissonrecon-git
+	pkgdesc = Screened Poisson Surface Reconstruction (and Smoothed Signed Distance Reconstruction)
+	pkgver = 8.0.r70.ga5c7d35
+	pkgrel = 1
+	url = http://www.cs.jhu.edu/~misha/Code/PoissonRecon/Version9.0/
+	arch = i686
+	arch = x86_64
+	groups = photogrametry
+	license = MIT
+	makedepends = git
+	makedepends = gcc8
+	depends = glibc
+	depends = gcc8-libs
+	depends = libpng
+	depends = libjpeg
+	provides = poissonrecon
+	provides = ssdrecon
+	provides = surfacetrimmer
+	options = !makeflags
+	source = poissonrecon-git::git+https://github.com/mkazhdan/PoissonRecon.git
+	sha256sums = SKIP
+
+pkgname = poissonrecon-git
+

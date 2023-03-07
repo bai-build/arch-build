@@ -1,0 +1,35 @@
+pkgbase = artwork-maia
+	pkgver = r218
+	pkgrel = 1
+	url = https://gitlab.manjaro.org/artwork/themes/maia
+	arch = any
+	license = GPL2
+	makedepends = phonon-qt5-gstreamer
+	makedepends = extra-cmake-modules
+	makedepends = plasma-framework
+	makedepends = git
+	source = git+https://gitlab.manjaro.org/artwork/themes/maia.git
+	sha256sums = SKIP
+
+pkgname = artwork-maia
+	pkgdesc = Maia artwork meta-package
+	depends = maia-icon-theme
+	depends = maia-wallpaper
+	depends = plasma5-themes-maia
+	depends = sddm-maia-theme
+
+pkgname = maia-icon-theme
+	pkgdesc = Maia icon theme
+
+pkgname = plasma5-themes-maia
+	pkgdesc = Maia theme for KDE Plasma 5
+	depends = breeze
+	depends = maia-icon-theme
+	replaces = maia-themes
+
+pkgname = sddm-maia-theme
+	pkgdesc = Maia theme for SDDM
+
+pkgname = maia-wallpaper
+	pkgdesc = Maia wallpaper
+

@@ -1,0 +1,27 @@
+pkgbase = utox
+	pkgdesc = Lightweight Tox client
+	pkgver = 0.12.1
+	pkgrel = 1
+	url = https://github.com/uTox/uTox
+	arch = i686
+	arch = x86_64
+	arch = arm
+	arch = armv6h
+	arch = armv7h
+	license = GPL3
+	license = MIT
+	makedepends = toxcore>=0.1.0
+	depends = fontconfig
+	depends = libfilteraudio
+	depends = libxext
+	depends = libxrender
+	depends = openal
+	depends = toxcore
+	depends = v4l-utils
+	optdepends = gtk3: GTK file picker
+	optdepends = libdbus: Notification support
+	source = https://github.com/uTox/uTox/archive/v0.12.1/utox-0.12.1.tar.gz
+	sha256sums = 091b84768ea96eea7b12e0017c77f9015a7e3a105f5451f33f906af14b498de7
+
+pkgname = utox
+

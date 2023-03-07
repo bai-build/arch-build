@@ -1,0 +1,25 @@
+--- PKGBUILD.old  2017-04-05 23:01:15.917261011 +1000
++++ PKGBUILD  2017-04-05 23:01:15.917261011 +1000
+@@ -4,4 +4,4 @@
+ 
+-pkgbase=linux               # Build stock -ARCH kernel
+-#pkgbase=linux-custom       # Build kernel with a different name
++#pkgbase=linux               # Build stock -ARCH kernel
++pkgbase=linux-xps13       # Build kernel with xps13 patch
+ _srcname=linux-4.10
+@@ -22,2 +22,4 @@
+         '90-linux.hook'
++        # xps13 patch
++        'xps13.patch'
+         # standard config files for mkinitcpio ramdisk
+@@ -32,2 +34,3 @@
+             '834bd254b56ab71d73f59b3221f056c72f559553c04718e350ab2a3e2991afe0'
++            'f7723d4a2e07da82b3698fb4edb5cf1ca0ccbbc3e789247118fcb7a44d89cdf2'
+             'ad6344badc91ad0630caacde83f7f9b97276f80d26a20619a87952be65492c65')
+@@ -49,2 +52,6 @@
+ 
++  # apply the xps 13 cypress touchpad simulated multitouch patch
++  msg "Patching source with XPS13 touchpad patch."
++  patch -Np1 -i "${srcdir}/xps13.patch"
++
+   cat "${srcdir}/config.${CARCH}" > ./.config

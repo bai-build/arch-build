@@ -1,0 +1,6 @@
+*.xz
+Generals-Alpha
+pkg
+src
+*.gz
+*.pkg*

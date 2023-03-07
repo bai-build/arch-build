@@ -1,0 +1,65 @@
+pkgbase = linux-lts316
+	pkgver = 3.16.85
+	pkgrel = 1
+	url = https://www.kernel.org/
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = xmlto
+	makedepends = docbook-xsl
+	makedepends = kmod
+	makedepends = inetutils
+	makedepends = bc
+	options = !strip
+	source = https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.16.tar.xz
+	source = https://www.kernel.org/pub/linux/kernel/v3.x/patch-3.16.85.xz
+	source = config
+	source = config.x86_64
+	source = 99-linux.hook
+	source = linux.preset
+	source = change-default-console-loglevel.patch
+	source = 0001-binutils.2.31.max-page-size.patch
+	source = 0002-binutils.2.34.sysexit.patch
+	source = 0003-systemd.245.kernel.316.ambient.capabilities.patch
+	source = update.sh
+	md5sums = 5c569ed649a0c9711879f333e90c5386
+	md5sums = d832656d9ccfb770f6b1965ca6750b1a
+	md5sums = 5c85a1cef25029a8eb87d0edeec0cb04
+	md5sums = f45197ec50bb5f7a85991f6e99ad49c6
+	md5sums = 90cd68710e3064d9b65f5549570f7821
+	md5sums = eb14dcfd80c00852ef81ded6e826826a
+	md5sums = df7fceae6ee5d7e7be7b60ecd7f6bb35
+	md5sums = 07dc499a909a3bb63fc3fdc0d0652e64
+	md5sums = 43d62abf4cd27fa1863759ac87b62ac5
+	md5sums = 4f2248545c0a3997a1d301195b7dcfe7
+	md5sums = e6a1be64b190d846648d671c012d6dd3
+	sha256sums = 4813ad7927a7d92e5339a873ab16201b242b2748934f12cb5df9ba2cfe1d77a0
+	sha256sums = f1ce2bad77b41758874485ca0a7e29a1bd4ce8a13ff721bcec1fe6fafd926bfb
+	sha256sums = 3bce3e9adce8ae3f826eebab75e9784ca92a914e526ae352de61c1da93aab8d3
+	sha256sums = 328539797005cb43362b75ca9965791a1ed34525101c286e4fb49694faa40e4c
+	sha256sums = 834bd254b56ab71d73f59b3221f056c72f559553c04718e350ab2a3e2991afe0
+	sha256sums = f0d90e756f14533ee67afda280500511a62465b4f76adcc5effa95a40045179c
+	sha256sums = 1256b241cd477b265a3c2d64bdc19ffe3c9bbcee82ea3994c590c2c76e767d99
+	sha256sums = f71e0de924013fe60c3cbed45f322e6a09942db978daeddd18adb8582373b5ed
+	sha256sums = 2c80046fa78bfa6e26ae6d8ac312142d9d67b394914fee423578583fe7ab15db
+	sha256sums = abbb27b46cf00bf6d4859c4d8dfcf1d6f32e385d3dbf04790abda8b4dae6540a
+	sha256sums = 4dad3093e0c2bd7dafd30a0344b4df6432c3a7d1422edc4e0d1e6201aa513648
+
+pkgname = linux-lts316
+	pkgdesc = The Linux-lts316 kernel and modules
+	install = linux.install
+	depends = coreutils
+	depends = linux-firmware
+	depends = kmod
+	depends = mkinitcpio>=0.7
+	optdepends = crda: to set the correct wireless channels of your country
+	provides = linux=3.16.85
+	backup = etc/mkinitcpio.d/linux-lts316.preset
+
+pkgname = linux-lts316-headers
+	pkgdesc = Header files and scripts for building modules for Linux-lts316 kernel
+	provides = linux-headers=3.16.85
+
+pkgname = linux-lts316-docs
+	pkgdesc = Kernel hackers manual - HTML documentation that comes with the Linux-lts316 kernel
+

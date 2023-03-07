@@ -1,0 +1,23 @@
+pkgbase = z3-git
+	pkgdesc = Z3 is a theorem prover from Microsoft Research
+	pkgver = 4.8.9.r232.gfae948130
+	pkgrel = 1
+	url = https://github.com/Z3Prover/z3
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = git
+	makedepends = python
+	depends = gcc-libs
+	optdepends = python: bindings for python
+	provides = z3
+	provides = python-z3
+	conflicts = z3
+	conflicts = z3-bin
+	conflicts = z3-codeplex
+	conflicts = python-z3
+	source = z3-git::git+https://github.com/Z3Prover/z3
+	md5sums = SKIP
+
+pkgname = z3-git
+

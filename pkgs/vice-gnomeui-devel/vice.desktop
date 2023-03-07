@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=VICE: C64 Emulator
+Comment=Commodore 64 Emulator
+Exec=x64sc
+Icon=vice
+Terminal=false
+StartupNotify=false
+StartupWMClass=x64sc
+Categories=Application;Game;

@@ -1,0 +1,17 @@
+pkgbase = foment-git
+	pkgdesc = Foment scheme
+	pkgver = 20180519
+	pkgrel = 1
+	url = https://github.com/leftmike/foment.git
+	arch = i686
+	arch = x86_64
+	license = custom:BSD
+	makedepends = git
+	depends = gcc-libs
+	provides = foment
+	conflicts = foment
+	source = git+https://github.com/leftmike/foment.git
+	md5sums = SKIP
+
+pkgname = foment-git
+

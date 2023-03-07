@@ -1,0 +1,44 @@
+pkgbase = linux-bnx2x-2.5g
+	pkgdesc = Linux
+	pkgver = 6.2.1.arch1
+	pkgrel = 1
+	url = https://github.com/archlinux/linux/commits/v6.2.1-arch1
+	arch = x86_64
+	license = GPL2
+	makedepends = bc
+	makedepends = libelf
+	makedepends = pahole
+	makedepends = cpio
+	makedepends = perl
+	makedepends = tar
+	makedepends = xz
+	makedepends = gettext
+	makedepends = git
+	options = !strip
+	source = archlinux-linux::git+https://github.com/archlinux/linux?signed#tag=v6.2.1-arch1
+	source = bnx2x_warpcore+8727_2_5g_sgmii_arch.patch
+	source = config
+	validpgpkeys = ABAF11C65A2970B130ABE3C479BE3E4300411886
+	validpgpkeys = 647F28654894E3BD457199BE38DBBDC86092693E
+	validpgpkeys = A2FF3A36AAA56654109064AB19802F8B0D70FC30
+	validpgpkeys = C7E7849466FE2358343588377258734B41C31549
+	sha256sums = SKIP
+	sha256sums = d655669179109ae8e801a259c35dbe442ca67a49b9ceb6ca3ef0e56f48149a7d
+	sha256sums = f35bb39db7324a45e78e6c75c1a60f117fea3f7d0df9f4a32bed411751d6ffea
+
+pkgname = linux-bnx2x-2.5g
+	pkgdesc = The Linux kernel and modules
+	depends = coreutils
+	depends = kmod
+	depends = initramfs
+	optdepends = wireless-regdb: to set the correct wireless channels of your country
+	optdepends = linux-firmware: firmware images needed for some devices
+	provides = VIRTUALBOX-GUEST-MODULES
+	provides = WIREGUARD-MODULE
+	provides = KSMBD-MODULE
+	replaces = virtualbox-guest-modules-arch
+	replaces = wireguard-arch
+
+pkgname = linux-bnx2x-2.5g-headers
+	pkgdesc = Headers and scripts for building modules for the Linux kernel
+	depends = pahole

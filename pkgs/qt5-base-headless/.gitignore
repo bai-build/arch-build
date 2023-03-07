@@ -1,0 +1,6 @@
+pkg/
+src/
+qtbase/
+*.tar.xz
+*.pkg.tar*
+*.log

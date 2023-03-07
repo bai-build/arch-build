@@ -1,0 +1,26 @@
+pkgbase = texinfo-svn
+	pkgdesc = GNU documentation system for on-line information and printed output
+	pkgver = 8441
+	pkgrel = 1
+	url = http://www.gnu.org/software/texinfo/
+	arch = i686
+	arch = x86_64
+	groups = base
+	groups = base-devel
+	license = GPL
+	makedepends = subversion
+	makedepends = help2man
+	depends = coreutils
+	provides = texinfo
+	conflicts = texinfo
+	options = !makeflags
+	options = libtool
+	source = texinfo::svn://svn.sv.gnu.org/texinfo/trunk#revision=8441
+	source = texinfo-install.hook
+	source = texinfo-remove.hook
+	md5sums = SKIP
+	md5sums = 9a98fb162650ff3065f9a4ebec22db36
+	md5sums = 5590fb3ef9ec309c98f5a4d85eca49da
+
+pkgname = texinfo-svn
+

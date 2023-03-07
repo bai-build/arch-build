@@ -1,0 +1,36 @@
+pkgbase = itk4
+	pkgdesc = Cross-platform system that provides developers with an extensive suite of software tools for image analysis
+	pkgver = 4.13.3
+	pkgrel = 1
+	url = http://www.itk.org/
+	arch = i686
+	arch = x86_64
+	license = APACHE
+	makedepends = cmake
+	depends = fftw
+	depends = libjpeg-turbo
+	depends = libpng
+	depends = zlib
+	depends = libtiff
+	depends = gdcm
+	depends = expat
+	depends = hdf5-cpp-fortran
+	depends = gtest
+	optdepends = python2: build python wrapping
+	optdepends = ruby
+	optdepends = tcl: build tcl wrapping (currently not supported)
+	optdepends = perl: build perl wrapping (currently not supported)
+	optdepends = java-runtime: build java wrapping (currently not supported)
+	optdepends = swig: generate python wrappers
+	optdepends = pcre: for wrapping
+	optdepends = castxml-git: for wrapping and docs
+	optdepends = clang: for swig
+	optdepends = castxml-git: for ITK
+	provides = insight-toolkit
+	conflicts = insight-toolkit
+	replaces = insight-toolkit
+	source = https://github.com/InsightSoftwareConsortium/ITK/releases/download/v4.13.3/InsightToolkit-4.13.3.tar.gz
+	sha512sums = bc08bef804a4384ddf8694658bef34d30e54fa1ef5f72e460357382316dd45fed4088eb529014692cc28ffbd017782c9bcb276c8c8f4debe13af8eea93eaf5c0
+
+pkgname = itk4
+

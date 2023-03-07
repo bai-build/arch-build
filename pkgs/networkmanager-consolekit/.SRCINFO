@@ -1,0 +1,65 @@
+pkgbase = networkmanager-consolekit
+	pkgdesc = NetworkManager with ConsoleKit support for non-systemd systems and user applications
+	pkgver = 1.30.4
+	pkgrel = 1
+	url = https://wiki.gnome.org/Projects/NetworkManager
+	install = networkmanager.install
+	arch = i686
+	arch = x86_64
+	groups = gnome
+	license = GPL
+	license = LGPL2.1
+	makedepends = intltool
+	makedepends = dhclient
+	makedepends = iptables
+	makedepends = gobject-introspection
+	makedepends = gtk-doc
+	makedepends = ppp=2.4.8
+	makedepends = modemmanager
+	makedepends = vala
+	makedepends = perl-yaml
+	makedepends = python-gobject
+	makedepends = git
+	makedepends = jansson
+	makedepends = glib2-docs
+	makedepends = dhcpcd
+	makedepends = iwd
+	makedepends = dnsmasq
+	depends = libnm>=1.30.4
+	depends = iproute2
+	depends = polkit-consolekit
+	depends = consolekit
+	depends = wpa_supplicant
+	depends = libmm-glib
+	depends = libnewt
+	depends = libndp
+	depends = libteam
+	depends = bluez-libs
+	depends = curl
+	depends = libpsl
+	depends = audit
+	depends = mobile-broadband-provider-info
+	optdepends = modemmanager: for modem management service
+	optdepends = dhclient: External DHCP client
+	optdepends = dhcpcd: alternative DHCP client
+	optdepends = dnsmasq: connection sharing
+	optdepends = bluez: bluetooth support
+	optdepends = openresolv: resolvconf support
+	optdepends = ppp: dialup connection support
+	optdepends = iwd: wpa_supplicant alternative
+	optdepends = firewalld: Firewall support
+	provides = networkmanager=1.30.4
+	conflicts = networkmanager
+	replaces = networkmanager
+	backup = etc/NetworkManager/NetworkManager.conf
+	source = git+https://gitlab.freedesktop.org/NetworkManager/NetworkManager.git#commit=a3e45da9f984d58e3b76d6ca064033541d819eca
+	source = NetworkManager.conf
+	source = networkmanager.rc
+	source = 20-connectivity.conf
+	sha256sums = SKIP
+	sha256sums = 535f9c54ee29c35ca7b44c15f8de2e781c10d6f3324338c483bef360ad777efc
+	sha256sums = e39a2a0401518abd1d1d060200e2ca0f0854cdc49a5cb286919be177a7cd90fc
+	sha256sums = 983b35fc1846785932135c4fcda467a5d790b86bc50599ebafa8fe064ba53489
+
+pkgname = networkmanager-consolekit
+

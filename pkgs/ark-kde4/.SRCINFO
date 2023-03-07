@@ -1,0 +1,30 @@
+pkgbase = ark-kde4
+	pkgdesc = Archiving Tool
+	pkgver = 15.04.3
+	pkgrel = 1
+	url = http://kde.org/applications/utilities/ark
+	install = ark-kde4.install
+	arch = i686
+	arch = x86_64
+	arch = armv7
+	arch = armv6
+	arch = armv5
+	groups = kde
+	groups = kdeutils
+	license = GPL
+	makedepends = make
+	makedepends = gcc
+	makedepends = cmake
+	makedepends = automoc4
+	depends = kdebase-runtime
+	depends = kdebase-lib
+	depends = libarchive
+	depends = qjson
+	provides = ark
+	conflicts = ark
+	conflicts = kdeutils-ark
+	source = http://download.kde.org/stable/applications/15.04.3/src/ark-15.04.3.tar.xz
+	sha1sums = 891187b1c49258ab461f1dcbfae82f0640a96f54
+
+pkgname = ark-kde4
+

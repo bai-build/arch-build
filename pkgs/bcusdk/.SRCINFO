@@ -1,0 +1,30 @@
+pkgbase = bcusdk
+	pkgdesc = Daemon as interface to the EIB / KNX bus
+	pkgver = 0.0.5
+	pkgrel = 9
+	url = http://www.auto.tuwien.ac.at/~mkoegler/index.php/bcusdk
+	arch = i686
+	arch = x86_64
+	arch = arm
+	arch = armv7h
+	license = GPL
+	depends = pthsem>=2.0.8
+	depends = gcc-libs
+	source = http://www.auto.tuwien.ac.at/~mkoegler/eib/bcusdk_0.0.5.tar.gz
+	source = eibd.patch
+	source = eibd.socket
+	source = eibd.service
+	source = eibd.conf
+	source = eibd.sysusers
+	source = 90-eibd.rules
+	md5sums = 5f81bc4e6bb53564573d573e795a9a5f
+	md5sums = b9e50d68138fb74a4d0f6370a720d8fe
+	md5sums = 82e079c823fa226146ba49b47c76bab7
+	md5sums = 07be2e58a2b0dd1177778a755d9db69e
+	md5sums = 815323eebff8bc442c1e653a34e6b0b4
+	md5sums = 3c64861e1874c8f6e7fc76dddc760da0
+	md5sums = 8a40297ba18c5d2dc06889c8b72fd3b0
+
+pkgname = eibd
+	backup = etc/conf.d/eibd.conf
+

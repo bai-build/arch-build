@@ -1,0 +1,21 @@
+pkgbase = ginger-base
+	pkgdesc = Basic host management plugin for WoK
+	pkgver = 2.3.0
+	pkgrel = 2
+	url = https://github.com/kimchi-project/gingerbase
+	arch = any
+	groups = kimchi-project
+	license = LGPL
+	license = Apache
+	makedepends = git
+	depends = python2-configobj
+	depends = python2-pyparted
+	depends = wokd
+	optdepends = sos: sosreport support
+	conflicts = ginger-base-git
+	backup = etc/wok/plugins.d/gingerbase.conf
+	source = https://github.com/kimchi-project/gingerbase/archive/2.3.0.tar.gz
+	sha256sums = c120e3e809300c156c478810f1201d4c680c1c3b651bae15555f6ed23506e544
+
+pkgname = ginger-base
+

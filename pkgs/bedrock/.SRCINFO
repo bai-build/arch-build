@@ -1,0 +1,21 @@
+pkgbase = bedrock
+	pkgdesc = Rock solid distributed database specializing in active/active automatic failover and WAN replication.
+	pkgver = r2546.6570215
+	pkgrel = 1
+	url = http://bedrockdb.com
+	install = bedrock.install
+	arch = i686
+	arch = x86_64
+	arch = aarch64
+	license = GPL
+	makedepends = git
+	backup = etc/bedrock.conf
+	source = git://github.com/Expensify/Bedrock
+	source = bedrock.conf
+	source = bedrock.service
+	sha512sums = SKIP
+	sha512sums = SKIP
+	sha512sums = SKIP
+
+pkgname = bedrock
+

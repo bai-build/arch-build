@@ -1,0 +1,17 @@
+pkgbase = bzip2-with-lbzip2-symlinks
+	pkgdesc = bzip2 with binaries symbolically linked to their lbzip2 equivalents
+	pkgver = 1.0.8
+	pkgrel = 1
+	url = https://sourceware.org/bzip2
+	arch = x86_64
+	license = custom
+	depends = lbzip2
+	depends = glibc
+	depends = sh
+	provides = bzip2=1.0.8
+	conflicts = bzip2
+	source = https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz
+	sha256sums = ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269
+
+pkgname = bzip2-with-lbzip2-symlinks
+

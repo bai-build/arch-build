@@ -1,0 +1,25 @@
+pkgbase = actinium-qt
+	pkgdesc = Cryptocurrency wallet(QT)
+	pkgver = 0.19.0.6
+	pkgrel = 1
+	url = https://actinium.org/
+	install = actinium-qt.install
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = boost
+	makedepends = qt5-tools
+	depends = boost-libs
+	depends = qt5-base
+	depends = qrencode
+	depends = miniupnpc
+	depends = db4.8
+	depends = zeromq
+	depends = protobuf
+	depends = libevent
+	conflicts = actinium
+	source = actinium-qt::git+https://github.com/Actinium-project/Actinium#tag=v0.19.0.6
+	source = actinium-qt.desktop
+	sha256sums = 6ff14218a4a7f1cd5167c4fa944fb3f8ce69437f3fbe80302a4b6836013240c9
+
+pkgname = actinium-qt

@@ -1,0 +1,18 @@
+pkgbase = telepathy-kde-send-file-git
+	pkgdesc = A File manager plugin to launch a file transfer job with a specified contact
+	pkgver = v20.03.80.r4.g2b1c906
+	pkgrel = 1
+	url = http://community.kde.org/Real-Time_Communication_and_Collaboration
+	arch = x86_64
+	license = GPL
+	makedepends = extra-cmake-modules
+	makedepends = git
+	makedepends = kdoctools
+	makedepends = python
+	depends = telepathy-kde-common-internals-git
+	conflicts = telepathy-kde-send-file
+	source = git+https://invent.kde.org/network/ktp-send-file.git
+	sha256sums = SKIP
+
+pkgname = telepathy-kde-send-file-git
+

@@ -1,0 +1,16 @@
+pkgbase = journal-gateway-gelf
+	pkgdesc = A gateway for sending logs from systemd's journald over an HTTP connection to a Graylog server in GELF format.
+	pkgver = 1.0.4
+	pkgrel = 1
+	url = https://github.com/travelping/journal-gateway-gelf
+	arch = i686
+	arch = x86_64
+	license = LGPL
+	depends = jansson
+	depends = curl
+	depends = systemd
+	source = https://github.com/travelping/journal-gateway-gelf/archive/v1.0.4.tar.gz
+	md5sums = 37e23f7bba8fc9003300687ee7499446
+
+pkgname = journal-gateway-gelf
+

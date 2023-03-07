@@ -1,0 +1,14 @@
+*.log
+*.bak
+*\~
+*.pkg.tar.xz
+*.pkg.tar.zst
+*.tar.bz2
+*.tar.gz
+/pkg
+/src
+/auto
+/build
+
+frag-master.tex
+basix

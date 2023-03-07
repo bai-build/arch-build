@@ -1,0 +1,25 @@
+pkgbase = chessx-svn
+	pkgdesc = A free chess database
+	pkgver = 1.5.0.2533
+	pkgrel = 1
+	url = http://chessx.sourceforge.net
+	install = chessx-svn.install
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = subversion
+	makedepends = qt5-multimedia
+	makedepends = qt5-svg
+	makedepends = qt5-tools
+	depends = qt5-svg
+	depends = desktop-file-utils
+	depends = qt5-multimedia
+	provides = chessx=1.5.0.2533
+	conflicts = chessx
+	options = !emptydirs
+	source = chessx-svn::svn+http://svn.code.sf.net/p/chessx/code/trunk
+	sha256sums = SKIP
+	sha512sums = SKIP
+
+pkgname = chessx-svn
+

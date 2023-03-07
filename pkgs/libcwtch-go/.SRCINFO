@@ -1,0 +1,14 @@
+pkgbase = libcwtch-go
+	pkgdesc = C bindings for the Go Cwtch library
+	pkgver = 1.9.0
+	pkgrel = 1
+	url = https://cwtch.im
+	arch = x86_64
+	license = MIT
+	makedepends = go
+	depends = tor
+	conflicts = libcwtch-go-git
+	source = libcwtch-go-v1.9.0.tar.gz::https://git.openprivacy.ca/cwtch.im/libcwtch-go/archive/v1.9.0.tar.gz
+	sha512sums = 19b6dc14344946787b61d6b963503e8bcb2cdfe51b2a832c8660df26b4bfb1b9beec6348a9dda01ef403a2be0f9a50817ef40e32acedbfdeb130e351147b37a3
+
+pkgname = libcwtch-go

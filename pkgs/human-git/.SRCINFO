@@ -1,0 +1,16 @@
+pkgbase = human-git
+	pkgdesc = Output a number in human-readable format
+	pkgver = 1
+	pkgrel = 1
+	url = http://git.z3bra.org/human/log.html
+	arch = i686
+	arch = x86_64
+	license = WTFPL
+	makedepends = git
+	provides = human
+	conflicts = human
+	source = git://z3bra.org/human
+	md5sums = SKIP
+
+pkgname = human-git
+

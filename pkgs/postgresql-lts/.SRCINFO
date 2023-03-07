@@ -1,0 +1,78 @@
+pkgbase = postgresql-lts
+	pkgdesc = Sophisticated object-relational DBMS
+	pkgver = 11.19
+	pkgrel = 1
+	url = https://www.postgresql.org/
+	arch = x86_64
+	license = custom:PostgreSQL
+	makedepends = krb5
+	makedepends = libxml2
+	makedepends = python
+	makedepends = perl
+	makedepends = tcl>=8.6.0
+	makedepends = openssl>=1.0.0
+	makedepends = pam
+	makedepends = zlib
+	makedepends = icu
+	makedepends = systemd
+	makedepends = libldap
+	makedepends = llvm
+	makedepends = clang
+	source = https://ftp.postgresql.org/pub/source/v11.19/postgresql-11.19.tar.bz2
+	source = postgresql-run-socket.patch
+	source = postgresql-perl-rpath.patch
+	source = postgresql-lts.pam
+	source = postgresql-lts.logrotate
+	source = postgresql-lts.service
+	source = postgresql-check-db-dir
+	source = postgresql-lts.sysusers
+	source = postgresql-lts.tmpfiles
+	sha256sums = 13109e2b71f1139405c27201da3733a61ace72ee1c228d9c9f0320e06aee14c2
+	sha256sums = 8538619cb8bea51078b605ad64fe22abd6050373c7ae3ad6595178da52f6a7d9
+	sha256sums = fa7cc63936bce336fedf8ce8d11c8a0e051d6424a10570b991164386e96058cb
+	sha256sums = 57dfd072fd7ef0018c6b0a798367aac1abb5979060ff3f9df22d1048bb71c0d5
+	sha256sums = 6abb842764bbed74ea4a269d24f1e73d1c0b1d8ecd6e2e6fb5fb10590298605e
+	sha256sums = 25fb140b90345828dc01a4f286345757e700a47178bab03d217a7a5a79105b57
+	sha256sums = 2bbd8c4e51b70223d274fef3a167af096f44af3d3c41ae505ad11c606674e7c5
+	sha256sums = 7fa8f0ef3f9d40abd4749cc327c2f52478cb6dfb6e2405bd0279c95e9ff99f12
+	sha256sums = 4a4c0bb9ceb156cc47e9446d8393d1f72b4fe9ea1d39ba17213359df9211da57
+
+pkgname = postgresql-lts-libs
+	pkgdesc = Libraries for use with PostgreSQL
+	depends = krb5
+	depends = openssl>=1.0.0
+	depends = readline>=6.0
+	depends = zlib
+	depends = libldap
+	provides = postgresql-client
+	provides = postgresql-libs=11
+	conflicts = postgresql-client
+	conflicts = postgresql-libs
+
+pkgname = postgresql-lts-docs
+	pkgdesc = HTML documentation for PostgreSQL
+	provides = postgresql-docs=11
+	conflicts = postgresql-docs
+	options = docs
+
+pkgname = postgresql-lts
+	pkgdesc = Sophisticated object-relational DBMS
+	depends = postgresql-lts-libs>=11.19
+	depends = krb5
+	depends = libxml2
+	depends = readline>=6.0
+	depends = openssl>=1.0.0
+	depends = pam
+	depends = icu
+	depends = systemd-libs
+	depends = libldap
+	optdepends = python: for PL/Python 3 support
+	optdepends = perl: for PL/Perl support
+	optdepends = tcl: for PL/Tcl support
+	optdepends = llvm: for JIT compilation support
+	optdepends = postgresql-old-upgrade: upgrade from previous major version using pg_upgrade
+	provides = postgresql=11
+	conflicts = postgresql
+	options = staticlibs
+	backup = etc/pam.d/postgresql-lts
+	backup = etc/logrotate.d/postgresql-lts

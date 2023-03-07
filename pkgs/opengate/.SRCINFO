@@ -1,0 +1,20 @@
+pkgbase = opengate
+	pkgdesc = Open GATE - numerical simulations in medical imaging and radiotherapy
+	pkgver = 8.0
+	pkgrel = 1
+	url = https://github.com/OpenGATE/Gate
+	arch = x86_64
+	license = LGPL3
+	makedepends = cmake
+	makedepends = gcc
+	depends = root
+	depends = geant4
+	options = !emptydirs
+	options = staticlibs
+	options = libtool
+	options = !strip
+	source = https://github.com/OpenGATE/Gate/archive/v8.0.tar.gz
+	md5sums = 5297e3a67d53e98548cc71b1491435e8
+
+pkgname = opengate
+

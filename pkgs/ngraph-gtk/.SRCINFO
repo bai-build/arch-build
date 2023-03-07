@@ -1,0 +1,16 @@
+pkgbase = ngraph-gtk
+	pkgdesc = A tool for creating scientific 2-dimensional graphs
+	pkgver = 6.09.07
+	pkgrel = 1
+	url = https://github.com/htrb/ngraph-gtk/
+	arch = x86_64
+	license = GPL
+	depends = gsl
+	depends = gtksourceview4
+	depends = ruby
+	optdepends = ttf-liberation: alternative to Times, Arial, and Courier
+	options = !makeflags
+	source = https://github.com/htrb/ngraph-gtk/releases/download/v6.09.07/ngraph-gtk-6.09.07.tar.gz
+	sha512sums = c651ccde161cc0876d0be18cdf06fe07838eb2b8377db906e7589b40127a36a09913f263fe17d03264cc3347924e7574b28ff13a9dffbee7c5ccf562392be375
+
+pkgname = ngraph-gtk

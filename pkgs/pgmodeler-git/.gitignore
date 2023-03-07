@@ -1,0 +1,4 @@
+pgmodeler-git
+*.tar.*
+pkg/
+src/

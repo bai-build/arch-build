@@ -1,0 +1,27 @@
+pkgbase = urbackup-client
+	pkgdesc = Client Server backup system
+	pkgver = 1.4.11
+	pkgrel = 2
+	url = http://www.urbackup.org/
+	arch = i686
+	arch = x86_64
+	arch = armv5
+	arch = armv6h
+	arch = armv6
+	arch = armv7h
+	arch = armv7
+	arch = aarch64
+	license = GPL
+	makedepends = gcc-libs
+	makedepends = gcc
+	makedepends = make
+	depends = wxgtk
+	depends = crypto++
+	conflicts = urbackup-client-no-gui
+	source = https://hndl.urbackup.org/Client/1.4.11/urbackup-client-1.4.11.tar.gz
+	source = urbackup-client.service
+	md5sums = a7d3e5a235b9897b1102b7709dd4e0d0
+	md5sums = 1eb3db6d0e3bf40976bf7058290c62e1
+
+pkgname = urbackup-client
+

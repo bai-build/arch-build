@@ -1,0 +1,14 @@
+pkgbase = etebase
+	pkgdesc = Etebase C library
+	pkgver = 0.5.2
+	pkgrel = 1
+	url = https://github.com/etesync/libetebase
+	arch = x86_64
+	license = BSD-3-Clause
+	makedepends = cargo
+	makedepends = git
+	depends = openssl
+	source = etebase::git+https://github.com/etesync/libetebase.git?tag=v0.5.2
+	sha512sums = SKIP
+
+pkgname = etebase

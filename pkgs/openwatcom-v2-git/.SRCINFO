@@ -1,0 +1,21 @@
+pkgbase = openwatcom-v2-git
+	pkgdesc = The Open Watcom C/C++ compiler, github source fork
+	pkgver = 0.r3013.g79c74d0
+	pkgrel = 1
+	url = http://open-watcom.github.io/open-watcom/
+	arch = i686
+	arch = x86_64
+	license = custom:OWPL-1
+	makedepends = git
+	makedepends = openwatcom-v2
+	provides = openwatcom-v2
+	conflicts = openwatcom-v2
+	replaces = openwatcom-v2
+	options = !strip
+	options = !buildflags
+	options = staticlibs
+	source = watcom::git://github.com/open-watcom/open-watcom-v2.git
+	sha256sums = SKIP
+
+pkgname = openwatcom-v2-git
+

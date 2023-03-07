@@ -1,0 +1,21 @@
+pkgbase = st-qguv-git
+	pkgdesc = Simple virtual terminal emulator for X, qguv's fork
+	pkgver = 20181212.68471aea5012
+	pkgrel = 1
+	url = https://github.com/qguv/dwm
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = ncurses
+	makedepends = libxext
+	makedepends = git
+	makedepends = xurls
+	makedepends = xdg-utils
+	depends = libxft
+	provides = st
+	conflicts = st
+	source = git+https://github.com/qguv/st.git#branch=patchset
+	sha1sums = SKIP
+
+pkgname = st-qguv-git
+

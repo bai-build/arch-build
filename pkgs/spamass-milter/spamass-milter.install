@@ -1,0 +1,42 @@
+# arg 1:  the new package version
+post_install() {
+  systemctl daemon-reload
+  systemd-sysusers /usr/lib/sysusers.d/spamass-milter.conf
+  systemd-tmpfiles --create /usr/lib/tmpfiles.d/spamass-milter.conf
+  systemd-tmpfiles --create /usr/lib/tmpfiles.d/spamass-milter-postfix.conf
+  echo "Use the systemd unit spamass-milter.service or spamass-milter-root.service depending on your needs."
+}
+
+# arg 1:  the new package version
+# arg 2:  the old package version
+post_upgrade() {
+  if [[ "$2" < "0.4.0" ]]; then
+    echo "WARNING: The '-I' argument has been changed upstream to '-a'; update your configuration accordingly"
+  fi
+
+  systemctl daemon-reload
+  systemd-tmpfiles --create /usr/lib/tmpfiles.d/spamass-milter.conf
+  systemd-tmpfiles --create /usr/lib/tmpfiles.d/spamass-milter-postfix.conf
+  systemctl try-restart spamass-milter.service
+  systemctl try-restart spamass-milter-root.service
+}
+
+# arg 1:  the old package version
+pre_remove() {
+  echo "Stopping and disabling spamass-milter service(s)"
+  systemctl disable spamass-milter.service
+  systemctl disable spamass-milter-root.service
+  systemctl stop spamass-milter.service
+  systemctl stop spamass-milter-root.service
+}
+
+# arg 1:  the old package version
+post_remove() {
+  # Delete the sa-milt username and group if they exist (they should)
+  [[ $(getent passwd sa-milt) ]] && userdel sa-milt
+  [[ $(getent group sa-milt) ]] && groupdel sa-milt
+  echo "The 'sa-milt' user and group have been removed."
+  systemctl daemon-reload
+}
+
+# vim:set ts=2 sw=2 et:

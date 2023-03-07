@@ -1,0 +1,28 @@
+pkgbase = checkmate
+	pkgdesc = A program to compare theoretical models against many recent experimental analyses
+	pkgver = 2.0.24
+	pkgrel = 1
+	url = http://checkmate.hepforge.org/
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	depends = delphes
+	depends = fastjet
+	depends = hepmc
+	depends = madgraph
+	depends = pythia8
+	depends = python2-scipy
+	depends = root
+	source = http://www.hepforge.org/archive/checkmate/CheckMATE-2.0.24.tar.gz
+	source = ExRootAnalysis.patch
+	source = fastjet.patch
+	source = path.patch
+	source = PythiaHandler.patch
+	sha256sums = e72bdccd3151d9b0f2cec47fa638f3c41818b001dcf2811e03d981ab74ede14a
+	sha256sums = 2df72c368af15e82f4998c1e63bdb870b42070f309b503582e9daa713664aef3
+	sha256sums = f4f335940d436e57195c9a6954414f999cb39fe5f9887c4adf72b24d0a74da45
+	sha256sums = 1c90e1d8a5bf1de25d4eddfa8b6ce7faa0615af4c2ad69b92efbd3b148e2e1af
+	sha256sums = 669df4be408ce98ac3b5ddf9e1a2246e3c4e9a8f57b4a082007fa45348141d2a
+
+pkgname = checkmate
+

@@ -1,0 +1,25 @@
+pkgbase = lib32-liblphobos
+	pkgdesc = Runtime and Phobos library for the LLVM based D compiler. (32-bit)
+	pkgver = 1.28.1
+	pkgrel = 1
+	url = https://github.com/ldc-developers/ldc
+	arch = x86_64
+	groups = dlang
+	groups = dlang-ldc
+	license = BSD
+	makedepends = cmake
+	makedepends = git
+	makedepends = llvm
+	makedepends = libconfig
+	makedepends = ninja
+	depends = ldc
+	depends = lib32-curl
+	depends = lib32-gcc-libs
+	provides = d-runtime
+	provides = d-stdlib
+	replaces = lib32-liblphobos-devel
+	source = https://github.com/ldc-developers/ldc/releases/download/v1.28.1/ldc-1.28.1-src.tar.gz
+	sha256sums = 654958bca5378cd97819f2ef61d3f220aa652a9d2b5ff41d6f2109302ae6eb94
+
+pkgname = lib32-liblphobos
+

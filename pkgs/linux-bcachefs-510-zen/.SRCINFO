@@ -1,0 +1,46 @@
+pkgbase = linux-bcachefs-510-zen
+	pkgdesc = Linux
+	pkgver = v5.10.26.arch1.r971595.17f9d1e225b9
+	pkgrel = 1
+	url = https://github.com/koverstreet/bcachefs
+	arch = x86_64
+	license = GPL2
+	makedepends = bc
+	makedepends = kmod
+	makedepends = libelf
+	makedepends = pahole
+	makedepends = cpio
+	makedepends = perl
+	makedepends = tar
+	makedepends = xz
+	makedepends = xmlto
+	makedepends = git
+	options = !strip
+	source = linux-bcachefs::git+https://github.com/koverstreet/bcachefs.git
+	source = linux-zen::git+https://github.com/zen-kernel/zen-kernel#branch=5.10/master
+	source = linux-stable::git+https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git#branch=linux-5.10.y
+	source = config
+	validpgpkeys = ABAF11C65A2970B130ABE3C479BE3E4300411886
+	validpgpkeys = 647F28654894E3BD457199BE38DBBDC86092693E
+	md5sums = SKIP
+	md5sums = SKIP
+	md5sums = SKIP
+	md5sums = SKIP
+
+pkgname = linux-bcachefs-510-zen
+	pkgdesc = The Linux kernel and modules ~ featuring Kent Overstreet's bcachefs filesystem
+	depends = coreutils
+	depends = kmod
+	depends = initramfs
+	depends = linux-firmware
+	depends = bcachefs-tools-git
+	optdepends = crda: to set the correct wireless channels of your country
+	provides = VIRTUALBOX-GUEST-MODULES
+	provides = WIREGUARD-MODULE
+	replaces = virtualbox-guest-modules-arch
+	replaces = wireguard-arch
+
+pkgname = linux-bcachefs-510-zen-headers
+	pkgdesc = Headers and scripts for building modules for the Linux kernel ~ featuring Kent Overstreet's bcachefs filesystem
+	depends = pahole
+

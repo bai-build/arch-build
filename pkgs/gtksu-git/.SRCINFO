@@ -1,0 +1,17 @@
+pkgbase = gtksu-git
+	pkgdesc = A Qt5-based replacement for gksu
+	pkgver = 0.1.6.r3.ga8528e7
+	pkgrel = 1
+	url = https://github.com/KeithDHedger/GtkSu
+	arch = any
+	license = GPL
+	makedepends = git
+	makedepends = automake-1.15
+	depends = qt5-base
+	provides = gksu
+	conflicts = gksu
+	source = gtksu-git::git+https://github.com/KeithDHedger/GtkSu.git#branch=master
+	md5sums = SKIP
+
+pkgname = gtksu-git
+

@@ -1,0 +1,17 @@
+pkgbase = openlava
+	pkgdesc = A open source cluster scheduler
+	pkgver = 4.0
+	pkgrel = 3
+	url = http://www.openlava.org/
+	install = openlava.install
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	depends = autoconf
+	provides = openlava=4.0
+	conflicts = openlava
+	source = https://github.com/openlava/openlava/archive/4.0.tar.gz
+	sha256sums = 0a694392786b4994973ff39e0aecfc92115f083666750810738e1d2baffad3df
+
+pkgname = openlava
+

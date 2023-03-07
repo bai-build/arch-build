@@ -1,0 +1,19 @@
+pkgbase = erofs-utils-git
+	pkgdesc = Userspace tools for EROFS
+	pkgver = 1.5.r0.ga2821a6
+	pkgrel = 1
+	url = https://git.kernel.org/pub/scm/linux/kernel/git/xiang/erofs-utils.git
+	arch = x86_64
+	license = GPL2
+	makedepends = git
+	makedepends = fuse2
+	depends = lz4
+	depends = util-linux-libs
+	depends = xz
+	optdepends = fuse2: for erofsfuse
+	provides = erofs-utils=1.5.r0.ga2821a6
+	conflicts = erofs-utils
+	source = git+https://git.kernel.org/pub/scm/linux/kernel/git/xiang/erofs-utils.git
+	sha512sums = SKIP
+
+pkgname = erofs-utils-git

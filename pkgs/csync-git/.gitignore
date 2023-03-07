@@ -1,0 +1,5 @@
+csync-git
+csync-git-*.src.tar.gz
+csync-git-*-x86_64.pkg.tar.xz
+pkg
+src

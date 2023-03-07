@@ -1,0 +1,19 @@
+pkgbase = photobook-git
+	pkgdesc = A photo manger for KDE
+	pkgver = b97b012
+	pkgrel = 2
+	url = https://projects.kde.org/projects/playground/graphics/photobook
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = automoc4
+	depends = xapian-core
+	depends = libkexiv2_4
+	depends = kdebase-runtime
+	provides = photobook
+	conflicts = photobook
+	source = photobook::git+http://anongit.kde.org/photobook
+	sha256sums = SKIP
+
+pkgname = photobook-git
+

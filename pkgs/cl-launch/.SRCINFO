@@ -1,0 +1,12 @@
+pkgbase = cl-launch
+	pkgdesc = utility to make Lisp software easily invokable from the command-line
+	pkgver = 4.1.4
+	pkgrel = 1
+	url = http://www.cliki.net/cl-launch
+	arch = any
+	license = LLGPL
+	source = http://common-lisp.net/project/xcvb/cl-launch/cl-launch-4.1.4.tar.gz
+	md5sums = bce2d2fa09791ab362e428822e6bc2a1
+
+pkgname = cl-launch
+

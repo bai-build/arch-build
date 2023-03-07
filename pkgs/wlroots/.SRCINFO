@@ -1,0 +1,22 @@
+pkgbase = wlroots
+	pkgdesc = Modular Wayland compositor library
+	pkgver = 0.2
+	pkgrel = 1
+	url = https://github.com/swaywm/wlroots
+	arch = x86_64
+	license = custom:MIT
+	makedepends = meson
+	makedepends = ninja
+	makedepends = wayland-protocols
+	depends = opengl-driver
+	depends = xcb-util-errors
+	depends = xcb-util-image
+	depends = xcb-util-wm
+	depends = pixman
+	depends = libinput
+	depends = libxkbcommon
+	source = wlroots-0.2.tar.gz::https://github.com/swaywm/wlroots/archive/0.2.tar.gz
+	sha256sums = 0b690c5db5a1f11051a28f0349655322fe54d92f7c2dc8d3c6e5559b1098bfd8
+
+pkgname = wlroots
+

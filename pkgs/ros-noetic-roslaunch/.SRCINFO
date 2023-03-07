@@ -1,0 +1,24 @@
+pkgbase = ros-noetic-roslaunch
+	pkgdesc = ROS - roslaunch is a tool for easily launching multiple ROS nodes locally and remotely via SSH, as well as setting parameters on the Parameter Server.
+	pkgver = 1.15.14
+	pkgrel = 1
+	url = https://wiki.ros.org/roslaunch
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-noetic-catkin
+	depends = ros-noetic-rosout
+	depends = ros-noetic-rosparam
+	depends = ros-noetic-rosclean
+	depends = ros-noetic-rosunit
+	depends = ros-noetic-rosgraph-msgs
+	depends = ros-noetic-rosmaster
+	depends = ros-noetic-roslib
+	depends = python-yaml
+	depends = python-paramiko
+	depends = python-rospkg
+	source = ros-noetic-roslaunch-1.15.14.tar.gz::https://github.com/ros/ros_comm/archive/1.15.14.tar.gz
+	sha256sums = 1083b58470a81323bc3a13aa9ae7c813e9fbc27b18f0e95a76b53e4076f3d872
+
+pkgname = ros-noetic-roslaunch

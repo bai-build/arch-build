@@ -1,0 +1,14 @@
+pkgbase = ipt_ratelimit
+	pkgdesc = Rate Policer as netfilter extension.
+	pkgver = 0.3.3
+	pkgrel = 1
+	url = https://github.com/aabc/ipt-ratelimit
+	arch = any
+	license = GPL
+	makedepends = gcc
+	depends = linux
+	depends = iptables
+	source = https://github.com/aabc/ipt-ratelimit/archive/v0.3.3.tar.gz
+	sha256sums = 3e478600585a14f004fb72765f5da4b64c65fe53d2a5a211a96392fd65fb5243
+
+pkgname = ipt_ratelimit

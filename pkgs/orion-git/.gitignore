@@ -1,0 +1,5 @@
+src
+pkg
+orion-git
+*.pkg.tar.*
+tags

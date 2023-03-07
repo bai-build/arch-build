@@ -1,0 +1,14 @@
+pkgbase = php54-xdebug
+	pkgdesc = php54 Xdebug extension
+	pkgver = 2.4.1
+	pkgrel = 1
+	url = https://xdebug.org/
+	arch = x86_64
+	arch = i686
+	license = Xdebug
+	makedepends = php54
+	source = http://pecl.php.net/get/xdebug-2.4.1.tgz
+	sha256sums = 23c8786e0f5aae67b1e5035972bfff282710fb84c483887cebceb8ef5bbdf8ef
+
+pkgname = php54-xdebug
+	backup = 

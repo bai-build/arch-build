@@ -1,0 +1,23 @@
+pkgbase = unarchiver
+	pkgdesc = unar and lsar: Objective-C tools for uncompressing archive files
+	pkgver = 1.10.1
+	pkgrel = 1
+	epoch = 1
+	url = http://unarchiver.c3.cx/
+	arch = x86_64
+	arch = i686
+	license = LGPL2.1
+	makedepends = gcc-objc
+	depends = gnustep-base
+	depends = openssl
+	depends = bzip2
+	depends = icu
+	depends = gcc-libs
+	depends = zlib
+	source = https://bitbucket.org/kosovan/theunarchiver/get/unar-1.10.1.tar.gz
+	source = native_obj_exceptions.patch
+	sha1sums = d7dac2b1786e63787dbea74030ecdf8c425de730
+	sha1sums = b8024026607dc2de758479b73d8b01ca6f692b59
+
+pkgname = unarchiver
+

@@ -1,0 +1,17 @@
+pkgbase = breeze-hacked-cursor-theme-git
+	pkgdesc = Breeze Hacked cursor theme
+	pkgver = 2.0
+	pkgrel = 5
+	url = https://github.com/codejamninja/breeze-hacked-cursor-theme
+	arch = any
+	license = GPL
+	makedepends = gnome-themes-extra
+	makedepends = inkscape
+	makedepends = xorg-xcursorgen
+	makedepends = git
+	provides = breeze-hacked-cursor-theme
+	conflicts = breeze-hacked-cursor-theme
+	source = git+https://github.com/codejamninja/breeze-hacked-cursor-theme
+	b2sums = SKIP
+
+pkgname = breeze-hacked-cursor-theme-git

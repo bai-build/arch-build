@@ -1,0 +1,35 @@
+pkgbase = girens
+	pkgdesc = A Plex GTK client for playing movies, TV shows and music from your Plex library.
+	pkgver = 2.0.1
+	pkgrel = 1
+	url = https://gitlab.gnome.org/tijder/girens
+	arch = any
+	license = GPL3
+	checkdepends = appstream-glib
+	makedepends = git
+	makedepends = blueprint-compiler
+	makedepends = meson
+	depends = libadwaita
+	depends = org.freedesktop.secrets
+	depends = plex-remote
+	depends = python-plexapi
+	depends = libass
+	depends = python-opengl
+	depends = python-mpv
+	depends = fribidi
+	depends = ffmpeg
+	depends = python-mpv
+	depends = python-idna
+	depends = python-certifi
+	depends = python-chardet
+	depends = python-urllib3
+	depends = python-requests
+	depends = python-tqdm
+	depends = python-six
+	depends = python-websocket-client
+	depends = python-gobject
+	depends = python-cairo
+	source = girens::git+https://gitlab.gnome.org/tijder/girens.git#commit=98d3e5e3dc6be909ff1ddfcf32796c5458795cd6
+	b2sums = SKIP
+
+pkgname = girens

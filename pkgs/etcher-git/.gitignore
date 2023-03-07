@@ -1,0 +1,6 @@
+*.pkg.*
+*.log
+etcher
+pkg/
+scripts/
+src/

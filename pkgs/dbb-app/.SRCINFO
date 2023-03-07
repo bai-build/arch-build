@@ -1,0 +1,27 @@
+pkgbase = dbb-app
+	pkgver = 3.0.0
+	pkgrel = 1
+	url = https://digitalbitbox.com/
+	arch = i686
+	arch = x86_64
+	license = MIT
+	source = git://github.com/digitalbitbox/dbb-app.git#tag=v3.0.0
+	source = 51-hid-digitalbitbox.rules
+	source = digitalbitbox.desktop
+	sha256sums = SKIP
+	sha256sums = fc8273cb499f6643ebfdf197f7fa00efbed171d65c6eff75f93460a0ec5b41d4
+	sha256sums = 255065c71b2ad7ab7328518689d800a6284ecf9c445c6004281800420bdc411f
+
+pkgname = dbb-app
+	pkgdesc = A QT based application for the Digital Bitbox hardware wallet
+	depends = curl
+	depends = hidapi
+	depends = qrencode
+	depends = qt5-base
+	depends = desktop-file-utils
+	depends = dbb-cli
+
+pkgname = dbb-cli
+	pkgdesc = A command line application for the Digital Bitbox hardware wallet
+	depends = hidapi
+

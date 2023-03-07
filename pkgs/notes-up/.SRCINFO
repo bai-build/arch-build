@@ -1,0 +1,20 @@
+pkgbase = notes-up
+	pkgdesc = Markdown style notes manager written for elementary OS
+	pkgver = 2.0.2
+	pkgrel = 1
+	url = https://github.com/Philip-Scott/Notes-up
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = cmake
+	makedepends = vala
+	depends = granite
+	depends = gtksourceview3
+	depends = webkit2gtk
+	depends = gtkspell3
+	depends = discount
+	source = Notes-up-2.0.2.tar.gz::https://github.com/Philip-Scott/Notes-up/archive/2.0.2.tar.gz
+	sha512sums = 071bf49ce970dabc815b79b768272efab4599ae0e496cc842b82b726d19bd645c7211d4ce9f56dda7cd6b77cad5ab4a1918ae9049fcec5bce6410929cc699dab
+
+pkgname = notes-up
+

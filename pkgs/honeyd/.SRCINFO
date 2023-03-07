@@ -1,0 +1,26 @@
+pkgbase = honeyd
+	pkgdesc = A small daemon that creates virtual hosts on a network.
+	pkgver = 1.6.7
+	pkgrel = 8
+	url = https://github.com/DataSoft/Honeyd/
+	arch = i686
+	arch = x86_64
+	arch = armv6h
+	arch = armv7h
+	license = GPL
+	depends = libdnet
+	depends = libevent
+	depends = libedit
+	depends = libpcap
+	depends = pcre
+	depends = zlib
+	depends = tcl
+	depends = python2
+	options = !makeflags
+	source = https://github.com/DataSoft/Honeyd/archive/honeyd-1.6.7.tar.gz
+	source = python.patch
+	sha1sums = a036409d59e92c0903b41ba4e8392aed499f6867
+	sha1sums = 85a76a6b8e05f22a243f62774343ed0a08ceb157
+
+pkgname = honeyd
+

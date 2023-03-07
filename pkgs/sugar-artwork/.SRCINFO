@@ -1,0 +1,20 @@
+pkgbase = sugar-artwork
+	pkgdesc = Sugar gtk engine, themes and icons
+	pkgver = 0.110.0
+	pkgrel = 1
+	url = http://www.sugarlabs.org/
+	arch = any
+	groups = sugar-desktop
+	groups = glucose
+	license = GPL
+	makedepends = icon-slicer
+	makedepends = icon-naming-utils>=0.8.2
+	makedepends = gcc
+	makedepends = xorg-xcursorgen
+	depends = python2
+	depends = gtk2
+	source = https://github.com/sugarlabs/sugar-artwork/archive/v0.110.0.tar.gz
+	md5sums = 4753e97731631d3aecba59fb351e687d
+
+pkgname = sugar-artwork
+

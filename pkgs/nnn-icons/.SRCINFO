@@ -1,0 +1,24 @@
+pkgbase = nnn-icons
+	pkgdesc = The fastest terminal file manager ever written. (with icon support)
+	pkgver = 4.6
+	pkgrel = 1
+	url = https://github.com/jarun/nnn
+	arch = x86_64
+	license = BSD
+	depends = icons-in-terminal
+	depends = hicolor-icon-theme
+	optdepends = atool: for more archive formats
+	optdepends = libarchive: for more archive formats
+	optdepends = zip: for zip archive format
+	optdepends = unzip: for zip archive format
+	optdepends = trash-cli: to trash files
+	optdepends = sshfs: mount remotes
+	optdepends = rclone: mount remotes
+	optdepends = fuse2: unmount remotes
+	optdepends = xdg-utils: desktop opener
+	provides = nnn
+	conflicts = nnn
+	source = nnn-4.6.tar.gz::https://github.com/jarun/nnn/archive/v4.6.tar.gz
+	sha256sums = 15acaf9a88cfb5a2a640d3ef55a48af644fba92b46aac0768efe94c4addf7e3f
+
+pkgname = nnn-icons

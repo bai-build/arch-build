@@ -1,0 +1,19 @@
+pkgbase = telepathy-kde-text-ui-git
+	pkgdesc = Telepathy handler for Text Chats
+	pkgver = v18.12.3.r20.gb38a5f8
+	pkgrel = 1
+	url = http://community.kde.org/Real-Time_Communication_and_Collaboration
+	arch = x86_64
+	license = GPL
+	makedepends = extra-cmake-modules
+	makedepends = git
+	makedepends = kdoctools
+	makedepends = python
+	depends = telepathy-kde-common-internals-git
+	depends = kemoticons
+	conflicts = telepathy-kde-text-ui
+	source = git+https://invent.kde.org/network/ktp-text-ui.git
+	sha256sums = SKIP
+
+pkgname = telepathy-kde-text-ui-git
+

@@ -1,0 +1,6 @@
+*.xz
+raplusmod
+pkg
+src
+*.gz
+*.log*

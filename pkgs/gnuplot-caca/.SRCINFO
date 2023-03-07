@@ -1,0 +1,30 @@
+pkgbase = gnuplot-caca
+	pkgdesc = Plotting package which outputs to X11, PostScript, PNG, GIF, and others
+	pkgver = 5.2.8
+	pkgrel = 1
+	url = http://www.gnuplot.info
+	arch = x86_64
+	license = custom
+	makedepends = texinfo
+	makedepends = texlive-core
+	makedepends = emacs
+	makedepends = texlive-latexextra
+	makedepends = qt5-tools
+	depends = readline
+	depends = gd
+	depends = wxgtk2
+	depends = cairo
+	depends = libjpeg
+	depends = lua
+	depends = qt5-svg
+	depends = libcaca
+	depends = gnutls
+	provides = gnuplot
+	conflicts = gnuplot
+	source = https://downloads.sourceforge.net/sourceforge/gnuplot/gnuplot-5.2.8.tar.gz
+	source = lua53_compat.patch
+	sha256sums = 60a6764ccf404a1668c140f11cc1f699290ab70daa1151bb58fed6139a28ac37
+	sha256sums = bfd8a61abbf4491c74225cb9fd252619d4fc29751838bcb4c0639ffe05a00695
+
+pkgname = gnuplot-caca
+

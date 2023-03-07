@@ -1,0 +1,15 @@
+pkgbase = batman-alfred
+	pkgdesc = Almighty Lightweight Fact Remote Exchange Daemon
+	pkgver = 2021.3
+	pkgrel = 1
+	url = http://www.open-mesh.net/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = gpsd
+	depends = libnl
+	depends = libcap
+	source = http://downloads.open-mesh.net/batman/releases/batman-adv-2021.3/alfred-2021.3.tar.gz
+	sha256sums = be6229edf2a3e9cf69122e5283d113e9405f1455e8fd4ebd55294e9bf9157b5a
+
+pkgname = batman-alfred

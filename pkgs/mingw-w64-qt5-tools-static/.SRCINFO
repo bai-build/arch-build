@@ -1,0 +1,28 @@
+pkgbase = mingw-w64-qt5-tools-static
+	pkgdesc = A cross-platform application and UI framework (Development Tools, QtHelp; mingw-w64)
+	pkgver = 5.15.8+kde+r1
+	pkgrel = 1
+	url = https://www.qt.io/
+	arch = any
+	groups = mingw-w64-qt5
+	license = GPL3
+	license = LGPL3
+	license = FDL
+	license = custom
+	makedepends = mingw-w64-gcc
+	makedepends = mingw-w64-pkg-config
+	makedepends = mingw-w64-postgresql
+	makedepends = mingw-w64-mariadb-connector-c
+	makedepends = mingw-w64-vulkan-headers
+	makedepends = git
+	depends = mingw-w64-qt5-declarative-static
+	depends = mingw-w64-qt5-tools
+	options = !strip
+	options = !buildflags
+	options = staticlibs
+	source = git+https://invent.kde.org/qt/qt/qttools#commit=090e526e713d01eac34c64e4a09ad961c612febf
+	source = 0001-Fix-linguist-macro.patch
+	sha256sums = SKIP
+	sha256sums = fb54af0dde92a4c5390f887cfae7f95c75ab22887e1e5c5f1a88d083837310a3
+
+pkgname = mingw-w64-qt5-tools-static

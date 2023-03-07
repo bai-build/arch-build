@@ -1,0 +1,16 @@
+pkgbase = trnascanse
+	pkgdesc = a program for improved detection of transfer RNA (tRNA) genes in genomic sequence.
+	pkgver = 2.0.3
+	pkgrel = 1
+	epoch = 1
+	url = http://lowelab.ucsc.edu/tRNAscan-SE/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = cmake
+	makedepends = gcc
+	source = http://trna.ucsc.edu/software/trnascan-se-2.0.3.tar.gz
+	sha512sums = 7dc2205afd39bff6ddb700bacdaac16b427e130ac0e311397a7301e124bbd5d1d1b90de4b8a629ab4fe31eeccc7146f0008ceb16fd79f3467f991dde49b5c38a
+
+pkgname = trnascanse
+

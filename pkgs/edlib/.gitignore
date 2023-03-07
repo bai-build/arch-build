@@ -1,0 +1,5 @@
+*.pkg.tar.*
+src/
+pkg/
+/edlib-*.tar.gz
+/edlib-*.log

@@ -1,0 +1,33 @@
+pkgbase = fs2_open-git
+	pkgdesc = An enhancement of the original Freespace 2 engine - GIT version
+	pkgver = 20.1.0.r20200319.caebad7.0
+	pkgrel = 1
+	url = http://scp.indiegames.us
+	install = fs2_open-git.install
+	arch = i686
+	arch = x86_64
+	license = custom:fs2_open
+	makedepends = git
+	makedepends = cmake
+	makedepends = freetype2
+	makedepends = doxygen
+	makedepends = ffmpeg
+	depends = libjpeg
+	depends = libpng
+	depends = libtheora
+	depends = libvorbis
+	depends = lua51
+	depends = mesa
+	depends = openal
+	depends = sdl
+	provides = fs2_open
+	conflicts = fs2_open
+	source = fs2_open-git::git+https://github.com/scp-fs2open/fs2open.github.com.git
+	source = cotire::git+https://github.com/sakra/cotire.git
+	source = cmake-modules::git+https://github.com/asarium/cmake-modules.git
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = fs2_open-git
+

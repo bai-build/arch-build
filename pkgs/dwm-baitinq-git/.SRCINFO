@@ -1,0 +1,20 @@
+pkgbase = dwm-baitinq-git
+	pkgdesc = Simple window manager (baitinq version)
+	pkgver = 0
+	pkgrel = 1
+	url = https://github.com/Baitinq/dwm.git
+	arch = any
+	license = GPL
+	makedepends = git
+	depends = libx11
+	depends = libxinerama
+	depends = libxft
+	provides = dwm
+	conflicts = dwm
+	source = git://github.com/Baitinq/dwm.git
+	md5sums = SKIP
+	sha1sums = SKIP
+	sha256sums = SKIP
+
+pkgname = dwm-baitinq-git
+

@@ -1,0 +1,33 @@
+pkgbase = xscreensaver-arch-logo-nogdm
+	pkgdesc = Screen saver and locker for the X Window System with Arch Linux branding
+	pkgver = 5.44
+	pkgrel = 1
+	url = https://www.jwz.org/xscreensaver/
+	arch = x86_64
+	license = BSD
+	makedepends = bc
+	makedepends = intltool
+	makedepends = libxpm
+	depends = libglade
+	depends = libxmu
+	depends = glu
+	depends = xorg-appres
+	depends = perl-libwww
+	provides = xscreensaver
+	conflicts = xscreensaver
+	backup = etc/pam.d/xscreensaver
+	source = https://www.jwz.org/xscreensaver/xscreensaver-5.44.tar.gz
+	source = LICENSE
+	source = logo-50.xpm
+	source = logo-180.xpm
+	source = logo-50.png
+	source = logo-180.png
+	sha256sums = 73d8089cfc7d7363b5dac99b5b01dffb3429d0a855e6af16ce9a4b7777017b95
+	sha256sums = c0247a0328f07656f6b7a5854f57fe735579f161b6f40df967cf9a5eab772d63
+	sha256sums = 82366926a2a81bd08459327936ba144e8b3ea5ee4a386c268bd898e1791ab1a0
+	sha256sums = 253f0d5bbdd841f21a7bbdbb0fd7ded21f711751d5cb1b7914952bdd6541b36d
+	sha256sums = 8027bdb2b4328d154a8e517bdb94f5ef4a9eb031e79a285dabedd62acfa77317
+	sha256sums = 8357f9e631b80ae373cb0fc8e27fa96fd032c3d5e3869bd04dde843b79260b19
+
+pkgname = xscreensaver-arch-logo-nogdm
+

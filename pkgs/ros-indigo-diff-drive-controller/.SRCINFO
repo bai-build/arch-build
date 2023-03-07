@@ -1,0 +1,29 @@
+pkgbase = ros-indigo-diff-drive-controller
+	pkgdesc = ROS - Controller for a differential drive mobile base.
+	pkgver = 0.9.4
+	pkgrel = 1
+	url = https://github.com/ros-controls/ros_controllers/wiki
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = git
+	makedepends = ros-build-tools
+	makedepends = ros-indigo-controller-interface
+	makedepends = ros-indigo-rostest
+	makedepends = ros-indigo-realtime-tools
+	makedepends = ros-indigo-catkin
+	makedepends = ros-indigo-tf
+	makedepends = ros-indigo-urdf
+	makedepends = ros-indigo-nav-msgs
+	depends = ros-indigo-controller-interface
+	depends = ros-indigo-tf
+	depends = ros-indigo-realtime-tools
+	depends = ros-indigo-nav-msgs
+	depends = ros-indigo-urdf
+	source = diff_drive_controller::git+https://github.com/ros-gbp/ros_controllers-release.git#tag=release/indigo/diff_drive_controller/0.9.4-0
+	source = fix-urdf-lib-compat.patch
+	sha256sums = SKIP
+	sha256sums = 41479e34690bc0f568b9b0a1c7cda09c2d0b340ce1bc465c46466415f0c07458
+
+pkgname = ros-indigo-diff-drive-controller
+

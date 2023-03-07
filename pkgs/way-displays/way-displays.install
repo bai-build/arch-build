@@ -1,0 +1,50 @@
+all_off="$(tput sgr0)"
+bold="${all_off}$(tput bold)"
+red="${bold}$(tput setaf 1)"
+green="${bold}$(tput setaf 2)"
+yellow="${bold}$(tput setaf 3)"
+blue="${bold}$(tput setaf 4)"
+magenta="${bold}$(tput setaf 5)"
+
+# Colored makepkg-like functions
+note() {
+    printf "${blue}==>${yellow} NOTE:${all_off} ${1}\n"
+}
+
+plain() {
+    printf "${1}\n"
+}
+
+green() {
+    printf "${green}${1}${all_off}\n"
+}
+
+yello() {
+    printf "${yellow}${1}${all_off}\n"
+}
+
+blue() {
+    printf "${blue}${1}${all_off}\n"
+}
+
+magen() {
+    printf "${magenta}${1}${all_off}\n"
+}
+
+post_install() {
+    yello "1.7.0"
+    blue  "New Features:"
+    plain "  VRR / adaptive sync for swaywm"
+    blue  "Bug Fixes:"
+    plain "  ${green}#60${all_off} order exact name / description matches first"
+    plain ""
+    yello "1.7.1"
+    blue  "New Features:"
+    plain "  VRR / adaptive sync for riverwm"
+    plain ""
+}
+
+post_upgrade() {
+    post_install
+}
+

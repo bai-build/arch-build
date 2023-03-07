@@ -1,0 +1,20 @@
+pkgbase = libgnunetchat-git
+	pkgdesc = GNUnet chat library
+	pkgver = r120.c6ffad6
+	pkgrel = 2
+	url = http://gnunet.org
+	arch = i686
+	arch = x86_64
+	license = AGPL
+	makedepends = meson
+	makedepends = check
+	depends = gnunet-git
+	provides = libgnunetchat
+	conflicts = libgnunetchat
+	conflicts = libgnunetchat-bin
+	options = !makeflags
+	options = !buildflags
+	source = git+https://git.gnunet.org/libgnunetchat.git
+	sha256sums = SKIP
+
+pkgname = libgnunetchat-git

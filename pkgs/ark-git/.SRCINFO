@@ -1,0 +1,34 @@
+pkgbase = ark-git
+	pkgdesc = Compressed archive manager from KDE Gear
+	pkgver = 22.04.1.r57.g6037bcd0
+	pkgrel = 1
+	url = https://apps.kde.org/ark/
+	arch = i686
+	arch = x86_64
+	groups = kde-applications
+	groups = kde-utilities
+	license = GPL
+	makedepends = cmake
+	makedepends = extra-cmake-modules
+	makedepends = git
+	makedepends = kdoctools
+	makedepends = python
+	depends = hicolor-icon-theme
+	depends = kitemmodels
+	depends = kparts
+	depends = kpty
+	depends = libarchive
+	depends = libzip
+	optdepends = lrzip: LRZ format support
+	optdepends = lzop: LZO format support
+	optdepends = p7zip: 7Z format support
+	optdepends = unrar: RAR decompression support
+	optdepends = unarchiver: alternative support for RAR and multipart ZIP formats
+	optdepends = unzip: legacy extraction support for single-part ZIP files
+	optdepends = zip: legacy compression support for single-part ZIP files
+	provides = ark=22.04.1.r57.g6037bcd0
+	conflicts = ark
+	source = git+https://invent.kde.org/utilities/ark.git
+	b2sums = SKIP
+
+pkgname = ark-git

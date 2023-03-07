@@ -1,0 +1,23 @@
+pkgbase = dpkg
+	pkgdesc = The Debian Package Manager. Don't use it instead of Arch's 'pacman'.
+	pkgver = 1.19.7
+	pkgrel = 1
+	url = https://tracker.debian.org/pkg/dpkg
+	arch = i686
+	arch = x86_64
+	license = GPL
+	checkdepends = perl-io-string
+	checkdepends = perl-test-pod
+	makedepends = perl-io-string
+	makedepends = perl-timedate
+	makedepends = git
+	depends = xz
+	depends = zlib
+	depends = bzip2
+	depends = perl
+	options = emptydirs
+	source = dpkg::git+https://salsa.debian.org/dpkg-team/dpkg.git#commit=edd4b837356860fe3c5f83c0eca88c452a1cc8c8
+	sha256sums = SKIP
+
+pkgname = dpkg
+

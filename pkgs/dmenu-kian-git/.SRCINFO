@@ -1,0 +1,17 @@
+pkgbase = dmenu-kian-git
+	pkgdesc = A customized build of dmenu by Kian Kasad
+	pkgver = v5.0.r0.79dc276
+	pkgrel = 1
+	url = https://git.kasad.com/dmenu
+	arch = any
+	license = MIT
+	makedepends = git
+	depends = libxft
+	optdepends = libxft-bgra: for BGRA graphics (emojis)
+	provides = dmenu
+	conflicts = dmenu
+	source = dmenu-kian::git+https://git.kasad.com/dmenu
+	md5sums = SKIP
+
+pkgname = dmenu-kian-git
+

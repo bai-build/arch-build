@@ -1,0 +1,6 @@
+/src/
+/pkg/
+mesa-*.tar.xz
+mesa-*.tar.xz.sig
+mesa-d3d12-*.pkg.tar*
+*.log

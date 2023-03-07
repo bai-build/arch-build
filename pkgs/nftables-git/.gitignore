@@ -1,0 +1,5 @@
+nftables/
+pkg/
+src/
+*.tar.*
+*.log

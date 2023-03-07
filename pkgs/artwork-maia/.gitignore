@@ -1,0 +1,6 @@
+*.xz
+pkg
+src
+*.gz
+artwork-maia
+maia

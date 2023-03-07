@@ -1,0 +1,23 @@
+pkgbase = timestampit
+	pkgdesc = Prefix each input line with a date/time stamp (formerly timestamp/stampit)
+	pkgver = 0.3.3.2
+	pkgrel = 2
+	url = https://codeberg.org/kas/timestampit/
+	arch = i686
+	arch = x86_64
+	arch = armv7h
+	arch = aarch64
+	license = GPL3
+	depends = glibc
+	optdepends = scdoc: for recompiling manual pages
+	provides = timestamp
+	provides = stampit
+	conflicts = timestamp
+	conflicts = stampit
+	options = lto
+	source = timestampit-0.3.3.2.tar.gz::https://codeberg.org/kas/timestampit/archive/v0.3.3.2.tar.gz
+	sha256sums = a837ef6d2a9d96584512dabd657a90642e8a128b30a062527093e23e5efcacf9
+	sha512sums = 492aca94307d7cd1ff333bc22f29b1c7380b01eb3a84ff317f9f6f874c84707c7d4045c67799596fa4d235e7ff035412883a1605869a33dbfb7cffffe6f323b1
+	b2sums = 3bf5979183e24026a055173401e8adda4454f78d100ea5f0d31f26ce2ba584784a735c251151afcbb6b4a32674a2dbb9cc9f673a55b315425cb370031b46a247
+
+pkgname = timestampit

@@ -1,0 +1,21 @@
+pkgbase = libfprint-vfs0050
+	pkgdesc = Library for fingerprint readers with vfs0050 driver
+	pkgver = 0.6.0
+	pkgrel = 1
+	epoch = 1
+	url = https://github.com/zemen/libfprint
+	arch = i686
+	arch = x86_64
+	groups = fprint-git
+	license = LGPL
+	makedepends = git
+	depends = libusb
+	depends = nss
+	depends = pixman
+	provides = libfprint
+	conflicts = libfprint
+	source = git+https://github.com/zemen/libfprint.git
+	md5sums = SKIP
+
+pkgname = libfprint-vfs0050
+

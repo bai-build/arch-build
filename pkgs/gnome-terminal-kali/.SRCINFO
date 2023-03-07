@@ -1,0 +1,30 @@
+pkgbase = gnome-terminal-kali
+	pkgdesc = The GNOME Terminal Emulator with Kali Linux patches (background transparent, chunked resize & ...)
+	pkgver = 3.30.2
+	pkgrel = 1
+	url = https://wiki.gnome.org/Apps/Terminal
+	arch = i686
+	arch = x86_64
+	groups = gnome
+	license = GPL
+	makedepends = intltool
+	makedepends = itstool
+	makedepends = docbook-xsl
+	makedepends = libnautilus-extension
+	makedepends = appdata-tools
+	makedepends = gnome-shell
+	makedepends = vala
+	makedepends = yelp-tools
+	depends = vte3
+	depends = gsettings-desktop-schemas
+	depends = dconf
+	provides = gnome-terminal
+	conflicts = gnome-terminal
+	options = !emptydirs
+	source = https://download.gnome.org/sources/gnome-terminal/3.30/gnome-terminal-3.30.2.tar.xz
+	source = http://http.kali.org/pool/main/g/gnome-terminal}/gnome-terminal_3.30.2-1kali1.debian.tar.xz
+	sha256sums = 6b1fc2720e3bfc592645d41e38d0d3a0f2bdf5ef7bce490b2d5c8ba39f395e38
+	sha256sums = b8942366d1d00b8ff42535c418b69ee9e525d958affdd844293123651bace60b
+
+pkgname = gnome-terminal-kali
+

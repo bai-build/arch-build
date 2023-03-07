@@ -1,0 +1,26 @@
+pkgbase = php-apache25
+	pkgdesc = Apache 2.5 SAPI for PHP
+	pkgver = 7.0.4
+	pkgrel = 1
+	url = http://www.php.net
+	arch = i686
+	arch = x86_64
+	license = PHP
+	checkdepends = procps-ng
+	makedepends = apache=2.5
+	makedepends = zlib
+	makedepends = pcre
+	makedepends = libxml2
+	makedepends = openssl
+	makedepends = xz
+	depends = php
+	depends = apache=2.5
+	source = https://www.php.net/distributions/php-7.0.4.tar.xz
+	source = https://www.php.net/distributions/php-7.0.4.tar.xz.asc
+	source = apache.conf
+	sha256sums = 584e0e374e357a71b6e95175a2947d787453afc7f9ab7c55651c10491c4df532
+	sha256sums = SKIP
+	sha256sums = ebc0af1ef3a6baccb013d0ccb29923895a7b22ff2d032e3bba802dc6328301ce
+
+pkgname = php-apache25
+

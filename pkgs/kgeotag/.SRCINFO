@@ -1,0 +1,19 @@
+pkgbase = kgeotag
+	pkgdesc = Photo geotagging program
+	pkgver = 1.4.0
+	pkgrel = 1
+	url = https://kgeotag.kde.org/
+	arch = x86_64
+	license = GPL
+	makedepends = extra-cmake-modules
+	makedepends = kdoctools
+	depends = kxmlgui
+	depends = libkexiv2
+	depends = marble-common
+	source = https://download.kde.org/stable/kgeotag/1.4.0/kgeotag-1.4.0.tar.xz
+	source = https://download.kde.org/stable/kgeotag/1.4.0/kgeotag-1.4.0.tar.xz.sig
+	validpgpkeys = A53563BC888E6CE5215535992523842AF9681DDF
+	sha256sums = c6da7ffd134be2beca2a1de3fffc2960d0b70d87d4a103871c349dff8b941ee1
+	sha256sums = SKIP
+
+pkgname = kgeotag

@@ -1,0 +1,27 @@
+pkgbase = master_me
+	pkgdesc = Automatic audio mastering plugin for live-streaming, podcasting and internet radio stations.
+	pkgver = 1.1.0
+	pkgrel = 2
+	url = https://github.com/trummerschlunk/master_me
+	arch = x86_64
+	groups = lv2-plugins
+	groups = pro-audio
+	groups = vst-plugins
+	groups = vst3-plugins
+	license = GPL3
+	makedepends = faustpp
+	makedepends = libglvnd
+	depends = gcc-libs
+	depends = glibc
+	depends = libxcursor
+	depends = libxrandr
+	optdepends = jack: stand-alone JACK application
+	source = https://github.com/trummerschlunk/master_me/releases/download/1.1.0/master_me-1.1.0.tar.xz
+	sha256sums = 7414d0d08caeecdf68fc38d3b46b28335d90f30c1ab4734ebca28be4dafc3452
+
+pkgname = master_me
+	depends = gcc-libs
+	depends = glibc
+	depends = libxcursor
+	depends = libxrandr
+	depends = libGL.so

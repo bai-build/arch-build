@@ -1,0 +1,17 @@
+post_install() {
+	post_upgrade
+	chgrp -R gopher /srv/gopher /srv/gopherweb
+	chmod -R g-w /srv/gopher /srv/gopherweb
+	chown -R gopher /var/log/gofish
+}
+
+post_upgrade() {
+	getent group gopher >/dev/null || groupadd -r gopher
+	getent passwd gopher >/dev/null || useradd -r -g gopher -d /srv/gopher -s /sbin/nologin -c "Gopher server user" gopher
+	mkcache -r &> /dev/null
+}
+
+post_remove() {
+	userdel gopher &>/dev/null || true
+	groupdel gopher &>/dev/null || true
+}

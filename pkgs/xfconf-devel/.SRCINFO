@@ -1,0 +1,26 @@
+pkgbase = xfconf-devel
+	pkgdesc = A simple client-server configuration storage and query system
+	pkgver = 4.17.2
+	pkgrel = 1
+	url = https://docs.xfce.org/xfce/xfconf/start
+	arch = i686
+	arch = x86_64
+	arch = armv7h
+	arch = aarch64
+	groups = xfce4-devel
+	license = GPL2
+	makedepends = intltool
+	makedepends = gtk-doc
+	makedepends = chrpath
+	makedepends = vala
+	makedepends = gobject-introspection
+	makedepends = python
+	depends = libxfce4util
+	depends = dbus
+	provides = xfconf=4.17.2
+	conflicts = xfconf
+	options = !emptydirs
+	source = https://archive.xfce.org/src/xfce/xfconf/4.17/xfconf-4.17.2.tar.bz2
+	sha256sums = e4eefa03cdd3672f928e80bf86f68ba9e9ea3e1ee8208f8d964610c416ee8db0
+
+pkgname = xfconf-devel

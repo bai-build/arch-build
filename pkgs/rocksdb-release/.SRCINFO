@@ -1,0 +1,25 @@
+pkgbase = rocksdb-release
+	pkgdesc = Embedded key-value store for fast storage
+	pkgver = 7.2.2
+	pkgrel = 1
+	url = http://rocksdb.org
+	arch = i686
+	arch = x86_64
+	license = Apache
+	license = leveldb
+	checkdepends = python2
+	makedepends = gcc
+	makedepends = make
+	makedepends = diffutils
+	depends = bzip2
+	depends = gcc-libs
+	depends = lz4
+	depends = snappy
+	depends = zlib
+	depends = gflags
+	provides = rocksdb
+	conflicts = rocksdb
+	source = https://github.com/facebook/rocksdb/archive/v7.2.2.zip
+	sha256sums = 928cbd416c0531e9b2e7fa74864ce0d7097dca3f5a8c31f31459772a28dbfcba
+
+pkgname = rocksdb-release

@@ -1,0 +1,6 @@
+64Gram-*-full.tar.gz
+64gram-desktop-*.pkg.tar.zst
+src/
+pkg/
+*.log
+kcoreaddons*.tar.xz

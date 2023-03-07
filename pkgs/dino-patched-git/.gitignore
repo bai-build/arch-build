@@ -1,0 +1,6 @@
+*.tar
+dino/
+make.sh
+pkg/
+src/
+push.sh

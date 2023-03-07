@@ -1,0 +1,18 @@
+pkgbase = cloog-git
+	pkgdesc = Library that generates loops for scanning polyhedra
+	pkgver = 0.18.4
+	pkgrel = 3
+	url = http://www.bastoul.net/cloog/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	provides = isl15
+	provides = cloog
+	conflicts = isl15
+	conflicts = isl
+	conflicts = cloog
+	source = cloog-0.18.4::git+http://repo.or.cz/cloog.git#branch=master
+	md5sums = SKIP
+
+pkgname = cloog-git
+

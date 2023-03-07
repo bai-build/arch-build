@@ -1,0 +1,14 @@
+pkgbase = scamper
+	pkgdesc = designed to actively probe destinations in the Internet in parallel (at a specified packets-per-second rate) so that bulk data can be collected in a timely fashion
+	pkgver = 20211212a
+	pkgrel = 1
+	url = https://www.caida.org/catalog/software/scamper/
+	arch = i686
+	arch = x86_64
+	license = gplv2
+	depends = openssl
+	source = https://www.caida.org/catalog/software/scamper/code/scamper-cvs-20211212a.tar.gz
+	sha256sums = d986b429655dce36629d1821ea6f32d65cc418f7d22b1ea4330621bffb35c18c
+
+pkgname = scamper
+

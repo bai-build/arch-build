@@ -1,0 +1,19 @@
+pkgbase = htmlcxx
+	pkgdesc = A simple non-validating CSS1 and HTML parser for C++.
+	pkgver = 0.87
+	pkgrel = 3
+	url = http://htmlcxx.sourceforge.net/
+	arch = i686
+	arch = x86_64
+	license = LGPL
+	provides = htmlcxx
+	provides = libhtmlcxx
+	provides = libcss_parser
+	conflicts = htmlcxx
+	conflicts = libhtmlcxx
+	conflicts = libcss_parser
+	source = https://sourceforge.net/projects/htmlcxx/files/v0.87/htmlcxx-0.87.tar.gz
+	sha256sums = 5d38f938cf4df9a298a5346af27195fffabfef9f460fc2a02233cbcfa8fc75c8
+
+pkgname = htmlcxx
+

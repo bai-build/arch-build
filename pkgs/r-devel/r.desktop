@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=R
+GenericName=environment for statistical computing
+Comment=language and environment for statistical computing and graphics
+Exec=R-devel
+Icon=/usr/share/pixmaps/r-devel.png
+StartupNotify=true
+Terminal=true
+Type=Application
+Categories=Science;

@@ -1,0 +1,14 @@
+diff --git a/Makefile b/Makefile
+index c701eae..4ceef6e 100644
+--- a/Makefile
++++ b/Makefile
+@@ -52,8 +52,8 @@ else
+ endif
+ endif
+ 
+-GCC_OPENCV ?= $(shell pkg-config --cflags opencv)
+-GCC_OPENCV_LIBS ?= $(shell pkg-config --libs opencv)
++GCC_OPENCV ?= $(shell pkg-config --cflags opencv4)
++GCC_OPENCV_LIBS ?= $(shell pkg-config --libs opencv4)
+ GCC_PDF ?= $(shell pkg-config --cflags --libs cairo pangocairo poppler-glib)
+ GCC_POPPLER ?= $(shell pkg-config --cflags --libs poppler-glib gio-2.0)

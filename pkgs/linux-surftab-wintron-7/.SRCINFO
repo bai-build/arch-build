@@ -1,0 +1,42 @@
+pkgbase = linux-surftab-wintron-7
+	pkgver = 4.12
+	pkgrel = 1
+	url = https://www.kernel.org/
+	arch = x86_64
+	license = GPL2
+	makedepends = xmlto
+	makedepends = docbook-xsl
+	makedepends = kmod
+	makedepends = inetutils
+	makedepends = bc
+	makedepends = git
+	makedepends = libelf
+	options = !strip
+	source = linux::git+https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git#tag=v4.12
+	source = config.x86_64
+	source = 90-linux.hook
+	source = linux.preset
+	validpgpkeys = ABAF11C65A2970B130ABE3C479BE3E4300411886
+	validpgpkeys = 647F28654894E3BD457199BE38DBBDC86092693E
+	sha256sums = SKIP
+	sha256sums = fea92a74108cb93e2f1e8144c99b212ea66563cf21e1eef90c8f3a9e01dd7a5a
+	sha256sums = 834bd254b56ab71d73f59b3221f056c72f559553c04718e350ab2a3e2991afe0
+	sha256sums = ad6344badc91ad0630caacde83f7f9b97276f80d26a20619a87952be65492c65
+
+pkgname = linux-surftab-wintron-7
+	pkgdesc = The Linux-surftab-wintron-7 kernel and modules
+	install = linux.install
+	depends = coreutils
+	depends = linux-firmware
+	depends = kmod
+	depends = mkinitcpio>=0.7
+	optdepends = crda: to set the correct wireless channels of your country
+	provides = linux
+	backup = etc/mkinitcpio.d/linux-surftab-wintron-7.preset
+
+pkgname = linux-surftab-wintron-7-headers
+	pkgdesc = Header files and scripts for building modules for Linux-surftab-wintron-7 kernel
+
+pkgname = linux-surftab-wintron-7-docs
+	pkgdesc = Kernel hackers manual - HTML documentation that comes with the Linux-surftab-wintron-7 kernel
+

@@ -1,0 +1,28 @@
+pkgbase = vaccine-git
+	pkgdesc = A GTK+3 4chan client for the linux desktop
+	pkgver = v0.0.1.r0.g0f674c1
+	pkgrel = 1
+	url = https://github.com/VaccineApp/vaccine
+	install = vaccine.install
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	makedepends = meson
+	makedepends = vala
+	makedepends = appstream-glib
+	depends = gtk3
+	depends = gtksourceview3
+	depends = libsoup
+	depends = json-glib
+	depends = libgee
+	depends = gst-plugins-bad
+	provides = vaccine
+	conflicts = vaccine
+	source = git://github.com/VaccineApp/vaccine.git
+	source = git://github.com/VaccineApp/bayes-glib.git
+	md5sums = SKIP
+	md5sums = SKIP
+
+pkgname = vaccine-git
+

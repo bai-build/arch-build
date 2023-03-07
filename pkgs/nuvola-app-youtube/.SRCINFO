@@ -1,0 +1,16 @@
+pkgbase = nuvola-app-youtube
+	pkgdesc = youtube integration for Nuvola Player.
+	pkgver = 2.0
+	pkgrel = 1
+	url = https://github.com/tiliado/nuvola-app-youtube
+	arch = any
+	license = custom:BSD
+	makedepends = nuvolasdk
+	makedepends = scour
+	depends = nuvolaruntime
+	depends = imagemagick
+	source = https://github.com/tiliado/nuvola-app-youtube/archive/2.0.tar.gz
+	sha256sums = af41f4217605aab30e1d43f6c681eb590061529d3d5cc4415efd6c9bf7fcd0c3
+
+pkgname = nuvola-app-youtube
+

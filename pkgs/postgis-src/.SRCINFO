@@ -1,0 +1,24 @@
+pkgbase = postgis-src
+	pkgdesc = Postgres GIS extensions (from source)
+	pkgver = 3.3.1
+	pkgrel = 1
+	url = http://postgis.net/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = postgresql
+	depends = gdal
+	depends = geos
+	depends = json-c
+	depends = libxml2
+	depends = libxslt
+	depends = protobuf-c
+	depends = proj
+	optdepends = gtk2-appmenu: for GTK support
+	provides = postgis-src=3.3.1
+	conflicts = postgis-src
+	conflicts = postgis
+	source = http://download.osgeo.org/postgis/source/postgis-3.3.1.tar.gz
+	sha256sums = 91be800a72d748c5a3a4a00d82ac1de42023e29da61ece6ebf9c77fe228fcb1a
+
+pkgname = postgis-src

@@ -1,0 +1,29 @@
+pkgbase = vte3-git
+	pkgdesc = Virtual Terminal Emulator widget for use with GTK3
+	pkgver = 0.69.0.8.9381607
+	pkgrel = 1
+	url = http://www.gnome.org
+	arch = x86_64
+	license = LGPL
+	makedepends = intltool
+	makedepends = gobject-introspection
+	makedepends = vala
+	makedepends = gtk-doc
+	makedepends = gperf
+	makedepends = meson
+	makedepends = ninja
+	makedepends = git
+	depends = gtk3
+	depends = vte-common
+	depends = glibc
+	depends = pcre2
+	provides = vte3=0.69.0.8.9381607
+	provides = vte-common
+	provides = libvte-2.91.so
+	conflicts = vte3
+	conflicts = vte-common
+	options = !emptydirs
+	source = git+https://gitlab.gnome.org/GNOME/vte.git
+	md5sums = SKIP
+
+pkgname = vte3-git

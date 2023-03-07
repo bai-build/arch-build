@@ -1,0 +1,18 @@
+pkgbase = doomretro
+	pkgdesc = The classic, refined DOOM source port
+	pkgver = 4.7.2
+	pkgrel = 1
+	url = http://doomretro.com
+	arch = x86_64
+	arch = aarch64
+	license = GPL3
+	makedepends = git
+	makedepends = cmake
+	depends = sdl2_image
+	depends = sdl2_mixer
+	depends = glibc
+	optdepends = timidity++: for music playback
+	source = doomretro::git+https://github.com/bradharding/doomretro.git#commit=f561433a8bd935caf89a6e1c9cefee49de85d7c4
+	b2sums = SKIP
+
+pkgname = doomretro

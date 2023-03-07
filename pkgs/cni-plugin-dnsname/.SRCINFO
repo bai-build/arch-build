@@ -1,0 +1,15 @@
+pkgbase = cni-plugin-dnsname
+	pkgdesc = name resolution for containers
+	pkgver = 1.1.1
+	pkgrel = 1
+	url = https://github.com/containers/dnsname
+	arch = x86_64
+	license = Apache
+	makedepends = make
+	makedepends = go
+	depends = glibc
+	source = https://github.com/containers/dnsname/archive/v1.1.1.tar.gz
+	sha256sums = e8c7b0d4bab5d2559e50fe4a9947f2addd28cdaddd6b2909cddc350c85761f41
+
+pkgname = cni-plugin-dnsname
+

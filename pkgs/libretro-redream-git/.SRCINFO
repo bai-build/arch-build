@@ -1,0 +1,20 @@
+pkgbase = libretro-redream-git
+	pkgdesc = Sega Dreamcast core
+	pkgver = r1104.bf4d812d
+	pkgrel = 1
+	url = https://github.com/libretro/redream
+	arch = x86_64
+	groups = libretro-unstable
+	license = GPL2
+	makedepends = git
+	depends = gcc-libs
+	depends = glibc
+	depends = libgl
+	depends = libretro-core-info
+	provides = libretro-redream
+	conflicts = libretro-redream
+	source = libretro-redream::git+https://github.com/libretro/redream.git
+	sha256sums = SKIP
+
+pkgname = libretro-redream-git
+

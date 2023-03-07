@@ -1,0 +1,20 @@
+pkgbase = libressl-side
+	pkgdesc = libressl side-by-side with openssl
+	pkgver = 3.0.0
+	pkgrel = 1
+	url = http://www.libressl.org/
+	arch = x86_64
+	license = ISC
+	license = custom:OpenSSL
+	makedepends = gawk
+	depends = glibc
+	optdepends = ca-certificates
+	backup = etc/libressl/openssl.cnf
+	source = https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-3.0.0.tar.gz
+	source = https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-3.0.0.tar.gz.asc
+	validpgpkeys = A1EB079B8D3EB92B4EBD3139663AF51BD5E4D8D5
+	sha512sums = 460fa390012218262b7c148a28e6ddfc0dc3d669c4bdd37b68bfa6f50a0cb2fb81a277fb46ae0ac22673aae5b5cc4476fe96e56471a6812176bf76e9c5e10838
+	sha512sums = SKIP
+
+pkgname = libressl-side
+

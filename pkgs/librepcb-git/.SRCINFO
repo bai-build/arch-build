@@ -1,0 +1,24 @@
+pkgbase = librepcb-git
+	pkgdesc = A free EDA software to develop printed circuit boards (git master)
+	pkgver = r2604.951ecd9b8
+	pkgrel = 1
+	url = https://librepcb.org/
+	arch = x86_64
+	arch = i686
+	license = GPL
+	makedepends = git
+	makedepends = cmake
+	makedepends = pkg-config
+	makedepends = qt5-tools
+	makedepends = fontobene-qt5
+	depends = qt5-svg
+	depends = hicolor-icon-theme
+	depends = muparser
+	depends = quazip
+	depends = polyclipping
+	provides = librepcb
+	conflicts = librepcb
+	source = git+https://github.com/LibrePCB/LibrePCB
+	md5sums = SKIP
+
+pkgname = librepcb-git

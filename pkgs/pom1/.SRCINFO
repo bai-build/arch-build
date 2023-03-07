@@ -1,0 +1,14 @@
+pkgbase = pom1
+	pkgdesc = Apple 1 emulator
+	pkgver = 1.0.0
+	pkgrel = 1
+	url = http://pom1.sourceforge.net/
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	depends = sdl
+	source = http://sourceforge.net/projects/pom1/files/pom1/1.0.0/pom1-1.0.0.tar.gz
+	md5sums = fbea72f26ab9f1771e8171021406b194
+
+pkgname = pom1
+

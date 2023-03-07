@@ -1,0 +1,21 @@
+pkgbase = ros-kinetic-python-qt-binding
+	pkgdesc = ROS - This stack provides Python bindings for Qt.
+	pkgver = 0.3.4
+	pkgrel = 1
+	url = http://ros.org/wiki/python_qt_binding
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-kinetic-catkin
+	makedepends = ros-kinetic-rosbuild
+	makedepends = python2-pyqt5
+	makedepends = qt5-base
+	depends = python2-pyqt5
+	source = ros-kinetic-python-qt-binding-0.3.4-0.tar.gz::https://github.com/ros-gbp/python_qt_binding-release/archive/release/kinetic/python_qt_binding/0.3.4-0.tar.gz
+	source = sip_qt.patch
+	sha256sums = ea6943351d48918e37d30db52637c7063caef9a9a9e72cd128fa6f3b84ab35cb
+	sha256sums = SKIP
+
+pkgname = ros-kinetic-python-qt-binding
+

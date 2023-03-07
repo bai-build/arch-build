@@ -1,0 +1,40 @@
+pkgbase = ros-indigo-gazebo-ros
+	pkgdesc = ROS - Provides ROS plugins that offer message and service publishers for interfacing with Gazebo through ROS.
+	pkgver = 2.4.13
+	pkgrel = 1
+	url = http://gazebosim.org/tutorials?cat=connect_ros
+	arch = any
+	license = Apache 2.0
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-indigo-rosgraph-msgs
+	makedepends = ros-indigo-roscpp
+	makedepends = ros-indigo-gazebo-msgs
+	makedepends = ros-indigo-std-msgs
+	makedepends = ros-indigo-geometry-msgs
+	makedepends = ros-indigo-std-srvs
+	makedepends = ros-indigo-catkin
+	makedepends = ros-indigo-message-generation
+	makedepends = ros-indigo-dynamic-reconfigure
+	makedepends = ros-indigo-roslib
+	makedepends = ros-indigo-cmake-modules
+	makedepends = ros-indigo-tf
+	makedepends = gazebo
+	makedepends = tinyxml
+	depends = ros-indigo-tf
+	depends = ros-indigo-roscpp
+	depends = ros-indigo-gazebo-msgs
+	depends = ros-indigo-std-msgs
+	depends = ros-indigo-geometry-msgs
+	depends = ros-indigo-std-srvs
+	depends = ros-indigo-message-generation
+	depends = ros-indigo-dynamic-reconfigure
+	depends = ros-indigo-roslib
+	depends = ros-indigo-rosgraph-msgs
+	depends = gazebo
+	depends = tinyxml
+	source = ros-indigo-gazebo-ros-2.4.13-0.tar.gz::https://github.com/ros-gbp/gazebo_ros_pkgs-release/archive/release/indigo/gazebo_ros/2.4.13-0.tar.gz
+	sha256sums = 263cb7deb6a38b19ef70e3b790865e5ede81a4a5c07b694be0262d2928cf2b1d
+
+pkgname = ros-indigo-gazebo-ros
+

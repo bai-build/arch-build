@@ -1,0 +1,20 @@
+pkgbase = android-x86-64-x265
+	pkgdesc = Open Source H265/HEVC video encoder (android)
+	pkgver = 3.5
+	pkgrel = 1
+	url = https://bitbucket.org/multicoreware/x265_git
+	arch = any
+	license = GPL
+	makedepends = android-cmake
+	makedepends = nasm
+	depends = android-ndk
+	options = !strip
+	options = !buildflags
+	options = staticlibs
+	options = !emptydirs
+	source = https://bitbucket.org/multicoreware/x265_git/downloads/x265_3.5.tar.gz
+	source = 0001-Disable-neon.patch
+	md5sums = deb5df5cb2ec17bdbae6ac6bbc3b1eef
+	md5sums = fffb730725e5848d6f1fd87e50530452
+
+pkgname = android-x86-64-x265

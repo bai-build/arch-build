@@ -1,0 +1,19 @@
+pkgbase = gmpc
+	pkgdesc = MPD client
+	pkgver = 11.8.16
+	pkgrel = 6
+	url = https://github.com/DaveDavenport/gmpc
+	arch = x86_64
+	license = GPL
+	makedepends = gob2
+	makedepends = intltool
+	makedepends = vala
+	depends = gtk2
+	depends = libmpd
+	depends = libsoup
+	depends = sqlite
+	depends = xdg-utils
+	source = https://github.com/DaveDavenport/gmpc/archive/refs/tags/release-11.8.16.tar.gz
+	sha256sums = 7c7e0782475be86bce48ece54e24f6762dd8c8e797fae5a38c013e4d56de64c0
+
+pkgname = gmpc

@@ -1,0 +1,19 @@
+pkgbase = xfce4-volumed
+	pkgdesc = A volume keys control daemon for Xfce
+	pkgver = 0.1.13
+	pkgrel = 7
+	url = http://git.xfce.org/apps/xfce4-volumed/
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	depends = gstreamer0.10-base
+	depends = libkeybinder2
+	depends = libnotify
+	depends = xfconf
+	optdepends = gstreamer0.10-base-plugins: for sound card support
+	optdepends = xfce4-notifyd: for OSD notifications
+	source = http://archive.xfce.org/src/apps/xfce4-volumed/0.1/xfce4-volumed-0.1.13.tar.bz2
+	sha512sums = 7241b53f88b44e18a7501e775498701fe622c35b9304e883159dd98fc76745d50f23a192bb0416ccf301ddf393af7a3dc10c3057d77898c8e13d11fd058c801e
+
+pkgname = xfce4-volumed
+

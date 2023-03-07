@@ -1,0 +1,26 @@
+pkgbase = anope
+	pkgdesc = A set of IRC Services designed for flexibility and ease of use
+	pkgver = 2.0.12
+	pkgrel = 1
+	url = https://www.anope.org/
+	install = anope.install
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = cmake
+	optdepends = openldap: OpenLDAP backend support
+	optdepends = mariadb: MySQL database backend support
+	optdepends = sqlite: SQLite database backend support
+	optdepends = openssl: OpenSSL support
+	optdepends = gnutls: GnuTLS support
+	optdepends = pcre: Perl-compatible regular expression support
+	source = https://github.com/anope/anope/archive/2.0.12.tar.gz
+	source = anope.install
+	source = anope.service
+	source = anope.tmpfiles
+	sha256sums = eeba1331eaa02a0b05347209604e22df8052d9b10fd19a7633ad1e837f003ff0
+	sha256sums = 310487f9962d9c6f5b968453b7954be40b1c4bf8f591d8ac550e36e6eb80d846
+	sha256sums = 93d656d74d1ab405e1484eb625c7e45843cc2915c492d0c76da890ff55c06ce0
+	sha256sums = c0e4605b6e92b93f40d3f33a9fe39777c5bc8a0863a3b07c282f7331f5bacc53
+
+pkgname = anope

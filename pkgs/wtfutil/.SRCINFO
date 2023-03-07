@@ -1,0 +1,15 @@
+pkgbase = wtfutil
+	pkgdesc = Personal information dashboard for your terminal
+	pkgver = 0.43.0
+	pkgrel = 1
+	url = https://wtfutil.com
+	arch = x86_64
+	arch = aarch64
+	arch = armv6h
+	license = MPL2
+	makedepends = go
+	depends = glibc
+	source = wtfutil-0.43.0.tar.gz::https://github.com/wtfutil/wtf/archive/v0.43.0.tar.gz
+	sha256sums = bb48e38e479b26e0b956b163e4804e99cd49545214090c2fdf99e54382b3d651
+
+pkgname = wtfutil

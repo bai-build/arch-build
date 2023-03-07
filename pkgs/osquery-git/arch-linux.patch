@@ -1,0 +1,99 @@
+diff --git a/tools/provision.sh b/tools/provision.sh
+index c363196..31019ff 100755
+--- a/tools/provision.sh
++++ b/tools/provision.sh
+@@ -83,6 +83,8 @@ function main() {
+     log "your $OS does not use a provision script"
+   fi
+
++  exit
++
+   # The dependency directory (DEPS_DIR) will contain our legacy runtime glibc
+   # and various compilers/library dependencies.
+   if [[ ! -d "$DEPS_DIR" ]]; then
+diff --git a/specs/windows/services.table b/specs/windows/services.table
+index 3acf0c5..bd7612b 100644
+--- a/specs/windows/services.table
++++ b/specs/windows/services.table
+@@ -12,7 +12,7 @@ schema([
+     Column("path", TEXT, "Path to Service Executable"),
+     Column("module_path", TEXT, "Path to ServiceDll"),
+     Column("description", TEXT, "Service Description"),
+-    Column("user_account", TEXT, "The name of the account that the service process will be logged on as when it runs. This name can be of the form Domain\UserName. If the account belongs to the built-in domain, the name can be of the form .\UserName."),
++    Column("user_account", TEXT, "The name of the account that the service process will be logged on as when it runs. This name can be of the form Domain\\UserName. If the account belongs to the built-in domain, the name can be of the form .\\UserName."),
+ ])
+ implementation("system/windows/services@genServices")
+ examples([
+diff --git a/Makefile b/Makefile
+index 47ff957d..ab679b5f 100644
+--- a/Makefile
++++ b/Makefile
+@@ -70,7 +70,7 @@ CMAKE := $(PATH_SET) LDFLAGS="-L$(DEPS_DIR)/legacy/lib -L$(DEPS_DIR)/lib $(LINK_
+         cmake $(CMAKE_EXTRA) $(SOURCE_DIR)/
+ 
+ CTEST := $(PATH_SET) ctest $(SOURCE_DIR)/
+-FORMAT_COMMAND := python tools/formatting/git-clang-format.py \
++FORMAT_COMMAND := python2 tools/formatting/git-clang-format.py \
+ 	"--commit" "master" "-f" "--style=file"
+ 
+ ANALYSIS := ${SOURCE_DIR}/tools/analysis
+diff --git a/osquery/tables/CMakeLists.txt b/osquery/tables/CMakeLists.txt
+index 8efb6202..7f9d64aa 100644
+--- a/osquery/tables/CMakeLists.txt
++++ b/osquery/tables/CMakeLists.txt
+@@ -66,8 +66,10 @@ endif()
+ if(LINUX)
+   set(TABLE_PLATFORM "linux")
+
++  include_directories("/usr/include/libxml2")
++
+   ADD_OSQUERY_LINK_ADDITIONAL("libresolv.so")
+-  ADD_OSQUERY_LINK_ADDITIONAL("cryptsetup devmapper lvm2app lvm-internal daemonclient")
++  ADD_OSQUERY_LINK_ADDITIONAL("cryptsetup devmapper lvm2app")
+   ADD_OSQUERY_LINK_ADDITIONAL("gcrypt gpg-error")
+   ADD_OSQUERY_LINK_ADDITIONAL("blkid")
+   ADD_OSQUERY_LINK_ADDITIONAL("ip4tc")
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index c7b6b23b9..57b292ee7 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -330,7 +327,6 @@ if (POSIX)
+   # To be safe, only include them when building 'release' outputs.
+   add_compile_options(
+     "$<$<CONFIG:RELEASE>:-g>"
+-    "$<$<CONFIG:RELEASE>:-fno-limit-debug-info>"
+     "$<$<CONFIG:RELEASE>:-fPIE>"
+     "$<$<CONFIG:RELEASE>:-fpie>"
+     "$<$<CONFIG:RELEASE>:-fPIC>"
+@@ -555,6 +551,8 @@ endif()
+ 
+ if(APPLE)
+   LOG_PLATFORM("OS X")
++elseif(OSQUERY_BUILD_PLATFORM STREQUAL "arch")
++  LOG_PLATFORM("Arch Linux")
+ elseif(OSQUERY_BUILD_PLATFORM STREQUAL "debian")
+   LOG_PLATFORM("Debian")
+ elseif(OSQUERY_BUILD_PLATFORM STREQUAL "ubuntu")
+diff --git a/osquery/CMakeLists.txt b/osquery/CMakeLists.txt
+index c5f644c45..7510a6e38 100644
+--- a/osquery/CMakeLists.txt
++++ b/osquery/CMakeLists.txt
+@@ -36,7 +36,6 @@ set(OSQUERY_TABLES_TESTS "")
+ # Add all and extra for osquery code.
+ if(CLANG AND POSIX)
+   add_compile_options(
+-    -Wall
+     -Wextra
+     -pedantic
+     -Wuseless-cast
+diff --git a/include/osquery/posix/system.h b/include/osquery/posix/system.h
+index 9e16897bc..dc92d439e 100644
+--- a/include/osquery/posix/system.h
++++ b/include/osquery/posix/system.h
+@@ -15,6 +15,7 @@
+ #include <string>
+
+ #include <boost/filesystem/path.hpp>
++#include <boost/core/noncopyable.hpp>
+
+ #include <osquery/core.h>

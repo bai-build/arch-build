@@ -1,0 +1,17 @@
+pkgbase = lem-git
+	pkgdesc = Lem semantic definition language
+	pkgver = 2018.07.13.r0.g5056134
+	pkgrel = 1
+	url = https://github.com/rems-project/lem
+	arch = any
+	license = MIT
+	depends = ocaml
+	depends = ocamlbuild
+	depends = ocaml-findlib
+	depends = ocaml-zarith
+	depends = ocaml-num
+	source = git+https://github.com/rems-project/lem.git
+	sha512sums = SKIP
+
+pkgname = lem-git
+

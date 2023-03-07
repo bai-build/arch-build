@@ -1,0 +1,22 @@
+pkgbase = mutate
+	pkgdesc = A simple launcher inspired by Alfred.
+	pkgver = 2.4
+	pkgrel = 5
+	url = https://github.com/qdore/Mutate
+	install = mutate.install
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = boost
+	depends = qt5-x11extras
+	depends = gtk2
+	depends = boost-libs
+	depends = python
+	depends = python2
+	source = mutate-2.4.tar.gz::https://github.com/qdore/Mutate/archive/v2.4.tar.gz
+	source = fix-compile-error.patch
+	md5sums = faa7549f09f8aa38c812d7861eef8a99
+	md5sums = 6c12e8abc592480619bee5191b877598
+
+pkgname = mutate
+

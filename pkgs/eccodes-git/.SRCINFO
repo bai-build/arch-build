@@ -1,0 +1,24 @@
+pkgbase = eccodes-git
+	pkgdesc = ECMWF decoding library for GRIB, BUFR and GTS
+	pkgver = latest
+	pkgrel = 1
+	url = https://github.com/ecmwf/eccodes
+	arch = x86_64
+	license = Apache
+	makedepends = gcc-fortran
+	makedepends = python
+	makedepends = python-numpy
+	makedepends = cmake
+	makedepends = ecbuild-git
+	makedepends = git
+	depends = openjpeg
+	depends = libpng
+	depends = python3
+	depends = netcdf
+	depends = libaec
+	conflicts = grib_api
+	conflicts = libbufr-ecmwf
+	source = git+https://github.com/ecmwf/eccodes#branch=master
+	md5sums = SKIP
+
+pkgname = eccodes-git

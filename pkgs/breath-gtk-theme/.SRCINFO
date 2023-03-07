@@ -1,0 +1,13 @@
+pkgbase = breath-gtk-theme
+	pkgdesc = Breath GTK theme
+	pkgver = 5.9.0
+	pkgrel = 1
+	url = https://gitlab.manjaro.org/artwork/themes/breath-gtk
+	arch = x86_64
+	license = LGPL
+	makedepends = extra-cmake-modules
+	source = https://gitlab.manjaro.org/artwork/themes/breath-gtk/-/archive/da2706640f457f89de6c26312e391b244ff550b4.tar.gz
+	sha256sums = 3d2b5e297049092976a484d354e1433dd0b4be421c6c0165c37b5c363b9bff00
+
+pkgname = breath-gtk-theme
+

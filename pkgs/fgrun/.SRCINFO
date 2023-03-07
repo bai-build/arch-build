@@ -1,0 +1,19 @@
+pkgbase = fgrun
+	pkgdesc = Frontend for FlightGear.
+	pkgver = 2016.3.1
+	pkgrel = 1
+	url = http://sourceforge.net/projects/flightgear/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = cmake
+	makedepends = boost
+	makedepends = simgear
+	depends = freeglut
+	depends = openal
+	depends = openscenegraph
+	source = https://sourceforge.net/projects/flightgear/files/release-2016.3/flightgear-2016.3.1.tar.bz2
+	sha256sums = 501d2f59b8f9d221332044346bbbfe195e42d0195945f8bb0fec8b474bc79c31
+
+pkgname = fgrun
+

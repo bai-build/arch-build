@@ -1,0 +1,19 @@
+pkgbase = avro-c
+	pkgdesc = C bindings for Avro data serialization framework
+	pkgver = 1.11.0
+	pkgrel = 1
+	url = https://github.com/apache/avro
+	arch = i686
+	arch = x86_64
+	license = Apache
+	makedepends = cmake
+	depends = jansson
+	depends = snappy
+	depends = xz
+	depends = zlib
+	optdepends = asciidoc: build with documentation
+	optdepends = source-highlight: add syntax highlighting to documentation
+	source = avro-c-1.11.0.tar.gz::https://github.com/apache/avro/archive/refs/tags/release-1.11.0.tar.gz
+	sha256sums = c205140e7936d552286ba7131122a34e522d66f601ee912f272109d801f89773
+
+pkgname = avro-c

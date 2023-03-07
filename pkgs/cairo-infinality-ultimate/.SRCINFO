@@ -1,0 +1,47 @@
+pkgbase = cairo-infinality-ultimate
+	pkgdesc = Cairo vector graphics library
+	pkgver = 1.15.12
+	pkgrel = 1
+	url = http://cairographics.org/
+	arch = i686
+	arch = x86_64
+	groups = infinality-bundle
+	license = LGPL
+	license = MPL
+	makedepends = libgl
+	makedepends = librsvg
+	makedepends = gtk2
+	makedepends = poppler-glib
+	makedepends = libspectre
+	makedepends = gtk-doc
+	makedepends = valgrind
+	makedepends = git
+	depends = libpng
+	depends = libxrender
+	depends = libxext
+	depends = fontconfig-infinality-ultimate
+	depends = pixman
+	depends = glib2
+	depends = libgl
+	depends = lzo
+	provides = cairo-xcb
+	provides = cairo
+	conflicts = cairo
+	conflicts = cairo-cleartype
+	conflicts = cairo-git
+	conflicts = cairo-ocaml-git
+	conflicts = cairo-ubuntu
+	replaces = cairo-xcb
+	source = git+https://anongit.freedesktop.org/git/cairo#tag=1.15.12
+	source = cairo-make-lcdfilter-default.patch
+	source = cairo-respect-fontconfig_pb.patch
+	source = cairo-server-side-gradients.patch
+	source = cairo-webkit-html5-fix.patch
+	sha1sums = SKIP
+	sha1sums = b0cc2466cc5479f055ca2148cfa37fe13a1e78a6
+	sha1sums = d8ffcb4c4745f7e61671109362a80a872ac989d3
+	sha1sums = 72ecf2dda8462e1588512de257ccbe18642d507f
+	sha1sums = 5bff494f52a16114f4cf6d04bfb0b9d7c4e9da23
+
+pkgname = cairo-infinality-ultimate
+

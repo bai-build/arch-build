@@ -1,0 +1,21 @@
+pkgbase = remotely-git
+	pkgdesc = simple VNC viewer for the GNOME desktop environment
+	pkgver = 1.0.r10.g8792370
+	pkgrel = 2
+	url = https://gitlab.gnome.org/World/Remotely
+	arch = i686
+	arch = x86_64
+	arch = armv7h
+	arch = aarch64
+	license = GPL3
+	makedepends = git
+	makedepends = meson
+	makedepends = vala
+	depends = gtk-vnc
+	provides = remotely
+	conflicts = remotely
+	source = git+https://gitlab.gnome.org/World/Remotely.git
+	md5sums = SKIP
+
+pkgname = remotely-git
+

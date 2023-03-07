@@ -1,0 +1,23 @@
+pkgbase = hex-git
+	pkgdesc = Hex viewer
+	pkgver = r79.252e349
+	pkgrel = 1
+	url = https://git.janouch.name/p/hex
+	arch = i686
+	arch = x86_64
+	license = BSD
+	makedepends = cmake
+	makedepends = pkg-config
+	makedepends = git
+	makedepends = help2man
+	depends = readline
+	depends = ncurses
+	depends = libunistring
+	depends = lua
+	provides = hex
+	conflicts = hex
+	options = zipman
+	source = git+https://git.janouch.name/p/hex.git
+	md5sums = SKIP
+
+pkgname = hex-git

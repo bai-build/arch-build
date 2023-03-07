@@ -1,0 +1,36 @@
+pkgbase = retroarch-rbp-git
+	pkgdesc = Reference frontend for the libretro API.
+	pkgver = 1.7.3.90.gcc5393e54d
+	pkgrel = 1
+	url = http://www.libretro.com
+	arch = arm
+	arch = armv6h
+	arch = armv7h
+	groups = libretro
+	license = GPL
+	makedepends = git
+	depends = raspberrypi-firmware
+	depends = libusb
+	optdepends = libretro-desmume: Nintendo DS core
+	optdepends = libretro-gambatte: Nintendo Game Boy/Game Boy Color core
+	optdepends = libretro-genesis-plus: Sega Master System/Genesis/Game Gear/CD/32X core
+	optdepends = libretro-mgba: Nintendo Game Boy Advance core
+	optdepends = libretro-mupen64plus: Nintendo 64 core
+	optdepends = libretro-nestopia: Nintendo Entertainment System core
+	optdepends = libretro-pcsx-rearmed: Sony PlayStation core
+	optdepends = libretro-reicast: Sega Dreamcast core
+	optdepends = libretro-snes9x: Super Nintendo Entertainment System core
+	optdepends = libretro-yabause: Sega Saturn core
+	optdepends = libretro-overlays: Collection of overlays
+	optdepends = libretro-shaders: Collection of shaders
+	optdepends = retroarch-assets-xmb: XMB menu assets
+	optdepends = retroarch-autoconfig-udev: udev joypad autoconfig
+	provides = retroarch
+	provides = retroarch-git
+	conflicts = retroarch
+	backup = etc/retroarch.cfg
+	source = git+https://github.com/libretro/RetroArch.git
+	sha256sums = SKIP
+
+pkgname = retroarch-rbp-git
+

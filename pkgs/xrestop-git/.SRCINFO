@@ -1,0 +1,17 @@
+pkgbase = xrestop-git
+	pkgdesc = Uses the X-Resource extension to provide 'top' like statistics
+	pkgver = 0.4.r34.19f72d3
+	pkgrel = 2
+	url = http://freedesktop.org/wiki/Software/xrestop
+	arch = x86_64
+	license = GPL
+	makedepends = xorg-util-macros
+	depends = libxres
+	depends = ncurses
+	provides = xrestop
+	conflicts = xrestop
+	source = git+https://gitlab.freedesktop.org/xorg/app/xrestop
+	md5sums = SKIP
+
+pkgname = xrestop-git
+

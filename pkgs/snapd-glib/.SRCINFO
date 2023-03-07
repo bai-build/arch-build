@@ -1,0 +1,19 @@
+pkgbase = snapd-glib
+	pkgdesc = Library to allow GLib/Qt based applications access to snapd, the daemon that controls Snaps
+	pkgver = 1.63
+	pkgrel = 1
+	url = https://github.com/snapcore/snapd-glib
+	arch = x86_64
+	license = GPL3
+	makedepends = gobject-introspection
+	makedepends = gtk-doc
+	makedepends = meson
+	makedepends = qt5-tools
+	makedepends = vala
+	depends = libsoup3
+	depends = json-glib
+	depends = qt5-declarative
+	source = https://github.com/snapcore/snapd-glib/releases/download/1.63/snapd-glib-1.63.tar.xz
+	sha256sums = 28bc96c8bb76d09f709c3d35cab743ccae57699f4eef5d36db914f0c1a77ab47
+
+pkgname = snapd-glib

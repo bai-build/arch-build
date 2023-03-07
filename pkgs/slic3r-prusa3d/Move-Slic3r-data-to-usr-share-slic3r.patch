@@ -1,0 +1,27 @@
+diff --git a/lib/Slic3r.pm b/lib/Slic3r.pm
+index 66039ddf..bb7e1eb5 100644
+--- a/lib/Slic3r.pm
++++ b/lib/Slic3r.pm
+@@ -41,7 +41,7 @@ warn "Running Slic3r under Perl 5.16 is neither supported nor recommended\n"
+ use FindBin;
+ 
+ # Let the XS module know where the GUI resources reside.
+-set_resources_dir(decode_path($FindBin::Bin) . (($^O eq 'darwin') ? '/../Resources' : '/resources'));
++set_resources_dir("/usr/share/slic3r-prusa3d");
+ set_var_dir(resources_dir() . "/icons");
+ 
+ use Moo 1.003001;
+diff --git a/slic3r.pl b/slic3r.pl
+index 4b6e43e4..d833ed1b 100755
+--- a/slic3r.pl
++++ b/slic3r.pl
+@@ -5,8 +5,7 @@ use warnings;
+ 
+ BEGIN {
+     use FindBin;
+-    use lib "$FindBin::Bin/lib";
+-    use local::lib '--no-create', "$FindBin::Bin/local-lib";
++    use lib "$FindBin::Bin/lib", "/usr/lib/slic3r-prusa3d/";
+ }
+ 
+ use File::Basename qw(basename);

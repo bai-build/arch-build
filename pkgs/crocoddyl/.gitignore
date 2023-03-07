@@ -1,0 +1,5 @@
+pkg
+src
+*.sig
+*.patch
+*.tar.zst*

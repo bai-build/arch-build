@@ -1,0 +1,16 @@
+pkgbase = pev
+	pkgdesc = Command line based tool for Windows portable executable PE32+ file analysis
+	pkgver = 0.81
+	pkgrel = 1
+	url = http://pev.sourceforge.net/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = glibc
+	depends = pcre
+	source = http://sourceforge.net/projects/pev/files/pev-0.81/pev-0.81.tar.gz
+	md5sums = 9800200f26adadf4812919ae02971476
+	sha256sums = 4192691c57eec760e752d3d9eca2a1322bfe8003cfc210e5a6b52fca94d5172b
+
+pkgname = pev
+

@@ -1,0 +1,12 @@
+--- cli/Makefile	2021-06-15 15:19:41.000000000 +1000
++++ cli/Makefile-new	2021-07-22 05:39:00.350093341 +1000
+@@ -2,7 +2,7 @@
+ GPRCLEAN=gprclean
+ 
+ all default:
+-	$(GPRBUILD) -p -Pcli
++	$(GPRBUILD) $(GPRBUILD_FLAGS) -p -Pcli
+ 
+ clean:
+-	$(GPRCLEAN) -q -r -Pcli
++	$(GPRCLEAN) $(GPRBUILD_FLAGS) -q -r -Pcli

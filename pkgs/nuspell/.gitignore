@@ -1,0 +1,5 @@
+nuspell
+pkg
+src
+*.pkg.*
+*.tar.gz

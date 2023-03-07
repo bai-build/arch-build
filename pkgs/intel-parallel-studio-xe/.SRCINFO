@@ -1,0 +1,89 @@
+pkgbase = intel-parallel-studio-xe
+	pkgdesc = Intel C++ C and FORTRAN compiler - Intel Parallel Studio XE - Cluster Edition - icc icpc ifort ipp
+	pkgver = 2020.4.304
+	pkgrel = 3
+	url = http://software.intel.com/en-us/articles/non-commercial-software-download/
+	arch = x86_64
+	license = custom
+	makedepends = libarchive
+	makedepends = sed
+	makedepends = gzip
+	makedepends = lzop
+	depends = bash
+	depends = gcc
+	options = strip
+	options = libtool
+	options = staticlibs
+	source = http://registrationcenter-download.intel.com/akdlm/IRC_NAS/tec/17113/parallel_studio_xe_2020_update4_cluster_edition.tgz
+	source = intel_compilers.sh
+	source = intel_vtune-profiler.sh
+	source = intel_advisor.sh
+	source = intel_inspector.sh
+	source = intel-composer.install
+	source = intel-common-libs.conf
+	source = intel-fortran.conf
+	source = intel-openmp.conf
+	source = intel-mpi.conf
+	source = intel-ipp.conf
+	source = intel-tbb.conf
+	source = intel-tbb.install
+	source = zsh-fix.patch
+	source = EULA.txt
+	sha256sums = f36e49da97b6ce24d2d464d73d7ff49d71cff20e1698c20e607919819602a9f5
+	sha256sums = 0704025fdfe40e4fce08e88b641128310c3a3b51332668aab60fb815b424f52b
+	sha256sums = 12f932f99e6d3ee9dd828b95e630f096a9e58707db39bea15fba22a1ad80f211
+	sha256sums = 63b12c66d9c8c2310a7bbd5206c82ba9667fb6ffb3dc7e3f9304a17ed8c8fbcd
+	sha256sums = fd24842f29d50bc53779dd918fbc548ebf165ff664114e59195773ad04076b5d
+	sha256sums = 3f96dec03111e69d16bb363acf4d0570e8a9526c09e5e542a7558f1b26d043ef
+	sha256sums = 31ac4d0f30a93fe6393f48cb13761d7d1ce9719708c76a377193d96416bed884
+	sha256sums = 6151bc273b6f741a4ce93d8160b6f167c8ad499dbc6e8e3f6e08d48571d6a52a
+	sha256sums = 99cc9683cc75934cc21bb5a09f6ad83365ee48712719bfd914de9444695eed13
+	sha256sums = 2345695151930806cc73c14a35b8cde94281def144d0c2c180357862fd08fcaa
+	sha256sums = da6f41c2e002c9a793c75a18c8d1c85ef7ef5bf83a7a0a158ff144481491aac8
+	sha256sums = 5d3ac1ba31d7fc5795821d95b17956b0c977c8f3576b02f664f8ebf476213a43
+	sha256sums = fde83eb0071a5bd2887de127b56cc573a254e30131ec7b2d956987512c3e90c2
+	sha256sums = 48632e9831c1066721c0ed8e561cbae1c5bbe470851c05d5de3a05b2b18e676b
+	sha256sums = 228ac25e147adb9b872e1a562e522d2fd48809ccae89b765112009896a6d55a5
+
+pkgname = intel-common-libs
+	pkgdesc = Intel Common Libraries 19.1.3
+
+pkgname = intel-openmp
+	pkgdesc = Intel OpenMP Implementation 19.1.3
+	depends = intel-common-libs=2020.4.304
+
+pkgname = intel-compiler-base
+	pkgdesc = Intel C/C++ 19.1.3
+	install = intel-composer.install
+	depends = intel-common-libs=2020.4.304
+	depends = intel-openmp=2020.4.304
+
+pkgname = intel-fortran-compiler
+	pkgdesc = Intel Fortran compiler 19.1.3
+	install = intel-composer.install
+	depends = intel-compiler-base=2020.4.304
+
+pkgname = intel-ipp
+	pkgdesc = Intel Integrated Performance Primitives
+	install = intel-composer.install
+
+pkgname = intel-mpi
+	pkgdesc = Intel MPI library
+
+pkgname = intel-tbb_psxe
+	pkgdesc = Intel Threading Building Blocks (TBB)
+	install = intel-tbb.install
+
+pkgname = intel-advisor
+	pkgdesc = Threading design and prototyping tool for software architects 2020.3.0.607294
+	conflicts = intel-advisor-xe
+
+pkgname = intel-vtune-profiler
+	pkgdesc = Performance profiler for serial and parallel performance analysis 2020.3.0.612611
+	depends = pangox-compat
+	options = !strip
+
+pkgname = intel-inspector
+	pkgdesc = Memory and thread debugger 2020.3.0.604771
+	conflicts = intel-inspector-xe
+

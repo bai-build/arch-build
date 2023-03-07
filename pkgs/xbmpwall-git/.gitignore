@@ -1,0 +1,11 @@
+*.xz
+*.xz.sig
+*.zst
+*.zst.sig
+src
+pkg
+xbmpwall
+bitmap-walls
+
+
+

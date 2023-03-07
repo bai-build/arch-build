@@ -1,0 +1,29 @@
+pkgbase = unifont
+	pkgdesc = A free bitmap font with wide Unicode support (PCF, PSF and hex versions)
+	pkgver = 15.0.01
+	pkgrel = 1
+	url = https://unifoundry.com/
+	arch = any
+	license = GPL2
+	license = custom:OFL
+	source = https://unifoundry.com/pub/unifont/unifont-15.0.01/unifont-15.0.01.tar.gz
+	source = https://unifoundry.com/pub/unifont/unifont-15.0.01/unifont-15.0.01.tar.gz.sig
+	validpgpkeys = 95D2E9AB8740D8046387FD151A09227B1F435A33
+	sha256sums = 7d11a924bf3c63ea7fdf2da2b96d6d4986435bedfd1e6816c8ac2e6db47634d5
+	sha256sums = SKIP
+
+pkgname = pcf-unifont
+	pkgdesc = A free bitmap font with wide Unicode support (PCF version)
+
+pkgname = psf-unifont
+	pkgdesc = A free bitmap font with wide Unicode support (PSF version)
+
+pkgname = hex-unifont
+	pkgdesc = A free bitmap font with wide Unicode support (hex version)
+
+pkgname = unifont-utils
+	pkgdesc = A free bitmap font with wide Unicode support - utilities
+	arch = x86_64
+	depends = perl
+	optdepends = perl-wx: for the unifont-viewer utility
+	optdepends = perl-gd: for the unihex2png and unipng2hex utilities

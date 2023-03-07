@@ -1,0 +1,8 @@
+autowaf/
+raul/
+pkg/
+src/
+raul-git-*.pkg.tar.xz
+raul-git-*.pkg.tar.zst
+raul-git-*.src.tar.xz
+.AURINFO

@@ -1,0 +1,23 @@
+pkgbase = qmmp-plugin-youtube
+	pkgdesc = Plugin for Qt-based Multimedia Player (Qmmp) to search and play musics directly from YouTube
+	pkgver = 0.3.2
+	pkgrel = 3
+	url = https://github.com/rigon/qmmp-plugin-youtube
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = qt5-tools
+	makedepends = qt5-base
+	makedepends = make
+	makedepends = gcc
+	makedepends = fakeroot
+	depends = qmmp
+	depends = python>=3.6
+	depends = youtube-dl
+	depends = qjson
+	depends = pythonqt>=3.1-2
+	source = https://github.com/rigon/qmmp-plugin-youtube/archive/v0.3.2.tar.gz
+	md5sums = 3fffbdf110c847942f7ce05fe373e57f
+
+pkgname = qmmp-plugin-youtube
+

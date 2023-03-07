@@ -1,0 +1,19 @@
+pkgbase = libretro-beetle-wswan-git
+	pkgdesc = WonderSwan core
+	pkgver = r713.79e8d48
+	pkgrel = 1
+	url = https://github.com/libretro/beetle-wswan-libretro
+	arch = x86_64
+	groups = libretro-unstable
+	license = GPL2
+	makedepends = git
+	depends = libretro-core-info
+	provides = libretro-beetle-wswan
+	provides = libretro-mednafen-wswan-git
+	conflicts = libretro-beetle-wswan
+	conflicts = libretro-mednafen-wswan-git
+	source = libretro-beetle-wswan::git+https://github.com/libretro/beetle-wswan-libretro.git
+	sha256sums = SKIP
+
+pkgname = libretro-beetle-wswan-git
+

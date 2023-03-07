@@ -1,0 +1,15 @@
+pkgbase = json-fortran-git
+	pkgdesc = A Fortran 2008 JSON API
+	pkgver = r674.b37fb998
+	pkgrel = 1
+	url = https://github.com/jacobwilliams/json-fortran
+	arch = any
+	license = GPL
+	makedepends = git
+	makedepends = cmake
+	depends = gcc-fortran
+	source = git://github.com/jacobwilliams/json-fortran.git
+	md5sums = SKIP
+
+pkgname = json-fortran-git
+

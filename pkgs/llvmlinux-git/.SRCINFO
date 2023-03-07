@@ -1,0 +1,30 @@
+pkgbase = llvmlinux-git
+	pkgdesc = The Linux Kernel built with (native) LLVM/Clang
+	pkgver = 4.3.rc3.r42.g3225031
+	pkgrel = 1
+	url = http://llvm.linuxfoundation.org/index.php/Main_Page
+	install = llvmlinux-git.install
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = git
+	makedepends = quilt
+	makedepends = llvm
+	makedepends = clang
+	depends = coreutils
+	depends = linux-firmware
+	depends = mkinitcpio
+	optdepends = crda: to set the correct wireless channels of your country
+	options = !strip
+	backup = etc/mkinitcpio.d/llvmlinux-git.preset
+	source = llvmlinux::git://git.linuxfoundation.org/llvmlinux.git
+	source = kernel::git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+	source = https://projects.archlinux.org/svntogit/packages.git/snapshot/packages-packages/linux.tar.gz
+	source = llvmlinux-git.preset
+	md5sums = SKIP
+	md5sums = SKIP
+	md5sums = 9a24944400fadce1f73539b521366c39
+	md5sums = 951a65b16527d6f9058bcde1ec2ec158
+
+pkgname = llvmlinux-git
+

@@ -1,0 +1,25 @@
+pkgbase = libbitcoin-database
+	pkgdesc = Bitcoin High Performance Blockchain Database
+	pkgver = 3.5.0
+	pkgrel = 2
+	url = https://github.com/libbitcoin/libbitcoin-database
+	arch = aarch64
+	arch = x86_64
+	groups = libbitcoin
+	license = AGPL3
+	makedepends = autoconf
+	makedepends = automake
+	makedepends = gcc
+	makedepends = libtool
+	makedepends = m4
+	makedepends = make
+	makedepends = pkg-config
+	depends = boost
+	depends = boost-libs
+	depends = libbitcoin-system
+	depends = libsecp256k1
+	source = libbitcoin-database-3.5.0.tar.gz::https://codeload.github.com/libbitcoin/libbitcoin-database/tar.gz/v3.5.0
+	sha256sums = 376ab5abd8d7734a8b678030b9e997c4b1922e422f6e0a185d7daa3eb251db93
+
+pkgname = libbitcoin-database
+

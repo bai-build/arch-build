@@ -1,0 +1,16 @@
+pkgbase = xbelld
+	pkgdesc = X daemon that performs an action every time the bell is rung
+	pkgver = 0.3.3
+	pkgrel = 6
+	url = https://gitlab.com/gi1242/xbelld
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	depends = xorg-server
+	depends = alsa-lib
+	source = git+https://gitlab.com/gi1242/xbelld.git#commit=8d79553d
+	md5sums = SKIP
+
+pkgname = xbelld
+

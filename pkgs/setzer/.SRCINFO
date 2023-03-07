@@ -1,0 +1,25 @@
+pkgbase = setzer
+	pkgdesc = LaTeX editor written in Python with Gtk
+	pkgver = 0.4.8
+	pkgrel = 1
+	url = https://github.com/cvfosammmm/setzer
+	arch = any
+	license = GPL3
+	makedepends = appstream
+	makedepends = meson
+	depends = gspell
+	depends = gtk3
+	depends = gtksourceview4
+	depends = poppler-glib
+	depends = python-cairo
+	depends = python-gobject
+	depends = python-pdfminer
+	depends = python-pexpect
+	depends = python-pyxdg
+	depends = texlive-core
+	depends = webkit2gtk
+	depends = xdg-utils
+	source = setzer-0.4.8.tar.gz::https://github.com/cvfosammmm/setzer/archive/v0.4.8/0.4.8.tar.gz
+	sha256sums = 4e347f538a5bf9d0be73de3b91fa79d3601c94ba1faf74f191f1904ec67fa2cf
+
+pkgname = setzer

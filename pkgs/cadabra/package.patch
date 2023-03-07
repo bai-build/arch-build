@@ -1,0 +1,96 @@
+diff -aur -bZwB cadabra-1.33.old/gui/Makefile.in cadabra-1.33/gui/Makefile.in
+--- cadabra-1.33.old/gui/Makefile.in	2016-03-03 07:02:23.193184730 -0500
++++ cadabra-1.33/gui/Makefile.in	2016-03-03 07:02:28.039825701 -0500
+@@ -14,7 +14,7 @@
+ TIMESTAMP = -D"RELEASE=\"${RELEASE}\"" -D"DATETIME=\"`date | sed -e 's/  / /'`\"" -DHOSTNAME=\"`hostname`\"
+ 
+ %.o: %.cc
+-	@CXX@ -Wall @CFLAGS@ -D"DESTDIR=\"@prefix@\"" ${TIMESTAMP} ${CFLAGS} -c -o $@ $<
++	@CXX@ -Wall @CXXFLAGS@ -D"DESTDIR=\"@prefix@\"" ${TIMESTAMP} ${CFLAGS} -c -o $@ $<
+ 
+ main.o: $(OBJS) Makefile
+ 
+@@ -50,7 +50,7 @@
+ .depend:
+ 	rm -f .depend
+ 	for i in ${SRCS}; \
+-		do    g++ -E -MM -MT `echo $$i | sed -e 's/\.\///' -e 's/\.cc/\.o/'` ${CFLAGS} $$i >> .depend; \
++		do    @CXX@ @CXXFLAGS@ -E -MM -MT `echo $$i | sed -e 's/\.\///' -e 's/\.cc/\.o/'` ${CFLAGS} $$i >> .depend; \
+ 		done
+ 
+ include .depend
+diff -aur -bZwB cadabra-1.33.old/src/Makefile.in cadabra-1.33/src/Makefile.in
+--- cadabra-1.33.old/src/Makefile.in	2016-03-03 07:02:23.196518046 -0500
++++ cadabra-1.33/src/Makefile.in	2016-03-03 07:02:28.039825701 -0500
+@@ -27,7 +27,7 @@
+ 
+ 
+ %.o: %.cc
+-	@CXX@ ${MCFLAGS} ${TIMESTAMP} -c -o $@ $<
++	@CXX@ @CXXFLAGS@ ${MCFLAGS} ${TIMESTAMP} -c -o $@ $<
+ 
+ modules/xperm.o: modules/xperm.c
+ 	@CC@ @NESTED@ ${MCFLAGS} ${TIMESTAMP} -c -o $@ $<
+@@ -53,7 +53,7 @@
+ 
+ cadabra_static: $(OBJS) $(MOBJS)
+ 	rm -f main.o
+-	@CXX@ -Wall -g ${MCFLAGS} ${TIMESTAMP} -DSTATICBUILD -c -o main.o main.cc
++	@CXX@ @CXXFLAGS@ -Wall -g ${MCFLAGS} ${TIMESTAMP} -DSTATICBUILD -c -o main.o main.cc
+ ifeq ($(strip $(MACTEST)),)
+ 	@CXX@ -o cadabra -static $+ ${LDFLAGS} `pkg-config modglue --libs` -lmodglue \
+                              -lgmpxx -lgmp -lpcrecpp -lpcre \
+@@ -170,7 +170,7 @@
+ .depend:
+ 	rm -f .depend
+ 	for i in ${SRCS}; \
+-		do    @CXX@ ${MCFLAGS} -E -MM -MT `echo $$i | sed -e 's/\.\///' -e 's/\.cc/\.o/'` ${CFLAGS} $$i >> .depend; \
++		do    @CXX@ @CXXFLAGS@ ${MCFLAGS} -E -MM -MT `echo $$i | sed -e 's/\.\///' -e 's/\.cc/\.o/'` ${CFLAGS} $$i >> .depend; \
+ 		done
+ 
+ include .depend
+diff -aur -bZwB cadabra-1.33.old/src/manipulator.cc cadabra-1.33/src/manipulator.cc
+--- cadabra-1.33.old/src/manipulator.cc	2016-03-03 07:02:23.196518046 -0500
++++ cadabra-1.33/src/manipulator.cc	2016-03-03 07:02:28.039825701 -0500
+@@ -283,7 +283,7 @@
+ 	if(getline_precut_buffer.size()==0 || getline_was_eof) {
+ 		std::string input_now;
+ 		getline_was_eof=false;
+-		if(std::getline(str, input_now)==false)
++		if(std::getline(str, input_now).fail())
+ 			return false;
+ 		getline_precut_buffer+=input_now;
+ 		}
+diff -aur -bZwB cadabra-1.33.old/src/manipulator.hh cadabra-1.33/src/manipulator.hh
+--- cadabra-1.33.old/src/manipulator.hh	2016-03-03 07:02:23.196518046 -0500
++++ cadabra-1.33/src/manipulator.hh	2016-03-03 07:03:56.486018858 -0500
+@@ -30,7 +30,7 @@
+ #include <fstream>
+ #include <utility>
+ #include <stack>
+-#include <sigc++/object.h>
++#include <sigc++/sigc++.h>
+ #include <modglue/pipe.hh>
+ 
+ // These are initiated in main.cc
+diff -aur -bZwB cadabra-1.33.old/src/modules/substitute.cc cadabra-1.33/src/modules/substitute.cc
+--- cadabra-1.33.old/src/modules/substitute.cc	2016-03-03 07:02:23.196518046 -0500
++++ cadabra-1.33/src/modules/substitute.cc	2016-03-03 07:02:28.039825701 -0500
+@@ -876,7 +876,7 @@
+ 					}
+ 				std::string nm=*to_->name + fnd->first.begin()->name->substr(from_->name->size());
+ 				nset_t::iterator to_it=name_set.insert(nm).first;
+-				to_rename.insert(std::make_pair(to_it, fnd->second));
++				to_rename.insert(index_map_t::value_type((const exptree)to_it, fnd->second));
+ 				}
+ 			++fnd;
+ 			}
+@@ -885,7 +885,7 @@
+ 		std::pair<index_map_t::iterator, index_map_t::iterator> eq=ind_free.equal_range(exptree(from_));
+ 		index_map_t::iterator fnd=eq.first;
+ 		while(fnd!=eq.second) {
+-			to_rename.insert(std::make_pair(to_->name, fnd->second));
++			to_rename.insert(index_map_t::value_type((const exptree)to_->name, fnd->second));
+ 			++fnd;
+ 			}
+ 		}

@@ -1,0 +1,23 @@
+pkgbase = hyperd
+	pkgdesc = Hypervisor-agnostic Docker Runtime
+	pkgver = 1.1.0
+	pkgrel = 1
+	url = https://www.hypercontainer.io/
+	arch = i686
+	arch = x86_64
+	license = Apache
+	makedepends = device-mapper
+	makedepends = sqlite3
+	makedepends = libvirt
+	makedepends = go
+	depends = libvirt
+	optdepends = hyperstart: boot files for hyperd instances
+	options = !strip
+	options = !emptydirs
+	source = hyperd-1.1.0.tar.gz::https://github.com/hyperhq/hyperd/archive/v1.1.0.tar.gz
+	source = btrfs-progs-4.5.diff
+	sha256sums = 98b6338350450815e99955cb75862a6ff824c8845e198260085cfccde97b3f66
+	sha256sums = 12fe84f2711fdcb35811765d5efb117e947a893c11fdc2e6f1e060e63917ee9d
+
+pkgname = hyperd
+

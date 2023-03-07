@@ -1,0 +1,21 @@
+pkgbase = imagewriter-git
+	pkgdesc = A graphical utility for writing raw disk images & hybrid ISOs to USB keys. QT5 GIT release.
+	pkgver = 20201109
+	pkgrel = 1
+	url = https://github.com/openSUSE/imagewriter
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = git
+	depends = desktop-file-utils
+	depends = hicolor-icon-theme
+	depends = qt5-base
+	depends = udisks2
+	optdepends = xdg-su: needed for non-KDE users
+	optdepends = kdesu: needed for KDE
+	conflicts = imagewriter
+	source = git+https://github.com/frispete/imagewriter
+	sha256sums = SKIP
+
+pkgname = imagewriter-git
+

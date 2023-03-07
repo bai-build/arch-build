@@ -1,0 +1,95 @@
+pkgbase = linux-libre-lts-grsec
+	pkgver = 3.14.51_gnu.201508181951
+	pkgrel = 2
+	url = https://grsecurity.net/
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = xmlto
+	makedepends = docbook-xsl
+	makedepends = kmod
+	makedepends = inetutils
+	makedepends = bc
+	options = !strip
+	source = http://linux-libre.fsfla.org/pub/linux-libre/releases/3.14-gnu/linux-libre-3.14-gnu.tar.xz
+	source = http://linux-libre.fsfla.org/pub/linux-libre/releases/3.14-gnu/linux-libre-3.14-gnu.tar.xz.sign
+	source = http://linux-libre.fsfla.org/pub/linux-libre/releases/3.14.51-gnu/patch-3.14-gnu-3.14.51-gnu.xz
+	source = http://linux-libre.fsfla.org/pub/linux-libre/releases/3.14.51-gnu/patch-3.14-gnu-3.14.51-gnu.xz.sign
+	source = https://repo.parabola.nu/other/grsecurity-libre/stable/grsecurity-libre-3.1-3.14.51-201508181951.patch
+	source = https://repo.parabola.nu/other/grsecurity-libre/stable/grsecurity-libre-3.1-3.14.51-201508181951.patch.sig
+	source = https://repo.parabola.nu/other/linux-libre/logos/logo_linux_clut224.ppm
+	source = https://repo.parabola.nu/other/linux-libre/logos/logo_linux_clut224.ppm.sig
+	source = https://repo.parabola.nu/other/linux-libre/logos/logo_linux_mono.pbm
+	source = https://repo.parabola.nu/other/linux-libre/logos/logo_linux_mono.pbm.sig
+	source = https://repo.parabola.nu/other/linux-libre/logos/logo_linux_vga16.ppm
+	source = https://repo.parabola.nu/other/linux-libre/logos/logo_linux_vga16.ppm.sig
+	source = config.i686
+	source = config.x86_64
+	source = linux.preset
+	source = change-default-console-loglevel.patch
+	source = 0001-Bluetooth-allocate-static-minor-for-vhci.patch
+	source = 0002-module-allow-multiple-calls-to-MODULE_DEVICE_TABLE-p.patch
+	source = 0003-module-remove-MODULE_GENERIC_TABLE.patch
+	source = 0006-genksyms-fix-typeof-handling.patch
+	source = gcc5_buildfixes.diff
+	source = 0001-drm-radeon-Make-the-driver-load-without-the-firmwares.patch
+	sha256sums = 477555c709b9407fe37dbd70d3331ff9dde1f9d874aba2741f138d07ae6f281b
+	sha256sums = SKIP
+	sha256sums = b12b75dfeac07e8bfe7c76bc7b4d9012dfbfc25201b7cdf9edf31466ee5a0fac
+	sha256sums = SKIP
+	sha256sums = 8b28ae2f46283274dbd6fd77bba36e6a18be633887125e2077ea269587b0b0b7
+	sha256sums = SKIP
+	sha256sums = bfd4a7f61febe63c880534dcb7c31c5b932dde6acf991810b41a939a93535494
+	sha256sums = SKIP
+	sha256sums = 13bd7a8d9ed6b6bc971e4cd162262c5a20448a83796af39ce394d827b0e5de74
+	sha256sums = SKIP
+	sha256sums = 6de8a8319271809ffdb072b68d53d155eef12438e6d04ff06a5a4db82c34fa8a
+	sha256sums = SKIP
+	sha256sums = 897c449ef482e9acb38e4b502f8bc24273de9d17c8e5064dc525e68735d89f45
+	sha256sums = 1c2c35f21a35c76ee4107d3990f142533d2d88bdcc5692dc2dcfc95b2502ab20
+	sha256sums = f0d90e756f14533ee67afda280500511a62465b4f76adcc5effa95a40045179c
+	sha256sums = faced4eb4c47c4eb1a9ee8a5bf8a7c4b49d6b4d78efbe426e410730e6267d182
+	sha256sums = 6d72e14552df59e6310f16c176806c408355951724cd5b48a47bf01591b8be02
+	sha256sums = 52dec83a8805a8642d74d764494acda863e0aa23e3d249e80d4b457e20a3fd29
+	sha256sums = 65d58f63215ee3c5f9c4fc6bce36fc5311a6c7dbdbe1ad29de40647b47ff9c0d
+	sha256sums = cf2e7a2d00787f754028e7459688c2755a406e632ce48b60952fa4ff7ed6f4b7
+	sha256sums = 9c89039a0f876888fda3be6f574bca5a120e3587d8342747bbc0723b0b4cde7a
+	sha256sums = 38cf6bdf70dc070ff0b785937d99347bb91f8531ea2bcca50283c8923a184c6d
+
+pkgname = linux-libre-lts-grsec
+	pkgdesc = The Linux-libre-lts-grsec kernel and modules - stable longtime supported kernel package suitable for servers with grsecurity/PaX patches
+	install = linux.install
+	depends = coreutils
+	depends = linux-libre-firmware
+	depends = kmod
+	depends = grsec-common
+	depends = mkinitcpio>=0.7
+	optdepends = crda: to set the correct wireless channels of your country
+	optdepends = gradm: to configure and enable Role Based Access Control (RBAC)
+	optdepends = paxd-libre: to enable PaX exploit mitigations and apply exceptions automatically
+	provides = linux-grsec-lts=3.14.51.201508181951
+	conflicts = kernel26-grsec-lts
+	conflicts = kernel26-libre-lts-grsec
+	replaces = linux-grsec-lts
+	replaces = kernel26-grsec-lts
+	replaces = kernel26-libre-lts-grsec
+	backup = etc/mkinitcpio.d/linux-libre-lts-grsec.preset
+
+pkgname = linux-libre-lts-grsec-headers
+	pkgdesc = Header files and scripts for building modules for Linux-libre-lts-grsec kernel
+	provides = linux-grsec-lts-headers=3.14.51.201508181951
+	conflicts = kernel26-grsec-lts-headers
+	conflicts = kernel26-libre-lts-grsec-headers
+	replaces = linux-grsec-lts-headers
+	replaces = kernel26-grsec-lts-headers
+	replaces = kernel26-libre-lts-grsec-headers
+
+pkgname = linux-libre-lts-grsec-docs
+	pkgdesc = Kernel hackers manual - HTML documentation that comes with the Linux-libre-lts-grsec kernel
+	provides = linux-grsec-lts-docs=3.14.51.201508181951
+	conflicts = kernel26-grsec-lts-docs
+	conflicts = kernel26-libre-lts-grsec-docs
+	replaces = linux-grsec-lts-docs
+	replaces = kernel26-grsec-lts-docs
+	replaces = kernel26-libre-lts-grsec-docs
+

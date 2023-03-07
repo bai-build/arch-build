@@ -1,0 +1,15 @@
+pkgbase = libiwpm
+	pkgdesc = OpenFabrics Alliance userspace service for iWarp drivers to claim TCP ports
+	pkgver = 1.0.5
+	pkgrel = 1
+	url = https://www.openfabrics.org/downloads/libiwpm/README.html
+	arch = x86_64
+	arch = i686
+	license = GPL2
+	license = custom:"Open Fabrics Alliance BSD"
+	depends = libnl
+	source = https://www.openfabrics.org/downloads/libiwpm/libiwpm-1.0.5.tar.gz
+	sha256sums = 0771a6de238edccb84a02559664f4fa58ea0e2c87ad1c3174538d84b48691227
+
+pkgname = libiwpm
+

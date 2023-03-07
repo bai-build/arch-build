@@ -1,0 +1,20 @@
+pkgbase = f1spirit
+	pkgdesc = Classic MSX race game remade by Brain Games
+	pkgver = 0.rc9.1615
+	pkgrel = 5
+	url = http://www.braingames.getput.com/f1spirit
+	arch = i686
+	arch = x86_64
+	license = unknown
+	depends = sdl_image
+	depends = sdl_mixer
+	depends = sdl_net
+	depends = glu
+	depends = curl
+	source = http://braingames.jorito.net/f1spirit/f1spirit.src_0.rc9-1615.tgz
+	source = f1spirit.patch
+	sha256sums = fc1778dcec68ccd31b9da893abee67e64a7931a34c75a63f8563355b810acbd7
+	sha256sums = 2859d16ab7bcb9c033d80436abd067928dec712865b6dd7beb47bc7da242ca81
+
+pkgname = f1spirit
+

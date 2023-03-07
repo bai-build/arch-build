@@ -1,0 +1,5 @@
+src
+pkg
+osquery-git
+*pkg.tar.xz
+tags

@@ -1,0 +1,21 @@
+pkgbase = autolatex
+	pkgdesc = Automate generation of large scale LaTeX projects.
+	pkgver = 39.1
+	pkgrel = 3
+	url = http://www.arakhne.org/autolatex/
+	arch = any
+	license = GPL
+	depends = glib-perl
+	depends = gtk2-perl
+	depends = python
+	depends = dconf
+	depends = perl-archive-zip
+	depends = perl-locale-gettext
+	depends = perl-config-simple
+	options = !emptydirs
+	backup = etc/autolatex/config
+	source = https://codeload.github.com/gallandarakhneorg/autolatex/zip/autolatiex-39.1
+	md5sums = bee0b119abaadf9342604b4d9b137305
+
+pkgname = autolatex
+

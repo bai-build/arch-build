@@ -1,0 +1,34 @@
+pkgbase = mate-ayatana-indicator-applet
+	pkgdesc = MATE panel Ayatana indicator applet
+	pkgver = 1.24.0
+	pkgrel = 1
+	url = http://www.mate-desktop.org/
+	arch = i686
+	arch = x86_64
+	license = LGPL2.1
+	license = GPL3
+	makedepends = intltool
+	makedepends = gtk3
+	makedepends = ayatana-ido
+	makedepends = libayatana-indicator
+	makedepends = libtool
+	makedepends = libx11
+	makedepends = libxml2
+	makedepends = mate-common
+	depends = mate-panel
+	depends = ayatana-ido
+	depends = libayatana-indicator
+	optdepends = ayatana-indicator-application
+	optdepends = ayatana-indicator-power
+	optdepends = ayatana-indicator-datetime
+	optdepends = ayatana-indicator-session
+	optdepends = ayatana-indicator-messages
+	optdepends = ayatana-indicator-keyboard
+	provides = mate-indicator-applet
+	conflicts = mate-indicator-applet
+	options = !emptydirs
+	source = https://github.com/mate-desktop/mate-indicator-applet/archive/v1.24.0.tar.gz
+	md5sums = 7aa54e5d2174193f935146e91286ca23
+
+pkgname = mate-ayatana-indicator-applet
+

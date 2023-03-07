@@ -1,0 +1,23 @@
+pkgbase = polycode
+	pkgdesc = A C++ and Lua framework for building interactive applications.
+	pkgver = 0.8.4
+	pkgrel = 2
+	url = http://polycode.org/
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = cmake
+	makedepends = python2-ply
+	makedepends = ninja
+	makedepends = doxygen
+	depends = lua52
+	depends = sdl
+	depends = glu
+	depends = openal
+	source = http://polycode.org/download/content/Polycode-0.8.4.zip
+	source = polycode.desktop
+	md5sums = e42120831f8b84a0d374d4084c462b43
+	md5sums = 1e8bd5317383fb390c7cf017cfc3fb11
+
+pkgname = polycode
+

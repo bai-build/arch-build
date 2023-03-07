@@ -1,0 +1,23 @@
+pkgbase = yacreader-nopdf
+	pkgdesc = A comic reader for cross-platform reading and managing your digital comic collection.
+	pkgver = 9.5.0
+	pkgrel = 1
+	url = http://www.yacreader.com
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	depends = qt5-base
+	depends = qt5-multimedia
+	depends = qt5-script
+	depends = qt5-quickcontrols
+	depends = hicolor-icon-theme
+	depends = glu
+	depends = libunarr
+	optdepends = qt5-imageformats: Support for extra image formats
+	optdepends = qrencode: YACReaderLibrary server info qr codes
+	conflicts = yacreader-bin
+	source = https://github.com/YACReader/yacreader/releases/download/9.5.0/yacreader-9.5.0-src.tar.xz
+	sha256sums = a6f25edb38c5438301b1364464903995d45bae4532a5ebc8d6586f39cdf16533
+
+pkgname = yacreader-nopdf
+

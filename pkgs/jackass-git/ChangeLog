@@ -1,0 +1,16 @@
+2017-06-15 Christopher Arndt <aur -at- chrisarndt -dot- de>
+
+	* 1.0.r13.adcd7eb-4
+	remove gcc-libs-multilib dependency
+
+2017-02-04 Christopher Arndt <aur -at- chrisarndt -dot- de>
+
+	* 1.0.r13.adcd7eb-3
+	use steinberg-vst36 AUR package instead of including VST3 SDK in sources
+
+2015-07-12 Christopher Arndt <aur -at- chrisarndt -dot- de>
+
+	* 1.0.r13.adcd7eb-2:
+	add VST3 SDK to sources, since it can be downloaded from Steinberg's
+	website now without login
+	remove 'unzip' from makedepends accordingly

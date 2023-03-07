@@ -1,0 +1,16 @@
+pkgbase = typewriter
+	pkgdesc = Minimal writer with autosave
+	pkgver = 0.4.3
+	pkgrel = 1
+	url = https://github.com/manexim/typewriter
+	arch = x86_64
+	license = GPL3
+	makedepends = meson
+	makedepends = vala
+	depends = granite
+	depends = gtksourceview3
+	source = typewriter-0.4.3.tar.gz::https://github.com/manexim/typewriter/archive/0.4.3.tar.gz
+	sha256sums = 32749d2441bc54a441ee4eba2a9cf77ee30ef19dcb6ba49400f11450926b8807
+
+pkgname = typewriter
+

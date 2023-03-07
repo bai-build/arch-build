@@ -1,0 +1,14 @@
+pkgbase = xsimd
+	pkgdesc = QuantStack tools library - Multi-dimensional arrays with broadcasting and lazy computing.
+	pkgver = 7.4.10
+	pkgrel = 1
+	url = https://github.com/QuantStack/xsimd
+	arch = any
+	license = BSD-3-Clause
+	makedepends = cmake
+	makedepends = gtest
+	source = xsimd-7.4.10.tar.gz::https://github.com/QuantStack/xsimd/archive/7.4.10.tar.gz
+	sha512sums = 830d983bb8b671043281ae92e789c40831f99f689a4b973ce20510f126bcf6df664e417569d1f654e843f2d420b55325d286ce095da820b40edbf2bce09b6ff3
+
+pkgname = xsimd
+

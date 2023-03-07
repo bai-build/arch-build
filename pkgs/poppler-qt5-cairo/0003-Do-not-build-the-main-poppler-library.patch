@@ -1,0 +1,41 @@
+From 83b36ebe1038ea951308093d6bd3e2c4d42960d7 Mon Sep 17 00:00:00 2001
+From: Kevin Slagle <kjslag@gmail.com>
+Date: Sat, 31 Mar 2018 18:27:27 -0400
+Subject: [PATCH 3/3] Do not build the main poppler library
+
+---
+ CMakeLists.txt | 18 ------------------
+ 1 file changed, 18 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index eecd41fb..c300e69f 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -476,24 +476,6 @@ if(TIFF_FOUND)
+   set(poppler_LIBS ${poppler_LIBS} ${TIFF_LIBRARIES})
+ endif()
+ 
+-if(MSVC)
+-add_definitions(-D_CRT_SECURE_NO_WARNINGS)
+-set(CMAKE_CXX_FLAGS "/Zc:wchar_t- ${CMAKE_CXX_FLAGS}")
+-add_library(poppler STATIC ${poppler_SRCS})
+-else()
+-add_library(poppler ${poppler_SRCS})
+-endif()
+-set_target_properties(poppler PROPERTIES VERSION 74.0.0 SOVERSION 74)
+-if(MINGW)
+-    get_target_property(POPPLER_SOVERSION poppler SOVERSION)
+-    set_target_properties(poppler PROPERTIES SUFFIX "-${POPPLER_SOVERSION}${CMAKE_SHARED_LIBRARY_SUFFIX}")
+-endif()
+-target_link_libraries(poppler LINK_PRIVATE ${poppler_LIBS})
+-if(CMAKE_USE_PTHREADS_INIT)
+-   target_link_libraries(poppler LINK_PRIVATE Threads::Threads)
+-endif()
+-install(TARGETS poppler RUNTIME DESTINATION bin LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR} ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR})
+-
+ if(ENABLE_XPDF_HEADERS)
+   install(FILES
+     poppler/Annot.h
+-- 
+2.16.2
+

@@ -1,0 +1,22 @@
+pkgbase = textpieces
+	pkgdesc = Transform text without using random websites
+	pkgver = 3.4.1
+	pkgrel = 2
+	url = https://github.com/liferooter/textpieces
+	arch = x86_64
+	arch = aarch64
+	license = GPL3
+	checkdepends = appstream-glib
+	makedepends = blueprint-compiler
+	makedepends = meson
+	makedepends = vala
+	depends = libadwaita
+	depends = libportal-gtk4
+	depends = gtksourceview5
+	depends = json-glib
+	depends = libgee
+	depends = python-pyaml
+	source = textpieces-3.4.1.tar.gz::https://github.com/liferooter/textpieces/archive/v3.4.1.tar.gz
+	b2sums = 8bba17f548325e274f3d346c759b7350c359f80ec589147fa127656dc262df3e1b8a177f68980d1e117b80bd38ed3ac27b0cb669ae580b78c33a1c184b0ccb8c
+
+pkgname = textpieces

@@ -1,0 +1,15 @@
+pkgbase = rott-svn
+	pkgdesc = "Rise of the Triad" is a high quality first-person perspective 3D action game (development version)
+	pkgver = 1.1.2.r287
+	pkgrel = 1
+	url = http://icculus.org/rott/
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = svn
+	depends = sdl_mixer
+	source = rott::svn://svn.icculus.org/rott/trunk
+	sha256sums = SKIP
+
+pkgname = rott-svn
+

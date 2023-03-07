@@ -1,0 +1,44 @@
+pkgbase = linux-zen-letsnote
+	pkgdesc = Linux ZEN patched for Let's note
+	pkgver = 5.9.11.zen2
+	pkgrel = 1
+	url = https://github.com/zen-kernel/zen-kernel/commits/v5.9.11-zen2
+	arch = x86_64
+	license = GPL2
+	makedepends = bc
+	makedepends = kmod
+	makedepends = libelf
+	makedepends = pahole
+	makedepends = xmlto
+	makedepends = python-sphinx
+	makedepends = python-sphinx_rtd_theme
+	makedepends = graphviz
+	makedepends = imagemagick
+	makedepends = git
+	options = !strip
+	source = zen-kernel::git+https://github.com/zen-kernel/zen-kernel#tag=v5.9.11-zen2
+	source = config
+	source = sphinx-workaround.patch
+	source = lets-note.patch
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = linux-zen-letsnote
+	pkgdesc = The Linux ZEN patched for Let's note kernel and modules
+	depends = coreutils
+	depends = kmod
+	depends = initramfs
+	optdepends = crda: to set the correct wireless channels of your country
+	optdepends = linux-firmware: firmware images needed for some devices
+	provides = VIRTUALBOX-GUEST-MODULES
+	provides = WIREGUARD-MODULE
+	replaces = 
+
+pkgname = linux-zen-letsnote-headers
+	pkgdesc = Headers and scripts for building modules for the Linux ZEN patched for Let's note kernel
+
+pkgname = linux-zen-letsnote-docs
+	pkgdesc = Documentation for the Linux ZEN patched for Let's note kernel
+

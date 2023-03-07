@@ -1,0 +1,20 @@
+pkgbase = mingw-w64-x264
+	pkgdesc = Open Source H264/AVC video encoder (mingw-w64)
+	pkgver = 0.164.r3095.baee400
+	pkgrel = 1
+	epoch = 3
+	url = http://www.videolan.org/developers/x264.html
+	arch = any
+	license = GPL
+	makedepends = mingw-w64-gcc
+	makedepends = git
+	makedepends = nasm
+	depends = mingw-w64-crt
+	depends = mingw-w64-l-smash
+	options = !strip
+	options = !buildflags
+	options = staticlibs
+	source = git+https://code.videolan.org/videolan/x264.git#commit=baee400fa9ced6f5481a728138fed6e867b0ff7f
+	sha256sums = SKIP
+
+pkgname = mingw-w64-x264

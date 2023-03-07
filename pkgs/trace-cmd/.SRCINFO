@@ -1,0 +1,24 @@
+pkgbase = trace-cmd
+	pkgdesc = Userspace tooling for the Linux kernel Ftrace internal tracer
+	pkgver = 2.9.1
+	pkgrel = 1
+	url = https://git.kernel.org/pub/scm/utils/trace-cmd/trace-cmd.git
+	arch = x86_64
+	arch = aarch64
+	license = GPL2
+	license = LGPL2.1
+	makedepends = python
+	makedepends = swig
+	makedepends = asciidoc
+	depends = audit
+	depends = glibc
+	optdepends = python: for Python plugins
+	source = https://git.kernel.org/pub/scm/utils/trace-cmd/trace-cmd.git/snapshot/trace-cmd-v2.9.1.tar.gz
+	source = trace-cmd-2.9-make_install.patch
+	sha512sums = 186bfdd8ff1e88e9e6d3ae87b123f049892deaaa8d6a42944b6f8abee6b828946b88774029aa96daf4423a3dfc01b42835508f44f636dd02579ef9a8ef425131
+	sha512sums = c9321b2b885d88557a057d7064690274799ab1d67a8babb78b1c54c4d81546fdea7313286cfd5fb9efbbcf87cf8394dcb17202ac88434a351aa652e7109e1db6
+	b2sums = f7aa2f12b2c90f35390857ed6f5818b74c42be36ce70835d86410f9f4931d27410123baaad007fa2795c1ba1f5bafc739db620f467ccc48021d774ee7be8a68d
+	b2sums = 8a644be295417b1fd5fb807285a7176ef0ceb737352bbb4c7a88441f9b955a90befe974d890a58f2b8fb6de8a68a1b3c5d207f057c4b08db79caf6e97fa66f50
+
+pkgname = trace-cmd
+

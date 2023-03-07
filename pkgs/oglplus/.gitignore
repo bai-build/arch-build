@@ -1,0 +1,5 @@
+pkg/
+src/
+oglplus-*
+*.log
+*.tar.gz

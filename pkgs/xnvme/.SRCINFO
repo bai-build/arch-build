@@ -1,0 +1,23 @@
+pkgbase = xnvme
+	pkgdesc = Cross-platform libraries and tools for NVMe devices
+	pkgver = 0.6.0
+	pkgrel = 1
+	url = https://xnvme.io/
+	arch = x86_64
+	license = APACHE
+	makedepends = meson
+	makedepends = ninja
+	makedepends = cunit
+	makedepends = ncurses
+	depends = python-pyelftools
+	depends = libaio
+	depends = libutil-linux
+	depends = numactl
+	depends = python3
+	depends = liburing
+	depends = openssl
+	depends = nasm
+	source = https://github.com/OpenMPDK/xNVMe/releases/download/v0.6.0/xnvme-0.6.0.tar.gz
+	md5sums = f44d411100474f3bc7b5a1d21a9869e9
+
+pkgname = xnvme

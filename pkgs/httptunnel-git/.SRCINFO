@@ -1,0 +1,16 @@
+pkgbase = httptunnel-git
+	pkgdesc = Creates a bidirectional virtual data path tunnelled in HTTP requests
+	pkgver = 20161001.0395baf
+	pkgrel = 2
+	url = https://github.com/larsbrinkhoff/httptunnel
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = git
+	provides = httptunnel
+	conflicts = httptunnel
+	source = git+https://github.com/larsbrinkhoff/httptunnel
+	sha1sums = SKIP
+
+pkgname = httptunnel-git
+

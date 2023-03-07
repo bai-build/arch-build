@@ -1,0 +1,2 @@
+# this should cover all Canon printers
+SUBSYSTEM=="usb",ATTR{idVendor}=="04a9",MODE="0666",GROUP="users" 

@@ -1,0 +1,29 @@
+pkgbase = xf86-input-evdev1.12
+	pkgdesc = X.org evdev input driver
+	pkgver = 2.10.6
+	pkgrel = 1
+	url = http://xorg.freedesktop.org/
+	arch = i686
+	arch = x86_64
+	license = custom
+	makedepends = xorg-server-devel>=1.12.0
+	makedepends = xorg-server-devel<1.12.99
+	makedepends = resourceproto
+	makedepends = scrnsaverproto
+	makedepends = systemd
+	depends = glibc
+	depends = libsystemd
+	depends = mtdev
+	depends = libevdev
+	provides = xf86-input-evdev=2.10.6
+	conflicts = xorg-server<1.12.0
+	conflicts = xorg-server>=1.12.99
+	conflicts = xf86-input-evdev
+	conflicts = X-ABI-XINPUT_VERSION<16
+	conflicts = X-ABI-XINPUT_VERSION>=17
+	options = !makeflags
+	source = http://xorg.freedesktop.org//releases/individual/driver/xf86-input-evdev-2.10.6.tar.bz2
+	sha256sums = 8726073e81861bc7b2321e76272cbdbd33c7e1a121535a9827977265b9033ec0
+
+pkgname = xf86-input-evdev1.12
+

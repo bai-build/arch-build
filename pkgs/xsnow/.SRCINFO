@@ -1,0 +1,24 @@
+pkgbase = xsnow
+	pkgdesc = Let it snow on your desktop
+	pkgver = 3.6.0
+	pkgrel = 2
+	url = https://www.ratrabbit.nl/ratrabbit/xsnow/
+	arch = x86_64
+	arch = i386
+	arch = armv7h
+	arch = aarch64
+	license = GPL3
+	depends = atk
+	depends = cairo
+	depends = gtk3
+	depends = gsl
+	depends = libx11
+	depends = libxpm
+	depends = libxml2
+	conflicts = xsnow-bin
+	conflicts = xsnow-legacy
+	conflicts = xsnow-comp-patch-git
+	source = https://nav.dl.sourceforge.net/project/xsnow/xsnow-3.6.0.tar.gz
+	sha256sums = 715741f11dd5fd672ddc3c702e802585a31c211aac3d06612e462a6369398215
+
+pkgname = xsnow

@@ -1,0 +1,19 @@
+pkgbase = lm32-elf-binutils
+	pkgdesc = GNU binary utilities for the lm32-elf target.
+	pkgver = 2.32
+	pkgrel = 1
+	url = https://www.gnu.org/software/binutils/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = zlib
+	depends = flex
+	options = !libtool
+	options = !buildflags
+	source = https://ftp.gnu.org/gnu/binutils/binutils-2.32.tar.bz2
+	source = https://ftp.gnu.org/gnu/binutils/binutils-2.32.tar.bz2.sig
+	sha256sums = de38b15c902eb2725eac6af21183a5f34ea4634cb0bcef19612b50e5ed31072d
+	sha256sums = SKIP
+
+pkgname = lm32-elf-binutils
+

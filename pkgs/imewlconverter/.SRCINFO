@@ -1,0 +1,17 @@
+pkgbase = imewlconverter
+	pkgdesc = 一款开源免费的输入法词库转换程序
+	pkgver = 2.9.0.86.gcf86d15
+	pkgrel = 1
+	url = https://github.com/studyzy/imewlconverter
+	arch = x86_64
+	arch = i686
+	license = GPL3
+	makedepends = git
+	makedepends = dotnet-sdk-6.0
+	depends = dotnet-runtime-6.0
+	provides = imewlconverter
+	conflicts = imewlconverter
+	source = git+https://github.com/studyzy/imewlconverter
+	sha256sums = SKIP
+
+pkgname = imewlconverter

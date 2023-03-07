@@ -1,0 +1,20 @@
+pkgbase = flowtime
+	pkgdesc = Get what motivates you done, without losing concentration
+	pkgver = 3.1
+	pkgrel = 1
+	url = https://github.com/Diego-Ivan/Flowtime
+	arch = x86_64
+	arch = aarch64
+	license = GPL3
+	checkdepends = appstream-glib
+	makedepends = git
+	makedepends = meson
+	makedepends = vala
+	depends = gstreamer
+	depends = libadwaita
+	depends = libxml2
+	depends = libgee
+	source = flowtime::git+https://github.com/Diego-Ivan/Flowtime.git#commit=efb540def77b36a5a9fb1f9d6713067fdaa0de9a
+	b2sums = SKIP
+
+pkgname = flowtime

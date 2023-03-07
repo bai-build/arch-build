@@ -1,0 +1,19 @@
+pkgbase = rsibreak-git
+	pkgdesc = Takes care of your health and regularly breaks your work to avoid repetitive strain injury (RSI)
+	pkgver = 0.12.14_r936.g8b4b9e4
+	pkgrel = 1
+	url = https://apps.kde.org/rsibreak/
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	makedepends = extra-cmake-modules-git
+	makedepends = kdoctools-git
+	depends = knotifyconfig-git
+	depends = kidletime-git
+	depends = hicolor-icon-theme
+	provides = rsibreak
+	conflicts = rsibreak
+	source = git+https://github.com/KDE/rsibreak.git
+	sha256sums = SKIP
+
+pkgname = rsibreak-git

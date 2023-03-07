@@ -1,0 +1,12 @@
+pkgbase = pdd
+	pkgdesc = Tiny date, time diff calculator.
+	pkgver = 1.7
+	pkgrel = 1
+	url = https://github.com/jarun/pdd
+	arch = any
+	license = GPL
+	depends = python-dateutil
+	source = https://github.com/jarun/pdd/archive/v1.7.tar.gz
+	sha256sums = a81adcac025b08c7c933f028339c55a67d0da6c81845fe3d18fd4187010a63d4
+
+pkgname = pdd

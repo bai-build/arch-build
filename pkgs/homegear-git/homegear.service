@@ -1,0 +1,14 @@
+[Unit]
+Description=Homegear server
+After=network.target 
+
+[Service]
+Type=simple
+User=homegear
+Group=homegear
+UMask=002
+LimitRTPRIO=100
+ExecStart=/usr/bin/homegear
+
+[Install]
+WantedBy=multi-user.target

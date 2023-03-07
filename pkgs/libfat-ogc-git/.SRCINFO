@@ -1,0 +1,19 @@
+pkgbase = libfat-ogc-git
+	pkgdesc = Library for acessing FAT filesystems from Nintendo Gamecube/Wii homebrew (development version)
+	pkgver = 1.0.14.r3.gcf268b3
+	pkgrel = 1
+	url = http://www.devkitpro.org/
+	arch = any
+	license = custom
+	makedepends = git
+	depends = devkitppc
+	depends = libogc-git
+	provides = libfat-ogc
+	conflicts = libfat-ogc
+	options = !strip
+	options = staticlibs
+	source = git+https://github.com/devkitPro/libfat.git
+	md5sums = SKIP
+
+pkgname = libfat-ogc-git
+

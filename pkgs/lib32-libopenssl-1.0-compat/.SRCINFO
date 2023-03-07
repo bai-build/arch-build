@@ -1,0 +1,25 @@
+pkgbase = lib32-libopenssl-1.0-compat
+	pkgdesc = The Open Source library for Secure Sockets Layer and Transport Layer Security (without versioned symbols patch)
+	pkgver = 1.0.2.l
+	pkgrel = 1
+	url = https://www.openssl.org
+	arch = x86_64
+	license = custom:BSD
+	makedepends = gcc-multilib
+	makedepends = makedepend
+	depends = perl
+	optdepends = ca-certificates
+	conflicts = lib32-openssl-1.0
+	options = !makeflags
+	source = https://www.openssl.org/source/openssl-1.0.2l.tar.gz
+	source = https://www.openssl.org/source/openssl-1.0.2l.tar.gz.asc
+	source = no-rpath.patch
+	source = ssl3-test-failure.patch
+	validpgpkeys = 8657ABB260F056B1E5190839D9C4D26D0E604491
+	sha256sums = ce07195b659e75f4e1db43552860070061f156a98bb37b672b101ba6e3ddf30c
+	sha256sums = SKIP
+	sha256sums = 754d6107a306311e15a1db6a1cc031b81691c8b9865e8809ac60ca6f184c957c
+	sha256sums = c54ae87c602eaa1530a336ab7c6e22e12898e1941012349c153e52553df64a13
+
+pkgname = lib32-libopenssl-1.0-compat
+

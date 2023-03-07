@@ -1,0 +1,14 @@
+--- gimp-print.old/m4/stp_cups.m4	2016-01-02 21:53:29.059194071 -0500
++++ gimp-print.new/m4/stp_cups.m4	2016-01-02 21:49:13.249592361 -0500
+@@ -144,9 +144,9 @@
+ fi
+ # Fix "sbindir" variable if it hasn't been specified...
+ if test "${sbindir}" = "\${prefix}/sbin" -a "${cups_prefix}" = "/" ; then
+-  cups_sbindir="/usr/sbin"
++  cups_sbindir="/usr/bin"
+ else
+-  cups_sbindir="${cups_prefix}/sbin"
++  cups_sbindir="${cups_prefix}/bin"
+ fi
+ 
+ # Get explicit CUPS directories if possible

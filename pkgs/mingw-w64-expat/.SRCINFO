@@ -1,0 +1,16 @@
+pkgbase = mingw-w64-expat
+	pkgdesc = An XML parser library (mingw-w64)
+	pkgver = 2.5.0
+	pkgrel = 1
+	url = http://expat.sourceforge.net
+	arch = any
+	license = custom
+	makedepends = mingw-w64-configure
+	depends = mingw-w64-crt
+	options = !strip
+	options = !buildflags
+	options = staticlibs
+	source = http://downloads.sourceforge.net/expat/expat-2.5.0.tar.bz2
+	sha512sums = 22fd904d75aab7506a85c03519b9cf79e44898c8e1ba6abf6cb7f95de71b8e63a7e2d5cf4395e3627d46035ea29342b3e631a8809fef8aad3f59976dc075ad17
+
+pkgname = mingw-w64-expat

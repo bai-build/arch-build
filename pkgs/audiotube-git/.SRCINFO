@@ -1,0 +1,27 @@
+pkgbase = audiotube-git
+	pkgdesc = Client for YouTube Music
+	pkgver = 22.11.r23.g8925508
+	pkgrel = 1
+	url = https://invent.kde.org/plasma-mobile/audiotube
+	arch = x86_64
+	arch = aarch64
+	license = GPL3
+	makedepends = fakeroot
+	makedepends = binutils
+	makedepends = git
+	makedepends = extra-cmake-modules
+	makedepends = pybind11
+	makedepends = qt5-svg
+	depends = ki18n
+	depends = kirigami2
+	depends = python-ytmusicapi
+	depends = yt-dlp
+	depends = gst-plugins-good
+	depends = qt5-imageformats
+	depends = kcrash
+	provides = audiotube
+	conflicts = audiotube
+	source = git+https://invent.kde.org/plasma-mobile/audiotube.git
+	sha256sums = SKIP
+
+pkgname = audiotube-git

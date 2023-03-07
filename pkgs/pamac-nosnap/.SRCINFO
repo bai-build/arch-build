@@ -1,0 +1,46 @@
+pkgbase = pamac-nosnap
+	pkgdesc = A Gtk3 frontend from Manjaro Linux for libalpm with AUR, flatpak, and appindicator support.
+	pkgver = 10.4.3
+	pkgrel = 3
+	url = https://gitlab.manjaro.org/applications/pamac
+	install = pamac.install
+	arch = i686
+	arch = x86_64
+	arch = arm
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	license = GPL3
+	makedepends = gettext
+	makedepends = itstool
+	makedepends = vala>=0.45
+	makedepends = meson
+	makedepends = gobject-introspection
+	makedepends = xorgproto
+	makedepends = asciidoc
+	depends = libnotify
+	depends = libpamac-nosnap>=11.4.0
+	depends = libhandy
+	depends = appstream-glib
+	optdepends = polkit-gnome: needed for authentification in Cinnamon, Gnome
+	optdepends = fwupd: support firmware updates
+	optdepends = git: use git repositories as package sources
+	optdepends = svn: use svn repositories as package sources
+	optdepends = mercurial: use mercurial (hg) repositories as package sources
+	provides = pamac
+	conflicts = pamac
+	conflicts = pamac-all
+	conflicts = pamac-gtk
+	conflicts = pamac-cli
+	conflicts = pamac-common
+	conflicts = pamac-aur
+	conflicts = pamac-aur-git
+	conflicts = pamac-flatpak
+	conflicts = pamac-flatpak-gnome
+	conflicts = gnome-software
+	conflicts = gnome-software-git
+	options = !emptydirs
+	source = pamac-10.4.3.tar.bz2::https://gitlab.manjaro.org/applications/pamac/-/archive/v10.4.3/pamac-v10.4.3.tar.bz2
+	sha512sums = 011af395092c27c4e73f50b5f43e662b5fb5cd7ae920176c3702479fb05df958fa7ceaf206bfcdad016103d0fc9d6b94e0d94d27701e5afcad2ae92024c90e5c
+
+pkgname = pamac-nosnap

@@ -1,0 +1,13 @@
+[Unit]
+Description=Distributed key/value store from Basho Technologies
+After=network.target
+
+[Service]
+User=riak
+Type=forking
+ExecStart=/opt/riak/bin/riak start
+ExecStop=/opt/riak/bin/riak stop
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target

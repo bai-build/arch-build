@@ -1,0 +1,21 @@
+pkgbase = systemd-ui-git
+	pkgdesc = Graphical front-end for systemd
+	pkgver = 3.r2.g4e6ab2e4
+	pkgrel = 5
+	url = https://www.freedesktop.org/wiki/Software/systemd
+	arch = x86_64
+	arch = i686
+	license = GPL
+	makedepends = git
+	makedepends = vala0.26
+	makedepends = docbook-xsl
+	makedepends = libxslt
+	depends = gtk3
+	depends = libgee
+	depends = libnotify
+	provides = systemd-ui=3-5
+	conflicts = systemd-ui
+	source = systemd-ui-git::git+https://github.com/freedesktop/systemd-ui.git
+	sha256sums = SKIP
+
+pkgname = systemd-ui-git

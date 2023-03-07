@@ -1,0 +1,20 @@
+pkgbase = salmon
+	pkgdesc = Highly-accurate & wicked fast transcript-level quantification from RNA-seq reads using lightweight alignments
+	pkgver = 1.10.0
+	pkgrel = 1
+	url = https://combine-lab.github.io/salmon/
+	arch = x86_64
+	license = GPL
+	makedepends = boost>=1.55
+	makedepends = cmake
+	makedepends = unzip
+	makedepends = cereal
+	depends = intel-tbb
+	depends = jemalloc
+	depends = boost-libs
+	depends = bzip2
+	options = !emptydirs
+	source = salmon-1.10.0.tar.gz::https://github.com/COMBINE-lab/salmon/archive/v1.10.0.tar.gz
+	sha256sums = fd8039c20f8dc717d414c89d32ce80a37b1cf4fda2eb9dba839adedd33a4fa3a
+
+pkgname = salmon

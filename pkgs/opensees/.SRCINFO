@@ -1,0 +1,27 @@
+pkgbase = opensees
+	pkgdesc = OpenSees, a software framework for developing applications to simulate the performance of structural and geotechnical systems subjected to earthquakes
+	pkgver = 3.2.0
+	pkgrel = 1
+	url = https://github.com/OpenSees/OpenSees
+	arch = i686
+	arch = x86_64
+	license = custom
+	makedepends = git
+	makedepends = gcc-fortran
+	makedepends = gcc
+	depends = tcl>=8.6
+	depends = openssl
+	depends = libpng
+	depends = mesa
+	depends = lapack
+	depends = mumps
+	depends = glu
+	depends = openmpi
+	depends = python
+	source = Makefile.def
+	source = MPMakeFile.patch
+	md5sums = bcf43c4fcac86daf72659b723d88eb63
+	md5sums = 6193c6e9f12912d04497b7b2a9c412ab
+
+pkgname = opensees
+

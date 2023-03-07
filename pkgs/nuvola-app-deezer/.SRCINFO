@@ -1,0 +1,16 @@
+pkgbase = nuvola-app-deezer
+	pkgdesc = deezer integration for Nuvola Player.
+	pkgver = 2.7
+	pkgrel = 1
+	url = https://github.com/tiliado/nuvola-app-deezer
+	arch = any
+	license = custom:BSD
+	makedepends = nuvolasdk
+	makedepends = scour
+	depends = nuvolaruntime
+	depends = imagemagick
+	source = https://github.com/tiliado/nuvola-app-deezer/archive/2.7.tar.gz
+	sha256sums = b8a9c408465c95d16eb3a3512e65eee3e4660a6a87ac7d2737d6d4ed02ec4e04
+
+pkgname = nuvola-app-deezer
+

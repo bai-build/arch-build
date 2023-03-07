@@ -1,0 +1,27 @@
+pkgbase = emacs-xwidgets
+	pkgdesc = The extensible, customizable, self-documenting real-time display editor with xwidgets support
+	pkgver = 27.1
+	pkgrel = 2
+	url = https://www.gnu.org/software/emacs/emacs.html
+	arch = x86_64
+	license = GPL3
+	depends = librsvg
+	depends = gpm
+	depends = giflib
+	depends = libxpm
+	depends = libotf
+	depends = m17n-lib
+	depends = gtk3
+	depends = webkit2gtk
+	depends = hicolor-icon-theme
+	depends = desktop-file-utils
+	depends = alsa-lib
+	depends = gnutls
+	depends = jansson
+	provides = emacs
+	conflicts = emacs
+	source = https://ftp.gnu.org/gnu/emacs/emacs-27.1.tar.xz
+	sha1sums = SKIP
+
+pkgname = emacs-xwidgets
+

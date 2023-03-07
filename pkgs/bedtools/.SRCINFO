@@ -1,0 +1,16 @@
+pkgbase = bedtools
+	pkgdesc = powerful toolset for genome arithmetic
+	pkgver = 2.30.0
+	pkgrel = 1
+	url = https://github.com/arq5x/bedtools2
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	checkdepends = python
+	checkdepends = samtools
+	depends = bash
+	depends = zlib
+	source = https://github.com/arq5x/bedtools2/releases/download/v2.30.0/bedtools-2.30.0.tar.gz
+	sha1sums = e6e87b4bcbda17348a1df2ff6386fccb8ec1f75b
+
+pkgname = bedtools

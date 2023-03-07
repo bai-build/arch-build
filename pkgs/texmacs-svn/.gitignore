@@ -1,0 +1,11 @@
+# Vim
+*~
+*.swp
+
+# Makepkg
+*.pkg.tar.xz
+/pkg/
+/src/
+/texmacs
+
+changelog

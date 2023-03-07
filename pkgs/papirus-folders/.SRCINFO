@@ -1,0 +1,14 @@
+pkgbase = papirus-folders
+	pkgdesc = Change Papirus icon theme folder colors
+	pkgver = 1.12.0
+	pkgrel = 1
+	url = https://github.com/PapirusDevelopmentTeam/papirus-folders
+	arch = any
+	license = MIT
+	depends = papirus-icon-theme
+	source = papirus-folders-1.12.0.tar.gz::https://github.com/PapirusDevelopmentTeam/papirus-folders/archive/v1.12.0.tar.gz
+	source = papirus-folders.hook
+	sha256sums = e20df336d909ef320606caed49797418fba54867fc24d6596576cfa55995c337
+	sha256sums = 5c48cde4ad155e357857f56ec2ce4d26d3e3fdd12b141e349640775481539ed9
+
+pkgname = papirus-folders

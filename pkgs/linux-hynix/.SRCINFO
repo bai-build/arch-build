@@ -1,0 +1,52 @@
+pkgbase = linux-hynix
+	pkgver = 5.3.1.arch1
+	pkgrel = 1
+	url = https://git.archlinux.org/linux.git/log/?h=v5.3.1-arch1
+	arch = x86_64
+	license = GPL2
+	makedepends = xmlto
+	makedepends = kmod
+	makedepends = inetutils
+	makedepends = bc
+	makedepends = libelf
+	makedepends = git
+	makedepends = python-sphinx
+	makedepends = python-sphinx_rtd_theme
+	makedepends = graphviz
+	makedepends = imagemagick
+	options = !strip
+	source = archlinux-linux::git+https://git.archlinux.org/linux.git?signed#tag=v5.3.1-arch1
+	source = config
+	source = 60-linux.hook
+	source = 90-linux.hook
+	source = linux.preset
+	source = v2-1-2-pci-prevent-sk-hynix-nvme-from-entering-D3.patch
+	source = v2-2-2-nvme-add-quirk-to-not-call-disable-function-when-suspending.patch
+	source = HID-Increase-maximum-report-size-allowed-by-hid_field_extract.patch
+	validpgpkeys = ABAF11C65A2970B130ABE3C479BE3E4300411886
+	validpgpkeys = 647F28654894E3BD457199BE38DBBDC86092693E
+	validpgpkeys = 8218F88849AAC522E94CF470A5E9288C4FA415FA
+	sha256sums = SKIP
+	sha256sums = 166ee15de54cd8385ed12599cf8402009df5e5c59e961e0547c7745fa385b6a2
+	sha256sums = ae2e95db94ef7176207c690224169594d49445e04249d2499e9d2fbc117a0b21
+	sha256sums = c043f3033bb781e2688794a59f6d1f7ed49ef9b13eb77ff9a425df33a244a636
+	sha256sums = ad6344badc91ad0630caacde83f7f9b97276f80d26a20619a87952be65492c65
+	sha256sums = dbc9d913a2d41c7809b99cf86ad63d3f4eb2e4d10ab3f6564203e4a21803b98f
+	sha256sums = 13d0a2f48ae12f8663b7de23eda5bfbce56641bdd4cf16b1b21678ea14db7fd3
+
+pkgname = linux-hynix
+	pkgdesc = The Linux-hynix kernel and modules
+	install = linux.install
+	depends = coreutils
+	depends = linux-firmware
+	depends = kmod
+	depends = mkinitcpio
+	optdepends = crda: to set the correct wireless channels of your country
+	backup = etc/mkinitcpio.d/linux-hynix.preset
+
+pkgname = linux-hynix-headers
+	pkgdesc = Header files and scripts for building modules for Linux-hynix kernel
+
+pkgname = linux-hynix-docs
+	pkgdesc = Kernel hackers manual - HTML documentation that comes with the Linux-hynix kernel
+

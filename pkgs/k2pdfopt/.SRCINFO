@@ -1,0 +1,26 @@
+pkgbase = k2pdfopt
+	pkgdesc = Tool for optimizing PDF/DJVU files for mobile e-readers and smartphones.
+	pkgver = 2.53
+	pkgrel = 1
+	url = http://www.willus.com/k2pdfopt
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = cmake
+	depends = libpng
+	depends = libjpeg-turbo
+	depends = djvulibre
+	optdepends = ghostscript: PostScript support
+	optdepends = jasper: JPEG 2000 bitmap support
+	optdepends = gsl: polynomial fit for spline interpolation feature
+	optdepends = leptonica: OCR support
+	source = http://www.willus.com/k2pdfopt/src/k2pdfopt_v2.53_src.zip
+	source = CMakeLists.txt.patch
+	source = k2pdfoptlib.patch
+	source = willuslib.patch
+	sha256sums = 58c1b0647be5237570c110b0bb77eb78fab384282a2648edb59eac673070959b
+	sha256sums = 6569d3f15c288f1297ebc0f239a5d58bd3040e0521a22981a176d86b376cb6e3
+	sha256sums = 32db8cf1012b3626d397023c7ecd08b711136700bca9f37b18e056f4c367e392
+	sha256sums = c0ae18681871385ab4b10a0c129661cf7318e2d86837c2d092c77fe362cb9512
+
+pkgname = k2pdfopt

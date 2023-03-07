@@ -1,0 +1,15 @@
+pkgbase = produceit
+	pkgdesc = cross-distro chroot based Linux package build environment
+	pkgver = 1.0.7
+	pkgrel = 2
+	url = https://codeberg.org/dyfet/produceit
+	arch = x86_64
+	arch = aarch64
+	license = GPL
+	makedepends = cmake
+	makedepends = pkgconf
+	makedepends = gcc
+	source = produceit-v1.0.7.tar.gz::https://codeberg.org/dyfet/produceit/archive/v1.0.7.tar.gz
+	sha256sums = e20e5f382fffc9d41e2092e54caebb73452483a14e3e06fac55913b4a808c0fd
+
+pkgname = produceit

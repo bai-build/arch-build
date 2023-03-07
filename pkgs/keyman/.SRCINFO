@@ -1,0 +1,31 @@
+pkgbase = keyman
+	pkgdesc = IBus engine supporting over 1,000 keyboard layouts (former KMFL)
+	pkgver = 13.0.103
+	pkgrel = 2
+	url = https://keyman.com/linux/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = meson
+	makedepends = git
+	depends = ibus
+	depends = webkit2gtk
+	depends = help2man
+	depends = python-magic
+	depends = python-requests-cache
+	depends = python-numpy
+	depends = python-pillow
+	depends = python-qrcode
+	depends = python-lxml
+	optdepends = keyman-onboard: on-screen keyboard
+	conflicts = kmflcomp
+	conflicts = libkmfl
+	conflicts = ibus-kmfl
+	replaces = kmflcomp
+	replaces = libkmfl
+	replaces = ibus-kmfl
+	source = keyman-13.0.103.tar.gz::https://github.com/keymanapp/keyman/archive/linux-release-stable-13.0.103.tar.gz
+	sha256sums = 30d9db0cd08aa4d6388f483aa32c58776fd9299acb542ded64da5d3d753f6949
+
+pkgname = keyman
+

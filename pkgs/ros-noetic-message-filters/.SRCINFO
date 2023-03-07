@@ -1,0 +1,26 @@
+pkgbase = ros-noetic-message-filters
+	pkgdesc = ROS - A set of message filters which take in messages and may output those messages at a later time, based on the conditions that filter needs met.
+	pkgver = 1.15.14
+	pkgrel = 1
+	url = https://wiki.ros.org/message_filters
+	arch = i686
+	arch = x86_64
+	arch = aarch64
+	arch = armv7h
+	arch = armv6h
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-noetic-rostest
+	makedepends = ros-noetic-rosunit
+	makedepends = ros-noetic-catkin
+	makedepends = ros-noetic-rosconsole
+	makedepends = ros-noetic-roscpp
+	makedepends = boost
+	depends = ros-noetic-rosconsole
+	depends = ros-noetic-roscpp
+	conflicts = ros-noetic-message-filters-git
+	source = ros-noetic-message-filters-1.15.14.tar.gz::https://github.com/ros/ros_comm/archive/1.15.14.tar.gz
+	sha256sums = 1083b58470a81323bc3a13aa9ae7c813e9fbc27b18f0e95a76b53e4076f3d872
+
+pkgname = ros-noetic-message-filters

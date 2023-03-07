@@ -1,0 +1,12 @@
+diff --git a/src/gst-plugins/opencvfilter/opencvfilter.c b/src/gst-plugins/opencvfilter/opencvfilter.c
+index f56c0f2..1f2b2aa 100644
+--- a/src/gst-plugins/opencvfilter/opencvfilter.c
++++ b/src/gst-plugins/opencvfilter/opencvfilter.c
+@@ -33,6 +33,6 @@ init (GstPlugin * plugin)
+ 
+ GST_PLUGIN_DEFINE (GST_VERSION_MAJOR,
+     GST_VERSION_MINOR,
+-    kmsopencvfilter,
++    opencvfilter,
+     "Kurento generic opencv filter",
+     init, VERSION, GST_LICENSE_UNKNOWN, "Kurento", "http://kurento.com/")

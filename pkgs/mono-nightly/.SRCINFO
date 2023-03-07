@@ -1,0 +1,32 @@
+pkgbase = mono-nightly
+	pkgdesc = Free implementation of the .NET platform including runtime and compiler. Nightly version.
+	pkgver = 6.13.0.1228
+	pkgrel = 1
+	url = http://www.mono-project.com/
+	install = mono.install
+	arch = i686
+	arch = x86_64
+	license = GPL
+	license = LGPL2.1
+	license = MPL
+	license = BSD
+	license = custom=MITX11
+	license = custom=MSPL
+	makedepends = cmake
+	makedepends = mono
+	depends = zlib
+	depends = libgdiplus
+	depends = sh
+	depends = python
+	depends = ca-certificates
+	provides = monodoc
+	provides = mono=$(pkgver)
+	conflicts = monodoc
+	conflicts = mono
+	replaces = mono
+	source = https://download.mono-project.com/sources/mono/nightly/mono-6.13.0.1228.tar.xz
+	source = mono.binfmt.d
+	md5sums = 359b1db559456131a80b04d952eab4ec
+	md5sums = b9ef8a65fea497acf176cca16c1e2402
+
+pkgname = mono-nightly

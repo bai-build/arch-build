@@ -1,0 +1,16 @@
+pkgbase = rgbpaint
+	pkgdesc = Very simple pixel-based painting program
+	pkgver = 0.8.7
+	pkgrel = 3
+	url = http://mtpaint.sourceforge.net/rgbpaint.html
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	depends = gtk2
+	source = https://sourceforge.net/projects/mtpaint/files/rgbpaint/0.8.7/rgbpaint-0.8.7.tar.bz2
+	source = configure.patch
+	sha1sums = 826fe5e1cb770f38beadacc73399ef965bc3d10c
+	sha1sums = 80b699893db13dec7e9623dea46739315deed654
+
+pkgname = rgbpaint
+

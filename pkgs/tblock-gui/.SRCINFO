@@ -1,0 +1,23 @@
+pkgbase = tblock-gui
+	pkgdesc = Official graphical user interface for the TBlock content blocker
+	pkgver = 1.2.0.beta
+	pkgrel = 1
+	url = https://tblock.codeberg.page
+	arch = any
+	license = GPL3
+	makedepends = make
+	makedepends = python>=3
+	makedepends = python-setuptools
+	makedepends = git
+	depends = gtk3
+	depends = glib2
+	depends = python-gobject
+	depends = hicolor-icon-theme
+	depends = coreutils
+	depends = tblock
+	depends = polkit
+	provides = tblock-gui
+	source = tblock-gui-1.2.0.beta.tar.gz::https://codeberg.org/tblock/tblock-gui/archive/1.2.0-beta.tar.gz
+	sha512sums = ee7051c81f7fb1c71619f7ee2af13638e5358465f4df62bffceb7d6844e4c054e60f364a2a0ce0adbdce79a92f9ce229293914d6be2929e7a354dff03a2c7c1f
+
+pkgname = tblock-gui

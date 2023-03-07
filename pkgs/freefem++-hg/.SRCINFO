@@ -1,0 +1,31 @@
+pkgbase = freefem++-hg
+	pkgdesc = A PDE oriented language using the finite element method (Mercurial)
+	pkgver = 3.59r4303.53b304a5195d
+	pkgrel = 1
+	url = http://www.freefem.org/ff++/index.htm
+	arch = x86_64
+	license = LGPL
+	makedepends = mercurial
+	makedepends = flex-git
+	makedepends = texlive-core
+	depends = julia
+	depends = fftw
+	depends = freeglut
+	depends = glu
+	depends = suitesparse
+	depends = hdf5-openmpi
+	depends = gsl
+	depends = openmpi
+	depends = openblas-lapack
+	depends = arpack
+	depends = parmetis
+	depends = python
+	provides = freefem++=
+	conflicts = freefem++
+	options = !makeflags
+	backup = etc/freefem++.pref
+	source = hg+http://www.freefem.org/ff++/ff++/
+	sha256sums = SKIP
+
+pkgname = freefem++-hg
+

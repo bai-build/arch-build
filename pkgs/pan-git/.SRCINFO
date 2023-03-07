@@ -1,0 +1,19 @@
+pkgbase = pan-git
+	pkgdesc = Pan is a Usenet newsreader that's good at both text and binaries. Development version.
+	pkgver = v0.150.r0.g4c6043e
+	pkgrel = 1
+	epoch = 1
+	url = http://pan.rebelbase.com/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	makedepends = intltool
+	depends = gmime
+	depends = gtkspell3
+	provides = pan
+	conflicts = pan
+	source = git+https://gitlab.gnome.org/GNOME/pan.git
+	sha256sums = SKIP
+
+pkgname = pan-git

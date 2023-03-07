@@ -1,0 +1,22 @@
+pkgbase = levd-git
+	pkgdesc = Daemon to control NZXT Kraken x61
+	pkgver = r24.cd12fdf
+	pkgrel = 3
+	url = https://github.com/graphcareful/levd
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = cmake
+	makedepends = git
+	depends = google-glog
+	depends = libusb
+	depends = lm_sensors
+	depends = yaml-cpp
+	provides = levd
+	conflicts = levd
+	backup = etc/leviathan/levd.cfg
+	source = git://github.com/graphcareful/levd.git
+	md5sums = SKIP
+
+pkgname = levd-git
+

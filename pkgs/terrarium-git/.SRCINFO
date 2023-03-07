@@ -1,0 +1,16 @@
+pkgbase = terrarium-git
+	pkgdesc = UI Prototyping Tool for Coders (Github version)
+	pkgver = r142.9994f3d
+	pkgrel = 1
+	url = https://github.com/penk/terrarium-app
+	arch = any
+	license = MIT
+	makedepends = git
+	makedepends = qt5-base
+	depends = qt5-quickcontrols2
+	depends = qt5-quickcontrols
+	source = terrarium-git::git+https://github.com/LinArcX/terrarium-app
+	sha256sums = SKIP
+
+pkgname = terrarium-git
+

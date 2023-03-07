@@ -1,0 +1,60 @@
+pkgbase = reduce-svn
+	pkgver = 20190919.5135
+	pkgrel = 1
+	url = http://reduce-algebra.sourceforge.net/
+	arch = x86_64
+	groups = science
+	license = BSD
+	makedepends = subversion
+	makedepends = texlive-htmlxml
+	makedepends = imagemagick
+	depends = ncurses
+	depends = libxext
+	depends = libxrandr
+	depends = libxft
+	depends = freetype2
+	depends = expat
+	depends = libx11
+	depends = libxcursor
+	options = !ccache
+	source = reduce::svn://svn.code.sf.net/p/reduce-algebra/code/trunk
+	source = csl
+	source = redcsl
+	source = redpsl
+	source = redcsl.desktop
+	source = qreduce.desktop
+	source = qreduce-file-location.patch
+	sha256sums = SKIP
+	sha256sums = 5a6065ef28bc64e38cc5c7e9c3ce5145c273e3ea7e7c073d8417a4d94fa6bafe
+	sha256sums = 9724e19545f181f6456e30bc1eff837cb708678f162a939b45f23627ad50c46c
+	sha256sums = 3d383ac93cb831a5a142395e76a9c275dc7e49dc150763610869e56e5a795e65
+	sha256sums = 22c7c510fba9ec2bcb8f476af0c96055a915a31f34c01ece43ff21d0dfa9dd0d
+	sha256sums = 9dce4d401c759c933ebc3ffbe0eff86150f04829ca10a9fd6f6faba4498f47ad
+	sha256sums = 5896e2252dd87b764143dbf8d9889e289811a3020dd019386debee5bb02a142d
+
+pkgname = reduce-csl-svn
+	pkgdesc = REDUCE Computer Algebra System -- CSL version
+	depends = reduce-common
+	provides = reduce-csl
+	conflicts = reduce-csl
+	conflicts = reduce-algebra
+
+pkgname = reduce-psl-svn
+	pkgdesc = REDUCE Computer Algebra System -- PSL version
+	depends = reduce-common
+	provides = reduce-psl
+	conflicts = reduce-psl
+
+pkgname = reduce-common-svn
+	pkgdesc = REDUCE Computer Algebra System -- common files
+	provides = reduce-common
+	conflicts = reduce-common
+
+pkgname = reduce-addons-svn
+	pkgdesc = Useful addons for the REDUCE Computer Algebra System
+	optdepends = reduce-csl: REDUCE Computer Algebra System
+	optdepends = reduce-psl: REDUCE Computer Algebra System
+	optdepends = python2-pyside: for QT-based GUI
+	provides = reduce-addons
+	conflicts = reduce-addons
+

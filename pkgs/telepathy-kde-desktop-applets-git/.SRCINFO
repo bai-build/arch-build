@@ -1,0 +1,16 @@
+pkgbase = telepathy-kde-desktop-applets-git
+	pkgdesc = The KDE-Telepathy Plasma desktop applets
+	pkgver = v17.04.3.r22.gffd78d5
+	pkgrel = 1
+	url = http://community.kde.org/Real-Time_Communication_and_Collaboration
+	arch = x86_64
+	license = GPL
+	makedepends = extra-cmake-modules
+	makedepends = git
+	depends = qt5-declarative
+	depends = kwindowsystem
+	source = git+https://invent.kde.org/network/ktp-desktop-applets.git
+	sha256sums = SKIP
+
+pkgname = telepathy-kde-desktop-applets-git
+

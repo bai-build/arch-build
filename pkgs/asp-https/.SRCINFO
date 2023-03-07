@@ -1,0 +1,20 @@
+pkgbase = asp-https
+	pkgdesc = Arch Linux build source file management tool (with patch to use HTTPS by default)
+	pkgver = 2
+	pkgrel = 1
+	url = https://github.com/julianbrost/asp-https
+	arch = any
+	license = MIT
+	makedepends = asciidoc
+	depends = awk
+	depends = bash
+	depends = jq
+	depends = git
+	depends = libarchive
+	provides = asp
+	conflicts = asp
+	source = asp-https-2.tar.gz::https://github.com/julianbrost/asp-https/archive/v2-https.tar.gz
+	sha256sums = 38043722d92122e9f72a9924e20b1556cb80d1be1b19b7ead70674c8249308c3
+
+pkgname = asp-https
+

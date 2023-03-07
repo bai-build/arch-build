@@ -1,0 +1,42 @@
+pkgbase = file-roller-ja
+	pkgdesc = the file-roller with an additional patch to use unzip-iconv for unzip archive file cp932 charset.
+	pkgver = 3.26.2
+	pkgrel = 1
+	url = http://www.gnome.org
+	arch = i686
+	arch = x86_64
+	groups = gnome-extra
+	license = GPL
+	makedepends = intltool
+	makedepends = pkg-config
+	makedepends = libnautilus-extension
+	makedepends = itstool
+	makedepends = docbook-xsl
+	makedepends = gnome-common
+	makedepends = git
+	depends = desktop-file-utils
+	depends = gtk3
+	depends = dconf
+	depends = libarchive
+	depends = file
+	depends = json-glib
+	depends = libnotify
+	depends = zip
+	depends = unzip-iconv
+	optdepends = p7zip: 7z, arj, exe and encrypted zip files support
+	optdepends = unrar: better RAR archive support
+	optdepends = unace: ACE archive support
+	optdepends = lrzip: lrzip archive support
+	optdepends = cdrkit: ISO image support
+	provides = file-roller
+	conflicts = file-roller
+	options = !emptydirs
+	source = git+https://git.gnome.org/browse/file-roller#commit=723d45e7c437f87303fd0203132b5770d2775d87
+	source = fc-init.patch
+	source = Z99-zip-cp932.sh
+	sha256sums = SKIP
+	sha256sums = 2b8c0be032bab317cf8b95d5b6970e450acb18a246d5fdedf272f5e7941a1263
+	sha256sums = 47d0e369be6f8df7fbdc56b794eccccf877fe3d8a6dfcc4fccb00649f77b54bc
+
+pkgname = file-roller-ja
+

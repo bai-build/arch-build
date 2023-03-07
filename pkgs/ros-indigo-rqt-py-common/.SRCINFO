@@ -1,0 +1,24 @@
+pkgbase = ros-indigo-rqt-py-common
+	pkgdesc = ROS - rqt_py_common provides common functionality for rqt plugins written in Python.
+	pkgver = 0.4.7
+	pkgrel = 0
+	url = http://ros.org/wiki/rqt_py_common
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-indigo-genmsg
+	makedepends = ros-indigo-std-msgs
+	makedepends = ros-indigo-catkin
+	depends = ros-indigo-genpy
+	depends = ros-indigo-rosbag
+	depends = ros-indigo-qt-gui
+	depends = ros-indigo-rospy
+	depends = ros-indigo-rostopic
+	depends = ros-indigo-actionlib
+	depends = ros-indigo-roslib
+	source = ros-indigo-rqt-py-common-0.4.7-0.tar.gz::https://github.com/ros-gbp/rqt_common_plugins-release/archive/release/indigo/rqt_py_common/0.4.7-0.tar.gz
+	sha256sums = a30c644e316245990f02a596f4a742034340b2214a38c8db5f66802b2afb4bb4
+
+pkgname = ros-indigo-rqt-py-common
+

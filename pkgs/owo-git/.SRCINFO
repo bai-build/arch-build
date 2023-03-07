@@ -1,0 +1,15 @@
+pkgbase = owo-git
+	pkgdesc = cli owoifier
+	pkgver = r18.fd3536e
+	pkgrel = 1
+	url = https://code.pyuku.com/neko/owo
+	arch = any
+	license = GPL
+	makedepends = git
+	provides = owo
+	conflicts = owo
+	source = git+https://code.pyuku.com/neko/owo.git
+	md5sums = SKIP
+
+pkgname = owo-git
+

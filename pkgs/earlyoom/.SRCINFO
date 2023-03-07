@@ -1,0 +1,19 @@
+pkgbase = earlyoom
+	pkgdesc = Early OOM Daemon for Linux
+	pkgver = 1.4
+	pkgrel = 1
+	url = https://github.com/rfjakob/earlyoom
+	arch = x86_64
+	arch = i686
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	license = MIT
+	backup = etc/default/earlyoom
+	source = https://github.com/rfjakob/earlyoom/archive/v1.4.tar.gz
+	source = earlyoom.1.gz
+	sha512sums = 6f01f75004f498c782ae6cd4dc8b75b22278623430a53e1ce19b494e8add9b4c5d4d6b96c1a13e8dbe59895f51e49b2bc2a2235fd6caf2956e8a3beb04e08fd4
+	sha512sums = 3c2d14866a70a7f1711fe85e444e64ab4b1191e3e0fb4aaf730e424d951e3bcf823c5b22153ad8c7bb0c9231b0878eadbcea56967e91230da698432c6783b478
+
+pkgname = earlyoom
+

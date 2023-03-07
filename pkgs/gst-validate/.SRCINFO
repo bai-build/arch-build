@@ -1,0 +1,24 @@
+pkgbase = gst-validate
+	pkgdesc = Debugging tool for GStreamer
+	pkgver = 1.16.2
+	pkgrel = 1
+	url = https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-validate/html/
+	arch = x86_64
+	license = LGPL2.1
+	makedepends = git
+	makedepends = gobject-introspection
+	depends = gstreamer
+	depends = gst-plugins-base-libs
+	depends = json-glib
+	depends = cairo
+	depends = gtk3
+	depends = python
+	source = git+https://gitlab.freedesktop.org/gstreamer/gst-devtools.git#tag=1.16.2
+	source = gst-common::git+https://gitlab.freedesktop.org/gstreamer/common.git
+	source = gst-validate-disable-padmonitor-test.patch
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = c88df2780f7a022fda4d08f96e7957d98368c6f7ead609dcd3e91b2752ab21c0
+
+pkgname = gst-validate
+

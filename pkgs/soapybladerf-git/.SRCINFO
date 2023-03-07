@@ -1,0 +1,19 @@
+pkgbase = soapybladerf-git
+	pkgdesc = SoapySDR plugin for BladeRF
+	pkgver = r82.4fa4566
+	pkgrel = 1
+	url = https://github.com/pothosware/SoapyBladeRF
+	arch = i686
+	arch = x86_64
+	license = LGPLv2
+	makedepends = cmake
+	makedepends = git
+	depends = soapysdr
+	depends = bladerf
+	provides = soapybladerf
+	conflicts = soapybladerf
+	source = soapybladerf-git::git+https://github.com/pothosware/SoapyBladeRF.git
+	sha256sums = SKIP
+
+pkgname = soapybladerf-git
+

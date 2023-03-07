@@ -1,0 +1,35 @@
+pkgbase = cryptsetup-git
+	pkgdesc = Userspace setup tool for transparent encryption of block devices using dm-crypt
+	pkgver = v2.3.3.r349.gcd3cb945
+	pkgrel = 1
+	url = https://gitlab.com/cryptsetup/cryptsetup
+	arch = armv6h
+	arch = armv7h
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = util-linux
+	makedepends = git
+	depends = device-mapper
+	depends = libdevmapper.so
+	depends = openssl
+	depends = popt
+	depends = libutil-linux
+	depends = libuuid.so
+	depends = json-c
+	depends = libjson-c.so
+	depends = argon2
+	depends = libargon2.so
+	provides = cryptsetup
+	conflicts = cryptsetup
+	options = !emptydirs
+	source = git+https://gitlab.com/cryptsetup/cryptsetup#branch=master
+	source = hooks-encrypt
+	source = install-encrypt
+	source = install-sd-encrypt
+	sha256sums = SKIP
+	sha256sums = 10461d20fe3bc357864ace3b408a2e93b4b03b5cff023def3ab126ae9857720d
+	sha256sums = d325dc239ecc9a5324407b0782da6df2573e8491251836d6c4e65fa61339ce57
+	sha256sums = 46af2f1353db1909fc483f20e3fa1e13f1e7c0d14f44c0d6163ce0862916c613
+
+pkgname = cryptsetup-git

@@ -1,0 +1,8 @@
+*.[oa]
+*.pkg
+*.pkg.*
+*.xz
+*.zip
+*.sign
+pkg/
+src/

@@ -1,0 +1,27 @@
+pkgbase = geany-plugins-gtk3-git
+	pkgdesc = Plugins for Geany
+	pkgver = 1.24.r386.g3aac929
+	pkgrel = 1
+	url = http://plugins.geany.org/
+	install = geany-plugins.install
+	arch = x86_64
+	arch = i686
+	license = GPL
+	makedepends = git
+	makedepends = intltool
+	makedepends = python
+	depends = geany-gtk3-git
+	depends = lua51
+	depends = ctpl
+	depends = gpgme
+	depends = webkitgtk
+	depends = gtkspell3
+	optdepends = hspell: hebrew spell checker
+	provides = geany-plugins
+	conflicts = geany-plugins-svn
+	conflicts = geany-plugins
+	source = geany-plugins::git://github.com/geany/geany-plugins.git
+	md5sums = SKIP
+
+pkgname = geany-plugins-gtk3-git
+

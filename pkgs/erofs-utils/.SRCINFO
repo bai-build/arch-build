@@ -1,0 +1,15 @@
+pkgbase = erofs-utils
+	pkgdesc = Userspace utilities for linux-erofs file system
+	pkgver = 1.2.1
+	pkgrel = 1
+	url = https://git.kernel.org/pub/scm/linux/kernel/git/xiang/erofs-utils.git
+	arch = x86_64
+	license = GPL2
+	makedepends = util-linux
+	depends = lz4>=1:1.9.3
+	depends = util-linux-libs
+	source = https://git.kernel.org/pub/scm/linux/kernel/git/xiang/erofs-utils.git/snapshot/erofs-utils-1.2.1.tar.gz
+	sha512sums = 1b0fae6f1d7a5ee01f65e71e389c474d596be8800087beb063bfbda471c54d76f9d3f08da645cecb613b637044ff3f6b19d3c8647425261cec1646c87ad57802
+
+pkgname = erofs-utils
+

@@ -1,0 +1,26 @@
+pkgbase = squeeze-git
+	pkgdesc = Archive manager for the Xfce Desktop Environment (git checkout)
+	pkgver = 0.4.90.r592.g993cdd6
+	pkgrel = 1
+	epoch = 1
+	url = http://www.xfce.org/
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = git
+	makedepends = xfce4-dev-tools
+	makedepends = gtk-doc
+	makedepends = intltool
+	depends = gtk2
+	depends = libxfce4util
+	depends = dbus-glib
+	optdepends = lzop: Compress/Decompress LZOP archives
+	optdepends = xz: Compress/Decompress XZ archives
+	provides = squeeze=0.4.90
+	conflicts = squeeze
+	options = !libtool
+	source = squeeze::git://git.xfce.org/apps/squeeze
+	sha256sums = SKIP
+
+pkgname = squeeze-git
+

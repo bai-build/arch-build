@@ -1,0 +1,14 @@
+pkgbase = lib-lt
+	pkgdesc = Beautiful & Lightweight Widget Toolkit library (also privedes C++ apis, such as LString, LProcess, LArray ...).
+	pkgver = 1.0.0
+	pkgrel = 1
+	arch = any
+	groups = Library/WidgetToolkit
+	makedepends = rpkdev
+	depends = sdl2
+	depends = sdl2_image
+	depends = sdl2_mixer
+	depends = freetype2
+	options = !strip
+
+pkgname = lib-lt

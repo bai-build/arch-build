@@ -1,0 +1,13 @@
+pkgbase = soulanchor
+	pkgdesc = X11 Bible reading tool
+	pkgver = 1.08
+	pkgrel = 1
+	url = https://github.com/Anchorm/SoulAnchor
+	arch = x86_64
+	license = GPL3
+	depends = qt6-base
+	depends = qt6-multimedia
+	source = https://github.com/Anchorm/SoulAnchor/archive/soulanchor-1.08.tar.gz
+	sha256sums = 2ffb7a8c79ac6521103ddf7883581c4d0eca90be9b68db5b0a5ef833df07b156
+
+pkgname = soulanchor

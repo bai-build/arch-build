@@ -1,0 +1,18 @@
+pkgbase = corepdf
+	pkgdesc = A PDF viewer from the C Suite
+	pkgver = 4.4.0
+	pkgrel = 1
+	url = https://gitlab.com/cubocore/coreapps/corepdf
+	arch = x86_64
+	arch = aarch64
+	groups = coreapps
+	license = GPL3
+	makedepends = cmake
+	makedepends = ninja
+	depends = qt5-base
+	depends = poppler-qt5
+	depends = libcprime>=2.7.1
+	source = https://gitlab.com/cubocore/coreapps/corepdf/-/archive/v4.4.0/corepdf-v4.4.0.tar.gz
+	md5sums = 985cc3c5f44a95e2918d562d6c18ed43
+
+pkgname = corepdf

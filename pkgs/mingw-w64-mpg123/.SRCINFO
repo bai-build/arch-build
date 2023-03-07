@@ -1,0 +1,16 @@
+pkgbase = mingw-w64-mpg123
+	pkgdesc = A console based real time MPEG Audio Player for Layer 1, 2 and 3 (mingw-w64)
+	pkgver = 1.31.2
+	pkgrel = 1
+	url = http://sourceforge.net/projects/mpg123
+	arch = any
+	license = LGPL2.1
+	makedepends = mingw-w64-configure
+	depends = mingw-w64-crt
+	options = !strip
+	options = !buildflags
+	options = staticlibs
+	source = https://downloads.sourceforge.net/sourceforge/mpg123/mpg123-1.31.2.tar.bz2
+	sha512sums = eca285382ee3e780353834addf1336c4a2f8f11256af22f95e11efa243de669761c083c86ddfc6ac8c02a920a3c4ab4ad767efa2739fb052e9719f35ef407bc3
+
+pkgname = mingw-w64-mpg123

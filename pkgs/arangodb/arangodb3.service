@@ -1,0 +1,34 @@
+# Description:
+#
+#  Used to start ArangoDB
+#
+#  ArangoDB is a native multi-model database with flexible data models for
+#  documents, graphs, and key-values. Build high performance applications
+#  using a convenient SQL-like query language or JavaScript extensions.
+#  Use ACID transactions if you require them. Scale horizontally with a
+#  few mouse clicks.
+#
+#  https://www.arangodb.com/
+#
+
+[Unit]
+Description=ArangoDB
+After=sysinit.target sockets.target timers.target paths.target slices.target network.target syslog.target
+
+[Service]
+Type=simple
+User=arangodb
+Group=arangodb
+ReadWritePaths=/var/log/arangodb3 /var/tmp/arangodb3 /var/lib/arangodb3
+LogsDirectory=arangodb3
+LogsDirectoryMode=0770
+Restart=on-failure
+RuntimeDirectory=arangodb3
+RuntimeDirectoryMode=0755
+PIDFile=arangodb3/arangod.pid
+ExecStartPre=/usr/bin/arangod --pid-file /run/arangodb3/arangod.pid --server.rest-server false --database.auto-upgrade true
+ExecStart=/usr/bin/arangod -c /etc/arangodb3/arangod.conf --pid-file /run/arangodb3/arangod.pid --temp.path /var/tmp/arangodb3
+
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,16 @@
+pkgbase = cmark
+	pkgdesc = CommonMark parsing and rendering library and program in C
+	pkgver = 0.25.1
+	pkgrel = 1
+	url = https://github.com/jgm/cmark
+	arch = i686
+	arch = x86_64
+	license = custom:BSD2
+	makedepends = cmake
+	makedepends = python
+	depends = glibc
+	source = https://github.com/jgm/cmark/archive/0.25.1.tar.gz#/cmark-0.25.1.tar.gz
+	sha256sums = 70f31a9a91b42268e305c597f66f23f0b9c5f70a04f54c8de8b1754ce8df2043
+
+pkgname = cmark
+

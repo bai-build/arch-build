@@ -1,0 +1,24 @@
+pkgbase = onevpl-git
+	pkgdesc = oneAPI Video Processing Library (git version)
+	pkgver = 2023.1.1.r0.g5d7b6af
+	pkgrel = 1
+	url = https://www.intel.com/content/www/us/en/developer/tools/oneapi/onevpl.html
+	arch = x86_64
+	license = MIT
+	makedepends = git
+	makedepends = cmake
+	makedepends = libx11
+	makedepends = pybind11
+	makedepends = python
+	makedepends = wayland-protocols
+	depends = libdrm
+	depends = libva
+	depends = wayland
+	optdepends = onevpl-runtime: for runtime implementation
+	optdepends = python: for python bindings
+	provides = onevpl
+	conflicts = onevpl
+	source = git+https://github.com/oneapi-src/oneVPL.git
+	sha256sums = SKIP
+
+pkgname = onevpl-git

@@ -1,0 +1,28 @@
+pkgbase = clightd-git
+	pkgdesc = Bus interface to change screen brightness and capture frames from webcam.
+	pkgver = 5.5.r1.g664fb26
+	pkgrel = 2
+	url = https://github.com/FedeDP/Clightd
+	arch = x86_64
+	arch = aarch64
+	license = GPL
+	makedepends = git
+	makedepends = cmake
+	depends = systemd-libs>=237
+	depends = linux-api-headers
+	depends = libx11
+	depends = libxrandr
+	depends = libxext
+	depends = polkit
+	depends = ddcutil>=0.9.5
+	depends = libmodule>=5.0.0
+	depends = libjpeg-turbo
+	depends = libusb
+	depends = libdrm
+	depends = wayland
+	provides = clightd
+	conflicts = clightd
+	source = clightd::git+https://github.com/FedeDP/Clightd.git
+	sha256sums = SKIP
+
+pkgname = clightd-git

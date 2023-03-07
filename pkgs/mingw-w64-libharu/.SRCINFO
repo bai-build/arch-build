@@ -1,0 +1,17 @@
+pkgbase = mingw-w64-libharu
+	pkgdesc = C library for generating PDF documents (mingw-w64)
+	pkgver = 2.4.3
+	pkgrel = 1
+	url = https://github.com/libharu/libharu
+	arch = any
+	license = custom:ZLIB
+	makedepends = mingw-w64-cmake
+	depends = mingw-w64-zlib
+	depends = mingw-w64-libpng
+	options = !buildflags
+	options = !strip
+	options = staticlibs
+	source = https://github.com/libharu/libharu/archive/refs/tags/v2.4.3.tar.gz
+	sha256sums = a2c3ae4261504a0fda25b09e7babe5df02b21803dd1308fdf105588f7589d255
+
+pkgname = mingw-w64-libharu

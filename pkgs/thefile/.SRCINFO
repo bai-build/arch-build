@@ -1,0 +1,19 @@
+pkgbase = thefile
+	pkgdesc = File Manager
+	pkgver = 4.0.2
+	pkgrel = 0
+	url = https://github.com/vicr123/thefile
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	makedepends = qt5-tools
+	depends = xdg-utils
+	depends = qt5-base
+	depends = the-libs
+	depends = libtdesktopenvironment
+	depends = libthefrisbee
+	depends = qt5-svg
+	source = git+https://github.com/vicr123/thefile#tag=v4.0.2
+	sha256sums = SKIP
+
+pkgname = thefile

@@ -1,0 +1,15 @@
+post_install() {
+  echo ">>> Check /var/lib/firebird/system/SYSDBA.password for default login credentials!"
+  echo ">>> You should change this password at the earliest opportunity!"
+}
+
+post_upgrade() {
+  post_install $1
+
+  if [[ $2 == 2.5.1* ]]; then
+    echo
+    echo ">>> ATTENTION: You are upgrading from Firebird 2.5.1, you are strongly advised to migrate database using gbak backup/restore!"
+  fi
+}
+
+# vim:set ts=2 sw=2 et:

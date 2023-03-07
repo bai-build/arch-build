@@ -1,0 +1,36 @@
+pkgbase = linux-drm-intel-next-git
+	pkgdesc = Linux with patches for Intel graphics
+	pkgver = 5.6.888622.f2221a504940
+	pkgrel = 1
+	url = https://drm.pages.freedesktop.org/maintainer-tools/drm-intel.html
+	arch = x86_64
+	license = GPL2
+	makedepends = bc
+	makedepends = kmod
+	makedepends = libelf
+	makedepends = xmlto
+	makedepends = python-sphinx
+	makedepends = python-sphinx_rtd_theme
+	makedepends = graphviz
+	makedepends = imagemagick
+	makedepends = git
+	options = !strip
+	source = linux-drm-intel-next-git::git://anongit.freedesktop.org/drm/drm-intel#branch=drm-intel-next
+	source = config
+	sha256sums = SKIP
+	sha256sums = b7f23bbc09b6c571b76f851f0389386a6f3a64f3d7b1b8509c8550228b0f4537
+
+pkgname = linux-drm-intel-next-git
+	pkgdesc = The Linux with patches for Intel graphics kernel and modules
+	depends = coreutils
+	depends = kmod
+	depends = initramfs
+	optdepends = crda: to set the correct wireless channels of your country
+	optdepends = linux-firmware: firmware images needed for some devices
+
+pkgname = linux-drm-intel-next-git-headers
+	pkgdesc = Headers and scripts for building modules for the Linux with patches for Intel graphics kernel
+
+pkgname = linux-drm-intel-next-git-docs
+	pkgdesc = Documentation for the Linux with patches for Intel graphics kernel
+

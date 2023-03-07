@@ -1,0 +1,26 @@
+pkgbase = sdtui-git
+	pkgdesc = StarDict TUI and GUI
+	pkgver = r254.46e9b7b
+	pkgrel = 1
+	url = https://git.janouch.name/p/sdtui
+	arch = i686
+	arch = x86_64
+	license = custom:0BSD
+	makedepends = cmake
+	makedepends = pkg-config
+	makedepends = git
+	makedepends = asciidoctor
+	makedepends = librsvg
+	depends = zlib
+	depends = glib2
+	depends = ncurses
+	depends = pango
+	optdepends = libxcb: X11 selection watcher
+	optdepends = gtk3: sdgui
+	provides = sdtui
+	conflicts = sdtui
+	options = zipman
+	source = git+https://git.janouch.name/p/sdtui
+	md5sums = SKIP
+
+pkgname = sdtui-git

@@ -1,0 +1,85 @@
+From 6c44a7b5c5a9c400b00ff06541d2cb4f3b874978 Mon Sep 17 00:00:00 2001
+From: jjacky <i.am.jack.mail@gmail.com>
+Date: Thu, 4 Apr 2013 16:58:07 +0200
+Subject: [PATCH] Add hover effects for (titlebar's) buttons of inactive
+ windows
+
+Importing this old patch from the old mercurial repo (too lazy to convert it,
+and there was no history anyways).
+
+Signed-off-by: Olivier Brunel <jjk@jjacky.com>
+---
+ src/client.c | 12 ++++++------
+ src/events.c | 21 +++++++++------------
+ 2 files changed, 15 insertions(+), 18 deletions(-)
+
+diff --git a/src/client.c b/src/client.c
+index 4071e67f..09744cf0 100644
+--- a/src/client.c
++++ b/src/client.c
+@@ -4004,6 +4004,12 @@ clientGetButtonPixmap (Client *c, int button, int state)
+ int
+ clientGetButtonState (Client *c, int button, int state)
+ {
++    if ((c->button_status[button] == BUTTON_STATE_PRELIGHT) &&
++         clientGetButtonPixmap (c, button, PRELIGHT))
++    {
++        return (PRELIGHT);
++    }
++
+     if (state == INACTIVE)
+     {
+         return (state);
+@@ -4015,12 +4021,6 @@ clientGetButtonState (Client *c, int button, int state)
+         return (PRESSED);
+     }
+ 
+-    if ((c->button_status[button] == BUTTON_STATE_PRELIGHT) &&
+-        clientGetButtonPixmap (c, button, PRELIGHT))
+-    {
+-        return (PRELIGHT);
+-    }
+-
+     return (ACTIVE);
+ }
+ 
+diff --git a/src/events.c b/src/events.c
+index ee026aa1..b902f69a 100644
+--- a/src/events.c
++++ b/src/events.c
+@@ -1421,23 +1421,20 @@ handleEnterNotify (DisplayInfo *display_info, XCrossingEvent * ev)
+                 clientClearDelayedFocus ();
+             }
+         }
+-        if (c == clientGetFocus ())
++        for (b = 0; b < BUTTON_COUNT; b++)
+         {
+-            for (b = 0; b < BUTTON_COUNT; b++)
++            if (MYWINDOW_XWINDOW(c->buttons[b]) == ev->window)
+             {
+-                if (MYWINDOW_XWINDOW(c->buttons[b]) == ev->window)
++                if (!xfwmPixmapNone(clientGetButtonPixmap(c, b, PRELIGHT)))
+                 {
+-                    if (!xfwmPixmapNone(clientGetButtonPixmap(c, b, PRELIGHT)))
+-                    {
+-                        c->button_status[b] = BUTTON_STATE_PRELIGHT;
+-                        need_redraw = TRUE;
+-                    }
++                    c->button_status[b] = BUTTON_STATE_PRELIGHT;
++                    need_redraw = TRUE;
+                 }
+             }
+-            if (need_redraw)
+-            {
+-                frameQueueDraw (c, FALSE);
+-            }
++        }
++        if (need_redraw)
++        {
++            frameQueueDraw (c, FALSE);
+         }
+ 
+         /* No need to process the event any further */
+-- 
+2.15.1
+

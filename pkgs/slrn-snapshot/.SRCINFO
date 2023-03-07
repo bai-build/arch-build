@@ -1,0 +1,24 @@
+pkgbase = slrn-snapshot
+	pkgdesc = An easy-to-use, text-mode, threaded Usenet/NNTP client/newsreader (development snapshot)
+	pkgver = 1.0.4.6
+	pkgrel = 4
+	url = https://jedsoft.org/snapshots/
+	arch = x86_64
+	arch = armv7h
+	arch = aarch64
+	license = GPL
+	makedepends = uudeview
+	depends = openssl
+	depends = slang
+	provides = slrn
+	conflicts = slrn
+	options = !makeflags
+	options = docs
+	options = zipman
+	backup = etc/slrnrc
+	source = https://jedsoft.org/snapshots/slrn-pre1.0.4-6.tar.gz
+	sha256sums = baa2d41d8b55896d393352ea7bb8ca130fa7d3a4d69094a71e6db7077d0333e0
+	sha512sums = 160eb6336ab694d15fa80b6746fca00fe02665cd1be55f5693790f4f0e91568a4d3ccb4af9cbdfbce252c637f4a09f64a64139dfc9ac04b067e3af91bb6f7d5e
+	b2sums = ec48f0897fa536d11d0bd2ab600ef048a89d88b0e399a56e28716035b91ddb4d0f6e475c5c1eee4a096c45e108a104b05a970ff0706eea0121b14cd88c5fb6d7
+
+pkgname = slrn-snapshot

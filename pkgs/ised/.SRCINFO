@@ -1,0 +1,15 @@
+pkgbase = ised
+	pkgdesc = command line calculator and numeric sequence editor
+	pkgver = 2.7.1
+	pkgrel = 1
+	url = http://ised.sourceforge.net
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = readline
+	depends = readline
+	source = http://downloads.sourceforge.net/project/ised/ised-2.7.1.tar.bz2
+	md5sums = fa15606435222f670caafee0d41d2b0b
+
+pkgname = ised
+

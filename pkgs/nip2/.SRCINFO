@@ -1,0 +1,17 @@
+pkgbase = nip2
+	pkgdesc = A frontend to the vips image library
+	pkgver = 8.7.1
+	pkgrel = 1
+	url = https://github.com/libvips/nip2
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = vips
+	depends = gsl
+	depends = gtk2
+	depends = desktop-file-utils
+	source = https://github.com/libvips/nip2/releases/download/v8.7.1/nip2-8.7.1.tar.gz
+	sha256sums = 3c3e7d4f82e9ee2241b81dff99179cc3234fa5744f008baf1dc545698f20f650
+
+pkgname = nip2
+

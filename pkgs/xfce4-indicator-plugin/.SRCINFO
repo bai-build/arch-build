@@ -1,0 +1,19 @@
+pkgbase = xfce4-indicator-plugin
+	pkgdesc = Plugin to display information from applications in the Xfce4 panel
+	pkgver = 2.4.1
+	pkgrel = 1
+	url = https://docs.xfce.org/panel-plugins/xfce4-indicator-plugin/start
+	arch = i686
+	arch = x86_64
+	arch = armv7h
+	arch = aarch64
+	license = GPL
+	makedepends = intltool
+	depends = hicolor-icon-theme
+	depends = libindicator-gtk3
+	depends = xfce4-panel
+	depends = xdg-utils
+	source = https://archive.xfce.org/src/panel-plugins/xfce4-indicator-plugin/2.4/xfce4-indicator-plugin-2.4.1.tar.bz2
+	sha256sums = 926af0930417ebb45f3acc71b6bee66cc21593c79ec0ca9e8782147e6c50f020
+
+pkgname = xfce4-indicator-plugin

@@ -1,0 +1,11 @@
+[Unit]
+Description=pilight daemon
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/pilight-daemon
+Type=forking
+
+[Install]
+WantedBy=multi-user.target
+ 

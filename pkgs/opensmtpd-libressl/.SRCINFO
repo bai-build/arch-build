@@ -1,0 +1,34 @@
+pkgbase = opensmtpd-libressl
+	pkgdesc = OpenSMTPD built against LibreSSL
+	pkgver = 6.4.2p1
+	pkgrel = 4
+	url = http://www.opensmtpd.org/
+	arch = i686
+	arch = x86_64
+	license = BSD
+	depends = libressl
+	depends = libevent
+	depends = pam
+	depends = libasr
+	provides = smtp-server
+	provides = smtp-forwarder
+	provides = opensmtpd
+	conflicts = smtp-server
+	conflicts = smtp-forwarder
+	conflicts = opensmtpd
+	options = emptydirs
+	backup = etc/smtpd/smtpd.conf
+	backup = etc/smtpd/aliases
+	source = https://www.opensmtpd.org/archives/opensmtpd-6.4.2p1.tar.gz
+	source = opensmtpd.sysusers
+	source = opensmtpd.tmpfiles
+	source = smtpd.service
+	source = smtpd.socket
+	sha256sums = 6d71155b15fa4ef0198d10dfb7b1905845c9d36d4a02321245a99da80002fb5d
+	sha256sums = b38b64f1457b7227d55585edc711cce525e089516d16b093e6c44387380e6b13
+	sha256sums = 107bc2a46fa885e355e551cc362dce5ef2362a8f4ad4cb12d6310a7b6d4edb54
+	sha256sums = 5c0f60d7bcebb1a6d371e7254b20d8ed2cfd79db64b3c3e9a6e992955bd6678f
+	sha256sums = 32d46de5562d01de445d04c93bcc9f94bf103539b676e449c32e3603a3866cf8
+
+pkgname = opensmtpd-libressl
+

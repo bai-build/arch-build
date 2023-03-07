@@ -1,0 +1,20 @@
+pkgbase = uftrace
+	pkgdesc = Function graph tracer for C/C++/Rust
+	pkgver = 0.13.1
+	pkgrel = 1
+	url = https://github.com/namhyung/uftrace
+	arch = x86_64
+	license = GPL2
+	makedepends = pandoc
+	depends = libelf
+	depends = python
+	depends = ncurses
+	depends = pkgconf
+	depends = luajit
+	depends = capstone
+	depends = libunwind
+	options = !lto
+	source = uftrace-v0.13.1.tar.gz::https://github.com/namhyung/uftrace/archive/v0.13.1.tar.gz
+	sha256sums = 88b59923fdd9804fd29da8a784cd1b39837b1b735fc3be4165b3932eca3661ad
+
+pkgname = uftrace

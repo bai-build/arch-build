@@ -1,0 +1,23 @@
+pkgbase = promscale_extension
+	pkgdesc = PostgreSQL extension for Promscale
+	pkgver = 0.5.0
+	pkgrel = 1
+	url = https://github.com/timescale/promscale_extension
+	arch = x86_64
+	license = custom:Timescale
+	makedepends = git
+	makedepends = rust
+	makedepends = clang
+	makedepends = llvm
+	depends = gcc-libs
+	depends = timescaledb
+	depends = promscale
+	options = !lto
+	source = promscale_extension::git+https://github.com/timescale/promscale_extension.git#commit=25dfdb60b92a305cfd7ad5769f3734ee378c8add
+	source = LICENSE-TIMESCALE-490e9405874d284735e27e3f9f63a2f6dd31a08f::https://raw.githubusercontent.com/timescale/timescaledb/490e9405874d284735e27e3f9f63a2f6dd31a08f/tsl/LICENSE-TIMESCALE
+	sha512sums = SKIP
+	sha512sums = b7c5ce0ef87c1c5c2d4688910a915874be742732a023319e855a8fbb666b0da42683b714e1c3368975431796e4fcd0e524fae80a999bb8f15e4406d97b14a15e
+	b2sums = SKIP
+	b2sums = 9ae11a930e930953b16f7d6d1d3fbf0ebb6c4d8687cac1475560603442ed8edd452200468f7fe9c82af651d40ccad192c036940bfe57ef093e7c30cce93383f0
+
+pkgname = promscale_extension

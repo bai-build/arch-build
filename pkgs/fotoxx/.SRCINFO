@@ -1,0 +1,25 @@
+pkgbase = fotoxx
+	pkgdesc = A program for improving image files made with a digital camera, stable version
+	pkgver = 23.2
+	pkgrel = 1
+	url = http://www.kornelix.net/fotoxx/fotoxx.html
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	depends = dcraw
+	depends = gtk3
+	depends = libchamplain
+	depends = perl-image-exiftool>=0.8.6
+	depends = xdg-utils
+	optdepends = rawtherapee: for raw image processing
+	optdepends = dvd+rw-tools: for burning CDs,DVDs or BlueRays
+	optdepends = hugin: for panorama photos
+	optdepends = darktable: organize and develop raw images
+	optdepends = ghostscript: handle .pdf, .ps or eps-files
+	optdepends = vlc: for viewing films
+	source = http://www.kornelix.net/downloads/downloads/fotoxx-23.2-source.tar.gz
+	source = fotoxx.patch
+	sha256sums = 9e8098582c4b3dec51c6bf232670204e939372d0e9b66f281a0661ac36c2cce9
+	sha256sums = ff52076287d84db6309789fe742b82f8fa79b208eca406973b84ba0962afecef
+
+pkgname = fotoxx

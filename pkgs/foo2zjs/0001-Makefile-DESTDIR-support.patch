@@ -1,0 +1,92 @@
+From adf8623ffb74f25ac0fff962946d11b1151fa469 Mon Sep 17 00:00:00 2001
+From: Ivan Shapovalov <intelfx@intelfx.name>
+Date: Sat, 22 Oct 2016 12:35:14 +0300
+Subject: [PATCH 1/5] Makefile: DESTDIR support
+
+---
+ Makefile | 27 ++++++++++++++-------------
+ 1 file changed, 14 insertions(+), 13 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index b3bfb11..5918515 100644
+--- a/Makefile
++++ b/Makefile
+@@ -38,7 +38,7 @@ INSTALL=install
+ ROOT=root
+ 
+ # Pathnames for referenced packages...
+-FOODB=$(DESTDIR)/usr/share/foomatic/db/source
++FOODB=$(PREFIX)/share/foomatic/db/source
+ 
+ # User ID's
+ LPuid=-oroot
+@@ -245,8 +245,9 @@ FILES	=	\
+ 
+ # CUPS vars
+ CUPS_SERVERBIN := $(DESTDIR)$(shell cups-config --serverbin 2>/dev/null)
+-CUPS_DEVEL := $(shell grep cupsSideChannelDoRequest /usr/include/cups/sidechannel.h 2>/dev/null)
+-CUPS_GOODAPI := $(shell cups-config --api-version 2>/dev/null | sed "s/1\.[0123].*//")
++CUPS_DEVEL := $(DESTDIR)$(shell grep cupsSideChannelDoRequest /usr/include/cups/sidechannel.h 2>/dev/null)
++CUPS_GOODAPI := $(DESTDIR)$(shell cups-config --api-version 2>/dev/null | sed "s/1\.[0123].*//")
++
+ 
+ # hpclj2600n-0.icm km2430_0.icm km2430_1.icm km2430_2.icm samclp300-0.icm
+ # sihp1000.img sihp1005.img sihp1020.img sihp1018.img
+@@ -654,7 +655,7 @@ install-prog:
+ 	$(INSTALL) -c $(PROGS) $(SHELLS) $(BIN)/
+ 	if [ "$(BINPROGS)" != "" ]; then \
+ 	    $(INSTALL) -d $(UDEVBIN); \
+-	    $(INSTALL) -c $(BINPROGS) $(UDEVBIN); \
++	    $(INSTALL) -c $(BINPROGS) $(DESTDIR)/usr/bin/; \
+ 	fi
+ 	#
+ 	# Install gamma correction files.  These are just templates,
+@@ -708,10 +709,10 @@ install-foo:
+ 	#
+ 	# Clear foomatic cache and rebuild database if needed
+ 	#
+-	rm -rf /var/cache/foomatic/*/*
+-	rm -f /var/cache/foomatic/printconf.pickle
+-	if [ -d /var/cache/foomatic/compiled ]; then \
+-	    cd /var/cache/foomatic/compiled; \
++	rm -rf $(DESTDIR)/var/cache/foomatic/*/*
++	rm -f $(DESTDIR)/var/cache/foomatic/printconf.pickle
++	if [ -d $(DESTDIR)/var/cache/foomatic/compiled ]; then \
++	    cd $(DESTDIR)/var/cache/foomatic/compiled; \
+ 	    foomatic-combo-xml -O >overview.xml; \
+ 	fi
+ 
+@@ -841,7 +842,7 @@ install-extra:
+ 	done
+ 
+ MODEL=$(PREFIX)/share/cups/model
+-LOCALMODEL=$(DESTDIR)/usr/local/share/cups/model
++LOCALMODEL=$(PREFIX)/usr/local/share/cups/model
+ MACMODEL=/Library/Printers/PPDs/Contents/Resources
+ PPD=$(PREFIX)/share/ppd
+ VARPPD=/var/lp/ppd
+@@ -901,9 +902,9 @@ install-ppd:
+ 	    done; \
+ 	fi
+ 
+-APPL=$(DESTDIR)/usr/share/applications
+-OLDAPPL=$(DESTDIR)/usr/share/gnome/apps/System
+-PIXMAPS=$(DESTDIR)/usr/share/pixmaps
++APPL=$(PREFIX)/usr/share/applications
++OLDAPPL=$(PREFIX)/usr/share/gnome/apps/System
++PIXMAPS=$(PREFIX)/usr/share/pixmaps
+ 
+ install-desktop:
+ 	#
+@@ -927,7 +928,7 @@ install-gui:
+ 	$(INSTALL) -c -m 755 hplj10xx_gui.tcl $(SHAREZJS)
+ 	
+ 
+-USBDIR=/etc/hotplug/usb
++USBDIR=$(DESTDIR)/etc/hotplug/usb
+ UDEVDIR=/etc/udev/rules.d
+ LIBUDEVDIR=/lib/udev/rules.d
+ RULES=hplj10xx.rules
+-- 
+2.10.2
+

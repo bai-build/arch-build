@@ -1,0 +1,22 @@
+pkgbase = tar-parallel
+	pkgdesc = Utility used to store, backup, and transport files with parallel compression
+	pkgver = 1.33
+	pkgrel = 1
+	url = https://www.gnu.org/software/tar/
+	arch = x86_64
+	license = GPL3
+	depends = glibc
+	depends = acl
+	depends = attr
+	depends = pigz
+	depends = pbzip2
+	provides = tar
+	conflicts = tar
+	options = !emptydirs
+	source = https://ftp.gnu.org/gnu/tar/tar-1.33.tar.xz
+	source = https://ftp.gnu.org/gnu/tar/tar-1.33.tar.xz.sig
+	validpgpkeys = 325F650C4C2B6AD58807327A3602B07F55D0C732
+	md5sums = e536d6621f9ad06df65c177348bb1215
+	md5sums = SKIP
+
+pkgname = tar-parallel

@@ -1,0 +1,29 @@
+pkgbase = sdrplusplus-git
+	pkgdesc = Cross-platform SDR software
+	pkgver = 0.2.5.r96.gb16c6f5
+	pkgrel = 1
+	url = https://github.com/alexandrerouma/sdrplusplus
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	makedepends = gcc>=8
+	makedepends = cmake>=3.13
+	depends = libglvnd
+	depends = fftw>=3
+	depends = glfw
+	depends = glew
+	depends = libvolk
+	optdepends = soapysdr: SoapySDR module support
+	optdepends = airspy: Airspy module(s) support
+	optdepends = bladerf: BladeRF module support
+	optdepends = libsdrplay: SDRplay module support
+	optdepends = hackrf: HackRF module support
+	optdepends = rtaudio: Audio sink module support
+	provides = sdrplusplus
+	provides = libsdrpp_core.so
+	conflicts = sdrplusplus
+	source = sdrplusplus-git::git+https://github.com/alexandrerouma/sdrplusplus
+	md5sums = SKIP
+
+pkgname = sdrplusplus-git
+

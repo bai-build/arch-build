@@ -1,0 +1,4 @@
+post_upgrade() {
+  update-desktop-database -q
+  xdg-icon-resource forceupdate
+}

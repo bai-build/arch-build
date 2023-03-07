@@ -1,0 +1,7 @@
+*
+!.gitignore
+!.SRCINFO
+!BUILDING
+!PKGBUILD
+!vscodium-git-uri-handler.desktop
+!vscodium-git.desktop

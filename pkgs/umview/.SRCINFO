@@ -1,0 +1,30 @@
+pkgbase = umview
+	pkgdesc = User-mode implementation of View-OS.
+	pkgver = 0.8.2
+	pkgrel = 2
+	url = https://www.sourceforge.net/projects/view-os
+	install = umview.install
+	arch = x86_64
+	arch = i686
+	license = GPL2
+	makedepends = autoconf
+	makedepends = automake
+	makedepends = make
+	makedepends = libtool
+	depends = glibc>=2.15
+	depends = libumlib0=0.8.2
+	optdepends = umview-mod-umlwip: module for umview networking
+	provides = umview=0.8.2
+	conflicts = umview
+	replaces = umview
+	source = http://http.debian.net/debian/pool/main/u/umview/umview_0.8.2.orig.tar.gz
+	source = umview.diff
+	source = http://ftp.us.debian.org/debian/pool/main/u/umview/umview_0.8.2-1.1_i386.deb
+	source = umview.install
+	md5sums = ac6d6baeb5700943ecf5021d980ceb7d
+	md5sums = da9e8792d0c16a1a5cf2eb86d326715e
+	md5sums = d00669b5d2b9137dad7aa66e5d5a274a
+	md5sums = b4165e6142a92d65c8e14479486decc4
+
+pkgname = umview
+

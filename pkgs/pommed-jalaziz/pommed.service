@@ -1,0 +1,9 @@
+[Unit]
+Description=Apple laptops hotkeys events handler
+Documentation=man:pommed(1)
+
+[Service]
+ExecStart=/usr/bin/pommed -f
+
+[Install]
+WantedBy=multi-user.target

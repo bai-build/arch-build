@@ -1,0 +1,23 @@
+pkgbase = freebayes
+	pkgdesc = About Bayesian haplotype-based genetic polymorphism discovery and genotyping
+	pkgver = 1.3.6
+	pkgrel = 4
+	url = https://github.com/freebayes/freebayes
+	arch = x86_64
+	license = MIT
+	makedepends = ninja
+	makedepends = meson
+	makedepends = git
+	makedepends = cmake
+	makedepends = make
+	makedepends = vcflib
+	makedepends = vcftools
+	makedepends = samtools
+	makedepends = parallel
+	makedepends = bc
+	depends = tabixpp
+	depends = htslib
+	source = git+https://github.com/freebayes/freebayes.git#tag=v1.3.6
+	sha256sums = SKIP
+
+pkgname = freebayes

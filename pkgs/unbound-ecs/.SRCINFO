@@ -1,0 +1,34 @@
+pkgbase = unbound-ecs
+	pkgdesc = Validating, recursive, and caching DNS resolver, enable EDNS client subnet
+	pkgver = 1.10.1
+	pkgrel = 1
+	url = https://unbound.net/
+	arch = x86_64
+	license = custom:BSD
+	makedepends = expat
+	depends = fstrm
+	depends = openssl
+	depends = libsodium
+	depends = protobuf-c
+	depends = libevent
+	depends = hiredis
+	depends = ldns
+	depends = dnssec-anchors
+	optdepends = expat: unbound-anchor
+	provides = unbound
+	backup = etc/unbound/unbound.conf
+	source = https://unbound.net/downloads/unbound-1.10.1.tar.gz
+	source = https://unbound.net/downloads/unbound-1.10.1.tar.gz.asc
+	source = sysusers.d
+	source = tmpfiles.d
+	source = hook
+	validpgpkeys = EDFAA3F2CA4E6EB05681AF8E9F6F1C2D7E045F8D
+	validpgpkeys = 21615A7F2478EA8C27DD26B830918D8275724222
+	sha256sums = b73677c21a71cf92f15cc8cfe76a3d875e40f65b6150081c39620b286582d536
+	sha256sums = SKIP
+	sha256sums = 85b8f00881fb93bcce83bdfe3246463a396eb5b352c0d7f5fca32fcb839d22fa
+	sha256sums = 31a573f43287dd7e3678be1680388bfc7d8dee8280eb2443f521a4b349aaa6b6
+	sha256sums = afb7a0a5e2da327c27c8f666b1ffaf34689121684c301928624221ac1d0c066a
+
+pkgname = unbound-ecs
+

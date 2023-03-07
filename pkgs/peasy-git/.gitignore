@@ -1,0 +1,6 @@
+pkg/
+src/
+peasy/
+peasy-git-*.src.tar.gz
+peasy-git-*.pkg.tar.xz
+peasy-git-*.pkg.tar.zst

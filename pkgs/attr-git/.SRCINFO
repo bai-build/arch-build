@@ -1,0 +1,23 @@
+pkgbase = attr-git
+	pkgdesc = Commands for manipulating filesystem extended attributes
+	pkgver = 2.4.47.r49.gc1a7b53
+	pkgrel = 3
+	url = https://savannah.nongnu.org/projects/attr
+	arch = i686
+	arch = x86_64
+	license = GPL
+	license = LGPL
+	makedepends = git
+	makedepends = gettext
+	depends = glibc
+	provides = attr
+	provides = xfsattr
+	conflicts = attr
+	conflicts = xfsattr
+	replaces = xfsattr
+	options = staticlibs
+	source = git+https://git.savannah.gnu.org/git/attr.git
+	sha256sums = SKIP
+
+pkgname = attr-git
+

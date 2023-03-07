@@ -1,0 +1,26 @@
+pkgbase = redditgtk-git
+	pkgdesc = Reddit gtk client
+	pkgver = r70.8f21801
+	pkgrel = 2
+	url = https://gitlab.gnome.org/GabMus/redditgtk
+	arch = any
+	license = GPL3
+	makedepends = meson
+	makedepends = git
+	makedepends = gobject-introspection
+	depends = gtksourceview4
+	depends = libhandy1
+	depends = python-dateutil
+	depends = python-flask
+	depends = python-gobject
+	depends = python-mistune
+	depends = python-pillow
+	depends = python-praw
+	depends = webkit2gtk
+	provides = redditgtk
+	conflicts = redditgtk
+	source = redditgtk-git::git+https://gitlab.gnome.org/GabMus/redditgtk.git
+	sha256sums = SKIP
+
+pkgname = redditgtk-git
+

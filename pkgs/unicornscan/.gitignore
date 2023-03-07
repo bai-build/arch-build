@@ -1,0 +1,6 @@
+src
+pkg
+unicorescan
+*.bz2
+*pkg.tar.*
+tags

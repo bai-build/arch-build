@@ -1,0 +1,104 @@
+--- xfce4-notifyd-0.4.4/Makefile.in
++++ xfce4-notifyd-0.4.4/Makefile.in
+@@ -634,7 +634,8 @@
+ 	$(LIBXFCE4UTIL_LIBS) \
+ 	$(XFCONF_LIBS) \
+ 	$(LIBXFCE4UI_LIBS) \
+-	$(GTK3_LIBS)
++	$(GTK3_LIBS) \
++	-lkeybinder
+ 
+ xfce4_notifyd_xfce4_notifyd_LDADD = \
+ 	$(common_ldadd) \
+
+--- xfce4-notifyd-0.4.4/xfce4-notifyd/main.c
++++ xfce4-notifyd-0.4.4/xfce4-notifyd/main.c
+@@ -32,6 +32,7 @@
+ #include <xfconf/xfconf.h>
+ #include <libxfce4util/libxfce4util.h>
+ #include <libxfce4ui/libxfce4ui.h>
++#include <keybinder.h>
+ 
+ #include "xfce-notify-daemon.h"
+ 
+@@ -45,6 +46,8 @@
+     xfconf_init(NULL);
+  	
+     gtk_init(&argc, &argv);
++
++    keybinder_init();
+ 
+     xfce_textdomain(GETTEXT_PACKAGE, LOCALEDIR, "UTF-8");
+ 
+
+--- xfce4-notifyd-0.4.4/xfce4-notifyd/xfce-notify-daemon.c
++++ xfce4-notifyd-0.4.4/xfce4-notifyd/xfce-notify-daemon.c
+@@ -94,6 +94,32 @@
+     URGENCY_CRITICAL,
+ };
+ 
++#define EXAMPLE_KEY "<Super>N"
++
++
++static gboolean get_last_id(gpointer key,
++                      gpointer value,
++                      gpointer data){
++
++    int *last_notification = data;
++    *last_notification = key;
++    return FALSE;
++}
++void handler (const char *keystring, void *user_data) {
++    int last_notification = -1;
++    XfceNotifyDaemon *xndaemon = XFCE_NOTIFY_DAEMON(user_data);
++
++    g_tree_foreach(xndaemon->active_notifications,
++                   (GTraverseFunc)get_last_id,
++                   &last_notification);
++
++    if (last_notification != -1){
++        XfceNotifyWindow *window = g_tree_lookup(xndaemon->active_notifications,
++                                             GUINT_TO_POINTER(last_notification));
++        activate_first_button(window);
++    }
++}
++
+ static void xfce_notify_daemon_screen_changed(GdkScreen *screen,
+                                               gpointer user_data);
+ static void xfce_notify_daemon_update_reserved_rectangles(gpointer key,
+@@ -485,6 +511,8 @@
+         g_object_unref(xndaemon->settings);
+ 
+     G_OBJECT_CLASS(xfce_notify_daemon_parent_class)->finalize(obj);
++
++    keybinder_unbind(EXAMPLE_KEY, handler);
+ }
+ 
+ 
+@@ -1578,6 +1606,8 @@
+                      G_CALLBACK(xfce_notify_daemon_settings_changed),
+                      xndaemon);
+ 
++    keybinder_bind(EXAMPLE_KEY, handler, xndaemon);
++
+     return TRUE;
+ }
+ 
+
+--- xfce4-notifyd-0.4.4/xfce4-notifyd/xfce-notify-window.c
++++ xfce4-notifyd-0.4.4/xfce4-notifyd/xfce-notify-window.c
+@@ -121,6 +121,14 @@
+ 
+ G_DEFINE_TYPE(XfceNotifyWindow, xfce_notify_window, GTK_TYPE_WINDOW)
+ 
++void activate_first_button (XfceNotifyWindow* window) {
++    GList *children;
++    children = gtk_container_get_children(GTK_CONTAINER(window->button_box));
++    if (children != NULL)
++        xfce_notify_window_button_clicked(children->data, window);
++    else
++        xfce_notify_window_button_release(window, window);
++}
+ 
+ static void
+ xfce_notify_window_class_init(XfceNotifyWindowClass *klass)

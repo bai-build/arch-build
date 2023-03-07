@@ -1,0 +1,26 @@
+pkgbase = texmacs
+	pkgdesc = Free scientific text editor, inspired by TeX and GNU Emacs. WYSIWYG editor TeX-fonts and CAS-interface (Giac, GTybalt, Macaulay 2, Maxima, Octave, Pari, Qcl, R and Yacas) in one.
+	pkgver = 2.1.2
+	pkgrel = 1
+	url = http://www.texmacs.org
+	arch = x86_64
+	license = GPL
+	makedepends = ghostscript
+	makedepends = cmake
+	depends = perl
+	depends = guile1.8
+	depends = texlive-core
+	depends = python
+	depends = libxext
+	depends = freetype2
+	depends = qt5-svg
+	optdepends = transfig: convert images using fig2ps
+	optdepends = gawk: conversion of some files
+	optdepends = ghostscript: rendering ps files
+	optdepends = imagemagick: convert images
+	optdepends = aspell: spell checking
+	options = !emptydirs
+	source = http://www.texmacs.org/Download/ftp/tmftp/source/TeXmacs-2.1.2-src.tar.gz
+	sha512sums = 8fef84acd60d53a0904fd722dc1ccc027975a769006a3433ccdc723479f22a60c0abfeba071d73f1a12c42e7a80dcf08eae3203e9df75780120d6db899ea6fa4
+
+pkgname = texmacs

@@ -1,0 +1,38 @@
+pkgbase = linux-clear-current
+	pkgdesc = Clear Linux current
+	pkgver = 6.0.0.rc7
+	pkgrel = 1
+	url = https://github.com/clearlinux-pkgs/linux-current
+	arch = x86_64
+	license = GPL2
+	makedepends = bc
+	makedepends = cpio
+	makedepends = git
+	makedepends = libelf
+	makedepends = pahole
+	makedepends = xmlto
+	options = !strip
+	source = https://git.kernel.org/torvalds/t/linux-6.0-rc7.tar.gz
+	source = clearlinux-current::git+https://github.com/clearlinux-pkgs/linux-current.git#tag=6.0.0.rc7-52
+	source = more-uarches-20220315.tar.gz::https://github.com/graysky2/kernel_compiler_patch/archive/20220315.tar.gz
+	validpgpkeys = ABAF11C65A2970B130ABE3C479BE3E4300411886
+	validpgpkeys = 647F28654894E3BD457199BE38DBBDC86092693E
+	sha256sums = 02a8c4ab25997be06d5aa21bd8661737b0deb9096b7ad3e72ec86f429261865d
+	sha256sums = SKIP
+	sha256sums = 5a29d172d442a3f31a402d7d306aaa292b0b5ea29139d05080a55e2425f48c5c
+
+pkgname = linux-clear-current
+	pkgdesc = The Clear Linux current kernel and modules
+	install = linux.install
+	depends = coreutils
+	depends = kmod
+	depends = initramfs
+	optdepends = wireless-regdb: to set the correct wireless channels of your country
+	optdepends = linux-firmware: firmware images needed for some devices
+	optdepends = modprobed-db: Keeps track of EVERY kernel module that has ever been probed - useful for those of us who make localmodconfig
+	provides = VIRTUALBOX-GUEST-MODULES
+	provides = WIREGUARD-MODULE
+
+pkgname = linux-clear-current-headers
+	pkgdesc = Headers and scripts for building modules for the Clear Linux current kernel
+	depends = pahole

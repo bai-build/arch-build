@@ -1,0 +1,20 @@
+pkgbase = xxdiff-hg
+	pkgdesc = A graphical browser for file and directory differences.
+	pkgver = 469.ae1e
+	pkgrel = 1
+	url = https://bitbucket.org/blais/xxdiff
+	arch = x86_64
+	arch = i686
+	license = GPL2
+	makedepends = flex>=2.5.31
+	makedepends = bison
+	makedepends = mercurial
+	makedepends = python-docutils
+	depends = qt4
+	provides = xxdiff
+	conflicts = xxdiff
+	source = xxdiff::hg+https://bitbucket.org/blais/xxdiff
+	md5sums = SKIP
+
+pkgname = xxdiff-hg
+

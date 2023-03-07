@@ -1,0 +1,14 @@
+pkgbase = lib-lt-headers
+	pkgdesc = LT Widget toolkit headers
+	pkgver = 1.0.0
+	pkgrel = 1
+	arch = any
+	groups = Library/WidgetToolkit
+	makedepends = rpkdev
+	depends = sdl2
+	depends = sdl2_image
+	depends = sdl2_mixer
+	depends = freetype2
+	options = !strip
+
+pkgname = lib-lt-headers

@@ -1,0 +1,19 @@
+pkgbase = telepathy-kde-contact-runner-git
+	pkgdesc = KRunner plugin for KDE Telepathy
+	pkgver = v17.04.3.r19.g9750999
+	pkgrel = 1
+	url = http://community.kde.org/Real-Time_Communication_and_Collaboration
+	arch = x86_64
+	license = GPL
+	makedepends = extra-cmake-modules
+	makedepends = git
+	makedepends = kdoctools
+	makedepends = python
+	depends = telepathy-kde-common-internals-git
+	depends = krunner
+	conflicts = telepathy-kde-contact-runner
+	source = git+https://invent.kde.org/network/ktp-contact-runner.git
+	sha256sums = SKIP
+
+pkgname = telepathy-kde-contact-runner-git
+

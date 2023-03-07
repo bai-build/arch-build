@@ -1,0 +1,15 @@
+pkgbase = express-git
+	pkgdesc = IRC client with enhanced media capabilities
+	pkgver = 0+473_23ce92e
+	pkgrel = 1
+	url = https://git.enlightenment.org/apps/express.git/
+	arch = i686
+	arch = x86_64
+	license = custom
+	makedepends = git
+	depends = elementary
+	source = git+https://git.enlightenment.org/apps/express.git
+	md5sums = SKIP
+
+pkgname = express-git
+

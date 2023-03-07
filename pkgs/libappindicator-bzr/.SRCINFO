@@ -1,0 +1,28 @@
+pkgbase = libappindicator-bzr
+	pkgdesc = A library to allow applications to export a menu into the Unity Menu bar. GTK3 Bzr version.
+	pkgver = 12.10.0.r298
+	pkgrel = 1
+	url = https://launchpad.net/libappindicator
+	arch = x86_64
+	license = LGPL2.1
+	license = LGPL3
+	makedepends = dbus-glib
+	makedepends = gobject-introspection
+	makedepends = libdbusmenu-gtk3
+	makedepends = libindicator-gtk3
+	makedepends = vala
+	makedepends = gnome-common
+	makedepends = gtk-sharp-2
+	makedepends = gtk-sharp-3
+	makedepends = perl-xml-libxml
+	makedepends = bzr
+	makedepends = automake
+	makedepends = mono
+	depends = libdbusmenu-gtk3
+	provides = libappindicator-gtk3=12.10.0.r298
+	conflicts = libappindicator-gtk3
+	options = !emptydirs
+	source = bzr+lp:libappindicator
+	sha512sums = SKIP
+
+pkgname = libappindicator-bzr

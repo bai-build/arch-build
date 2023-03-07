@@ -1,0 +1,38 @@
+pkgbase = psmoveapi-git
+	pkgdesc = Playstation Move Motion Controller API (GIT version)
+	pkgver = 4.0.12.162.g5067d19
+	pkgrel = 1
+	url = http://thp.io/2010/psmove
+	arch = x86_64
+	license = BSD
+	makedepends = git
+	makedepends = cmake
+	makedepends = python-sphinx
+	makedepends = udev
+	makedepends = bluez-libs
+	makedepends = libusb-compat
+	options = debug
+	source = git+https://github.com/thp/psmoveapi.git
+	source = git+https://github.com/thp/hidapi.git
+	source = git+https://github.com/inspirit/PS3EYEDriver.git
+	source = git+https://github.com/libusb/libusb.git
+	source = add-libv4l2-module.patch
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = 271eaa3f1f5c50045873f1583ebc38eb6c9451440a7c98de5b75731058901480
+
+pkgname = psmoveapi-git
+	depends = udev
+	depends = bluez-libs
+	depends = libusb-compat
+	provides = psmoveapi
+	conflicts = psmoveapi
+
+pkgname = python-psmoveapi-git
+	pkgdesc = Python bindings for Playstation Move Motion Controller API (GIT version)
+	depends = psmoveapi-git=4.0.12.162.g5067d19
+	depends = python
+	provides = python-psmoveapi
+	conflicts = python-psmoveapi

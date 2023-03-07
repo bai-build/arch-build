@@ -1,0 +1,16 @@
+pkgbase = nuvola-app-owncloud-music
+	pkgdesc = owncloud music integration for Nuvola Player.
+	pkgver = 1.3
+	pkgrel = 1
+	url = https://github.com/tiliado/nuvola-app-owncloud-music
+	arch = any
+	license = custom:BSD
+	makedepends = nuvolasdk
+	makedepends = scour
+	depends = nuvolaruntime
+	depends = imagemagick
+	source = https://github.com/tiliado/nuvola-app-owncloud-music/archive/1.3.tar.gz
+	sha256sums = 761e33db589a2f642192b256727963feb435bea25e0fa9acf4dc00f32fffe9d4
+
+pkgname = nuvola-app-owncloud-music
+

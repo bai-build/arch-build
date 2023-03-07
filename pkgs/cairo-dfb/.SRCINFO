@@ -1,0 +1,37 @@
+pkgbase = cairo-dfb
+	pkgdesc = 2D graphics library with support for multiple output devices with directfb frontend
+	pkgver = 1.17.2+25+gaee96d175
+	pkgrel = 1
+	url = https://cairographics.org/
+	arch = i686
+	arch = x86_64
+	arch = armv7h
+	license = LGPL
+	license = MPL
+	checkdepends = ttf-dejavu
+	checkdepends = gsfonts
+	makedepends = mesa-libgl
+	makedepends = librsvg
+	makedepends = gtk2
+	makedepends = poppler-glib
+	makedepends = libspectre
+	makedepends = gtk-doc
+	makedepends = valgrind
+	makedepends = git
+	depends = directfb
+	depends = libpng
+	depends = libxrender
+	depends = libxext
+	depends = fontconfig
+	depends = pixman
+	depends = glib2
+	depends = lzo
+	provides = cairo-xcb
+	provides = cairo=1.17.2+25+gaee96d175
+	conflicts = cairo
+	replaces = cairo-xcb
+	source = git+https://gitlab.freedesktop.org/cairo/cairo.git#commit=aee96d175d8349945a6d1948a56abd4b4ec6ad84
+	sha256sums = SKIP
+
+pkgname = cairo-dfb
+

@@ -1,0 +1,27 @@
+pkgbase = gnome-panel-git
+	pkgdesc = Panel of GNOME Flashback (git version)
+	pkgver = 3.20.0.r18.g8ab4e78
+	pkgrel = 1
+	url = https://wiki.gnome.org/Projects/GnomePanel
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	makedepends = autoconf-archive
+	makedepends = intltool
+	makedepends = gtk-doc
+	makedepends = yelp-tools
+	makedepends = gobject-introspection
+	depends = evolution-data-server
+	depends = gnome-desktop
+	depends = gnome-menus
+	depends = libwnck3
+	optdepends = alacarte: Main menu editor
+	optdepends = gnome-applets: Extra applets for the panel
+	provides = gnome-panel
+	conflicts = gnome-panel
+	source = git://git.gnome.org/gnome-panel
+	sha256sums = SKIP
+
+pkgname = gnome-panel-git
+

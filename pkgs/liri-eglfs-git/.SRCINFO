@@ -1,0 +1,34 @@
+pkgbase = liri-eglfs-git
+	pkgdesc = Liri QPA plugin
+	pkgver = r65.2833470
+	pkgrel = 1
+	url = https://liri.io
+	arch = i686
+	arch = x86_64
+	arch = armv6h
+	arch = armv7h
+	groups = liri-git
+	license = GPL3
+	makedepends = git
+	makedepends = liri-cmake-shared-git
+	depends = systemd
+	depends = libdrm
+	depends = libinput
+	depends = qt5-declarative
+	depends = qt5-wayland
+	depends = xkeyboard-config
+	depends = libxkbcommon
+	depends = glib2
+	depends = fontconfig
+	depends = freetype2
+	depends = qt5-udev-git
+	depends = libliri-git
+	provides = liri-eglfs
+	conflicts = liri-eglfs
+	replaces = liri-eglfs
+	options = debug
+	options = !strip
+	source = eglfs::git+https://github.com/lirios/eglfs.git#branch=develop
+	md5sums = SKIP
+
+pkgname = liri-eglfs-git

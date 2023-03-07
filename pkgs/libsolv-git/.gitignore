@@ -1,0 +1,5 @@
+libsolv-git
+src/
+pkg/
+*.pkg.*
+*.log

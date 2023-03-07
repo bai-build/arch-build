@@ -1,0 +1,21 @@
+pkgbase = sdl2-jstest-git
+	pkgdesc = Simple SDL joystick test application for the command line.
+	pkgver = r82.aafbdb1
+	pkgrel = 1
+	url = https://gitlab.com/sdl-jstest/sdl-jstest.git
+	arch = x86_64
+	arch = i686
+	arch = aarch64
+	license = GPLv3 or any later version
+	makedepends = git
+	makedepends = cmake
+	makedepends = docbook2x
+	depends = sdl
+	depends = sdl2
+	depends = ncurses
+	provides = sdl2-jstest
+	source = sdl-jstest::git+https://gitlab.com/sdl-jstest/sdl-jstest.git
+	sha512sums = SKIP
+
+pkgname = sdl2-jstest-git
+

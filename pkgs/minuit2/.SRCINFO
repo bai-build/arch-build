@@ -1,0 +1,14 @@
+pkgbase = minuit2
+	pkgdesc = A physics analysis tool for function minimization
+	pkgver = 5.34.14
+	pkgrel = 2
+	url = http://lcgapp.cern.ch/project/cls/work-packages/mathlibs/minuit/
+	arch = x86_64
+	license = LGPL
+	depends = gcc-libs
+	options = !libtool
+	source = http://www.cern.ch/mathlibs/sw/5_34_14/Minuit2/Minuit2-5.34.14.tar.gz
+	sha256sums = 2ca9a283bbc315064c0a322bc4cb74c7e8fd51f9494f7856e5159d0a0aa8c356
+
+pkgname = minuit2
+

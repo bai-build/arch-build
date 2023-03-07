@@ -1,0 +1,24 @@
+pkgbase = tranqil
+	pkgdesc = Relax to the soothing sounds of nature
+	pkgver = 1.1.6
+	pkgrel = 1
+	url = https://github.com/nick92/tranqil
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = cmake
+	makedepends = vala
+	makedepends = granite
+	makedepends = git
+	makedepends = libnotify
+	depends = gtk3
+	depends = granite
+	depends = gstreamer
+	depends = libnotify
+	provides = tranqil
+	conflicts = tranqil
+	source = https://github.com/nick92/tranqil/archive/1.1.6.zip
+	sha256sums = SKIP
+
+pkgname = tranqil
+

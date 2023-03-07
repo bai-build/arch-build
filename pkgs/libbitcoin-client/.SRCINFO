@@ -1,0 +1,32 @@
+pkgbase = libbitcoin-client
+	pkgdesc = Bitcoin Client Query Library
+	pkgver = 3.5.0
+	pkgrel = 2
+	url = https://github.com/libbitcoin/libbitcoin-client
+	arch = aarch64
+	arch = arm
+	arch = armv6h
+	arch = armv7h
+	arch = i686
+	arch = x86_64
+	groups = libbitcoin
+	license = AGPL3
+	makedepends = autoconf
+	makedepends = automake
+	makedepends = gcc
+	makedepends = libtool
+	makedepends = m4
+	makedepends = make
+	makedepends = pkg-config
+	depends = boost
+	depends = boost-libs
+	depends = icu
+	depends = libbitcoin-protocol
+	depends = libbitcoin-system
+	depends = libsecp256k1
+	depends = zeromq
+	source = libbitcoin-client-3.5.0.tar.gz::https://codeload.github.com/libbitcoin/libbitcoin-client/tar.gz/v3.5.0
+	sha256sums = bafa26647f334ecad04fc4bbef507a1954d7e0682f07bd38b90ab66dba5fe0d2
+
+pkgname = libbitcoin-client
+

@@ -1,0 +1,34 @@
+pkgbase = ros-indigo-astra-camera
+	pkgdesc = ROS - Drivers for Orbbec Astra Devices.
+	pkgver = 0.2.2
+	pkgrel = 1
+	url = http://wiki.ros.org/astra_camera
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-indigo-nodelet
+	makedepends = ros-indigo-roscpp
+	makedepends = ros-indigo-message-generation
+	makedepends = ros-indigo-catkin
+	makedepends = ros-indigo-image-transport
+	makedepends = ros-indigo-camera-info-manager
+	makedepends = ros-indigo-sensor-msgs
+	makedepends = ros-indigo-dynamic-reconfigure
+	makedepends = libusbx
+	makedepends = systemd
+	depends = python2-rospkg
+	depends = ros-indigo-nodelet
+	depends = ros-indigo-roscpp
+	depends = ros-indigo-message-runtime
+	depends = ros-indigo-image-transport
+	depends = ros-indigo-camera-info-manager
+	depends = ros-indigo-sensor-msgs
+	depends = ros-indigo-dynamic-reconfigure
+	source = ros-indigo-astra-camera-0.2.2-0.tar.gz::https://github.com/ros-drivers-gbp/astra_camera-release/archive/release/indigo/astra_camera/0.2.2-0.tar.gz
+	source = suppress-Werror.patch
+	sha256sums = 1700497e30a060a7e04bd090a831766774db1d1fb585a0dce6f72bb62087b102
+	sha256sums = 0e09baf68401460bc97a9f14075eaf352684e45d748d6f7dbbf75c712b10e257
+
+pkgname = ros-indigo-astra-camera
+

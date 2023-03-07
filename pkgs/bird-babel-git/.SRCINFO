@@ -1,0 +1,30 @@
+pkgbase = bird-babel-git
+	pkgver = 1.5.0
+	pkgrel = 3
+	url = http://bird.network.cz/
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	depends = readline
+	depends = ncurses
+	conflicts = bird
+	conflicts = bird6
+	source = git+https://gitlab.labs.nic.cz/labs/bird.git
+	source = bird.service
+	source = bird6.service
+	source = 0001-Teach-bvsnprintf-to-print-64-bit-router-IDs.patch
+	source = 0002-Add-the-Babel-routing-protocol-RFC6126.patch
+	md5sums = SKIP
+	md5sums = 69221e063a3f07dcad519d5eeacaae75
+	md5sums = 5b172bd052b523efd95ee018e891e181
+	md5sums = 4e8d8c8afa581ffe15044772c3ade0ab
+	md5sums = 6cae1325e149d490456515c7e32f20b8
+
+pkgname = bird-babel-git
+	pkgdesc = RIP, OSPFv2 and BGP daemon (ipv4 version)
+	backup = etc/bird.conf
+
+pkgname = bird6-babel-git
+	pkgdesc = RIP, OSPFv3, RADV and BGP daemon (ipv6 version)
+	backup = etc/bird6.conf
+

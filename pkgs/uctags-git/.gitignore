@@ -1,0 +1,5 @@
+src
+pkg
+uctags-git
+*.pkg.tar.*
+tags

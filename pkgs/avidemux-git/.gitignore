@@ -1,0 +1,7 @@
+*
+!.gitignore
+!.SRCINFO
+!PKGBUILD
+!add_settings_pluginui_message_error.patch
+!fix_verbose.patch
+!opus_check.patch

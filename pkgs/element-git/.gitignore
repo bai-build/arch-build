@@ -1,0 +1,6 @@
+element/
+JUCE/
+pkg/
+src/
+element-git-*.pkg.tar.*
+element-git-*.src.tar.gz

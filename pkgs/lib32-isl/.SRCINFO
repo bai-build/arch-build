@@ -1,0 +1,15 @@
+pkgbase = lib32-isl
+	pkgdesc = Library for manipulating sets and relations of integer points bounded by linear constraints
+	pkgver = 0.24
+	pkgrel = 1
+	url = http://isl.gforge.inria.fr/
+	arch = x86_64
+	license = MIT
+	makedepends = gcc-multilib
+	depends = lib32-gmp
+	depends = isl
+	source = http://isl.gforge.inria.fr/isl-0.24.tar.xz
+	sha256sums = 043105cc544f416b48736fff8caf077fb0663a717d06b1113f16e391ac99ebad
+
+pkgname = lib32-isl
+

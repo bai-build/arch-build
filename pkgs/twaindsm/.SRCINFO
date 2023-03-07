@@ -1,0 +1,15 @@
+pkgbase = twaindsm
+	pkgdesc = TWAIN Data Source Manager
+	pkgver = 2.5.0
+	pkgrel = 2
+	url = https://github.com/twain/twain-dsm/
+	arch = i686
+	arch = x86_64
+	license = LGPL2.1
+	makedepends = cmake
+	depends = gcc-libs
+	options = emptydirs
+	source = twaindsm-2.5.0.tar.gz::https://github.com/twain/twain-dsm/archive/refs/tags/v2.5.0.tar.gz
+	sha256sums = 89b226f1197c34fc6dff213c5bf656964460045517f886976a45417932de2f10
+
+pkgname = twaindsm

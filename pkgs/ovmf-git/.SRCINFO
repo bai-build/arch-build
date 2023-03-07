@@ -1,0 +1,22 @@
+pkgbase = ovmf-git
+	pkgdesc = Tianocore UEFI firmware for qemu.
+	pkgver = r25361.514c55c185
+	pkgrel = 1
+	epoch = 1
+	url = http://sourceforge.net/apps/mediawiki/tianocore/index.php?title=EDK2
+	arch = any
+	license = custom
+	makedepends = git
+	makedepends = python2
+	makedepends = iasl
+	makedepends = nasm
+	makedepends = subversion
+	makedepends = perl-libwww
+	provides = ovmf
+	conflicts = ovmf
+	options = !makeflags
+	source = edk2::git+https://github.com/tianocore/edk2#branch=master
+	sha256sums = SKIP
+
+pkgname = ovmf-git
+

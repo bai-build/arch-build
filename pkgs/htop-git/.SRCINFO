@@ -1,0 +1,22 @@
+pkgbase = htop-git
+	pkgdesc = Interactive text-mode process viewer
+	pkgver = 3.2.1.1.g611ea460
+	pkgrel = 1
+	epoch = 1
+	url = https://htop.dev
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	makedepends = python
+	depends = ncurses
+	depends = libnl
+	optdepends = lsof: list open files for running process
+	optdepends = strace: attach to running process
+	provides = htop
+	conflicts = htop
+	options = !emptydirs
+	source = git+https://github.com/htop-dev/htop.git
+	sha256sums = SKIP
+
+pkgname = htop-git

@@ -1,0 +1,22 @@
+pkgbase = lua-cqueues
+	pkgver = 20200603
+	pkgrel = 1
+	url = http://25thandclement.com/~william/projects/cqueues.html
+	arch = x86_64
+	license = MIT
+	makedepends = lua
+	makedepends = lua51
+	makedepends = lua52
+	depends = openssl
+	source = lua-cqueues-20200603.tar.gz::https://github.com/wahern/cqueues/archive/rel-20200603.tar.gz
+	md5sums = 1c93648a274e780542b617d4729d4427
+
+pkgname = lua-cqueues
+	pkgdesc = Continuation Queues: Embeddable asynchronous networking, threading, and notification framework for Lua 5.3
+
+pkgname = lua51-cqueues
+	pkgdesc = Continuation Queues: Embeddable asynchronous networking, threading, and notification framework for Lua 5.1
+
+pkgname = lua52-cqueues
+	pkgdesc = Continuation Queues: Embeddable asynchronous networking, threading, and notification framework for Lua 5.2
+

@@ -1,0 +1,9 @@
+# Directories
+src/
+cmus/
+pkg/
+
+# Files
+*.tar.xz # old archive format
+*.pkg.tar.zst # new archive format
+cmus-git-*

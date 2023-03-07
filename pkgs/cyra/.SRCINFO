@@ -1,0 +1,16 @@
+pkgbase = cyra
+	pkgdesc = A C++ command line parsing library
+	pkgver = 0.5.3beta
+	pkgrel = 1
+	url = https://github.com/lost-echo/cyra
+	arch = i686
+	arch = x86_64
+	license = GPL
+	options = debug
+	options = !strip
+	options = staticlibs
+	source = https://github.com/lost-echo/cyra/archive/0.5.3-beta.tar.gz
+	md5sums = 684a693a8d68d7f467073b240c83b95b
+
+pkgname = cyra
+

@@ -1,0 +1,22 @@
+pkgbase = libssh-git
+	pkgdesc = Multiplatform C library implementing the SSHv2 and SSHv1 protocol on client and server side
+	pkgver = 0.9.5.r473.g693383d1
+	pkgrel = 1
+	url = https://www.libssh.org/
+	arch = i686
+	arch = x86_64
+	license = LGPL
+	makedepends = git
+	makedepends = cmake
+	makedepends = cmocka
+	depends = glibc
+	depends = openssl
+	depends = zlib
+	provides = libssh
+	conflicts = libssh
+	options = staticlibs
+	source = git+https://git.libssh.org/projects/libssh.git
+	sha256sums = SKIP
+
+pkgname = libssh-git
+

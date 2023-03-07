@@ -1,0 +1,17 @@
+pkgbase = megazeux
+	pkgdesc = Game creation system
+	pkgver = 2.92f
+	pkgrel = 1
+	url = https://www.digitalmzx.com/
+	arch = i686
+	arch = x86_64
+	groups = games
+	license = gpl
+	depends = libvorbis
+	depends = libpng
+	depends = sdl2
+	source = mzx292fsrc.tar.xz::https://www.digitalmzx.com/download/2610/239bac1ed064ab2c08679116c25cf5fea49a337dd3835ad0bf661de1663339bc/
+	sha256sums = 239bac1ed064ab2c08679116c25cf5fea49a337dd3835ad0bf661de1663339bc
+
+pkgname = megazeux
+

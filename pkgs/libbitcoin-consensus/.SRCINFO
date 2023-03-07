@@ -1,0 +1,28 @@
+pkgbase = libbitcoin-consensus
+	pkgdesc = Bitcoin Consensus Library
+	pkgver = 3.5.0
+	pkgrel = 2
+	url = https://github.com/libbitcoin/libbitcoin-consensus
+	arch = aarch64
+	arch = arm
+	arch = armv6h
+	arch = armv7h
+	arch = i686
+	arch = x86_64
+	groups = libbitcoin
+	license = AGPL3
+	makedepends = autoconf
+	makedepends = automake
+	makedepends = gcc
+	makedepends = libtool
+	makedepends = m4
+	makedepends = make
+	makedepends = pkg-config
+	depends = boost
+	depends = boost-libs
+	depends = libsecp256k1
+	source = libbitcoin-consensus-3.5.0.tar.gz::https://codeload.github.com/libbitcoin/libbitcoin-consensus/tar.gz/v3.5.0
+	sha256sums = bb29761d4275a9c993151707557008b23572a3d9adecc0e36a3075cfb101dd1e
+
+pkgname = libbitcoin-consensus
+

@@ -1,0 +1,14 @@
+pkgbase = wmload
+	pkgdesc = Dockable CPU indicator for Window Maker
+	pkgver = 0.9.7
+	pkgrel = 1
+	url = http://www.dockapps.net/wmload
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = libxpm
+	source = dockapps-wmload-0.9.7.tar.gz::https://github.com/d-torrance/dockapps/archive/wmload-0.9.7.tar.gz
+	sha256sums = 2471ff43465908c1dde098818a7d54504584f7f2c90b34707c64b4faa95b5900
+
+pkgname = wmload
+

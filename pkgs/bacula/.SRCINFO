@@ -1,0 +1,86 @@
+pkgbase = bacula
+	pkgdesc = Bacula - A Network Backup Tool
+	pkgver = 11.0.5
+	pkgrel = 2
+	url = https://www.bacula.org
+	install = bacula.install
+	arch = x86_64
+	license = AGPL3
+	makedepends = sqlite
+	makedepends = libmariadbclient
+	makedepends = postgresql-libs
+	makedepends = qt5-base
+	makedepends = openssl
+	makedepends = readline
+	makedepends = lzo
+	source = https://downloads.sourceforge.net/sourceforge/bacula/bacula-11.0.5.tar.gz
+	source = https://downloads.sourceforge.net/sourceforge/bacula/bacula-11.0.5.tar.gz.sig
+	source = bacula-dir.service
+	source = bacula-fd.service
+	source = bacula-sd.service
+	validpgpkeys = 5235F5B668D81DB61704A82DC0BE2A5FE9DF3643
+	sha256sums = ef5b3b67810442201b80dc1d47ccef77b5ed378fe1285406f3a73401b6e8111a
+	sha256sums = SKIP
+	sha256sums = d1f06403b3460ad8cb7bd063ec31108d87c77dc58bb8a916229262d2bac4a565
+	sha256sums = 072a408b136f27251e9420f801d162e828218306ee74c0c5ba83b24f558e5e39
+	sha256sums = a5e75ee945479f9e38415d2841cf3485200d9d9374d5a68c19c13b39467ca5bb
+
+pkgname = bacula-common
+	pkgdesc = Bacula - A Network Backup Tool (common files)
+
+pkgname = bacula-console
+	pkgdesc = Bacula - A Network Backup Tool (management CLI)
+	depends = bacula-common=11.0.5
+	depends = readline
+	backup = etc/bacula/bconsole.conf
+
+pkgname = bacula-fd
+	pkgdesc = Bacula - A Network Backup Tool (file daemon)
+	depends = bacula-common=11.0.5
+	backup = etc/bacula/bacula-fd.conf
+
+pkgname = bacula-bat
+	pkgdesc = Bacula - A Network Backup Tool (management GUI)
+	depends = bacula-common=11.0.5
+	depends = qt5-base
+	backup = etc/bacula/bat.conf
+
+pkgname = bacula-sd
+	pkgdesc = Bacula - A Network Backup Tool (Storage Daemon)
+	depends = bacula-common
+	backup = etc/bacula/bacula-sd.conf
+
+pkgname = bacula-dir
+	pkgdesc = Bacula - A Network Backup Tool (Director)
+	depends = bacula-common=11.0.5
+	optdepends = bacula-dir-sqlite3: SQLite support
+	optdepends = bacula-dir-mariadb: MariaDB support
+	optdepends = bacula-dir-postgresql: PostgreSQL support
+	backup = etc/bacula/bacula-dir.conf
+
+pkgname = bacula-dir-sqlite3
+	pkgdesc = Bacula - A Network Backup Tool (Director - SQLite3 support)
+	depends = bacula-dir
+	depends = sqlite
+	conflicts = bacula-dir-mariadb
+	conflicts = bacula-dir-postgresql
+
+pkgname = bacula-dir-mariadb
+	pkgdesc = Bacula - A Network Backup Tool (Director - MariaDB support)
+	depends = bacula-dir
+	depends = libmariadbclient
+	provides = bacula-dir-mysql
+	conflicts = bacula-dir-sqlite3
+	conflicts = bacula-dir-postgresql
+	replaces = bacula-dir-mysql
+
+pkgname = bacula-dir-postgresql
+	pkgdesc = Bacula - A Network Backup Tool (Director - PostgreSQL support)
+	depends = bacula-dir
+	depends = postgresql-libs
+	conflicts = bacula-dir-sqlite3
+	conflicts = bacula-dir-mariadb
+
+pkgname = bacula-dir-mysql
+	pkgdesc = Bacula - A Network Backup Tool (transition package)
+	depends = bacula-dir-mariadb

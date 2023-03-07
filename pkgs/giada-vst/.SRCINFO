@@ -1,0 +1,26 @@
+pkgbase = giada-vst
+	pkgdesc = A looper, drum machine, sequencer, live sampler and plugin host (VST enabled)
+	pkgver = 0.15.3
+	pkgrel = 1
+	url = http://www.giadamusic.com/
+	changelog = ChangeLog
+	arch = i686
+	arch = x86_64
+	groups = pro-audio
+	license = GPL3
+	makedepends = gendesk
+	makedepends = icoutils
+	makedepends = steinberg-vst36
+	depends = fltk
+	depends = jansson
+	depends = libpulse
+	depends = libsamplerate
+	depends = libxpm
+	depends = rtmidi
+	provides = giada
+	conflicts = giada
+	source = http://www.giadamusic.com/data/giada-0.15.3-src.tar.gz
+	md5sums = ae9e13fe9926261946bfd5c5f34329a9
+
+pkgname = giada-vst
+

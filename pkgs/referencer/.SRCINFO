@@ -1,0 +1,31 @@
+pkgbase = referencer
+	pkgdesc = a Gnome application to organise documents or references, and ultimately generate a BibTeX bibliography file
+	pkgver = 1.2.2
+	pkgrel = 8
+	url = https://launchpad.net/referencer/
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = intltool
+	makedepends = gnome-doc-utils
+	makedepends = gnome-icon-theme
+	makedepends = boost
+	depends = libgnome
+	depends = libgnomeui
+	depends = libgnome-data
+	depends = libgnomemm
+	depends = libgnomeuimm
+	depends = libbonobo
+	depends = libbonoboui
+	depends = orbit2
+	depends = boost-libs
+	depends = poppler-glib
+	depends = python2
+	depends = yelp
+	source = https://launchpad.net/referencer/1./1.2.2/+download/referencer-1.2.2.tar.gz
+	source = referencer-lib_path.patch
+	md5sums = d7021937a3d481edc3d8d540eec950cd
+	md5sums = 50b0d7fc0539fd8fb25d837b309e6928
+
+pkgname = referencer
+

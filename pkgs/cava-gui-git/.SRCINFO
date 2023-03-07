@@ -1,0 +1,24 @@
+pkgbase = cava-gui-git
+	pkgdesc = Console/Graphical Audio Visualizer for Alsa/Pulseaudio
+	pkgver = 0.6.1
+	pkgrel = 1
+	url = https://github.com/nikp123/cava-gui
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = cmake
+	makedepends = git
+	depends = fftw
+	depends = alsa-lib
+	depends = iniparser
+	depends = ncurses
+	depends = libx11
+	depends = sdl2
+	depends = portaudio
+	provides = cava
+	conflicts = cava
+	source = git+https://github.com/nikp123/cava
+	sha1sums = SKIP
+
+pkgname = cava-gui-git
+

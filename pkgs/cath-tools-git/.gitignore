@@ -1,0 +1,4 @@
+*.pkg.tar.xz
+cath-tools-git/
+pkg/
+src/

@@ -1,0 +1,19 @@
+pkgbase = gr-foo
+	pkgdesc = gnuradio custom blocks by bastibl
+	pkgver = e17edbd
+	pkgrel = 1
+	url = https://github.com/bastibl/gr-foo
+	arch = any
+	license = unknown
+	makedepends = cmake
+	makedepends = swig
+	makedepends = boost
+	depends = gnuradio
+	depends = libuhd
+	depends = boost-libs
+	provides = gr-foo
+	source = git+https://github.com/bastibl/gr-foo
+	sha1sums = SKIP
+
+pkgname = gr-foo
+

@@ -1,0 +1,19 @@
+pkgbase = odin-src
+	pkgdesc = Standalone master build of the Odin programming language.
+	pkgver = r4301.fe2ad54f
+	pkgrel = 1
+	epoch = 2
+	url = https://odin-lang.org/
+	arch = x86_64
+	license = BSD
+	makedepends = git
+	makedepends = clang+llvm-binaries
+	provides = odin
+	conflicts = odin
+	options = !strip
+	source = git+https://github.com/odin-lang/odin.git
+	source = 0001-patch-makefile-for-aur.patch
+	sha256sums = SKIP
+	sha256sums = 5c418cd5b348ac1348767e76c7e08b7ab39359fadc8cd792133bcff4410aa78b
+
+pkgname = odin-src

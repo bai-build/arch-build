@@ -1,0 +1,28 @@
+pkgbase = xfce4-power-manager-git-xsccomp
+	pkgdesc = Power manager for Xfce desktop – patched for use with xscreensaver.
+	pkgver = 4.18.0+9+g818cabd5
+	pkgrel = 1
+	url = https://www.xfce.org/
+	arch = x86_64
+	arch = i686
+	arch = armv7h
+	arch = aarch64
+	groups = xfce4
+	license = GPL2
+	makedepends = intltool
+	makedepends = xfce4-panel
+	makedepends = git
+	makedepends = xfce4-dev-tools
+	depends = libxfce4ui
+	depends = upower
+	depends = libnotify
+	depends = hicolor-icon-theme
+	optdepends = xfce4-panel: for the Xfce panel plugin
+	provides = xfce4-power-manager=4.18.0
+	conflicts = xfce4-power-manager
+	source = xfce4-power-manager::git+https://gitlab.xfce.org/xfce/xfce4-power-manager
+	source = xsccomp.patch
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = xfce4-power-manager-git-xsccomp

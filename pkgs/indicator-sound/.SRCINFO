@@ -1,0 +1,21 @@
+pkgbase = indicator-sound
+	pkgdesc = Unified sound menu indicator.
+	pkgver = 12.10.2
+	pkgrel = 1
+	url = https://launchpad.net/indicator-sound
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = intltool
+	makedepends = vala
+	depends = ido
+	depends = libdbusmenu-gtk3
+	depends = libgee06
+	depends = libindicator-gtk3
+	depends = libpulse
+	depends = libnotify
+	source = https://launchpad.net/ubuntu/+archive/primary/+sourcefiles/indicator-sound/12.10.2+16.04.20160406-0ubuntu1/indicator-sound_12.10.2+16.04.20160406.orig.tar.gz
+	sha256sums = 832d997edce41495638dd0234a4aed00bd6ccc9550ca3e1552ab909ba245e376
+
+pkgname = indicator-sound
+

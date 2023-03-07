@@ -1,0 +1,33 @@
+pkgbase = kpmcore-git
+	pkgdesc = Library for managing partitions. Common code for KDE Partition Manager and other projects. (GIT version)
+	pkgver = 4.1.0.r1067.0ffec31
+	pkgrel = 1
+	url = http://kde.org/applications/system/kdepartitionmanager
+	arch = x86_64
+	license = GPL2
+	makedepends = extra-cmake-modules
+	makedepends = git
+	makedepends = python
+	depends = parted
+	depends = libatasmart
+	depends = kwidgetsaddons
+	depends = ki18n
+	depends = kauth
+	depends = qca
+	optdepends = e2fsprogs: ext2/3/4 support
+	optdepends = xfsprogs: XFS support
+	optdepends = jfsutils: JFS support
+	optdepends = reiserfsprogs: Reiser support
+	optdepends = ntfs-3g: NTFS support
+	optdepends = dosfstools: FAT32 support
+	optdepends = f2fs-tools: F2FS support
+	optdepends = exfat-utils: exFAT support
+	optdepends = nilfs-utils: nilfs support
+	optdepends = udftools: UDF support
+	provides = kpmcore
+	conflicts = kpmcore
+	source = git+https://invent.kde.org/system/kpmcore.git
+	sha256sums = SKIP
+
+pkgname = kpmcore-git
+

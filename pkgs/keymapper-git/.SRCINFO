@@ -1,0 +1,25 @@
+pkgbase = keymapper-git
+	pkgdesc = A cross-platform context-aware keyremapper
+	pkgver = latest
+	pkgrel = 3
+	url = https://github.com/houmain/keymapper
+	arch = i686
+	arch = x86_64
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	license = GPL3
+	makedepends = cmake
+	makedepends = git
+	depends = gcc-libs
+	depends = libusb
+	depends = libx11
+	depends = dbus
+	depends = wayland
+	provides = keymapper
+	conflicts = keymapper
+	source = git+https://github.com/houmain/keymapper.git
+	sha256sums = SKIP
+
+pkgname = keymapper-git
+

@@ -1,0 +1,19 @@
+pkgbase = xmlada
+	pkgdesc = An XML parser for Ada95
+	pkgver = 23.0.0
+	pkgrel = 1
+	epoch = 1
+	url = https://github.com/AdaCore/xmlada/
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	license = custom
+	makedepends = gprbuild-bootstrap
+	depends = gcc-ada
+	conflicts = xmlada-git
+	source = xmlada-23.0.0.tar.gz::https://github.com/AdaCore/xmlada//archive/v23.0.0.tar.gz
+	source = expose-cargs-and-largs-makefile.patch
+	sha256sums = 66245a68f2e391c8dc8dc50d6d5f109eb3b371e261d095d2002dff3927dd5253
+	sha256sums = 7543e5fa8f2b0b400b937b0b3bb27b46b263a3cd7b17f00f6f9c6b3905729610
+
+pkgname = xmlada

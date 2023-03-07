@@ -1,0 +1,25 @@
+pkgbase = kirigami-addons
+	pkgdesc = Add-ons for the Kirigami framework
+	pkgver = 0.4
+	pkgrel = 1
+	url = https://invent.kde.org/libraries/kirigami-addons
+	arch = x86_64
+	arch = i686
+	arch = i486
+	arch = pentium4
+	arch = arm
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	license = GPL3
+	makedepends = cmake
+	makedepends = extra-cmake-modules
+	makedepends = git
+	depends = ki18n
+	depends = kirigami2
+	provides = kirigami-addons-git
+	conflicts = kirigami-addons-git
+	source = https://download.kde.org/unstable/kirigami-addons/0.4/kirigami-addons-0.4.tar.xz
+	sha256sums = be95b504fee01ea76ebc8c429b5700d2f4245be893cbac7f03f778b92e962d91
+
+pkgname = kirigami-addons

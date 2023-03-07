@@ -1,0 +1,15 @@
+.*
+*~
+!.SRCINFO
+!.git*
+!.mailmap
+/src
+/pkg
+/discord-rpc
+/openrct2-git
+/rapidjson
+*.tar
+*.tar.xz
+*.tar.xz.sig
+*.src.tar.gz
+*.log

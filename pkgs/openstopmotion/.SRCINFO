@@ -1,0 +1,17 @@
+pkgbase = openstopmotion
+	pkgdesc = OpenStopMotion Animation Capture
+	pkgver = 0.6.3
+	pkgrel = 1
+	url = https://www.pfp.de/osm/
+	install = openstopmotion.install
+	arch = x86_64
+	license = GPL
+	makedepends = qt5-base
+	makedepends = qt5-tools
+	makedepends = pcre
+	makedepends = libtiff
+	source = openstopmotion-0.6.3.tar.gz::https://github.com/pfedick/openstopmotion/archive/REL_0_6_3.tar.gz
+	sha256sums = e7b9f59471f438ad11163760acfcfb87871d6970f70f835e429ed4d187b7ca33
+
+pkgname = openstopmotion
+

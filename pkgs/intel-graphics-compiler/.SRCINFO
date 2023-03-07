@@ -1,0 +1,22 @@
+pkgbase = intel-graphics-compiler
+	pkgdesc = Intel Graphics Compiler for OpenCL
+	pkgver = 19.12.1681
+	pkgrel = 3
+	epoch = 1
+	url = https://github.com/intel/intel-graphics-compiler/
+	arch = x86_64
+	license = MIT
+	makedepends = cmake
+	makedepends = clang
+	makedepends = llvm
+	makedepends = zlib
+	makedepends = python2
+	makedepends = intel-opencl-clang
+	depends = llvm-libs
+	noextract = igc-19.12.1681.tar.gz
+	options = !emptydirs
+	source = https://github.com/intel/intel-graphics-compiler/archive/igc-19.12.1681.tar.gz
+	sha256sums = e044081f2840c3511070492aaac29e6f6c1b89b17918e69bb850df53f326d9eb
+
+pkgname = intel-graphics-compiler
+

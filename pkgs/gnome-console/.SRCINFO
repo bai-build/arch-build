@@ -1,0 +1,20 @@
+pkgbase = gnome-console
+	pkgdesc = A simple user-friendly terminal emulator for the GNOME desktop
+	pkgver = 43.0
+	pkgrel = 1
+	url = https://gitlab.gnome.org/GNOME/console
+	arch = x86_64
+	license = GPL3
+	checkdepends = appstream-glib
+	makedepends = meson
+	makedepends = sassc
+	makedepends = libnautilus-extension
+	depends = libgtop
+	depends = libadwaita
+	depends = vte4
+	conflicts = kgx
+	replaces = kgx
+	source = https://gitlab.gnome.org/GNOME/console/-/archive/43.0/console-43.0.tar.gz
+	b2sums = 37515d1a499ac7374d3fae89423b38340db8c752c8e637947940781fb82ee2d6017399f93c7f5dd809c90d64a0790eb147dfa9b47bc5781b690168d6d78950dc
+
+pkgname = gnome-console

@@ -1,0 +1,29 @@
+pkgbase = mconnect-git
+	pkgdesc = KDE Connect protocol implementation in Vala/C for non-KDE desktops
+	pkgver = 417.81dc247
+	pkgrel = 1
+	url = https://github.com/grimpy/mconnect
+	install = mconnect-git.install
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = at-spi2-atk
+	makedepends = gdb
+	makedepends = git
+	makedepends = vala
+	makedepends = json-glib
+	makedepends = glib2
+	makedepends = gobject-introspection
+	makedepends = meson
+	depends = gtk3
+	depends = libgee
+	depends = gnutls
+	depends = json-glib
+	depends = libnotify
+	provides = mconnect
+	conflicts = mconnect
+	options = !emptydirs
+	source = mconnect::git+https://github.com/grimpy/mconnect.git#branch=master
+	sha256sums = SKIP
+
+pkgname = mconnect-git

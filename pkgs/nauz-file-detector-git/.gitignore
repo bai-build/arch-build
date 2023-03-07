@@ -1,0 +1,5 @@
+src
+pkg
+nauz-file-detector-git
+*.pkg.tar.*
+tags

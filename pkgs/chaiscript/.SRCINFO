@@ -1,0 +1,14 @@
+pkgbase = chaiscript
+	pkgdesc = An embedded scripting language for C++
+	pkgver = 6.1.0
+	pkgrel = 2
+	url = https://chaiscript.com
+	arch = x86_64
+	license = BSD
+	makedepends = cmake
+	depends = gcc-libs
+	optdepends = readline: command history support
+	source = chaiscript-6.1.0.tar.gz::https://github.com/Chaiscript/Chaiscript/archive/v6.1.0.tar.gz
+	b2sums = 036796f3575fd1bf210425883f139120e2a6338df75bfd74de263d11f2443e5995250c1fe68068eaaa30a2871fc733d56e9bab9fd43e994ca407f9730c3e4d4d
+
+pkgname = chaiscript

@@ -1,0 +1,16 @@
+pkgbase = picterm
+	pkgdesc = Preview images in terminal window
+	pkgver = 1.1
+	pkgrel = 1
+	url = https://github.com/artemsen/picterm
+	arch = x86_64
+	license = APACHE
+	depends = libx11
+	optdepends = libjpeg: JPEG images support
+	optdepends = libpng: PNG images support
+	optdepends = giflib: GIF images support
+	source = https://github.com/artemsen/picterm/releases/download/v1.1/picterm-1.1.tar.gz
+	md5sums = cfb42757a862eca2d37a3150fda4167b
+
+pkgname = picterm
+

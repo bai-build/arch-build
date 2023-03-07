@@ -1,0 +1,18 @@
+pkgbase = gomu
+	pkgdesc = Terminal User Interface (TUI) Music Player
+	pkgver = 2.1.2
+	pkgrel = 1
+	url = https://github.com/issadarkthing/gomu
+	arch = x86_64
+	license = GPL
+	makedepends = go
+	makedepends = git
+	depends = alsa-lib
+	depends = youtube-dl
+	optdepends = fzf
+	conflicts = gomu-git
+	conflicts = gomu-bin
+	source = gomu-2.1.2.tar.gz::https://github.com/issadarkthing/gomu/archive/v2.1.2.tar.gz
+	md5sums = 8fe3d3a1fe75350602b1081ebd5adc9a
+
+pkgname = gomu

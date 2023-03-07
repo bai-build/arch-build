@@ -1,0 +1,22 @@
+pkgbase = gnome-passwordsafe
+	pkgdesc = A password manager for GNOME
+	pkgver = 3.30.2
+	pkgrel = 1
+	url = https://gitlab.gnome.org/World/PasswordSafe
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	makedepends = meson
+	makedepends = ninja
+	depends = gtk3
+	depends = python-pykeepass
+	depends = python-construct
+	depends = gobject-introspection
+	depends = libhandy
+	conflicts = gnome-passwordsafe-git
+	source = https://gitlab.gnome.org/World/PasswordSafe/-/archive/3.30.2/PasswordSafe-3.30.2.tar.gz
+	sha256sums = ab25b4c0c85ba02d26d04c8f508bb6efad2c1b31ed589b72ce3452ac1f0c0d4d
+
+pkgname = gnome-passwordsafe
+

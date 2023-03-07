@@ -1,0 +1,18 @@
+pkgbase = libxpresent
+	pkgdesc = X Present Extension library
+	pkgver = 1.0.0+3+g9d31d21
+	pkgrel = 1
+	url = https://gitlab.freedesktop.org/xorg/lib/libxpresent
+	arch = i686
+	arch = x86_64
+	license = custom
+	makedepends = git
+	makedepends = xorg-util-macros
+	depends = xorgproto
+	depends = libxfixes
+	depends = libxrandr
+	source = git+https://gitlab.freedesktop.org/xorg/lib/libxpresent.git#commit=9d31d2162af3b50a6d7c0175d7abc680da9aec76
+	sha256sums = SKIP
+
+pkgname = libxpresent
+

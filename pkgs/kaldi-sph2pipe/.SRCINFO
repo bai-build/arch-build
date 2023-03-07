@@ -1,0 +1,19 @@
+pkgbase = kaldi-sph2pipe
+	pkgdesc = Speech recognition research toolkit
+	pkgver = 2.5
+	pkgrel = 2
+	url = https://github.com/kaldi-asr/kaldi
+	arch = x86_64
+	arch = i686
+	license = APACHE
+	makedepends = git
+	makedepends = wget
+	makedepends = python
+	makedepends = python2
+	makedepends = subversion
+	depends = glibc
+	source = https://github.com/kaldi-asr/kaldi/archive/master.zip
+	sha256sums = SKIP
+
+pkgname = kaldi-sph2pipe
+

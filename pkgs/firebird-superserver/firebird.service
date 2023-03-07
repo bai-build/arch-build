@@ -1,0 +1,15 @@
+[Unit]
+Description=Firebird Database Service (SuperServer)
+After=syslog.target network.target
+
+[Service]
+User=firebird
+Group=firebird
+Type=forking
+PIDFile=/run/firebird/default.pid
+Environment=LD_PRELOAD=libfbclient.so.2
+ExecStart=/usr/lib/firebird/bin/fbguard -pidfile /run/firebird/default.pid -daemon -forever
+SyslogIdentifier=firebird
+
+[Install]
+WantedBy=multi-user.target

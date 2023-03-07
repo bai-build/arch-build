@@ -1,0 +1,19 @@
+pkgbase = matlab
+	pkgdesc = A high-level language for numerical computation and visualization
+	pkgver = 9.13.0.2126072
+	pkgrel = 2
+	url = https://www.mathworks.com
+	arch = x86_64
+	license = custom
+	makedepends = gendesk
+	depends = matlab-meta
+	provides = matlab
+	provides = matlab-bin
+	source = local://matlab.tar
+	source = local://matlab.fik
+	source = local://matlab.lic
+	b2sums = SKIP
+	b2sums = SKIP
+	b2sums = SKIP
+
+pkgname = matlab

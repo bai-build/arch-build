@@ -1,0 +1,19 @@
+pkgbase = libx32-xz
+	pkgdesc = Library and command line tools for XZ and LZMA compressed files (x32 ABI)
+	pkgver = 5.2.2
+	pkgrel = 1.1
+	url = http://tukaani.org/xz/
+	arch = x86_64
+	license = GPL
+	license = LGPL
+	license = custom
+	makedepends = gcc-multilib-x32
+	depends = libx32-glibc
+	depends = xz
+	source = http://tukaani.org/xz/xz-5.2.2.tar.gz
+	source = http://tukaani.org/xz/xz-5.2.2.tar.gz.sig
+	md5sums = 7cf6a8544a7dae8e8106fdf7addfa28c
+	md5sums = SKIP
+
+pkgname = libx32-xz
+

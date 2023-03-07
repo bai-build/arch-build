@@ -1,0 +1,24 @@
+pkgbase = game_music_emu-kode54-git
+	pkgdesc = Multi-purpose console music emulator and player library (a.k.a. libgme) (kode54's fork)
+	pkgver = r193.be0a069
+	pkgrel = 2
+	url = https://bitbucket.org/losnoco/game_music_emu
+	arch = i686
+	arch = x86_64
+	license = LGPL2.1
+	makedepends = git
+	makedepends = qt5-base
+	depends = gcc-libs
+	depends = glibc
+	provides = libgme
+	provides = game_music_emu
+	provides = game_music_emu-kode54
+	conflicts = libgme
+	conflicts = game_music_emu
+	conflicts = game_music_emu-kode54
+	source = game_music_emu-kode54-git::git+https://bitbucket.org/losnoco/game_music_emu.git
+	source = File_Extractor::git+https://bitbucket.org/losnoco/file_extractor.git
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = game_music_emu-kode54-git

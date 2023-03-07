@@ -1,0 +1,7 @@
+*.swp
+*.swo
+*.xz
+myrrdin-mc/
+src/
+pkg/
+*.tar.xz

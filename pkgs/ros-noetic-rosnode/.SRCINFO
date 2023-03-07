@@ -1,0 +1,17 @@
+pkgbase = ros-noetic-rosnode
+	pkgdesc = ROS - rosnode is a command-line tool for displaying debug information about ROS Nodes, including publications, subscriptions and connections.
+	pkgver = 1.15.14
+	pkgrel = 1
+	url = https://wiki.ros.org/rosnode
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-noetic-catkin
+	makedepends = ros-noetic-rostest
+	depends = ros-noetic-rostopic
+	depends = ros-noetic-rosgraph
+	source = ros-noetic-rosnode-1.15.14.tar.gz::https://github.com/ros/ros_comm/archive/1.15.14.tar.gz
+	sha256sums = 1083b58470a81323bc3a13aa9ae7c813e9fbc27b18f0e95a76b53e4076f3d872
+
+pkgname = ros-noetic-rosnode

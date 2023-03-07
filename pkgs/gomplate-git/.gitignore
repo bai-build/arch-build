@@ -1,0 +1,5 @@
+src
+pkg
+gomplate-git
+*pkg.tar.*
+tags

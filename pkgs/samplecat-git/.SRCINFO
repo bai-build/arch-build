@@ -1,0 +1,28 @@
+pkgbase = samplecat-git
+	pkgdesc = A program for cataloguing and auditioning audio samples.
+	pkgver = 0.3.2.r1.g0bb17d2
+	pkgrel = 1
+	url = http://ayyi.github.io/samplecat
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	makedepends = ladspa
+	makedepends = python
+	depends = dbus-glib
+	depends = ffmpeg
+	depends = fftw
+	depends = graphene
+	depends = gtk2
+	depends = jack
+	depends = libsndfile
+	depends = libyaml
+	depends = mariadb-libs
+	depends = sqlite
+	provides = samplecat
+	conflicts = samplecat
+	source = git+https://github.com/ayyi/samplecat.git#branch=ffmpeg-5
+	source = git+https://github.com/ayyi/libwaveform.git
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = samplecat-git

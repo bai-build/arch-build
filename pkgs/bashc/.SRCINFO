@@ -1,0 +1,18 @@
+pkgbase = bashc
+	pkgdesc = Bash Commander is the GNU Bourne Again shell extended with two-panel OFM file manager.
+	pkgver = 4.3.r139.c6eb92e
+	pkgrel = 1
+	url = https://github.com/sergev/bash-commander
+	install = bashc.install
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = ncurses
+	depends = bash
+	backup = etc/bash_commander
+	backup = etc/bash_dialog
+	source = git+https://github.com/sergev/bash-commander.git
+	sha256sums = SKIP
+
+pkgname = bashc
+

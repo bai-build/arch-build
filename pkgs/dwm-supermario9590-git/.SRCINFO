@@ -1,0 +1,25 @@
+pkgbase = dwm-supermario9590-git
+	pkgdesc = My custom build of DWM
+	pkgver = 6.2
+	pkgrel = 1
+	url = https://gitlab.com/supermario9590/dwm-supermario9590
+	arch = x86_64
+	arch = i686
+	license = MIT
+	makedepends = git
+	depends = libx11
+	depends = libxinerama
+	depends = libxft
+	depends = nerd-fonts-mononoki
+	depends = ttf-symbola
+	depends = freetype2
+	depends = st
+	depends = dmenu
+	depends = emacs
+	provides = dwm
+	conflicts = dwm
+	source = dwm::git+https://git.suckless.org/dwm
+	md5sums = SKIP
+
+pkgname = dwm-supermario9590-git
+

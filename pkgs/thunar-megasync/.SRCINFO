@@ -1,0 +1,16 @@
+pkgbase = thunar-megasync
+	pkgdesc = Upload your files to your Mega account from Thunar.
+	pkgver = 3.6.6.0
+	pkgrel = 1
+	url = https://mega.nz/sync
+	arch = i686
+	arch = x86_64
+	license = MEGA LIMITED CODE REVIEW LICENCE
+	depends = megasync
+	depends = thunar
+	provides = thunar-megasync
+	source = https://github.com/meganz/MEGAsync/archive/v3.6.6.0_Linux.tar.gz
+	sha256sums = 377a0b77b2506ebe0052d6366c3b5b74c3012cb4938e4df5e4b003677073f5fa
+
+pkgname = thunar-megasync
+

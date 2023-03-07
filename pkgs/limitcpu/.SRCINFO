@@ -1,0 +1,14 @@
+pkgbase = limitcpu
+	pkgdesc = A simple cpulimit program that attempts to limit the CPU usage of a process, expressed in percentage.
+	pkgver = 2.7
+	pkgrel = 1
+	url = https://sourceforge.net/projects/limitcpu/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = glibc
+	source = http://downloads.sourceforge.net/sourceforge/limitcpu/cpulimit-2.7.tar.gz
+	md5sums = 8732edc5d2092b380412288514e8180e
+	sha256sums = 1de040a4f8a40dfe8c7a025fe98075673468fbc3fccccbc231bc7402f62ec4a0
+
+pkgname = limitcpu

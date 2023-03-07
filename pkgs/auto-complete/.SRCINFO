@@ -1,0 +1,16 @@
+pkgbase = auto-complete
+	pkgdesc = An intelligent auto-completion extension for Emacs
+	pkgver = 1.5.0
+	pkgrel = 2
+	url = http://auto-complete.org/
+	arch = any
+	license = GPL3
+	makedepends = emacs
+	makedepends = cask
+	depends = emacs-popup-el
+	optdepends = emacs
+	source = auto-complete-1.5.0.tar.gz::https://github.com/auto-complete/auto-complete/archive/v1.5.0.tar.gz
+	md5sums = 014530e9988c3f5e98c7993cce0ecd6b
+
+pkgname = auto-complete
+

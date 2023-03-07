@@ -1,0 +1,16 @@
+pkgbase = ltwheelconf-git
+	pkgdesc = Setup your Logitech wheel under Linux
+	pkgver = 0.2.7
+	pkgrel = 2
+	url = https://github.com/thk/LTWheelConf
+	arch = x86_64
+	arch = i686
+	license = GPL
+	makedepends = git
+	makedepends = make
+	depends = libusb
+	source = git+https://github.com/thk/LTWheelConf.git
+	sha1sums = SKIP
+
+pkgname = ltwheelconf-git
+

@@ -1,0 +1,20 @@
+pkgbase = dfl-ipc
+	pkgdesc = A very simple set of IPC classes for inter-process communication
+	pkgver = 0.1.1
+	pkgrel = 1
+	url = https://gitlab.com/desktop-frameworks/ipc
+	arch = x86_64
+	arch = aarch64
+	license = GPL3
+	makedepends = meson
+	makedepends = ninja
+	makedepends = qt5-base
+	makedepends = qt6-base
+	source = https://gitlab.com/desktop-frameworks/ipc/-/archive/v0.1.1/ipc-v0.1.1.tar.gz
+	md5sums = 208e48dc8cf986bfdf503e0fc7b2c6a3
+
+pkgname = dfl-ipc
+	depends = qt5-base
+
+pkgname = dfl-ipc-qt6
+	depends = qt6-base

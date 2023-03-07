@@ -1,0 +1,21 @@
+post_install () {
+	# updating module dependencies
+	echo ">>> Updating module dependencies. Please wait ..."
+	depmod %KERNVER%
+}
+
+post_upgrade() {
+	if findmnt --fstab -uno SOURCE /boot &>/dev/null && ! mountpoint -q /boot; then
+		echo "WARNING: /boot appears to be a separate partition but is not mounted."
+	fi
+
+	# updating module dependencies
+	echo ">>> Updating module dependencies. Please wait ..."
+	depmod %KERNVER%
+}
+
+post_remove() {
+	# also remove the compat symlinks
+	rm -f boot/initramfs-%PKGBASE%.img
+	rm -f boot/initramfs-%PKGBASE%-fallback.img
+}

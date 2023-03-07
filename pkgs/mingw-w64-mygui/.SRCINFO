@@ -1,0 +1,24 @@
+pkgbase = mingw-w64-mygui
+	pkgdesc = A multilayer and overlappable GUI System (mingw-w64)
+	pkgver = 3.4.1
+	pkgrel = 1
+	url = http://mygui.info/
+	arch = any
+	license = LGPL
+	makedepends = mingw-w64-cmake
+	makedepends = mingw-w64-gcc
+	makedepends = mingw-w64-pkg-config
+	makedepends = doxygen
+	makedepends = graphviz
+	makedepends = ttf-dejavu
+	depends = mingw-w64-crt
+	depends = mingw-w64-sdl2
+	depends = mingw-w64-sdl2_image
+	depends = mingw-w64-pkg-config
+	options = !strip
+	options = !buildflags
+	options = staticlibs
+	source = https://github.com/MyGUI/mygui/archive/MyGUI3.4.1.tar.gz
+	sha512sums = 9d36272345b1a755db88848c8a0919feb6f8ae09d048efa3b8ed833bb5ddb9c65e1e7e0d26ad39eecd2a4de53fb654f4099c555e9ebd21ce9541a1a74580ef05
+
+pkgname = mingw-w64-mygui

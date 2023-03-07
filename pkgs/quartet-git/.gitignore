@@ -1,0 +1,9 @@
+# Blacklist everything by default to avoid accidentally committing something
+*
+
+# Whitelist the following files and directories
+!/.SRCINFO
+!/.gitignore
+!/PKGBUILD
+!/make-shared-lib.patch
+!/quartet-git.changelog

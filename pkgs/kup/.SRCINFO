@@ -1,0 +1,29 @@
+pkgbase = kup
+	pkgdesc = A KDE bup backup software for helping people to keep up-to-date backups. The backup types support: incremental (dup) and synchronized (rsync).
+	pkgver = 0.6.0
+	pkgrel = 6
+	url = http://kde-apps.org/content/show.php/Kup+Backup+System?content=147465
+	install = kup.install
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = cmake
+	makedepends = extra-cmake-modules
+	depends = qt5-base
+	depends = kcoreaddons
+	depends = kdbusaddons
+	depends = ki18n
+	depends = kio
+	depends = solid
+	depends = kidletime
+	depends = knotifications
+	depends = kiconthemes
+	depends = kconfig
+	depends = kinit
+	optdepends = bup: support for incremental backups
+	optdepends = rsync: support for synced backups
+	source = https://github.com/spersson/Kup/archive/kup-0.6.0.tar.gz
+	md5sums = ba71ce5caf38f63e3881ecf5d56e7eab
+
+pkgname = kup
+

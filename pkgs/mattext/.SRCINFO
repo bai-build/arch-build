@@ -1,0 +1,19 @@
+pkgbase = mattext
+	pkgdesc = Simple matrix-style pager
+	pkgver = 0.8
+	pkgrel = 2
+	url = https://github.com/dhurum/mattext
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	makedepends = cmake
+	makedepends = gzip
+	depends = ncurses
+	depends = gcc-libs
+	depends = libev
+	source = https://github.com/dhurum/mattext/archive/v0.8.tar.gz
+	sha256sums = 4998efdf224f8f8c7afe54e3dffe60f547bcc573b50b6d3415d52865ee519ab2
+
+pkgname = mattext
+

@@ -1,0 +1,13 @@
+#dolphin
+.directory
+
+#pkg building files
+
+*.7z
+*.tar*
+
+src/
+pkg/
+*/
+*.sw*
+*.log

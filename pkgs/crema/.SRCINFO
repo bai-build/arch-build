@@ -1,0 +1,24 @@
+pkgbase = crema
+	pkgdesc = Manage (remote) custom repositories
+	pkgver = 2.3.1
+	pkgrel = 1
+	url = https://gitlab.com/mipimipi/crema
+	arch = any
+	license = GPL3
+	makedepends = git
+	makedepends = go
+	makedepends = make
+	makedepends = asciidoctor
+	depends = devtools
+	depends = git
+	depends = pacman
+	depends = rsync
+	depends = sudo
+	optdepends = gnupg
+	provides = crema
+	conflicts = crema-git
+	source = crema-2.3.1.tar.gz::https://gitlab.com/mipimipi/crema/-/archive/2.3.1/crema-2.3.1.tar.gz
+	validpgpkeys = 11ECD6695134183B3E7AF1C2223AAA374A1D59CE
+	md5sums = SKIP
+
+pkgname = crema

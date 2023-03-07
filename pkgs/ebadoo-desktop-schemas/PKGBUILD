@@ -1,0 +1,38 @@
+# Maintainer: Fernando Guevara <admin@ebadoo.com>
+
+pkgname=ebadoo-desktop-schemas
+pkgver=3.34.0.r0.ebb003
+pkgrel=1
+pkgdesc="Custom settings schemas for ebadoo-shell"
+arch=(any)
+url="https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas"
+license=(GPL)
+provides=("gsettings-desktop-schemas=$pkgver")
+conflicts=('gsettings-desktop-schemas')
+replaces=('gsettings-desktop-schemas')
+depends=('glib2' 'dconf')
+makedepends=('gobject-introspection' 'git' 'meson')
+source=("git+https://gitlab.com/ebadoo/ebadoo-desktop-schemas.git")
+sha256sums=('SKIP')
+
+pkgver() {
+  cd $pkgname
+  git describe --tags | sed 's/-/+/g'
+}
+
+prepare() {
+  cd $pkgname
+}
+
+build() {
+  arch-meson $pkgname build
+  ninja -C build
+}
+
+check() {
+  meson test -C build
+}
+
+package() {
+  DESTDIR="$pkgdir" meson install -C build
+}

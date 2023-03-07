@@ -1,0 +1,19 @@
+pkgbase = google-authenticator-libpam-git
+	pkgdesc = PAM module for google authenticator app
+	pkgver = r120.c1b3879
+	pkgrel = 1
+	url = https://github.com/google/google-authenticator-libpam
+	arch = i686
+	arch = x86_64
+	arch = armv7h
+	license = APACHE
+	makedepends = git
+	depends = pam
+	optdepends = qrencode: scannable QR codes for google auth phone app
+	provides = google-authenticator-libpam
+	conflicts = google-authenticator-libpam
+	source = google-authenticator-libpam-git::git+https://github.com/google/google-authenticator-libpam.git
+	md5sums = SKIP
+
+pkgname = google-authenticator-libpam-git
+

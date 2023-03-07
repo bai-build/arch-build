@@ -1,0 +1,17 @@
+pkgbase = ponymix-git
+	pkgdesc = CLI PulseAudio Volume Control
+	pkgver = 5.r4.g83c6557
+	pkgrel = 1
+	url = http://github.com/falconindy/ponymix
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = git
+	depends = pulseaudio
+	depends = libnotify
+	provides = ponymix
+	conflicts = ponymix
+	source = ponymix::git+https://github.com/falconindy/ponymix.git
+	sha256sums = SKIP
+
+pkgname = ponymix-git

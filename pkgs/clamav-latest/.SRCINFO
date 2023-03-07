@@ -1,0 +1,36 @@
+pkgbase = clamav-latest
+	pkgdesc = Anti-virus toolkit for Unix. Compiling with Openssl 1.0 and many options for normal work with Squid4.1 and ICAP module Squidclamav.
+	pkgver = 0.100.1
+	pkgrel = 2
+	url = https://www.clamav.net/
+	install = clamav.install
+	arch = x86_64
+	license = GPL
+	makedepends = libmilter
+	makedepends = systemd
+	depends = bzip2
+	depends = libltdl
+	depends = libxml2
+	depends = curl
+	depends = libsystemd
+	depends = pcre2
+	depends = json-c
+	depends = openssl-1.0
+	backup = etc/clamav/clamd.conf
+	backup = etc/clamav/freshclam.conf
+	backup = etc/clamav/clamav-milter.conf
+	backup = etc/logrotate.d/clamav
+	source = https://www.clamav.net/downloads/production/clamav-0.100.1.tar.gz
+	source = https://www.clamav.net/downloads/production/clamav-0.100.1.tar.gz.sig
+	source = clamav.logrotate
+	source = clamav.tmpfiles
+	source = clamav.sysusers
+	validpgpkeys = 65ED513993F08DA06F9639A6F13F9E16BCA5BFAD
+	sha512sums = SKIP
+	sha512sums = SKIP
+	sha512sums = SKIP
+	sha512sums = SKIP
+	sha512sums = SKIP
+
+pkgname = clamav-latest
+

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+post_install() {
+  echo "make sure to enable taebron.service or /etc/rc.d/taebron."
+}

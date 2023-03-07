@@ -1,0 +1,28 @@
+pkgbase = cgal-swig-bindings
+	pkgdesc = CGAL bindings using SWIG
+	pkgver = r909.f579deb
+	pkgrel = 1
+	url = https://github.com/CGAL/cgal-swig-bindings
+	arch = x86_64
+	license = custom: Boost
+	makedepends = cgal
+	makedepends = cmake
+	makedepends = swig
+	makedepends = eigen
+	makedepends = python-numpy
+	makedepends = jdk-openjdk
+	makedepends = tbb
+	makedepends = boost
+	makedepends = git
+	source = git+https://github.com/CGAL/cgal-swig-bindings.git
+	md5sums = SKIP
+
+pkgname = python-cgal
+	depends = python-numpy
+	depends = boost
+	depends = tbb
+
+pkgname = java-cgal
+	depends = jdk-openjdk
+	depends = boost
+	depends = tbb

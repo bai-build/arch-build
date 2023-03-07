@@ -1,0 +1,26 @@
+pkgbase = wdt
+	pkgdesc = Tool to transfer data between 2 systems as fast as possible over multiple TCP paths
+	pkgver = 1.27.1612021
+	pkgrel = 7
+	url = https://github.com/facebook/wdt
+	arch = i686
+	arch = x86_64
+	license = BSD
+	checkdepends = gtest
+	makedepends = git
+	makedepends = cmake
+	makedepends = boost
+	depends = glibc
+	depends = bash
+	depends = double-conversion
+	depends = gflags
+	depends = google-glog
+	depends = openssl-1.0
+	optdepends = jemalloc
+	source = git+https://github.com/facebook/wdt.git#tag=v1.27.1612021
+	source = git+https://github.com/facebook/folly.git#tag=v2017.04.10.00
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = wdt
+

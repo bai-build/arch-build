@@ -1,0 +1,5 @@
+src
+pkg
+hackrf-git
+*pkg.tar.*
+tags

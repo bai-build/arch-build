@@ -1,0 +1,23 @@
+pkgbase = lib32-sane
+	pkgdesc = Scanner Access Now Easy (32 bit)
+	pkgver = 1.0.32
+	pkgrel = 1
+	url = http://www.sane-project.org/
+	arch = x86_64
+	license = GPL
+	makedepends = gcc-multilib
+	depends = lib32-poppler-glib
+	depends = lib32-libtiff>=4.0.0
+	depends = lib32-libgphoto2
+	depends = lib32-libjpeg
+	depends = lib32-libusb
+	depends = lib32-libieee1284
+	depends = lib32-v4l-utils
+	depends = lib32-avahi
+	depends = bash
+	depends = lib32-net-snmp
+	depends = sane
+	source = https://gitlab.com/sane-project/backends/uploads/104f09c07d35519cc8e72e604f11643f/sane-backends-1.0.32.tar.gz
+	sha512sums = 416757d9a69bbc18678d1f16a024ba5a949c571204a68f36009d416be28723886ccea71daaa7da90d20eac9696cd44e567802d6c21c3fc5914b97213bbedb6d5
+
+pkgname = lib32-sane

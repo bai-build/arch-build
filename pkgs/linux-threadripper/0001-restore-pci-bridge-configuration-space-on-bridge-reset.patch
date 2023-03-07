@@ -1,0 +1,113 @@
+diff -bur archlinux-linux/drivers/pci/pci.c archlinux-linux/drivers/pci/pci.c
+--- archlinux-linux/drivers/pci/pci.c	2018-11-03 11:22:52.203892151 -0700
++++ archlinux-linux/drivers/pci/pci.c	2018-11-03 11:24:11.346388035 -0700
+@@ -1160,13 +1160,13 @@
+ 					 retry, force);
+ }
+ 
+-static void pci_restore_config_space(struct pci_dev *pdev)
++static void pci_restore_config_space(struct pci_dev *pdev, bool force)
+ {
+ 	if (pdev->hdr_type == PCI_HEADER_TYPE_NORMAL) {
+-		pci_restore_config_space_range(pdev, 10, 15, 0, false);
++		pci_restore_config_space_range(pdev, 10, 15, 0, force);
+ 		/* Restore BARs before the command register. */
+-		pci_restore_config_space_range(pdev, 4, 9, 10, false);
+-		pci_restore_config_space_range(pdev, 0, 3, 0, false);
++		pci_restore_config_space_range(pdev, 4, 9, 10, force);
++		pci_restore_config_space_range(pdev, 0, 3, 0, force);
+ 	} else if (pdev->hdr_type == PCI_HEADER_TYPE_BRIDGE) {
+ 		pci_restore_config_space_range(pdev, 12, 15, 0, false);
+ 
+@@ -1178,7 +1178,7 @@
+ 		pci_restore_config_space_range(pdev, 9, 11, 0, true);
+ 		pci_restore_config_space_range(pdev, 0, 8, 0, false);
+ 	} else {
+-		pci_restore_config_space_range(pdev, 0, 15, 0, false);
++		pci_restore_config_space_range(pdev, 0, 15, 0, force);
+ 	}
+ }
+ 
+@@ -1209,11 +1209,7 @@
+ 	}
+ }
+ 
+-/**
+- * pci_restore_state - Restore the saved state of a PCI device
+- * @dev: - PCI device that we're dealing with
+- */
+-void pci_restore_state(struct pci_dev *dev)
++void _pci_restore_state(struct pci_dev *dev, bool force)
+ {
+ 	if (!dev->state_saved)
+ 		return;
+@@ -1228,7 +1224,7 @@
+ 
+ 	pci_cleanup_aer_error_status_regs(dev);
+ 
+-	pci_restore_config_space(dev);
++	pci_restore_config_space(dev, force);
+ 
+ 	pci_restore_pcix_state(dev);
+ 	pci_restore_msi_state(dev);
+@@ -1239,6 +1235,15 @@
+ 
+ 	dev->state_saved = false;
+ }
++
++/**
++ * pci_restore_state - Restore the saved state of a PCI device
++ * @dev: - PCI device that we're dealing with
++ */
++void pci_restore_state(struct pci_dev *dev)
++{
++	_pci_restore_state(dev, 0);
++}
+ EXPORT_SYMBOL(pci_restore_state);
+ 
+ struct pci_saved_state {
+@@ -4272,6 +4277,8 @@
+ {
+ 	u16 ctrl;
+ 
++	pci_save_state(dev);
++
+ 	pci_read_config_word(dev, PCI_BRIDGE_CONTROL, &ctrl);
+ 	ctrl |= PCI_BRIDGE_CTL_BUS_RESET;
+ 	pci_write_config_word(dev, PCI_BRIDGE_CONTROL, ctrl);
+@@ -4282,10 +4289,23 @@
+ 	 */
+ 	msleep(2);
+ 
++	pci_read_config_word(dev, PCI_BRIDGE_CONTROL, &ctrl);
+ 	ctrl &= ~PCI_BRIDGE_CTL_BUS_RESET;
+ 	pci_write_config_word(dev, PCI_BRIDGE_CONTROL, ctrl);
+ 
+ 	/*
++	 * According to PCI-to-PCI Bridge Architecture Specification 3.2.5.17
++	 *
++	 * "The bridge’s secondary bus interface and any buffers between
++	 * the two interfaces (primary and secondary) must be initialized
++	 * back to their default state whenever this bit is set."
++	 *
++	 * Failure to observe this causes inability to access devices on the
++	 * secondary bus on the AMD Threadripper platform.
++	 */
++	_pci_restore_state(dev, 1);
++
++	/*
+ 	 * Trhfa for conventional PCI is 2^25 clock cycles.
+ 	 * Assuming a minimum 33MHz clock this results in a 1s
+ 	 * delay before we can consider subordinate devices to
+diff -bur archlinux-linux/include/linux/pci.h archlinux-linux/include/linux/pci.h
+--- archlinux-linux/include/linux/pci.h	2018-11-03 11:22:52.207225588 -0700
++++ archlinux-linux/include/linux/pci.h	2018-11-03 11:27:18.255617475 -0700
+@@ -1640,7 +1640,7 @@
+ 
+ /* Power management related routines */
+ static inline int pci_save_state(struct pci_dev *dev) { return 0; }
+-static inline void pci_restore_state(struct pci_dev *dev) { }
++static inline void _pci_restore_state(struct pci_dev *dev, bool force) { }
+ static inline int pci_set_power_state(struct pci_dev *dev, pci_power_t state)
+ { return 0; }
+ static inline int pci_wake_from_d3(struct pci_dev *dev, bool enable)

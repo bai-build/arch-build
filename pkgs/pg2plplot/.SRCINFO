@@ -1,0 +1,17 @@
+pkgbase = pg2plplot
+	pkgdesc = Assist the transition from PGPlot to PLplot in Fortran programs
+	pkgver = 5.13.0
+	pkgrel = 1
+	url = http://pg2plplot.sourceforge.net/
+	changelog = ChangeLog
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = cmake
+	makedepends = gcc-fortran
+	makedepends = plplot
+	depends = gcc-libs
+	source = http://sourceforge.net/projects/pg2plplot/files/pg2plplot-5.13.0.tar.gz
+	sha512sums = 38261e2bed8b2700c2b797a6d220a9ede0f18ddfb00260ef1eccfcdf3c7f8bef23918d659927650644e10976a4a7cb7855a01aa6da0b033dace8bb356b141345
+
+pkgname = pg2plplot

@@ -1,0 +1,15 @@
+pkgbase = cereal
+	pkgdesc = A C++11 library for serialization
+	pkgver = 1.2.2
+	pkgrel = 4
+	url = https://github.com/USCiLab/cereal
+	arch = x86_64
+	license = BSD
+	makedepends = boost
+	makedepends = cmake
+	makedepends = git
+	source = git+https://github.com/USCiLab/cereal.git#tag=v1.2.2
+	sha256sums = SKIP
+
+pkgname = cereal
+

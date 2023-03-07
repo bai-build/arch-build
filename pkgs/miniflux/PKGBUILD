@@ -1,0 +1,62 @@
+# Maintainer: Thor77 <thor77 at thor77 dot org>
+# Maintainer: Clar Charr <clar@charr.xyz>
+# Contributor: somini <dev at somini dot xyz>
+
+pkgname=miniflux
+pkgver=2.0.32
+pkgrel=1
+pkgdesc='Minimalist Feed Reader'
+arch=('x86_64' 'arm' 'armv6h' 'armv7h' 'aarch64')
+url='https://miniflux.app'
+license=('Apache')
+optdepends=("postgresql: unless the database is on another machine, this machine needs it")
+makedepends=('go' 'git')
+conflicts=('miniflux-git')
+backup=('etc/miniflux.conf')
+source=(
+  https://github.com/miniflux/miniflux/archive/${pkgver}.tar.gz
+  miniflux.conf
+  miniflux.service
+  miniflux.sysusers
+)
+_repo="v2"
+sha256sums=('58a7d81c3a33804c73a90d41fa2e2fa7a7d7111ff931489346ee42bc17b7dbaf'
+            '1247a3cfe0307f5f1bb070e616f57344d8f16201070ecf7dda243b3fa1fbd8b8'
+            'b4ea52858882240256dc583a7766319fcaada4acac185d4def5b02e0d2da532a'
+            'd1ce5acf1e633b04b92bf9330bd64d97c19d8f8d39c7bb4b64e11a96be4b73e2')
+
+prepare() {
+  mkdir -p "${srcdir}/src/github.com/miniflux"
+  ln -sf "${srcdir}/${_repo}-${pkgver}" "${srcdir}/src/github.com/miniflux/${pkgname}"
+}
+
+case "$CARCH" in
+  x86_64) _target=amd64 ;;
+  i686) _target=x86 ;;
+  arm) _target=armv5 ;;
+  armv6h) _target=armv6 ;;
+  armv7h) _target=armv7 ;;
+  aarch64) _target=arm64 ;;
+  *) return 1 ;;
+esac
+
+build() {
+  cd "${srcdir}/${_repo}-${pkgver}"
+
+  export CGO_CPPFLAGS="${CPPFLAGS}"
+  export CGO_CFLAGS="${CFLAGS}"
+  export CGO_CXXFLAGS="${CXXFLAGS}"
+  export CGO_LDFLAGS="${LDFLAGS}"
+  export GOFLAGS="-buildmode=pie -trimpath -ldflags=-linkmode=external -mod=readonly -modcacherw"
+
+  GOPATH="${srcdir}" PATH="${PATH}:${GOPATH}/bin/" make VERSION="${pkgver}" COMMIT="${pkgver}" linux-$_target
+}
+
+package() {
+  install -Dm644 "${srcdir}/miniflux.conf" "${pkgdir}/etc/miniflux.conf"
+  install -Dm644 "${srcdir}/miniflux.service" "${pkgdir}/usr/lib/systemd/system/miniflux.service"
+  install -Dm644 "${srcdir}/miniflux.sysusers" "${pkgdir}/usr/lib/sysusers.d/miniflux.conf"
+  install -Dm644 "${srcdir}/${_repo}-${pkgver}/miniflux.1" "${pkgdir}/usr/share/man/man1/miniflux.1"
+  install -Dm755 "${srcdir}/${_repo}-${pkgver}/miniflux-linux-${_target}" "${pkgdir}/usr/bin/miniflux"
+}
+

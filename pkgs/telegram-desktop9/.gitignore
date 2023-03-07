@@ -1,0 +1,7 @@
+tdesktop-*-full.tar.gz
+*._patch
+
+src
+pkg
+
+*.pkg.tar*

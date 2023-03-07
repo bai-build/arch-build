@@ -1,0 +1,8 @@
+post_upgrade() {
+  if (( $(vercmp $2 1:2.6.5+p25+g7f63105-2) < 0 )); then
+    cat <<MSG
+  The Arch-specific FT2_SUBPIXEL_HINTING has been removed.
+  Subpixel hinting is now configured in /etc/profile.d/freetype2.sh .
+MSG
+  fi
+}

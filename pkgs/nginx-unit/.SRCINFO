@@ -1,0 +1,57 @@
+pkgbase = nginx-unit
+	pkgdesc = Lightweight, dynamic, open-source server for diverse web applications.
+	pkgver = 1.29.0
+	pkgrel = 2
+	url = https://unit.nginx.org/
+	arch = i686
+	arch = x86_64
+	license = Apache
+	makedepends = php-embed
+	makedepends = php-legacy-embed
+	makedepends = python
+	makedepends = go
+	makedepends = ruby
+	makedepends = perl
+	makedepends = npm
+	source = https://unit.nginx.org/download/unit-1.29.0.tar.gz
+	source = unit.service
+	sha256sums = 1ddb4d7c67c2da25c4bacbcace9061d417f86f55002ff6c409483feb9aea57d9
+	sha256sums = 8c9b2f732d6e50aa747aa7703303e5fff69f5abc6f5fc1741b774b422e029606
+
+pkgname = nginx-unitd
+	depends = glibc
+	depends = openssl
+
+pkgname = nginx-libunit
+
+pkgname = nginx-unit-python
+	depends = nginx-unitd
+	depends = python
+
+pkgname = nginx-unit-php-legacy
+	depends = nginx-unitd
+	depends = php-legacy-embed
+
+pkgname = nginx-unit-php
+	depends = nginx-unitd
+	depends = php-embed
+
+pkgname = nginx-unit-perl
+	arch = any
+	depends = nginx-unitd
+	depends = perl
+
+pkgname = nginx-unit-ruby
+	arch = any
+	depends = nginx-unitd
+	depends = ruby
+
+pkgname = nginx-unit-nodejs
+	arch = any
+	depends = nginx-unitd
+	depends = nodejs
+
+pkgname = nginx-unit-go
+	arch = any
+	depends = nginx-unitd
+	depends = go

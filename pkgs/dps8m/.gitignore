@@ -1,0 +1,6 @@
+*.tar.*
+src
+pkg
+*.log
+*.pkg.*
+dps8m.state

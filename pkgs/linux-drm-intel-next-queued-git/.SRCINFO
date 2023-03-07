@@ -1,0 +1,38 @@
+pkgbase = linux-drm-intel-next-queued-git
+	pkgdesc = Linux with patches for Intel graphics
+	pkgver = 5.6.887400.b2fcaac98bbe
+	pkgrel = 1
+	url = https://drm.pages.freedesktop.org/maintainer-tools/drm-intel.html
+	arch = x86_64
+	license = GPL2
+	makedepends = bc
+	makedepends = kmod
+	makedepends = libelf
+	makedepends = xmlto
+	makedepends = python-sphinx
+	makedepends = python-sphinx_rtd_theme
+	makedepends = graphviz
+	makedepends = imagemagick
+	makedepends = git
+	options = !strip
+	source = linux-drm-intel-next-queued-git::git://anongit.freedesktop.org/drm/drm-intel#branch=drm-intel-next-queued
+	source = config
+	sha256sums = SKIP
+	sha256sums = 08e8355c548d5710f157a062b39d97e414160916d30acd2dda307d38c43e394d
+
+pkgname = linux-drm-intel-next-queued-git
+	pkgdesc = The Linux-drm-intel-next-queued-git kernel and modules
+	install = linux.install
+	depends = coreutils
+	depends = linux-firmware
+	depends = kmod
+	depends = mkinitcpio
+	optdepends = crda: to set the correct wireless channels of your country
+	backup = etc/mkinitcpio.d/linux-drm-intel-next-queued-git.preset
+
+pkgname = linux-drm-intel-next-queued-git-headers
+	pkgdesc = Header files and scripts for building modules for Linux-drm-intel-next-queued-git kernel
+
+pkgname = linux-drm-intel-next-queued-git-docs
+	pkgdesc = Kernel hackers manual - HTML documentation that comes with the Linux-drm-intel-next-queued-git kernel
+

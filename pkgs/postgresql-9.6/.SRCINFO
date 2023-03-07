@@ -1,0 +1,73 @@
+pkgbase = postgresql-9.6
+	pkgdesc = Sophisticated object-relational DBMS
+	pkgver = 9.6.24
+	pkgrel = 1
+	url = https://www.postgresql.org/
+	arch = i686
+	arch = x86_64
+	license = custom:PostgreSQL
+	makedepends = clang
+	makedepends = icu
+	makedepends = krb5
+	makedepends = libldap
+	makedepends = libxml2
+	makedepends = llvm
+	makedepends = openssl>=1.0.0
+	makedepends = pam
+	makedepends = perl
+	makedepends = python
+	makedepends = python2
+	makedepends = systemd
+	makedepends = tcl>=8.6.0
+	makedepends = zlib
+	source = https://ftp.postgresql.org/pub/source/v9.6.24/postgresql-9.6.24.tar.gz
+	source = postgresql-perl-rpath.patch
+	source = postgresql-run-socket.patch
+	source = postgresql.pam
+	source = postgresql.logrotate
+	source = postgresql.service
+	source = postgresql-check-db-dir
+	source = postgresql.sysusers
+	source = postgresql.tmpfiles
+	sha256sums = 52947ecc119846eace5164399d173576c0d4a47ec116ae58a46a8fd0c576c7c3
+	sha256sums = 77624f5efda79bd12d5ab59831883aad8e94395bc3ab933268b215d0b7b0df5f
+	sha256sums = 23ada3488c0d219f5957130b8231ab495b02467c30773082a9851ddc855cd705
+	sha256sums = 57dfd072fd7ef0018c6b0a798367aac1abb5979060ff3f9df22d1048bb71c0d5
+	sha256sums = 6abb842764bbed74ea4a269d24f1e73d1c0b1d8ecd6e2e6fb5fb10590298605e
+	sha256sums = bd7ff909fd40f54058d3a7df426af6e02146b5cda97736687bee0862d7d93eaf
+	sha256sums = 40da687da4fb1f6b35f406dd0f48922065d8c905d678e2a27da05806f874b780
+	sha256sums = 7fa8f0ef3f9d40abd4749cc327c2f52478cb6dfb6e2405bd0279c95e9ff99f12
+	sha256sums = 4a4c0bb9ceb156cc47e9446d8393d1f72b4fe9ea1d39ba17213359df9211da57
+
+pkgname = postgresql-9.6
+	pkgdesc = Sophisticated object-relational DBMS
+	install = postgresql.install
+	depends = postgresql-libs>=9.6.24
+	depends = llvm-libs
+	depends = systemd-libs
+	optdepends = postgresql-old-upgrade: upgrade from previous major version using pg_upgrade
+	optdepends = perl: for PL/Perl support
+	optdepends = python2: for PL/Python 2 support
+	optdepends = python: for PL/Python 3 support
+	optdepends = tcl: for PL/Tcl support
+	provides = postgresql=9.6.24
+	conflicts = postgresql
+	options = staticlibs
+	backup = etc/pam.d/postgresql
+	backup = etc/logrotate.d/postgresql
+
+pkgname = postgresql-libs-9.6
+	pkgdesc = Libraries for use with PostgreSQL
+	depends = krb5
+	depends = zlib
+	provides = postgresql-client
+	provides = postgresql-libs=9.6.24
+	conflicts = postgresql-client
+	conflicts = postgresql-libs
+
+pkgname = postgresql-docs-9.6
+	pkgdesc = HTML documentation for PostgreSQL
+	arch = any
+	provides = postgresql-docs=9.6.24
+	conflicts = postgresql-docs
+	options = docs

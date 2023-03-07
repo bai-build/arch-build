@@ -1,0 +1,19 @@
+pkgbase = madx-git
+	pkgdesc = Accelerator Optics simulation code, git master version
+	pkgver = 5.08.01.r162.g02249df0
+	pkgrel = 1
+	url = http://cern.ch/mad
+	arch = i686
+	arch = x86_64
+	license = custom
+	makedepends = git
+	makedepends = cmake
+	depends = libx11
+	depends = lapack
+	provides = madx
+	conflicts = madx-dev
+	conflicts = nmap
+	source = git+https://github.com/MethodicalAcceleratorDesign/MAD-X.git
+	sha256sums = SKIP
+
+pkgname = madx-git

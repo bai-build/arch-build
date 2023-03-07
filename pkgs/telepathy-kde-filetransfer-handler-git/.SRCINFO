@@ -1,0 +1,18 @@
+pkgbase = telepathy-kde-filetransfer-handler-git
+	pkgdesc = KDE Telepathy file transfer handler
+	pkgver = v17.04.3.r15.g8a94580
+	pkgrel = 1
+	url = http://community.kde.org/Real-Time_Communication_and_Collaboration
+	arch = x86_64
+	license = GPL
+	makedepends = extra-cmake-modules
+	makedepends = git
+	makedepends = kdoctools
+	makedepends = python
+	depends = telepathy-kde-common-internals-git
+	conflicts = telepathy-kde-filetransfer-handler
+	source = git+https://invent.kde.org/network/ktp-filetransfer-handler.git
+	sha256sums = SKIP
+
+pkgname = telepathy-kde-filetransfer-handler-git
+

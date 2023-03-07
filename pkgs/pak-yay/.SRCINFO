@@ -1,0 +1,18 @@
+pkgbase = pak-yay
+	pkgdesc = A package manager wrapper for yay written in swift
+	pkgver = 1.5
+	pkgrel = 3
+	url = https://gitlab.com/moussaelianarsen/pak
+	install = pak-yay.install
+	arch = x86_64
+	license = GPL3
+	depends = swift-language
+	depends = yay
+	provides = pak
+	provides = yaywrap
+	conflicts = pak-pacman
+	source = https://gitlab.com/moussaelianarsen/pak/-/archive/master/pak-master.tar.gz
+	md5sums = SKIP
+
+pkgname = pak-yay
+

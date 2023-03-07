@@ -1,0 +1,35 @@
+pkgbase = yosys-nightly
+	pkgdesc = Yosys Open SYnthesis Suite, A framework for RTL synthesis
+	pkgver = 20230302_yosys_0.26_73_g981c934b5
+	pkgrel = 2
+	epoch = 1
+	url = https://yosyshq.net/yosys/
+	arch = x86_64
+	license = custom:ISC
+	makedepends = git
+	makedepends = gcc
+	makedepends = bison
+	makedepends = flex
+	makedepends = pkgconf
+	makedepends = gawk
+	makedepends = protobuf
+	makedepends = iverilog
+	depends = tcl
+	depends = libffi
+	depends = python
+	depends = boost-libs
+	depends = zlib
+	depends = readline
+	optdepends = graphviz: Schematics display support
+	optdepends = xdot: Design netlist display support
+	conflicts = yosys
+	conflicts = yosys-git
+	replaces = yosys
+	replaces = yosys-git
+	options = !strip
+	source = yosys::git+https://github.com/YosysHQ/yosys.git#commit=981c934b5
+	source = yosys.conf
+	sha256sums = SKIP
+	sha256sums = 7513c07ccaf3ff00b1692348ece8a44ee48a7b9f5318f773de78d7538e82c127
+
+pkgname = yosys-nightly

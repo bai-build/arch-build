@@ -1,0 +1,11 @@
+[Unit]
+Description=NAT-PMP Server
+
+[Service]
+Type=forking
+Environment=WAN_INTERFACE=eth0
+Environment=LISTEN_ADDRESS=192.168.1.1
+ExecStart=/usr/lib/natpmp/natpmp -b -v -i $WAN_INTERFACE -a $LISTEN_ADDRESS
+
+[Install]
+WantedBy=multi-user.target

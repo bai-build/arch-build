@@ -1,0 +1,23 @@
+pkgbase = ktx_software-git
+	pkgdesc = KTX (Khronos Texture) Library and Tools
+	pkgver = 0
+	pkgrel = 2
+	url = https://github.com/KhronosGroup/KTX-Software
+	arch = i686
+	arch = pentium4
+	arch = x86_64
+	arch = arm
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	license = Apache
+	makedepends = clang
+	makedepends = cmake
+	depends = zstd
+	provides = ktx_software
+	conflicts = ktx_software
+	source = KTX-Software::git+https://github.com/KhronosGroup/KTX-Software#branch=master
+	sha256sums = SKIP
+
+pkgname = ktx_software-git
+

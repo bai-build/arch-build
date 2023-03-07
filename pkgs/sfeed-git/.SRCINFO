@@ -1,0 +1,20 @@
+pkgbase = sfeed-git
+	pkgdesc = RSS and Atom parser
+	pkgver = 0.9.16.r9.g785a50c
+	pkgrel = 1
+	url = https://codemadness.org/sfeed.html
+	arch = i686
+	arch = x86_64
+	arch = armv6h
+	arch = armv7h
+	license = ISC
+	makedepends = git
+	depends = curl
+	provides = sfeed
+	source = sfeed::git+git://git.codemadness.org/sfeed
+	source = sfeed-git.patch
+	sha256sums = SKIP
+	sha256sums = 5f2e89b58dd9bb70dfe27b696e1efaab1d94af443e9119ac79158f2871387f79
+
+pkgname = sfeed-git
+

@@ -1,0 +1,22 @@
+pkgbase = xmrig-nvidia-git
+	pkgdesc = XMRig is high performance Monero (XMR) NVIDIA mine
+	pkgver = 2.14.5.r0.ga047dc3
+	pkgrel = 2
+	url = https://github.com/xmrig/xmrig-nvidia
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	makedepends = cmake
+	makedepends = libuv
+	makedepends = cuda
+	makedepends = gcc8
+	depends = libuv
+	depends = cuda
+	optdepends = monero: wallet
+	provides = xmrig-nvidia
+	conflicts = xmrig-nvidia
+	source = git+https://github.com/xmrig/xmrig-nvidia.git
+	sha256sums = SKIP
+
+pkgname = xmrig-nvidia-git
+

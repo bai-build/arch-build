@@ -1,0 +1,33 @@
+pkgbase = rawtherapee-git
+	pkgdesc = A powerful cross-platform raw image processing program
+	pkgver = 5.8.r2738.g8ca07e858
+	pkgrel = 1
+	epoch = 1
+	url = https://www.rawtherapee.com/
+	arch = x86_64
+	arch = i686
+	arch = pentium4
+	arch = arm
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	license = GPL3
+	makedepends = cmake
+	makedepends = git
+	depends = fftw
+	depends = gtk3
+	depends = glibmm
+	depends = gtkmm3
+	depends = lcms2
+	depends = lensfun
+	depends = libcanberra
+	depends = libiptcdata
+	depends = desktop-file-utils
+	depends = hicolor-icon-theme
+	provides = rawtherapee
+	conflicts = rawtherapee
+	source = rawtherapee::git+https://github.com/Beep6581/RawTherapee.git#branch=dev
+	sha256sums = SKIP
+
+pkgname = rawtherapee-git
+

@@ -1,0 +1,18 @@
+pkgbase = somagic-easycap-git
+	pkgdesc = Linux Somagic EasyCAP DC60, EzCAP USB 2.0, and EasyCAP002 capture software
+	pkgver = r265.88d6764
+	pkgrel = 1
+	url = https://github.com/Streetwalrus/easycap-somagic-linux
+	install = somagic.install
+	arch = x86_64
+	license = GPL
+	license = GPL3
+	makedepends = git
+	depends = libusb
+	provides = somagic-easycap
+	conflicts = somagic-easycap
+	source = git+https://github.com/Streetwalrus/easycap-somagic-linux.git
+	md5sums = SKIP
+
+pkgname = somagic-easycap-git
+

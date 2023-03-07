@@ -1,0 +1,14 @@
+diff --git a/user/test.sh b/user/test.sh
+index c25b83d..19def4e 100755
+--- a/user/test.sh
++++ b/user/test.sh
+@@ -1,7 +1,7 @@
+ #!/bin/bash
+ 
+-SGX=$(dirname "$0")/../opensgx
+-PYTHON=python
++SGX=opensgx
++PYTHON=python2
+ 
+ print_usage() {
+   cat <<EOF

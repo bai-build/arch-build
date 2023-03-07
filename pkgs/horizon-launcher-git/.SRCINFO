@@ -1,0 +1,23 @@
+pkgbase = horizon-launcher-git
+	pkgdesc = A customizable, cross-platform and open-source launcher for launching all your games on Steam and other gaming services
+	pkgver = r822.e4157b9
+	pkgrel = 1
+	url = http://launchhorizon.com
+	arch = x86_64
+	license = MIT
+	makedepends = git
+	makedepends = cmake
+	makedepends = make
+	makedepends = boost
+	depends = qt5-base
+	depends = qt5-tools
+	depends = qt5-webkit
+	depends = qt5-webengine
+	provides = horizon-launcher
+	source = horizon-launcher-git::git+https://github.com/horizonlauncher/client.git
+	source = horizon-launcher.desktop
+	sha256sums = SKIP
+	sha256sums = c9046f7a6d678e0565e36458ca003c3757ac861e4f9cae8ff0989755cbcb5543
+
+pkgname = horizon-launcher-git
+

@@ -1,0 +1,17 @@
+pkgbase = kiwix-tools
+	pkgdesc = kiwix command line tools
+	pkgver = 3.1.2
+	pkgrel = 4
+	url = https://github.com/kiwix/kiwix-tools
+	arch = armv7h
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = meson
+	depends = kiwix-lib
+	replaces = kiwix-cli-git
+	source = kiwix-tools-3.1.2.tar.gz::https://github.com/kiwix/kiwix-tools/archive/3.1.2.tar.gz
+	sha256sums = 86325ec31976d40357f08c520806cf223fa1b0a5edb02ad106c2a0d6746ca364
+
+pkgname = kiwix-tools
+

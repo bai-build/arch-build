@@ -1,0 +1,21 @@
+pkgbase = xfce4-dev-tools-devel
+	pkgdesc = Xfce developer tools
+	pkgver = 4.17.2
+	pkgrel = 1
+	url = http://www.xfce.org/
+	arch = i686
+	arch = x86_64
+	arch = armv7h
+	arch = aarch64
+	license = GPL2
+	depends = gtk-doc
+	depends = automake
+	depends = make
+	depends = intltool
+	depends = pkg-config
+	provides = xfce4-dev-tools=4.17.2
+	conflicts = xfce4-dev-tools
+	source = https://archive.xfce.org/src/xfce/xfce4-dev-tools/4.17/xfce4-dev-tools-4.17.2.tar.bz2
+	sha256sums = 4501079488ee9eba007c2e2cea67755737faea887cd0e7330cc5fcbf7b397813
+
+pkgname = xfce4-dev-tools-devel

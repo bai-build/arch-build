@@ -1,0 +1,34 @@
+diff --git a/resources/desktop/plexmediaplayer.desktop b/resources/desktop/plexmediaplayer.desktop
+index c537347..380e837 100644
+--- a/resources/desktop/plexmediaplayer.desktop
++++ b/resources/desktop/plexmediaplayer.desktop
+@@ -3,7 +3,7 @@ Version=1.0
+ Name=Plex Media Player
+ GenericName=Media Player
+ Comment=View your media
+-Exec=plexmediaplayer
++Exec=env LD_LIBRARY_PATH=/opt/qt595/lib:$LD_LIBRARY_PATH plexmediaplayer
+ Icon=plexmediaplayer
+ Terminal=false
+ Type=Application
+@@ -13,16 +13,16 @@ Actions=TVF;TVW;DesktopF;DesktopW;
+ 
+ [Desktop Action TVF]
+ Name=TV [Fullscreen]
+-Exec=plexmediaplayer --fullscreen --tv
++Exec=env LD_LIBRARY_PATH=/opt/qt595/lib:$LD_LIBRARY_PATH plexmediaplayer --fullscreen --tv
+ 
+ [Desktop Action TVW]
+ Name=TV [Windowed]
+-Exec=plexmediaplayer --windowed --tv
++Exec=env LD_LIBRARY_PATH=/opt/qt595/lib:$LD_LIBRARY_PATH plexmediaplayer --windowed --tv
+ 
+ [Desktop Action DesktopF]
+ Name=Desktop [Fullscreen]
+-Exec=plexmediaplayer --fullscreen --desktop
++Exec=env LD_LIBRARY_PATH=/opt/qt595/lib:$LD_LIBRARY_PATH plexmediaplayer --fullscreen --desktop
+ 
+ [Desktop Action DesktopW]
+ Name=Desktop [Windowed]
+-Exec=plexmediaplayer --windowed --desktop
++Exec=env LD_LIBRARY_PATH=/opt/qt595/lib:$LD_LIBRARY_PATH plexmediaplayer --windowed --desktop

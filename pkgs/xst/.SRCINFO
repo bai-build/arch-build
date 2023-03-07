@@ -1,0 +1,17 @@
+pkgbase = xst
+	pkgdesc = `xst` is a st fork with some patches applied and other goodies.
+	pkgver = 0.8.4
+	pkgrel = 2
+	url = https://github.com/gnotclub/xst
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = ncurses
+	makedepends = libxext
+	makedepends = git
+	depends = libxft
+	source = https://github.com/gnotclub/xst/archive/v0.8.4.tar.gz
+	md5sums = 6757baf9f9fb62db29babc0f7d2b6493
+
+pkgname = xst
+

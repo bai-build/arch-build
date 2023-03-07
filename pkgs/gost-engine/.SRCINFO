@@ -1,0 +1,25 @@
+pkgbase = gost-engine
+	pkgdesc = Russian GOST R 34.10 and GOST R 34.11-2012 Crypto Algorithms for OpenSSL
+	pkgver = 1.1.1.r496.9b492b3
+	pkgrel = 1
+	url = https://github.com/gost-engine/engine
+	install = gost-engine.install
+	arch = x86_64
+	license = Apache 2.0
+	makedepends = cmake
+	makedepends = git
+	depends = openssl
+	provides = openssl-gost
+	conflicts = openssl-gost
+	source = gost-engine::git+https://github.com/gost-engine/engine.git#branch=openssl_1_1_1
+	source = gost.cnf
+	source = gost-engine.install
+	validpgpkeys = 33ED753E14757D79FA17E57DC4C1F715B2B66B95
+	sha256sums = SKIP
+	sha256sums = 04c3483d758e393d9831d2be4cee1eafd806eea15055438be7c7b4caeeccbfe6
+	sha256sums = 5da9d605aaf45af5623d96de6cc8b68fa385601beb28fcba6054aa5811b9a4f4
+	sha512sums = SKIP
+	sha512sums = 431f810f822a347135d10c99f98ed2516e6afe310def77fc9aa0b41dc0578b05e2684f77e1062ea934961720f6d11f73f27e38548bccfe61709e81f8d53c484e
+	sha512sums = dbaf26e67350bd2c4ddf265f204473be02eaf74223a49d09d9c22c0adae2c1898e2c04dfbe1096694dc47cd56c4e3cf44310c5bab04c7a83e375b9665ffdf23a
+
+pkgname = gost-engine

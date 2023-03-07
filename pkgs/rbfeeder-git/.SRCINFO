@@ -1,0 +1,26 @@
+pkgbase = rbfeeder-git
+	pkgdesc = Software for uploading ADS-B data to RadarBox24.com
+	pkgver = 1.0.9.ge7dd87b
+	pkgrel = 1
+	url = https://www.radarbox.com/sharing-data
+	arch = x86_64
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	license = GPL2
+	makedepends = git
+	makedepends = pkgconf
+	depends = dump1090
+	depends = protobuf-c
+	depends = jansson
+	backup = etc/rbfeeder.ini
+	source = git+https://github.com/airnavsystems/rbfeeder.git#branch=dev
+	source = rbfeeder.service
+	source = rbfeeder.sysusers
+	source = rbfeeder.tmpfiles
+	sha256sums = SKIP
+	sha256sums = 558de4eef958a99b8f0f30e86ef1841060f14e1887b8cfd9a81d68c19b7ffdc7
+	sha256sums = 3fb1dae902740e84254a2548c5d81fff18b18658ed408576a438968e43e51746
+	sha256sums = d8d127259681d44b8d731c80c14658be5fcac44cf5329601dd6d89b1a4d7e82a
+
+pkgname = rbfeeder-git

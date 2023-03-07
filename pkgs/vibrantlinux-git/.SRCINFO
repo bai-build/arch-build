@@ -1,0 +1,16 @@
+pkgbase = vibrantlinux-git
+	pkgdesc = vibranceGUI replacement for Linux
+	pkgver = 2.1.10.r0.g5877b71
+	pkgrel = 1
+	url = https://github.com/libvibrant/vibrantlinux
+	arch = x86_64
+	license = MIT
+	makedepends = git
+	depends = qt5-base
+	depends = libvibrant
+	provides = vibrantlinux
+	conflicts = vibrantlinux
+	source = vibrantlinux::git+https://github.com/libvibrant/vibrantlinux.git
+	sha256sums = SKIP
+
+pkgname = vibrantlinux-git

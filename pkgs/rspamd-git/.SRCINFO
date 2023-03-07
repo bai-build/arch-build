@@ -1,0 +1,29 @@
+pkgbase = rspamd-git
+	pkgdesc = Rapid spam filtering system
+	pkgver = r13428
+	pkgrel = 1
+	url = https://github.com/vstakhov/rspamd
+	arch = i686
+	arch = x86_64
+	license = Apache
+	makedepends = git
+	makedepends = cmake
+	makedepends = pkgconfig
+	makedepends = ragel
+	makedepends = ninja
+	depends = openssl
+	depends = libevent
+	depends = glib2
+	depends = gmime
+	depends = luajit
+	depends = sqlite
+	depends = hiredis
+	depends = file
+	depends = icu
+	provides = rspamd
+	conflicts = rspamd
+	source = rspamd::git+https://github.com/vstakhov/rspamd.git
+	sha512sums = SKIP
+
+pkgname = rspamd-git
+

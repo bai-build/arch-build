@@ -1,0 +1,16 @@
+Description: Deselects the "Notify all members" checkbox by default
+Credits: novie
+
+diff --git a/Telegram/SourceFiles/boxes/confirm_box.cpp b/Telegram/SourceFiles/boxes/confirm_box.cpp
+index 0788195b0..523c31522 100644
+--- a/Telegram/SourceFiles/boxes/confirm_box.cpp
++++ b/Telegram/SourceFiles/boxes/confirm_box.cpp
+@@ -488,7 +488,7 @@ void PinMessageBox::prepare() {
+ 		_notify.create(
+ 			this,
+ 			tr::lng_pinned_notify(tr::now),
+-			true,
++			false,
+ 			st::defaultBoxCheckbox);
+ 		_checkbox = _notify;
+ 	}

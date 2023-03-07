@@ -1,0 +1,21 @@
+pkgbase = chestnut
+	pkgdesc = An open-source NLE video editor
+	pkgver = 0.2.1
+	pkgrel = 3
+	url = https://github.com/jonno85uk/chestnut
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	makedepends = pkgconfig
+	depends = ffmpeg
+	depends = qt5-base
+	depends = qt5-multimedia
+	depends = mediahandling
+	depends = audiowaveform
+	provides = chestnut
+	conflicts = chestnut-git
+	source = https://github.com/jonno85uk/chestnut/archive/v0.2.1.tar.gz
+	md5sums = 05e8bc2229eae7335c3b81f13be4e3c6
+
+pkgname = chestnut
+

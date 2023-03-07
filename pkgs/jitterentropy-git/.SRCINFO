@@ -1,0 +1,18 @@
+pkgbase = jitterentropy-git
+	pkgdesc = Library for hardware RNG based on CPU timing jitter
+	pkgver = 3.3.0.r0.g418c1e6
+	pkgrel = 1
+	url = https://www.chronox.de/jent.html
+	arch = i686
+	arch = x86_64
+	license = BSD
+	license = GPL
+	makedepends = git
+	depends = glibc
+	provides = jitterentropy
+	conflicts = jitterentropy
+	options = staticlibs
+	source = git+https://github.com/smuellerDD/jitterentropy-library.git
+	sha256sums = SKIP
+
+pkgname = jitterentropy-git

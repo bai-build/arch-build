@@ -1,0 +1,16 @@
+pkgbase = wgrib2
+	pkgdesc = Utility to read and write grib2 files
+	pkgver = 3.1.2
+	pkgrel = 1
+	url = https://www.cpc.ncep.noaa.gov/products/wesley/wgrib2/
+	arch = x86_64
+	license = GPL
+	license = Apache
+	license = custom
+	makedepends = gcc-fortran
+	depends = glibc
+	depends = gcc-libs
+	source = https://www.ftp.cpc.ncep.noaa.gov/wd51we/wgrib2/wgrib2.tgz.v3.1.2
+	sha256sums = 5b70ac88df269598bc51441c8990b866d62a447c643fcb89df5c844f2c8a855b
+
+pkgname = wgrib2

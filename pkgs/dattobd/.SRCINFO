@@ -1,0 +1,14 @@
+pkgbase = dattobd
+	pkgdesc = kernel module for taking block-level snapshots and incremental backups of Linux block devices
+	pkgver = r1.8057a30
+	pkgrel = 1
+	url = https://github.com/datto/dattobd
+	install = dattobd.install
+	arch = any
+	license = GPL2
+	makedepends = linux-headers
+	source = git://github.com/datto/dattobd.git
+	md5sums = SKIP
+
+pkgname = dattobd
+

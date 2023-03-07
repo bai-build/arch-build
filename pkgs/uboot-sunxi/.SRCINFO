@@ -1,0 +1,121 @@
+pkgbase = uboot-sunxi
+	pkgver = 2022.10
+	pkgrel = 1
+	url = https://github.com/u-boot/u-boot
+	arch = any
+	license = GPL
+	makedepends = arm-none-eabi-gcc
+	makedepends = bc
+	makedepends = dtc
+	makedepends = python
+	makedepends = swig
+	options = !distcc
+	backup = boot/boot.txt
+	backup = boot/boot.scr
+	source = https://github.com/u-boot/u-boot/archive/refs/tags/v2022.10.tar.gz
+	source = boot.txt
+	source = mkscr
+	md5sums = bea02112ee09eb362f35c296d8968daa
+	md5sums = 95f60c0ae1315e986d8a2aee15d5f854
+	md5sums = 021623a04afd29ac3f368977140cfbfd
+	sha256sums = 49abc4dd4daff017b8abd6ee33b63d4892de878602ba5474347167c7d721e1b6
+	sha256sums = 24ca87bc2941bc5c6230e9004c0305fa63c5c007160bd438d296691bd979f27a
+	sha256sums = a4fc8b6b92bc364d6542670d294aa618a8501fb8729f415cc0a3eed776ef0c8e
+
+pkgname = uboot-a10-olinuxino-lime
+	pkgdesc = U-Boot for A10 OLinuXino Lime
+	install = uboot-sunxi.install
+	arch = armv7h
+	provides = uboot-sunxi
+	conflicts = uboot-sunxi
+
+pkgname = uboot-a10s-olinuxino-micro
+	pkgdesc = U-Boot for A10s OLinuXino Micro
+	install = uboot-sunxi.install
+	arch = armv7h
+	provides = uboot-sunxi
+	conflicts = uboot-sunxi
+
+pkgname = uboot-a13-olinuxino
+	pkgdesc = U-Boot for A13 OLinuXino
+	install = uboot-sunxi.install
+	arch = armv7h
+	provides = uboot-sunxi
+	conflicts = uboot-sunxi
+
+pkgname = uboot-a13-olinuxino-micro
+	pkgdesc = U-Boot for A13 OLinuXino Micro
+	install = uboot-sunxi.install
+	arch = armv7h
+	provides = uboot-sunxi
+	conflicts = uboot-sunxi
+
+pkgname = uboot-a20-olinuxino-lime
+	pkgdesc = U-Boot for A20 OLinuXino Lime
+	install = uboot-sunxi.install
+	arch = armv7h
+	provides = uboot-sunxi
+	conflicts = uboot-sunxi
+
+pkgname = uboot-a20-olinuxino-lime2
+	pkgdesc = U-Boot for A20 OLinuXino Lime2
+	install = uboot-sunxi.install
+	arch = armv7h
+	provides = uboot-sunxi
+	conflicts = uboot-sunxi
+
+pkgname = uboot-a20-olinuxino-micro
+	pkgdesc = U-Boot for A20 OLinuXino Micro
+	install = uboot-sunxi.install
+	arch = armv7h
+	provides = uboot-sunxi
+	conflicts = uboot-sunxi
+
+pkgname = uboot-bananapi
+	pkgdesc = U-Boot for BananaPi
+	install = uboot-sunxi.install
+	arch = armv7h
+	provides = uboot-sunxi
+	conflicts = uboot-sunxi
+
+pkgname = uboot-cubieboard
+	pkgdesc = U-Boot for Cubieboard
+	install = uboot-sunxi.install
+	arch = armv7h
+	provides = uboot-sunxi
+	conflicts = uboot-sunxi
+
+pkgname = uboot-cubieboard2
+	pkgdesc = U-Boot for Cubieboard 2
+	install = uboot-sunxi.install
+	arch = armv7h
+	provides = uboot-sunxi
+	conflicts = uboot-sunxi
+
+pkgname = uboot-cubietruck
+	pkgdesc = U-Boot for Cubietruck
+	install = uboot-sunxi.install
+	arch = armv7h
+	provides = uboot-sunxi
+	conflicts = uboot-sunxi
+
+pkgname = uboot-pcduino
+	pkgdesc = U-Boot for pcDuino
+	install = uboot-sunxi.install
+	arch = armv7h
+	provides = uboot-sunxi
+	conflicts = uboot-sunxi
+
+pkgname = uboot-pcduino3
+	pkgdesc = U-Boot for pcDuino3
+	install = uboot-sunxi.install
+	arch = armv7h
+	provides = uboot-sunxi
+	conflicts = uboot-sunxi
+
+pkgname = uboot-pcduino3-nano
+	pkgdesc = U-Boot for pcDuino3 Nano
+	install = uboot-sunxi.install
+	arch = armv7h
+	provides = uboot-sunxi
+	conflicts = uboot-sunxi

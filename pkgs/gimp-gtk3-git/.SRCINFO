@@ -1,0 +1,61 @@
+pkgbase = gimp-gtk3-git
+	pkgdesc = GNU Image Manipulation Program build against GTK3 from gtk3-port git-branch
+	pkgver = 2.10.0.r679.g6f28c5e192
+	pkgrel = 1
+	epoch = 1
+	url = http://www.gimp.org
+	arch = i686
+	arch = x86_64
+	license = GPL
+	license = LGPL
+	makedepends = git
+	makedepends = glib-networking
+	makedepends = intltool
+	makedepends = poppler-glib
+	makedepends = alsa-lib
+	makedepends = iso-codes
+	makedepends = gobject-introspection
+	makedepends = curl
+	makedepends = ghostscript
+	makedepends = libxslt
+	makedepends = appstream-glib
+	makedepends = pygtk
+	makedepends = python-cairo
+	makedepends = gtk-doc
+	makedepends = poppler-data
+	depends = babl>=0.1.48
+	depends = gegl>=0.4
+	depends = lcms
+	depends = libxpm
+	depends = libwmf
+	depends = libxmu
+	depends = librsvg
+	depends = libmng
+	depends = libexif
+	depends = gtk3
+	depends = jasper
+	depends = desktop-file-utils
+	depends = libgexiv2
+	depends = hicolor-icon-theme
+	depends = mypaint-brushes
+	depends = aalib
+	optdepends = gutenprint: for sophisticated printing only as gimp has built-in cups print support
+	optdepends = libwebkit: for the help browser
+	optdepends = libwebp: for support of the webp file format
+	optdepends = poppler-glib: for pdf support
+	optdepends = openexr: for the openexr file format
+	optdepends = alsa-lib: for MIDI event controller module
+	optdepends = curl: for URI support
+	optdepends = xorg-server-xvfb: for xvfb-run
+	optdepends = ghostscript: for postscript support
+	provides = gimp
+	conflicts = gimp
+	options = !libtool
+	options = !makeflags
+	source = git+https://git.gnome.org/browse/gimp#branch=gtk3-port
+	source = linux.gpl::https://git.archlinux.org/svntogit/packages.git/plain/trunk/linux.gpl?h=packages/gimp
+	md5sums = SKIP
+	md5sums = bb27bc214261d36484093e857f015f38
+
+pkgname = gimp-gtk3-git
+

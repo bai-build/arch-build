@@ -1,0 +1,9 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!PKGBUILD
+!.SRCINFO
+!add-av_stream_get_first_dts-for-chromium.patch
+!ffmpeg-vmaf2.x.patch

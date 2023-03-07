@@ -1,0 +1,15 @@
+pkgbase = rofi-calc
+	pkgdesc = Do calculations in rofi
+	pkgver = 1.6
+	pkgrel = 1
+	url = https://github.com/svenstaro/rofi-calc
+	install = rofi-calc.install
+	arch = x86_64
+	license = MIT
+	depends = rofi
+	depends = libqalculate
+	source = https://github.com/svenstaro/rofi-calc/archive/v1.6.tar.gz
+	sha512sums = a87523d3d64fbd53e431dba7da674a213fcfbdcaac25906a19bc83aa3feb14da479b702b39fd58ffeb04198ea0a5d52808f7c9c36495defc99c9c83df963e0b6
+
+pkgname = rofi-calc
+

@@ -1,0 +1,49 @@
+pkgbase = tmkernel-bfq
+	pkgver = 4.12.8
+	pkgrel = 1
+	url = https://www.kernel.org/
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = xmlto
+	makedepends = docbook-xsl
+	makedepends = kmod
+	makedepends = inetutils
+	makedepends = bc
+	makedepends = libelf
+	options = !strip
+	source = https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.12.tar.xz
+	source = https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.12.tar.sign
+	source = https://www.kernel.org/pub/linux/kernel/v4.x/patch-4.12.8.xz
+	source = https://www.kernel.org/pub/linux/kernel/v4.x/patch-4.12.8.sign
+	source = config.i686
+	source = config.x86_64
+	source = 90-linux.hook
+	source = linux.preset
+	validpgpkeys = ABAF11C65A2970B130ABE3C479BE3E4300411886
+	validpgpkeys = 647F28654894E3BD457199BE38DBBDC86092693E
+	sha256sums = a45c3becd4d08ce411c14628a949d08e2433d8cdeca92036c7013980e93858ab
+	sha256sums = SKIP
+	sha256sums = 32b860911a3bafd5cd5bc813a427c90fad6eafdf607fa64e1b763b16ab605636
+	sha256sums = SKIP
+	sha256sums = dfb53fb48bad4d9f61bbea5e364d5619137460e7224bdf0e7bde5e137bc512d5
+	sha256sums = e61601ba911d957c149d52b1b1bca8c841b31ab800ac930bae9677e74a508c3f
+	sha256sums = 834bd254b56ab71d73f59b3221f056c72f559553c04718e350ab2a3e2991afe0
+	sha256sums = ad6344badc91ad0630caacde83f7f9b97276f80d26a20619a87952be65492c65
+
+pkgname = tmkernel-bfq
+	pkgdesc = The tmkernel-bfq kernel and modules
+	install = linux.install
+	depends = coreutils
+	depends = linux-firmware
+	depends = kmod
+	depends = mkinitcpio>=0.7
+	optdepends = crda: to set the correct wireless channels of your country
+	backup = etc/mkinitcpio.d/tmkernel-bfq.preset
+
+pkgname = tmkernel-bfq-headers
+	pkgdesc = Header files and scripts for building modules for tmkernel-bfq kernel
+
+pkgname = tmkernel-bfq-docs
+	pkgdesc = Kernel hackers manual - HTML documentation that comes with the tmkernel-bfq kernel
+

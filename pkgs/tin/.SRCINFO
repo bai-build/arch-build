@@ -1,0 +1,24 @@
+pkgbase = tin
+	pkgdesc = Threaded NNTP and spool based UseNet newsreader
+	pkgver = 2.6.1
+	pkgrel = 1
+	url = http://www.tin.org
+	changelog = CHANGES
+	arch = i686
+	arch = x86_64
+	license = BSD
+	depends = ncurses
+	depends = ispell
+	depends = perl
+	depends = gnupg
+	depends = dante
+	depends = icu
+	depends = libidn
+	depends = gsasl
+	options = zipman
+	source = ftp://ftp.tin.org/pub/news/clients/tin/v2.6/tin-2.6.1.tar.gz
+	source = LICENSE
+	sha256sums = 6b1bc8c8ab07467bc8dbc845a1c7389339e1beb0244894d7911457efd25a83b5
+	sha256sums = 5ccb431a94c2d2f093b8f93325075e5ad886772ba2a452478120b86ce71c0683
+
+pkgname = tin

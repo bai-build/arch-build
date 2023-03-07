@@ -1,0 +1,23 @@
+pkgbase = ignition-msgs
+	pkgdesc = Messages for Gazebo robot simulation.
+	pkgver = 9.3.0
+	pkgrel = 1
+	url = https://gazebosim.org/libs/msgs
+	arch = i686
+	arch = x86_64
+	groups = development
+	license = Apache
+	makedepends = ignition-cmake>=2
+	makedepends = ruby-ronn
+	makedepends = doxygen
+	makedepends = tinyxml2
+	depends = protobuf
+	depends = protobuf-c
+	depends = ignition-math>=6
+	depends = ignition-utils
+	depends = ignition-tools
+	depends = python
+	source = ignition-msgs-9.3.0::https://github.com/gazebosim/gz-msgs/archive/gz-msgs9_9.3.0.tar.gz
+	sha256sums = d1ffe5b87374e42afa0ecd27d9c97a45c9f389b2cbbe4a89efbe93cb08db03db
+
+pkgname = ignition-msgs

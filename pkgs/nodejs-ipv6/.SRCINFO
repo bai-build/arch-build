@@ -1,0 +1,25 @@
+pkgbase = nodejs-ipv6
+	pkgdesc = NodeJS patched to work in IPv6 only network
+	pkgver = 14.13.0
+	pkgrel = 1
+	url = https://nodejs.org/
+	arch = x86_64
+	license = MIT
+	makedepends = python
+	makedepends = procps-ng
+	depends = openssl
+	depends = zlib
+	depends = icu
+	depends = libuv
+	depends = c-ares
+	depends = libnghttp2
+	optdepends = npm: nodejs package manager
+	provides = nodejs
+	conflicts = nodejs
+	source = nodejs-14.13.0.tar.gz::https://github.com/nodejs/node/archive/v14.13.0.tar.gz
+	source = patch.diff
+	sha512sums = 2efb27db91fa23446449ffd8f22eb0a5f77a7b6e27c7fe23fde30e64f115d6dfac54485e6cc9130b96c6ff4d3d9b4cfafdc935d20821ad29cc7e068dc671a4f4
+	sha512sums = ec70e2c49e8a75114e45f1af71519cf0445773e57579eaa51ddecfc134bdaaffb37bc7e863f3103d1f0ddcf4a26e41aa1be678d34c997916e59aecbfe3dd19e5
+
+pkgname = nodejs-ipv6
+

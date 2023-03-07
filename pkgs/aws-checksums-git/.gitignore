@@ -1,0 +1,5 @@
+src
+pkg
+aws-checksums-git
+*pkg.tar.*
+tags

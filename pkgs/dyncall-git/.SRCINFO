@@ -1,0 +1,22 @@
+pkgbase = dyncall-git
+	pkgdesc = Generic Dynamic FFI package
+	pkgver = 20151201
+	pkgrel = 1
+	url = https://github.com/MoarVM/dyncall
+	arch = aarch64
+	arch = armv6h
+	arch = armv7h
+	arch = i686
+	arch = x86_64
+	license = custom
+	makedepends = cmake
+	makedepends = git
+	makedepends = make
+	makedepends = yasm
+	provides = dyncall
+	conflicts = dyncall
+	source = git+https://github.com/MoarVM/dyncall
+	sha256sums = SKIP
+
+pkgname = dyncall-git
+

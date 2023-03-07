@@ -1,0 +1,17 @@
+pkgbase = mergerfs-git
+	pkgdesc = Powerful FUSE UNION filesystem which gives fine control over how reads/writes are distributed, and allows underlying mounts/settings to be changed at runtime without remounting (using "magic" xattrs)
+	pkgver = 2.25.0.r0.g606d9c4
+	pkgrel = 1
+	url = https://github.com/trapexit/mergerfs
+	arch = i686
+	arch = x86_64
+	license = MIT
+	depends = fuse
+	provides = mergerfs
+	conflicts = mergerfs
+	options = !emptydirs
+	source = git+https://github.com/trapexit/mergerfs.git
+	sha256sums = SKIP
+
+pkgname = mergerfs-git
+

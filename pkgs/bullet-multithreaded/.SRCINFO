@@ -1,0 +1,44 @@
+pkgbase = bullet-multithreaded
+	pkgdesc = A 3D collision detection and rigid body dynamics library, built with Multi-Threading and Double Precision support
+	pkgver = 3.24
+	pkgrel = 1
+	url = http://www.bulletphysics.com/Bullet/
+	arch = x86_64
+	arch = aarch64
+	license = custom:zlib
+	makedepends = cmake
+	makedepends = doxygen
+	makedepends = graphviz
+	makedepends = ttf-dejavu
+	makedepends = mesa
+	makedepends = glu
+	makedepends = python
+	makedepends = python-numpy
+	makedepends = python-setuptools
+	makedepends = ninja
+	makedepends = git
+	source = bullet3-3.24::https://github.com/bulletphysics/bullet3/archive/refs/tags/3.24.tar.gz
+	source = local://bullet3_examplebrowser.sh
+	sha512sums = 0f8cf009e50853b2ff461414893f09f752774dac3fb51ba158ef670865b61140a13567cadbf7b19d643d24d6207a23f825773edb86234591f83bd19e3fb3d054
+	sha512sums = 8741ad94b6c46c226d89aebc8ab06d8a11bac3c04d3f0a2bf7a7524792a3375aa7bf7d295410b16fbeb4c348a31057b4570acdebe9bbaea251f44daca8d9fe81
+
+pkgname = bullet-multithreaded
+	optdepends = glu: for the example browser
+	optdepends = python: python bindings
+	optdepends = python-numpy: python bindings
+	optdepends = bullet-multithreaded-docs: documentation
+	provides = bullet
+	conflicts = bullet
+
+pkgname = bullet-multithreaded-docs
+	pkgdesc = Documentation for bullet
+	arch = any
+	provides = bullet-docs
+	conflicts = bullet-docs
+
+pkgname = python-pybullet-multithreaded
+	pkgdesc = Bullet Python bindings
+	depends = bullet-multithreaded
+	depends = gcc-libs
+	provides = python-pybullet
+	conflicts = python-pybullet

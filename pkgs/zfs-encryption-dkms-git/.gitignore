@@ -1,0 +1,8 @@
+!.gitignore
+
+/zfs
+/src
+/pkg
+.directory
+*.pkg*
+*.orig

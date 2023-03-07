@@ -1,0 +1,15 @@
+pkgbase = vsync
+	pkgdesc = IMAP to maildir synchronization tool
+	pkgver = 0.9.2
+	pkgrel = 1
+	url = https://git.sr.ht/~bitfehler/vomit-sync
+	arch = x86_64
+	license = GPL3
+	makedepends = cargo
+	makedepends = scdoc
+	depends = gcc-libs
+	depends = openssl
+	source = vsync-0.9.2.tar.gz::https://git.sr.ht/~bitfehler/vomit-sync/archive/v0.9.2.tar.gz
+	sha512sums = 81e9f152659f4c3eb2609402336b9d1a9df0d183fb607c43c279924f1de37dbed636d36d59c54dc0e6036722b0bc3f665f2c2d84ab32c196d3edd58ed934c86f
+
+pkgname = vsync

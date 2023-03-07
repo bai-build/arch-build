@@ -1,0 +1,23 @@
+pkgbase = openvas-scanner-systemd
+	pkgdesc = The OpenVAS scanning Daemon with proper systemd service files
+	pkgver = 5.1.2
+	pkgrel = 1
+	url = http://www.openvas.org/
+	arch = x86_64
+	groups = openvas
+	license = GPL
+	makedepends = cmake
+	makedepends = xmltoman
+	makedepends = doxygen
+	depends = openvas-libraries
+	depends = redis
+	depends = openvas-systemd
+	provides = openvas-scanner
+	source = openvas-scanner-5.1.2.tar.gz::https://github.com/greenbone/openvas-scanner/archive/v5.1.2.tar.gz
+	source = https://github.com/greenbone/openvas-scanner/releases/download/v5.1.2/openvas-scanner-5.1.2.tar.gz.sig
+	validpgpkeys = C3B468D2288C68B9D526452248479FF648DB4530
+	md5sums = 2c09d11acdc2189a976cd1433a211197
+	md5sums = SKIP
+
+pkgname = openvas-scanner-systemd
+

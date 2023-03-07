@@ -1,0 +1,17 @@
+pkgbase = cwdiff-git
+	pkgdesc = A (w)diff wrapper to support directories and colorize the output.
+	pkgver = r36.da12852
+	pkgrel = 1
+	url = https://github.com/junghans/cwdiff/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	depends = wdiff
+	depends = help2man
+	conflicts = cwdiff
+	source = cwdiff-git::git+https://github.com/junghans/cwdiff
+	md5sums = SKIP
+
+pkgname = cwdiff-git
+

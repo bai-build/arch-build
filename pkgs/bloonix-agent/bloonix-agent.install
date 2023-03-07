@@ -1,0 +1,19 @@
+post_install(){
+	install -d -m 0755 /var/log/bloonix
+	install -d -m 0755 /var/run/bloonix
+    cp -a /usr/lib/bloonix/etc/systemd/bloonix-agent.service /lib/systemd/system/bloonix-agent.service
+    systemctl daemon-reload
+    systemctl preset bloonix-agent.service
+/usr/bin/bloonix-init-agent
+echo "Starting (condrestart) bloonix-agent..";
+    systemctl condrestart bloonix-agent.service
+}
+
+pre_remove(){
+    echo "Removing bloonix-agent.."
+        systemctl --no-reload disable bloonix-agent.service
+        echo "Stopping bloonix-agent.."
+        systemctl stop bloonix-agent.service
+        systemctl daemon-reload
+}
+

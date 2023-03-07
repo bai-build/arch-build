@@ -1,0 +1,24 @@
+pkgbase = kvirc-nokde
+	pkgdesc = Qt5 based IRC-Client without KDE dependencies
+	pkgver = 5.0.0
+	pkgrel = 4
+	url = https://github.com/kvirc/KVIrc
+	arch = x86_64
+	license = GPL2
+	makedepends = cmake
+	depends = qt5-multimedia
+	depends = qt5-svg
+	depends = openssl-1.0
+	depends = qt5-webkit
+	depends = phonon-qt5
+	depends = enchant
+	depends = hicolor-icon-theme
+	depends = python2
+	depends = libxss
+	provides = kvirc
+	conflicts = kvirc
+	source = kvirc-nokde-5.0.0.tar.gz::https://github.com/kvirc/KVIrc/archive/5.0.0.tar.gz
+	sha256sums = 452e683760221055f117d2ab4359aa432e01ce5d5e3abe80772b7a13a78b594a
+
+pkgname = kvirc-nokde
+

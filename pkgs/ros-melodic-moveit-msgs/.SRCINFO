@@ -1,0 +1,33 @@
+pkgbase = ros-melodic-moveit-msgs
+	pkgdesc = ROS - Messages, services and actions used by MoveIt.
+	pkgver = 0.10.1
+	pkgrel = 1
+	url = https://moveit.ros.org
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-melodic-actionlib-msgs
+	makedepends = ros-melodic-trajectory-msgs
+	makedepends = ros-melodic-message-generation
+	makedepends = ros-melodic-octomap-msgs
+	makedepends = ros-melodic-object-recognition-msgs
+	makedepends = ros-melodic-geometry-msgs
+	makedepends = ros-melodic-std-msgs
+	makedepends = ros-melodic-sensor-msgs
+	makedepends = ros-melodic-catkin
+	makedepends = ros-melodic-shape-msgs
+	depends = ros-melodic-actionlib-msgs
+	depends = ros-melodic-trajectory-msgs
+	depends = ros-melodic-octomap-msgs
+	depends = ros-melodic-object-recognition-msgs
+	depends = ros-melodic-geometry-msgs
+	depends = ros-melodic-message-runtime
+	depends = ros-melodic-std-msgs
+	depends = ros-melodic-sensor-msgs
+	depends = ros-melodic-shape-msgs
+	source = ros-melodic-moveit-msgs-0.10.1.tar.gz::https://github.com/ros-planning/moveit_msgs/archive/0.10.1.tar.gz
+	sha256sums = 81c68bd8c12c38a42abbfb622eb7f64613abcf3ff7dc83f9127eadf428cf4aa5
+
+pkgname = ros-melodic-moveit-msgs
+

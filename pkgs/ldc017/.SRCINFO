@@ -1,0 +1,32 @@
+pkgbase = ldc017
+	pkgdesc = A D Compiler based on the LLVM Compiler Infrastructure including D runtime and libphobos2 (0.17 bootstrap branch)
+	pkgver = 0.17.5
+	pkgrel = 1
+	url = https://github.com/ldc-developers/ldc
+	install = ldc017.install
+	arch = i686
+	arch = x86_64
+	groups = dlang
+	groups = dlang-ldc
+	license = BSD
+	makedepends = git
+	makedepends = cmake
+	makedepends = llvm
+	depends = libconfig
+	depends = llvm-libs
+	depends = curl
+	options = staticlibs
+	backup = etc/ldc2-0.17.conf
+	source = https://github.com/ldc-developers/ldc/archive/v0.17.5.tar.gz
+	source = druntime-ldc-v0.17.5.tar.gz::https://github.com/ldc-developers/druntime/archive/ldc-v0.17.5.tar.gz
+	source = phobos-ldc-v0.17.4.tar.gz::https://github.com/ldc-developers/phobos/archive/ldc-v0.17.4.tar.gz
+	source = dmd-testsuite-ldc-v0.17.5.tar.gz::https://github.com/ldc-developers/dmd-testsuite/archive/ldc-v0.17.5.tar.gz
+	source = ldc2-0.17.conf
+	sha256sums = 827e479d20293be79469fdfd73e761cb85951e015b27eaafcd50313a48e54631
+	sha256sums = 1f575ac74da540da79020f7a3eca866702a4cfa1330c2f2e873a0c0c90a50d25
+	sha256sums = 9f1794292355401b3f4dcb46589d37698d5d470b79cbd33b8c115743ee34a39b
+	sha256sums = fdd6ed38439a744fb1fe0148139c0ce793c25c4bd76be1ecf98bf7f92e227cce
+	sha256sums = 7f7f4fd0bfa68efc28528c020a99114521a1c3f1f9ad37a498285aa35df36455
+
+pkgname = ldc017
+

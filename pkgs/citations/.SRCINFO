@@ -1,0 +1,18 @@
+pkgbase = citations
+	pkgdesc = Manage your bibliographies using the BibTeX format
+	pkgver = 0.5.1
+	pkgrel = 1
+	url = https://gitlab.gnome.org/World/citations
+	arch = x86_64
+	arch = aarch64
+	license = GPL3
+	checkdepends = appstream-glib
+	makedepends = meson
+	makedepends = cargo
+	depends = libadwaita
+	depends = poppler-glib
+	depends = gtksourceview5
+	source = https://gitlab.gnome.org/World/citations/-/archive/0.5.1/citations-0.5.1.tar.gz
+	b2sums = 9510bc2ae8c94193728d635824f607f701410bbbb47ad96b67440886f355656ffe7cbad098fd444be639b90d0d2d309578e3f805350396972a70890d9ea2fdd5
+
+pkgname = citations

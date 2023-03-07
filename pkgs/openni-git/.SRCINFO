@@ -1,0 +1,19 @@
+pkgbase = openni-git
+	pkgdesc = The OpenNI Framework provides the interface for physical devices and for middleware components
+	pkgver = 20130205
+	pkgrel = 2
+	url = http://www.openni.org/
+	install = openni.install
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	depends = freeglut
+	depends = mesa
+	depends = libusb
+	depends = java-environment
+	provides = openni
+	conflicts = openni
+
+pkgname = openni-git
+

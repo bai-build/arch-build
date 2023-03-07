@@ -1,0 +1,16 @@
+pkgbase = mingw-w64-libsrtp
+	pkgdesc = Library for SRTP (Secure Realtime Transport Protocol) (mingw-w64)
+	pkgver = 2.5.0
+	pkgrel = 1
+	url = https://github.com/cisco/libsrtp
+	arch = any
+	license = BSD
+	makedepends = mingw-w64-configure
+	depends = mingw-w64-crt
+	options = !strip
+	options = !buildflags
+	options = staticlibs
+	source = mingw-w64-libsrtp-2.5.0.tar.gz::https://github.com/cisco/libsrtp/archive/v2.5.0.tar.gz
+	sha256sums = 8a43ef8e9ae2b665292591af62aa1a4ae41e468b6d98d8258f91478735da4e09
+
+pkgname = mingw-w64-libsrtp

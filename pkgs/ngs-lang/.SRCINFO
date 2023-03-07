@@ -1,0 +1,21 @@
+pkgbase = ngs-lang
+	pkgdesc = Next Generation Shell (NGS)
+	pkgver = 0.2.14
+	pkgrel = 1
+	url = https://github.com/ngs-lang/ngs
+	arch = x86_64
+	license = GPL3
+	makedepends = cmake
+	makedepends = git
+	makedepends = pandoc
+	makedepends = peg
+	makedepends = uthash
+	depends = json-c
+	depends = gc
+	depends = libffi
+	depends = pcre
+	provides = ngs
+	source = ngs-lang-0.2.14.tar.gz::https://github.com/ngs-lang/ngs/archive/v0.2.14.tar.gz
+	sha256sums = 9432377548ef76c57918b020b2abb258137703ff0172016d58d713186fcafed3
+
+pkgname = ngs-lang

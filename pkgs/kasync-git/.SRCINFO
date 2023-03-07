@@ -1,0 +1,19 @@
+pkgbase = kasync-git
+	pkgdesc = A C++ library for controlling asynchronous tasks
+	pkgver = r130.abc6d4d
+	pkgrel = 1
+	url = https://github.com/KDE/kasync
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = extra-cmake-modules
+	makedepends = git
+	makedepends = clang
+	depends = qt5-base
+	provides = kasync
+	conflicts = kasync
+	source = git://anongit.kde.org/kasync.git
+	sha256sums = SKIP
+
+pkgname = kasync-git
+

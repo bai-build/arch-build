@@ -1,0 +1,24 @@
+pkgbase = vapoursynth-editor-sandsmark-git
+	pkgdesc = Editor for VapourSynth scripts, sandsmark's fork with vim support and other niceties
+	pkgver = r19.74.g4e3f161
+	pkgrel = 1
+	url = https://github.com/sandsmark/vapoursynth-editor
+	arch = x86_64
+	license = CCPL
+	license = MIT
+	license = LGPL
+	makedepends = git
+	makedepends = cmake
+	depends = qt5-base
+	depends = qt5-websockets
+	depends = vapoursynth
+	provides = vapoursynth-editor
+	conflicts = vapoursynth-editor
+	source = git+https://github.com/sandsmark/vapoursynth-editor.git
+	source = vsedit.desktop
+	source = vsedit_server_watch.desktop
+	sha256sums = SKIP
+	sha256sums = 7c73f873a970bb295be8fdcf8ef570ef9bb812232b3cc2dce79b42c57c742623
+	sha256sums = bc6443a2dfa48ee1e2156039be2195074dfd4a02f5f1696f8406c715a1b19ccf
+
+pkgname = vapoursynth-editor-sandsmark-git

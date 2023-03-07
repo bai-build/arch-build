@@ -1,0 +1,6 @@
+pkg/
+src/
+gitsrc/
+qtmqtt/
+*.tar.xz
+*.log

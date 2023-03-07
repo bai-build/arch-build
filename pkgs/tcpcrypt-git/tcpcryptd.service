@@ -1,0 +1,13 @@
+[Unit]
+Description=tcpcrypt daemon for automatic transparent encryption of TCP sessions
+Documentation=man:tcpcryptd(8)
+After=network.target
+
+[Service]
+EnvironmentFile=/etc/conf.d/tcpcryptd.conf
+ExecStartPre=/usr/share/tcpcryptd/iptables.sh start
+ExecStart=/usr/bin/tcpcryptd -p "$DIVERT_PORT" -U "$DAEMON_USER" -J "$JAIL_DIR" -f -e
+ExecStopPost=/usr/share/tcpcryptd/iptables.sh stop
+
+[Install]
+WantedBy=multi-user.target

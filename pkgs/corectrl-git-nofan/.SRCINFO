@@ -1,0 +1,34 @@
+pkgbase = corectrl-git-nofan
+	pkgdesc = Application to control your hardware with ease using application profiles
+	pkgver = 1.0.3.r174.g5ab63d3
+	pkgrel = 1
+	url = https://gitlab.com/corectrl/corectrl
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	makedepends = cmake>=3.3
+	makedepends = extra-cmake-modules
+	makedepends = gcc>=8
+	makedepends = qt5-tools
+	depends = botan>=2.2.0
+	depends = qt5-base>=5.9
+	depends = qt5-quickcontrols2
+	depends = qt5-charts
+	depends = qt5-svg
+	depends = qt5-xmlpatterns
+	depends = kauth
+	depends = karchive
+	depends = procps-ng
+	depends = hwids
+	optdepends = vulkan-tools: for vulkaninfo
+	optdepends = mesa-demos: for glxinfo
+	optdepends = util-linux: for lscpu
+	provides = corectrl
+	conflicts = corectrl
+	source = git+https://gitlab.com/corectrl/corectrl.git
+	source = dont-mess-with-fans.patch
+	md5sums = SKIP
+	md5sums = 990ff598ac4d837c4cd2f4213d164730
+
+pkgname = corectrl-git-nofan

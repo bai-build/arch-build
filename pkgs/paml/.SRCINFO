@@ -1,0 +1,14 @@
+pkgbase = paml
+	pkgdesc = Phylogenetic analysis by maximum likelihood. https://doi.org/10.1093/molbev/msm088
+	pkgver = 4.10.6
+	pkgrel = 1
+	url = http://abacus.gene.ucl.ac.uk/software/
+	arch = x86_64
+	license = GPL3
+	makedepends = make
+	depends = glibc
+	provides = paml
+	source = https://github.com/abacus-gene/paml/archive/refs/tags/v4.10.6.zip
+	sha256sums = 95af68480066e22499a90c6d32613e98689d8b8ddb69358180b4dc7e2a599bed
+
+pkgname = paml

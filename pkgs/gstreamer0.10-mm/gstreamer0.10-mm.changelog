@@ -1,0 +1,23 @@
+2017-08-31 Rafael Fontenelle <rafaelff@gnome.org>
+	* gstreamer0.10-mm 0.10.11-3
+	* Depends on libxml++2.6, instead of libxml++ (version 3.0)
+
+2017-01-22 Balló György <ballogyor@gmail.com>
+	* gstreamer0.10-mm 0.10.11-2
+	* Move package from the [community] repository
+
+2014-11-12 Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
+	* package renamed to gstreamer0.10-mm 0.10.11-1
+
+2012-10-28 Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
+	* gstreamermm 0.10.11-1
+
+2010-02-02 Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
+	* gstreamermm 0.10.10-1
+
+2010-02-02 Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
+	* Update to major release 0.10.6
+
+2009-11-07 Jaroslav Lichtblau <dragonlord@aur.archlinux.org>
+	* Package moved to [community] as a dependency of subtitleeditor
+	* version 0.10.5

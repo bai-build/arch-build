@@ -1,0 +1,23 @@
+pkgbase = sidef
+	pkgdesc = A modern object-oriented programming language.
+	pkgver = 22.12
+	pkgrel = 1
+	url = https://github.com/trizen/sidef
+	arch = any
+	license = Artistic2.0
+	depends = perl>=5.22.0
+	depends = perl-data-dump
+	depends = perl-math-gmpq>=0.45
+	depends = perl-math-gmpz>=0.39
+	depends = perl-math-mpfr>=3.36
+	depends = perl-math-mpc
+	depends = perl-math-prime-util-gmp>=0.52
+	depends = perl-term-readline-gnu
+	depends = perl-algorithm-combinatorics
+	depends = perl-algorithm-loops
+	optdepends = perl-math-prime-util: for better performance in several functions
+	options = !emptydirs
+	source = sidef-22.12.tar.gz::https://github.com/trizen/sidef/archive/22.12.tar.gz
+	b2sums = 452e25be355f525e438ebd4dd3de8378373ba1b968b5d4260263ada72a41ca9def5cc99f4eedb94cf3ca2f9a0985240073cc5deaad14e6e5b111cc5feeb5ddfe
+
+pkgname = sidef

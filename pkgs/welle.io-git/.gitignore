@@ -1,0 +1,7 @@
+welle.io-git-*.pkg.tar.zst
+welle.io-git-*.pkg.tar.xz
+welle.io-git-*.log
+PKGBUILD-namcap.log
+welle.io/
+pkg/
+src/

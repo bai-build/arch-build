@@ -1,0 +1,22 @@
+pkgbase = matray
+	pkgdesc = A Manjaro Linux announcements notification app
+	pkgver = 1.0.2
+	pkgrel = 1
+	url = https://github.com/moson-mo/matray
+	arch = x86_64
+	arch = aarch64
+	license = BSD
+	makedepends = vala
+	makedepends = meson
+	makedepends = ninja
+	depends = gtk3
+	depends = libsoup
+	depends = libgee
+	depends = libappindicator-gtk3
+	depends = glib2
+	depends = json-glib
+	conflicts = mntray
+	source = https://github.com/moson-mo/matray/archive/refs/tags/v1.0.2.tar.gz
+	sha256sums = c534f21ce6baf497b5773d9af281a572701e0239989ffb6223cc19392f94dc1d
+
+pkgname = matray

@@ -1,0 +1,22 @@
+#!/usr/bin/bash
+
+load() {
+	if [ $(lsmod | grep -c vtunerc) -eq 0 ]; then
+		modprobe vtunerc
+	fi
+}
+
+unload() {
+	if [ ! -e /run/vtunerc*.pid ]; then
+		rmmod -f vtunerc
+	fi
+}
+
+case "$1" in
+	load)
+		load
+	;;
+	unload)
+		unload
+	;;
+esac

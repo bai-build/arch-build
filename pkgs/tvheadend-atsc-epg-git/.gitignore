@@ -1,0 +1,9 @@
+tvheadend
+*.pkg.tar.xz
+*.src.tar.gz
+*.log
+pkg
+src
+tvheadend-git
+dvb-scan-tables
+

@@ -1,0 +1,32 @@
+pkgbase = prusaslicer-git
+	pkgdesc = G-code generator for 3D printers (RepRap, Makerbot, Ultimaker etc.)
+	pkgver = 2.0.0
+	pkgrel = 1
+	url = http://www.prusa3d.com/
+	arch = i686
+	arch = x86_64
+	arch = armv6
+	arch = armv6h
+	arch = armv7h
+	license = AGPL3
+	checkdepends = gtest
+	makedepends = cmake
+	makedepends = boost
+	depends = boost-libs
+	depends = curl
+	depends = wxgtk2
+	depends = glew
+	depends = intel-tbb
+	depends = nlopt
+	conflicts = slic3r-prusa3d-git
+	conflicts = slic3r-prusa3d
+	conflicts = slic3r
+	conflicts = prusaslicer
+	replaces = slic3r-prusa3d-git
+	source = git+https://github.com/prusa3d/PrusaSlicer.git
+	source = prusaslicer.desktop
+	sha256sums = SKIP
+	sha256sums = 8787e62d32e6460d92076ffe9366cd1c55e5703d220398e7f4ab1146d67f81d1
+
+pkgname = prusaslicer-git
+

@@ -1,0 +1,23 @@
+pkgbase = quake2rtx
+	pkgdesc = Ray-traced version of Quake II.
+	pkgver = 1.6.0
+	pkgrel = 1
+	url = https://github.com/NVIDIA/Q2RTX
+	arch = x86_64
+	arch = aarch64
+	license = GPL
+	makedepends = git
+	makedepends = cmake
+	depends = zlib
+	depends = curl
+	depends = sdl2
+	depends = vulkan-headers
+	depends = vulkan-driver
+	provides = quake2rtx
+	conflicts = quake2rtx-bin
+	source = git+https://github.com/NVIDIA/Q2RTX.git
+	source = https://github.com/NVIDIA/Q2RTX/releases/download/v1.6.0/q2rtx-1.6.0-linux.tar.gz
+	sha256sums = SKIP
+	sha256sums = d2c8218b8d0e232a23f05b4b4a83097d28d53291584ef850bb79de8b888aa3b4
+
+pkgname = quake2rtx

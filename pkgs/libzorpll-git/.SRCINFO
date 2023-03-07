@@ -1,0 +1,16 @@
+pkgbase = libzorpll-git
+	pkgdesc = Low level library functions for Zorp
+	pkgver = 6.0.6.0
+	pkgrel = 1
+	url = https://github.com/balabit/libzorpll
+	arch = x86_64
+	license = LGPL
+	makedepends = git
+	depends = glib2
+	depends = libcap
+	depends = openssl
+	source = libzorpll::git+https://github.com/balabit/libzorpll.git#branch=6.0.6.0
+	md5sums = SKIP
+
+pkgname = libzorpll-git
+

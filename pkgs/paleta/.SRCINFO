@@ -1,0 +1,17 @@
+pkgbase = paleta
+	pkgdesc = Extract the dominant colors from any image.
+	pkgver = 0.3.1
+	pkgrel = 1
+	url = https://github.com/nate-xyz/paleta
+	arch = x86_64
+	license = GPL3
+	checkdepends = appstream-glib
+	makedepends = cargo
+	makedepends = git
+	makedepends = meson
+	depends = libadwaita
+	options = !lto
+	source = git+https://github.com/nate-xyz/paleta.git#commit=d779d2a0393d790586c3f73fb230d029ae406391
+	sha256sums = SKIP
+
+pkgname = paleta

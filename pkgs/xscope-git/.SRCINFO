@@ -1,0 +1,19 @@
+pkgbase = xscope-git
+	pkgdesc = A program to monitor X11/Client conversations
+	pkgver = 1.4.1.5.gf7af80a
+	pkgrel = 1
+	url = https://gitlab.freedesktop.org/xorg/app/xscope
+	arch = x86_64
+	arch = i686
+	license = MIT
+	makedepends = git
+	makedepends = xproto
+	makedepends = xtrans
+	makedepends = xorg-util-macros
+	depends = glibc
+	conflicts = xscope
+	source = git+https://gitlab.freedesktop.org/xorg/app/xscope
+	md5sums = SKIP
+
+pkgname = xscope-git
+

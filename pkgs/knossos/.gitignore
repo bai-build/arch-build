@@ -1,0 +1,10 @@
+# makepkg folders
+src
+pkg
+
+# source archives and generated packages
+*.tar.*
+
+# downloaded files
+FindQuaZip.cmake
+b6f40b52.patch

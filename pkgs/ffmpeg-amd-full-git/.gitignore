@@ -1,0 +1,7 @@
+*.tar*
+/pkg
+/src
+/ffmpeg
+*.patch
+!010-ffmpeg-fix-vmaf-model-path.patch
+!050-ffmpeg-fix-svt-av1.patch

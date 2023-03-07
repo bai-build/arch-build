@@ -1,0 +1,32 @@
+pkgbase = arx-git
+	pkgdesc = Cross-platform port of Arx Fatalis, a first-person fantasy RPG (executables only; Git version)
+	pkgver = 1.1.2+r5464.gc87968a
+	pkgrel = 1
+	url = http://arx-libertatis.org/
+	install = arx.install
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	makedepends = cmake
+	makedepends = boost
+	depends = sdl2
+	depends = zlib
+	depends = boost-libs
+	depends = glm
+	depends = freetype2
+	depends = openal
+	depends = glew
+	optdepends = arxfatalis-data-gog: game data from GOG.com installer
+	optdepends = arxfatalis-data-copy: game data from existing win32 installation
+	optdepends = arxfatalis-data-demo: game data from official freeware demo
+	optdepends = qt: enable built-in crash handler (Qt5 version; recompile needed)
+	optdepends = qt4: enable built-in crash handler (Qt4 version; recompile needed)
+	optdepends = gdb: generate detailed crash reports
+	provides = arx
+	conflicts = arx arxlibertatis
+	source = git+https://github.com/arx/ArxLibertatis.git
+	md5sums = SKIP
+
+pkgname = arx-git
+

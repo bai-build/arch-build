@@ -1,0 +1,17 @@
+pkgbase = ev-git
+	pkgdesc = xv image viewer replacment using EFL
+	pkgver = r45.e23387b
+	pkgrel = 1
+	url = http://www.enlightenment.org
+	arch = i686
+	arch = x86_64
+	license = LGPL2.1
+	makedepends = git
+	depends = efl
+	provides = ev=r45.e23387b
+	conflicts = ev
+	source = git://git.enlightenment.org/devs/discomfitor/ev.git
+	sha256sums = SKIP
+
+pkgname = ev-git
+

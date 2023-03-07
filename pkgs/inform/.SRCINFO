@@ -1,0 +1,23 @@
+pkgbase = inform
+	pkgdesc = The Inform 6 compiler, standard library, and PunyInform library
+	pkgver = 6.41.r3
+	pkgrel = 1
+	url = https://gitlab.com/DavidGriffith/inform6unix
+	arch = aarch64
+	arch = arm
+	arch = armv6h
+	arch = armv7h
+	arch = i486
+	arch = i686
+	arch = pentium4
+	arch = x86_64
+	groups = inform
+	license = Artistic2.0
+	license = MIT
+	depends = perl
+	depends = ruby
+	provides = punyinform=4.0
+	source = http://ifarchive.org/if-archive/infocom/compilers/inform6/source/inform-6.41-r3.tar.gz
+	md5sums = 5ef54d9938852ec6f765d1c16189d4d8
+
+pkgname = inform

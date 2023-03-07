@@ -1,0 +1,33 @@
+pkgbase = vapoursynth-winesupport
+	pkgdesc = A video processing framework with the future in mind
+	pkgver = R45.1
+	pkgrel = 1
+	url = https://github.com/swordfeng/vapoursynth
+	arch = x86_64
+	license = LGPL2.1
+	license = custom:OFL
+	makedepends = cython
+	makedepends = python-sphinx
+	makedepends = nasm
+	makedepends = git
+	makedepends = cmake
+	depends = gcc-libs
+	depends = glibc
+	depends = libmagick
+	depends = python
+	depends = tesseract
+	depends = wine
+	depends = libass.so
+	depends = libavcodec.so
+	depends = libavformat.so
+	depends = libavutil.so
+	depends = libzimg.so
+	provides = vapoursynth
+	conflicts = vapoursynth
+	source = vapoursynth-R45.1::git+https://github.com/swordfeng/vapoursynth.git#tag=R45.1-wine
+	source = vapoursynth.xml
+	sha256sums = SKIP
+	sha256sums = 8e51579547d20cd7cb9618a47b3ac508423d09d76649bf038d0ab9acb850b068
+
+pkgname = vapoursynth-winesupport
+

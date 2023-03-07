@@ -1,0 +1,17 @@
+pkgbase = input-veikk-config
+	pkgdesc = A graphical configuration tool to easily customize the module parameters for the input-veikk-dkms
+	pkgver = 2.0
+	pkgrel = 1
+	url = https://github.com/jlam55555/veikk-linux-driver-gui
+	arch = any
+	license = GPL
+	makedepends = cmake
+	makedepends = qt5-tools
+	depends = input-veikk-dkms
+	source = https://codeload.github.com/jlam55555/veikk-linux-driver-gui/tar.gz/v2.0
+	source = fix.patch
+	sha1sums = 09e72cfc11d62f54fab398931060fb7d5bd7258b
+	sha1sums = 8784d971e57f2d1b3290fb42752b2178a15ba61f
+
+pkgname = input-veikk-config
+

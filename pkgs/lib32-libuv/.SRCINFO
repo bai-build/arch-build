@@ -1,0 +1,15 @@
+pkgbase = lib32-libuv
+	pkgdesc = Multi-platform support library with a focus on asynchronous I/O
+	pkgver = 1.23.2
+	pkgrel = 1
+	url = https://github.com/libuv/libuv
+	arch = x86_64
+	license = custom
+	makedepends = python-sphinx
+	makedepends = gcc-multilib
+	depends = lib32-glibc
+	source = https://github.com/libuv/libuv/archive/v1.23.2/libuv-1.23.2.tar.gz
+	sha512sums = f91accf4ba9987fad23cc546a9821c3d643f8505cae22e0cbe28c4d5d5cb6b370b3483c6d95195cff3bcddd1e94f1bdab740075c3eaf22f8f673f7a57c1fdfc5
+
+pkgname = lib32-libuv
+

@@ -1,0 +1,18 @@
+pkgbase = mingw-w64-pangomm
+	pkgdesc = C++ bindings for Pango (mingw-w64)
+	pkgver = 2.46.2
+	pkgrel = 1
+	url = https://www.gtkmm.org/
+	arch = any
+	license = LGPL
+	makedepends = mingw-w64-configure
+	depends = mingw-w64-pango
+	depends = mingw-w64-glibmm
+	depends = mingw-w64-cairomm
+	options = !strip
+	options = !buildflags
+	options = staticlibs
+	source = https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.2.tar.xz
+	sha256sums = 57442ab4dc043877bfe3839915731ab2d693fc6634a71614422fb530c9eaa6f4
+
+pkgname = mingw-w64-pangomm

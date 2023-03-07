@@ -1,0 +1,12 @@
+pkgbase = wiking
+	pkgdesc = Next generation wiki written in Django with Markdown support
+	pkgver = 1.0.0
+	pkgrel = 1
+	url = https://gitlab.com/XenGi/WikiNG
+	arch = any
+	license = MIT
+	source = wiking::git+https://gitlab.com/XenGi/WikiNG.git#tag=v1.0.0
+	sha256sums = SKIP
+
+pkgname = wiking
+

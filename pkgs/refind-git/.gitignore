@@ -1,0 +1,10 @@
+src/
+pkg/
+refind/
+edk2*/
+*.tar
+*.tar.*
+*.pkg.tar*
+*.zip
+*.sig
+*.log*

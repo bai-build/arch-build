@@ -1,0 +1,39 @@
+pkgbase = pamac-all
+	pkgdesc = A Gtk3 frontend for libalpm (everything in one package - snap, flatpak, appindicator)
+	pkgver = 10.4.3
+	pkgrel = 1
+	url = https://gitlab.manjaro.org/applications/pamac
+	install = pamac.install
+	arch = i686
+	arch = x86_64
+	arch = arm
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	license = GPL3
+	makedepends = gettext
+	makedepends = itstool
+	makedepends = vala>=0.45
+	makedepends = meson
+	makedepends = ninja
+	makedepends = gobject-introspection
+	makedepends = xorgproto
+	makedepends = asciidoc
+	depends = libnotify
+	depends = libpamac-full
+	depends = libhandy
+	optdepends = polkit-gnome: needed for authentification in Cinnamon, Gnome
+	provides = pamac=10.4.3-1
+	conflicts = pamac
+	conflicts = pamac-gtk
+	conflicts = pamac-cli
+	conflicts = pamac-common
+	conflicts = pamac-aur
+	conflicts = pamac-aur-git
+	conflicts = pamac-flatpak
+	conflicts = pamac-flatpak-gnome
+	options = !emptydirs
+	source = pamac-10.4.3.tar.gz::https://gitlab.manjaro.org/applications/pamac/-/archive/v10.4.3/pamac-v10.4.3.tar.gz
+	sha256sums = a58c47f43599fd6e8db5adbd0d52345df220bd7a9d6acef130c3b3219f00ee14
+
+pkgname = pamac-all

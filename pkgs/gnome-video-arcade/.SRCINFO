@@ -1,0 +1,24 @@
+pkgbase = gnome-video-arcade
+	pkgdesc = Simple GTK3 front-end wich supports MAME
+	pkgver = 0.8.8
+	pkgrel = 1
+	url = https://wiki.gnome.org/action/show/Apps/GnomeVideoArcade
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = intltool
+	makedepends = itstool
+	makedepends = gnome-doc-utils
+	depends = dconf
+	depends = dbus
+	depends = gtk3
+	depends = libsoup
+	depends = libwnck3
+	depends = hicolor-icon-theme
+	depends = mame
+	depends = sqlite3
+	source = http://download.gnome.org/sources/gnome-video-arcade/0.8/gnome-video-arcade-0.8.8.tar.xz
+	sha256sums = 91287b62c2cf2bf982d132b5b1a3f3d34f117254faff134af73b0c8e2b56d026
+
+pkgname = gnome-video-arcade
+

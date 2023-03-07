@@ -1,0 +1,12 @@
+pkgbase = rapidfuzz-cpp
+	pkgdesc = Rapid fuzzy string matching in C++ using the Levenshtein Distance
+	pkgver = 1.1.1
+	pkgrel = 1
+	url = https://github.com/maxbachmann/rapidfuzz-cpp
+	arch = any
+	license = MIT
+	makedepends = cmake
+	source = rapidfuzz-cpp-1.1.1.tar.gz::https://github.com/maxbachmann/rapidfuzz-cpp/archive/v1.1.1.tar.gz
+	sha256sums = 0d46f6a2e64bd68589537353eea62e84e90af3307f213a4578448d026b96c6c3
+
+pkgname = rapidfuzz-cpp

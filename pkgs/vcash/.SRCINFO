@@ -1,0 +1,24 @@
+pkgbase = vcash
+	pkgdesc = A decentralized currency for the internet.
+	pkgver = 0.6.0.4
+	pkgrel = 4
+	url = https://github.com/openvcash/vcash
+	arch = i686
+	arch = x86_64
+	license = AGPL3
+	makedepends = sed
+	makedepends = coreutils
+	makedepends = make
+	depends = gcc5
+	depends = python
+	source = https://github.com/openvcash/vcash/archive/0.6.0.4.tar.gz
+	source = https://www.openssl.org/source/openssl-1.0.2k.tar.gz
+	source = https://sourceforge.net/projects/boost/files/boost/1.53.0/boost_1_53_0.tar.gz
+	source = http://download.oracle.com/berkeley-db/db-6.1.29.NC.tar.gz
+	sha512sums = 95bf29d81aa4bebf37814c34b7fdc8ef2c1e2f2bfb7dc25036c4cc035e1121eba172bbe5c3c402f4db6293bf714ca3f7e1b870deaaf56243d407a02857e4dd6e
+	sha512sums = 0d314b42352f4b1df2c40ca1094abc7e9ad684c5c35ea997efdd58204c70f22a1abcb17291820f0fff3769620a4e06906034203d31eb1a4d540df3e0db294016
+	sha512sums = 1787ba1b156d5a40f027b401815e7bc5137f3aa52c8d457115154455b976f8abbb88dbb89d5876b23ddbf5761ad0d69f6b3d8267e7e885e6a73db69e15c3a75e
+	sha512sums = 7c36bc78d7210dcb7735e421bfc6e21eda3235636f772ba9353cfdac04382fd98346a16684c663af23e01014b996ad0eb8a13d5f318cb22b764066a34c00b44b
+
+pkgname = vcash
+

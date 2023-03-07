@@ -1,0 +1,57 @@
+--- src/evince-3.18.2/shell/ev-application.c	2015-10-18 10:33:50.000000000 +0200
++++ src/evince-3.18.2/shell/ev-application.c.new	2016-02-25 23:14:16.900031829 +0100
+@@ -44,6 +44,13 @@
+ #include "ev-media-player-keys.h"
+ #endif /* ENABLE_DBUS */
+ 
++#ifdef G_OS_WIN32
++#include <wtypesbase.h>
++#include <shellapi.h>
++#include <winuser.h>
++#endif
++
++
+ struct _EvApplication {
+ 	GtkApplication base_instance;
+ 
+@@ -172,8 +179,12 @@
+ 	path = g_build_filename (BINDIR, "evince", NULL);
+ #endif
+ 
++	#ifndef G_OS_WIN32
+ 	g_string_append_printf (cmd, " %s", path);
+ 	g_free (path);
++	#else
++	g_string_append_printf (cmd, "%s", "");
++	#endif
+ 	
+ 	/* Page label */
+ 	if (dest) {
+@@ -212,7 +223,19 @@
+ 		break;
+ 	}
+ 
++	#ifdef G_OS_WIN32
++		g_string_append(cmd, " ");
++		g_string_append(cmd, uri);
++	#endif
++
+ 	cmdline = g_string_free (cmd, FALSE);
++	#ifdef G_OS_WIN32
++	{
++		ShellExecute(NULL,"open",path,cmdline,"",SW_SHOWDEFAULT);
++		fprintf(stderr, "INFO: Spawning evince process with command line '%s %s'\n",path,cmdline);
++		g_free(path);
++	}
++	#else
+ 	app = g_app_info_create_from_commandline (cmdline, NULL, G_APP_INFO_CREATE_SUPPORTS_URIS, &error);
+ 
+ 	if (app != NULL) {
+@@ -240,6 +263,7 @@
+ 		g_object_unref (app);
+ 		g_object_unref (ctx);
+ 	}
++	#endif
+ 
+ 	if (error != NULL) {
+ 		g_printerr ("Error launching evince %s: %s\n", uri, error->message);

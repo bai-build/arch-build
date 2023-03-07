@@ -1,0 +1,51 @@
+pkgbase = linux-hardened-ccs-apparmor
+	pkgdesc = Security-Hardened Linux with CCS and AppArmor
+	pkgver = 5.4.5.a
+	pkgrel = 1
+	url = https://tomoyo.osdn.jp
+	arch = x86_64
+	license = GPL2
+	makedepends = bc
+	makedepends = kmod
+	makedepends = libelf
+	makedepends = xmlto
+	makedepends = python-sphinx
+	makedepends = python-sphinx_rtd_theme
+	makedepends = graphviz
+	makedepends = imagemagick
+	options = !strip
+	source = https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/linux-5.4.5.tar.xz
+	source = https://mirrors.edge.kernel.org/pub/linux/kernel/v5.x/linux-5.4.5.tar.sign
+	source = https://github.com/anthraxx/linux-hardened/releases/download/5.4.5.a/linux-hardened-5.4.5.a.patch
+	source = https://github.com/anthraxx/linux-hardened/releases/download/5.4.5.a/linux-hardened-5.4.5.a.patch.sig
+	source = https://osdn.mirror.constant.com//tomoyo/49684/ccs-patch-1.8.6-20191225.tar.gz
+	source = https://osdn.mirror.constant.com//tomoyo/49684/ccs-patch-1.8.6-20191225.tar.gz.asc
+	source = config
+	validpgpkeys = ABAF11C65A2970B130ABE3C479BE3E4300411886
+	validpgpkeys = 647F28654894E3BD457199BE38DBBDC86092693E
+	validpgpkeys = 65EEFE022108E2B708CBFCF7F9E712E59AF5F22A
+	validpgpkeys = E240B57E2C4630BA768E2F26FC1B547C8D8172C8
+	validpgpkeys = 43C83369623D7AD3A96C2FC7425F128D0C64F52A
+	sha256sums = 568e9f27fbba86131c2e2849f296d54216e2ed3e8c4d8aa78a93b417cab23ec0
+	sha256sums = SKIP
+	sha256sums = 804f8a3ee06a810d88a4a57c555af0fa4dac934d24e58e69b83c0a01c8710a3a
+	sha256sums = SKIP
+	sha256sums = e7403947eb9bffdc6f4db6087e2703c3176e5794dbedd58b77f025d2f1e248f1
+	sha256sums = SKIP
+	sha256sums = 744509e79204d8f6326ea7dbb351b8bbfce834312ca6cecca47c2c31e822d03e
+
+pkgname = linux-hardened-ccs-apparmor
+	pkgdesc = The Security-Hardened Linux with CCS and AppArmor kernel and modules
+	depends = coreutils
+	depends = kmod
+	depends = initramfs
+	optdepends = crda: to set the correct wireless channels of your country
+	optdepends = linux-firmware: firmware images needed for some devices
+	optdepends = usbctl: deny_new_usb control
+
+pkgname = linux-hardened-ccs-apparmor-headers
+	pkgdesc = Headers and scripts for building modules for the Security-Hardened Linux with CCS and AppArmor kernel
+
+pkgname = linux-hardened-ccs-apparmor-docs
+	pkgdesc = Documentation for the Security-Hardened Linux with CCS and AppArmor kernel
+

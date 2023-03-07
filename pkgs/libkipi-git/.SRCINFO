@@ -1,0 +1,25 @@
+pkgbase = libkipi-git
+	pkgdesc = An interface to use kipi-plugins from a KDE application
+	pkgver = r1162.a6ecdba
+	pkgrel = 1
+	url = http://www.kde.org
+	install = libkipi-git.install
+	arch = i686
+	arch = x86_64
+	groups = digikamsc-git
+	license = GPL
+	license = LGPL
+	license = FDL
+	makedepends = git
+	makedepends = extra-cmake-modules-git
+	makedepends = kdoctools
+	depends = qt5-base
+	depends = hicolor-icon-theme
+	depends = kxmlgui
+	provides = libkipi
+	conflicts = libkipi
+	source = libkipi::git+git://anongit.kde.org/libkipi
+	md5sums = SKIP
+
+pkgname = libkipi-git
+

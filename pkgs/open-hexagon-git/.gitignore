@@ -1,0 +1,5 @@
+src/
+pkg/
+SSVOpenHexagon
+*.zip
+*.pkg.tar.*

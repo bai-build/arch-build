@@ -1,0 +1,19 @@
+pkgbase = thermald
+	pkgdesc = The Linux Thermal Daemon program from 01.org
+	pkgver = 2.2
+	pkgrel = 1
+	url = https://01.org/linux-thermal-daemon
+	arch = x86_64
+	license = GPL2
+	makedepends = systemd
+	makedepends = python
+	makedepends = autoconf-archive
+	depends = dbus-glib
+	depends = libxml2
+	source = thermald-2.2.tar.gz::https://github.com/intel/thermal_daemon/archive/v2.2.tar.gz
+	source = modules-load-thermald.conf
+	sha256sums = d23042e84dbd8a81c32fdc7bef3e2524b75ec68184a9ae3a324f54de382ea23f
+	sha256sums = 0155e1eb459306d251a5a049ffc6c11e144fa8caa75901ac5fa20bd52e05d515
+
+pkgname = thermald
+

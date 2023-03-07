@@ -1,0 +1,21 @@
+pkgbase = audio-recorder
+	pkgdesc = Audio Recorder Application
+	pkgver = 3.3.4
+	pkgrel = 1
+	url = https://launchpad.net/~audio-recorder
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = intltool
+	depends = gst-plugins-base
+	depends = gst-plugins-good
+	depends = libappindicator-gtk3
+	optdepends = pulseaudio: support for the pulsesrc plugin
+	optdepends = pipewire: support for the pipewiresrc plugin
+	optdepends = gst-plugins-bad: support for AAC encoding
+	optdepends = gst-plugins-ugly: support for MP3 encoding
+	optdepends = gst-libav: plugin for the libav library
+	source = https://launchpad.net/~audio-recorder/+archive/ubuntu/ppa/+sourcefiles/audio-recorder/3.3.4~jammy/audio-recorder_3.3.4~jammy.tar.gz
+	md5sums = d7ca6db99f948af922773d1fee68dc1f
+
+pkgname = audio-recorder

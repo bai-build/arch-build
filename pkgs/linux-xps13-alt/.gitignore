@@ -1,0 +1,6 @@
+# source files and signatures
+*.sign
+*.xz
+*.src.tar.gz
+*.pkg.tar.xz
+*.install.pkg

@@ -1,0 +1,21 @@
+pkgbase = android-armv7a-eabi-libwebp
+	pkgdesc = WebP library and conversion tools (android)
+	pkgver = 1.2.4
+	pkgrel = 1
+	url = https://developers.google.com/speed/webp/
+	arch = any
+	groups = android-libwebp
+	license = BSD
+	makedepends = android-configure
+	depends = android-armv7a-eabi-libjpeg-turbo
+	depends = android-armv7a-eabi-libpng
+	depends = android-armv7a-eabi-libtiff
+	depends = android-armv7a-eabi-giflib
+	options = !strip
+	options = !buildflags
+	options = staticlibs
+	options = !emptydirs
+	source = https://github.com/webmproject/libwebp/archive/v1.2.4.tar.gz
+	md5sums = 4f08244f88a39816c3e0719ca16c7a92
+
+pkgname = android-armv7a-eabi-libwebp

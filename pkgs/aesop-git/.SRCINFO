@@ -1,0 +1,25 @@
+pkgbase = aesop-git
+	pkgdesc = The simplest PDF viewer around designed for Pantheon Shell
+	pkgver = r38.0364b3d
+	pkgrel = 1
+	url = https://github.com/lainsce/aesop
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	makedepends = meson
+	makedepends = ninja
+	makedepends = vala
+	depends = gtk3
+	depends = granite
+	depends = libsoup
+	depends = json-glib
+	depends = poppler-glib
+	optdepends = lib32-json-glib
+	provides = aesop
+	conflicts = aesop
+	source = git+https://github.com/lainsce/aesop.git
+	md5sums = SKIP
+
+pkgname = aesop-git
+

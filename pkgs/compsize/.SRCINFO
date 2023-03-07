@@ -1,0 +1,16 @@
+pkgbase = compsize
+	pkgdesc = Calculate compression ratio of a set of files on Btrfs
+	pkgver = 1.2
+	pkgrel = 1
+	url = https://github.com/kilobyte/compsize
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = btrfs-progs
+	makedepends = git
+	depends = glibc
+	source = git+https://github.com/kilobyte/compsize#commit=7b91a8be5d0b883de5921be61f76e064af339a07
+	sha256sums = SKIP
+
+pkgname = compsize
+

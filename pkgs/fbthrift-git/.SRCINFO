@@ -1,0 +1,29 @@
+pkgbase = fbthrift-git
+	pkgdesc = Facebook branch of Apache Thrift, including a new C++ server.
+	pkgver = 2017.01.30.00.r15.g340f6393
+	pkgrel = 1
+	url = https://github.com/facebook/fbthrift
+	arch = i686
+	arch = x86_64
+	license = Apache
+	makedepends = git
+	makedepends = scons
+	makedepends = cmake
+	makedepends = flex
+	makedepends = bison
+	depends = wangle-git
+	depends = folly-git
+	depends = numactl
+	depends = krb5
+	depends = python2
+	depends = mstch
+	provides = fbthrift
+	provides = thrift
+	conflicts = fbthrift
+	conflicts = thrift
+	replaces = fbthrift
+	source = git+https://github.com/facebook/fbthrift.git
+	md5sums = SKIP
+
+pkgname = fbthrift-git
+

@@ -1,0 +1,21 @@
+pkgbase = plasma5-applets-plasma-pass-git
+	pkgdesc = Plasma applet for the Pass password manager
+	pkgver = 1.0.0.r18.d5999a0
+	pkgrel = 1
+	url = https://cgit.kde.org/plasma-pass.git
+	arch = x86_64
+	license = GPL2
+	makedepends = extra-cmake-modules
+	makedepends = git
+	depends = pass
+	depends = plasma-framework
+	depends = kitemmodels
+	provides = plasma5-applets-plasma-pass
+	provides = plasma-pass
+	conflicts = plasma5-applets-plasma-pass
+	conflicts = plasma-pass
+	source = git+https://anongit.kde.org/plasma-pass.git
+	sha256sums = SKIP
+
+pkgname = plasma5-applets-plasma-pass-git
+

@@ -1,0 +1,23 @@
+pkgbase = sachesi-git
+	pkgdesc = Firmware, extractor, searcher and installer for Blackberry 10
+	pkgver = 2.0.3.r10.g228775f
+	pkgrel = 1
+	url = https://github.com/xsacha/Sachesi
+	install = sachesi.install
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	makedepends = gendesk
+	makedepends = qt5-quickcontrols
+	makedepends = qt5-tools
+	depends = libusb
+	depends = lzo
+	depends = openssl-1.0
+	depends = qt5-declarative
+	depends = quazip-qt5
+	source = git+https://github.com/xsacha/Sachesi.git
+	sha1sums = SKIP
+
+pkgname = sachesi-git
+

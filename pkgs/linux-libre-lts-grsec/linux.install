@@ -1,0 +1,52 @@
+# arg 1:  the new package version
+# arg 2:  the old package version
+
+KERNEL_NAME=
+KERNEL_VERSION=
+
+announce() {
+  cat <<EOF
+Due to continued copyright and trademark abuses by the embedded industry, the
+stable patches of grsecurity will no longer be available to the general public.
+This package will be removed after the first private update of the stable
+patch. The linux-libre-grsec package will be unaffected as it uses the test patch.
+
+See the official announcement for more details:
+
+https://grsecurity.net/announce.php
+EOF
+}
+
+post_install () {
+  # updating module dependencies
+  echo ">>> Updating module dependencies. Please wait ..."
+  depmod ${KERNEL_VERSION}
+  echo ">>> Generating initial ramdisk, using mkinitcpio.  Please wait..."
+  mkinitcpio -p linux-libre${KERNEL_NAME}
+  announce
+}
+
+post_upgrade() {
+  if findmnt --fstab -uno SOURCE /boot &>/dev/null && ! mountpoint -q /boot; then
+    echo "WARNING: /boot appears to be a separate partition but is not mounted."
+  fi
+
+  # updating module dependencies
+  echo ">>> Updating module dependencies. Please wait ..."
+  depmod ${KERNEL_VERSION}
+  echo ">>> Generating initial ramdisk, using mkinitcpio.  Please wait..."
+  mkinitcpio -p linux-libre${KERNEL_NAME}
+  announce
+
+  if [ $(vercmp $2 3.13) -lt 0 ]; then
+    echo ">>> WARNING: AT keyboard support is no longer built into the kernel."
+    echo ">>>          In order to use your keyboard during early init, you MUST"
+    echo ">>>          include the 'keyboard' hook in your mkinitcpio.conf."
+  fi
+}
+
+post_remove() {
+  # also remove the compat symlinks
+  rm -f boot/initramfs-linux-libre${KERNEL_NAME}.img
+  rm -f boot/initramfs-linux-libre${KERNEL_NAME}-fallback.img
+}

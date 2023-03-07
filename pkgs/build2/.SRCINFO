@@ -1,0 +1,18 @@
+pkgbase = build2
+	pkgdesc = build2 build system
+	pkgver = 0.15.0
+	pkgrel = 1
+	url = https://build2.org/
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = wget
+	depends = sqlite3
+	depends = pkgconf
+	options = !ccache
+	source = https://download.build2.org/0.15.0/build2-toolchain-0.15.0.tar.xz
+	source = build.patch
+	sha256sums = 5152f679daeb9627f9710c60ef88de1591c02097146268be2f5aea929d2837c4
+	sha256sums = fa551d0fa42c622caa147acc42944ea709d6147ce91847bb9bc86be321b09fdf
+
+pkgname = build2

@@ -1,0 +1,15 @@
+pkgbase = ssdeep
+	pkgdesc = A program for computing context triggered piecewise hashes
+	pkgver = 2.14.1
+	pkgrel = 1
+	url = https://ssdeep-project.github.io/ssdeep/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = gcc-libs
+	options = !libtool
+	source = https://github.com/ssdeep-project/ssdeep/archive/release-2.14.1.tar.gz
+	sha256sums = d96f667a8427ad96da197884574c7ca8c7518a37d9ac8593b6ea77e7945720a4
+
+pkgname = ssdeep
+

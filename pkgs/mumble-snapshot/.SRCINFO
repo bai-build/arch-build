@@ -1,0 +1,32 @@
+pkgbase = mumble-snapshot
+	pkgdesc = A high quality voice chat program.
+	pkgver = 1.3.0_rc2
+	pkgrel = 1
+	epoch = 1
+	url = https://www.mumble.info/
+	arch = i686
+	arch = x86_64
+	license = BSD
+	makedepends = boost
+	makedepends = qt5-tools
+	makedepends = python
+	makedepends = libsndfile
+	makedepends = speech-dispatcher
+	depends = qt5-svg
+	depends = opus
+	depends = speex
+	depends = protobuf
+	depends = hicolor-icon-theme
+	depends = libspeechd
+	depends = libpulse
+	optdepends = espeak: speech synthesizer
+	provides = mumble
+	conflicts = mumble
+	source = https://dl.mumble.info/mumble-1.3.0-rc2.tar.gz
+	source = https://dl.mumble.info/mumble-1.3.0-rc2.tar.gz.sig
+	validpgpkeys = 56D0B23AE00B1EE9A8BAAC0F5B8CF87BB893449B
+	sha256sums = 258643a73997dc192ec9cc1175a55082e432ae21e4283bef27ffa331e85a0380
+	sha256sums = SKIP
+
+pkgname = mumble-snapshot
+

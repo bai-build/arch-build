@@ -1,0 +1,30 @@
+pkgbase = gnustep-base
+	pkgdesc = The GNUstep base package
+	pkgver = 1.25.1
+	pkgrel = 1
+	url = http://www.gnustep.org/
+	arch = x86_64
+	groups = gnustep-core
+	license = GPL
+	license = LGPL
+	makedepends = gcc-objc
+	depends = libxslt
+	depends = avahi
+	depends = gmp
+	depends = gcc-libs
+	depends = openssl
+	depends = libffi
+	depends = gnustep-make
+	depends = gnutls
+	depends = icu
+	conflicts = gnustep-base-svn
+	options = !emptydirs
+	options = !makeflags
+	source = https://github.com/gnustep/libs-base/releases/download/base-1_25_1/gnustep-base-1.25.1.tar.gz
+	source = https://github.com/gnustep/libs-base/releases/download/base-1_25_1/gnustep-base-1.25.1.tar.gz.sig
+	validpgpkeys = 83AAE47CE829A4146EF83420CA868D4C99149679
+	sha256sums = f28beb9ca485674bcce3053896ad90a31b109fb97c5a041827c72f241e8db69e
+	sha256sums = SKIP
+
+pkgname = gnustep-base
+

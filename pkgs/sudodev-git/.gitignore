@@ -1,0 +1,23 @@
+# backup files
+*~
+*.swp
+
+# tags
+.tags*
+tags*
+
+# output
+*.tar.xz
+/bin/
+/build/
+/pkg/
+/src/
+/sudodev/
+
+# tmp files
+.PKGINFO
+.BUILDINFO
+.INSTALL
+.MTREE
+/usr/
+

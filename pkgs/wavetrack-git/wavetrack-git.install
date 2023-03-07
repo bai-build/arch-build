@@ -1,0 +1,24 @@
+post_install() {
+   if [ "$CARCH" == "x86_64" ]; then
+      libtool --finish /usr/lib
+   else
+      libtool --finish /usr/lib32
+   fi
+}
+
+post_upgrade() {
+   if [ "$CARCH" == "x86_64" ]; then
+      libtool --finish /usr/lib
+   else
+      libtool --finish /usr/lib32
+   fi
+
+}
+
+post_remove() {
+   if [ "$CARCH" == "x86_64" ]; then
+      libtool --finish /usr/lib
+   else
+      libtool --finish /usr/lib32
+   fi
+}

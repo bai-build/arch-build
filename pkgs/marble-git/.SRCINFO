@@ -1,0 +1,64 @@
+pkgbase = marble-git
+	pkgdesc = Desktop Globe. (GIT version)
+	pkgver = 20.12.3.292.gc94802d40
+	pkgrel = 1
+	url = https://www.kde.org/applications/system/marble
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	makedepends = gpsd
+	makedepends = quazip
+	makedepends = shapelib
+	makedepends = libwlocate
+	makedepends = phonon-qt5
+	makedepends = extra-cmake-modules
+	makedepends = krunner
+	makedepends = python
+	makedepends = qt5-webengine
+	makedepends = qt5-tools
+	makedepends = qt5-serialport
+	makedepends = kparts
+	makedepends = knewstuff
+	makedepends = opencv
+	makedepends = hicolor-icon-theme
+	source = git+https://invent.kde.org/education/marble.git
+	sha256sums = SKIP
+
+pkgname = marble-git
+	groups = kde-applications
+	groups = kdeedu
+	depends = marble-common-git
+	depends = knewstuff
+	depends = kparts
+	provides = marble
+	conflicts = kdeedu-marble<15.04.3-3
+	conflicts = marble-qt
+	conflicts = marble
+
+pkgname = libastro-git
+	pkgdesc = Marble astronomy library
+	depends = gcc-libs
+	provides = libastro
+	conflicts = kdeedu-marble<15.07
+	conflicts = marble-qt
+	conflicts = libastro
+
+pkgname = marble-data-git
+	pkgdesc = Data for Marble
+	arch = any
+	depends = hicolor-icon-theme
+	provides = marble-data
+	conflicts = kdeedu-marble<15.07
+	conflicts = marble<15.07.80-3
+	conflicts = marble-qt
+	conflicts = marble-data
+
+pkgname = marble-common-git
+	pkgdesc = metapackage providing 'marble-common'-dependency
+	arch = any
+	depends = libastro-git
+	depends = marble-git
+	depends = marble-data-git
+	provides = marble-common=20.12.3.292.gc94802d40
+	conflicts = marble-common

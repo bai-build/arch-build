@@ -1,0 +1,42 @@
+pkgbase = protobuf-mir
+	pkgdesc = Protocol Buffers - Google's data interchange format
+	pkgver = 3.0.0
+	pkgrel = 1
+	url = https://developers.google.com/protocol-buffers/
+	arch = x86_64
+	license = BSD
+	makedepends = unzip
+	makedepends = python-setuptools
+	makedepends = python2-setuptools
+	makedepends = clang
+	depends = gcc-libs
+	depends = zlib
+	source = protobuf-mir-3.0.0.tgz::https://github.com/google/protobuf/archive/v3.0.0.tar.gz
+	source = gtest-1.8.0.tar.gz::https://github.com/google/googletest/archive/release-1.8.0.tar.gz
+	source = https://raw.githubusercontent.com/kikadf/patches/master/protobuf-mir/Hide-unnecessary-exported-library-symbols.patch
+	source = https://raw.githubusercontent.com/kikadf/patches/master/protobuf-mir/Restore-New-Callback-into-google-protobuf-namespace.patch
+	md5sums = d4f6ca65aadc6310b3872ee421e79fa6
+	md5sums = 16877098823401d1bf2ed7891d7dce36
+	md5sums = 17f3b316fda201b0857d1e68e703910a
+	md5sums = b39a208f8b3104f7d040c6b322a42cc9
+
+pkgname = protobuf-mir
+	provides = protobuf
+	conflicts = protobuf
+
+pkgname = python2-protobuf-mir
+	pkgdesc = Python 2 bindings for Google Protocol Buffers
+	depends = python2
+	depends = python2-six
+	depends = protobuf-mir=3.0.0
+	provides = python2-protobuf
+	conflicts = python2-protobuf
+
+pkgname = python-protobuf-mir
+	pkgdesc = Python 3 bindings for Google Protocol Buffers
+	depends = python
+	depends = python-six
+	depends = protobuf-mir=3.0.0
+	provides = python-protobuf
+	conflicts = python-protobuf
+

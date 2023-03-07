@@ -1,0 +1,18 @@
+pkgbase = lua-mpack-git
+	pkgver = 1.0.6.r17.gef02522
+	pkgrel = 1
+	url = https://github.com/libmpack/libmpack-lua
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = libmpack
+	makedepends = lua51
+	source = git+https://github.com/libmpack/libmpack-lua.git
+	sha256sums = SKIP
+
+pkgname = lua51-mpack-git
+	depends = libmpack
+	depends = lua51
+	provides = lua51-mpack=1.0.6.r17.gef02522
+	conflicts = lua51-mpack
+

@@ -1,0 +1,21 @@
+pkgbase = pavucontrol-qt-sandsmark-git
+	pkgdesc = Improved version of pavucontrol, the standard pulseaudio volume control
+	pkgver = 0.3.0.320.gc1ac54e
+	pkgrel = 1
+	url = https://github.com/sandsmark/pavucontrol-qt
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = git
+	makedepends = cmake
+	depends = libpulse
+	depends = qt5-base
+	provides = pavucontrol-qt
+	provides = pavucontrol-qt-git
+	conflicts = pavucontrol-qt
+	conflicts = pavucontrol-qt-git
+	source = git+https://github.com/sandsmark/pavucontrol-qt.git
+	sha256sums = SKIP
+
+pkgname = pavucontrol-qt-sandsmark-git
+

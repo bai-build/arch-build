@@ -1,0 +1,20 @@
+pkgbase = wolf-shaper-git
+	pkgdesc = Waveshaper plugin w/ graph editor
+	pkgver = 0.1.8.r62.g6b1ac64
+	pkgrel = 1
+	url = https://github.com/wolf-plugins/wolf-shaper
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = dssi
+	makedepends = lv2
+	makedepends = jack
+	depends = libglvnd
+	depends = libx11
+	optdepends = jack: for standalone application
+	provides = wolf-shaper
+	conflicts = wolf-shaper
+	source = wolf-shaper::git+https://github.com/wolf-plugins/wolf-shaper
+	md5sums = SKIP
+
+pkgname = wolf-shaper-git

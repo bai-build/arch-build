@@ -1,0 +1,20 @@
+pkgbase = ppub
+	pkgdesc = Simple epub reader written using python, gtk3 and webkit
+	pkgver = 1.1
+	pkgrel = 0
+	url = https://github.com/halocaridina/pPub
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = git
+	makedepends = make
+	depends = python2
+	depends = gtk3
+	depends = gobject-introspection
+	depends = libwebkit3
+	depends = python2-gobject
+	source = git+https://github.com/halocaridina/pPub.git#commit=3d1686070f34c125e266b22a346f320a47691103
+	md5sums = SKIP
+
+pkgname = ppub
+

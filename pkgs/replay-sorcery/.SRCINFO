@@ -1,0 +1,20 @@
+pkgbase = replay-sorcery
+	pkgdesc = An open-source, instant-replay screen recorder for Linux
+	pkgver = 0.6.0
+	pkgrel = 1
+	url = https://github.com/matanui159/ReplaySorcery
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = cmake
+	makedepends = git
+	depends = gcc-libs
+	depends = libx11
+	depends = ffmpeg
+	depends = pulseaudio
+	source = replay-sorcery::git+https://github.com/matanui159/ReplaySorcery.git#tag=0.6.0
+	source = git+https://github.com/ianlancetaylor/libbacktrace.git
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = replay-sorcery

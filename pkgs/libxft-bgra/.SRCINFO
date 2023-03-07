@@ -1,0 +1,16 @@
+pkgbase = libxft-bgra
+	pkgdesc = X FreeType library with support for BGRA glyphs and scaling.
+	pkgver = 2.3.5
+	pkgrel = 1
+	url = https://xorg.freedesktop.org
+	arch = x86_64
+	license = custom
+	makedepends = pkgconf
+	depends = fontconfig
+	depends = libxrender
+	provides = libxft
+	conflicts = libxft
+	source = https://xorg.freedesktop.org/releases/individual/lib/libXft-2.3.5.tar.gz
+	sha256sums = f7324aa0664115223672bae55086f3a9ae8f6ad4cdca87a8dd620295ee459e1a
+
+pkgname = libxft-bgra

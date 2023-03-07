@@ -1,0 +1,25 @@
+pkgbase = dnf-plugins-core
+	pkgdesc = Core DNF Plugins
+	pkgver = 4.3.1
+	pkgrel = 1
+	url = https://github.com/rpm-software-management/dnf-plugins-core
+	arch = any
+	license = GPL2
+	makedepends = cmake>=3.13
+	makedepends = python-sphinx
+	depends = dnf>=4.11.0
+	depends = python
+	optdepends = python-dateutil: for changelog plugin
+	optdepends = python-dbus: for needs-restarting plugin
+	optdepends = createrepo_c: for local plugin
+	options = !emptydirs
+	backup = etc/dnf/plugins/copr.conf
+	backup = etc/dnf/plugins/debuginfo-install.conf
+	backup = etc/dnf/plugins/local.conf
+	backup = etc/dnf/plugins/post-transaction-actions.conf
+	backup = etc/dnf/plugins/versionlock.conf
+	backup = etc/dnf/plugins/versionlock.list
+	source = https://github.com/rpm-software-management/dnf-plugins-core/archive/4.3.1/dnf-plugins-core-4.3.1.tar.gz
+	sha256sums = 75c3351bdf3052e1075e3fad68ebd47f23147223260a84c24998ebb676096ebc
+
+pkgname = dnf-plugins-core

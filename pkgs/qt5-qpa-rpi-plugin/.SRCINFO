@@ -1,0 +1,19 @@
+pkgbase = qt5-qpa-rpi-plugin
+	pkgdesc = Qt5 eglfs Broadcom device integration for the Raspberry Pi
+	pkgver = 5.7.0
+	pkgrel = 1
+	url = http://qt.io
+	arch = armv6h
+	arch = armv7h
+	license = GPL3
+	license = LGPL
+	license = FDL
+	license = custom
+	depends = qt5-base
+	depends = mtdev
+	noextract = qtbase-opensource-src-5.7.0.tar.xz
+	source = http://download.qt-project.org/official_releases/qt/5.7/5.7.0/submodules/qtbase-opensource-src-5.7.0.tar.xz
+	md5sums = 184f9460b40752d71b15b827260580c2
+
+pkgname = qt5-qpa-rpi-plugin
+

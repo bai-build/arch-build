@@ -1,0 +1,14 @@
+*.tar
+*.tar.*
+*.ukb
+
+src/
+pkg/
+
+dconvert*
+gfetch*
+ukbconv*
+ukbfetch*
+ukblink*
+ukbmd5*
+ukbunpack*

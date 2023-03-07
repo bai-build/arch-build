@@ -1,0 +1,13 @@
+pkgbase = libretro-db-tools
+	pkgdesc = A collection of tools for RetroArch database format (RDB) manipulation
+	pkgver = 1.9.0
+	pkgrel = 1
+	url = https://github.com/libretro/RetroArch/tree/master/libretro-db
+	arch = x86_64
+	arch = aarch64
+	license = GPL3
+	source = libretro-db-tools-1.9.0.zip::https://github.com/libretro/RetroArch/archive/5e551dd92b79d8127e66939835ea3c2a140c4078.zip
+	sha256sums = dd024815c92c8b68ead4268d1590fe49779f259bd1301aa2e17b53d6b1c7bfd0
+
+pkgname = libretro-db-tools
+

@@ -1,0 +1,27 @@
+pkgbase = oscam-svn
+	pkgdesc = The Open Source Conditional Access Module daemon
+	pkgver = 11667
+	pkgrel = 1
+	url = http://www.streamboard.tv/oscam
+	install = oscam.install
+	arch = i686
+	arch = x86_64
+	arch = arm
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	license = GPL3
+	makedepends = subversion
+	depends = bash
+	depends = openssl
+	depends = libusb
+	depends = pcsclite
+	provides = oscam
+	conflicts = oscam
+	source = oscam-svn::svn+http://www.streamboard.tv/svn/oscam/trunk#revision=11667
+	source = oscam.service
+	md5sums = SKIP
+	md5sums = 9feece4aed599a1ba005305c5e23960e
+
+pkgname = oscam-svn
+

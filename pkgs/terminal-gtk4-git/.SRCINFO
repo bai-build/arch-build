@@ -1,0 +1,23 @@
+pkgbase = terminal-gtk4-git
+	pkgdesc = A beautiful and simple GTK 4 terminal.
+	pkgver = v42.alpha2.r12.g00a7a5a
+	pkgrel = 1
+	url = https://gitlab.gnome.org/raggesilver/terminal
+	arch = any
+	license = GPL3
+	makedepends = git
+	makedepends = meson
+	makedepends = vala
+	depends = gtk4
+	depends = glib2
+	depends = libadwaita
+	depends = marble-gtk4-git
+	depends = vte4-git
+	depends = json-glib
+	depends = pcre2
+	source = terminal-gtk4-git::git+https://gitlab.gnome.org/raggesilver/terminal
+	source = launch_fix.diff
+	sha256sums = SKIP
+	sha256sums = 6d675227f2e2217e823a12638c9a08eb2d35f25416dd47656135132eddef956c
+
+pkgname = terminal-gtk4-git

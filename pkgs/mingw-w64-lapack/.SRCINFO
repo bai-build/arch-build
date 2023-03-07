@@ -1,0 +1,29 @@
+pkgbase = mingw-w64-lapack
+	pkgdesc = Linear Algebra PACKage (mingw-w64)
+	pkgver = 3.11.0
+	pkgrel = 1
+	url = http://www.netlib.org/lapack
+	arch = any
+	license = LGPL
+	makedepends = mingw-w64-cmake
+	options = !buildflags
+	options = !strip
+	options = staticlibs
+	source = https://github.com/Reference-LAPACK/lapack/archive/v3.11.0.tar.gz
+	sha256sums = 4b9ba79bfd4921ca820e83979db76ab3363155709444a787979e81c22285ffa9
+
+pkgname = mingw-w64-lapack
+	depends = mingw-w64-blas
+
+pkgname = mingw-w64-blas
+	pkgdesc = Basic Linear Algebra Subprograms (mingw-w64)
+	depends = mingw-w64-crt
+	depends = mingw-w64-gcc
+
+pkgname = mingw-w64-cblas
+	pkgdesc = C interface to BLAS (mingw-w64)
+	depends = mingw-w64-blas
+
+pkgname = mingw-w64-lapacke
+	pkgdesc = C interface to LAPACK (mingw-w64)
+	depends = mingw-w64-lapack

@@ -1,0 +1,13 @@
+pkgbase = termpaint-git
+	pkgdesc = low level terminal interface library
+	pkgver = r497.dc29355
+	pkgrel = 1
+	url = https://github.com/termpaint/termpaint
+	arch = x86_64
+	license = Boost
+	makedepends = meson
+	options = !strip
+	source = git+https://github.com/termpaint/termpaint.git
+	md5sums = SKIP
+
+pkgname = termpaint-git

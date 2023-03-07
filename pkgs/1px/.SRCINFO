@@ -1,0 +1,20 @@
+pkgbase = 1px
+	pkgdesc = Useful small-space widgets for my X11 desktop (battery level)
+	pkgver = r17.6b0066c706d1
+	pkgrel = 1
+	url = https://github.com/diresi/1px
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = git
+	makedepends = meson
+	depends = cairo
+	depends = libxfixes
+	depends = libx11
+	provides = 1px
+	conflicts = 1px
+	source = git+https://github.com/diresi/1px.git
+	md5sums = SKIP
+
+pkgname = 1px-git
+

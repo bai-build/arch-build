@@ -1,0 +1,21 @@
+pkgbase = libx32-sqlite
+	pkgdesc = A C library that implements an SQL database engine (x32 ABI)
+	pkgver = 3.9.1
+	pkgrel = 1.1
+	url = http://www.sqlite.org/
+	arch = x86_64
+	license = custom
+	makedepends = tcl
+	makedepends = gcc-multilib-x32
+	makedepends = libx32-readline
+	depends = libx32-glibc
+	depends = sqlite
+	provides = libx32-sqlite3=3.9.1
+	conflicts = libx32-sqlite3
+	replaces = libx32-sqlite3
+	options = !makeflags
+	source = http://www.sqlite.org/2015/sqlite-src-3090100.zip
+	sha1sums = 7711364f78dae9110a7c8b62eba27c37aacb4205
+
+pkgname = libx32-sqlite
+

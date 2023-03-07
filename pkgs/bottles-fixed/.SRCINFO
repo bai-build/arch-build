@@ -1,0 +1,69 @@
+pkgbase = bottles-fixed
+	pkgdesc = Run Windows software on Linux with Bottles!
+	pkgver = 2022.8.28.2
+	pkgrel = 1
+	url = https://github.com/bottlesdevs/bottles
+	changelog = changelog.md
+	arch = any
+	license = GPL3
+	makedepends = meson
+	makedepends = ninja
+	depends = python>=3.9
+	depends = python-yaml>=5.0
+	depends = python-requests>=2.25
+	depends = python-urllib3>=1.22
+	depends = python-chardet>=3.0
+	depends = python-certifi>=2019.11.28
+	depends = python-idna>=2.6
+	depends = python-markdown>=3.1
+	depends = python-pefile>=2021.9.3
+	depends = patool>=1.12
+	depends = python-gobject
+	depends = python-orjson
+	depends = python-pillow
+	depends = gtk4
+	depends = gtksourceview5
+	depends = libadwaita-testing
+	depends = libportal-gtk4
+	depends = gedit
+	depends = libgexiv2
+	depends = libaccounts-glib
+	depends = libibus
+	depends = gnumeric
+	depends = gom
+	depends = goocanvas
+	depends = xapp
+	depends = libsignon-glib
+	depends = libblockdev
+	depends = fvs
+	depends = appstream-glib
+	depends = gnome-builder
+	depends = gst-editing-services
+	depends = cabextract>=1.9.0
+	depends = p7zip>=16.02
+	depends = xorg-xdpyinfo
+	depends = icoextract
+	depends = imagemagick
+	depends = libpcap>=1.8
+	depends = libcapi>=3.2.3
+	depends = lib32-libusb
+	depends = libusb
+	depends = lib32-faudio
+	depends = faudio
+	depends = lib32-vkd3d
+	depends = vkd3d
+	depends = lib32-vulkan-icd-loader
+	depends = vulkan-icd-loader
+	depends = openldap
+	depends = dconf
+	depends = hicolor-icon-theme
+	optdepends = gamemode>=1.6: Support gamemode
+	optdepends = gamescope>=3.10: Support gamescope
+	optdepends = wine: as runtime alternative
+	provides = bottles
+	conflicts = bottles
+	conflicts = bottles-git
+	source = bottles-2022.8.28-brescia-2.tar.gz::https://github.com/bottlesdevs/bottles/archive/refs/tags/2022.8.28-brescia-2.tar.gz
+	b2sums = 3e907a28b680fe87d5e318e5a441c9db86cc188be90a13fc6e9f53fb13f7fcdeead943e00454570592d4c31e34a19e0a5726ef1765d19591e2f0d13bdcf5f9b3
+
+pkgname = bottles-fixed

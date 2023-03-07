@@ -1,0 +1,25 @@
+pkgbase = nvidia-pae
+	pkgdesc = NVIDIA drivers for linux-pae
+	pkgver = 378.13
+	pkgrel = 3
+	url = http://www.nvidia.com/
+	arch = i686
+	license = custom
+	makedepends = nvidia-libgl
+	makedepends = nvidia-utils=378.13
+	makedepends = linux-pae
+	makedepends = linux-pae-headers>=4.10
+	makedepends = linux-pae-headers<4.11
+	options = !strip
+	source = kernel_4.10.patch
+	source = http://us.download.nvidia.com/XFree86/Linux-x86/378.13/NVIDIA-Linux-x86-378.13.run
+	md5sums = e81769b830b7a1e60c635e3bbe559f59
+	md5sums = dd1077750af9a067739ec291fb24175f
+
+pkgname = nvidia-pae
+	install = nvidia.install
+	depends = linux-pae>=4.10
+	depends = linux-pae<4.11
+	depends = nvidia-utils=378.13
+	depends = libgl
+

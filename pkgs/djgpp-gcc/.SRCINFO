@@ -1,0 +1,31 @@
+pkgbase = djgpp-gcc
+	pkgdesc = GCC for the djgpp cross-compiler
+	pkgver = 12.2.0
+	pkgrel = 2
+	url = http://gcc.gnu.org
+	arch = i686
+	arch = x86_64
+	groups = djgpp
+	license = GPL3
+	license = LGPL3
+	makedepends = unzip
+	depends = zlib
+	depends = libmpc
+	depends = libisl
+	depends = djgpp-binutils>=2.30
+	depends = djgpp-djcrx
+	depends = gcc-ada
+	optdepends = djgpp-djcrx: headers and utilities
+	optdepends = djgpp-djcrx-bootstrap: first build of djgpp-gcc before djgpp-djcrx is built
+	options = !strip
+	options = staticlibs
+	options = !emptydirs
+	options = !buildflags
+	source = https://ftp.gnu.org/gnu/gcc/gcc-12.2.0/gcc-12.2.0.tar.xz
+	source = lto.patch
+	source = gcc-djgpp.diff
+	sha256sums = e549cf9cf3594a00e27b6589d4322d70e0720cdd213f39beb4181e06926230ff
+	sha256sums = c03dbd61274e1ce14f84366abf348d75779bbd6e0bc32b9f4fd74f1ce54a5ef0
+	sha256sums = 0c93c245f791d638cd775b00f9919873b229a4dda04a7a4072735d12d47737ce
+
+pkgname = djgpp-gcc

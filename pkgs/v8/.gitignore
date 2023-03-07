@@ -1,0 +1,9 @@
+*
+!.gitignore
+
+!PKGBUILD
+!.SRCINFO
+
+!d8
+!v8.pc
+!update.sh

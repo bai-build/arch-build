@@ -1,0 +1,30 @@
+pkgbase = opensmtpd-git
+	pkgdesc = Security-focused, simple, and performant SMTP server written in C (Git)
+	pkgver = 6.6.0+r2330+g22e1bdab
+	pkgrel = 1
+	url = https://www.opensmtpd.org
+	arch = x86_64
+	license = custom
+	makedepends = git
+	depends = libasr
+	depends = zlib
+	depends = libevent
+	provides = smtp-server
+	provides = smtp-forwarder
+	conflicts = smtp-server
+	conflicts = smtp-forwarder
+	backup = etc/smtpd/smtpd.conf
+	backup = etc/smtpd/aliases
+	source = git+https://github.com/OpenSMTPD/OpenSMTPD#branch=portable
+	source = opensmtpd.sysusers
+	source = opensmtpd.tmpfiles
+	source = smtpd.service
+	source = smtpd.socket
+	sha512sums = SKIP
+	sha512sums = 95df5a97ef20cbdfb5bb702d0d83397b0f8e205bd85cdce57227a9691d289f14a2fa4bbd85b527e3934d2b1216011e2214cf79589afce6fbb73c8b00d74097b3
+	sha512sums = 318e0e9cf860995fd0c81baa8226c75cc7bf3a221ca5ceb46118ce06903ff30bb337b00fa78afb6e18cf1502362233a3dce04b0e98b2af0937ca97ed68b43f1a
+	sha512sums = b3317315d4f378d7b8e10eac0313abac179be3351e1e0c476386384f788065f53f881224810bcf91662906ec0242ca7ffb6a91e6cbc56dddf1483100bca8b819
+	sha512sums = 806025d000ba34e86338bf127951e853849e077fe6941f7d0f43c362303ed191554f1d983d422f1acec22e89091517237a60da6e7ae6db1cb977fffe666e48c4
+
+pkgname = opensmtpd-git
+

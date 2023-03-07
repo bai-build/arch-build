@@ -1,0 +1,6 @@
+createrepo_c-*.tar.xz
+*.log
+*.tar.gz
+*.pkg.tar.xz
+pkg/
+src/

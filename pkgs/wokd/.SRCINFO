@@ -1,0 +1,34 @@
+pkgbase = wokd
+	pkgdesc = Webserver originated from Kimchi - a cherrypy framework for multi-purpose plug-ins
+	pkgver = 3.0.0
+	pkgrel = 3
+	url = https://github.com/kimchi-project/wok/
+	install = wokd.install
+	arch = any
+	groups = kimchi-project
+	license = LGPL
+	license = Apache
+	makedepends = git
+	makedepends = libxslt
+	makedepends = logrotate
+	depends = nginx
+	depends = openssl
+	depends = python-cherrypy
+	depends = python-cheetah3
+	depends = python-pam
+	depends = python-m2crypto
+	depends = python-jsonschema
+	depends = python-psutil
+	depends = python-ldap
+	depends = python-lxml
+	depends = python-numpy
+	depends = python-ordered-set
+	depends = ttf-font-awesome-4
+	depends = websockify
+	conflicts = wokd-git
+	backup = etc/wok/wok.conf
+	source = https://github.com/kimchi-project/wok/archive/3.0.0.tar.gz
+	sha256sums = 34ca6f5e9cc97515cc9e5d3ba9cb64bde88fa40acff751c3bed5aa2f89896f10
+
+pkgname = wokd
+

@@ -1,0 +1,16 @@
+pkgbase = virtualmoonatlas
+	pkgdesc = Software for Moon observation and survey
+	pkgver = 7.0
+	pkgrel = 1
+	url = http://virtualmoon.sourceforge.net/
+	arch = x86_64
+	license = GPLv2
+	makedepends = lazarus
+	makedepends = wget
+	depends = libpasastro
+	provides = virtualmoonatlas
+	source = virtualmoonatlas::git+https://github.com/pchev/virtualmoon.git#tag=v7.0
+	md5sums = SKIP
+
+pkgname = virtualmoonatlas
+

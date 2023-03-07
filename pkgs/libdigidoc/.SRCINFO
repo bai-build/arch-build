@@ -1,0 +1,18 @@
+pkgbase = libdigidoc
+	pkgdesc = DigiDoc is an XML file format for documents with digital signatures in use by the Estonian ID card infrastructure. This library allows for creation and reading of DigiDoc files
+	pkgver = 3.10.4.1218
+	pkgrel = 1
+	url = http://www.id.ee/
+	arch = x86_64
+	arch = i686
+	license = LGPL
+	makedepends = cmake
+	makedepends = pcsclite
+	makedepends = opensc
+	depends = libxml2
+	depends = openssl
+	source = https://installer.id.ee/media/ubuntu/pool/main/libd/libdigidoc/libdigidoc_3.10.4.1218.orig.tar.xz
+	sha256sums = 595ef2c3f62229a2b73d089a7b0625647da764133047a61144ce3881f5f9095b
+
+pkgname = libdigidoc
+

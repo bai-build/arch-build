@@ -1,0 +1,22 @@
+pkgbase = exfatprogs
+	pkgdesc = exFAT filesystem userspace utilities for Linux
+	pkgver = 1.0.4
+	pkgrel = 1
+	url = https://github.com/exfatprogs/exfatprogs
+	arch = i686
+	arch = x86_64
+	arch = mips64el
+	arch = armv6h
+	arch = armv7h
+	arch = arm
+	arch = aarch64
+	license = GPL2
+	depends = glibc
+	provides = exfat-utils
+	conflicts = fuse-exfat
+	conflicts = exfat-utils
+	source = exfatprogs-1.0.4.tar.gz::https://github.com/exfatprogs/exfatprogs/archive/1.0.4.tar.gz
+	sha512sums = 6d01ecc8e70994c1a3e0cedb6dd99d4bd2b50e8e32bc5ca973e302c502001cd5380b7e6c9d62c2f48d9dbac8a641cc23c4f9fc018f8dc6090e762fea785a266d
+
+pkgname = exfatprogs
+

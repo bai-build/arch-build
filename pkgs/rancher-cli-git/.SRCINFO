@@ -1,0 +1,15 @@
+pkgbase = rancher-cli-git
+	pkgdesc = The Rancher Command Line Interface (CLI) is a unified tool to manage your Rancher server.
+	pkgver = r174.6fc408b
+	pkgrel = 1
+	url = https://github.com/rancher/cli
+	arch = any
+	license = Apache
+	makedepends = git
+	makedepends = docker
+	provides = rancher-cli
+	source = git://github.com/rancher/cli.git
+	md5sums = SKIP
+
+pkgname = rancher-cli-git
+

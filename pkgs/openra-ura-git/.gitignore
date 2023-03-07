@@ -1,0 +1,6 @@
+*.xz
+uRA
+pkg
+src
+*.gz
+*.pkg*

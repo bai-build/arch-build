@@ -1,0 +1,19 @@
+pkgbase = kmediaplayer-git
+	pkgdesc = Plugin interface for media player features
+	pkgver = r78.9af2878
+	pkgrel = 1
+	url = https://projects.kde.org/projects/frameworks/kmediaplayer
+	arch = i686
+	arch = x86_64
+	groups = kf5-aids
+	license = LGPL
+	makedepends = extra-cmake-modules-git
+	makedepends = git
+	depends = kparts-git
+	provides = kmediaplayer
+	conflicts = kmediaplayer
+	source = git://anongit.kde.org/kmediaplayer.git
+	md5sums = SKIP
+
+pkgname = kmediaplayer-git
+

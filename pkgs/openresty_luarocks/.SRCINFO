@@ -1,0 +1,23 @@
+pkgbase = openresty_luarocks
+	pkgdesc = Deployment and management system for Openresty Luajit 2.1 modules
+	pkgver = 3.3.1
+	pkgrel = 2
+	url = http://luarocks.org/
+	arch = any
+	license = custom
+	depends = openresty
+	depends = coreutils
+	depends = curl
+	depends = lua
+	depends = unzip
+	depends = zip
+	optdepends = cvs: for fetching sources from CVS repositories
+	optdepends = git: for fetching sources from git repositories
+	optdepends = mercurial: for fetching sources from mercurial repositories
+	optdepends = cmake: for building rocks that use the cmake build system
+	optdepends = lua-sec: HTTPS support
+	source = https://luarocks.org/releases/luarocks-3.3.1.tar.gz
+	md5sums = 1dc12df0b4dc312625a0d36b194b76ef
+
+pkgname = openresty_luarocks
+

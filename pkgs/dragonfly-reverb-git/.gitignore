@@ -1,0 +1,7 @@
+dpf/
+dragonfly-reverb/
+dragonfly-reverb-git-*.pkg.tar.*
+dragonfly-reverb-git-*.src.tar.gz
+pkg/
+pugl/
+src/

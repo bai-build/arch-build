@@ -1,0 +1,67 @@
+pkgbase = petsc-git-release
+	pkgdesc = Portable, extensible toolkit for scientific computation
+	pkgver = 3.18.0.3.g28c2d9c59d1
+	pkgrel = 1
+	url = https://gitlab.com/petsc/petsc
+	install = petsc.install
+	arch = i686
+	arch = x86_64
+	license = BSD
+	makedepends = gcc
+	makedepends = gcc-fortran
+	makedepends = cmake
+	makedepends = sowing
+	makedepends = pkgconf
+	makedepends = git
+	makedepends = cython
+	makedepends = chrpath
+	makedepends = hypre=2.25.0
+	depends = openmpi
+	depends = lapack
+	depends = fftw
+	depends = zlib
+	depends = cython
+	depends = python-mpi4py
+	depends = python-numpy
+	depends = eigen>=3
+	depends = openblas
+	options = staticlibs
+	source = git+https://gitlab.com/petsc/petsc.git#branch=release
+	source = https://ftp.mcs.anl.gov/pub/petsc/release-snapshots/petsc-with-docs-3.18.0.tar.gz
+	source = test_optdepends.sh
+	sha512sums = SKIP
+	sha512sums = 49cecb31911ab0e66cc37d22b8024d067e8611a9fdee057fa70158b01531019cca7df0d238b83ff2fa34e4e5b7b08792f8a1eedd9477eb133c8a8b38523d65af
+	sha512sums = af9c16c59915c1ddb03390bb0b97e8b7404fed200cd86f69cdf06fcd13f670bc3c3c7ddae527b621210408a01db0c55db249af1fc1082e284aa707d32b21ebcb
+
+pkgname = petsc-git-release
+	optdepends = boost: Free peer-reviewed portable C++ source libraries
+	optdepends = cgns: Recording and recovering computer data
+	optdepends = eigen: Lightweight C++ template library for vector and matrix math
+	optdepends = fftw: Fast-Fourier Transform
+	optdepends = gdb: Debugging
+	optdepends = hdf5: large files
+	optdepends = hwloc: Portable Hardware Locality (abstraction of hierarchical architectures)
+	optdepends = med>=4.0: Data Modelization and Exchanges (meshes)
+	optdepends = metis: Partitioning library (for meshes)
+	optdepends = mumps: Sparse solver library
+	optdepends = netcdf-openmpi: Management of array-data
+	optdepends = openblas: Linear algebra libraries
+	optdepends = opencl-headers: for opencl (GPU computing)
+	optdepends = opencl: GPU computing
+	optdepends = openmp: Parallel distributed tasks
+	optdepends = libpng
+	optdepends = scalapack: Parallel memory linear algebra
+	optdepends = scotch: Partitioning with sparse matrices
+	optdepends = suitesparse: Sparse matrix library
+	optdepends = superlu: Subroutines for sparsse linear systems
+	optdepends = libyaml: configuration files
+	provides = petsc=3.18.0
+	provides = petsc4py=3.18.0
+	conflicts = petsc
+
+pkgname = petsc-doc-bin
+	pkgdesc = Documentation for PETSc
+	depends = 
+	optdepends = 
+	provides = petsc-doc
+	conflicts = 

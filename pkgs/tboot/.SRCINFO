@@ -1,0 +1,21 @@
+pkgbase = tboot
+	pkgdesc = A pre-kernel/VMM module that uses Intel(R) TXT to perform a measured and verified launch of an OS kernel/VMM.
+	pkgver = r510+.59086d17f60d+
+	pkgrel = 1
+	url = http://sourceforge.net/projects/tboot/
+	arch = i686
+	arch = x86_64
+	license = BSD
+	depends = trousers
+	depends = mercurial
+	provides = tboot
+	conflicts = tboot
+	source = hg+http://hg.code.sf.net/p/tboot/code
+	source = 0001-Install-to-usr-bin-instead-of-usr-sbin.patch
+	source = 0002-20_linux_tboot-Remove-check-for-boot-config-which-do.patch
+	sha512sums = SKIP
+	sha512sums = b3777a871c7ae09566dcdd4f14d5f8f3a097d2c321f5eb7c2e561594837718c3c31bc70a28a3cb342e0888724176eeccd2d73e204a6cddb245f4017b84433d30
+	sha512sums = aaec2527587211a5ab07f98ff0c8bbe20c32df09752a7364215625b665337c8ee4c582a06639d36b64dfd78e87974d6bd722df140b268280a539d6492942e87c
+
+pkgname = tboot-hg
+

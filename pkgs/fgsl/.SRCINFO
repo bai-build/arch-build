@@ -1,0 +1,29 @@
+pkgbase = fgsl
+	pkgdesc = A Fortran interface to the GNU Scientific Library
+	pkgver = 1.3.0
+	pkgrel = 2
+	url = https://github.com/reinh-bader/fgsl
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = git
+	makedepends = automake
+	depends = gsl
+	depends = gcc-fortran
+	source = git+https://github.com/reinh-bader/fgsl#tag=v1.3.0
+	source = undefined.patch::https://github.com/tschoonj/fgsl/commit/c306e9f936983df5bab68f8ba55006c0f88bc775.patch
+	sha256sums = SKIP
+	sha256sums = b6b248dc4aa514da84ecf81a1de4a33a7e2c73feee0d1fc3d57a82205e721bc4
+
+pkgname = fgsl
+
+pkgname = fgsl-docs
+	pkgdesc = A Fortran interface to the GNU Scientific Library - docs
+	arch = any
+	depends = fgsl
+
+pkgname = fgsl-examples
+	pkgdesc = A Fortran interface to the GNU Scientific Library - examples
+	arch = any
+	depends = fgsl
+

@@ -1,0 +1,17 @@
+pkgbase = rtl8821cu-raspberrypi-git
+	pkgdesc = rtl8821cu chipset driver
+	pkgver = 5.2.5.3_24795.20171031.r18.g0278eaa
+	pkgrel = 1
+	url = https://github.com/whitebatman2/rtl8821CU
+	install = rtl8821cu.install
+	arch = armv7h
+	license = GPL2
+	makedepends = git
+	makedepends = linux-raspberrypi-headers
+	depends = bc
+	conflicts = rtl8821cu
+	source = git+https://github.com/whitebatman2/rtl8821CU
+	sha256sums = SKIP
+
+pkgname = rtl8821cu-raspberrypi-git
+

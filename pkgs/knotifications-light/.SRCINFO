@@ -1,0 +1,24 @@
+pkgbase = knotifications-light
+	pkgdesc = Abstraction for system notifications (stripped from unnecessary dependencies)
+	pkgver = 5.103.0
+	pkgrel = 2
+	url = https://community.kde.org/Frameworks
+	arch = x86_64
+	groups = kf5
+	license = LGPL
+	makedepends = extra-cmake-modules
+	makedepends = qt5-tools
+	depends = kwindowsystem
+	depends = kconfig
+	depends = kcoreaddons
+	depends = libxtst
+	depends = libdbusmenu-qt5
+	provides = knotifications
+	conflicts = knotifications
+	source = https://download.kde.org/stable/frameworks/5.103/knotifications-5.103.0.tar.xz
+	source = https://download.kde.org/stable/frameworks/5.103/knotifications-5.103.0.tar.xz.sig
+	validpgpkeys = 53E6B47B45CEA3E0D5B7457758D0EE648A48B3BB
+	sha256sums = 8f3ccd6a0303408fecb1e5d9ceb22cbdbf9b1ceb08a92d32b7167dd5e2a8d936
+	sha256sums = SKIP
+
+pkgname = knotifications-light

@@ -1,0 +1,53 @@
+pkgbase = freecad
+	pkgdesc = A general purpose 3D CAD modeler
+	pkgver = 0.18.16158
+	pkgrel = 1
+	url = https://www.freecadweb.org/
+	arch = x86_64
+	license = LGPL
+	makedepends = boost
+	makedepends = eigen
+	makedepends = gcc-fortran
+	makedepends = swig
+	makedepends = xerces-c
+	makedepends = desktop-file-utils
+	makedepends = git
+	makedepends = cmake
+	makedepends = coin>=4.0.0a
+	makedepends = python-shiboken2
+	makedepends = pyside2
+	makedepends = shiboken2
+	depends = boost-libs
+	depends = curl
+	depends = opencascade>=7.2
+	depends = xerces-c
+	depends = libspnav
+	depends = glew
+	depends = netcdf
+	depends = openmpi
+	depends = shared-mime-info
+	depends = hicolor-icon-theme
+	depends = jsoncpp
+	depends = qt5-base
+	depends = qt5-declarative
+	depends = qt5-svg
+	depends = qt5-tools
+	depends = qt5-x11extras
+	depends = qt5-webkit
+	depends = med
+	depends = python-pivy
+	depends = python-pyside2
+	depends = python-matplotlib
+	depends = pyside2-tools
+	optdepends = python-matplotlib
+	optdepends = graphviz
+	optdepends = openscad
+	source = git+https://github.com/FreeCAD/FreeCAD.git#commit=783e1346c7a078f5265c3f0c6a927d09a8c1fe70
+	source = freecad.desktop
+	source = freecad.xml
+	sha256sums = SKIP
+	sha256sums = 617968d7bbd1da71bdedaed1b66c5d6eaf24e0fb34678b93f5d925d370c66296
+	sha256sums = 1d98fa4e62f352966eb357c93f54b1f0bf562931e8323bf70a83b5e221a5fb14
+
+pkgname = freecad
+

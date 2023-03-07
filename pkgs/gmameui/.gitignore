@@ -1,0 +1,6 @@
+gmameui
+src/
+pkg/
+*.pkg.tar.xz
+*.pkg.tar
+*.src.tar.gz

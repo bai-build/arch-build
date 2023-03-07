@@ -1,0 +1,26 @@
+pkgbase = libclc-git
+	pkgdesc = Library requirements of the OpenCL C programming language (git version)
+	pkgver = 12.0.0_r375621.6895581fd2c1
+	pkgrel = 1
+	epoch = 1
+	url = http://libclc.llvm.org/
+	arch = i686
+	arch = x86_64
+	groups = mesagit
+	license = MIT
+	makedepends = clang
+	makedepends = llvm
+	makedepends = spirv-llvm-translator
+	makedepends = git
+	makedepends = python
+	makedepends = ninja
+	makedepends = cmake
+	provides = libclc
+	conflicts = libclc
+	replaces = libclc
+	options = staticlibs
+	source = llvm-project-git::git+https://github.com/llvm/llvm-project.git
+	md5sums = SKIP
+
+pkgname = libclc-git
+

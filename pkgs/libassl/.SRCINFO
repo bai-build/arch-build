@@ -1,0 +1,15 @@
+pkgbase = libassl
+	pkgdesc = Provides a much simpler and sane programming interface to OpenSSL
+	pkgver = 1.5.0
+	pkgrel = 1
+	url = https://opensource.conformal.com/wiki/assl
+	arch = i686
+	arch = x86_64
+	license = ISC
+	makedepends = libclens
+	depends = glibc
+	source = https://opensource.conformal.com/snapshots/assl/assl-1.5.0.tar.gz
+	sha1sums = dc76a213b13633643c4e2279cc339aae9c736dd3
+
+pkgname = libassl
+

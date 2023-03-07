@@ -1,0 +1,27 @@
+pkgbase = libappindicator-sharp
+	pkgdesc = Allow applications to extend a menu in Unity, KDE or Systray (Mono GTK+ 2 bindings)
+	pkgver = 12.10.0.r298
+	pkgrel = 1
+	url = https://launchpad.net/libappindicator
+	arch = any
+	license = LGPL2.1
+	license = LGPL3
+	makedepends = bzr
+	makedepends = libdbusmenu-gtk2
+	makedepends = libindicator-gtk2
+	makedepends = gnome-common
+	makedepends = dbus-glib
+	makedepends = perl-xml-libxml
+	makedepends = gtk-doc
+	makedepends = python-dulwich
+	depends = mono
+	depends = libappindicator-gtk2=12.10.0.r298
+	depends = gtk-sharp-2
+	depends = glib2
+	options = !strip
+	source = bzr+lp:libappindicator#revision=298
+	validpgpkeys = 6FC05581A37D71FCECE165DB5BE41E162CD6358E
+	sha512sums = SKIP
+
+pkgname = libappindicator-sharp
+

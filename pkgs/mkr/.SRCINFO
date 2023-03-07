@@ -1,0 +1,14 @@
+pkgbase = mkr
+	pkgdesc = Command Line Tool for Mackerel
+	pkgver = 0.49.2
+	pkgrel = 1
+	url = https://github.com/mackerelio/mkr
+	arch = i686
+	arch = x86_64
+	license = APACHE
+	makedepends = go
+	makedepends = git
+	source = mkr-0.49.2.tar.gz::https://github.com/mackerelio/mkr/archive/v0.49.2.tar.gz
+	sha512sums = b6b17ffd845ff0aae6956d8e5d742f722b2dbd23be25fbf5507df057db4ee632646713f5b3ddb4d40e7c58e2f513cce2690778dc71c8954bb37dcb67a3294fa1
+
+pkgname = mkr

@@ -1,0 +1,40 @@
+pkgbase = scipoptsuite
+	pkgdesc = Toolbox for generating and solving optimization problems (with Parallel Processing)
+	pkgver = 7.0.3
+	pkgrel = 1
+	url = https://scip.zib.de
+	arch = x86_64
+	license = LGPL3
+	license = custom:ZIB Academic License
+	makedepends = cmake
+	makedepends = gmp
+	makedepends = zlib
+	makedepends = cppad
+	makedepends = bliss
+	makedepends = boost-libs
+	makedepends = blas
+	makedepends = gsl
+	makedepends = tbb
+	makedepends = boost
+	depends = gmp
+	depends = zlib
+	depends = cppad
+	depends = bliss
+	depends = boost-libs
+	depends = blas
+	depends = gsl
+	depends = tbb
+	optdepends = cliquer: C routines for finding cliques in an arbitrary weighted graph
+	optdepends = hmetis: A set of programs for partitioning hypergraphs
+	optdepends = criterion: A cross-platform C and C++ unit testing framework
+	provides = scip=7.0.3
+	provides = soplex=5.0.1
+	provides = zimpl=3.4.0
+	provides = gcg=3.0.3
+	provides = papilo=1.0.1
+	replaces = ziboptsuite
+	options = strip
+	source = local:///scipoptsuite-7.0.3.tgz
+	sha256sums = 5af5185a6e60cc62d1a89e3ac4fe22d32351a5158c2c04a95e180e76eb98cc07
+
+pkgname = scipoptsuite

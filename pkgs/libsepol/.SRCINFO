@@ -1,0 +1,23 @@
+pkgbase = libsepol
+	pkgdesc = SELinux binary policy manipulation library
+	pkgver = 3.4
+	pkgrel = 1
+	url = https://github.com/SELinuxProject/selinux
+	arch = i686
+	arch = x86_64
+	arch = armv6h
+	arch = aarch64
+	groups = selinux
+	license = LGPL2.1
+	makedepends = flex
+	depends = glibc
+	provides = selinux-usr-libsepol=3.4-1
+	conflicts = selinux-usr-libsepol
+	options = staticlibs
+	source = https://github.com/SELinuxProject/selinux/releases/download/3.4/libsepol-3.4.tar.gz
+	source = https://github.com/SELinuxProject/selinux/releases/download/3.4/libsepol-3.4.tar.gz.asc
+	validpgpkeys = E853C1848B0185CF42864DF363A8AD4B982C4373
+	sha256sums = fc277ac5b52d59d2cd81eec8b1cccd450301d8b54d9dd48a993aea0577cf0336
+	sha256sums = SKIP
+
+pkgname = libsepol

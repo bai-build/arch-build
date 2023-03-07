@@ -1,0 +1,23 @@
+pkgbase = yafc
+	pkgdesc = Yet Another FTP Client for the console
+	pkgver = 1.3.7
+	pkgrel = 3
+	url = http://yafc-ftp.com/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = krb5
+	makedepends = readline
+	makedepends = libssh
+	depends = libbsd
+	optdepends = krb5: required for Kerberos 5 support
+	optdepends = readline: required for tab completion and history support
+	optdepends = libssh: required for scp and sftp support
+	source = http://www.yafc-ftp.com/downloads/yafc-1.3.7.tar.xz
+	source = http://www.yafc-ftp.com/downloads/yafc-1.3.7.tar.xz.asc
+	validpgpkeys = F78CBA07817BB149A11D339069F2FC516EA71993
+	sha512sums = 2547cf3d6f1918a5cd2d3bc29455311d48fcd7dbccfdc8ae4ce08d1fd63cfabae07b70ebf005206a61937bd5b686e19d3af095f876616a5ac4b0593e90cd39c5
+	sha512sums = SKIP
+
+pkgname = yafc
+

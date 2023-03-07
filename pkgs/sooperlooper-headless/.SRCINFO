@@ -1,0 +1,25 @@
+pkgbase = sooperlooper-headless
+	pkgdesc = Live looping sampler capable of immediate loop recording (sans gui)
+	pkgver = 1.7.8
+	pkgrel = 1
+	url = http://essej.net/sooperlooper/
+	arch = x86_64
+	arch = armv7h
+	license = GPL2
+	depends = gcc-libs
+	depends = glibc
+	depends = libsigc++
+	depends = alsa-lib
+	depends = jack
+	depends = liblo
+	depends = libsamplerate
+	depends = libsndfile
+	depends = libxml2
+	depends = ncurses
+	depends = rubberband
+	provides = sooperlooper
+	conflicts = sooperlooper
+	source = sooperlooper-1.7.8.tar.gz::https://github.com/essej/sooperlooper/archive/v1.7.8.tar.gz
+	sha256sums = 30df4b734a539fe8c49bf862ce8a7966e7b98012718414b6d13a1ec1faa9f788
+
+pkgname = sooperlooper-headless

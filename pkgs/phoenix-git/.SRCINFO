@@ -1,0 +1,29 @@
+pkgbase = phoenix-git
+	pkgdesc = A super-slick libretro frontend powered by Qt 5
+	pkgver = r1270.f77e221
+	pkgrel = 6
+	url = https://github.com/team-phoenix/Phoenix
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	depends = sdl2
+	depends = qt5-base
+	depends = qt5-declarative
+	depends = qt5-multimedia
+	depends = qt5-graphicaleffects
+	depends = qt5-quickcontrols
+	depends = qt5-svg
+	optdepends = libretro-bsnes
+	optdepends = libretro-gambatte
+	optdepends = libretro-genesis-plus-gx
+	optdepends = libretro-mgba
+	optdepends = libretro-nestopia
+	optdepends = libretro-snes9x
+	provides = phoenix
+	conflicts = phoenix
+	source = git+https://github.com/team-phoenix/Phoenix.git#commit=f77e221415a911365d311d412153590b59c1730a
+	md5sums = SKIP
+
+pkgname = phoenix-git
+

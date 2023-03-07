@@ -1,0 +1,19 @@
+pkgbase = aarch64-linux-gnu-util-linux
+	pkgdesc = Miscellaneous system utilities for Linux (ARM64)
+	pkgver = 2.35.1
+	pkgrel = 1
+	url = https://www.kernel.org/pub/linux/utils/util-linux/
+	arch = any
+	license = GPL2
+	makedepends = aarch64-linux-gnu-configure
+	options = !buildflags
+	source = https://www.kernel.org/pub/linux/utils/util-linux/v2.35/util-linux-2.35.1.tar.xz
+	source = https://www.kernel.org/pub/linux/utils/util-linux/v2.35/util-linux-2.35.1.tar.sign
+	validpgpkeys = B0C64D14301CC6EFAEDF60E4E4B71D5EEC39C284
+	sha256sums = d9de3edd287366cd908e77677514b9387b22bc7b88f45b83e1922c3597f1d7f9
+	sha256sums = SKIP
+
+pkgname = aarch64-linux-gnu-util-linux
+
+pkgname = aarch64-linux-gnu-libutil-linux
+

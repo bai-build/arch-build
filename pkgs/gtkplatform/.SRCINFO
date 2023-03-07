@@ -1,0 +1,18 @@
+pkgbase = gtkplatform
+	pkgdesc = Run Qt applications using gtk+ as a windowing system
+	pkgver = 0.2.4+11+g1149f4f
+	pkgrel = 1
+	url = https://github.com/CrimsonAS/gtkplatform
+	arch = x86_64
+	license = LGPL3
+	license = GPL2
+	makedepends = git
+	depends = gtk3
+	depends = libnotify
+	depends = qt5-base
+	conflicts = qt-gtk-platform-plugin
+	source = git+https://github.com/CrimsonAS/gtkplatform.git#commit=1149f4f77523f650e542f83e9a1985e0b9f00a05
+	sha512sums = SKIP
+
+pkgname = gtkplatform
+

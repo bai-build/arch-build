@@ -1,0 +1,33 @@
+pkgbase = guayadeque-wx3
+	pkgdesc = The Linux Media Player (updated to use wx3.0)
+	pkgver = 0.3.7
+	pkgrel = 1
+	url = http://guayadeque.org/
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = cmake
+	depends = curl
+	depends = desktop-file-utils
+	depends = libgpod
+	depends = taglib
+	depends = wxgtk
+	depends = gdk-pixbuf2
+	optdepends = gstreamer0.10-good-plugins: Support for additional file formats
+	optdepends = gstreamer0.10-bad-plugins: Support for additional file formats
+	optdepends = gstreamer0.10-ugly-plugins: Support for additional file formats
+	optdepends = gvfs: Support for external devices
+	conflicts = guayadeque
+	source = https://downloads.sourceforge.net/project/guayadeque/guayadeque/0.3.7/guayadeque-0.3.7.tar.bz2
+	source = diff_orig_1894.patch
+	source = diff_1894_pixbuf_link.diff
+	source = diff_1894_wxsqlite3.diff
+	source = diff_1894_wx30.diff
+	md5sums = 3bf7cbb13c4d39c2ca2ee646c540475b
+	md5sums = 8a5523d991f0c48fc1d11bb8d51e2503
+	md5sums = e43d08d874ce249b111a71e71fd49a99
+	md5sums = e4d5a83d7a1ccd8bca73aa7afff3c62b
+	md5sums = 8e8661f7274271b885caa8864b169035
+
+pkgname = guayadeque-wx3
+

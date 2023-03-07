@@ -1,0 +1,53 @@
+pkgbase = mangohud
+	pkgdesc = A Vulkan overlay layer for monitoring FPS, temperatures, CPU/GPU load and more.
+	pkgver = 0.6.8
+	pkgrel = 5
+	url = https://github.com/flightlessmango/MangoHud
+	arch = x86_64
+	license = MIT
+	makedepends = appstream
+	makedepends = dbus
+	makedepends = git
+	makedepends = glew
+	makedepends = glfw-x11
+	makedepends = glslang
+	makedepends = libglvnd
+	makedepends = libxnvctrl
+	makedepends = meson
+	makedepends = nlohmann-json
+	makedepends = python-mako
+	makedepends = spdlog
+	makedepends = vulkan-headers
+	source = git+https://github.com/flightlessmango/MangoHud.git#commit=efdcc6d2f54e37a3a32475453407f1eb33d1bef2
+	source = git+https://github.com/flightlessmango/minhook.git
+	source = https://github.com/ocornut/imgui/archive/refs/tags/v1.81/imgui-1.81.tar.gz
+	source = https://wrapdb.mesonbuild.com/v2/imgui_1.81-1/get_patch#/imgui-1.81-1-wrap.zip
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = f7c619e03a06c0f25e8f47262dbc32d61fd033d2c91796812bf0f8c94fca78fb
+	sha256sums = 6d00b442690b6a5c5d8f898311daafbce16d370cf64f53294c3b8c5c661e435f
+
+pkgname = mangohud
+	depends = mangohud-common
+	depends = dbus
+	depends = fmt
+	depends = gcc-libs
+	depends = libx11
+	depends = spdlog
+	depends = vulkan-icd-loader
+	optdepends = libxnvctrl: NVIDIA GPU stats by XNVCtrl
+	optdepends = mangoapp
+	replaces = mangohud-x11
+	replaces = mangohud-wayland
+
+pkgname = mangoapp
+	pkgdesc = A transparent background OpenGL application with a built-in MangoHud designed to be run inside a gamescope instance
+	depends = glew
+	depends = glfw-x11
+	depends = mangohud
+	optdepends = gamescope
+
+pkgname = mangohud-common
+	pkgdesc = Common files for MangoHud
+	replaces = mangohud-common-x11
+	replaces = mangohud-common-wayland

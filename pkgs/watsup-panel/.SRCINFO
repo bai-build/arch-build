@@ -1,0 +1,15 @@
+pkgbase = watsup-panel
+	pkgdesc = Monitor key Linux system resources using a small report within the top panel.
+	pkgver = 6.0
+	pkgrel = 2
+	url = http://www.kornelix.net/watsup/watsup.html
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	depends = libappindicator-gtk3
+	depends = clutter-gtk
+	options = !emptydirs
+	source = http://www.kornelix.net/downloads/downloads/watsup-panel-6.0.tar.gz
+	sha256sums = be2463308bdac145d805522b2ddeb6b7d6c285a8734ace5b45aa2fd0cd11b1ea
+
+pkgname = watsup-panel

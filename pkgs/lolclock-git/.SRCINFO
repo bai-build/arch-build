@@ -1,0 +1,12 @@
+pkgbase = lolclock-git
+	pkgdesc = Displays time in a human (and configurable) way.
+	pkgver = r13.e75305e
+	pkgrel = 1
+	url = https://github.com/andreafeletto/lolclock
+	arch = any
+	license = MIT
+	source = git+https://github.com/andreafeletto/lolclock.git
+	sha256sums = SKIP
+
+pkgname = lolclock-git
+

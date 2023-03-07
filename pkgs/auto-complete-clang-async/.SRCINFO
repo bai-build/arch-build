@@ -1,0 +1,19 @@
+pkgbase = auto-complete-clang-async
+	pkgdesc = An emacs plugin to complete C and C++ code using libclang
+	pkgver = 0.5
+	pkgrel = 1
+	url = https://github.com/Golevka/emacs-clang-complete-async
+	install = auto-complete-clang-async.install
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	depends = emacs
+	depends = emacs-auto-complete
+	depends = clang
+	depends = llvm
+	source = git+https://github.com/Golevka/emacs-clang-complete-async.git
+	md5sums = SKIP
+
+pkgname = auto-complete-clang-async
+

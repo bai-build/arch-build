@@ -1,0 +1,64 @@
+pkgname=mingw-w64-paraview56
+_majordotminor=5.6
+pkgver=${_majordotminor}.3
+_pkgver=${pkgver}
+pkgrel=1
+pkgdesc='Parallel Visualization Application using VTK (mingw-w64)'
+arch=('any')
+url='http://www.paraview.org'
+license=('custom')
+depends=('mingw-w64-qt5-xmlpatterns' 'mingw-w64-qt5-tools' 'mingw-w64-boost' 'mingw-w64-glew' 'mingw-w64-expat'  'mingw-w64-freetype2'  'mingw-w64-libjpeg'  'mingw-w64-libxml2' 'mingw-w64-libtheora' 'mingw-w64-libpng' 'mingw-w64-libtiff' 'mingw-w64-zlib' 'mingw-w64-jsoncpp' 'mingw-w64-pugixml' 'mingw-w64-hdf5' 'mingw-w64-lz4' 'mingw-w64-cgns' 'mingw-w64-netcdf-cxx-legacy' 'mingw-w64-double-conversion' 'mingw-w64-protobuf')
+makedepends=('mingw-w64-cmake' 'mingw-w64-eigen' 'mingw-w64-wine-qt' 'mingw-w64-pegtl' 'protobuf')
+provides=('mingw-w64-paraview')
+conflicts=('mingw-w64-paraview')
+options=('!buildflags' '!strip' 'staticlibs')
+source=("http://paraview.org/files/v${_majordotminor}/ParaView-v${_pkgver}.tar.gz"
+        "compile-tools.patch")
+sha256sums=('8b08ba5a0f24c2b42507df8379404fe21b1233d58aaa01097fbc82fda20bff0c'
+            'SKIP')
+
+_architectures="i686-w64-mingw32 x86_64-w64-mingw32"
+
+prepare() {
+  cd "${srcdir}/ParaView-v${_pkgver}"
+
+  # cannot be modified upstream, see https://gitlab.kitware.com/paraview/paraview/merge_requests/1716
+  patch -p1 -i "${srcdir}/compile-tools.patch"
+
+  # run exes through the wine wrapper
+  sed -i "s|COMMAND kwProcessXML|COMMAND \${CMAKE_CROSSCOMPILING_EMULATOR} \$<TARGET_FILE:kwProcessXML>|g" CMake/ParaViewPlugins.cmake CMake/ParaViewMacros.cmake
+  sed -i "s|COMMAND \${VTK_WRAP_ClientServer_EXE}|COMMAND \${CMAKE_CROSSCOMPILING_EMULATOR} \$<TARGET_FILE:vtkWrapClientServer>|g" CMake/vtkWrapClientServer.cmake
+  sed -i "s|COMMAND \${VTK_WRAP_HIERARCHY_EXE}|COMMAND \${CMAKE_CROSSCOMPILING_EMULATOR} \$<TARGET_FILE:vtkWrapHierarchy>|g" VTK/CMake/vtkWrapHierarchy.cmake
+}
+
+build() {
+  cd "${srcdir}/ParaView-v${_pkgver}"
+  for _arch in ${_architectures}; do
+    mkdir -p build-${_arch} && pushd build-${_arch}
+    ${_arch}-cmake \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DPARAVIEW_INSTALL_DEVELOPMENT_FILES=ON \
+    -DPARAVIEW_ENABLE_PYTHON=OFF \
+    -DPARAVIEW_ENABLE_EMBEDDED_DOCUMENTATION=OFF \
+    -DPARAVIEW_USE_VTKM=OFF \
+    -DVTK_USE_SYSTEM_LIBRARIES=ON \
+    -DVTK_USE_SYSTEM_QTTESTING=OFF \
+    -DVTK_USE_SYSTEM_XDMF2=OFF \
+    -DVTK_USE_SYSTEM_GL2PS=OFF \
+    -DVTK_USE_SYSTEM_LIBHARU=OFF \
+    -DHDF5_ROOT=/usr/${_arch}/ ..
+    WINEPATH="/usr/${_arch}/bin;${PWD}/bin" make
+    popd
+  done
+}
+
+
+package() {
+  for _arch in ${_architectures}; do
+    cd "$srcdir"/ParaView-v${_pkgver}/build-${_arch}
+    make install/fast DESTDIR="$pkgdir"
+    rm -r "$pkgdir"/usr/${_arch}/share
+    ${_arch}-strip --strip-unneeded "$pkgdir"/usr/${_arch}/bin/*.dll
+    ${_arch}-strip -g "$pkgdir"/usr/${_arch}/lib/*.a
+  done
+}

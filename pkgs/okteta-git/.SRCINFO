@@ -1,0 +1,25 @@
+pkgbase = okteta-git
+	pkgdesc = KDE hex editor for viewing and editing the raw data of files
+	pkgver = 0.26.60_r4314.g5bf4a5aac
+	pkgrel = 1
+	url = https://kde.org/applications/utilities/okteta/
+	arch = x86_64
+	license = GPL
+	license = LGPL
+	license = FDL
+	makedepends = git
+	makedepends = extra-cmake-modules-git
+	makedepends = kdoctools-git
+	makedepends = qt5-tools
+	depends = kcmutils-git
+	depends = kparts-git
+	depends = knewstuff-git
+	depends = qca
+	depends = qt5-script
+	depends = hicolor-icon-theme
+	provides = okteta
+	conflicts = okteta
+	source = git+https://github.com/KDE/okteta.git
+	sha256sums = SKIP
+
+pkgname = okteta-git

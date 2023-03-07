@@ -1,0 +1,23 @@
+pkgbase = kodi-addon-game-libretro-nestopia
+	pkgdesc = Libretro wrapper for Kodi's Game API
+	pkgver = 1.52.0.34
+	pkgrel = 1
+	url = https://github.com/kodi-game/game.libretro.nestopia
+	arch = x86_64
+	arch = aarch64
+	arch = armv7h
+	groups = kodi-addons
+	groups = kodi-addons-game
+	license = GPL
+	makedepends = cmake
+	makedepends = kodi-dev
+	makedepends = kodi-addon-game-libretro
+	makedepends = libretro-nestopia
+	options = !lto
+	options = debug
+	source = kodi-addon-game-libretro-nestopia-1.52.0.34.tar.gz::https://github.com/kodi-game/game.libretro.nestopia/archive/1.52.0.34-Nexus.tar.gz
+	sha512sums = 859ac0b95ba5005c4127259fc26facf46b373160e82c06493d30dad7755da1513e0140cf952a9affd55bc8ab051c0978bc7bb09c6d390161ddaad81e49414e81
+
+pkgname = kodi-addon-game-libretro-nestopia
+	depends = kodi-addon-game-libretro
+	depends = libretro-nestopia

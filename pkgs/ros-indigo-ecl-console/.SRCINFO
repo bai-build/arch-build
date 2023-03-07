@@ -1,0 +1,22 @@
+pkgbase = ros-indigo-ecl-console
+	pkgdesc = ROS - Color codes for ansii consoles.
+	pkgver = 0.61.18
+	pkgrel = 1
+	url = http://wiki.ros.org/ecl_console
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = git
+	makedepends = ros-build-tools
+	makedepends = ros-indigo-ecl-license
+	makedepends = ros-indigo-catkin
+	makedepends = ros-indigo-ecl-config
+	makedepends = ros-indigo-ecl-build
+	depends = ros-indigo-ecl-license
+	depends = ros-indigo-ecl-config
+	depends = ros-indigo-ecl-build
+	source = https://github.com/yujinrobot-release/ecl_lite-release/archive/release/indigo/ecl_console/0.61.18-0.tar.gz
+	sha256sums = 1f258110745d78625e13d2db22280f29a6cf8c01a10868ab12bdcd58e8532761
+
+pkgname = ros-indigo-ecl-console
+

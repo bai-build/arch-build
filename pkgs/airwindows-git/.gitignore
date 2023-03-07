@@ -1,0 +1,6 @@
+*.tar.*
+*.log
+pkg/
+src/
+airwindows
+CMakeLists.txt

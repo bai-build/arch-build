@@ -1,0 +1,21 @@
+pkgbase = dmenu-baitinq-git
+	pkgdesc = Simple and extensible program runner (baitinq version)
+	pkgver = 0
+	pkgrel = 1
+	url = https://github.com/Baitinq/dmenu.git
+	arch = any
+	license = GPL
+	makedepends = git
+	depends = sh
+	depends = libxinerama
+	depends = libxft
+	depends = freetype2
+	provides = dmenu
+	conflicts = dmenu
+	source = git://github.com/Baitinq/dmenu.git
+	md5sums = SKIP
+	sha1sums = SKIP
+	sha256sums = SKIP
+
+pkgname = dmenu-baitinq-git
+

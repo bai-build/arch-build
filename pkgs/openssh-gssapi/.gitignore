@@ -1,0 +1,4 @@
+/*.tar.*
+/pkg/
+/src/
+/openssh-*-gssapi.patch

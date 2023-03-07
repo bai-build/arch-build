@@ -1,0 +1,15 @@
+pkgbase = pseint
+	pkgdesc = A tool for learning programming basis with a simple spanish pseudocode.
+	pkgver = 20210609
+	pkgrel = 1
+	url = https://sourceforge.net/projects/pseint
+	arch = x86_64
+	license = GPL2
+	depends = gendesk
+	depends = wxwidgets-gtk3
+	conflicts = pseint-bin
+	noextract = creator.psz
+	source = https://netactuate.dl.sourceforge.net/project/pseint/20210609/pseint-src-20210609.tgz
+	sha256sums = cbebd218c7b8adf3050054c3e778bc4c8fdace59bc6cd43754cf4d267dd02952
+
+pkgname = pseint

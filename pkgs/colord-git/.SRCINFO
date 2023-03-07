@@ -1,0 +1,45 @@
+pkgbase = colord-git
+	pkgdesc = System daemon for managing color devices
+	pkgver = 1.4.4
+	pkgrel = 2
+	url = https://www.freedesktop.org/software/colord
+	arch = x86_64
+	license = GPL2
+	makedepends = gobject-introspection
+	makedepends = vala
+	makedepends = sane
+	makedepends = bash-completion
+	makedepends = argyllcms
+	makedepends = git
+	makedepends = meson
+	makedepends = gtk-doc
+	makedepends = systemd
+	makedepends = docbook-xsl
+	depends = lcms2
+	depends = libgusb
+	depends = polkit
+	depends = sqlite
+	depends = dconf
+	depends = dbus
+	depends = libgudev
+	depends = shared-mime-info
+	depends = systemd-libs
+	depends = udev
+	provides = colord
+	provides = colord-sane
+	conflicts = colord
+	conflicts = colord-sane
+	options = !emptydirs
+	source = git+https://github.com/hughsie/colord
+	sha256sums = SKIP
+
+pkgname = colord-git
+	optdepends = argyllcms: color profiling
+	optdepends = colord-sane: SANE support
+	replaces = shared-color-profiles
+
+pkgname = colord-sane-git
+	pkgdesc = System daemon for managing color devices (SANE support)
+	depends = colord
+	depends = sane
+

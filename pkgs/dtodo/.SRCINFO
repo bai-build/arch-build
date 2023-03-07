@@ -1,0 +1,15 @@
+pkgbase = dtodo
+	pkgdesc = Manage the tasks you want to do every day easily
+	pkgver = r55.b901ebb
+	pkgrel = 1
+	url = https://github.com/SkwalExe/dtodo
+	install = dtodo.install
+	arch = any
+	license = MIT
+	makedepends = git
+	makedepends = make
+	provides = dtodo
+	source = git+https://github.com/SkwalExe/dtodo
+	md5sums = SKIP
+
+pkgname = dtodo-git

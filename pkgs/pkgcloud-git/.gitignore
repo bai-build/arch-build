@@ -1,0 +1,5 @@
+src
+pkg
+pkgcloud-git
+*pkg.tar.*
+tags

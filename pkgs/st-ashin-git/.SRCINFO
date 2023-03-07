@@ -1,0 +1,19 @@
+pkgbase = st-ashin-git
+	pkgdesc = My custom build of st patched with ligatures and mouse support.
+	pkgver = 0.8.4
+	pkgrel = 1
+	url = https://github.com/ashincoder/st-ashin.git
+	arch = x86_64
+	arch = i686
+	license = MIT
+	checkdepends = nerd-fonts-fira-code
+	makedepends = git
+	depends = nerd-fonts-fira-code
+	depends = libx11
+	provides = st
+	conflicts = st
+	source = git+https://github.com/ashincoder/st-ashin.git
+	md5sums = SKIP
+
+pkgname = st-ashin-git
+

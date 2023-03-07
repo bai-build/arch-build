@@ -1,0 +1,29 @@
+pkgbase = geomspace
+	pkgdesc = A browser for geometric (i.e. Euclidean, Riemann, Minkowski) spaces
+	pkgver = 0.14
+	pkgrel = 1
+	url = https://sourceforge.net/projects/geomspace/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = mesa
+	depends = fltk
+	source = http://downloads.sourceforge.net/project/geomspace/0.14/GeomSpace-0.14-src.tar.gz
+	source = http://downloads.sourceforge.net/project/geomspace/Theory/UniformGeomSpace-2010.11.02-en.pdf
+	source = http://sourceforge.net/projects/geomspace/files/Models/5Cubes.gmsp
+	source = http://sourceforge.net/projects/geomspace/files/Models/5Tetra.gmsp
+	source = make.patch
+	source = x11.patch
+	source = deps.patch
+	source = desktop.patch
+	md5sums = 00107ea0f443c1b9f800876b3b5d1342
+	md5sums = 14560f6f2cba975be1ba8d047b5acec5
+	md5sums = 205c728191134d15cd5053e37c30a454
+	md5sums = 520350c4ab6aa1385f75028d22e769be
+	md5sums = 70411ddfa47c969132274d49383f7f19
+	md5sums = 17774ac560e38ffb94bb95abd91bc5f4
+	md5sums = b2ebed4874f2f96fdcf002bf297e8f58
+	md5sums = 582e9105abc065e41b8edf976799de78
+
+pkgname = geomspace
+

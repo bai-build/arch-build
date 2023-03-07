@@ -1,0 +1,23 @@
+pkgbase = xf86-video-apm
+	pkgdesc = X.org Alliance ProMotion video driver
+	pkgver = 1.3.0
+	pkgrel = 1
+	url = https://xorg.freedesktop.org/
+	arch = i686
+	arch = x86_64
+	license = custom
+	makedepends = xorg-server-devel
+	makedepends = X-ABI-VIDEODRV_VERSION=23
+	makedepends = resourceproto
+	makedepends = scrnsaverproto
+	depends = glibc
+	conflicts = xorg-server<1.19
+	conflicts = X-ABI-VIDEODRV_VERSION<23
+	conflicts = X-ABI-VIDEODRV_VERSION>=24
+	source = https://xorg.freedesktop.org//releases/individual/driver/xf86-video-apm-1.3.0.tar.bz2
+	source = git-fix.diff
+	sha256sums = 808189b9a933fcad1761cb9cd498f9267dfbacee1059859282712e8598c3dc7e
+	sha256sums = be06cce5eb0b8eb070321e293f5cd9b7aa947d920d23cc962f7121191ba4180b
+
+pkgname = xf86-video-apm
+

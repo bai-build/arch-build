@@ -1,0 +1,18 @@
+pkgbase = tkimg
+	pkgdesc = Provides the handling of several image formats beyond the standard formats in Tk
+	pkgver = 1.4.14
+	pkgrel = 1
+	url = https://wiki.tcl-lang.org/page/Img
+	arch = x86_64
+	license = custom
+	depends = zlib
+	depends = libjpeg
+	depends = libpng
+	depends = libtiff
+	depends = tcl
+	depends = tk
+	depends = tcllib
+	source = https://downloads.sourceforge.net/tkimg/Img-1.4.14-Source.tar.gz
+	sha256sums = 7510b1b819464f228d228a862e53d9e1d3b41c23013b73790a29f7e9165abb21
+
+pkgname = tkimg

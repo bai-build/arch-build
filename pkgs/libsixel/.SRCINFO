@@ -1,0 +1,18 @@
+pkgbase = libsixel
+	pkgdesc = provides a codec for DEC SIXEL graphics, and some converter programs
+	pkgver = 1.10.3
+	pkgrel = 4
+	url = https://github.com/libsixel/libsixel
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = meson
+	depends = libjpeg-turbo
+	depends = libpng
+	depends = python
+	depends = curl
+	depends = gdk-pixbuf2
+	source = https://github.com/libsixel/libsixel/archive/v1.10.3.tar.gz
+	sha256sums = 028552eb8f2a37c6effda88ee5e8f6d87b5d9601182ddec784a9728865f821e0
+
+pkgname = libsixel

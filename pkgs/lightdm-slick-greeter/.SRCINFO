@@ -1,0 +1,27 @@
+pkgbase = lightdm-slick-greeter
+	pkgdesc = A slick-looking LightDM greeter
+	pkgver = 1.5.3
+	pkgrel = 1
+	url = https://github.com/linuxmint/slick-greeter
+	install = slick-greeter.install
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = intltool
+	makedepends = vala
+	depends = cairo
+	depends = freetype2
+	depends = gtk3
+	depends = libcanberra
+	depends = libxext
+	depends = lightdm
+	depends = pixman
+	depends = python
+	depends = xorg-server
+	optdepends = numlockx: enable numerical keypad on supported keyboard
+	backup = etc/lightdm/slick-greeter.conf
+	source = slick-greeter-1.5.3.tar.gz::https://github.com/linuxmint/slick-greeter/archive/1.5.3.tar.gz
+	sha256sums = f6b3aefe7a8849cf6fef5f80481d43f5226f448a577a31265a36453518b5a126
+
+pkgname = lightdm-slick-greeter
+

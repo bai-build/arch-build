@@ -1,0 +1,4 @@
+pkg/
+src/
+xqf/
+*.pkg.tar.xz

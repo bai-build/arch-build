@@ -1,0 +1,21 @@
+pkgbase = aerc
+	pkgdesc = Email Client for your Terminal
+	pkgver = 0.5.1
+	pkgrel = 1
+	url = https://git.sr.ht/~sircmpwn/aerc
+	arch = x86_64
+	arch = i686
+	license = MIT
+	makedepends = go
+	makedepends = git
+	makedepends = scdoc
+	depends = notmuch
+	optdepends = w3m: html viewer support
+	optdepends = dante: proxy support
+	provides = aerc
+	conflicts = aerc
+	source = aerc-0.5.1.tar.gz::https://git.sr.ht/~sircmpwn/aerc/archive/0.5.1.tar.gz
+	sha256sums = 8feb7f87aa210ab7d8b271c34ad39af13f553447994341b3c25e7a659ce37d46
+
+pkgname = aerc
+

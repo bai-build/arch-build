@@ -1,0 +1,7 @@
+#.gitignore was last modified on September 19, 2022 at 05:30 PM EDT by bms#
+*
+!.gitignore
+!PKGBUILD
+!guile-hall-git-xdg-fix.patch
+!.SRCINFO
+#end

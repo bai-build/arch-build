@@ -1,0 +1,20 @@
+pkgbase = libnl-git
+	pkgdesc = A collection of libraries providing APIs to netlink protocol based Linux kernel interfaces
+	pkgver = 3.4.0.r70.g9e34b5d
+	pkgrel = 1
+	url = https://www.infradead.org/~tgr/libnl/
+	arch = i686
+	arch = x86_64
+	license = LGPL2
+	makedepends = git
+	depends = glibc
+	provides = libnl
+	conflicts = libnl
+	options = staticlibs
+	backup = etc/libnl/classid
+	backup = etc/libnl/pktloc
+	source = git+https://github.com/thom311/libnl.git
+	sha256sums = SKIP
+
+pkgname = libnl-git
+

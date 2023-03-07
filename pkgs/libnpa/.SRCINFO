@@ -1,0 +1,17 @@
+pkgbase = libnpa
+	pkgdesc = Free library for manipulating Nitroplus game files
+	pkgver = 0.5.3
+	pkgrel = 1
+	url = http://dev.pulsir.eu/krofna/
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = cmake
+	makedepends = boost
+	depends = boost-libs
+	depends = zlib
+	source = libnpa-0.5.3.tar.gz::https://github.com/FGRE/libnpa/archive/v0.5.3.tar.gz
+	sha256sums = 5d8423b5e5e859a15cb84932005d7e33e93b463145d0570626ec8c67f6e803c8
+
+pkgname = libnpa
+

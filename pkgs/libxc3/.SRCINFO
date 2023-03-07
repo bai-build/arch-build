@@ -1,0 +1,18 @@
+pkgbase = libxc3
+	pkgdesc = library of exchange-correlation functionals for density-functional theory (version 3)
+	pkgver = 3.0.1
+	pkgrel = 2
+	url = http://www.tddft.org/programs/octopus/wiki/index.php/Libxc
+	arch = i686
+	arch = x86_64
+	license = MPL2
+	makedepends = gcc
+	makedepends = gcc-fortran
+	provides = libxc
+	conflicts = libxc
+	options = staticlibs
+	source = https://gitlab.com/libxc/libxc/-/archive/3.0.1/libxc-3.0.1.tar.gz
+	sha256sums = 4dd5d04db454687a21f49b0acd1c740d31dbc978bf97405c8f8ce9e7412ada1b
+
+pkgname = libxc3
+

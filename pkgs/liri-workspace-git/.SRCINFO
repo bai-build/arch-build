@@ -1,0 +1,40 @@
+pkgbase = liri-workspace-git
+	pkgdesc = Liri workspace, programs and plugins
+	pkgver = 20180425.268.f1c033c
+	pkgrel = 1
+	url = https://liri.io
+	install = liri-workspace-git.install
+	arch = i686
+	arch = x86_64
+	arch = armv6h
+	arch = armv7h
+	groups = liri-git
+	license = GPL3
+	makedepends = git
+	makedepends = liri-qbs-shared-git
+	makedepends = boost
+	depends = qt5-tools
+	depends = qt5-gstreamer
+	depends = qt5-quickcontrols2
+	depends = qt5-gsettings-git
+	depends = libliri-git
+	depends = liri-wayland-git
+	depends = solid
+	depends = glib2
+	depends = dconf
+	depends = paper-icon-theme-git
+	depends = liri-wallpapers-git
+	depends = ttf-dejavu
+	depends = ttf-droid
+	depends = ttf-roboto
+	depends = noto-fonts
+	provides = liri-workspace
+	conflicts = hawaii-workspace-git
+	conflicts = liri-workspace
+	replaces = hawaii-workspace-git
+	replaces = liri-workspace
+	source = workspace::git://github.com/lirios/workspace.git#branch=develop
+	md5sums = SKIP
+
+pkgname = liri-workspace-git
+

@@ -1,0 +1,23 @@
+pkgbase = lib32-libinput
+	pkgdesc = Input device management and event handling library (32-bit)
+	pkgver = 1.19.3
+	pkgrel = 1
+	url = https://www.freedesktop.org/wiki/Software/libinput/
+	arch = x86_64
+	license = custom:X11
+	makedepends = gcc-multilib
+	makedepends = lib32-gtk3
+	makedepends = meson
+	makedepends = wayland-protocols
+	depends = lib32-mtdev
+	depends = lib32-systemd
+	depends = lib32-libevdev
+	depends = lib32-libwacom
+	depends = libinput
+	source = https://freedesktop.org/software/libinput/libinput-1.19.3.tar.xz
+	source = https://freedesktop.org/software/libinput/libinput-1.19.3.tar.xz.sig
+	validpgpkeys = 3C2C43D9447D5938EF4551EBE23B7E70B467F0BF
+	sha512sums = f4b776d0da78c687ba21b430a04941ac6b43f68970c82ec9f7360358fdea5ed6a873948ce66a25bcdd64d4b95fa4bf705cc24dbc25c7c0f5fd2d0efbd763f298
+	sha512sums = SKIP
+
+pkgname = lib32-libinput

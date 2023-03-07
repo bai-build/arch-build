@@ -1,0 +1,21 @@
+pkgbase = db6.2
+	pkgdesc = The Berkeley DB embedded database system 6.2
+	pkgver = 6.2.32
+	pkgrel = 1
+	url = http://www.oracle.com/technetwork/database/database-technologies/berkeleydb
+	arch = i686
+	arch = x86_64
+	license = custom
+	depends = gcc-libs
+	depends = sh
+	provides = db=6.2.32
+	conflicts = db
+	conflicts = db4.5
+	conflicts = db4.6
+	conflicts = db4.8
+	conflicts = db5.2
+	source = http://download.oracle.com/berkeley-db/db-6.2.32.tar.gz
+	md5sums = 33491b4756cb44b91c3318b727e71023
+
+pkgname = db6.2
+

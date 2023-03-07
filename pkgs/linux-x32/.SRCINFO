@@ -1,0 +1,42 @@
+pkgbase = linux-x32
+	pkgdesc = Linux with x32 ABI
+	pkgver = 5.15.12.arch1
+	pkgrel = 1
+	url = https://github.com/archlinux/linux/commits/v5.15.12-arch1
+	arch = x86_64
+	license = GPL2
+	makedepends = bc
+	makedepends = kmod
+	makedepends = libelf
+	makedepends = pahole
+	makedepends = cpio
+	makedepends = perl
+	makedepends = tar
+	makedepends = xz
+	makedepends = git
+	options = !strip
+	source = archlinux-linux::git+https://github.com/archlinux/linux?signed#tag=v5.15.12-arch1
+	source = config
+	source = x32.config
+	validpgpkeys = ABAF11C65A2970B130ABE3C479BE3E4300411886
+	validpgpkeys = 647F28654894E3BD457199BE38DBBDC86092693E
+	validpgpkeys = A2FF3A36AAA56654109064AB19802F8B0D70FC30
+	validpgpkeys = C7E7849466FE2358343588377258734B41C31549
+	sha256sums = SKIP
+	sha256sums = 6ab7a66895804f832f1b9594b682be0e2e6982455a8fc3f7e87111e1c7dff866
+	sha256sums = ef2be62540e48cc1d2343c619b9c8b7791db5e2f966e1a0bb8c86f5c7de74562
+
+pkgname = linux-x32
+	pkgdesc = The Linux with x32 ABI kernel and modules
+	depends = coreutils
+	depends = kmod
+	depends = initramfs
+	optdepends = crda: to set the correct wireless channels of your country
+	optdepends = linux-docs: documentation for Arch Linux’s distribution kernel
+	optdepends = linux-firmware: firmware images needed for some devices
+	provides = VIRTUALBOX-GUEST-MODULES
+	provides = WIREGUARD-MODULE
+
+pkgname = linux-x32-headers
+	pkgdesc = Headers and scripts for building modules for the Linux with x32 ABI kernel
+	depends = pahole

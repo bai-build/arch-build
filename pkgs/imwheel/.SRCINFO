@@ -1,0 +1,18 @@
+pkgbase = imwheel
+	pkgdesc = Mouse wheel configuration tool for XFree86/Xorg
+	pkgver = 1.0.0pre12
+	pkgrel = 5
+	url = http://imwheel.sourceforge.net
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = libxtst
+	depends = libxmu
+	backup = etc/X11/imwheel/imwheelrc
+	source = http://downloads.sourceforge.net/imwheel/imwheel-1.0.0pre12.tar.gz
+	source = etcdir-install.patch
+	sha256sums = 2320ed019c95ca4d922968e1e1cbf0c075a914e865e3965d2bd694ca3d57cfe3
+	sha256sums = 602a466e5537e7edb53247648fef62ea5bfa51e56f68dfd9f4fcb4b19e38fd16
+
+pkgname = imwheel
+

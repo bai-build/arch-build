@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Doomseeker
+GenericName=Cross-platform Doom server browser
+Icon=doomseeker
+Exec=doomseeker %F
+Terminal=false
+Categories=Utility;Game

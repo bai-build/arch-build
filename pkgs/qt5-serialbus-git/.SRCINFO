@@ -1,0 +1,19 @@
+pkgbase = qt5-serialbus-git
+	pkgdesc = Qt5 serial bus module
+	pkgver = 5.15.1.r1.g6ffb188
+	pkgrel = 1
+	url = https://www.qt.io/
+	arch = i686
+	arch = x86_64
+	license = FDL
+	license = GPL
+	license = LGPL3
+	makedepends = git
+	depends = qt5-serialport
+	provides = qt5-serialbus
+	conflicts = qt5-serialbus
+	source = git+https://code.qt.io/qt/qtserialbus.git#branch=5.15
+	sha256sums = SKIP
+
+pkgname = qt5-serialbus-git
+

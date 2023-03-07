@@ -1,0 +1,9 @@
+*.swp
+*~
+
+guayadeque*.xz
+guayadeque*.tar.gz
+guayadeque*.tar.zst
+guayadeque/
+pkg/
+src/

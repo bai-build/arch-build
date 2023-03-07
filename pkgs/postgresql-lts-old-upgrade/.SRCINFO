@@ -1,0 +1,26 @@
+pkgbase = postgresql-lts-old-upgrade
+	pkgdesc = PostgreSQL build for migrating between major versions with pg_upgrade
+	pkgver = 10.17
+	pkgrel = 1
+	url = https://www.postgresql.org/
+	arch = x86_64
+	license = custom:PostgreSQL
+	makedepends = krb5
+	makedepends = python
+	makedepends = python2
+	makedepends = perl
+	makedepends = tcl>=8.6.0
+	makedepends = systemd
+	depends = postgresql-lts-libs>=10
+	depends = libxml2
+	depends = openssl>=1.0.0
+	depends = pam
+	depends = zlib
+	depends = icu
+	depends = systemd-libs
+	depends = libldap
+	source = https://ftp.postgresql.org/pub/source/v10.17/postgresql-10.17.tar.bz2
+	sha256sums = 5af28071606c9cd82212c19ba584657a9d240e1c4c2da28fc1f3998a2754b26c
+
+pkgname = postgresql-lts-old-upgrade
+

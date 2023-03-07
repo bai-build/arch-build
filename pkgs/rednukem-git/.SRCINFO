@@ -1,0 +1,23 @@
+pkgbase = rednukem-git
+	pkgdesc = Reverse-engineered port of Build games using EDuke32 engine technology and development principles
+	pkgver = 1.01.r11519.gec8dccf1a
+	pkgrel = 1
+	url = https://github.com/nukeykt/NBlood
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	license = custom:BUILD
+	makedepends = mesa
+	makedepends = glu
+	makedepends = gendesk
+	makedepends = imagemagick
+	depends = sdl2_mixer
+	depends = libvpx
+	depends = gtk2
+	provides = rednukem
+	source = rednukem::git+https://github.com/nukeykt/NBlood
+	sha256sums = SKIP
+	makedepends_i686 = nasm
+
+pkgname = rednukem-git
+

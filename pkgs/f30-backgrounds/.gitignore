@@ -1,0 +1,8 @@
+*.rpm
+*.part
+*.xz
+pkg
+src
+.PKGBUILD
+*.zst
+*.pkg.*

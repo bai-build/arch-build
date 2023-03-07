@@ -1,0 +1,16 @@
+pkgbase = xxhash
+	pkgdesc = Extremely fast non-cryptographic hash algorithm
+	pkgver = 0.6.5
+	pkgrel = 1
+	url = http://www.xxhash.com/
+	changelog = changelog
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	license = BSD
+	conflicts = libxxhash
+	source = https://github.com/Cyan4973/xxHash/archive/v0.6.5.tar.gz
+	sha256sums = 19030315f4fc1b4b2cdb9d7a317069a109f90e39d1fe4c9159b7aaa39030eb95
+
+pkgname = xxhash
+

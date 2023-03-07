@@ -1,0 +1,23 @@
+pkgbase = micro-git
+	pkgdesc = A modern and intuitive terminal-based text editor
+	pkgver = v2.0.8.r39.gba98b558
+	pkgrel = 1
+	url = https://micro-editor.github.io/
+	arch = x86_64
+	arch = i686
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	license = MIT
+	makedepends = go
+	makedepends = git
+	optdepends = xclip: Required for copying/pasting text
+	provides = micro
+	conflicts = micro-bin
+	conflicts = micro
+	conflicts = micro-nightly-bin
+	source = micro-git::git+https://github.com/zyedidia/micro.git
+	md5sums = SKIP
+
+pkgname = micro-git
+

@@ -1,0 +1,25 @@
+pkgbase = tblock-openrc
+	pkgdesc = An anti-capitalist ad-blocker that uses the hosts file
+	pkgver = 2.6.1
+	pkgrel = 1
+	url = https://tblock.codeberg.page
+	arch = any
+	license = GPL3
+	makedepends = make
+	makedepends = gzip
+	makedepends = python>=3
+	makedepends = python-build
+	makedepends = python-installer
+	makedepends = python-setuptools
+	makedepends = python-wheel
+	depends = python-urllib3
+	depends = python-requests
+	depends = python-colorama
+	depends = openrc
+	provides = tblock
+	conflicts = tblock
+	backup = etc/tblock.conf
+	source = tblock-openrc-2.6.1.tar.gz::https://codeberg.org/tblock/tblock/archive/2.6.1.tar.gz
+	sha512sums = bebc8719086f9074e2e8098f911a31e30de9133f5ad66e502883d002a7365172ab266bc3ea6e1868ba0803a4a92bf8536e79f6f7dd13252f6f1e35d9b21cefc1
+
+pkgname = tblock-openrc

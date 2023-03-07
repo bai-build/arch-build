@@ -1,0 +1,42 @@
+# Maintainer: Michał Walenciak <kicer86@gmail.com>
+pkgname=easyexif
+pkgver=1.0.0
+pkgrel=6
+pkgdesc="Tiny ISO-compliant C++ EXIF parsing library, third-party dependency free."
+arch=('i686' 'x86_64')
+url="https://github.com/mayanklahiri/easyexif"
+license=('BSD-2-Clause')
+groups=()
+depends=()
+makedepends=()
+optdepends=()
+provides=()
+conflicts=()
+replaces=()
+backup=()
+options=()
+install=
+changelog=
+source=("$pkgname::git+https://github.com/mayanklahiri/$pkgname.git")
+noextract=()
+md5sums=('SKIP')
+
+build()
+{
+    cd $pkgname
+
+    sed -i -e "s/^\(CXXFLAGS.*\)/\1 -fPIC/" Makefile
+    make
+    ar rcs libeasyexif.a exif.o
+}
+
+package()
+{
+    cd $pkgname
+
+    mkdir -p $pkgdir/usr/lib
+    cp libeasyexif.a $pkgdir/usr/lib
+
+    mkdir -p $pkgdir/usr/include/$pkgname
+    cp exif.h $pkgdir/usr/include/$pkgname/
+}

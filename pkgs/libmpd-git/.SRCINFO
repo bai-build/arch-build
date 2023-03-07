@@ -1,0 +1,15 @@
+pkgbase = libmpd-git
+	pkgdesc = Signal based wrapper around libmpdclient
+	pkgver = r419.2c8b595
+	pkgrel = 1
+	url = http://mpd.wikia.com/wiki/ClientLib:libmpd
+	arch = i686
+	arch = x86_64
+	license = GPL
+	depends = glib2
+	conflicts = libmpd
+	source = libmpd-git::git://github.com/DaveDavenport/libmpd.git
+	md5sums = SKIP
+
+pkgname = libmpd-git
+

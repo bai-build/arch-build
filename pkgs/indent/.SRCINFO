@@ -1,0 +1,14 @@
+pkgbase = indent
+	pkgdesc = C language source code formatting program
+	pkgver = 2.2.12
+	pkgrel = 1
+	url = https://www.gnu.org/software/indent/
+	arch = x86_64
+	license = GPL3
+	makedepends = texi2html
+	depends = glibc
+	source = https://ftp-stud.hs-esslingen.de/pub/Mirrors/ftp.gnu.org/indent/indent-2.2.12.tar.xz
+	sha1sums = eecb3d7e78516d846af70e7bc86aabac9b92399c
+
+pkgname = indent
+

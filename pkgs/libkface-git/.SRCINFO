@@ -1,0 +1,23 @@
+pkgbase = libkface-git
+	pkgdesc = A Qt/C++ wrapper around LibFace library to perform face recognition and detection over pictures
+	pkgver = r780.ec6e823
+	pkgrel = 1
+	url = http://www.kde.org
+	arch = i686
+	arch = x86_64
+	groups = digikamsc-git
+	license = GPL
+	license = LGPL
+	license = FDL
+	makedepends = git
+	makedepends = extra-cmake-modules-git
+	makedepends = kdoctools
+	depends = qt5-base
+	depends = opencv
+	provides = libkface
+	conflicts = libkface
+	source = libkface::git+git://anongit.kde.org/libkface
+	md5sums = SKIP
+
+pkgname = libkface-git
+

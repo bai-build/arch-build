@@ -1,0 +1,19 @@
+pkgbase = catwm-git
+	pkgdesc = Cute And Tiny Window Manager
+	pkgver = r75.c1f52fd
+	pkgrel = 1
+	epoch = 1
+	url = http://github.com/pyknite/catwm
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	depends = libxinerama
+	provides = catwm
+	conflicts = catwm
+	options = !libtool
+	source = catwm-git::git+https://github.com/mytch444/catwm.git
+	md5sums = SKIP
+
+pkgname = catwm-git
+

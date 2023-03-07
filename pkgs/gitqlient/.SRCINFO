@@ -1,0 +1,13 @@
+pkgbase = gitqlient
+	pkgdesc = A Git client originally forked from QGit that has continued its own path
+	pkgver = 1.6.1
+	pkgrel = 1
+	url = https://github.com/francescmm/GitQlient
+	arch = x86_64
+	license = LGPL
+	depends = git
+	depends = qt5-base
+	source = https://github.com/francescmm/GitQlient/releases/download/v1.6.1/gitqlient_1.6.1.tar.gz
+	sha256sums = bd66ee36f6c071337ae6e014136ae472a99a595afb1dccbaf2608afaa13fcf90
+
+pkgname = gitqlient

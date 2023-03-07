@@ -1,0 +1,28 @@
+pkgbase = ros-melodic-plotjuggler
+	pkgdesc = juggle with data
+	pkgver = 2.6.4
+	pkgrel = 1
+	url = https://www.plotjuggler.io
+	arch = any
+	license = LGPLv3
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = clang
+	depends = binutils
+	depends = qt5-base
+	depends = qt5-svg
+	depends = qt5-multimedia
+	depends = ros-melodic-rosbag
+	depends = ros-melodic-rosbag-storage
+	depends = ros-melodic-roscpp
+	depends = ros-melodic-roscpp-serialization
+	depends = ros-melodic-rostime
+	depends = ros-melodic-topic-tools
+	depends = ros-melodic-tf
+	depends = ros-melodic-diagnostic-msgs
+	depends = ros-melodic-nav-msgs
+	source = PlotJuggler-2.6.4.tar.gz::https://github.com/facontidavide/PlotJuggler/archive/2.6.4.tar.gz
+	sha256sums = 38475b9782436e9ebd9412730b46ca483cde3f164b6e5602da7701d1abda3cde
+
+pkgname = ros-melodic-plotjuggler
+

@@ -1,0 +1,26 @@
+pkgbase = libpeas-luajit
+	pkgdesc = A GObject-based plugins engine
+	pkgver = 1.16.0
+	pkgrel = 1
+	url = http://www.gtk.org/
+	install = libpeas.install
+	arch = i686
+	arch = x86_64
+	license = LGPL2
+	makedepends = gtk-doc
+	makedepends = intltool
+	makedepends = luajit-lgi
+	makedepends = python-gobject
+	makedepends = python2-gobject
+	makedepends = glade
+	makedepends = gobject-introspection
+	depends = gtk3
+	depends = hicolor-icon-theme
+	depends = gobject-introspection-runtime
+	provides = libpeas
+	conflicts = libpeas
+	source = http://download.gnome.org/sources/libpeas/1.16/libpeas-1.16.0.tar.xz
+	sha256sums = b093008ecd65f7d55c80517589509698ff15ad41f664b11a3eb88ff461b1454e
+
+pkgname = libpeas-luajit
+

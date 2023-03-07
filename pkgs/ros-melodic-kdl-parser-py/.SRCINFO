@@ -1,0 +1,23 @@
+pkgbase = ros-melodic-kdl-parser-py
+	pkgdesc = ROS - The Kinematics and Dynamics Library (KDL) defines a tree structure to represent the kinematic and dynamic parameters of a robot mechanism.
+	pkgver = 1.13.1
+	pkgrel = 3
+	url = https://wiki.ros.org/kdl_parser_py
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-melodic-orocos-kdl
+	makedepends = ros-melodic-urdf
+	makedepends = ros-melodic-catkin
+	makedepends = ros-melodic-rostest
+	makedepends = python-catkin_pkg
+	depends = ros-melodic-orocos-kdl
+	depends = ros-melodic-urdf
+	depends = ros-melodic-python-orocos-kdl
+	depends = ros-melodic-urdfdom-py
+	source = ros-melodic-kdl-parser-py-1.13.1.tar.gz::https://github.com/ros/kdl_parser/archive/1.13.1.tar.gz
+	sha256sums = 51378b09efc288ad91870322930f032f31a82e4a436865222b9990470995f67a
+
+pkgname = ros-melodic-kdl-parser-py
+

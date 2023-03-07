@@ -1,0 +1,22 @@
+pkgbase = drpm
+	pkgdesc = A small library for fetching information from deltarpm packages
+	pkgver = 0.5.1
+	pkgrel = 1
+	url = https://github.com/rpm-software-management/drpm
+	arch = i686
+	arch = x86_64
+	license = LGPL2.1
+	license = custom:BSD
+	checkdepends = cmocka
+	makedepends = cmake>=3.13
+	makedepends = doxygen
+	depends = bzip2
+	depends = openssl
+	depends = rpm-tools
+	depends = xz
+	depends = zlib
+	depends = zstd
+	source = https://github.com/rpm-software-management/drpm/archive/0.5.1/drpm-0.5.1.tar.gz
+	sha256sums = 9e07c0eb3cdfb766d97224b3379ffe60fdb5ac4e04e2a32bb0a00ee2f7458fb6
+
+pkgname = drpm

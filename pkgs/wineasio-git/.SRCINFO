@@ -1,0 +1,23 @@
+pkgbase = wineasio-git
+	pkgdesc = ASIO driver implementation for Wine
+	pkgver = 1.1.0.r0.g56c3e9d
+	pkgrel = 1
+	url = https://github.com/wineasio/wineasio
+	arch = i686
+	arch = x86_64
+	arch = x86_64_v3
+	license = LGPL
+	depends = wine
+	depends = jack
+	provides = wineasio
+	conflicts = wineasio
+	source = git+https://github.com/wineasio/wineasio.git
+	source = git+https://github.com/falkTX/rtaudio.git
+	source = setup_wineasio.sh
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = 6ab4819215d9cb2fe5133380ab629538fa5de7ddb0bea82f1b4cef7904cb856d
+	depends_x86_64 = lib32-jack
+	makedepends_x86_64 = gcc-multilib
+
+pkgname = wineasio-git

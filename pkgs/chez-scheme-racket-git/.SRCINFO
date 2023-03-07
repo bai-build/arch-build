@@ -1,0 +1,19 @@
+pkgbase = chez-scheme-racket-git
+	pkgdesc = Racket's fork of chez scheme with support for aach64.
+	pkgver = 9.5
+	pkgrel = 3
+	url = https://github.com/racket/ChezScheme
+	arch = i686
+	arch = x86_64
+	arch = armv6h
+	arch = aarch64
+	license = Apache
+	makedepends = git
+	makedepends = libx11
+	makedepends = xorgproto
+	depends = ncurses
+	provides = chez-scheme
+	conflicts = petite-chez-scheme
+	replaces = petite-chez-scheme
+
+pkgname = chez-scheme-racket-git

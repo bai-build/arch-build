@@ -1,0 +1,15 @@
+pkgbase = redox-newlib
+	pkgver = r17774.d5ac42a49
+	pkgrel = 1
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	makedepends = rustup
+	makedepends = redox-binutils
+	makedepends = redox-gcc-freestanding
+	source = git+https://github.com/redox-os/newlib#branch=redox
+	md5sums = SKIP
+
+pkgname = redox-newlib
+

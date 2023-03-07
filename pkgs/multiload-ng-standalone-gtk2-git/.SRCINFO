@@ -1,0 +1,21 @@
+pkgbase = multiload-ng-standalone-gtk2-git
+	pkgdesc = Modern graphical system monitor, standalone version
+	pkgver = r938.d023877
+	pkgrel = 3
+	url = https://udda.github.io/multiload-ng/
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = intltool
+	makedepends = git
+	depends = gtk2>=2.20.0
+	depends = cairo
+	depends = multiload-ng-common-git
+	conflicts = multiload-ng-standalone-gtk2
+	conflicts = multiload-ng-standalone-gtk3
+	conflicts = multiload-ng-standalone-gtk3-git
+	source = git+https://github.com/udda/multiload-ng.git
+	md5sums = SKIP
+
+pkgname = multiload-ng-standalone-gtk2-git
+

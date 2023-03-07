@@ -1,0 +1,37 @@
+pkgbase = clonk_rage-git
+	pkgdesc = An entertaining, action-packed game of strategy, tactics, and skill.
+	pkgver = r433.e70d3d3
+	pkgrel = 1
+	url = http://clonk.de
+	arch = i686
+	arch = x86_64
+	groups = games
+	license = ISC
+	license = CCPL:by-nc
+	license = custom:trademark
+	makedepends = git
+	makedepends = cmake
+	makedepends = make
+	makedepends = zip
+	depends = libxpm
+	depends = sdl_mixer
+	depends = gtk2
+	depends = libpng12
+	depends = libjpeg-turbo
+	depends = desktop-file-utils
+	depends = timidity++
+	depends = glew
+	provides = clonk_rage-git
+	provides = clonk_rage
+	provides = legacyclonk
+	conflicts = clonk_rage
+	conflicts = legacyclonk
+	replaces = clonk_rage-git
+	options = !strip
+	source = legacyclonk-git::git+https://github.com/legacyclonk/LegacyClonk#branch=master
+	source = https://github.com/legacyclonk/content/releases/download/continuous-master/LC_Content.zip
+	md5sums = SKIP
+	md5sums = SKIP
+
+pkgname = legacyclonk-git
+

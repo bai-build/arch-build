@@ -1,0 +1,14 @@
+pkgbase = flamp
+	pkgdesc = A program for the Amateur Multicast Protocol
+	pkgver = 2.2.07
+	pkgrel = 2
+	url = http://www.w1hkj.com/flamp2.1-help/index.html
+	arch = i686
+	arch = x86_64
+	groups = w1hkj
+	license = GPL
+	depends = fldigi
+	source = http://downloads.sourceforge.net/project/fldigi/flamp/flamp-2.2.07.tar.gz
+	sha256sums = 807995746f11cdb3e9f2866ae544fc2d6d6b735fa57a2bcdd2f4bf8a28975a51
+
+pkgname = flamp

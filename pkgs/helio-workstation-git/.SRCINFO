@@ -1,0 +1,32 @@
+pkgbase = helio-workstation-git
+	pkgdesc = high-performance MIDI sequencer with a clean interface, version control, and more
+	pkgver = 2.3.r28.2a76dc3f
+	pkgrel = 1
+	url = https://helioworkstation.com/
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	makedepends = steinberg-vst36
+	makedepends = libxrandr
+	makedepends = libxcursor
+	makedepends = libxcomposite
+	makedepends = jack
+	makedepends = asio
+	makedepends = freeglut
+	depends = hicolor-icon-theme
+	depends = curl
+	depends = freetype2
+	depends = libxinerama
+	depends = libglvnd
+	depends = alsa-lib
+	provides = helio-workstation
+	conflicts = helio-workstation
+	source = git+https://github.com/helio-fm/helio-workstation.git
+	source = git+https://github.com/WeAreROLI/JUCE.git
+	source = git+https://github.com/greg7mdp/sparsepp.git
+	md5sums = SKIP
+	md5sums = SKIP
+	md5sums = SKIP
+
+pkgname = helio-workstation-git
+

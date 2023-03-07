@@ -1,0 +1,29 @@
+pkgbase = med-openmpi
+	pkgdesc = Generic pre- and post-processing platform for numerical simulation (openmpi version)
+	pkgver = 4.1.0
+	pkgrel = 2
+	url = https://www.salome-platform.org/downloads
+	arch = x86_64
+	license = LGPL
+	makedepends = gcc-fortran
+	makedepends = swig
+	makedepends = openmpi
+	makedepends = cmake
+	depends = hdf5-openmpi
+	depends = tk
+	depends = python
+	options = debug
+	source = http://files.salome-platform.org/Salome/other/med-4.1.0.tar.gz
+	source = hdf5-1.12.patch::https://gitweb.gentoo.org/repo/gentoo.git/plain/sci-libs/med/files/med-4.1.0-0003-build-against-hdf5-1.12.patch?id=350ea3e89d0e87e35a3a4b5f2ce92b55aae9d226
+	sha256sums = 847db5d6fbc9ce6924cb4aea86362812c9a5ef6b9684377e4dd6879627651fce
+	sha256sums = 82d28b6ae2ee6ceb3c6de9acb861a49741e2e759c7c556217f7d284216788206
+
+pkgname = med-openmpi
+	provides = med
+	conflicts = med
+	replaces = med
+
+pkgname = med-openmpi-docs
+	pkgdesc = Generic pre- and post-processing platform for numerical simulation (openmpi version) (Documentation)
+	arch = any
+	depends = 

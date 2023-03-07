@@ -1,0 +1,52 @@
+pkgbase = ibus-python3
+	pkgdesc = Next Generation Input Bus for Linux. Without python2.
+	pkgver = 1.5.22
+	pkgrel = 1
+	url = https://github.com/ibus/ibus/wiki
+	arch = x86_64
+	license = LGPL
+	makedepends = gobject-introspection
+	makedepends = vala
+	makedepends = intltool
+	makedepends = gnome-common
+	makedepends = gtk-doc
+	makedepends = qt5-base
+	makedepends = cldr-emoji-annotation
+	makedepends = unicode-character-database
+	makedepends = unicode-emoji
+	depends = dconf
+	depends = gtk2
+	depends = gtk3
+	depends = hicolor-icon-theme
+	depends = libnotify
+	depends = python-dbus
+	depends = python-gobject
+	depends = iso-codes
+	depends = librsvg
+	options = !emptydirs
+	source = ibus-python3-1.5.22.tar.gz::https://github.com/ibus/ibus/archive/1.5.22.tar.gz
+	sha512sums = 972da51eb5702692f13b4f4cff51b3765890e5a91f936b9fa6b6cafaf00f4d078dc39f14bd00f3883203d295d826647c509024dd197d726d4def8d13d45d71b4
+
+pkgname = ibus-python3
+	install = ibus.install
+	depends = dconf
+	depends = gtk2
+	depends = gtk3
+	depends = hicolor-icon-theme
+	depends = libnotify
+	depends = python-dbus
+	depends = python-gobject
+	depends = iso-codes
+	depends = librsvg
+	depends = libibus-python3=1.5.22
+	provides = ibus=$pkgver
+	conflicts = ibus
+	replaces = ibus
+
+pkgname = libibus-python3
+	pkgdesc = IBus support library. Wihout python2.
+	depends = glib2
+	provides = libibus=$pkgver
+	conflicts = libibus
+	replaces = libibus
+

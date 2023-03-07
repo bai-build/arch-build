@@ -1,0 +1,19 @@
+pkgbase = uctags-git
+	pkgdesc = Universal ctags (patched to allow installing alongside original ctags)
+	pkgver = r10032.033929ad1
+	pkgrel = 1
+	url = https://ctags.io/
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	makedepends = python-docutils
+	depends = libxml2
+	depends = jansson
+	depends = libyaml
+	depends = bash
+	provides = ctags
+	conflicts = ctags
+	source = uctags-git::git+https://github.com/universal-ctags/ctags.git
+	sha256sums = SKIP
+
+pkgname = uctags-git

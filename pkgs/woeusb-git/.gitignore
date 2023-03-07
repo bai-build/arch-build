@@ -1,0 +1,4 @@
+pkg/
+src/
+WoeUSB/
+*.pkg.tar.xz

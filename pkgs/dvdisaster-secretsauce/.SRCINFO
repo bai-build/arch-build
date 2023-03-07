@@ -1,0 +1,17 @@
+pkgbase = dvdisaster-secretsauce
+	pkgdesc = Provides a margin of safety against data loss on CD and DVD media caused by aging or scratches
+	pkgver = 0.79.6
+	pkgrel = 1
+	url = http://www.dvdisaster.com/
+	arch = x86_64
+	license = GPL3
+	depends = gtk2
+	provides = dvdisaster
+	conflicts = dvdisaster
+	source = dvdisaster-secretsauce_0.79.6.tar.bz2::http://deb.debian.org/debian/pool/main/d/dvdisaster/dvdisaster_0.79.6.orig.tar.bz2
+	source = secretsauce.patch
+	sha256sums = 7d7dfe9e7f4c2e0df248d6223340afc128367e22ebf3728284227763afd98f87
+	sha256sums = a41f0388dcc24b75eff5521bf6662809c488672333394bf0a2f06151a2e8cb68
+
+pkgname = dvdisaster-secretsauce
+

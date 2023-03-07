@@ -1,0 +1,20 @@
+pkgbase = composer-git
+	pkgdesc = Song editor for karaoke games
+	pkgver = 2.0rc1.16.gf2dd64e
+	pkgrel = 1
+	epoch = 1
+	url = http://performous.org/composer
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	makedepends = cmake
+	depends = qt5-multimedia
+	depends = ffmpeg
+	provides = composer
+	conflicts = composer
+	source = git+https://github.com/performous/composer.git
+	sha512sums = SKIP
+
+pkgname = composer-git
+

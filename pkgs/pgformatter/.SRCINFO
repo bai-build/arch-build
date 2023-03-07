@@ -1,0 +1,13 @@
+pkgbase = pgformatter
+	pkgdesc = A PostgreSQL SQL syntax beautifier
+	pkgver = 5.2
+	pkgrel = 2
+	url = https://github.com/darold/pgformatter
+	arch = any
+	license = BSD
+	depends = perl
+	source = pgformatter-5.2.tar.gz::https://github.com/darold/pgformatter/archive/v5.2.tar.gz
+	sha512sums = 6244cf41a7a93c2fedf69707e11dccbe72d44965682fb4c469718538c8a22b90192e8de8a123c5f093a40728dd6d8e728c1967953ca70f9dcd6d052d57342666
+	b2sums = 3f2b27290f9498cf1562575f57ecf6697920754c059712ad3ea7846a58131f6e41708de2a493ea42c00fc8b71018002001e0edb63ee096318f3e0b09aef3fabc
+
+pkgname = pgformatter

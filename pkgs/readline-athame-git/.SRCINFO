@@ -1,0 +1,35 @@
+pkgbase = readline-athame-git
+	pkgdesc = Readline with Athame(provides full Vim mode)
+	pkgver = 8.0.0
+	pkgrel = 1
+	url = http://github.com/ardagnir/athame/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	license = AGPL
+	makedepends = git
+	depends = glibc
+	depends = ncurses
+	depends = libncursesw.so
+	depends = vim
+	provides = libhistory.so
+	provides = libreadline.so
+	provides = readline=8.0
+	conflicts = readline
+	options = !emptydirs
+	backup = etc/inputrc
+	backup = etc/athamerc
+	source = git://github.com/ardagnir/athame
+	source = git://github.com/ardagnir/vimbed
+	source = https://ftp.gnu.org/gnu/readline/readline-8.0.tar.gz
+	source = https://ftp.gnu.org/gnu/readline/readline-8.0.tar.gz.sig
+	source = inputrc
+	validpgpkeys = 7C0135FB088AAF6C66C650B9BB5869F064EA74AB
+	md5sums = SKIP
+	md5sums = SKIP
+	md5sums = 7e6c1f16aee3244a69aba6e438295ca3
+	md5sums = SKIP
+	md5sums = 58d54966c1191db45973cb3191ac621a
+
+pkgname = readline-athame-git
+

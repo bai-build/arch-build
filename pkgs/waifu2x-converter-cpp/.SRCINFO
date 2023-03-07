@@ -1,0 +1,18 @@
+pkgbase = waifu2x-converter-cpp
+	pkgdesc = Image Super-Resolution for Anime-Style Art
+	pkgver = 5.3.3
+	pkgrel = 1
+	url = https://github.com/DeadSix27/waifu2x-converter-cpp
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = git
+	makedepends = cmake
+	makedepends = opencl-headers
+	depends = opencv
+	depends = ocl-icd
+	source = waifu2x-converter-cpp::git+https://github.com/DeadSix27/waifu2x-converter-cpp.git#commit=b45498b9f249dc57179b066c55322fd9ca575bef
+	sha512sums = SKIP
+
+pkgname = waifu2x-converter-cpp
+

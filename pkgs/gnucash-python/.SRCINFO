@@ -1,0 +1,37 @@
+pkgbase = gnucash-python
+	pkgdesc = A personal and small-business financial-accounting application with enabled python bindings.
+	pkgver = 3.1
+	pkgrel = 2
+	url = http://www.gnucash.org
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	makedepends = boost
+	makedepends = gmock
+	makedepends = gwenhywfar
+	makedepends = cmake
+	makedepends = libdbi-drivers
+	makedepends = libmariadbclient
+	makedepends = postgresql-libs
+	makedepends = swig
+	depends = aqbanking
+	depends = webkit2gtk
+	depends = guile
+	depends = libdbi
+	depends = boost-libs
+	depends = libsecret
+	optdepends = gnucash-docs: for documentation
+	optdepends = iso-codes: for translation of currency names
+	optdepends = perl-finance-quote: for stock information lookups
+	optdepends = perl-date-manip: for stock information lookups
+	provides = gnucash
+	conflicts = gnucash
+	options = !makeflags
+	options = !emptydirs
+	backup = etc/gnucash/environment
+	source = git+https://github.com/Gnucash/gnucash.git#commit=2e53d647263c20a9e1a9a7fd6893ec7ef186280f
+	sha256sums = SKIP
+
+pkgname = gnucash-python
+

@@ -1,0 +1,23 @@
+pkgbase = liquidshell-git
+	pkgdesc = Alternative desktop replacement for Plasma, using QtWidgets instead of QtQuick to ensure hardware acceleration is not required
+	pkgver = r324.2cf42c8
+	pkgrel = 1
+	url = https://invent.kde.org/system/liquidshell
+	arch = x86_64
+	license = GPL3
+	makedepends = cmake
+	makedepends = extra-cmake-modules
+	makedepends = git
+	depends = networkmanager-qt
+	depends = bluez-qt
+	depends = kcmutils
+	depends = knewstuff
+	depends = packagekit-qt5
+	depends = hicolor-icon-theme
+	optdepends = ksysguard
+	optdepends = kconfig
+	source = git+https://invent.kde.org/system/liquidshell.git
+	sha256sums = SKIP
+
+pkgname = liquidshell-git
+

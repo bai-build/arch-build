@@ -1,0 +1,19 @@
+pkgbase = atk-git
+	pkgdesc = Interface definitions of accessibility infrastructure
+	pkgver = 2.36.0
+	pkgrel = 1
+	url = https://gitlab.gnome.org/GNOME/atk
+	arch = x86_64
+	license = LGPL
+	makedepends = gobject-introspection
+	makedepends = git
+	makedepends = meson
+	depends = glib2
+	provides = atk
+	provides = libatk-1.0.so
+	conflicts = atk
+	source = git+https://gitlab.gnome.org/GNOME/atk.git
+	sha256sums = SKIP
+
+pkgname = atk-git
+

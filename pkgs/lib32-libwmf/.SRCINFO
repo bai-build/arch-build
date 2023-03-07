@@ -1,0 +1,22 @@
+pkgbase = lib32-libwmf
+	pkgdesc = A library for reading vector images in Microsoft's native Windows Metafile Format (WMF) (32-bit)
+	pkgver = 0.2.12
+	pkgrel = 2
+	url = http://wvware.sourceforge.net/libwmf.html
+	arch = x86_64
+	license = LGPL
+	makedepends = lib32-gtk2
+	makedepends = lib32-libxt
+	depends = lib32-expat
+	depends = lib32-freetype2
+	depends = lib32-gdk-pixbuf2
+	depends = libwmf
+	options = !docs
+	options = !emptydirs
+	source = libwmf-0.2.12.tar.gz::https://github.com/caolanm/libwmf/archive/v0.2.12.tar.gz
+	source = libwmf-freetype.patch
+	sha1sums = 490a26175ad667fbc0c009d390bf56644919bed6
+	sha1sums = ef4d452cd5e7fcb36751771c6f44b4b7a3f8693a
+
+pkgname = lib32-libwmf
+

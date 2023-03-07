@@ -1,0 +1,27 @@
+pkgbase = shadowvpn-git
+	pkgdesc = A fast, safe VPN based on libsodium
+	pkgver = 0.2.0.7.g84135b1
+	pkgrel = 2
+	url = https://github.com/clowwindy/ShadowVPN
+	arch = any
+	license = MIT
+	makedepends = git
+	makedepends = m4
+	makedepends = automake
+	makedepends = autoconf
+	depends = libsodium
+	provides = shadowvpn
+	conflicts = shadowvpn
+	options = !emptydirs
+	backup = etc/shadowvpn/client.conf
+	backup = etc/shadowvpn/client_down.sh
+	backup = etc/shadowvpn/client_up.sh
+	backup = etc/shadowvpn/server.conf
+	backup = etc/shadowvpn/server_down.sh
+	backup = etc/shadowvpn/server_up.sh
+	backup = lib/systemd/system/shadowvpn@.service
+	source = git+https://github.com/rains31/ShadowVPN.git
+	md5sums = SKIP
+
+pkgname = shadowvpn-git
+

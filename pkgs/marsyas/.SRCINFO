@@ -1,0 +1,16 @@
+pkgbase = marsyas
+	pkgdesc = (Music Analysis, Retrieval and Synthesis for Audio Signals) is an open source software framework for audio processing
+	pkgver = 0.4.8
+	pkgrel = 1
+	url = http://marsyas.sourceforge.net/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = cmake
+	depends = alsa-lib
+	depends = gcc-libs
+	source = http://downloads.sourceforge.net/marsyas/marsyas-0.4.8.tar.gz
+	md5sums = 93f7be0fd0ff4201626f8c2f41abaaf0
+
+pkgname = marsyas
+

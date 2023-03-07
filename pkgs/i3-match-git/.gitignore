@@ -1,0 +1,4 @@
+i3-match
+*.pkg.tar.*
+pkg
+src

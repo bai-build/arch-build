@@ -1,0 +1,23 @@
+pkgbase = libsndfile-minimal-git
+	pkgdesc = C library for reading and writing files containing sampled sound
+	pkgver = 1.0.28.r74.gbeee21e5
+	pkgrel = 1
+	url = http://www.mega-nerd.com/libsndfile/
+	arch = i686
+	arch = x86_64
+	license = LGPL
+	makedepends = git
+	makedepends = autogen
+	depends = glibc
+	depends = alsa-lib
+	optdepends = flac: flac support
+	optdepends = libogg: ogg support
+	optdepends = libvorbis: vorbis support
+	provides = libsndfile
+	conflicts = libsndfile
+	options = staticlibs
+	source = git+https://github.com/erikd/libsndfile.git
+	sha256sums = SKIP
+
+pkgname = libsndfile-minimal-git
+

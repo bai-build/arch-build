@@ -1,0 +1,11 @@
+pkgbase = yuediff
+	pkgdesc = List differences between sets of Firefox config files. This tool was used to compare different librewolf.cfg and user.js files.
+	pkgver = 0.2.0
+	pkgrel = 1
+	url = https://gitlab.com/stanzabird/yuediff
+	arch = x86_64
+	license = MPL2
+	source = https://gitlab.com/stanzabird/yuediff/-/archive/v0.2.0/yuediff-v0.2.0.tar.gz
+	sha256sums = 42a11e0c9f439268ec29013c4712920647095170331591080231a6e7389bbf13
+
+pkgname = yuediff

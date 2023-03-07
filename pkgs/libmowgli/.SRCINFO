@@ -1,0 +1,15 @@
+pkgbase = libmowgli
+	pkgdesc = Performance and usability-oriented extensions to C
+	pkgver = 2.1.0
+	pkgrel = 1
+	url = http://atheme.org/projects/libmowgli.html
+	arch = i686
+	arch = x86_64
+	license = custom
+	makedepends = git
+	depends = openssl
+	source = libmowgli-2.1.0::git+https://github.com/atheme/libmowgli-2.git
+	sha1sums = SKIP
+
+pkgname = libmowgli
+

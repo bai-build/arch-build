@@ -1,0 +1,40 @@
+pkgbase = linux-haruka-workstation
+	pkgdesc = Haruka Workstation Kernel
+	pkgver = 5.6.haruka1
+	pkgrel = 1
+	url = https://github.com/HarukaNetwork/haruka-workstation-kernel/commits/master
+	arch = x86_64
+	license = GPL2
+	makedepends = bc
+	makedepends = kmod
+	makedepends = libelf
+	makedepends = xmlto
+	makedepends = python-sphinx
+	makedepends = python-sphinx_rtd_theme
+	makedepends = graphviz
+	makedepends = imagemagick
+	makedepends = git
+	options = !strip
+	source = haruka-workstation-kernel::git+https://github.com/HarukaNetwork/haruka-workstation-kernel
+	source = config
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = linux-haruka-workstation
+	pkgdesc = The Haruka Workstation Kernel kernel and modules
+	depends = coreutils
+	depends = kmod
+	depends = initramfs
+	optdepends = crda: to set the correct wireless channels of your country
+	optdepends = linux-firmware: firmware images needed for some devices
+	provides = VIRTUALBOX-GUEST-MODULES
+	provides = WIREGUARD-MODULE
+	replaces = virtualbox-guest-modules-arch
+	replaces = wireguard-arch
+
+pkgname = linux-haruka-workstation-headers
+	pkgdesc = Headers and scripts for building modules for the Haruka Workstation Kernel kernel
+
+pkgname = linux-haruka-workstation-docs
+	pkgdesc = Documentation for the Haruka Workstation Kernel kernel
+

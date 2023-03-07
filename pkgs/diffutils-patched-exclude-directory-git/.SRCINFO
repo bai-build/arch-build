@@ -1,0 +1,23 @@
+pkgbase = diffutils-patched-exclude-directory-git
+	pkgdesc = Utility programs used for creating patch files, including exclude directory feature
+	pkgver = 3.7.r11.g3600e8d
+	pkgrel = 1
+	url = http://www.gnu.org/software/diffutils
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = gperf
+	makedepends = git
+	makedepends = help2man
+	makedepends = rsync
+	makedepends = wget
+	depends = libsigsegv
+	provides = diffutils
+	conflicts = diffutils
+	source = diffutils-patched-exclude-directory-git::git+git://git.savannah.gnu.org/diffutils.git
+	source = exclude-directory.patch
+	sha256sums = SKIP
+	sha256sums = f13ddfff73dd85a8051c9196cecd900162ce496f924b60bee7ec086871c4d572
+
+pkgname = diffutils-patched-exclude-directory-git
+

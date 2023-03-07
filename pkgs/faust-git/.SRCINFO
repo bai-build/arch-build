@@ -1,0 +1,28 @@
+pkgbase = faust-git
+	pkgdesc = A functional programming language for realtime audio signal processing.
+	pkgver = 2.44.3.r12517.71d87c0ae
+	pkgrel = 1
+	epoch = 2
+	url = http://faust.grame.fr/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = llvm
+	makedepends = git
+	makedepends = xxd
+	depends = llvm-libs
+	depends = libsndfile
+	depends = libmicrohttpd
+	depends = openssl
+	optdepends = clang: needed for sound2reader
+	optdepends = python2: needed for faust2md
+	optdepends = ruby: needed for faust2sc and scbuilder
+	optdepends = java-environment=8: needed for faust2android
+	provides = faust
+	provides = faust2-git
+	conflicts = faust
+	options = staticlibs
+	source = faust-git::git+https://github.com/grame-cncm/faust.git#branch=master-dev
+	md5sums = SKIP
+
+pkgname = faust-git

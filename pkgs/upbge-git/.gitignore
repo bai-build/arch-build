@@ -1,0 +1,10 @@
+*
+!README.md
+!PKGBUILD
+!upbge.install
+!upbge.desktop
+!embree.patch
+!SelectCudaComputeArch.patch
+!usd_python.patch
+!.SRCINFO
+!.gitignore

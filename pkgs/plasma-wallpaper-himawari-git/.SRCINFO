@@ -1,0 +1,18 @@
+pkgbase = plasma-wallpaper-himawari-git
+	pkgdesc = Plasma Wallpaper Himawari
+	pkgver = r7.2049a94
+	pkgrel = 1
+	url = https://github.com/Hyperz/plasmahimawari
+	arch = any
+	license = GPL
+	makedepends = git
+	makedepends = cmake
+	makedepends = extra-cmake-modules
+	depends = plasma-workspace
+	provides = plasma-wallpaper-himawari
+	conflicts = plasma-wallpaper-himawari
+	source = plasma-wallpaper-himawari::git+https://github.com/Hyperz/plasmahimawari.git
+	md5sums = SKIP
+
+pkgname = plasma-wallpaper-himawari-git
+

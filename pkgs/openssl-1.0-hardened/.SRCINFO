@@ -1,0 +1,20 @@
+pkgbase = openssl-1.0-hardened
+	pkgdesc = The Open Source toolkit for Secure Sockets Layer and Transport Layer Security
+	pkgver = 1.0.2.u
+	pkgrel = 1
+	url = https://www.openssl.org
+	arch = x86_64
+	license = custom:BSD
+	depends = perl
+	optdepends = ca-certificates
+	provides = openssl-1.0
+	conflicts = openssl-1.0
+	source = https://artfiles.org/openssl.org/source/old/1.0.2/openssl-1.0.2u.tar.gz
+	source = no-rpath.patch
+	source = openssl-1.0-versioned-symbols.patch
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = openssl-1.0-hardened
+

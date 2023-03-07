@@ -1,0 +1,10 @@
+post_install() {
+  post_upgrade $1
+}
+
+post_upgrade() {
+  echo -n "Rebuilding 32-bit fontconfig cache..."
+  # a full forced directory scan is required here
+  SOURCE_DATE_EPOCH=$(date +%s) fc-cache -rs
+  echo " done."
+}

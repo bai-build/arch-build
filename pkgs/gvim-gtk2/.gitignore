@@ -1,0 +1,7 @@
+*.xz
+*.gz
+pkg
+src
+octave-workspace
+*.zst
+.Rhistory

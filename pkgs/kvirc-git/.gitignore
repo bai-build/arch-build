@@ -1,0 +1,7 @@
+src/*
+pkg/*
+*.tar.gz
+*.tar.xz
+*.tar.bz2
+kvirc-git/*
+.AURINFO

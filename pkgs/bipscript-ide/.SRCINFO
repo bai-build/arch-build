@@ -1,0 +1,22 @@
+pkgbase = bipscript-ide
+	pkgdesc = IDE for the bipscript language
+	pkgver = 0.17
+	pkgrel = 1
+	url = http://www.bipscript.org
+	arch = i686
+	arch = x86_64
+	groups = pro-audio
+	license = GPL
+	makedepends = git
+	makedepends = qt5-tools
+	makedepends = ruby
+	depends = jack2
+	depends = liblo
+	depends = qt5-base
+	depends = bipscript
+	provides = bipscript-ide
+	conflicts = bipscript-ide
+	source = bipscript-ide-v0.17.tar.gz::https://gitlab.domainepublic.net/bipscript/ide/-/archive/v0.17/ide-v0.17.tar.gz
+	sha256sums = c18e3e2877aeb13abd233d5b6697dec9ce2326cb34207f5ac6de4aee732d7cae
+
+pkgname = bipscript-ide

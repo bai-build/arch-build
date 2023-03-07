@@ -1,0 +1,16 @@
+pkgbase = mingw-w64-wavpack
+	pkgdesc = Audio compression format with lossless, lossy and hybrid compression modes (mingw-w64)
+	pkgver = 5.6.0
+	pkgrel = 1
+	url = http://www.wavpack.com/
+	arch = any
+	license = BSD
+	makedepends = mingw-w64-configure
+	depends = mingw-w64-crt
+	options = !strip
+	options = !buildflags
+	options = staticlibs
+	source = http://www.wavpack.com/wavpack-5.6.0.tar.xz
+	sha512sums = 7421eff1f6e18f2e698b367ca48f6773456d0fcb53241be70149a87eff2cdf14dd8a82845a016f59ed32c7df494d018e6e23495709d3a56500b0660f177d5c0f
+
+pkgname = mingw-w64-wavpack

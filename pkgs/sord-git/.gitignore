@@ -1,0 +1,9 @@
+autowaf/
+sord/
+src/
+pkg/
+sord-git-*.pkg.tar.xz
+sord-git-*.pkg.tar.zst
+sord-git-*.src.tar.gz
+.AURINFO
+

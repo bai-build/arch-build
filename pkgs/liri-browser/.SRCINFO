@@ -1,0 +1,25 @@
+pkgbase = liri-browser
+	pkgdesc = A Web Browser using the QML Material framework from the Papyros Project
+	pkgver = 0.3
+	pkgrel = 3
+	url = https://github.com/liri-browser/liri-browser
+	install = liri-browser.install
+	arch = i686
+	arch = x86_64
+	license = GPLv3
+	makedepends = git
+	depends = qt5-base
+	depends = qt5-webengine
+	depends = qml-material
+	provides = liri-browser
+	source = liri-browser::git+https://github.com/liri-browser/liri-browser.git
+	source = liri-browser.sh
+	source = liri-browser.desktop
+	source = liri-browser.install
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = liri-browser
+

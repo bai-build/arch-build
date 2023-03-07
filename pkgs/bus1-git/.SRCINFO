@@ -1,0 +1,35 @@
+pkgbase = bus1-git
+	pkgdesc = Bus1 Out-of-Tree Kernel Module
+	pkgver = r977.20ee2f7
+	pkgrel = 3
+	url = http://www.bus1.org
+	arch = i686
+	arch = x86_64
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	license = LGPL2.1
+	makedepends = git
+	makedepends = xmlto
+	makedepends = docbook-xsl
+	makedepends = dkms
+	source = git+https://github.com/bus1/bus1.git
+	source = dkms.conf
+	sha512sums = SKIP
+	sha512sums = cc123567141880104ffe153d18de342b58c79ae2b8833ee3df6fcd1b6dad76c58385a5f103362ff036d636c7ff5b5b2529a72b7c932c7d8bfba73b96e198e02c
+
+pkgname = bus1-dkms-git
+	depends = dkms
+	provides = bus1
+	provides = bus1-git
+	conflicts = bus1
+	conflicts = bus1-git
+
+pkgname = bus1-headers-git
+	provides = bus1-headers
+	conflicts = bus1-headers
+
+pkgname = bus1-doc-git
+	provides = bus1-doc
+	conflicts = bus1-doc
+

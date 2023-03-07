@@ -1,0 +1,13 @@
+pkgbase = sdtool
+	pkgdesc = set hardware lock/unlock on (micro) sd cards
+	pkgver = 1.0
+	pkgrel = 1
+	url = http://www.bertold.org/sdtool/
+	arch = i686
+	arch = x86_64
+	license = custom
+	source = https://github.com/BertoldVdb/sdtool
+	md5sums = 347e223869f61d3314b1ecf979bf8d36
+
+pkgname = sdtool
+

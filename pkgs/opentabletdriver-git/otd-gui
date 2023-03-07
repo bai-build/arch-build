@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /usr/share/OpenTabletDriver
+./OpenTabletDriver.UX.Gtk "$@"

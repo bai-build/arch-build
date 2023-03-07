@@ -1,0 +1,16 @@
+pkgbase = rit-rachana-fonts
+	pkgdesc = Traditional orthography opentype font with definitive character set for Malayalam
+	pkgver = 1.4
+	pkgrel = 1
+	url = https://gitlab.com/rit-fonts/RIT-Rachana
+	arch = any
+	license = custom:SIL
+	makedepends = fontforge
+	makedepends = git
+	makedepends = python
+	makedepends = python-fonttools
+	makedepends = python-cffsubr
+	source = https://gitlab.com/rit-fonts/RIT-Rachana/-/archive/1.4/RIT-Rachana-1.4.tar.bz2
+	sha256sums = 31514d22c5c2fd387764921b0f742d9820d93be564138d071952ff2b1fc58330
+
+pkgname = rit-rachana-fonts

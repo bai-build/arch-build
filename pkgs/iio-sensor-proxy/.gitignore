@@ -1,0 +1,10 @@
+src
+srcdir
+pkg
+pkgdir
+*.xz
+*.gz
+*.pkg.*
+iio-sensor-proxy
+*~
+.gnupg

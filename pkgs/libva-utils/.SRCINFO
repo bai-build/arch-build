@@ -1,0 +1,19 @@
+pkgbase = libva-utils
+	pkgdesc = Intel VA-API Media Applications and Scripts for libva
+	pkgver = 1.8.2
+	pkgrel = 1
+	url = https://github.com/01org/libva-utils
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = mesa
+	depends = libva
+	depends = libdrm
+	depends = libxfixes
+	optdepends = libva-intel-driver: backend for Intel cards
+	options = !emptydirs
+	source = https://github.com/01org/libva-utils/archive/1.8.2.tar.gz
+	sha256sums = ccae885d9f3b4511081d287816c56bd7dda98e5947e6254ebe60d08e86c6ba4a
+
+pkgname = libva-utils
+

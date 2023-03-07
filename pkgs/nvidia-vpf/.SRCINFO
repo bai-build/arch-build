@@ -1,0 +1,22 @@
+pkgbase = nvidia-vpf
+	pkgdesc = NVIDIA Video Processing Framework
+	pkgver = 1.1.1
+	pkgrel = 1
+	url = https://github.com/NVIDIA/VideoProcessingFramework/
+	arch = x86_64
+	license = Apache
+	makedepends = cmake
+	makedepends = nvidia-sdk
+	makedepends = python-setuptools
+	depends = cuda
+	depends = nvidia-utils
+	depends = ffmpeg
+	depends = python
+	depends = python-pytorch-cuda
+	options = !emptydirs
+	source = https://github.com/NVIDIA/VideoProcessingFramework/archive/v1.1.1/nvidia-vpf-1.1.1.tar.gz
+	source = 010-nvidia-vpf-fix-pytorch-extension.patch
+	sha256sums = a41c03c2ba79e7b1d304d87453d8ce2182bad66b651566612de67cc8f0eb0dc5
+	sha256sums = bd5435a70892f1b262275ccefb51a1e4871fc585c4267e85a0994f1c703f8fc2
+
+pkgname = nvidia-vpf

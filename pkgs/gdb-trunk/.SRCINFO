@@ -1,0 +1,33 @@
+pkgbase = gdb-trunk
+	pkgdesc = The GNU Debugger
+	pkgver = 8.2.r95795.4de5434b69
+	pkgrel = 1
+	url = http://www.gnu.org/software/gdb/
+	arch = x86_64
+	license = GPL3
+	makedepends = texinfo
+	makedepends = python
+	makedepends = guile2.0
+	makedepends = ncurses
+	makedepends = expat
+	makedepends = xz
+	makedepends = git
+	source = git+https://sourceware.org/git/binutils-gdb.git
+	sha1sums = SKIP
+
+pkgname = gdb-trunk
+	depends = ncurses
+	depends = expat
+	depends = xz
+	depends = mpfr
+	depends = gdb-common-trunk=8.2.r95795.4de5434b69
+	provides = gdb
+	conflicts = gdb
+	backup = etc/gdb/gdbinit
+
+pkgname = gdb-common-trunk
+	depends = python
+	depends = guile2.0
+	provides = gdb-common
+	conflicts = gdb-common
+

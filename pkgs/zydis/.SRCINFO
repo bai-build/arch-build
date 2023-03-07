@@ -1,0 +1,15 @@
+pkgbase = zydis
+	pkgdesc = The ultimate, open-source X86 & X86-64 decoder/disassembler library.
+	pkgver = 4.0.0
+	pkgrel = 1
+	url = https://zydis.re
+	arch = x86_64
+	license = MIT
+	makedepends = cmake
+	depends = gcc-libs
+	depends = zycore-c
+	provides = libZydis.so
+	source = https://github.com/zyantific/zydis/archive/v4.0.0.tar.gz
+	sha256sums = 14e991fd97b021e15c77a4726a0ae8a4196d6521ab505acb5c51fc2f9be9530a
+
+pkgname = zydis

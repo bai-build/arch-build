@@ -1,0 +1,15 @@
+pkgbase = scsh-git
+	pkgdesc = Scheme Shell
+	pkgver = 20151026
+	pkgrel = 2
+	url = http://github.com/scheme/scsh
+	arch = i686
+	arch = x86_64
+	license = unknown
+	makedepends = git
+	depends = scheme48
+	source = git+https://github.com/scheme/scsh
+	md5sums = SKIP
+
+pkgname = scsh-git
+

@@ -1,0 +1,16 @@
+pkgbase = parallel-hashmap
+	pkgdesc = A family of header-only, very fast and memory-friendly hashmap and btree containers.
+	pkgver = 1.37
+	pkgrel = 1
+	url = https://greg7mdp.github.io/parallel-hashmap/
+	arch = any
+	license = Apache
+	makedepends = cmake
+	makedepends = make
+	makedepends = git
+	optdepends = python: For Conan python package manager.
+	source = parallel-hashmap-1.37.tar.gz::https://github.com/greg7mdp/parallel-hashmap/archive/refs/tags/1.37.tar.gz
+	sha256sums = 2ac652be0552fcb53a1163c08c1f28f29f0756594fcc587eebb4d8b363153709
+	b2sums = c4db13e0b6df33786211cb2c1b4b0a4cdac93e465e786e5c1837f5eb68b2725e89ca6c3f129a0237a8a3974a446df6155a28fa55a0b04b03a62c63eeca610fee
+
+pkgname = parallel-hashmap

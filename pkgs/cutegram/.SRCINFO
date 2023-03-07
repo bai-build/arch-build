@@ -1,0 +1,28 @@
+pkgbase = cutegram
+	pkgdesc = A different telegram client from Aseman team
+	pkgver = 2.7.1
+	pkgrel = 4
+	url = http://aseman.co/en/products/cutegram/
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	depends = qt5-imageformats
+	depends = qt5-webkit
+	depends = telegramqml>=0.9.1
+	depends = libqtelegram-ae>=3:6.1
+	optdepends = gst-plugins-bad: audio support
+	optdepends = gst-plugins-good: audio and notification sound
+	provides = cutegram
+	conflicts = cutegram-git
+	conflicts = sigram-git
+	conflicts = sigram
+	conflicts = cutegram
+	replaces = cutegram-cn
+	source = Cutegram-2.7.1.tar.gz::https://github.com/Aseman-Land/Cutegram/archive/v2.7.1-stable.tar.gz
+	source = asemantools::git+https://github.com/Aseman-Land/aseman-qt-tools.git#commit=91bf14b790c749bcaaddb09a8124ef6415a93906
+	sha256sums = f1cfc6bd3a1d33c2348f23ea43d923419b33576059791a071f2780db11059cf4
+	sha256sums = SKIP
+
+pkgname = cutegram
+

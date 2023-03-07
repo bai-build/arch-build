@@ -1,0 +1,17 @@
+pkgbase = android-x86-fribidi
+	pkgdesc = A Free Implementation of the Unicode Bidirectional Algorithm (android)
+	pkgver = 1.0.12
+	pkgrel = 1
+	url = http://fribidi.org
+	arch = any
+	license = LGPL
+	makedepends = android-meson
+	depends = android-ndk
+	options = !strip
+	options = !buildflags
+	options = staticlibs
+	options = !emptydirs
+	source = https://github.com/fribidi/fribidi/archive/v1.0.12.tar.gz
+	md5sums = a7d87e1f323d43685c99614a204ea7e5
+
+pkgname = android-x86-fribidi

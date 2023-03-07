@@ -1,0 +1,19 @@
+pkgbase = emotion_generic_players-git
+	pkgdesc = Emotion external binary executable players - Development version
+	pkgver = 1.17.99.141.g2853260
+	pkgrel = 1
+	url = http://www.enlightenment.org
+	arch = i686
+	arch = x86_64
+	license = BSD
+	makedepends = git
+	depends = efl-git
+	depends = vlc
+	provides = emotion_generic_players=1.17.99.141.g2853260
+	conflicts = emotion_generic_players
+	options = debug
+	source = git://git.enlightenment.org/core/emotion_generic_players.git
+	sha256sums = SKIP
+
+pkgname = emotion_generic_players-git
+

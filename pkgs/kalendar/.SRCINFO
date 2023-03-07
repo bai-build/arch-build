@@ -1,0 +1,15 @@
+pkgbase = kalendar
+	pkgdesc = A calendar application using Akonadi to sync with external services (Nextcloud, GMail, ...)
+	pkgver = 0.3.1
+	pkgrel = 1
+	url = https://apps.kde.org/kalendar/
+	arch = x86_64
+	license = GPL
+	makedepends = extra-cmake-modules
+	makedepends = boost
+	depends = kdepim-runtime
+	depends = eventviews
+	source = https://download.kde.org/stable/kalendar/kalendar-0.3.1.tar.xz
+	sha256sums = 8300a40addb3cb294ccf6e7fb70dd570072b8828c5635f2008851248cc796dca
+
+pkgname = kalendar

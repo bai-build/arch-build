@@ -1,0 +1,80 @@
+--- main/include/CaelumPrerequisites.h
++++ main/include/CaelumPrerequisites.h
+@@ -52,7 +52,9 @@
+
+ // By default only compile type descriptors for scripting.
+ #ifndef CAELUM_TYPE_DESCRIPTORS
+-    #if (OGRE_VERSION >= 0x00010600) && OGRE_USE_NEW_COMPILERS
++    #if (OGRE_VERSION >= 0x00010900)
++        #define CAELUM_TYPE_DESCRIPTORS 1
++    #elif (OGRE_VERSION >= 0x00010600) && OGRE_USE_NEW_COMPILERS
+         #define CAELUM_TYPE_DESCRIPTORS 1
+     #else
+         #define CAELUM_TYPE_DESCRIPTORS 0
+@@ -71,8 +73,8 @@
+     #if !(OGRE_VERSION > 0x00010600)
+         #error "Caelum script support requires Ogre 1.6."
+     #endif
+-    #if !(OGRE_USE_NEW_COMPILERS)
+-        #error "Caelum script support requires Ogre 1.6 with OGRE_USE_NEW_COMPILERS."
++    #if (OGRE_VERSION < 0x00010900) && !(OGRE_USE_NEW_COMPILERS)
++        #error "Caelum script support requires Ogre 1.6 with OGRE_USE_NEW_COMPILERS or 1.9."
+     #endif
+     #if !(CAELUM_TYPE_DESCRIPTORS)
+         #error "Caelum script support also requires type descriptors."
+
+--- main/src/CaelumPlugin.cpp
++++ main/src/CaelumPlugin.cpp
+@@ -134,7 +134,9 @@
+         assert (this->isInstalled () && "Must install CaelumPlugin before loading scripts");
+
+         // Fetch raw resource ptr. Attempt to support explicit resource groups currently in Ogre trunk.
+-#if OGRE_VERSION >= 0x00010700
++#if OGRE_VERSION >= 0x00010900
++        Ogre::ResourcePtr res = getPropScriptResourceManager ()->createOrRetrieve (objectName, groupName).first;
++#elif OGRE_VERSION >= 0x00010700
+         Ogre::ResourcePtr res = getPropScriptResourceManager ()->getByName (objectName, groupName);
+ #else
+         Ogre::ResourcePtr res = getPropScriptResourceManager ()->getByName (objectName);
+
+--- main/src/CaelumScriptTranslator.cpp
++++ main/src/CaelumScriptTranslator.cpp
+@@ -422,7 +422,11 @@
+             //LogManager::getSingleton ().logMessage (
+             //        "Caelum: Saved " + objNode->cls + " name " + objNode->name + " as a resource");
+             PropScriptResourceManager* mgr = this->getResourceManager ();
++#if OGRE_VERSION >= 0x00010900
++            ResourcePtr resource = mgr->createResource (objNode->name, compiler->getResourceGroup());
++#else
+             ResourcePtr resource = mgr->create (objNode->name, compiler->getResourceGroup());
++#endif
+             resource->_notifyOrigin (objNode->file);
+             return;
+         }
+
+--- main/src/GroundFog.cpp
++++ main/src/GroundFog.cpp
+@@ -53,8 +53,8 @@
+ 		mDomeNode->attachObject (mDomeEntity.get());
+ 		
+ 		// Initialize default fog parameters
+-		mDensity = 0.1;
+-		mVerticalDecay = 0.2;
++		mDensity = 0.1f;
++		mVerticalDecay = 0.2f;
+ 		mGroundLevel = 5;
+ 		mFogColour = Ogre::ColourValue::Black;
+ 
+@@ -78,7 +78,11 @@
+ 		Ogre::MaterialManager *matManager = Ogre::MaterialManager::getSingletonPtr();
+ 		Ogre::MaterialManager::ResourceMapIterator matIt = matManager->getResourceIterator();
+ 		while (matIt.hasMoreElements()) {
+-			Ogre::MaterialPtr mat = matIt.getNext();
++#if (OGRE_VERSION < ((1 << 16) | (9 << 8) | 0))
++ 			Ogre::MaterialPtr mat = matIt.getNext();
++#else
++			Ogre::MaterialPtr mat = matIt.getNext().staticCast<Ogre::Material>();
++#endif
+ 			Ogre::Material::TechniqueIterator techIt = mat->getTechniqueIterator();
+ 			while (techIt.hasMoreElements()) {
+ 				Ogre::Technique *tech = techIt.getNext();

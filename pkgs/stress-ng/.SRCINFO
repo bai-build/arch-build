@@ -1,0 +1,26 @@
+pkgbase = stress-ng
+	pkgdesc = Software to stress test a computer system in various selectable ways
+	pkgver = 0.15.04
+	pkgrel = 1
+	url = https://github.com/ColinIanKing/stress-ng
+	arch = x86_64
+	license = GPL
+	makedepends = attr
+	makedepends = keyutils
+	makedepends = libaio
+	makedepends = libcap
+	makedepends = libgcrypt
+	makedepends = libglvnd
+	makedepends = libmd
+	depends = apparmor
+	depends = judy
+	depends = kmod
+	depends = libbsd
+	depends = libjpeg-turbo
+	depends = lksctp-tools
+	depends = xxhash
+	optdepends = intel-ipsec-mb: support for IPsec tests
+	source = stress-ng-0.15.04.tar.gz::https://github.com/ColinIanKing/stress-ng/archive/refs/tags/V0.15.04.tar.gz
+	b2sums = 32e1aa2e2d9ab42e9b5c3829c4cc313688158089d0caccc275df4dcd3160830313acae8cd4ba9a3e513627714124669f7181566485373ac77b86591ae1bcb729
+
+pkgname = stress-ng

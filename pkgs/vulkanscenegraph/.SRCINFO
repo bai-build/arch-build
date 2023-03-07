@@ -1,0 +1,16 @@
+pkgbase = vulkanscenegraph
+	pkgdesc = Vulkan & C++17 based Scene Graph Project
+	pkgver = 1.0.2
+	pkgrel = 1
+	url = https://github.com/vsg-dev/VulkanSceneGraph
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = cmake
+	makedepends = vulkan-headers
+	makedepends = vulkan-icd-loader
+	makedepends = libxcb
+	source = https://github.com/vsg-dev/VulkanSceneGraph/archive/refs/tags/VulkanSceneGraph-1.0.2.tar.gz
+	sha256sums = 526acd58d6e3a3bd3c3169996e0616d5c4a01e793dc064e8d20217791743bab5
+
+pkgname = vulkanscenegraph

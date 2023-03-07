@@ -1,0 +1,9 @@
+pkg/
+src/
+*.swp
+*.pkg.tar.xz
+*.pkg.tar.zst
+*.src.tar.gz
+
+avr-libc/
+*.diff.xz

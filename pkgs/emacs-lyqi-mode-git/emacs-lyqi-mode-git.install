@@ -1,0 +1,10 @@
+post_install() {
+cat <<EOF
+==> Change your .emacs to make use of lyqi:
+      ;; load lyqi
+      (require 'lyqi)
+      ;; automatically use lyqi mode when editing .ly and .ily files
+      (add-to-list 'auto-mode-alist '("\\\\.ly$" . lyqi-mode))
+      (add-to-list 'auto-mode-alist '("\\\\.ily$" . lyqi-mode))
+EOF
+}

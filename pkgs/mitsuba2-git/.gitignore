@@ -1,0 +1,19 @@
+# AUR folders
+pkg/
+src/
+
+# test files
+test_scene.exr
+
+# submodules
+asmjit/
+enoki/
+mitsuba-data/
+mitsuba2/
+nanogui/
+openexr/
+tbb/
+tinyformat/
+
+# built files
+mitsuba2-git-*.pkg.tar.zst

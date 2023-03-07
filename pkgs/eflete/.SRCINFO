@@ -1,0 +1,17 @@
+pkgbase = eflete
+	pkgdesc = EFL Edje Theme Editor - a theme graphical editor
+	pkgver = 1.19.1
+	pkgrel = 2
+	url = https://phab.enlightenment.org/w/projects/eflete/
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	depends = efl
+	provides = ewe=1.19.1
+	conflicts = ewe
+	replaces = ewe
+	source = https://download.enlightenment.org/rel/apps/eflete/eflete-1.19.1.tar.xz
+	sha512sums = f46097d73376cc020851f32ea45827652cf28cfc213de9f5bc624bfa38558b6907d33cda62a304019a0969fafa9cb71f2904e742b568b9881aa13025e1b9625a
+
+pkgname = eflete
+

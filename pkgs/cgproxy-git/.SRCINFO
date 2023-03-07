@@ -1,0 +1,24 @@
+pkgbase = cgproxy-git
+	pkgdesc = A transparent proxy program powered by cgroup2 and tproxy
+	pkgver = v0.20.r0.g86fe42e
+	pkgrel = 1
+	url = https://github.com/springzfx/cgproxy
+	install = cgproxy.install
+	arch = x86_64
+	groups = 
+	license = GPL
+	makedepends = cmake
+	makedepends = nlohmann-json
+	makedepends = clang
+	makedepends = bpf
+	makedepends = libbpf
+	depends = libbpf
+	depends = iproute2
+	depends = which
+	provides = cgproxy
+	conflicts = cgproxy
+	backup = etc/cgproxy/config.json
+	source = cgproxy-git::git+https://github.com/springzfx/cgproxy#branch=master
+	md5sums = SKIP
+
+pkgname = cgproxy-git

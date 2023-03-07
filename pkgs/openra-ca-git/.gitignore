@@ -1,0 +1,7 @@
+*.xz
+CAmod
+pkg
+src
+*.gz
+*.log*
+*.zst

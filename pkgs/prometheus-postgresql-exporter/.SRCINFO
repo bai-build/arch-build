@@ -1,0 +1,19 @@
+pkgbase = prometheus-postgresql-exporter
+	pkgdesc = Prometheus exporter for PostgreSQL
+	pkgver = 0.11.1
+	pkgrel = 1
+	url = https://github.com/prometheus-community/postgres_exporter
+	arch = x86_64
+	license = Apache
+	makedepends = git
+	makedepends = go
+	makedepends = make
+	backup = etc/conf.d/prometheus-postgresql-exporter
+	source = https://github.com/prometheus-community/postgres_exporter/archive/v0.11.1.tar.gz
+	source = prometheus-postgresql-exporter.service
+	source = prometheus-postgresql-exporter.conf
+	sha256sums = 48e38e5cc8f093f93a84b1536c2ae7dc480760f9c443ae654a9f1f83d289a7bc
+	sha256sums = 0d86e650d88c8d4a8bc5b26faecb75023e069eaf29582135bcb0202e4a69a9b9
+	sha256sums = 5436ad34fbcd6faab69da8675631f3eb5b89d964682eb23164bf4bb816ad1897
+
+pkgname = prometheus-postgresql-exporter

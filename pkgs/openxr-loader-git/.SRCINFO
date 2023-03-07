@@ -1,0 +1,48 @@
+pkgbase = openxr-loader-git
+	pkgver = 1.0.23.r3.g915196a
+	pkgrel = 1
+	url = https://github.com/KhronosGroup/OpenXR-SDK-Source
+	arch = i686
+	arch = x86_64
+	license = apache
+	makedepends = cmake
+	makedepends = git
+	makedepends = vulkan-headers
+	makedepends = libx11
+	makedepends = libxxf86vm
+	makedepends = libxrandr
+	makedepends = python
+	makedepends = vulkan-icd-loader
+	source = openxr-loader::git+https://github.com/KhronosGroup/OpenXR-SDK-Source.git#branch=main
+	md5sums = SKIP
+
+pkgname = openxr-loader-git
+	pkgdesc = OpenXR loader
+	depends = jsoncpp
+	depends = libx11
+	provides = openxr-loader
+
+pkgname = openxr-headers-git
+	pkgdesc = OpenXR headers
+	provides = openxr-headers
+
+pkgname = openxr-layers-git
+	pkgdesc = OpenXR Layers, including XR_APILAYER_LUNARG_core_validation
+	depends = openxr-loader
+	provides = openxr-layers
+
+pkgname = openxr-utils-git
+	pkgdesc = OpenXR Utils: hello_xr, runtime_list
+	depends = openxr-loader
+	depends = libglvnd
+	depends = libxxf86vm
+	depends = vulkan-icd-loader
+	depends = libx11
+	provides = openxr-utils
+
+pkgname = openxr-git
+	depends = openxr-loader-git
+	depends = openxr-headers-git
+	depends = openxr-utils-git
+	depends = openxr-layers-git
+	provides = openxr

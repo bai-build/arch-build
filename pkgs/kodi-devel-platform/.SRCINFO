@@ -1,0 +1,21 @@
+pkgbase = kodi-devel-platform
+	pkgdesc = Kodi platform environment for compiling cmake binary addons
+	pkgver = 20150805.15edaf7
+	pkgrel = 1
+	url = https://github.com/xbmc/kodi-platform
+	arch = i686
+	arch = x86_64
+	groups = kodi-devel
+	license = GPL
+	makedepends = cmake
+	makedepends = kodi-devel-libplatform
+	depends = kodi-devel
+	depends = tinyxml
+	provides = kodi-platform
+	conflicts = kodi-platform
+	conflicts = kodi-platform-devel
+	source = https://github.com/xbmc/kodi-platform/archive/15edaf78d6307eaa5e1d17028122d8bce9d55aa2.tar.gz
+	md5sums = 82ccaba3328b440e659625addb18f008
+
+pkgname = kodi-devel-platform
+

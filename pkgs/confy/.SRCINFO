@@ -1,0 +1,23 @@
+pkgbase = confy
+	pkgdesc = Conferences schedule viewer for GNOME
+	pkgver = 0.6.4
+	pkgrel = 1
+	url = https://confy.kirgroup.net/
+	arch = x86_64
+	arch = aarch64
+	license = GPL3
+	makedepends = meson
+	makedepends = ninja
+	makedepends = gobject-introspection
+	makedepends = git
+	depends = python
+	depends = gtk3
+	depends = libhandy
+	depends = python-gobject
+	depends = python-icalendar
+	depends = libnotify
+	provides = confy
+	source = https://git.sr.ht/~fabrixxm/confy/archive/0.6.4.tar.gz
+	md5sums = d238b135b819427efb9adc7e7007dd10
+
+pkgname = confy

@@ -1,0 +1,24 @@
+pkgbase = postgresql-94-upgrade
+	pkgdesc = PostgreSQL build for migrating between major versions with pg_upgrade
+	pkgver = 9.4.26
+	pkgrel = 1
+	url = https://www.postgresql.org/
+	arch = i686
+	arch = x86_64
+	license = custom:PostgreSQL
+	makedepends = krb5
+	makedepends = python2
+	makedepends = perl
+	makedepends = tcl>=8.6.0
+	depends = postgresql-libs>=9.4
+	depends = libxml2
+	depends = openssl>=1.0.0
+	depends = pam
+	provides = postgresql-94-upgrade=9.4
+	conflicts = postgresql-old-upgrade
+	conflicts = postgresql-lts-old-upgrade
+	source = http://ftp.postgresql.org/pub/source/v9.4.26/postgresql-9.4.26.tar.bz2
+	sha256sums = f5c014fc4a5c94e8cf11314cbadcade4d84213cfcc82081c9123e1b8847a20b9
+
+pkgname = postgresql-94-upgrade
+

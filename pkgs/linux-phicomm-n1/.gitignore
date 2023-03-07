@@ -1,0 +1,12 @@
+linux*.tar.zst
+linux*.tar.xz
+patch*.xz
+*.tar.gz
+src
+pkg
+pkg*.xz
+*.sh
+TODO
+lost+found/
+set-source-mirror.sh
+patches

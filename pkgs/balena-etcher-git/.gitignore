@@ -1,0 +1,6 @@
+pkg/
+src/
+*.tgz
+*.tar.xz
+balena-etcher-git/
+scripts/

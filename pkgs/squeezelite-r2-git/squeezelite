@@ -1,0 +1,1 @@
+parameters="-o iec958:CARD=Audio,DEV=0"

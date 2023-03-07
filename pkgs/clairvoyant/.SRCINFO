@@ -1,0 +1,15 @@
+pkgbase = clairvoyant
+	pkgdesc = Magic 8-Ball fortune teller of sorts
+	pkgver = 3.0.3
+	pkgrel = 1
+	url = https://github.com/cassidyjames/clairvoyant
+	arch = x86_64
+	arch = aarch64
+	license = GPL3
+	makedepends = meson
+	makedepends = vala
+	depends = libadwaita
+	source = https://github.com/cassidyjames/clairvoyant/archive/3.0.3.tar.gz
+	b2sums = 53f66c3d4b3016f9325ce93b31e8d8d84e73ca4f2fd3bb9f3a140e3d8f34db39383cc087092fdee90ed6ef0693128dfc969ffa0c3f0113467471baea0fce3d87
+
+pkgname = clairvoyant

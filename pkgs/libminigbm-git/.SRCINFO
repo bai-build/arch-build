@@ -1,0 +1,19 @@
+pkgbase = libminigbm-git
+	pkgdesc = Generic Buffer Management (GBM) implementation used in Chromium OS
+	pkgver = r305.ee98f4ec
+	pkgrel = 1
+	url = https://chromium.googlesource.com/chromiumos/platform/minigbm/
+	arch = i686
+	arch = x86_64
+	arch = armv6h
+	arch = armv7h
+	license = custom
+	makedepends = clang
+	provides = libminigbm
+	conflicts = libminigbm
+	conflicts = mesa
+	source = git+https://chromium.googlesource.com/chromiumos/platform/minigbm
+	md5sums = SKIP
+
+pkgname = libminigbm-git
+

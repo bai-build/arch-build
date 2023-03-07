@@ -1,0 +1,17 @@
+pkgbase = wabt
+	pkgver = 1.0
+	pkgrel = 0
+	url = https://github.com/WebAssembly/wabt
+	arch = x86_64
+	license = APACHE
+	makedepends = cmake
+	makedepends = git
+	makedepends = gcc
+	makedepends = clang
+	source = git+https://github.com/WebAssembly/wabt
+	md5sums = SKIP
+
+pkgname = wabt
+	pkgdesc = The WebAssembly Binary Toolkit is a suite of tools for WebAssembly
+	provides = wabt
+

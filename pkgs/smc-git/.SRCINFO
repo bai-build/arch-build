@@ -1,0 +1,27 @@
+pkgbase = smc-git
+	pkgdesc = Secret Maryo Chronicles (development version)
+	pkgver = 210.a0405c9
+	pkgrel = 1
+	url = http://www.secretmaryo.org
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = boost
+	makedepends = git
+	depends = sdl_image
+	depends = sdl_ttf
+	depends = sdl_mixer
+	depends = cegui-0.7
+	depends = boost-libs
+	depends = libgl
+	provides = smc
+	conflicts = smc
+	source = smc::git+https://github.com/FluXy/SMC.git
+	source = smc.desktop
+	source = smc-get-to-world2.patch
+	sha256sums = SKIP
+	sha256sums = 291fca2243262c24cf086bec60ae77fd53f58bc42e876b224d58e96a5a35d79a
+	sha256sums = 04d2b8850005fea4cf8a66be48f2f3ffc3848851dabdc8d2294b6e65e021bca0
+
+pkgname = smc-git
+

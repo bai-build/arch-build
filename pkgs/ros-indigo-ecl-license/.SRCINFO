@@ -1,0 +1,15 @@
+pkgbase = ros-indigo-ecl-license
+	pkgdesc = ROS - Maintains the ecl licenses and also provides an install target for deploying licenses with the ecl libraries.
+	pkgver = 0.61.18
+	pkgrel = 1
+	url = http://wiki.ros.org/ecl_license
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-indigo-catkin
+	source = ros-indigo-ecl-license-0.61.18-0.tar.gz::https://github.com/yujinrobot-release/ecl_tools-release/archive/release/indigo/ecl_license/0.61.18-0.tar.gz
+	sha256sums = ceb9b597b202f52db9e376df1866ee405b49f8cc41279c1b3163a33a10403a40
+
+pkgname = ros-indigo-ecl-license
+

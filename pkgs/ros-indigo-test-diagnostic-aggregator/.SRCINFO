@@ -1,0 +1,26 @@
+pkgbase = ros-indigo-test-diagnostic-aggregator
+	pkgdesc = ROS - Basic diagnostic_aggregator tests are in the.
+	pkgver = 1.9.3
+	pkgrel = 1
+	url = http://ros.org/wiki/test_diagnostic_aggregator
+	arch = any
+	license = BSD
+	makedepends = cmake
+	makedepends = ros-build-tools
+	makedepends = ros-indigo-diagnostic-aggregator
+	makedepends = ros-indigo-roscpp
+	makedepends = ros-indigo-rostest
+	makedepends = ros-indigo-rospy
+	makedepends = ros-indigo-diagnostic-msgs
+	makedepends = ros-indigo-catkin
+	makedepends = ros-indigo-pluginlib
+	depends = ros-indigo-diagnostic-aggregator
+	depends = ros-indigo-roscpp
+	depends = ros-indigo-pluginlib
+	depends = ros-indigo-diagnostic-msgs
+	depends = ros-indigo-rospy
+	source = ros-indigo-test-diagnostic-aggregator-1.9.3-0.tar.gz::https://github.com/ros-gbp/diagnostics-release/archive/release/indigo/test_diagnostic_aggregator/1.9.3-0.tar.gz
+	sha256sums = e134ff4c174c1c91e6349104b2c4a6c28eca21e921f1bcbae90734f95ef7701e
+
+pkgname = ros-indigo-test-diagnostic-aggregator
+

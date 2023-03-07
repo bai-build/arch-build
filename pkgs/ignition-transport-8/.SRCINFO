@@ -1,0 +1,22 @@
+pkgbase = ignition-transport-8
+	pkgdesc = Transport library for component communication based on publication/subscription and service calls.
+	pkgver = 8.4.0
+	pkgrel = 1
+	url = https://gazebosim.org/libs/transport
+	arch = i686
+	arch = x86_64
+	groups = development
+	license = Apache
+	makedepends = ignition-cmake=2
+	makedepends = util-linux
+	depends = protobuf
+	depends = protobuf-c
+	depends = zeromq
+	depends = ignition-msgs=5
+	depends = ignition-tools
+	depends = libutil-linux
+	provides = ignition-transport=8
+	source = https://github.com/gazebosim/gz-transport/archive/ignition-transport8_8.4.0.tar.gz
+	sha256sums = 65472a874bbb0f6bb686b3c0cce4146fb650e750f8f795a159523ecbe731c1c7
+
+pkgname = ignition-transport-8

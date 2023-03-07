@@ -1,0 +1,5 @@
+/fix-crash.patch
+pkg/
+src/
+*.tar.*
+*.zip

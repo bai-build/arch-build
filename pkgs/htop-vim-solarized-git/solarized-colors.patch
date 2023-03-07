@@ -1,0 +1,11 @@
+--- a/CRT.c
++++ b/CRT.c
+@@ -732,5 +732,8 @@ void CRT_setColors(int colorScheme) {
+                      : 0;
+    init_pair(ColorIndexGrayBlack, grayBlackFg, grayBlackBg);
+ 
++   if (colorScheme == COLORSCHEME_DEFAULT) {
++        colorScheme = COLORSCHEME_BROKENGRAY;
++   }
+    CRT_colors = CRT_colorSchemes[colorScheme];
+ }

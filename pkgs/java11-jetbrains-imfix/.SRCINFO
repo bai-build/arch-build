@@ -1,0 +1,104 @@
+pkgbase = java11-jetbrains-imfix
+	pkgver = 11.0.14.1.b2043.45
+	pkgrel = 1
+	url = https://confluence.jetbrains.com/display/JBR/JetBrains+Runtime
+	arch = x86_64
+	license = custom
+	makedepends = java-environment>=11
+	makedepends = java-environment<12
+	makedepends = cpio
+	makedepends = unzip
+	makedepends = zip
+	makedepends = libelf
+	makedepends = libcups
+	makedepends = libx11
+	makedepends = libxrender
+	makedepends = libxtst
+	makedepends = libxt
+	makedepends = libxext
+	makedepends = libxrandr
+	makedepends = alsa-lib
+	makedepends = pandoc
+	makedepends = graphviz
+	makedepends = freetype2
+	makedepends = libjpeg-turbo
+	makedepends = giflib
+	makedepends = libpng
+	makedepends = lcms2
+	makedepends = libnet
+	makedepends = bash
+	makedepends = harfbuzz
+	makedepends = glibc
+	makedepends = gcc-libs
+	makedepends = jcef-jetbrains
+	makedepends = git
+	options = !lto
+	source = git+https://github.com/JetBrains/JetBrainsRuntime.git#tag=jb11_0_14_1-b2043.45
+	source = idea.patch
+	source = freedesktop-java.desktop
+	source = freedesktop-jconsole.desktop
+	source = freedesktop-jshell.desktop
+	sha256sums = SKIP
+	sha256sums = d895f224a2130a677e52e176dc740186d40a6b2b5fc100c1d09f0413d9115ae7
+	sha256sums = 915bd0722e897fd811bb0d77829528017ecdfd703880454bc690018ee54e44b6
+	sha256sums = 3f072ef4d1f59e1188d4b36ff83378c67b9f77db532b4f5cbaeb57cd37620f07
+	sha256sums = c0c01fcc02dc18ed96ef697b3bedce0e8336b212cb1fcee90b2129987f4ae8ec
+
+pkgname = jre11-jetbrains-imfix
+	pkgdesc = JetBrains Java 11 full runtime environment (With patch that allows the IME window follow the cursor)
+	install = install_jre-jetbrains.sh
+	depends = java-runtime-common>=3
+	depends = ca-certificates-utils
+	depends = nss
+	depends = libjpeg-turbo
+	depends = libjpeg.so
+	depends = lcms2
+	depends = liblcms2.so
+	depends = libnet
+	depends = freetype2
+	depends = libfreetype.so
+	depends = harfbuzz
+	depends = libharfbuzz.so
+	depends = glibc
+	depends = gcc-libs
+	depends = giflib
+	depends = libgif.so
+	depends = libpng
+	depends = jcef-jetbrains
+	optdepends = java-rhino: for some JavaScript support
+	optdepends = alsa-lib: for basic sound support
+	optdepends = gtk2: for the Gtk+ 2 look and feel - desktop usage
+	optdepends = gtk3: for the Gtk+ 3 look and feel - desktop usage
+	provides = java-runtime=11
+	provides = java-runtime-headless=11
+	provides = java-runtime-jetbrains=11
+	provides = jre11-jetbrains=11.0.14.1.b2043.45-1
+	conflicts = jre11-jetbrains
+	backup = etc/java11-jetbrains/logging.propertopenjdkies
+	backup = etc/java11-jetbrains/management/jmxremote.access
+	backup = etc/java11-jetbrains/management/jmxremote.password.template
+	backup = etc/java11-jetbrains/management/management.properties
+	backup = etc/java11-jetbrains/net.properties
+	backup = etc/java11-jetbrains/security/java.policy
+	backup = etc/java11-jetbrains/security/java.security
+	backup = etc/java11-jetbrains/security/policy/README.txt
+	backup = etc/java11-jetbrains/security/policy/limited/default_US_export.policy
+	backup = etc/java11-jetbrains/security/policy/limited/default_local.policy
+	backup = etc/java11-jetbrains/security/policy/limited/exempt_local.policy
+	backup = etc/java11-jetbrains/security/policy/unlimited/default_US_export.policy
+	backup = etc/java11-jetbrains/security/policy/unlimited/default_local.policy
+	backup = etc/java11-jetbrains/sound.properties
+
+pkgname = jdk11-jetbrains-imfix
+	pkgdesc = JetBrains Java 11 development kit (With patch that allows allow the IME window follow the cursor)
+	install = install_jdk-jetbrains.sh
+	depends = jre11-jetbrains=11.0.14.1.b2043.45-1
+	depends = java-environment-common=3
+	depends = hicolor-icon-theme
+	depends = libelf
+	depends = glibc
+	depends = gcc-libs
+	provides = java-environment=11
+	provides = java-environment-jetbrains=11
+	provides = jdk11-jetbrains=11.0.14.1.b2043.45-1
+	conflicts = jdk11-jetbrains

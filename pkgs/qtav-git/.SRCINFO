@@ -1,0 +1,25 @@
+pkgbase = qtav-git
+	pkgdesc = A cross-platform multimedia playback framework based on Qt and FFmpeg
+	pkgver = v1.13.0.r10.gb12a99e9
+	pkgrel = 1
+	url = http://www.qtav.org/
+	arch = x86_64
+	license = LGPL
+	makedepends = git
+	makedepends = cmake
+	makedepends = make
+	depends = qt5-declarative
+	depends = ffmpeg
+	depends = libxv
+	depends = openal
+	depends = uchardet
+	depends = desktop-file-utils
+	depends = qt5-quickcontrols
+	depends = qt5-svg
+	provides = qtav
+	conflicts = qtav
+	source = git+https://github.com/wang-bin/QtAV.git
+	sha512sums = SKIP
+
+pkgname = qtav-git
+

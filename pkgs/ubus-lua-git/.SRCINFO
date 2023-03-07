@@ -1,0 +1,30 @@
+pkgbase = ubus-lua-git
+	pkgdesc = An embedded bus system developed for OpenWrt. It is like dbus but simple and small.
+	pkgver = r257.053be7d
+	pkgrel = 1
+	url = http://git.openwrt.org/?p=project/ubus.git;a=summary
+	arch = i686
+	arch = x86_64
+	arch = armv7h
+	license = LGPLv2.1
+	makedepends = git
+	makedepends = cmake
+	makedepends = gcc
+	makedepends = make
+	makedepends = patch
+	makedepends = pkg-config
+	depends = libubox-lua-git
+	depends = json-c
+	depends = lua51
+	provides = ubus
+	conflicts = ubus
+	conflicts = ubus-git
+	source = git://git.openwrt.org/project/ubus.git
+	source = 001-lua-version.patch
+	source = 002-ubusd-location.patch
+	md5sums = SKIP
+	md5sums = SKIP
+	md5sums = SKIP
+
+pkgname = ubus-lua-git
+

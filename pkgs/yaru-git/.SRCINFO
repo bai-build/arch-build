@@ -1,0 +1,73 @@
+pkgbase = yaru-git
+	pkgdesc = Yaru default ubuntu theme
+	pkgver = 21.10.1.r50.g670a52f26
+	pkgrel = 1
+	epoch = 1
+	url = https://github.com/ubuntu/yaru
+	arch = any
+	license = GPL3
+	makedepends = meson
+	makedepends = sassc
+	makedepends = git
+	options = !strip
+	options = !buildflags
+	options = staticlibs
+	source = git+https://github.com/ubuntu/yaru
+	sha256sums = SKIP
+
+pkgname = yaru-sound-theme-git
+	pkgdesc = Yaru default ubuntu sound theme
+	provides = yaru-sound-theme
+	conflicts = yaru-sound-theme
+
+pkgname = yaru-gtk-theme-git
+	pkgdesc = Yaru default ubuntu gtk theme
+	depends = gtk3
+	depends = gdk-pixbuf2
+	depends = gtk-engine-murrine
+	depends = gnome-themes-extra
+	provides = yaru-gtk-theme
+	conflicts = yaru-gtk-theme
+
+pkgname = yaru-gtksourceview-theme-git
+	pkgdesc = Yaru default ubuntu gtksourceview theme
+	provides = yaru-gtksourceview-theme
+	conflicts = yaru-gtksourceview-theme
+
+pkgname = yaru-gnome-shell-theme-git
+	pkgdesc = Yaru default ubuntu gnome shell theme
+	depends = gnome-shell
+	provides = yaru-gnome-shell-theme
+	conflicts = yaru-gnome-shell-theme
+
+pkgname = yaru-xfwm4-theme-git
+	pkgdesc = Yaru default ubuntu xfwm4 theme
+	provides = yaru-xfwm4-theme
+	conflicts = yaru-xfwm4-theme
+
+pkgname = yaru-unity-theme-git
+	pkgdesc = Yaru default ubuntu unity theme
+	provides = yaru-unity-theme
+	conflicts = yaru-unity-theme
+
+pkgname = yaru-metacity-theme-git
+	pkgdesc = Yaru default ubuntu metacity theme
+	depends = metacity
+	provides = yaru-metacity-theme
+	conflicts = yaru-metacity-theme
+
+pkgname = yaru-icon-theme-git
+	pkgdesc = Yaru default ubuntu icon theme
+	depends = hicolor-icon-theme
+	depends = gtk-update-icon-cache
+	depends = librsvg
+	depends = humanity-icon-theme
+	provides = yaru-icon-theme
+	conflicts = yaru-icon-theme
+
+pkgname = yaru-session-git
+	pkgdesc = Yaru session
+	depends = gnome-shell
+	depends = yaru-gnome-shell-theme
+	provides = yaru-session
+	conflicts = yaru-session

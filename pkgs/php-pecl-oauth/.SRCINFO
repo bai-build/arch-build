@@ -1,0 +1,17 @@
+pkgbase = php-pecl-oauth
+	pkgdesc = PHP oauth consumer/provider extension
+	pkgver = 2.0.2
+	pkgrel = 1
+	url = http://pecl.php.net/package/oauth
+	install = php-pecl-oauth.install
+	arch = i686
+	arch = x86_64
+	license = BSD
+	depends = php>=7
+	depends = php-pear>=1:1.4.0b1
+	backup = etc/php/conf.d/oauth.ini
+	source = http://pecl.php.net/get/oauth-2.0.2.tgz
+	md5sums = 2f133a53b0949544ed5cfe9b668ce55a
+
+pkgname = php-pecl-oauth
+

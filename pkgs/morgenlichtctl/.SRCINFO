@@ -1,0 +1,22 @@
+pkgbase = morgenlichtctl
+	pkgdesc = A simple client for morgenlichtd, written in C.
+	pkgver = 1.2
+	pkgrel = 1
+	url = http://bennett.piater.name/morgenlichtctl
+	arch = x86_64
+	arch = x86
+	arch = arm
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	license = GPL3
+	depends = argtable
+	depends = pandoc
+	source = https://github.com/clawoflight/morgenlichtctl/releases/download/v1.2/morgenlichtctl-1.2.tar.gz
+	source = https://github.com/clawoflight/morgenlichtctl/releases/download/v1.2/morgenlichtctl-1.2.tar.gz.sig
+	validpgpkeys = 871F10477DB3DDED5FC447B226C7E577EF967808
+	sha512sums = 947d7782f73180bb6139e547c4b181c734f6d49e7b2757af1cc71bbb55421e786d8f2e69d2abb010ca519bcc91f5c03148f51f106718877bead7733e43242b68
+	sha512sums = SKIP
+
+pkgname = morgenlichtctl
+

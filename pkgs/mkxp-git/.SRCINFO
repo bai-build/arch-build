@@ -1,0 +1,37 @@
+pkgbase = mkxp-git
+	pkgdesc = Open source implementation of the Ruby Game Scripting System of RPG Maker XP/VX/VX Ace (development version)
+	pkgver = r822.9dc4291
+	pkgrel = 1
+	url = https://github.com/Ancurio/mkxp
+	install = mkxp.install
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = git
+	makedepends = boost
+	makedepends = cmake
+	makedepends = mesa
+	makedepends = vim
+	makedepends = ninja
+	depends = ruby2.6
+	depends = physfs
+	depends = sdl2_image
+	depends = sdl2_ttf
+	depends = pixman
+	depends = openal
+	depends = boost-libs
+	depends = libgl
+	depends = libsigc++
+	depends = fluidsynth
+	depends = libmodplug
+	depends = libvorbis
+	depends = flac
+	provides = mkxp
+	conflicts = mkxp
+	source = git+https://github.com/Ancurio/mkxp.git
+	source = git+https://github.com/Ancurio/SDL_sound.git
+	md5sums = SKIP
+	md5sums = SKIP
+
+pkgname = mkxp-git
+

@@ -1,0 +1,50 @@
+pkgbase = vdev-git
+	pkgdesc = A virtual device manager for *nix
+	pkgver = r683.9f910cf
+	pkgrel = 8
+	url = https://github.com/jcnelson/vdev.git
+	arch = x86_64
+	arch = i686
+	license = custom:ISC
+	makedepends = libpstat
+	makedepends = fskit
+	makedepends = squashfs-tools
+	makedepends = dash
+	source = vdev-git::git+https://github.com/jcnelson/vdev.git
+	source = vdev_install
+	source = vdev_hook
+	sha1sums = SKIP
+	sha1sums = 91445e5acb0749a689c6da940f867613a8db1396
+	sha1sums = 2bbd2b40a9cd87f3a74fdb51565cbab63b0fc887
+
+pkgname = vdev-git
+	depends = util-linux
+	depends = kmod
+	depends = iproute2
+	depends = sed
+	depends = grep
+	depends = makedev
+	depends = dash
+	optdepends = lvm2
+	optdepends = device-mapper
+	provides = vdev
+	provides = udev
+	conflicts = vdev
+	backup = 
+	backup = etc/vdev/actions/*.act
+	backup = etc/vdev/*.conf
+
+pkgname = vdevfs-git
+	depends = libpstat
+	depends = fskit
+	depends = fuse
+	depends = libstdc++5
+	provides = vdevfs
+	conflicts = vdevfs
+
+pkgname = vdev-libudev-compat-git
+	provides = libudev
+	provides = libudev.so
+	conflicts = libudev
+	conflicts = libudev.so
+

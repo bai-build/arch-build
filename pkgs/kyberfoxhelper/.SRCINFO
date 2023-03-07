@@ -1,0 +1,21 @@
+pkgbase = kyberfoxhelper
+	pkgdesc = Cyberfox KDE Plasma Integration
+	pkgver = 5.0.1.2
+	pkgrel = 1
+	url = https://github.com/hawkeye116477/kyberfoxhelper
+	arch = x86_64
+	license = MIT
+	makedepends = cmake
+	makedepends = extra-cmake-modules
+	makedepends = python
+	depends = ki18n
+	depends = kio
+	depends = knotifications
+	depends = kwindowsystem
+	options = !emptydirs
+	options = !strip
+	source = kyberfoxhelper-5.0.1.2.tar.gz::https://github.com/hawkeye116477/kyberfoxhelper/archive/v5.0.1.2.tar.gz
+	sha256sums = ebc81124f1aacc173f7f0ab82a1a5ff30bea17d5cec7b745eae93cc3871031c7
+
+pkgname = kyberfoxhelper
+

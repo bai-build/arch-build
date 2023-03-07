@@ -1,0 +1,22 @@
+pkgbase = ocropy-git
+	pkgdesc = Python-based OCR package using recurrent neural networks (formerly ocropus)
+	pkgver = 998.fe78a04
+	pkgrel = 1
+	url = https://github.com/ocropus/ocropy
+	arch = any
+	license = APACHE
+	makedepends = git
+	depends = python2-pillow
+	depends = python2-scipy
+	depends = python2-matplotlib
+	depends = imagemagick
+	depends = opencv
+	depends = python2-lxml
+	provides = ocropy
+	conflicts = ocropy
+	source = git+https://github.com/ocropus/ocropy.git
+	source = https://github.com/zuphilip/ocropy-models/raw/master/en-default.pyrnn.gz
+	sha256sums = SKIP
+	sha256sums = b749ec701a53915183963c3814a288de7da5a38261bd9008e0ae0674c71cd1f7
+
+pkgname = ocropy-git

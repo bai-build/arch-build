@@ -1,0 +1,25 @@
+pkgbase = sweeper-frameworks-git
+	pkgdesc = System Cleaner
+	pkgver = r487.4ab73f4
+	pkgrel = 1
+	url = https://kde.org/applications/utilities/sweeper
+	arch = i686
+	arch = x86_64
+	groups = kde-applications
+	groups = kde-utilities
+	license = GPL
+	license = LGPL
+	license = FDL
+	makedepends = extra-cmake-modules
+	makedepends = kdoctools
+	depends = kactivities-stats
+	depends = kio
+	provides = sweeper
+	conflicts = kdeutils-sweeper
+	conflicts = sweeper
+	replaces = kdeutils-sweeper
+	source = git+https://github.com/KDE/sweeper.git
+	sha256sums = SKIP
+
+pkgname = sweeper-frameworks-git
+

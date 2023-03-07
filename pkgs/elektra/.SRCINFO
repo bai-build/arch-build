@@ -1,0 +1,34 @@
+pkgbase = elektra
+	pkgdesc = A universal hierarchical configuration store
+	pkgver = 0.9.3
+	pkgrel = 1
+	url = https://www.libelektra.org
+	arch = i686
+	arch = x86_64
+	license = custom:BSD
+	makedepends = docbook-xsl
+	makedepends = cmake
+	makedepends = doxygen
+	makedepends = git
+	depends = yajl
+	depends = qt5-base
+	depends = python
+	depends = curl
+	depends = boost
+	depends = swig
+	depends = libuv
+	depends = libgit2
+	depends = libev
+	depends = zeromq
+	depends = discount
+	depends = qt5-quickcontrols
+	depends = hicolor-icon-theme
+	optdepends = ruby: for ruby bindings
+	optdepends = python2: for python2-bindings
+	optdepends = xerces-c: for python2-bindings
+	optdepends = lua: for lua bindings
+	source = elektra-0.9.3.tar.gz::https://github.com/ElektraInitiative/libelektra/archive/0.9.3.tar.gz
+	sha256sums = b54e17cdf0065e7c2682f7c72fadb144ca54c137ddef1f078d60cf8e8542008a
+
+pkgname = elektra
+

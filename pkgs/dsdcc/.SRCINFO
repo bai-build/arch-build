@@ -1,0 +1,20 @@
+pkgbase = dsdcc
+	pkgdesc = Digital Speech Decoder (DSD) rewritten as a C++ library
+	pkgver = 1.8.3
+	pkgrel = 1
+	url = https://github.com/f4exb/dsdcc
+	arch = x86_64
+	arch = i686
+	arch = arm
+	arch = armv6h
+	arch = armv7h
+	arch = aarch64
+	license = GPL3
+	makedepends = cmake
+	depends = mbelib
+	depends = serialdv
+	source = dsdcc-1.8.3.tar.gz::https://github.com/f4exb/dsdcc/archive/v1.8.3.tar.gz
+	sha256sums = 0c865969948c5c9dd80900cb0656605d603a2ab688f98d6641bb3a6d97b592ed
+
+pkgname = dsdcc
+

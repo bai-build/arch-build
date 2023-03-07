@@ -1,0 +1,17 @@
+pkgbase = zx-git
+	pkgdesc = i3 scratchpad manager
+	pkgver = r23.1457726512.fa04baf
+	pkgrel = 1
+	url = https://github.com/mstg/zx
+	arch = any
+	license = MIT
+	makedepends = libxcb
+	depends = glib2
+	depends = i3ipc-glib-git
+	depends = pango
+	depends = cairo
+	source = zx::git+https://github.com/mstg/zx.git
+	sha512sums = SKIP
+
+pkgname = zx-git
+

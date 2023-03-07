@@ -1,0 +1,11 @@
+[Unit]
+Description=SWATd Daemon
+
+[Service]
+Type=forking
+PIDFile=/run/swatd.pid
+ExecStart=/usr/bin/swatd -p /run/swatd.pid
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target

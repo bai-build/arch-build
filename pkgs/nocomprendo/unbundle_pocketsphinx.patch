@@ -1,0 +1,58 @@
+diff --git a/app_version.h b/app_version.h
+index d2da9c9..86dc0aa 100644
+--- a/app_version.h
++++ b/app_version.h
+@@ -38,7 +38,7 @@
+ #define APP_SITE        "http://be.root.free.fr/"
+ #define APP_MAIL        "be.root@free.fr"
+ #define APP_LOCKFILE    "nocomprendo.lock"
+-#define POCKET_PATH     "/usr/share/nocomprendo/pocketsphinx/"
++#define POCKET_PATH     "/usr/share/pocketsphinx/"
+ 
+ // Don't edit. Defines updated by "make version" from .pro variables.
+ #define APP_MAJOR     1
+diff --git a/nocomprendo.pro b/nocomprendo.pro
+index 0b43c3b..2775e45 100644
+--- a/nocomprendo.pro
++++ b/nocomprendo.pro
+@@ -28,10 +28,10 @@ DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # Disables all the APIs depr
+ 
+ INCLUDEPATH +=  \
+     $$BASEDIR/include \
+-    $$BASEDIR/include/sphinxbase \
+-    $$BASEDIR/include/pocketsphinx
++    /usr/include/sphinxbase \
++    /usr/include/pocketsphinx
+ 
+-LIBS +=  $$PWD/libpocketsphinx.a $$PWD/libsphinxbase.a $$PWD/libsphinxad.a
++LIBS +=  -lpocketsphinx -lsphinxbase -lsphinxad
+ LIBS += -lpulse -lpulse-simple -lm -lutil -lxdo
+ 
+ use_espeak {
+@@ -39,7 +39,7 @@ use_espeak {
+     LIBS +=  -lespeak -lpthread
+ }
+ 
+-PRE_TARGETDEPS += libpocketsphinx.a libsphinxbase.a
++#PRE_TARGETDEPS += libpocketsphinx.a libsphinxbase.a
+ 
+ SOURCES   += \
+     aboutdialog.cpp \
+@@ -136,7 +136,7 @@ target.path     = /usr/bin                  # Application installation dir
+ APP_PATH        = /usr/share/$${TARGET}
+ USER_PATH       = $(HOME)/.config/$${TARGET}
+ 
+-POCKET_PATH     = $${APP_PATH}/pocketsphinx
++POCKET_PATH     = /usr/share/pocketsphinx/
+ ACOUSTIC_DIR    = pocketsphinx
+ 
+ tools.path      = $${APP_PATH}
+@@ -160,7 +160,7 @@ INSTALLS += tools pocket userdata target icons desktop
+ 
+ # More make targets
+ include(more-make-targets.pri)              # Additional targets : version, translation, files, count
+-include(psphinx-make-targets.pri)           # PocketSphinx additional targets for static libraries. Build from sources.
++#include(psphinx-make-targets.pri)           # PocketSphinx additional targets for static libraries. Build from sources.
+ QMAKE_EXTRA_TARGETS += help                 # Each .pri file add help lines. Register help target when finished now.
+ 
+ ### References ###

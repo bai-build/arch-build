@@ -1,0 +1,25 @@
+pkgbase = kclock
+	pkgdesc = Convergent clock application for Plasma
+	pkgver = 23.01.0
+	pkgrel = 1
+	url = https://invent.kde.org/plasma-mobile/kclock
+	arch = x86_64
+	arch = aarch64
+	license = GPL2
+	makedepends = extra-cmake-modules
+	depends = kconfig
+	depends = ki18n
+	depends = kcoreaddons
+	depends = plasma-framework
+	depends = kirigami2
+	depends = knotifications
+	depends = kdbusaddons
+	depends = kirigami-addons
+	depends = hicolor-icon-theme
+	provides = kclockd
+	conflicts = kclock
+	conflicts = kclockd
+	source = https://invent.kde.org/plasma-mobile/kclock/-/archive/v23.01.0/kclock-v23.01.0.tar.gz
+	sha256sums = 49e65e179f0ee441b9cae9adeb706eea3b5fb39d5751c8ad6ab659524327738c
+
+pkgname = kclock

@@ -1,0 +1,32 @@
+pkgbase = pcp
+	pkgdesc = System performance and analysis framework
+	pkgver = 4.3.1
+	pkgrel = 1
+	url = http://pcp.io
+	install = pcp.install
+	arch = i686
+	arch = x86_64
+	arch = armv6h
+	arch = armv7h
+	license = LGPL
+	makedepends = libmicrohttpd
+	makedepends = cairo
+	makedepends = qt5-svg
+	depends = python
+	depends = avahi
+	depends = systemtap
+	depends = procps-ng
+	optdepends = libmicrohttpd: support for pmwebd
+	optdepends = cairo: support for pmwebd
+	optdepends = qt5-svg: support for PCP-GUI and pmchart
+	optdepends = perl-xml-tokeparser: support for sar2pcp
+	optdepends = perl-date-parse: support for sar2pcp
+	source = https://dl.bintray.com/pcp/source/pcp-4.3.1.src.tar.gz
+	source = pcp.install
+	source = pcp.tmpfiles
+	sha256sums = 415aff396c55eb88ce2f49b3ba4fb576aaa486f72042ddb8a88608bbfb8c686d
+	sha256sums = 590d816edc87dd03e3700d7637f57ca81d24d63802f32f772709e0c33a4ca0b5
+	sha256sums = 48ce114e95ab640bfe6c6c9608c96c22a75b65ccb38dfa89bfa2b12621845f20
+
+pkgname = pcp
+

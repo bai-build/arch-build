@@ -1,0 +1,22 @@
+pkgbase = s2png-git
+	pkgdesc = stuff to PNG
+	pkgver = v0.10.0.r000
+	pkgrel = 2
+	url = https://github.com/dbohdan/s2png
+	arch = any
+	license = GPLv2
+	makedepends = cargo
+	makedepends = rust
+	makedepends = rustfmt
+	makedepends = coreutils
+	makedepends = gcc
+	makedepends = binutils
+	depends = gd
+	provides = s2png
+	provides = s2png-git
+	conflicts = s2png
+	conflicts = s2png-git
+	source = git+https://github.com/dbohdan/s2png
+	sha256sums = SKIP
+
+pkgname = s2png-git

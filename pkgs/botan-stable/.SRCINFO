@@ -1,0 +1,22 @@
+pkgbase = botan-stable
+	pkgdesc = Crypto library written in C++
+	pkgver = 1.10.13
+	pkgrel = 1
+	url = http://botan.randombit.net/
+	arch = x86_64
+	arch = i686
+	license = BSD
+	makedepends = python2
+	makedepends = asio
+	makedepends = git
+	depends = gcc-libs
+	depends = sh
+	depends = asio
+	provides = botan-stable
+	source = https://botan.randombit.net/releases/Botan-1.10.13.tgz
+	source = https://botan.randombit.net/releases/Botan-1.10.13.tgz.asc
+	sha256sums = 23ec973d4b4a4fe04f490d409e08ac5638afe3aa09acd7f520daaff38ba19b90
+	sha256sums = 957e690cc1d17538c5315ea793723714a1b64b2f2563d4df5aaa9e161fa4190e
+
+pkgname = botan-stable
+

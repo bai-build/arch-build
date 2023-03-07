@@ -1,0 +1,45 @@
+pkgbase = libdbusmenu-ubuntu
+	pkgdesc = A small little library that was created by pulling out some common code out of indicator-applet
+	pkgver = 16.04.1.18.04.20171206
+	pkgrel = 1
+	url = https://launchpad.net/dbusmenu
+	arch = i686
+	arch = x86_64
+	groups = unity
+	license = LGPL
+	makedepends = gobject-introspection
+	makedepends = gtk-doc
+	makedepends = gtk2-ubuntu
+	makedepends = gtk3-ubuntu
+	makedepends = intltool
+	makedepends = json-glib
+	makedepends = python2
+	makedepends = vala
+	makedepends = valgrind
+	source = https://launchpad.net/ubuntu/+archive/primary/+files/libdbusmenu_16.04.1+18.04.20171206.orig.tar.gz
+	source = 0001_autoconf.patch
+	sha512sums = f5fa487c94aada665000436361cf4cfd40747662b855a2f06bdeb65b555483d6e0ab8395c2943f86add03c8ae5b93a942f7cd8ea44e67c1a89f73f57bbabd0d4
+	sha512sums = 303eae41659c29a78bd1f24aa7a01b35987049f6213d23fc6ecd5a7e72109d277fd6d443414750274f1fc75cee567285ca8d9d49887e6ab19e36565630fdf08b
+
+pkgname = libdbusmenu-glib-ubuntu
+	depends = json-glib
+	provides = libdbusmenu-glib
+	conflicts = libdbusmenu-glib
+	replaces = libdbusmenu-glib
+
+pkgname = libdbusmenu-gtk2-ubuntu
+	pkgdesc = A small little library that was created by pulling out some common code out of indicator-applet (GTK+ 2 library)
+	depends = gtk2-ubuntu
+	depends = libdbusmenu-glib-ubuntu
+	provides = libdbusmenu-gtk2
+	conflicts = libdbusmenu-gtk2
+	replaces = libdbusmenu-gtk2
+
+pkgname = libdbusmenu-gtk3-ubuntu
+	pkgdesc = A small little library that was created by pulling out some common code out of indicator-applet (GTK+ 3 library)
+	depends = gtk3-ubuntu
+	depends = libdbusmenu-glib-ubuntu
+	provides = libdbusmenu-gtk3
+	conflicts = libdbusmenu-gtk3
+	replaces = libdbusmenu-gtk3
+

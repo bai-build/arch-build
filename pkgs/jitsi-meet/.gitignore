@@ -1,0 +1,4 @@
+jitsi-meet/
+src/
+pkg/
+*.pkg.tar.*

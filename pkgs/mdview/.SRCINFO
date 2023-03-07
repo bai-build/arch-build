@@ -1,0 +1,13 @@
+pkgbase = mdview
+	pkgdesc = Markdown View
+	pkgver = 1.4.1
+	pkgrel = 3
+	url = https://github.com/mapitman/mdview
+	arch = x86_64
+	license = MIT
+	makedepends = go
+	provides = mdview
+	source = https://github.com/mapitman/mdview/archive/1.4.1.tar.gz
+	sha256sums = 0d3014c9aaf181b745865bcf064aa737bc42d765e186610f586dfd44a878cfad
+
+pkgname = mdview

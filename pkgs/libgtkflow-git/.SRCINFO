@@ -1,0 +1,20 @@
+pkgbase = libgtkflow-git
+	pkgdesc = Flowgraphs for Gtk+3
+	pkgver = r497.c276040
+	pkgrel = 1
+	url = https://notabug.org/grindhold/libgtkflow
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	makedepends = meson
+	makedepends = vala
+	makedepends = valadoc
+	makedepends = gobject-introspection
+	depends = gtk3
+	optdepends = python-gobject: usage from python
+	optdepends = lua-lgi: usage from lua
+	source = git+https://notabug.org/grindhold/libgtkflow.git
+	md5sums = SKIP
+
+pkgname = libgtkflow-git

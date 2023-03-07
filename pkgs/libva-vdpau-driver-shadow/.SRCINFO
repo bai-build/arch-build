@@ -1,0 +1,19 @@
+pkgbase = libva-vdpau-driver-shadow
+	pkgdesc = VDPAU backend for VA API. (special version for shadow-beta)
+	pkgver = 0.7.4b
+	pkgrel = 1
+	url = http://freedesktop.org/wiki/Software/vaapi
+	arch = x86_64
+	license = GPL
+	makedepends = mesa
+	depends = libva
+	depends = libvdpau
+	depends = libgl
+	provides = libva-vdpau-driver
+	conflicts = libva-vdpau-driver
+	replaces = vdpau-video
+	source = https://github.com/arekinath/libva-vdpau-driver/releases/download/v0.7.4b/libva-vdpau-driver-0.7.4b.tar.bz2
+	sha256sums = 290950b118689b6797f5ede418569f96317b88d6b9d077755b92c237c9182451
+
+pkgname = libva-vdpau-driver-shadow
+

@@ -1,0 +1,4 @@
+src/*
+linux-*
+patch-*
+*.pkg.tar.xz

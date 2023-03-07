@@ -1,0 +1,28 @@
+pkgbase = visual-sfm
+	pkgdesc = A Visual Structure from Motion System; create 3d models from photos.
+	pkgver = 0.5.26
+	pkgrel = 5
+	url = http://ccwu.me/vsfm/
+	arch = x86_64
+	license = custom:visual-sfm
+	makedepends = gcc5
+	makedepends = cuda
+	depends = lapack
+	depends = blas
+	depends = f2c
+	depends = gtk2
+	depends = glu
+	depends = cmvs-pmvs-git
+	depends = siftgpu
+	optdepends = opencl-nvidia: nvidia gpu support
+	optdepends = opencl-mesa: amd gpu support (mesa)
+	optdepends = opencl-catalyst: amd gpu support (catalyst)
+	source = http://ccwu.me/vsfm/download/VisualSFM_linux_64bit.zip
+	source = visual-sfm.desktop
+	source = http://grail.cs.washington.edu/projects/mcba/pba_v1.0.5.zip
+	md5sums = 25fcca5e320a9e97131e87abdf3b7f61
+	md5sums = c063c0236d8649b2281b334ecde73784
+	md5sums = 672f5cd6c1b4c08517409809b819c547
+
+pkgname = visual-sfm
+

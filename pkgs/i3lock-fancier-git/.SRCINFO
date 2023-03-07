@@ -1,0 +1,24 @@
+pkgbase = i3lock-fancier-git
+	pkgdesc = i3lock fork that adds keyboard layout indicator
+	pkgver = 84aa35006f1cab8eb15f992c1b68dd41cbaab99b
+	pkgrel = 3
+	url = https://github.com/SuperPrower/i3lock-fancier.git
+	install = i3lock-fancier.install
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = make
+	depends = cairo
+	depends = libev
+	depends = libx11
+	depends = pam
+	depends = xcb-util-image
+	depends = xcb-util-keysyms
+	depends = libxkbcommon-x11
+	provides = i3lock
+	conflicts = i3lock
+	source = git://github.com/SuperPrower/i3lock-fancier.git
+	sha256sums = SKIP
+
+pkgname = i3lock-fancier-git
+

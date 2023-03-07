@@ -1,0 +1,22 @@
+pkgbase = openfoam-com
+	pkgdesc = The open source CFD toolbox (www.openfoam.com)
+	pkgver = v2206
+	pkgrel = 2
+	url = http://www.openfoam.com
+	install = openfoam-com.install
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	depends = gcc
+	depends = cgal
+	depends = fftw
+	depends = boost
+	depends = openmpi
+	depends = paraview
+	depends = utf8cpp
+	depends = scotch
+	depends = parmetis
+	source = https://sourceforge.net/projects/openfoam/files/v2206/OpenFOAM-v2206.tgz
+	md5sums = 6eaf1bb9accdb4bea5b84a72ab11734e
+
+pkgname = openfoam-com

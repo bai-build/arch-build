@@ -1,0 +1,20 @@
+pkgbase = kactivities-stats-git
+	pkgdesc = A library for accessing the usage data collected by the activities system
+	pkgver = 5.240.0_r436.gac74660
+	pkgrel = 1
+	url = https://community.kde.org/Frameworks
+	arch = x86_64
+	groups = kf6-git
+	license = LGPL
+	makedepends = git
+	makedepends = extra-cmake-modules-git
+	makedepends = boost
+	makedepends = doxygen
+	makedepends = qt6-tools
+	depends = kactivities-git
+	provides = kactivities-stats
+	conflicts = kactivities-stats
+	source = git+https://github.com/KDE/kactivities-stats.git
+	sha256sums = SKIP
+
+pkgname = kactivities-stats-git

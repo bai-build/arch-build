@@ -1,0 +1,35 @@
+pkgbase = nemo-ubuntu
+	pkgdesc = Cinnamon file manager (Nautilus fork)
+	pkgver = 2.6.5
+	pkgrel = 1
+	url = https://github.com/linuxmint/nemo
+	install = nemo.install
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = gtk-doc
+	makedepends = gobject-introspection
+	makedepends = intltool
+	makedepends = gnome-common
+	makedepends = python2-gobject
+	makedepends = python2-polib
+	depends = libexif
+	depends = gvfs
+	depends = dconf
+	depends = desktop-file-utils
+	depends = exempi
+	depends = python2
+	depends = gnome-icon-theme
+	depends = libnotify
+	depends = libxml2
+	depends = cinnamon-translations
+	provides = nemo=2.6.5
+	conflicts = nemo
+	options = !emptydirs
+	source = nemo-ubuntu-2.6.5.tar.gz::https://github.com/linuxmint/nemo/tarball/2.6.5
+	source = http://ppa.launchpad.net/webupd8team/nemo/ubuntu/pool/main/n/nemo/nemo_2.6.5-2~webupd8~vivid02.debian.tar.xz
+	sha512sums = d5e6f3e06cb63140498a7b883fdbf6934ac7d9d7493ccde2038281733c28f82c942b5f7709a6bc8a126fedfd980631410f80c4ffd8477303f8a89bca3ce4eb48
+	sha512sums = a516bf1a6ec5fa1598225c6ca0043fc546240ab1d5bd86b928a617764fedfde34e17003e3c1d1abc18a1ade9dbc2ef0ace9f4f58d068154d3beffd1d792ad2f9
+
+pkgname = nemo-ubuntu
+

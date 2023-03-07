@@ -1,0 +1,18 @@
+pkgbase = vbar
+	pkgdesc = another statuts bar
+	pkgver = master
+	pkgrel = 1
+	url = https://github.com/vbextreme/vbar
+	arch = x86_64
+	license = GPLv3
+	makedepends = gperf
+	makedepends = meson
+	conflicts = vbar-i3wm
+	conflicts = vbar-dwm
+	replaces = vbar-i3wm
+	replaces = vbar-dwm
+	source = git+https://github.com/vbextreme/vbar.git
+	sha256sums = SKIP
+
+pkgname = vbextreme-bar-git
+

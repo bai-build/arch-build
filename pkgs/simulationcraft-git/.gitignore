@@ -1,0 +1,7 @@
+*.zip
+*.tar.xz
+simc/
+pkg/
+src/
+*.log*
+diff/

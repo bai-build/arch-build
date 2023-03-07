@@ -1,0 +1,19 @@
+pkgbase = mate-window-applets
+	pkgver = 1.5.1
+	pkgrel = 1
+	url = https://github.com/IKRadulov/mate-window-applets
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = meson
+	makedepends = ninja
+	makedepends = vala
+	depends = gtk3
+	depends = gdk-pixbuf2
+	depends = libwnck3
+	depends = mate-panel
+	source = git+https://github.com/IKRadulov/mate-window-applets
+	sha256sums = SKIP
+
+pkgname = mate-window-applets
+

@@ -1,0 +1,35 @@
+pkgbase = bitcoin-unlimited
+	pkgdesc = Bitcoin Unlimited Cash (BCH) versions of Bitcoind, bitcoin-cli, bitcoin-tx, and bitcoin-qt, w/GUI and wallet
+	pkgver = 1.9.1.1
+	pkgrel = 1
+	url = http://www.bitcoinunlimited.info
+	install = bitcoin-unlimited.install
+	arch = i686
+	arch = x86_64
+	arch = armv7h
+	license = MIT
+	makedepends = boost
+	makedepends = qt5-tools
+	depends = boost-libs
+	depends = desktop-file-utils
+	depends = libevent
+	depends = openssl
+	optdepends = miniupnpc
+	optdepends = db4.8
+	optdepends = qt5-base
+	optdepends = protobuf
+	optdepends = qrencode
+	provides = bitcoin-daemon
+	provides = bitcoin-cli
+	provides = bitcoin-qt
+	provides = bitcoin-tx
+	conflicts = bitcoin-unlimited-git
+	conflicts = bitcoin-daemon
+	conflicts = bitcoin-cli
+	conflicts = bitcoin-qt
+	conflicts = bitcoin-tx
+	source = https://github.com/BitcoinUnlimited/BitcoinUnlimited/archive/BCHunlimited1.9.1.1.tar.gz
+	sha256sums = 18e38a77715baa32dda9049971def39f91b029a3b8308ccc3c7d90ef453fad03
+
+pkgname = bitcoin-unlimited
+

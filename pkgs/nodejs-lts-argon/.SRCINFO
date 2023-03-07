@@ -1,0 +1,22 @@
+pkgbase = nodejs-lts-argon
+	pkgdesc = Evented I/O for V8 javascript (LTS release: Argon)
+	pkgver = 4.8.3
+	pkgrel = 1
+	url = https://nodejs.org/
+	arch = any
+	license = MIT
+	makedepends = python2
+	makedepends = procps-ng
+	depends = openssl-1.0
+	depends = zlib
+	depends = icu
+	optdepends = npm: nodejs package manager
+	provides = nodejs
+	conflicts = nodejs
+	source = https://nodejs.org/dist/v4.8.3/node-v4.8.3.tar.xz
+	source = icu59.patch
+	sha256sums = d84e7544c2e31a2d0825b4f8b093d169bf8bdb1881ee8cf75ff937918e59e9cb
+	sha256sums = cbc1395c4d0cd66dd8757529f0fe1262a7c3534ed29b1c1e4de0d7b502237179
+
+pkgname = nodejs-lts-argon
+

@@ -1,0 +1,82 @@
+pkgbase = ffmpeg-compat-58
+	pkgdesc = Compatibility package for ffmpeg to provide versions 58 of libavcodec, libavdevice and libavformat, not anymore provided by ffmpeg-git
+	pkgver = 4.4.2
+	pkgrel = 2
+	url = http://ffmpeg.org/
+	arch = x86_64
+	license = GPL
+	makedepends = amf-headers
+	makedepends = avisynthplus
+	makedepends = clang
+	makedepends = ffnvcodec-headers
+	makedepends = git
+	makedepends = ladspa
+	makedepends = nasm
+	depends = alsa-lib
+	depends = aom
+	depends = bzip2
+	depends = dav1d
+	depends = fontconfig
+	depends = freetype2
+	depends = fribidi
+	depends = gmp
+	depends = gnutls
+	depends = gsm
+	depends = jack
+	depends = lame
+	depends = libass
+	depends = libavc1394
+	depends = libbluray
+	depends = libdrm
+	depends = libiec61883
+	depends = libmfx
+	depends = libmodplug
+	depends = libpulse
+	depends = libraw1394
+	depends = librsvg
+	depends = libsoxr
+	depends = libssh
+	depends = libtheora
+	depends = libva
+	depends = libvdpau
+	depends = libvorbis
+	depends = libvpx
+	depends = libwebp
+	depends = libx11
+	depends = libxcb
+	depends = libxext
+	depends = libxml2
+	depends = libxv
+	depends = opencore-amr
+	depends = openjpeg2
+	depends = opus
+	depends = rav1e
+	depends = sdl2
+	depends = speex
+	depends = srt
+	depends = svt-av1
+	depends = v4l-utils
+	depends = vid.stab
+	depends = x264
+	depends = x265
+	depends = xvidcore
+	depends = xz
+	depends = zimg
+	depends = zlib
+	optdepends = avisynthplus: AviSynthPlus support
+	optdepends = intel-media-sdk: Intel QuickSync support
+	optdepends = ladspa: LADSPA filters
+	optdepends = nvidia-utils: Nvidia NVDEC/NVENC support
+	provides = libavcodec.so=58-64
+	provides = libavdevice.so=58-64
+	provides = libavfilter.so=7-64
+	provides = libavformat.so=58-64
+	provides = libavutil.so=56-64
+	provides = libpostproc.so=55-64
+	provides = libswresample.so=3-64
+	provides = libswscale.so=5-64
+	conflicts = ffmpeg4.4
+	source = http://ffmpeg.org/releases/ffmpeg-4.4.2.tar.xz
+	sha256sums = af419a7f88adbc56c758ab19b4c708afbcae15ef09606b82b855291f6a6faa93
+
+pkgname = ffmpeg-compat-58

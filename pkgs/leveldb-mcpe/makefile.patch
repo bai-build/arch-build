@@ -1,0 +1,20 @@
+--- Makefile.orig	2018-02-14 02:26:49.674681786 -0700
++++ Makefile	2018-02-14 02:29:16.060679165 -0700
+@@ -21,7 +21,7 @@
+ include build_config.mk
+ 
+ TESTS = \
+-	db/autocompact_test \
++#	db/autocompact_test \
+ 	db/c_test \
+ 	db/corruption_test \
+ 	db/db_test \
+@@ -60,7 +60,7 @@
+ 	doc/bench/db_bench_tree_db
+ 
+ CFLAGS += -I. -I./include $(PLATFORM_CCFLAGS) $(OPT)
+-CXXFLAGS += -DDLLX= -I. -I./include $(PLATFORM_CXXFLAGS) $(OPT)
++CXXFLAGS += --std=c++11 -fno-builtin-memcmp -pthread -DDLLX= -fPIC -DLINUX -D_LINUX -DLEVELDB_PLATFORM_POSIX -DOS_LINUX -DLEVELDB_ATOMIC_PRESENT -DSNAPPY -I ./ -I include/ $(OPT)
+ 
+ LDFLAGS += $(PLATFORM_LDFLAGS)
+ LIBS += $(PLATFORM_LIBS) -lz

@@ -1,0 +1,22 @@
+pkgbase = kcm-about-distro-kde4
+	pkgdesc = KCM displaying distribution and system information for KDE4
+	pkgver = 1.1.0
+	pkgrel = 2
+	url = https://projects.kde.org/about-distro
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = cmake
+	makedepends = automoc4
+	depends = kdelibs
+	depends = kdebase-workspace
+	conflicts = kinfocenter
+	source = about-distro-1.1.0.tar.xz::http://download.kde.org/stable/about-distro/1.1.0/src/about-distro-1.1.0.tar.xz
+	source = kcm-about-distrorc
+	source = arch-logo.png
+	sha256sums = 829f97a27a882877cca51cfb084dfdf33670fb1bc9ccbf0b2d05187de87e721b
+	sha256sums = 9c0ca076150c0ed41f68606e6c9e037635666c071738e0323468add80972e04b
+	sha256sums = 045bef73cecc450c95c4cdd0ad99e26d43f997dc66dbc101d9c13f33be5a47fc
+
+pkgname = kcm-about-distro-kde4
+

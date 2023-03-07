@@ -1,0 +1,18 @@
+pkgbase = redkite-git
+	pkgdesc = A small free software and cross-platform GUI toolkit
+	pkgver = 1.2.0.r335.61f26b1
+	pkgrel = 1
+	url = https://gitlab.com/iurie-sw/redkite
+	arch = x86_64
+	license = GPL3
+	makedepends = cmake
+	makedepends = git
+	depends = cairo
+	provides = redkite
+	provides = redkite=1.2.0
+	conflicts = redkite
+	source = redkite::git+https://gitlab.com/iurie-sw/redkite.git
+	sha512sums = SKIP
+
+pkgname = redkite-git
+

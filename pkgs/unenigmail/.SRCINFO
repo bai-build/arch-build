@@ -1,0 +1,15 @@
+pkgbase = unenigmail
+	pkgdesc = Unenigmail strips Enigmails PGP encryption from emails within a supplied mbox file.
+	pkgver = 0.20
+	pkgrel = 1
+	url = https://github.com/RoffelKartoffel/unenigmail
+	arch = i686
+	arch = x86_64
+	license = none
+	makedepends = qt5-base
+	provides = unenigmail
+	source = unenigmail::git://github.com/RoffelKartoffel/unenigmail.git
+	md5sums = SKIP
+
+pkgname = unenigmail
+

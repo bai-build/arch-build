@@ -1,0 +1,25 @@
+pkgbase = osmo-iuh-git
+	pkgdesc = Open Source implenentation of a HNB-GW (HomeNodeB-Gateway)
+	pkgver = 0.4.0.r1.g04b5b66
+	pkgrel = 1
+	url = http://osmocom.org/projects/osmohnbgw
+	arch = i686
+	arch = x86_64
+	arch = aarch64
+	arch = armv7h
+	license = GPL
+	makedepends = git
+	depends = libosmocore
+	depends = libosmo-netif
+	depends = libosmo-sccp
+	depends = talloc
+	depends = libasn1c
+	depends = lksctp-tools
+	provides = osmo-iuh
+	conflicts = osmo-iuh
+	backup = etc/osmocom/osmo-hnbgw.cfg
+	source = git+https://git.osmocom.org/osmo-iuh
+	sha256sums = SKIP
+
+pkgname = osmo-iuh-git
+

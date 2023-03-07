@@ -1,0 +1,21 @@
+pkgbase = dtkcommon-git
+	pkgdesc = DTK common modules
+	pkgver = 5.6.3.r1.g3781d33
+	pkgrel = 4
+	url = https://github.com/linuxdeepin/dtkcommon
+	arch = x86_64
+	arch = aarch64
+	groups = deepin-git
+	license = LGPL3
+	makedepends = git
+	makedepends = qt5-tools
+	makedepends = gtest
+	makedepends = gmock
+	makedepends = cmake
+	makedepends = ninja
+	provides = dtkcommon
+	conflicts = dtkcommon
+	source = git+https://github.com/linuxdeepin/dtkcommon
+	sha512sums = SKIP
+
+pkgname = dtkcommon-git

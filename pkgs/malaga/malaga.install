@@ -1,0 +1,17 @@
+post_install() {
+  echo ">>> If you are using Emacs, add the line"
+	echo ">>>   (require 'malaga \".../malaga-7.12/malaga.el\")"
+	echo ">>> to the file \".emacs\" in your home directory, "
+	echo ">>> so the Malaga extensions will be loaded automatically "
+	echo ">>> if you are starting Emacs."
+	echo ">>>   (Use the absolute path for \".../malaga-7.12\".)"
+	echo ">>> "
+	echo ">>> Make sure that you are using UTF-8 character set"
+	echo
+}
+
+post_upgrade() {
+  post_install $1
+}
+
+# vim:set ts=2 sw=2 et:

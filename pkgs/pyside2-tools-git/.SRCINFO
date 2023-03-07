@@ -1,0 +1,20 @@
+pkgbase = pyside2-tools-git
+	pkgdesc = lupdate, rcc and uic tools for PySide2 (git version)
+	pkgver = r6554.6eb583d7
+	pkgrel = 1
+	url = https://www.qt.io
+	arch = x86_64
+	license = LGPL
+	makedepends = cmake
+	makedepends = shiboken2
+	makedepends = git
+	depends = pyside2
+	provides = pyside2-tools
+	conflicts = pyside2-tools
+	source = pyside2-tools-git::git+https://code.qt.io/pyside/pyside-setup.git
+	source = git+https://code.qt.io/pyside/pyside-tools.git
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = pyside2-tools-git
+

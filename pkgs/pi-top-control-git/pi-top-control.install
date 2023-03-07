@@ -1,0 +1,11 @@
+#!/bin/bash
+
+post_install() {
+  test `grep "i2c:" /etc/group | wc -l` -gt 0 || groupadd i2c
+  chgrp i2c /opt/ptctl/*
+  systemctl enable ptctl-poweroff.service
+}
+
+pre_remove() {
+  systemctl disable ptctl-poweroff.service
+}

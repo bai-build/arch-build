@@ -1,0 +1,24 @@
+pkgbase = wingpanel-indicator-ayatana-git
+	pkgdesc = Wingpanel Ayatana-Compatibility Indicator (community fork)
+	pkgver = r96.5749f75
+	pkgrel = 1
+	url = https://github.com/Lafydev/wingpanel-indicator-ayatana
+	arch = i686
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	makedepends = meson
+	makedepends = vala
+	makedepends = wingpanel
+	depends = glib2
+	depends = glibc
+	depends = gtk3-ubuntu
+	depends = indicator-application
+	depends = libindicator-gtk3
+	depends = libgranite.so
+	provides = wingpanel-indicator-ayatana
+	conflicts = wingpanel-indicator-ayatana
+	source = git+https://github.com/Lafydev/wingpanel-indicator-ayatana.git
+	sha256sums = SKIP
+
+pkgname = wingpanel-indicator-ayatana-git

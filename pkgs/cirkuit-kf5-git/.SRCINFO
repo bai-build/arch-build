@@ -1,0 +1,34 @@
+pkgbase = cirkuit-kf5-git
+	pkgdesc = KDE interface for LaTeX graphic tools (such as TikZ, Gnuplot, Circuit Macros) to produce publication-ready pictures
+	pkgver = r408.cdc3e89
+	pkgrel = 2
+	url = git://anongit.kde.org/cirkuit.git
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	makedepends = texlive-core
+	makedepends = cmake
+	makedepends = extra-cmake-modules
+	makedepends = kdesignerplugin
+	depends = poppler-qt5
+	depends = m4
+	depends = ghostscript
+	depends = texlive-pstricks
+	depends = netpbm
+	depends = knewstuff
+	depends = ktexteditor
+	depends = kdelibs4support
+	depends = hicolor-icon-theme
+	depends = kdoctools
+	optdepends = dpic: improved circuit macros support
+	optdepends = gnuplot: Gnuplot backend
+	provides = cirkuit=r408.cdc3e89
+	provides = cirkuit-kf5=r408.cdc3e89
+	conflicts = cirkuit
+	options = !makeflags
+	source = git://anongit.kde.org/cirkuit.git#branch=frameworks
+	md5sums = SKIP
+
+pkgname = cirkuit-kf5-git
+

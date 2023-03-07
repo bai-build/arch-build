@@ -1,0 +1,25 @@
+pkgbase = cherrytree-git
+	pkgdesc = Hierarchical note-taking application, git version
+	pkgver = 0.99.51.r2.gd54dd23e
+	pkgrel = 1
+	url = https://github.com/giuspen/cherrytree
+	arch = x86_64
+	license = GPL3
+	checkdepends = gmock
+	checkdepends = gtest
+	makedepends = cmake
+	makedepends = git
+	makedepends = python
+	makedepends = spdlog
+	depends = fmt
+	depends = gspell
+	depends = gtksourceviewmm
+	depends = libxml++2.6
+	depends = uchardet
+	depends = vte3
+	provides = cherrytree
+	conflicts = cherrytree
+	source = git+https://github.com/giuspen/cherrytree.git
+	sha512sums = SKIP
+
+pkgname = cherrytree-git

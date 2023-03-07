@@ -1,0 +1,20 @@
+pkgbase = simdock-git
+	pkgdesc = Fast and customizable dockbar
+	pkgver = 1.5.2.r3.g383e9c7
+	pkgrel = 1
+	url = https://github.com/onli/simdock
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	depends = wxgtk3
+	depends = libwnck
+	depends = xcb-util-wm
+	depends = gconf
+	depends = desktop-file-utils
+	provides = simdock
+	conflicts = simdock
+	source = git+https://github.com/onli/simdock.git
+	md5sums = SKIP
+
+pkgname = simdock-git
+

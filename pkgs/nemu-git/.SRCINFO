@@ -1,0 +1,21 @@
+pkgbase = nemu-git
+	pkgdesc = ncurses interface for QEMU
+	pkgver = 3.2.0.r1.gf50ffbe
+	pkgrel = 2
+	url = https://github.com/nemuTUI/nemu
+	arch = x86_64
+	license = BSD
+	makedepends = git
+	makedepends = cmake
+	depends = qemu
+	depends = ncurses
+	depends = sqlite
+	depends = udev
+	depends = libusb
+	depends = libarchive
+	provides = nemu
+	conflicts = nemu
+	source = git+https://github.com/nemuTUI/nemu.git
+	md5sums = SKIP
+
+pkgname = nemu-git

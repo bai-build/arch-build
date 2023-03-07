@@ -1,0 +1,20 @@
+pkgbase = mingw-w64-gstreamer-git
+	pkgdesc = GStreamer Multimedia Framework (mingw-w64)
+	pkgver = 1.16.0.r15.ab60a330d
+	pkgrel = 1
+	url = http://gstreamer.freedesktop.org/
+	arch = any
+	license = LGPL
+	makedepends = mingw-w64-meson
+	makedepends = git
+	depends = mingw-w64-glib2
+	depends = mingw-w64-libxml2
+	provides = mingw-w64-gstreamer
+	conflicts = mingw-w64-gstreamer
+	options = !strip
+	options = !buildflags
+	options = staticlibs
+	source = gstreamer::git+https://gitlab.freedesktop.org/gstreamer/gstreamer/
+	sha256sums = SKIP
+
+pkgname = mingw-w64-gstreamer-git

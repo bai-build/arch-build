@@ -1,0 +1,13 @@
+/src/
+/pkg/
+/*~
+/*.part
+/linux-*.tar.xz
+/linux-*.tar.sign
+/linux-hardened-*.patch
+/linux-hardened-*.patch.sig
+/*.diff
+/*.log
+/*.src.tar.gz
+/*.src.tar.gz.sig
+/linux-stable/

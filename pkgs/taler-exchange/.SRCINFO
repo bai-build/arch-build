@@ -1,0 +1,23 @@
+pkgbase = taler-exchange
+	pkgdesc = Exchange implementation
+	pkgver = 0.8.5
+	pkgrel = 1
+	url = https://taler.net/
+	arch = i686
+	arch = x86_64
+	groups = taler
+	license = AGPL
+	makedepends = python-jinja
+	depends = python
+	depends = gnunet
+	depends = libmicrohttpd
+	depends = postgresql
+	conflicts = taler-exchange-git
+	conflicts = taler-exchange-bin
+	source = http://ftp.gnu.org/gnu/taler/taler-exchange-0.8.5.tar.gz
+	source = http://ftp.gnu.org/gnu/taler/taler-exchange-0.8.5.tar.gz.sig
+	validpgpkeys = D8423BCB326C7907033929C7939E6BE1E29FC3CC
+	sha256sums = 8de8502a40d87439045de9ff2d29f48198b8b58a7291833dd96df965b48b363e
+	sha256sums = SKIP
+
+pkgname = taler-exchange

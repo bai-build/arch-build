@@ -1,0 +1,15 @@
+pkgbase = webdump-git
+	pkgdesc = Render HTML to stdout
+	pkgver = r101.254e833
+	pkgrel = 2
+	url = https://www.codemadness.org/git/webdump/file/README.html
+	arch = any
+	license = ISC
+	makedepends = git
+	provides = webdump
+	conflicts = webdump
+	source = git://git.codemadness.org/webdump
+	sha256sums = SKIP
+
+pkgname = webdump-git
+

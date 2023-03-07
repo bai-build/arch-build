@@ -1,0 +1,50 @@
+pkgbase = linux-rt
+	pkgdesc = Linux RT
+	pkgver = 6.0.5.14.realtime1
+	pkgrel = 1
+	url = https://gitlab.archlinux.org/dvzrv/linux-rt/-/commits/v6.0.5.14.realtime1
+	arch = x86_64
+	license = GPL2
+	makedepends = bc
+	makedepends = cpio
+	makedepends = git
+	makedepends = graphviz
+	makedepends = imagemagick
+	makedepends = libelf
+	makedepends = pahole
+	makedepends = perl
+	makedepends = python-sphinx
+	makedepends = python-sphinx_rtd_theme
+	makedepends = tar
+	makedepends = texlive-latexextra
+	makedepends = xmlto
+	makedepends = xz
+	options = !strip
+	source = git+https://gitlab.archlinux.org/dvzrv/linux-rt#tag=v6.0.5.14.realtime1?signed
+	source = config
+	validpgpkeys = 647F28654894E3BD457199BE38DBBDC86092693E
+	validpgpkeys = 64254695FFF0AA4466CC19E67B96E8162A8CF5D1
+	validpgpkeys = C7E7849466FE2358343588377258734B41C31549
+	validpgpkeys = 991F6E3F0765CF6295888586139B09DA5BF0D338
+	sha512sums = SKIP
+	sha512sums = 5d57cd2cea75491559a79a20d6688121f67232cf9adbbed1605f67a7742bebb1ab0a2f8f398eeb6deee7569fd0bbec4c187fa69d4dcb773888307d39cf17cbfb
+	b2sums = SKIP
+	b2sums = 44a2eb315797503f2a15269c88a9e31aaea39f096efd9505a339016abbdbcb8430c094655a82d603361ff91210ee465ab5b3fdab3389d9fa0401f57c8101ec99
+
+pkgname = linux-rt
+	pkgdesc = The Linux RT kernel and modules
+	depends = coreutils
+	depends = initramfs
+	depends = kmod
+	optdepends = wireless-regdb: to set the correct wireless channels of your country
+	optdepends = linux-firmware: firmware images needed for some devices
+	provides = VIRTUALBOX-GUEST-MODULES
+	provides = WIREGUARD-MODULE
+	provides = KSMBD-MODULE
+
+pkgname = linux-rt-headers
+	pkgdesc = Headers and scripts for building modules for the Linux RT kernel
+	depends = pahole
+
+pkgname = linux-rt-docs
+	pkgdesc = Documentation for the Linux RT kernel

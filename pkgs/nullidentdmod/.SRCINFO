@@ -1,0 +1,16 @@
+pkgbase = nullidentdmod
+	pkgdesc = Minimal identd server with customizable userid
+	pkgver = 1.3
+	pkgrel = 1
+	url = http://acidhub.click/NullidentdMod/
+	arch = any
+	license = GPL
+	conflicts = oidentd
+	conflicts = nullidentd
+	conflicts = pindetd
+	conflicts = nullidentdmod-git
+	source = https://github.com/Acidhub/nullidentdmod/archive/v1.3.tar.gz
+	sha256sums = 262d5e27f8a4bc7186b603681ffd8c0e257c810e9777d5ace7cae3b4c8b82aee
+
+pkgname = nullidentdmod
+

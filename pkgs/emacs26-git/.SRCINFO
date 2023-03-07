@@ -1,0 +1,23 @@
+pkgbase = emacs26-git
+	pkgdesc = GNU Emacs. Development.
+	pkgver = 26.1.50.132031
+	pkgrel = 1
+	url = http://www.gnu.org/software/emacs/
+	arch = x86_64
+	license = GPL3
+	makedepends = git
+	depends = alsa-lib
+	depends = gnutls
+	depends = libxml2
+	depends = jansson
+	depends = gtk3
+	depends = libotf
+	depends = libjpeg-turbo
+	depends = giflib
+	provides = emacs
+	conflicts = emacs
+	source = emacs-git::git+https://github.com/emacs-mirror/emacs.git#branch=emacs-26
+	md5sums = SKIP
+
+pkgname = emacs26-git
+

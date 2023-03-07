@@ -1,0 +1,26 @@
+pkgbase = nextpnr-git
+	pkgdesc = Portable FPGA place and route tool
+	pkgver = 0.3.r37.g8d063d38
+	pkgrel = 2
+	url = https://github.com/YosysHQ/nextpnr
+	arch = i686
+	arch = x86_64
+	license = custom:ISC
+	makedepends = boost
+	makedepends = cmake
+	makedepends = eigen
+	makedepends = git
+	makedepends = icestorm
+	makedepends = prjtrellis>1.2.1
+	makedepends = prjtrellis-db
+	makedepends = prjoxide
+	makedepends = prjapicula
+	depends = boost-libs
+	depends = python
+	depends = qt5-base
+	provides = nextpnr=0.3.r37.g8d063d38
+	conflicts = nextpnr
+	source = nextpnr::git+https://github.com/YosysHQ/nextpnr.git
+	sha256sums = SKIP
+
+pkgname = nextpnr-git
