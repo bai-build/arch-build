@@ -1,0 +1,32 @@
+name: BUILD-1
+
+
+jobs:
+  buildPKGBUILD:
+    permissions: write-all
+    strategy:
+      matrix:
+        PKGBUILDs: []
+      fail-fast: false
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Build PKGBUILD
+        id: makepkg
+        uses: ./build_pkgbuild_action
+        with:
+          pkgdir: ./pkgs/${{ matrix.PKGBUILDs }}
+          aurDeps: true
+
+      - name: Zip directory
+        run: cd ./pkgs && zip ../${{ matrix.PKGBUILDs }}.zip ./${{ matrix.PKGBUILDs }}/pkg/* -r
+      
+      - uses: ncipollo/release-action@v1
+        with:
+          allowUpdates: true
+          tag: "packages"
+          artifacts: ${{ matrix.PKGBUILDs }}.zip
+          token: ${{ secrets.GITHUB_TOKEN }}
