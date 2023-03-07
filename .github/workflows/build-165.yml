@@ -1,0 +1,233 @@
+jobs:
+  buildPKGBUILD:
+    permissions: write-all
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - id: makepkg
+      name: Build PKGBUILD
+      uses: ./build_pkgbuild_action
+      with:
+        aurDeps: true
+        pkgdir: ./pkgs/${{ matrix.PKGBUILDs }}
+    - name: Zip directory
+      run: cd ./pkgs && zip ../${{ matrix.PKGBUILDs }}.zip ./${{ matrix.PKGBUILDs
+        }}/pkg/* -r
+    - uses: ncipollo/release-action@v1
+      with:
+        allowUpdates: true
+        artifacts: ${{ matrix.PKGBUILDs }}.zip
+        tag: packages
+        token: ${{ secrets.GITHUB_TOKEN }}
+    strategy:
+      fail-fast: false
+      matrix:
+        PKGBUILDs:
+        - tar-git
+        - attract-git
+        - ros-kinetic-diagnostic-analysis
+        - bibclean
+        - plank-git-patched
+        - vlang-git
+        - libwacom-surface
+        - mpd_oled
+        - ros-indigo-shape-tools
+        - ros-noetic-rosboost-cfg
+        - lio-snmp
+        - mtfmapper
+        - json-fortran-git
+        - ros-indigo-kobuki-auto-docking
+        - ros-indigo-rqt-robot-plugins
+        - gpg-tools-git
+        - kismet-plugin-ubertooth
+        - ros-melodic-rosdiagnostic
+        - linux-xanmod-cacule
+        - embox
+        - subtitlecomposer-git
+        - vdr-upnp
+        - ros-indigo-common-tutorials
+        - libpff-git
+        - noto-fonts-emoji-marshmallow
+        - brackets-git
+        - ros-melodic-image-publisher
+        - vhba-module-rt
+        - semt
+        - gsimplecal-git
+        - cctools
+        - ros-melodic-ros-tutorials
+        - openiked-git
+        - libhangul-3beol
+        - xfig-git
+        - quazip-legacy
+        - micmac-git
+        - uconfig-git
+        - ttcut
+        - cpdup
+        - kosmorro
+        - douane-dialog-git
+        - libx32-libxcb
+        - apertium-cat
+        - empty
+        - gcc6-multilib
+        - vapoursynth-plugin-rgvs-git
+        - ros-ardent-ament-cmake-pytest
+        - openra-ra2-git
+        - xmrig-mo-beta
+        - libimagequant-git
+        - mingw-w64-libfilezilla
+        - libfragmentzip-git
+        - amber-bridge
+        - shantz-xwinwrap-bzr
+        - ffmpeg-mpp
+        - newsoul
+        - waypipe-git
+        - kimg
+        - aufs-util
+        - root-extra-dev
+        - ros-melodic-libmavconn
+        - ros-melodic-mav-planning-msgs
+        - polyphone-git
+        - xfce-theme-greybird-geeko
+        - bioperl-run-git
+        - lean2-git
+        - qtwebbrowser-qpi
+        - budgie-applications-menu-git
+        - ascii2mseed
+        - php-sdl
+        - zbom
+        - stereogl
+        - midifile-git
+        - f27-backgrounds
+        - amethyst
+        - handbrake-svn_p
+        - skia-sharp
+        - aarch64-linux-gnu-xz
+        - crmsh-git
+        - puma
+        - massif-visualizer
+        - gaussianbeam-svn
+        - epson-inkjet-printer-stylus-photo-t50-series
+        - ijvm-tools
+        - openexr-git
+        - midori7
+        - catclock-aubio-git
+        - plasma5-applets-systemloadviewer
+        - attic
+        - sendmail
+        - touchegg-qt5
+        - erigon-alpha
+        - mx-git
+        - quadlet-git
+        - gnudatalanguage
+        - libxtrxll-git
+        - xisxwayland
+        - libdesqwl-git
+        - clrterm
+        - vulkan-memory-allocator
+        - eom-1.15-gtk3
+        - capnproto
+        - kdnssd-git
+        - libcgroup
+        - zfs-utils-common-git
+        - musicpaused-git
+        - ros-jade-trajectory-msgs
+        - xbic
+        - apvlv-git
+        - nvidia-settings-gtk2
+        - texmacs-qt
+        - enchive
+        - drush_make
+        - kookbook-git
+        - ros-ardent-ament-cmake-export-link-flags
+        - ros-ardent-examples-rclcpp-minimal-client
+        - lttngtop-git
+        - libvdestack-git
+        - xpybar
+        - pim-sieve-editor-git
+        - paman
+        - trafshow
+        - ldoce5viewer-pyqt5-git
+        - librepilot
+        - mingw-w64-gmp
+        - rocr-debug-agent
+        - sway-nosystemd-git
+        - less-git
+        - protonhax
+        - gstreamer0.10-gnonlin
+        - tuxmath-git
+        - dwarffortress-obsidian
+        - owl-lisp
+        - charliecloud
+        - gpmp2
+        - nyacc
+        - lttoolbox-svn
+        - ros-melodic-actionlib-tutorials
+        - adesklets
+        - openzwave-git
+        - lxqt-organizer-git
+        - lib32-flac-git
+        - isoquery
+        - webbrowser-git
+        - sekai-git
+        - iv-git
+        - radiotray-ng
+        - rymdport
+        - ros-ardent-rmw-opensplice-cpp
+        - ltwheelconf-git
+        - cryptominisat4
+        - noticeditor-git
+        - ros-noetic-pcl-conversions
+        - st-solarized
+        - gtk3-git
+        - cmoc
+        - jpp
+        - vapoursynth-plugin-removedirtvs-git
+        - mariadb-10.3
+        - ajenti-git
+        - aldo
+        - dasom-jeongeum-git
+        - unbound-ecs
+        - tageditor-qt6
+        - countly-cpp
+        - lib32-libzip1
+        - mangohud
+        - ffmpeg-compat-58
+        - activdriver
+        - balong-nvtool-git
+        - wine-overwatch-git
+        - junction
+        - ros-lunar-sensor-msgs
+        - vlc-nightly
+        - kart-git
+        - quickcurver-git
+        - ros-ardent-ament-index-cpp
+        - identity-git
+        - trlib-git
+        - mingw-w64-ctk-widgets-git
+        - clipper-git
+        - zjtag
+        - gdm-settings-beta
+        - xfce4-settings-gtk2
+        - linux-aarch64-lts
+        - rsskit
+        - pluma-python3
+        - lib32-sdl2-git
+        - pclock
+        - libusbgx-git
+        - speech-dispatcher-git
+        - idevicerestore
+        - yorick-hdf5-git
+        - mojoshader-git
+        - magnum-git
+        - ros-jade-cmake-modules
+        - purrdata-touchosc-git
+        - vapoursynth-plugin-tc2cfr-git
+        - lowres-nx-git
+        - qview-git
+name: BUILD-165
+'on':
+  workflow_run:
+    types:
+    - completed
+    workflows:
+    - BUILD-164
