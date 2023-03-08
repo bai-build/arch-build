@@ -1,3 +1,6 @@
+concurrency:
+  cancel-in-progress: true
+  group: ${{ github.head_ref }}
 jobs:
   buildPKGBUILD:
     permissions: write-all
@@ -281,6 +284,7 @@ jobs:
         - marble-gtk4-git
 name: BUILD-150
 'on':
+  workflow_dispatch: ''
   workflow_run:
     types:
     - completed

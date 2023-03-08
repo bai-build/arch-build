@@ -1,6 +1,11 @@
 name: BUILD-1
 
 
+concurrency:
+  group: ${{ github.head_ref }}
+  cancel-in-progress: true
+
+
 jobs:
   buildPKGBUILD:
     permissions: write-all

@@ -1,3 +1,6 @@
+concurrency:
+  cancel-in-progress: true
+  group: ${{ github.head_ref }}
 jobs:
   buildPKGBUILD:
     permissions: write-all
@@ -284,3 +287,4 @@ name: BUILD-0
   push:
     branches:
     - '**'
+  workflow_dispatch: ''
