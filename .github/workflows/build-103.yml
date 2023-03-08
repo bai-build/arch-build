@@ -284,7 +284,7 @@ jobs:
         - wingpanel-indicator-bluetooth-bzr
 name: BUILD-103
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed

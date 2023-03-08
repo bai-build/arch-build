@@ -284,7 +284,7 @@ jobs:
         - conky19
 name: BUILD-83
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed

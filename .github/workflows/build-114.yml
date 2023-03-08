@@ -284,7 +284,7 @@ jobs:
         - linux-libre-lts-knock
 name: BUILD-114
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed

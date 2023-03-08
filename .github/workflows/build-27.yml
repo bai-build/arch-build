@@ -284,7 +284,7 @@ jobs:
         - ungoogled-chromium-xdg
 name: BUILD-27
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed

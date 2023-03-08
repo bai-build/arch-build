@@ -284,7 +284,7 @@ jobs:
         - ros-kinetic-message-generation
 name: BUILD-29
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed

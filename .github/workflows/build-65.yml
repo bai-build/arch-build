@@ -284,7 +284,7 @@ jobs:
         - gr-ieee802-11-git
 name: BUILD-65
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed

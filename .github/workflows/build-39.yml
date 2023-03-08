@@ -284,7 +284,7 @@ jobs:
         - x264-tmod-git
 name: BUILD-39
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed

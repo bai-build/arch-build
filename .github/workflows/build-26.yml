@@ -284,7 +284,7 @@ jobs:
         - netbsd-fs-utils-git
 name: BUILD-26
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed

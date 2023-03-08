@@ -284,7 +284,7 @@ jobs:
         - plasma-applets-doityourselfbar
 name: BUILD-109
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed

@@ -284,7 +284,7 @@ jobs:
         - scarlett-mixer-git
 name: BUILD-148
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed

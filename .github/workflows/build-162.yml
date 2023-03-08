@@ -284,7 +284,7 @@ jobs:
         - lib32-libxxf86misc
 name: BUILD-162
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed

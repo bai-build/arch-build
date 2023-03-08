@@ -284,7 +284,7 @@ jobs:
         - php7-pdo_sqlsrv
 name: BUILD-2
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed

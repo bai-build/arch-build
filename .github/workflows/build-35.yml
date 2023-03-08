@@ -284,7 +284,7 @@ jobs:
         - termite-git
 name: BUILD-35
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed

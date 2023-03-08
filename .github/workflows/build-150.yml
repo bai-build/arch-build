@@ -284,7 +284,7 @@ jobs:
         - marble-gtk4-git
 name: BUILD-150
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed

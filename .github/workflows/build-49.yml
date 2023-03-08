@@ -284,7 +284,7 @@ jobs:
         - fbvnc-git
 name: BUILD-49
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed

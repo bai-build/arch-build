@@ -284,7 +284,7 @@ jobs:
         - vapoursynth-plugin-wnnm-git
 name: BUILD-51
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed

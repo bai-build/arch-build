@@ -284,7 +284,7 @@ jobs:
         - docker-rpm-builder-git
 name: BUILD-63
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed

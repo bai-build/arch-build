@@ -284,7 +284,7 @@ jobs:
         - man-pages-ja
 name: BUILD-64
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed

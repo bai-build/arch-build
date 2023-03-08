@@ -284,7 +284,7 @@ jobs:
         - ros-indigo-turtlebot-rapps
 name: BUILD-13
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed

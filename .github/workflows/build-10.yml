@@ -284,7 +284,7 @@ jobs:
         - scangearmp-mg6200
 name: BUILD-10
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed

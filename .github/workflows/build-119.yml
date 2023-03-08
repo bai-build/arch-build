@@ -284,7 +284,7 @@ jobs:
         - gst-python-git
 name: BUILD-119
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed

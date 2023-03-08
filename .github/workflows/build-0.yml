@@ -287,4 +287,4 @@ name: BUILD-0
   push:
     branches:
     - '**'
-  workflow_dispatch: ''
+  workflow_dispatch: null

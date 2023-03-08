@@ -18,9 +18,9 @@ def main():
         workflow_config = workflow_config_template
         pkgs_shard = pkgs[i * shard_size: (i+1) * shard_size]
         if i == 0:
-            workflow_config['on'] = {'push': {'branches': ['**']}, 'workflow_dispatch': ''}
+            workflow_config['on'] = {'push': {'branches': ['**']}, 'workflow_dispatch': None}
         else:
-            workflow_config['on'] = {'workflow_run': {'workflows': [f"BUILD-{i-1}"], 'types': ['completed']}, 'workflow_dispatch': ''}
+            workflow_config['on'] = {'workflow_run': {'workflows': [f"BUILD-{i-1}"], 'types': ['completed']}, 'workflow_dispatch': None}
         workflow_config['name'] = f"BUILD-{i}"
         workflow_config['jobs']['buildPKGBUILD']['strategy']['matrix']['PKGBUILDs'] = pkgs_shard
         with open(f"../.github/workflows/build-{i}.yml", 'w') as fp:

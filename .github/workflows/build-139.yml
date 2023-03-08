@@ -284,7 +284,7 @@ jobs:
         - mesa-hybris
 name: BUILD-139
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed

@@ -284,7 +284,7 @@ jobs:
         - libumem-git
 name: BUILD-71
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed

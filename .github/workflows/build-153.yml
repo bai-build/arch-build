@@ -284,7 +284,7 @@ jobs:
         - edbg-git
 name: BUILD-153
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed

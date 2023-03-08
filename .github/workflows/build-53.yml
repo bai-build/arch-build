@@ -284,7 +284,7 @@ jobs:
         - art-rawconverter-git
 name: BUILD-53
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed

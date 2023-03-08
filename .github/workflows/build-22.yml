@@ -284,7 +284,7 @@ jobs:
         - ros-indigo-rqt-gui-cpp
 name: BUILD-22
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed

@@ -284,7 +284,7 @@ jobs:
         - slic3r-prusa3d-git
 name: BUILD-112
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed

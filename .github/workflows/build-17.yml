@@ -284,7 +284,7 @@ jobs:
         - hexedit-advanced-search
 name: BUILD-17
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed

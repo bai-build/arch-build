@@ -284,7 +284,7 @@ jobs:
         - ft2-clone
 name: BUILD-21
 'on':
-  workflow_dispatch: ''
+  workflow_dispatch: null
   workflow_run:
     types:
     - completed
